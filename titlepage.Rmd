@@ -1,0 +1,34 @@
+\begin{centering}
+
+\vspace{3 cm}
+
+\normalsize
+Instytut Farmakologii im. Jerzego Maja /
+Polskiej Adakemii Nauk
+
+\vspace{3 cm}
+
+\Huge
+
+{\bf Effects of chosen chemokines on the activity and synaptic transmission in central and basolateral complex of the amygdala}
+
+\vspace{3 cm}
+
+\Large
+Joanna Ewa Sowa
+
+\vspace{3 cm}
+
+
+\normalsize
+Praca doktorska /
+wykonana pod opieką: /
+dr.hab Krzysztofa Tokarskiego /
+
+\vspace{3 cm}
+
+
+\normalsize
+Kraków, 2020
+
+\end{centering}

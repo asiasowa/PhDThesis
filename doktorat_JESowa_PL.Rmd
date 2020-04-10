@@ -1,0 +1,63 @@
+---
+title: "Untitled"
+author: "Joanna Sowa"
+output: 
+  word_document:
+    theme: journal
+    toc: true
+    number_sections: true
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\tableofcontents
+\pagebreak
+
+# Wstęp
+
+## Chemokiny
+
+### CX3CL1
+
+### CXCL12
+
+## Ciało migdałowate
+
+## Interakcje neuronalno-glejowe
+
+\pagebreak
+
+# Cel pracy
+
+\pagebreak
+
+# Materiały i metody
+
+## Zwierzęta doświadczalne
+
+## Przygotowanie skrawków do doświadczeń elektrofizjologicznych
+
+## Rejestracje elektrofizjologiczne
+
+\pagebreak
+
+# Wyniki
+
+\pagebreak
+
+# Dyskusja
+
+\pagebreak
+
+# Podsumowanie i wnioski
+
+\pagebreak
+
+# Informacja o opublikowaniu wyników badań, uzyskanych w ramach pracy doktorskiej
+
+\pagebreak
+
+# Literatura

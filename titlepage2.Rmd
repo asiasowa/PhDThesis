@@ -1,0 +1,28 @@
+
+
+
+\begin{centering}
+\includegraphics[width=0.19\textwidth]{ifpan}\\[2pt]
+{Instytut Farmakologii im. Jerzego Maja \\Polskiej Adakemii Nauk}\\[5pt]
+
+\vspace{3cm}
+
+ {\huge\bfseries Effects of chosen chemokines on the activity and synaptic transmission  \\ in central and basolateral complex of the amygdala\\}
+
+ \vspace{1.5cm}
+ {\Large\bfseries Joanna Ewa Sowa}\\[5pt]
+
+ \vspace{2cm}
+{Praca doktorska} \\[5pt]
+
+{promotor: dr hab. Krzysztof Tokarski} \\[5pt]
+
+
+ \vfill
+
+
+
+ \vfill
+{Krakow 2020}
+
+\end{centering}

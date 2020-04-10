@@ -1,0 +1,15 @@
+---
+output: pdf_document
+---
+
+# Aim of the study
+
+Considering described evidence and proposed hypotheses the present studies were focused on two separate but physiologically and functionally related subjects:   
+
+* Investigation of ...   
+
+* Investigatation of ...   
+
+To address these issues several research techniques were employed: whole-cell patch-clamp and extracellular recordings ex vivo, immunofluorescent and immunohistochemical staining and ...
+
+Detailed research objectives addressed in each study, as well as techniques used are listed below:

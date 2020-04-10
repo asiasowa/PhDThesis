@@ -1,0 +1,181 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdfborder={0 0 0},
+  breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-2}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\hypertarget{materials-and-methods}{%
+\section{Materials and methods}\label{materials-and-methods}}
+
+\hypertarget{general}{%
+\subsection{General}\label{general}}
+
+\hypertarget{ethic-approval}{%
+\subsubsection{Ethic approval}\label{ethic-approval}}
+
+All procedures were conducted in accordance with the directive
+2010/63/EU of the European Parliament and of the Council of 22 September
+2010 on the protection of animals used for scientific purposes.
+Procedures in immunostaining and patch-clamp experiments were
+additionally conducted in accordance with the Polish Act on the
+Protection of Animals Used for Scientific or Educational Purposes of 15
+January 2015, and approved by the 2nd Local Ethics Commissions on Animal
+Research (Krakow, Poland). All efforts were made to minimize suffering
+and to reduce the number of animals used.
+
+\hypertarget{animals}{%
+\subsubsection{Animals}\label{animals}}
+
+Male Wistar rats (50-180g on arrival) were purchased from Charles River
+Laboratories (Research Models and Services; Germany). Four to five
+animals were housed per polypropylene cage (55x35x20 cm) in controlled
+environment (22 ± 1\(^{\circ}\)C, 45 ± 5 \% relative humidity, 12:12 h
+light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh
+water \emph{ad libitum}. Animals were acclimated to the housing
+environment for at least 4 days before the beginning of the experiments.
+Rats were weighing 180-300g during the tissue preparation / 5-10 weeks
+of age. Animals at this age are considered as young adults.
+
+\hypertarget{reagents}{%
+\subsubsection{Reagents}\label{reagents}}
+
+\hypertarget{whole-cell-patch-clamp-technique-in-acute-brain-slices}{%
+\subsection{Whole-cell patch-clamp technique in acute brain
+slices}\label{whole-cell-patch-clamp-technique-in-acute-brain-slices}}
+
+\hypertarget{tissue-preparation}{%
+\subsubsection{Tissue Preparation}\label{tissue-preparation}}
+
+Male Wistar (4-7-week-old) rats were anesthetised with isoflurane
+(AErrane, Baxter, Poland) and decapitated between 07:00 and 09:00 a.m.
+Brains were collected in ice-cold, low-sodium, high-magnesium ACSF
+(artifical cerebrospinal--fluid), containing (in mM): 65 sucrose, 76
+NaCl, 25 NaHCO\textsubscript{3}, 1.4
+NaH\textsubscript{2}PO\textsubscript{4}, 25 glucose, 2.5 KCl, 7
+MgCl\textsubscript{2}, 0.4 Na-ascorbate, and 2 Na-pyruvate (bubbled with
+95\% O2/5\% CO2), pH 7.4; osmolality 290--300 mOsmol
+kg\textsuperscript{−1}) and cut into 300 \mu m thick coronal sections on
+a Leica VT 1000 vibrating microtome (Leica Instruments, Germany).
+Sections containing the amygdala were transferred to an incubation
+chamber containing carbogenated, warm (32\(^{\circ}\)C) ACSF, containing
+(in mM): 92 NaCl, 30 NaHCO\textsubscript{3}, 2.5 KCl, 1.2
+NaH\textsubscript{2}PO\textsubscript{4}, 2 CaCl\textsubscript{2}, 20
+HEPES, 2 MgSO\textsubscript{4} and 25 glucose, 5 Na-ascorbate, 2
+thiourea, 3 Na-pyruvate, pH = 7.35; osmolality 290--300 mOsmol
+kg\textsuperscript{−1}). After a recovery period (60-90 minutes) slices
+were transferred to a recording chamber placed on a fixed stage of an
+Zeiss Axioskop 2 (Zeiss, Germany) upright microscope, where the tissue
+was perfused (1-2 ml/min) with carbogenated, warm (32°C) ACSF containing
+(in mM): 124 NaCl, 30 NaHCO\textsubscript{3}, 2.5 KCl, 1.2
+NaH\textsubscript{2}PO\textsubscript{4}, 2 CaCl\textsubscript{2}, 5
+HEPES, 2 MgSO\textsubscript{4} and 10 glucose, pH = 7.35; osmolality
+290--300 mOsmol kg\textsuperscript{−1}).
+
+\hypertarget{whole-cell-patch-clamp-recordings-and-data-acquisition}{%
+\subsubsection{Whole-cell patch-clamp recordings and data
+acquisition}\label{whole-cell-patch-clamp-recordings-and-data-acquisition}}
+
+Recording micropipettes were fabricated from borosilicate glass
+capillaries (3--6 MΩ; Sutter Instruments, USA) using horizontal puller
+(Sutter Instruments) and filled with the following solutions. In
+experiments on Wistar rats the solution contained (in mM): 125 potassium
+gluconate, 20 KCl, 2 MgCl\textsubscript{2}, 4 Na\textsubscript{2}ATP,
+0.4 Na\textsubscript{3}GTP, 5 EGTA, 10 HEPES, pH 7.3, osmolality 290-300
+mOsmol kg\textsuperscript{−1}) and biocytin (0.1\%, for subsequent
+immunofluorescent identification of recorded neurons). The calculated
+liquid junction potential using this solution was 12 mV, and this value
+was subtracted from the data.
+
+\hypertarget{post-recording-immunostaining}{%
+\subsubsection{Post-recording
+immunostaining}\label{post-recording-immunostaining}}
+
+\hypertarget{electrophysiological-identification-and-classification-of-chosen-neurons}{%
+\subsubsection{Electrophysiological identification and classification of
+chosen
+neurons}\label{electrophysiological-identification-and-classification-of-chosen-neurons}}
+
+\hypertarget{electrophysiological-identification-of-principal-cells-in-the-bla}{%
+\paragraph{Electrophysiological identification of principal cells in the
+BLA}\label{electrophysiological-identification-of-principal-cells-in-the-bla}}
+
+\hypertarget{electrophysiological-identification-of-late-firing-cells-in-the-cea}{%
+\paragraph{Electrophysiological identification of late-firing cells in
+the
+CeA}\label{electrophysiological-identification-of-late-firing-cells-in-the-cea}}
+
+\hypertarget{electrophysiological-identification-of-regular-firing-cells-in-the-cea}{%
+\paragraph{Electrophysiological identification of regular-firing cells
+in the
+CeA}\label{electrophysiological-identification-of-regular-firing-cells-in-the-cea}}
+
+\end{document}

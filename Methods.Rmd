@@ -1,0 +1,39 @@
+---
+output: pdf_document
+---
+
+# Materials and methods
+
+## General
+
+### Ethic approval
+All procedures were conducted in accordance with the directive 2010/63/EU of the European Parliament and of the Council of 22 September 2010 on the protection of animals used for scientific purposes. Procedures in immunostaining and patch-clamp experiments were additionally conducted in accordance with the Polish Act on the Protection of Animals Used for Scientific or Educational Purposes of 15 January 2015, and approved by the 2nd Local Ethics Commissions on Animal Research (Krakow, Poland). All efforts were made to minimize suffering and to reduce the number of animals used.
+
+### Animals
+
+Male Wistar rats (50-180g on arrival) were purchased from Charles River Laboratories (Research Models and Services; Germany). Four to five animals were housed per polypropylene cage (55x35x20 cm) in controlled environment (22 ± 1$^{\circ}$C, 45 ± 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. Animals were acclimated to the housing environment for at least 4 days before the beginning of the experiments. Rats were weighing 180-300g during the tissue preparation / 5-10 weeks of age. Animals at this age are considered as young adults.  
+
+
+### Reagents
+
+## Whole-cell patch-clamp technique in acute brain slices
+
+### Tissue Preparation
+
+Male Wistar (4-7-week-old) rats were anesthetised with isoflurane (AErrane, Baxter, Poland) and decapitated between 07:00 and 09:00 a.m. Brains were collected in ice-cold, low-sodium, high-magnesium ACSF (artifical cerebrospinal–fluid), containing (in mM): 65 sucrose, 76 NaCl, 25 NaHCO~3~, 1.4 NaH~2~PO~4~, 25 glucose, 2.5 KCl, 7 MgCl~2~, 0.4 Na-ascorbate, and 2 Na-pyruvate (bubbled with 95% O~2~/5% CO~2~), pH 7.4; osmolality 290–300 mOsmol kg^−1^) and cut into 300 $\upmu$m thick coronal sections on a Leica VT 1000 vibrating microtome (Leica Instruments, Germany). Sections containing the amygdala were transferred to an incubation chamber containing carbogenated, warm (32$^{\circ}$C) ACSF, containing (in mM): 92 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 20 HEPES, 2 MgSO~4~ and 25 glucose, 5 Na-ascorbate, 2 thiourea, 3 Na-pyruvate, pH = 7.35; osmolality 290–300 mOsmol kg^−1^). After a recovery period (60-90 minutes) slices were transferred to a recording chamber placed on a fixed stage of an Zeiss Axioskop 2 (Zeiss, Germany) upright microscope, where the tissue was perfused (1-2 ml/min) with carbogenated, warm (32°C) ACSF containing (in mM): 124 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 5 HEPES, 2 MgSO~4~ and 10 glucose, pH = 7.35; osmolality 290–300 mOsmol kg^−1^).
+
+### Whole-cell patch-clamp recordings and data acquisition
+
+Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 MΩ; Sutter Instruments, USA) using horizontal puller (Sutter Instruments) and filled with the following solutions.
+In experiments on Wistar rats the solution contained (in mM): 125 potassium gluconate, 20 KCl, 2 MgCl~2~, 4 Na~2~ATP, 0.4 Na~3~GTP, 5 EGTA, 10 HEPES, pH 7.3, osmolality 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). The calculated liquid junction potential using this solution was 12 mV, and this value was subtracted from the data.
+
+### Post-recording immunostaining
+
+### Electrophysiological identification and classification of chosen neurons
+
+#### Electrophysiological identification of principal cells in the BLA
+
+#### Electrophysiological identification of late-firing cells in the CeA
+
+#### Electrophysiological identification of regular-firing cells in the CeA
+

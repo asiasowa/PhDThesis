@@ -1,0 +1,29 @@
+---
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Methods 
+
+All experiments took place between 8:00 A.M. and 11:00 A.M., unless noted otherwise.
+
+Images were captured on the Leica DFC300 FX camera and then analyzed using NIH ImageJ software.
+
+<!-- weighing 250–350 g -->
+<!-- Szczury przebywały w grupach 4–5 sztuk, w polipropylenowych klatkach (55x35x20 cm), gdzie miały nieograniczony dostęp do wody pitnej oraz do standardowego pokarmu (Special Diet Services, pasza hodowlana – RM3). --> 
+<!-- Badania elektrofizjologiczne wykonywano jedynie na samcach obu szczepów. Masa początkowa szczurów wynosiła 130–150g, a w momencie pobierania tkanki 180–300g, w zależności od przeprowadzanej procedury. Jest to masa ciała zwierząt w wieku 5–10 tygodni. Zwierzęta w tym wieku są już dojrzałe płciowo i określa się je jako młode dorosłe (ang. young adult). -->
+<!-- We housed two rats per cage before -->
+<!-- to acclimate to their new surroundings for at least 4 days before experiments.  -->
+
+(4 to6weeksofage)
+
+and group housed in cages of 2 to 3 same sex littermates except as described below when rats pups were cross-fostered. Young adult male rats 56–64 days of age were selectedrandomlyfromeach litter for the studies.
+<!-- animals were housed grouped 4 to 5 per 55x35x20 cm polypropylene cage -->
+W celu dokładnej oceny położenia grzbietowego jądra szwu, podczas krojenia korzystano z atlasu stereotaktycznego mózgu szczura (Rys. 11; Paxinos i Watson, 2007).
+Do rejestracji wybierano neurony, zlokalizowane w linii środkowej obszaru DRD (Rys. 12).
+
+Elektrodę rejestrującą stanowiła mikropipeta szklana napełniona sztucznym roztworem wewnątrzkomórkowym o składzie (mM): glukonian potasu (130), NaCl (5), CaCl2 (0,3), MgCl2 (2), HEPES (10), Na2–ATP (5), Na–GTP (0,4) i EGTA (1); osmolarności 280 mOsm i pH 7,2. Pipety ze szkła borokrzemowego (1,5 OD x 0,86 x 150L mm, Harvard Apparatus), o średnicy końca 2–3 μm i oporności 5–8 MΩ wyciągano na wyciągarce do kapilar (Sutter Instrument P–97). Wewnątrz szklanej mikropipety znajdował się drut srebrny, pokryty AgCl2 (elektroda chlorosrebrowa), połączony z przedwzmacniaczem (CV–7B, Axon Instruments), wzmacniaczem (SEC 05LX, NPI) i przetwornikiem analogowo–cyfrowym (Digidata 1440A, Axon Instruments) oraz komputerem PC z oprogramowaniem Clampex 10 (Molecular Devices). Sygnał rejestrowano z wykorzystaniem filtra dolnoprzepustowego 2 kHz, a następnie próbkowano z częstotliwością 20 kHz. Mikropipeta szklana z elektrodą montowana była na mikromanipulatorze piezoelektrycznym (Burleigh PCS-6000, EXFO) pod kątem 45°. Uchwyt, w którym mocowano pipetę, połączony był z wężykiem umożliwiającym aplikację dodatniego oraz ujemnego ciśnienia. ElektrodęElektrodę rejestrującą stanowiła mikropipeta szklana napełniona sztucznym roztworem wewnątrzkomórkowym o składzie (mM): glukonian potasu (130), NaCl (5), CaCl2 (0,3), MgCl2 (2), HEPES (10), Na2–ATP (5), Na–GTP (0,4) i EGTA (1); osmolarności 280 mOsm i pH 7,2. Pipety ze szkła borokrzemowego (1,5 OD x 0,86 x 150L mm, Harvard Apparatus), o średnicy końca 2–3 μm i oporności 5–8 MΩ wyciągano na wyciągarce do kapilar (Sutter Instrument P–97). Wewnątrz szklanej mikropipety znajdował się drut srebrny, pokryty AgCl2 (elektroda chlorosrebrowa), połączony z przedwzmacniaczem (CV–7B, Axon Instruments), wzmacniaczem (SEC 05LX, NPI) i przetwornikiem analogowo–cyfrowym (Digidata 1440A, Axon Instruments) oraz komputerem PC z oprogramowaniem Clampex 10 (Molecular Devices). Sygnał rejestrowano z wykorzystaniem filtra dolnoprzepustowego 2 kHz, a następnie próbkowano z częstotliwością 20 kHz. Mikropipeta szklana z elektrodą montowana była na mikromanipulatorze piezoelektrycznym (Burleigh PCS-6000, EXFO) pod kątem 45°. Uchwyt, w którym mocowano pipetę, połączony był z wężykiem umożliwiającym aplikację dodatniego oraz ujemnego ciśnienia. Elektrodę

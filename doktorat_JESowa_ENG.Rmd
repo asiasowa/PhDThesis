@@ -1,0 +1,157 @@
+---
+output:
+  pdf_document:
+    fig_caption: yes
+    number_sections: yes
+    latex_engine: xelatex
+bibliography: thesis2.bib
+csl: apa_numeric.csl
+urlcolor: black
+linkcolor: black
+fontsize: 12pt
+geometry: margin = 1.2in
+header-includes:
+- \usepackage{placeins}
+- \usepackage{fancyhdr}
+- \usepackage{setspace}
+- \usepackage{chngcntr}
+- \usepackage{microtype}
+- \usepackage{enumitem}
+- \usepackage{inputenc}
+- \onehalfspacing
+- \counterwithin{figure}{section}
+- \counterwithin{table}{section}
+- \usepackage{upgreek}
+---
+
+---
+nocite: | 
+  @Example1999, @Example2000
+...
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.path = 'figures/',
+                      echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+\pagenumbering{gobble}
+
+```{r child = 'titlepage2.Rmd'}
+```
+
+
+\newlist{abbrv}{itemize}{1}
+\setlist[abbrv,1]{label=,labelwidth=1in,align=parleft,itemsep=0.1\baselineskip,leftmargin=!}
+\newpage
+\pagestyle{fancy}
+
+\fancyhead[LE,RO]{}
+\fancyhead[LO,RE]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\pagenumbering{roman}
+
+\fancyhead[CO,CE]{Abstract}
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+```{r child = 'abstract.Rmd'}
+```
+\newpage
+\fancyhead[CO,CE]{Streszczenie}
+\section*{Streszczenie}
+\addcontentsline{toc}{section}{Streszczenie}
+
+```{r child = 'streszczenie.Rmd'}
+```
+
+\newpage
+\fancyhead[CO,CE]{Podziękowania}
+\section*{Podziękowania}
+\addcontentsline{toc}{section}{Podziękowania}
+
+```{r child = 'acknowledgements.Rmd'}
+```
+
+\newpage
+\fancyhead[CO,CE]{Abbreviations}
+\section*{Abbreviations}
+\addcontentsline{toc}{section}{Abbreviations}
+
+```{r child = 'abbreviations.Rmd'}
+```
+
+\FloatBarrier
+
+\newpage
+\fancyhead[CO,CE]{List of Figures}
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+
+\newpage
+\fancyhead[CO,CE]{List of Tables}
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+
+
+\newpage
+\fancyhead[CO,CE]{Table of Contents}
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
+
+\newpage
+\fancyhead[CO,CE]{Introduction}
+
+```{r child = 'Introduction.Rmd'}
+```
+
+\FloatBarrier
+\newpage
+\fancyhead[CO,CE]{Aim of the study}
+
+```{r child = 'Aim.Rmd'}
+```
+
+\FloatBarrier
+\newpage
+\fancyhead[CO,CE]{Materials and methods}
+
+```{r child = 'Methods.Rmd'}
+```
+
+\FloatBarrier
+\newpage
+\fancyhead[CO,CE]{Results}
+
+```{r child = 'Results.Rmd'}
+```
+\FloatBarrier
+\newpage
+\fancyhead[CO,CE]{Discussion}
+
+```{r child = 'Discussion.Rmd'}
+```
+
+
+\FloatBarrier
+\newpage
+\fancyhead[CO,CE]{Conclusions}
+
+```{r child = 'Conclusions.Rmd'}
+```
+
+
+\newpage
+
+```{r child = 'appendix.Rmd'}
+```
+
+\FloatBarrier
+\newpage
+\fancyhead[CO,CE]{References}
+
+# References

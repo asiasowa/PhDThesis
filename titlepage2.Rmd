@@ -7,7 +7,7 @@
 
 \vspace{3cm}
 
- {\huge\bfseries Effects of chosen chemokines on the activity and synaptic transmission  \\ in central and basolateral complex of the amygdala\\}
+ {\huge\bfseries Effects of chosen chemokines on neuronal properties and synaptic transmission  \\ in central and basolateral complex of the rat amygdala\\}
 
  \vspace{1.5cm}
  {\Large\bfseries Joanna Ewa Sowa}\\[5pt]

@@ -6,5 +6,6 @@ output: pdf_document
 
 \begin{abbrv}
 \item[ACSF] artificial cerebrospinal fluid
+\item[DIC] differential interference contrast
 
 \end{abbrv}

@@ -6,6 +6,17 @@ output: pdf_document
 
 \begin{abbrv}
 \item[ACSF] artificial cerebrospinal fluid
-\item[DIC] differential interference contrast
+\item [BLA] basolateral nucleus of the amygdala
+\item [CeA] central nucleus of the amygdala
+\item [CNS] central nervous system 
+\item [DIC] differential interference contrast
+\item [GPCRs] G-protein-coupled receptors
+\item [ICM] intercalated cell masses 
+\item [LHA] lateral hypothalamus area
+\item [mEPSC] miniature excibitory post-synaptic currents
+\item [mIPSC] miniature inhibitory post-synaptic currents
+\item [NDS] normal donkey serum
+\item [sEPSC] spontaneous excibitory post-synaptic currents
+\item [sIPSC] spontaneous inhibitory post-synaptic currents
 
 \end{abbrv}

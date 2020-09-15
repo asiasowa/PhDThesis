@@ -3,3 +3,5 @@ output: pdf_document
 ---
 
 # Discussion
+
+the probability of neurotransmitter release was either increased, decreased or remained constant as a consequence of a differential presynaptic activity. In the connectivity context it is rather interesting that a presynaptic neuron responsible of a given synaptic strength forms synaptic connections with different neurons and, conversely that the same postsynaptic neuron was contacted by different types of synaptic connec- tions formed by different presynaptic cells. Furthermore, this functional heterogeneity is further supported by the finding that presynaptic neurons forming synapses having a different synaptic weights display a different axonal pattern.

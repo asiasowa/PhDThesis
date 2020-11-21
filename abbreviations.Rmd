@@ -5,7 +5,10 @@ output: pdf_document
 
 
 \begin{abbrv}
+
+
 \item[ACSF] artificial cerebrospinal fluid
+\item[AMPA] alpha-amino-3-hydroxy-5- methyl-4-isoxazilepropionate 
 \item [BLA] basolateral nucleus of the amygdala
 \item [CeA] central nucleus of the amygdala
 \item [CNS] central nervous system 
@@ -16,6 +19,7 @@ output: pdf_document
 \item [mEPSC] miniature excibitory post-synaptic currents
 \item [mIPSC] miniature inhibitory post-synaptic currents
 \item [NDS] normal donkey serum
+\item [NMDA] N-methyl-aspartate 
 \item [sEPSC] spontaneous excibitory post-synaptic currents
 \item [sIPSC] spontaneous inhibitory post-synaptic currents
 

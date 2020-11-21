@@ -4,3 +4,22 @@ output: pdf_document
 
 
 # Appendix
+
+## PhD thesis founding
+This PhD thesis and candidate were supported by:   
+
+* **National Science Centre Poland doctoral scholarship, ETIUDA**: Wpływ wybranych chemokin na właściwości komórek nerwowych i przekaźnictwo synaptyczne w obszarze kompleksu ciała migdałowatego szczura [Effects of chosen chemokines on neuronal properties and synaptic transmission in central and basolateral complex of the rat amygdala], UMO-2019/32/T/NZ4/00592 - grant holder 2019-2020
+
+* **National Science Centre Poland Grant, PRELUDIUM**: 	Wpływ wybranych chemokin na aktywność oraz transmisję synaptyczną neuronów w centralnym i podstawnobocznym kompleksie ciała migdałowatego [Effects of chosen chemokines on neuronal activity and synaptic transmission in central and basolateral complex of the amygdala], UMO-2016/21/N/NZ4/03621, grant executor 2016-2020 (grant holder: Joanna Ewa Sowa)
+
+## PhD candidate’s scientific activity
+### Concerning PhD thesis
+#### Publications
+#### Oral presentations
+#### Posters
+
+### Other
+#### Publications
+#### Oral presentations
+#### Posters
+

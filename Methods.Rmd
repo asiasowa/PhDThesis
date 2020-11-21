@@ -25,24 +25,28 @@ Male Wistar (4-7-week-old) rats were anesthetised with isoflurane (AErrane, Baxt
 
 ### Whole-cell patch-clamp recordings and data acquisition
 
-Neurons were identified based on their location and somatic morphological characteristics under infrared differential interference contrast (DIC). The image from the microscope was enhanced using a CCD camera and displayed on a computer monitor. The border of basolateral or central amygdala were identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@Paxinos2007], corresponding to -1.92 mm -3.12 caudal to bregma \ref{photoneuronDIC}. Neurons with a healthy appearance presented a smooth surface, and the cell body and parts of the dendrites could be clearly seen. Neurons were approached under visual control with a patch pipette using a three-dimensional micromanipulator (uMp micromanipulator system, Sensapex, Finland). Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 MΩ; Sutter Instruments, USA)  using horizontal puller (Sutter Instruments P–97) and filled with following solutions. 
+Neurons were identified based on their location and somatic morphological characteristics under infrared differential interference contrast (DIC). The image from the microscope was enhanced using a CCD camera and displayed on a computer monitor. The border of basolateral or central amygdala were identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@Paxinos2007], corresponding to -1.92 mm -3.12 caudal to bregma \ref{photoneuronDIC}. Neurons with a healthy appearance presented a smooth surface, and the cell body and parts of the dendrites could be clearly seen. Neurons were approached under visual control with a patch pipette using a three-dimensional micromanipulator (uMp micromanipulator system, Sensapex, Finland). Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 MΩ; Sutter Instruments, USA) using horizontal puller (Sutter Instruments P–97) and filled with following solutions. 
 
- ![Figure caption \label{photoneuronDIC}](filename.png)
+ ![Figure caption \label{photoneuronDIC}](images\zdjeciedic40x.png)
  
 In experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolality 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). In experiment measuring inhibitory synaptic transmission, the solution contained ....
 The pipette was positively pressurized by applying a mouth suction to help prevent contamination of the tip and to blow aside surrounding tissue and lowered to the vicinity of the membrane keeping a positive pressure. After forming a high-resistance seal (> 1 GΩ, cell-atached configuration) between the recording pipette and cell membrane by applying negative pressure, a second pulse of negative pressure was used to break the patch of membrane enclosed with the pipette's tip and access inside of the neuron. An electrical contact between the cytoplasm and a patch electrode was established (whole-cell configuration). After break-in, cells stabilized for 5 min, during which intracellular solution slowly diffuses from the pipette into cytoplasm. Ground electrode, which was chloride-coated silver wire in chamber filled with bath solution, kept the electrical potential of the outer side of cell membrane at 0 mV. Electrical potential of the inner side of cell membrane was controlled through an patch electrode filled with intrapipette solution with chlorided silver wire connected to headstage () and amplifier (). Signals were low-pass filtered at 3 kHz, digitized at 20kHz and sampled through an analogue-to-digital converter (). Data were stored on a computer disk and analyzed offline using Clampfit 10.2 (Molecular Devices) software. Voltages were corrected for the liquid-junction potential (estimated as ~12 mV). The access resistance was monitored throughout each experiment. Only recordings with stable access resistance lower than 30 MΩ were considered acceptable for analysis. All peptides and drugs were delivered via a bath perfusion system.
 
 ### Electrophysiological identification and classification of chosen neurons
 
-Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration. Once the whole-cell recording was obtained, cell characteristics were recorded using current-clamp techniques.
+Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration. Once the whole-cell recording was obtained, cell characteristics were recorded using current-clamp techniques. The input-output relationship was obtained for each neuron using hyper- and depolarizing current pulses (500 ms). The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude.
 
 #### Electrophysiological identification of principal cells in the BLA
+
+Principal neurons were identified based on their unique electrophysiological properties.
 
 #### Electrophysiological identification of late-firing cells in the CeA
 
 #### Electrophysiological identification of regular-firing cells in the CeA
 
 ### Recording protocols and data analysis
+
+The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model. The gain (slope) and rheobase (minimal current necessary to fire the first action potential) parameters will be determined for further analysis.
 
 ### Post-recording immunostaining
 

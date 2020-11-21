@@ -4,8 +4,8 @@ output:
     fig_caption: yes
     number_sections: yes
     latex_engine: xelatex
-bibliography: thesis2.bib
-csl: apa_numeric.csl
+bibliography: common\library_fixed.bib
+csl: common\apa_numeric.csl
 urlcolor: black
 linkcolor: black
 fontsize: 12pt
@@ -22,7 +22,8 @@ header-includes:
 - \counterwithin{figure}{section}
 - \counterwithin{table}{section}
 - \usepackage{upgreek}
----
+
+
 
 ---
 nocite: | 
@@ -103,6 +104,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 \newpage
 \pagenumbering{arabic}
 
+\FloatBarrier
 \newpage
 \fancyhead[CO,CE]{Introduction}
 

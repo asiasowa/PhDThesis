@@ -7,11 +7,17 @@ output: pdf_document
 ## General
 
 ### Ethic approval
-All procedures were conducted in accordance with the directive 2010/63/EU of the European Parliament and of the Council of 22 September 2010 on the protection of animals used for scientific purposes. Procedures in immunostaining and patch-clamp experiments were additionally conducted in accordance with the Polish Act on the Protection of Animals Used for Scientific or Educational Purposes of 15 January 2015, and approved by the 2nd Local Ethics Commissions on Animal Research (Krakow, Poland). All efforts were made to minimize suffering and to reduce the number of animals used.
+All procedures were conducted in accordance with the directive 2010/63/EU of the European Parliament and of the Council of 22 September 2010 on the protection of animals used for scientific purposes. 
+Procedures in immunostaining and patch-clamp experiments were additionally conducted in accordance with the Polish Act on the Protection of Animals Used for Scientific or Educational Purposes of 15 January 2015, and approved by the 2nd Local Ethics Commissions on Animal Research (Krakow, Poland). 
+All efforts were made to minimize suffering and to reduce the number of animals used.
 
 ### Animals
 
-Male Wistar rats (50-180g on arrival) were purchased from Charles River Laboratories (Research Models and Services; Germany). Four to five animals were housed per polypropylene cage (55x35x20 cm) in controlled environment (22 ± 1$^{\circ}$C, 45 ± 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. Animals were acclimated to the housing environment for at least 4 days before the beginning of the experiments. Rats were weighing 180-300g during the tissue preparation / 5-10 weeks of age. Animals at this age are considered as young adults.  
+Male Wistar rats (50-180g on arrival) were purchased from Charles River Laboratories (Research Models and Services; Germany).
+Four to five animals were housed per polypropylene cage (55x35x20 cm) in controlled environment (22 ± 1$^{\circ}$C, 45 ± 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. 
+Animals were acclimated to the housing environment for at least 4 days before the beginning of the experiments. 
+Rats were weighing 180-300g during the tissue preparation / 5-10 weeks of age. 
+Animals at this age are considered as young adults.  
 
 
 ### Reagents
@@ -20,21 +26,47 @@ Male Wistar rats (50-180g on arrival) were purchased from Charles River Laborato
 
 ### Tissue Preparation
 
-Male Wistar (4-7-week-old) rats were anesthetised with isoflurane (AErrane, Baxter, Poland) and decapitated between 07:00 and 09:00 a.m. Brains were collected in ice-cold, low-sodium, high-magnesium ACSF (artifical cerebrospinal–fluid), containing (in mM): 65 sucrose, 76 NaCl, 25 NaHCO~3~, 1.4 NaH~2~PO~4~, 25 glucose, 2.5 KCl, 7 MgCl~2~, 0.4 Na-ascorbate, and 2 Na-pyruvate (bubbled with 95% O~2~/5% CO~2~), pH 7.4; osmolality 290–300 mOsmol kg^−1^) and cut into 300 $\upmu$m thick coronal sections on a Leica VT 1000 vibrating microtome (Leica Instruments, Germany). After slicing, brain slices containing amygdala were transfered and held in a an incubation chamber filled with carbogenated ACSF, containing (in mM): 92 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 20 HEPES, 2 MgSO~4~ and 25 glucose, 5 Na-ascorbate, 2 thiourea, 3 Na-pyruvate, pH = 7.35; osmolality 290–300 mOsmol kg^−1^). Slices were incubated at 31–33 $^{\circ}$C for 20 min and then allowed to equilibrate for at least 1h at room temperature (RT). After this recovery period, individual slices were transferred to a recording chamber placed on a fixed stage of an Zeiss Axioskop 2 (Zeiss, Germany) upright microscope, where the tissue was perfused (1-2 ml/min) with carbogenated, warm (32$^{\circ}$C) ACSF containing (in mM): 124 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 5 HEPES, 2 MgSO~4~ and 10 glucose, pH = 7.35; osmolality 290–300 mOsmol kg^−1^).
+Male Wistar (4-7-week-old) rats were anesthetised with isoflurane (AErrane, Baxter, Poland) and decapitated between 07:00 and 09:00 a.m. 
+Brains were collected in ice-cold, low-sodium, high-magnesium ACSF (artifical cerebrospinal–fluid), containing (in mM): 65 sucrose, 76 NaCl, 25 NaHCO~3~, 1.4 NaH~2~PO~4~, 25 glucose, 2.5 KCl, 7 MgCl~2~, 0.4 Na-ascorbate, and 2 Na-pyruvate (bubbled with 95% O~2~/5% CO~2~), pH 7.4; osmolality 290–300 mOsmol kg^−1^) and cut into 300 $\upmu$m thick coronal sections on a Leica VT 1000 vibrating microtome (Leica Instruments, Germany). 
+After slicing, brain slices containing amygdala were transfered and held in an incubation chamber filled with carbogenated ACSF, containing (in mM): 92 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 20 HEPES, 2 MgSO~4~ and 25 glucose, 5 Na-ascorbate, 2 thiourea, 3 Na-pyruvate, pH = 7.35; osmolality 290–300 mOsmol kg^−1^). 
+Slices were incubated at 31–33 $^{\circ}$C for 20 min and then allowed to equilibrate for at least 1h at room temperature (RT).
+After this recovery period, individual slices were transferred to a recording chamber placed on a fixed stage of an Zeiss Axioskop 2 (Zeiss, Germany) upright microscope, where the tissue was perfused (1-2 ml/min) with carbogenated, warm (32$^{\circ}$C) ACSF containing (in mM): 124 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 5 HEPES, 2 MgSO~4~ and 10 glucose, pH = 7.35; osmolality 290–300 mOsmol kg^−1^).
 
 
 ### Whole-cell patch-clamp recordings and data acquisition
 
-Neurons were identified based on their location and somatic morphological characteristics under infrared differential interference contrast (DIC). The image from the microscope was enhanced using a CCD camera and displayed on a computer monitor. The border of basolateral or central amygdala were identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@Paxinos2007], corresponding to -1.92 mm -3.12 caudal to bregma \ref{photoneuronDIC}. Neurons with a healthy appearance presented a smooth surface, and the cell body and parts of the dendrites could be clearly seen. Neurons were approached under visual control with a patch pipette using a three-dimensional micromanipulator (uMp micromanipulator system, Sensapex, Finland). Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 MΩ; Sutter Instruments, USA) using horizontal puller (Sutter Instruments P–97) and filled with following solutions. 
+Neurons were identified based on their location and somatic morphological characteristics under infrared differential interference contrast (DIC). 
+The image from the microscope was enhanced using a CCD camera and displayed on a computer monitor. 
+The border of basolateral or central amygdala were identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@Paxinos2007], corresponding to -1.92 mm -3.12 caudal to bregma \ref{photoneuronDIC}. 
+Neurons with a healthy appearance presented a smooth surface, and the cell body and parts of the dendrites could be clearly seen. 
+Cells were approached under visual control with a patch pipette using a three-dimensional micromanipulator (uMp micromanipulator system, Sensapex, Finland). 
+Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 MΩ; Sutter Instruments, USA) using horizontal puller (Sutter Instruments P–97) and filled with following solutions. 
 
  ![Figure caption \label{photoneuronDIC}](images\zdjeciedic40x.png)
  
-In experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolality 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). In experiment measuring inhibitory synaptic transmission, the solution contained ....
-The pipette was positively pressurized by applying a mouth suction to help prevent contamination of the tip and to blow aside surrounding tissue and lowered to the vicinity of the membrane keeping a positive pressure. After forming a high-resistance seal (> 1 GΩ, cell-atached configuration) between the recording pipette and cell membrane by applying negative pressure, a second pulse of negative pressure was used to break the patch of membrane enclosed with the pipette's tip and access inside of the neuron. An electrical contact between the cytoplasm and a patch electrode was established (whole-cell configuration). After break-in, cells stabilized for 5 min, during which intracellular solution slowly diffuses from the pipette into cytoplasm. Ground electrode, which was chloride-coated silver wire in chamber filled with bath solution, kept the electrical potential of the outer side of cell membrane at 0 mV. Electrical potential of the inner side of cell membrane was controlled through an patch electrode filled with intrapipette solution with chlorided silver wire connected to headstage () and amplifier (). Signals were low-pass filtered at 3 kHz, digitized at 20kHz and sampled through an analogue-to-digital converter (). Data were stored on a computer disk and analyzed offline using Clampfit 10.2 (Molecular Devices) software. Voltages were corrected for the liquid-junction potential (estimated as ~12 mV). The access resistance was monitored throughout each experiment. Only recordings with stable access resistance lower than 30 MΩ were considered acceptable for analysis. All peptides and drugs were delivered via a bath perfusion system.
+In experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolality 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). 
+
+In experiment measuring inhibitory synaptic transmission, the solution contained 122 Cs-gluconate, 10 CsCl, 10 HEPES, 0.3 EGTA, 10 phosphocreatine-Na~2~, 5 Mg-ATP, 0.4 Na-GTP, pH = 7.35; osmolality 280-290 mOsmol kg^−1^.
+
+The pipette was positively pressurized by applying a mouth suction to help prevent contamination of the tip and to blow aside surrounding tissue and lowered to the vicinity of the membrane keeping a positive pressure. 
+After forming a high-resistance seal (> 1 GΩ, cell-atached configuration) between the recording pipette and cell membrane by applying negative pressure, a second pulse of negative pressure was used to break the patch of membrane enclosed with the pipette's tip and access inside of the neuron. 
+An electrical contact between the cytoplasm and a patch electrode was established (whole-cell configuration). 
+After break-in, cells stabilized for 5 min, during which intracellular solution slowly diffuses from the pipette into cytoplasm.
+Ground electrode, which was chloride-coated silver wire in chamber filled with bath solution, kept the electrical potential of the outer side of cell membrane at 0 mV. 
+Electrical potential of the inner side of cell membrane was controlled through an patch electrode filled with intrapipette solution with chlorided silver wire connected to headstage <!--()--> and Axopatch 1D amplifier (Axon Instrument, USA). 
+Signals were low-pass filtered at 3 kHz, digitized at 20kHz and sampled through an analogue-to-digital converter (Digidata 1440, Molecular Devices, USA). 
+Data were stored on a computer disk and analyzed offline using Clampfit 10.2 software (Molecular Devices, USA). 
+Voltages were corrected for the liquid-junction potential (estimated as ~12 mV). 
+The access resistance was monitored throughout each experiment. 
+Only recordings with stable access resistance lower than 30 MΩ were considered acceptable for analysis. 
+All peptides and drugs were delivered via a bath perfusion system.
 
 ### Electrophysiological identification and classification of chosen neurons
 
-Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration. Once the whole-cell recording was obtained, cell characteristics were recorded using current-clamp techniques. The input-output relationship was obtained for each neuron using hyper- and depolarizing current pulses (500 ms). The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude.
+Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration. 
+Once the whole-cell recording was obtained, cell characteristics were recorded using current-clamp techniques. 
+The input-output relationship was obtained for each neuron using hyper- and depolarizing current pulses (500 ms). 
+The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude.
 
 #### Electrophysiological identification of principal cells in the BLA
 
@@ -46,16 +78,27 @@ Principal neurons were identified based on their unique electrophysiological pro
 
 ### Recording protocols and data analysis
 
-The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model. The gain (slope) and rheobase (minimal current necessary to fire the first action potential) parameters will be determined for further analysis.
+The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model. 
+The gain (slope) and rheobase (minimal current necessary to fire the first action potential) parameters will be determined for further analysis.
 
 ### Post-recording immunostaining
 
-After recording slices were fixed overnight with a 4% formaldehyde at 4°C and stained according to following protocol in order to examine neurochemical content of recorded neurons. In brief, free-floating sections were blocked and permeabilised (10% normalised donkey serum (NDS), 0.1% Triton X100 in PBS) at 4°C overnight and incubated with a primary antibodies solution supplemented with an ExtrAvidin-Cy3 conjugate: mouse anti-OXT (1:1000 or 1:10000), rabbit anti-AVP (1:500 or 1:5000), ExtrAvidin-Cy3 (1:200), 2% NDS, 0.3% Tx100 in PBS, for 72 hours at 4°C. Finally, sections were incubated with a secondary antibody mixture for 24 h at 4°C (2% NDS in PBS solution containing donkey anti-mouse Alexa Fluor 647-conjugated antibody (1:400) and donkey anti-rabbit Cy3-conjugated antibody (1:400)). Each step was followed by a PBS wash. Stained sections were mounted and coverslipped with Vectashield, and imaged with an Axio Observer Z1 (Zeiss) confocal laser microscope or Imager.M2 (Zeiss) fluorescence microscope.
+After recording slices were fixed overnight with a 4% formaldehyde at 4°C and stained according to following protocol in order to examine neurochemical content of recorded neurons. 
+In brief, free-floating sections were blocked and permeabilised (10% normalised donkey serum (NDS), 0.1% Triton X100 in PBS) at 4°C overnight and incubated with a primary antibodies solution supplemented with an ExtrAvidin-Cy3 conjugate: mouse anti-OXT (1:1000 or 1:10000), rabbit anti-AVP (1:500 or 1:5000), ExtrAvidin-Cy3 (1:200), 2% NDS, 0.3% Tx100 in PBS, for 72 hours at 4°C.
+Finally, sections were incubated with a secondary antibody mixture for 24 h at 4°C (2% NDS in PBS solution containing donkey anti-mouse Alexa Fluor 647-conjugated antibody (1:400) and donkey anti-rabbit Cy3-conjugated antibody (1:400)). 
+Each step was followed by a PBS wash. 
+Stained sections were mounted and coverslipped with Vectashield, and imaged with an Axio Observer Z1 (Zeiss) confocal laser microscope or Imager.M2 (Zeiss) fluorescence microscope.
 
 
 ## Extracellular recording and LTP
 
 ## Immunohistochemistry
 
-A subset of brains were stained for NeuN to visualize neuronal nuclei. After intracardial perfusion with 4% paraformaldehyde in PBS, brains were postfixed overnight and transferred to 30% sucrose in PBS. After the brains sank, sagittal slices (40 µ m) were prepared using a cryostat and mounted onto glass slides. Slices were washed in PBS (3 × 10 min each) and then blocked for 1 h (10% normal goat serum, 0.1% BSA, 0.05% Triton X-100 in PBS). Primary antibody (rabbit anti-NeuN, diluted 1:1,000; Millipore ABN78) was dissolved in carrier solution (1% normal goat serum, 0.1% BSA, 0.05% Triton X-100 in PBS) and applied overnight. Slices were then washed in PBS (3 × 10 min each) and incubated for 2 h in secondary antibody solution (Alexa Fluor-568 goat anti-rabbit; 1:500 dilution; Invitrogen A-11011). Sections were washed in PBS three more times before the slides were cover slipped with Vectashield with DAPI.
+A subset of brains were stained for NeuN to visualize neuronal nuclei. 
+After intracardial perfusion with 4% paraformaldehyde in PBS, brains were postfixed overnight and transferred to 30% sucrose in PBS. 
+After the brains sank, sagittal slices (40 µ m) were prepared using a cryostat and mounted onto glass slides. 
+Slices were washed in PBS (3 × 10 min each) and then blocked for 1 h (10% normal goat serum, 0.1% BSA, 0.05% Triton X-100 in PBS). 
+Primary antibody (rabbit anti-NeuN, diluted 1:1,000; Millipore ABN78) was dissolved in carrier solution (1% normal goat serum, 0.1% BSA, 0.05% Triton X-100 in PBS) and applied overnight. 
+Slices were then washed in PBS (3 × 10 min each) and incubated for 2 h in secondary antibody solution (Alexa Fluor-568 goat anti-rabbit; 1:500 dilution; Invitrogen A-11011). 
+Sections were washed in PBS three more times before the slides were cover slipped with Vectashield with DAPI.
 

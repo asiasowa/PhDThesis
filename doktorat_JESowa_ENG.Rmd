@@ -108,34 +108,34 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 \newpage
 \fancyhead[CO,CE]{Introduction}
 
-```{r child = 'Introduction.Rmd'}
+```{r child = '01-Introduction.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
 \fancyhead[CO,CE]{Aim of the study}
 
-```{r child = 'Aim.Rmd'}
+```{r child = '02-Aim.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
 \fancyhead[CO,CE]{Materials and methods}
 
-```{r child = 'Methods.Rmd'}
+```{r child = '03-Methods.Rmd'}
 ```
 
 \FloatBarrier
 \newpage
 \fancyhead[CO,CE]{Results}
 
-```{r child = 'Results.Rmd'}
+```{r child = '04-Results.Rmd'}
 ```
 \FloatBarrier
 \newpage
 \fancyhead[CO,CE]{Discussion}
 
-```{r child = 'Discussion.Rmd'}
+```{r child = '05-Discussion.Rmd'}
 ```
 
 
@@ -143,13 +143,13 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 \newpage
 \fancyhead[CO,CE]{Conclusions}
 
-```{r child = 'Conclusions.Rmd'}
+```{r child = '06-Conclusions.Rmd'}
 ```
 
 
 \newpage
 
-```{r child = 'appendix.Rmd'}
+```{r child = '07-appendix.Rmd'}
 ```
 
 \FloatBarrier

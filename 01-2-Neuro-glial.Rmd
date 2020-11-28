@@ -1,0 +1,9 @@
+---
+output: pdf_document
+---
+
+## Neuro-glial interactions     
+
+### Neuron-astrocyte signaling     
+
+### Neuron-microglia signaling     

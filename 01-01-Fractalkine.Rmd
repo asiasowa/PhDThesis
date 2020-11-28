@@ -1,0 +1,27 @@
+### CX3CL1
+
+Recently it has been established in vitro and in vivo, that the acute activation of dorsal horn microglia by inflammaory insult or sciatic nerve impairments result in a release of CatS from microglia, which liberates FKN from dorsal horn of spinal cord neurons (Clark and Malcangio, 2012; Clark et al., 2010, 2009). 
+
+The full-length molecule is also larger than most other chemokines, containing approximately 373 amino acid residues compared to the more common 70–80 amino acid size. 
+The 95 kDa full-length protein is a type I transmembrane protein consisting of a 76-amino acid N-terminal chemokine domain, a 241-amino acid glycosylated mucin-like stalk, an 18-amino acid transmembrane region and an intracellular C- terminal domain.
+The approximately 70 kDa soluble N-terminal chemokine domain can be released from the full-length protein via the action of several metalloproteinases such as cathepsin S, ADAM10, and ADAM17 (TACE: TNF-α-converting enzyme) in both the periphery and CNS (Garton et al., 2001; Hundhausen et al., 2003; Clark et al., 2007; Cook et al., 2010; Jones et al., 2013). 
+Unlike most chemokines, CX3CL1 is constitutively expressed in the CNS with particularly high levels in hippocampal neurons (Harrison et al., 1998). CX3CR1,
+
+Fractalkine, also known as CX3CL1, is a unique chemokine belonging to CX3C chemokine family that is present both as soluble and membrane-anchored form [@Bajetto2001]. 
+As a transmembrane molecule it contains 373 amino-acid residues consisting of an extracellular N- terminal domain (residues 1–76), a mucin-like stalk (residues 77–317), a transmembrane a helix (residues 318–336), and a short cytoplasmic tail (residues 337–373). 
+It is converted to a soluble form on cleavage from the plasma membrane, through the action of metalloproteinases (enzymes containing a disintegrin and metalloproteinase domain (ADAM 10 and ADAM17 on leukocytes) (Hundhausen et al., 2003) or cysteine protease Cathepsin S (CatS) which is expressed and released by microglial cells in the spinal cord (Clark et al., 2007; Meucci et al., 2000; Ransohoff, 2002). 
+Soluble CX3CL1 acts as a conventional chemokine, enhancing the recruitment and activation of CX3CR1-expressing leukocytes, mostly monocytes, whereas membrane bound CX3CL1 acts as an adhesion molecule, mediating leucocyte capture and infiltration (Ransohoff, 2009). 
+However, it has been established that both membrane associated and soluble forms bind to their cognate receptor, CX3CR1, with the same affinity (Harrison et al., 2001).
+
+
+CX3CL1 is unusual in that it appears to bind only one receptor, the G~i~ protein-coupled receptor, CX3CR1 (Allen et al., 2007). 
+
+CX3CR1, the only known receptor for CX3CL1, is expressed predominantly on microglia in the mouse CNS (Cardona et al., 2006).
+The cell type expression pattern of CX3CR1 in the CNS remains controversial, however, since several studies report CX3CR1 expression on neurons in vitro as well as in brain regions including the hippocampus, Raphe nucleus, nucleus of the solitary tract (NTS) and paraventricular nucleus (PVN) of the hypothalamus in rats (Meucci et al., 1998, 2000; Maciejewski- Lenoir et al., 1999; Hatori et al., 2002; Hughes et al., 2002; Tarozzo et al., 2003; Verge et al., 2004; Limatola et al., 2005; Zhuang et al., 2007; Heinisch and Kirby, 2009; Ruchaya et al., 2012, 2014).
+
+CX3CR1, a G-protein coupled receptor (GPCR) which specifically interacts with both forms of CX3CL1 [@Imai1997]. 
+Recent reports confine the localization of CX3CL1 to neurons and astrocytes and CX3CR1 to neurons and microglia in many brain regions including the hippocampus, amygdala, cerebral cortex, globus pallidus, striatum and thalamus [@Tarozzo2003]. 
+In physiological conditions, CX3CL1/CX3CR1 signaling is involved in different neural functions both in development (participation in functional maturation of neuronal circuits driving cell positioning) and adulthood (regulation of synaptic plasticity and cognitive functions) [@Lauro2015]. 
+Furthermore, fractalkine seems to play an essential role in a unique neuronal-glial interaction between neurons and CX3CR1-expressing microglia under normal and pathological states [@Cardona2006, @Jurgens2012]. 
+In fact, CX3CL1 is a confirmed inhibitor of basal glutamate synaptic activity in the hippocampus [@Bertollini2006]. 
+The ability of CX3CL1 to modulate glutamate function is thought to be responsible for some of its neuroprotective actions, and provides further support for the chemokine-neuromodulatory role in the CNS [@Adler2005, @Callewaere2007, @Guyon2007].

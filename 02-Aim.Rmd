@@ -1,15 +1,21 @@
----
-output: pdf_document
----
-
 # Aim of the study
 
-Considering described evidence and proposed hypotheses the present studies were focused on two separate but physiologically and functionally related subjects:   
+Considering described evidence and proposed hypotheses, this dissertation aimed to investigate the functional role of two  representatives of distinct families (CX3C and CXC) of chemokines in main input and output amygdalar nuclei. Therefore, this project can be sub-divided into 4 main groups of experiment (<!--fig-->):
+the present project can be sub-divided into 4 separate, but physiologically and functionally related, parts:   <!-- Considering described evidence and proposed hypotheses, the present studies were focused on two separate but physiologically and functionally related subjects:   -->
 
-* Investigation of ...   
+* Investigation of electrophysiological actions and cellular distribution of CX3CL1 in the rat basolateral nucleus
 
-* Investigatation of ...   
+* Investigation of electrophysiological actions and cellular distribution of CX3CL1 in the rat central nucleus
 
-To address these issues several research techniques were employed: whole-cell patch-clamp and extracellular recordings ex vivo, immunofluorescent and immunohistochemical staining and ...
+* Investigation of electrophysiological actions and cellular distribution of CXCL12 in the rat basolateral nucleus
+
+* Investigation of electrophysiological actions and cellular distribution of CXCL12 in the rat central nucleus
+
+To address these issues several research techniques were employed: whole-cell patch-clamp and extracellular recordings *ex vivo*, immunofluorescent staining and <!--dendritic spines-->.
 
 Detailed research objectives addressed in each study, as well as techniques used are listed below:
+
+In order to better understand the role of fractalkine signaling
+in microglia physiology and its possible impact on brain development, we studied several functional properties ofmicroglia in acute brain slices from Cx3cr1 knockout mice across the first postnatal weeks (PNWs). We report that the functional properties of microglia undergo dynamic changes during development and that these changes are absent or delayed in mice lacking fractalkine signaling. These data reveal the highly dynamic nature of microglial maturation during brain development and further highlight the importance of fractalkine signaling in this process. Pagani2015
+
+Therefore, the aim of the current study was to investigate whether chronic psychological stress modulates microglial plasticity in the CeA to drive a cascade of downstream cellular events that contribute to the development of stress-induced colonic allodynia and hyperalgesia. 

@@ -1,7 +1,3 @@
----
-output: pdf_document
----
-
 # Materials and methods
 
 ## General
@@ -22,9 +18,15 @@ Animals at this age are considered as young adults.
 
 ### Reagents
 
+Fractalkine 2 and 5nM according to studies @Sheridan2014
+
+All drugs used for electrophysiological experiments were bath applied by gravity or a peristaltic pump. 
+
+The time necessary for the solution to flow from the stopcocks to the slice was approximately 15 s. The drugs used were minocycline, 100 lM doxycycline (a second-generation tetracycline), 100 lM DL-fluorocitric acid barium salt (a selective astrocyte inhibitor), 10 lM CNQX (an AMPA/kainate receptor antagonist), 50 lM APV (an NMDA receptor antagonist), 0.5–1 lM tetrodotoxin (TTX, a voltage-gated sodium channel blocker), 10–40 lM bicuculline methiodide (a GABAA receptor antagonist), 1–2 lM strychnine (a glycine receptor antagonist), 100 lM NiCl2 (a low voltage- activated calcium channel blocker), and 100 lM CdCl2 (a high voltage-activated calcium channel blocker). Minocycline and doxycycline were freshly dissolved in Krebs solution at the final concentration before perfusion. A stock of fluorocitrate was prepared from DL- fluorocitric acid barium salt as previously described (Wenker et al., 2010). A stock of CNQX was first dissolved in dimethyl sulfoxide, and the other drugs were prepared in distilled water at 1000 times the concentrations to be used and stored at -20 °C as in our previous study (Liu et al., 2015). The drugs were diluted to the final concentration in Krebs solution just before use. Doxycycline, CNQX, APV, and TTX were obtained from Tocris Bioscience (Bristol, UK). All other chemicals were purchased from Sigma–Aldrich (St. Louis, MO). The determination of the doses for minocycline was based on a previous study in which 100 $\upmu$M minocycline markedly reduced the frequency and amplitude of spontaneous EPSCs (sEPSCs) in hippocampal neurons (Gonzalez et al., 2007). - Peng2016
+
 ## Whole-cell patch-clamp technique in acute brain slices
 
-### Tissue Preparation
+### Tissue Preparation {#decap}
 
 Male Wistar (4-7-week-old) rats were anesthetised with isoflurane (AErrane, Baxter, Poland) and decapitated between 07:00 and 09:00 a.m. 
 Brains were collected in ice-cold, low-sodium, high-magnesium ACSF (artifical cerebrospinal–fluid), containing (in mM): 65 sucrose, 76 NaCl, 25 NaHCO~3~, 1.4 NaH~2~PO~4~, 25 glucose, 2.5 KCl, 7 MgCl~2~, 0.4 Na-ascorbate, and 2 Na-pyruvate (bubbled with 95% O~2~/5% CO~2~), pH 7.4; osmolality 290–300 mOsmol kg^−1^) and cut into 300 $\upmu$m thick coronal sections on a Leica VT 1000 vibrating microtome (Leica Instruments, Germany). 
@@ -42,18 +44,17 @@ Neurons with a healthy appearance presented a smooth surface, and the cell body 
 Cells were approached under visual control with a patch pipette using a three-dimensional micromanipulator (uMp micromanipulator system, Sensapex, Finland). 
 Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 MΩ; Sutter Instruments, USA) using horizontal puller (Sutter Instruments P–97) and filled with following solutions. 
 
- ![Figure caption \label{photoneuronDIC}](images\zdjeciedic40x.png)
+ <!-- ![Figure caption \label{photoneuronDIC}](images\zdjeciedic40x.png) -->
  
-In experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolality 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). 
-
-In experiment measuring inhibitory synaptic transmission, the solution contained 122 Cs-gluconate, 10 CsCl, 10 HEPES, 0.3 EGTA, 10 phosphocreatine-Na~2~, 5 Mg-ATP, 0.4 Na-GTP, pH = 7.35; osmolality 280-290 mOsmol kg^−1^.
+For experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolality 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). 
+For experiment measuring inhibitory synaptic transmission, the solution contained 122 Cs-gluconate, 10 CsCl, 10 HEPES, 0.3 EGTA, 10 phosphocreatine-Na~2~, 5 Mg-ATP, 0.4 Na-GTP, pH = 7.35; osmolality 280-290 mOsmol kg^−1^.
 
 The pipette was positively pressurized by applying a mouth suction to help prevent contamination of the tip and to blow aside surrounding tissue and lowered to the vicinity of the membrane keeping a positive pressure. 
-After forming a high-resistance seal (> 1 GΩ, cell-atached configuration) between the recording pipette and cell membrane by applying negative pressure, a second pulse of negative pressure was used to break the patch of membrane enclosed with the pipette's tip and access inside of the neuron. 
+After forming a high-resistance seal (> 1 G$\Omega$, cell-atached configuration) between the recording pipette and cell membrane by applying negative pressure, a second pulse of negative pressure was used to break the patch of membrane enclosed with the pipette's tip and access inside of the neuron. 
 An electrical contact between the cytoplasm and a patch electrode was established (whole-cell configuration). 
 After break-in, cells stabilized for 5 min, during which intracellular solution slowly diffuses from the pipette into cytoplasm.
 Ground electrode, which was chloride-coated silver wire in chamber filled with bath solution, kept the electrical potential of the outer side of cell membrane at 0 mV. 
-Electrical potential of the inner side of cell membrane was controlled through an patch electrode filled with intrapipette solution with chlorided silver wire connected to headstage <!--()--> and Axopatch 1D amplifier (Axon Instrument, USA). 
+Electrical potential of the inner side of cell membrane was controlled through an patch electrode filled with intrapipette solution with chlorided silver wire connected to headstage (CV-4 Headstage, Axon Instruments, USA) and Axopatch 1D amplifier (Axon Instrument, USA). 
 Signals were low-pass filtered at 3 kHz, digitized at 20kHz and sampled through an analogue-to-digital converter (Digidata 1440, Molecular Devices, USA). 
 Data were stored on a computer disk and analyzed offline using Clampfit 10.2 software (Molecular Devices, USA). 
 Voltages were corrected for the liquid-junction potential (estimated as ~12 mV). 
@@ -74,6 +75,9 @@ Principal neurons were identified based on their unique electrophysiological pro
 
 #### Electrophysiological identification of late-firing cells in the CeA
 
+Based on their response to somatic current injections, three general types of CeL neurons have previously been described, with the two major types being LF neurons, which show a significant delay before onset of the first AP (⬃100–200 ms), and early-spiking (ES) neurons (also described as regular-spiking; AP onset, ⬃50 ms). 
+A third, smaller population of low-threshold bursting neurons has also been described (Dumont et al., 2002; Lopez de Armentia and Sah, 2004; Haubensak et al., 2010; Li et al., 2013; Hou et al., 2016). We characterized the firing properties of 151 CeL neurons. However, while classifying neurons we found that AP onset varied with changes in holding potential, whereas the presence of spike fre- quency accommodation was more reliable. Using this measure, neurons were classified either as nonaccommo- dating (NA), where AP frequency remained relatively con- sistent (⬃17 Hz), or accommodating (Ac), where there was clear spike frequency adaptation (AP1-2, ⬃32 Hz; AP7-8, 13 Hz; p ⬍ 0.001 Wilcoxon matched-pairs test; Fig. 2C). The large majority of our neurons were nonaccom- modating (n ⫽ 80 neurons; Fig. 2A) or accommodating (n ⫽ 59 neurons; Fig. 2B). Nonaccommodating neurons also had a significantly longer mean onset compared with that of accommodating neurons (Table 1), and these neurons generally corresponded to the LF and ES types (Hauben- sak et al., 2010; Amano et al., 2012). Thus, for consistency we have termed these LF-NA and ES-Ac neurons. Apart from resting membrane potential, which was significantly more depolarized in ES-Ac neurons, other membrane properties such as input resistance, threshold potential, AP amplitude, rise time, and half-width did not differ significantly between LF-NA and ES-Ac neurons -Hunt2017
+
 #### Electrophysiological identification of regular-firing cells in the CeA
 
 ### Recording protocols and data analysis
@@ -81,13 +85,14 @@ Principal neurons were identified based on their unique electrophysiological pro
 The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model. 
 The gain (slope) and rheobase (minimal current necessary to fire the first action potential) parameters will be determined for further analysis.
 
+
 ### Post-recording immunostaining
 
-After recording slices were fixed overnight with a 4% formaldehyde at 4°C and stained according to following protocol in order to examine neurochemical content of recorded neurons. 
-In brief, free-floating sections were blocked and permeabilised (10% normalised donkey serum (NDS), 0.1% Triton X100 in PBS) at 4°C overnight and incubated with a primary antibodies solution supplemented with an ExtrAvidin-Cy3 conjugate: mouse anti-OXT (1:1000 or 1:10000), rabbit anti-AVP (1:500 or 1:5000), ExtrAvidin-Cy3 (1:200), 2% NDS, 0.3% Tx100 in PBS, for 72 hours at 4°C.
-Finally, sections were incubated with a secondary antibody mixture for 24 h at 4°C (2% NDS in PBS solution containing donkey anti-mouse Alexa Fluor 647-conjugated antibody (1:400) and donkey anti-rabbit Cy3-conjugated antibody (1:400)). 
+In order to examine neurochemical content of recorded neurons, after recording a subset of slices was fixed overnight with a 4% formaldehyde at 4°C and stained according to following protocol.
+In brief, free-floating sections were blocked and permeabilised (10% normalised donkey serum (NDS), 0.1% Triton X100 in PBS) at 4°C overnight and incubated with a primary antibodies solution supplemented with an ExtrAvidin-Cy3 conjugate <!--: mouse anti-OXT (1:1000 or 1:10000), rabbit anti-AVP (1:500 or 1:5000), ExtrAvidin-Cy3 (1:200), 2% NDS, 0.3% Tx100 in PBS, --> overnight at 4°C.
+Finally, sections were incubated with a secondary antibody mixture for 24 h at 4°C <!--(2% NDS in PBS solution containing donkey anti-mouse Alexa Fluor 647-conjugated antibody (1:400) and donkey anti-rabbit Cy3-conjugated antibody (1:400)). -->
 Each step was followed by a PBS wash. 
-Stained sections were mounted and coverslipped with Vectashield, and imaged with an Axio Observer Z1 (Zeiss) confocal laser microscope or Imager.M2 (Zeiss) fluorescence microscope.
+Stained sections were mounted and coverslipped with <!--Vectashield, and imaged with an Axio Observer Z1 (Zeiss) confocal laser microscope or Imager.M2 (Zeiss) fluorescence microscope.-->
 
 
 ## Extracellular recording and LTP
@@ -102,3 +107,108 @@ Primary antibody (rabbit anti-NeuN, diluted 1:1,000; Millipore ABN78) was dissol
 Slices were then washed in PBS (3 × 10 min each) and incubated for 2 h in secondary antibody solution (Alexa Fluor-568 goat anti-rabbit; 1:500 dilution; Invitrogen A-11011). 
 Sections were washed in PBS three more times before the slides were cover slipped with Vectashield with DAPI.
 
+The specificity of the staining or antibodies was tested in previous studies (Verge et al., 2004; Lindia et al., 2005).
+
+# Antibodies
+
+Details regarding the primary and secondary antibodies used in our immunohistochemistry experiments are provided in Table ....
+
+<!-- table caption The table provides information about the primary antibodies used in our immunolabeling studies including the primary antibody species, clonality, dilution, and catalog number. The secondary antibody used to detect the primary antibody is listed and specifics regarding the secondary antibody species and dilution are provided. SC, Santa Cruz; TP, Torrey Pines; T, Sigma; MAB and CBL, Millipore -->
+
+A polyclonal goat antibody prepared against a synthetic peptide corresponding to
+19 amino acids in the C-terminus of SDF-1? of human origin was obtained from Santa Cruz Biotechnology, Inc. (Santa Cruz, CA). Western blot analysis with the polyclonal goat antibody from Santa Cruz recognized a single band (Miller et al., 2005; Tan et al., 2007), corresponding to the 10 kD molecular weight of SDF-1? (De et al., 2004; Kryczek et al., 2005). Preabsorption of the SDF-1? antibody with a tenfold excess of the immunogenic peptide (sc-6193P, Santa Cruz Biotechnology, Inc.) eliminated any specific staining (Figure 2-1), confirming preabsorption controls for this antibody (Banisadr et al., 2003; Miller et al., 2005). Furthermore, immunolabeling with this antibody produced a localization profile corresponding with in situ hybridization for SDF-1α mRNA in neurons in the cerebral cortex, hippocampal formation, and amygdala (Lu et al., 2002; Stumm et al., 2002; Stumm et al., 2007). The immunolocalization of SDF-1α in brain slices was consistent with previous studies in the cerebral cortex, hippocampus, substantia innominata, globus pallidus, paraventricular and supraoptic hypothalamic nuclei, lateral hypothalamus, substantia nigra, and oculomotor nuclei using the Santa Cruz SDF-1α antibody (Banisadr et al., 2003; Miller et al., 2005; Callewaere et al., 2006) as well as other SDF-1α antibodies (Stumm et al., 2002).
+
+To detect CXCR4-immunoreactivity in the rat brain, we used a polyclonal goat
+antibody prepared from a 20 amino acid peptide to the C-terminus of CXCR4 receptor of human origin obtained from Santa Cruz Biotechnology, Inc. (Santa Cruz, CA). In western blot analysis, the antibody revealed a 45 kD band in both cultured neurons and rat brain samples, corresponding to the expected molecular mass for CXCR4 (Pujol et al., 2005). Preincubation of the polyclonal goat CXCR4 antibody overnight with a tenfold excess of the immunogenic peptide (sc-6190P, Santa Cruz Biotechnology, Inc.), eliminated specific staining (Figure 2-1), confirming preabsorption controls for this antibody (Banisadr et al., 2002a). Furthermore, immunolabeling with this antibody produced a localization profile matching in situ hybridization for CXCR4 mRNA in neurons within the ventricular ependyma, olfactory bulb, cerebral cortex, hippocampus, amygdala, caudate putamen, and cerebellum (Lu et al., 2002; Stumm et al., 2002; Stumm et al., 2007). The immunolocalization of CXCR4 within brain slices was consistent with previous studies in the cerebral cortex, caudate putamen, globus pallidus, substantia innominata, supraoptic and paraventricular hypothalamic nuclei, ventromedial thalamic nucleus, substantia nigra, and hippocampus using the Santa Cruz CXCR4 antibody (Banisadr et al., 2002a; Baudouin et al., 2006) as well as other CXCR4 antibodies (Stumm et al., 2002). 
+
+The polyclonal goat fractalkine antibody obtained from Santa Cruz
+Biotechnology, Inc. (Santa Cruz, CA) was directed against a synthetic peptide corresponding to 20 amino acids in the C-terminal domain of fractalkine of human origin. Western blot analysis detected a single band with a molecular size of approximately 95 kD, which was consistent with the previously described size of glycosylated fractalkine (Muehlhoefer et al., 2000). Preabsorption of the fractalkine antibody with a tenfold excess of the immunogenic peptide (sc-7225P, Santa Cruz Biotechnology, Inc.) eliminated any specific staining (Figure 2-1), confirming preabsorption controls for this antibody in non-neuronal cells (Habasque et al., 2003). Fractalkine detection on immune cells by immunohistochemistry using this antibody was also confirmed by single cell RT- PCR (Nanki et al., 2002). Furthermore, the Santa Cruz antibody, which was directedagainst the C-terminus of fractalkine, offered the same staining patterns in brain tissue as another antibody, which was directed against the N-terminus of fractalkine, in the cytoplasm of neurons located in the hippocampus, spinal cord, and dorsal root ganglia (Hughes et al., 2002; Verge et al., 2004; Lindia et al., 2005; Zhuang et al., 2007).
+
+
+A polyclonal rabbit CX3CR1 antibody raised against E. coli expressed rat
+CX3CR1 mapping to amino acids 2-22 in the N-terminal domain was obtained from Torrey Pines Biolabs (East Orange, NJ). Western blot analysis revealed a specific band at approximately 40 kD corresponding to the molecular weight of CX3CR1 (Meucci et al., 2000; Zhuang et al., 2007). The specificity of the immunohistochemical staining of the CX3CR1 antibody was tested in previous preabsorption studies (Meucci et al., 2000; Moon et al., 2006; Furuichi et al., 2006) and by our preabsorption experiments in brain slices using a tenfold excess of the immunogenic peptide (Figure 2-1). Staining patterns with a CX3CR1 antibody from Torrey Pines Biolabs corresponded with in situ hybridization studies for the mRNA of CX3CR1 in the rat spinal cord and dorsal root ganglia (Verge et al., 2004). The staining of brain sections with this antibody produced a pattern of CX3CR1 immunoreactivity that was consistent with previous labeling of neurons and microglia in the hippocampus, cortex, thalamic nuclei, spinal cord, and dorsal root ganglia (Hughes et al., 2002; Verge et al., 2004; Zhuang et al., 2007). - CHEMOKINE INTERACTIONS WITH THE SEROTONIN AND OPIOID SYSTEMS: ANATOMICAL AND ELECTROPHYSIOLOGICAL STUDIES IN THE RAT BRAIN - PHD thesis
+
+The staining pattern and specificity of the TPH, NeuN, and CD11b antibodies we
+used in our studies are well established in the rat brain. When brain tissue was stained with these antibodies (Table 2-1), it produced a pattern that was identical to previously published reports for TPH (Pelaez et al., 2002), NeuN (Lindia et al., 2005; Karuppagounder et al., 2007; Cheng et al., 2004) and CD11b (Karuppagounder, 2007).
+
+Furthermore, additional tests for secondary antibody specificity were conducted on brain slices with omission of primary antibodies and no specific staining was detected (data not shown).
+
+### Immmunohistochemistry
+
+To analyze co-localization of chemokines (SDF-1α or fractalkine) or chemokine
+receptors (CXCR4 or CX3CR1) with serotonergic neurons, midbrain slices were initially incubated with either goat anti-SDF-1α antibody (1:100; Santa Cruz Biotechnology, Inc, Santa Cruz, CA), goat anti-CXCR4 antibody (1:100; Santa Cruz Biotechnology), goat anti-fractalkine antibody (1:100; Santa Cruz Biotechnology), or rabbit anti-CX3CR1 antibody (1:100; Torrey Pines Biolabs, East Orange, NJ) overnight at 4oC. Sections were incubated in mouse anti-tryptophan hydroxylase (TPH) antibody (1:500; Sigma-Aldrich) overnight at 4oC. Subsequently, immunohistochemical labeling was detected with an Alexa 647-conjugated donkey anti-goat or anti-rabbit secondary antibody (1:200; Molecular Probes, Eugene, OR) and an Alexa 488-conjugated donkey anti-mouse secondary antibody (1:200; Molecular Probes) for 1 h at room temperature in the dark.
+
+CX3CR1 localization to neurons and glia was determined by a sequential
+incubation of brain slices with a rabbit anti-CX3CR1 antibody (1:100; Torrey Pines Biolabs), mouse anti-NeuN antibody (1:100; Chemicon, Temecula, CA), and mouse anti- CD11b FITC-conjugated antibody (1:100; Chemicon). Antibody incubations were conducted overnight at 4oC, and slices were kept in the dark following the addition of the mouse anti-CD11b FITC-conjugated antibody. Immunohistochemical labeling was visualized with an Alexa 647-conjugated donkey anti-rabbit secondary antibody (1:200; Molecular Probes) and AMCA-conjugated donkey anti-mouse secondary antibody (1:100; Jackson ImmunoResearch, West Grove PA) for 1 h at room temperature in the dark.
+
+Chemokine and chemokine receptor co-localization in the raphe nuclei was
+examined by incubating brain slices with antibodies directed towards either SDF-1α and CXCR4 or fractalkine and CX3CR1. We employed the rabbit anti-SDF-1α antibody (1:100; Torrey Pines Biolabs) to avoid species cross-reactivity during the combined application of SDF-1α and CXCR4 antibodies. Antibody incubations were conducted overnight at 4oC. Next, brain sections were placed in a cocktail of Alexa Fluor 647- conjugated donkey anti-goat secondary antibody (1:200; Molecular Probes) to detect CXCR4 and fractalkine, and Alexa Fluor 488-conjugated donkey anti-rabbit secondary antibody (1:200; Molecular Probes) to detect SDF-1α and CX3CR1, for 1 h at room temperature in the dark.
+
+For all immunohistochemical experiments, brain sections were rinsed with PB
+solution (3 x 10 min) between incubations. Sections were mounted on Superfrost Plus slides (Fisher Scientific, Pittsburgh, PA) and cover slipped with Prolong Gold Antifade
+
+
+
+### Cell counting
+
+The total number of cells, Iba1+ microglia, <!--Parvalbumin (PV)+ interneurons and DCX+ neuroblasts--> were calculated under a <!--LSM710 Zeiss confocal--> microscope <!--(63x Oil immersion objective for all the cell counts except for PV+ interneurons, which were analyzed under a 25X Oil immersion objective)--> using the apotome<!--physical dissector method adapted for confocal microscopy (Llorens-Martin et al., 2013).-->
+<!--Briefly, six stacks of images per animal were used to determine the density of mature granule neurons in a reference structure of known volume (30 (X) ? 30 (Y) ? 10 (Z) lm). The average density of these cells was then multiplied by either the total volume of the DG (in the case of the number of mature granule neurons) or by the length of the subgranular zone (SGZ) (in the case of the number of DCX+ neuroblasts) in order to calculate the total number of cells per animal (Llorens-Martin et al., 2006). Bolos2018-->
+The number of cells was counted in central and basolateral amygdala separately. 
+<!--PV+ interneurons were counted in the DG. 
+To this end, the area including the GL, ML and the H was contoured on confocal stacks of images, and the number of PV+ cells surrounded by PNNs within that contour were counted in each stack of images. The number of cells was then divided by the drawn area, and cell density (cells/mm3) was represented in the graphs. Bolos2018 -->
+In order to address <!-- microglial activation-->, we measured <!--CD68--> expression by immunohistochemistry in cells located in the central and basolateral amygdala. 
+Briefly, <!--confocal--> stacks of 20 images were obtained under a <!--LSM710 Zeiss confocal microscope (63x Oil immersion objective, Z-axis interval: 0.4 mm, XY dimensions: 79.38 mm).-->
+Three-channel images were acquired <!--(DAPI, CD68 and Iba1)-->. 
+For each image, a fixed value threshold was applied to the Iba1 channel, and then the threshold image was converted in a Selection.
+A Mean filter (2 pixels) was applied in order to delete precipitates of the secondary antibody. 
+The selection was then loaded in the CD68 channel. 
+Selections were inverted in both channels, and the exterior of the cells was filled with black paint. 
+Resulting images were then processed with the Just Another Colocalization Plugin (JACoP) in ImageJ, as previously described (Llorens-Martin et al., 2016). 
+The percentage of colocalization between the two channels (Iba1+ area that was also CD68+ (Mander’s coefficient M1)) is represented in the graphs.
+
+
+######################################################################################################################
+All image analysis, cell counts and fluorescence measurements
+were performed “off-line” on captured images taken from stained sections. The total numbers of positively identified activated microglia expressing Iba-1 were counted manually in individual spinal cord sections from 3 rats in each treatment group. Microglia were defined as activated if they displayed a clearly swollen cell body with reduced processes, these differ from normal or resting microglia where cell bodies were largely absent and large ramified processes were displayed. Assessment was performed by inde- pendent blinded investigators who quantified the total number of activated microglia. The numbers of activated microglia in each treatment group were expressed as a percentage of the total number of cells counted. For
+
+## Morphometric analysis of the dendritic spines of neuronal primary cell cultures
+
+
+## Statistical 
+
+Data are reported as mean ⫾ SEM. Statistical sig- nificance was set at p  0.05. Following verification of a normal distri- bution using GraphPad 5.0, Student’s unpaired t test was used to compare parametric data from two groups. “n” represents the number of neurons or microglial processes used in each group, and is followed by
+“N” representing the number of mice per group. The details of the statistical analyses are provided in Results. All relevant data are available from the authors
+
+Result is expressed as percentage of CXCR7/Olig2- positive cells compared to the total number of CXCR7-EGFP cells in the SVZ (n=6).
+
+
+<!-- 
+The effect of **500 pM CX3CL1** on LTP in the DG was investigated both in the presence and absence of 100 μM of the GABAA receptor/chloride channel inhibitor, picrotoxin (Sigma–Aldrich).-Sheridan2014
+
+
+
+
+-->
+
+We characterized mouse visual cortex neurons with a uniform experimental  protocol and developed an unsupervised classification scheme of  cell types based on electrophysiology and morphology.
+Every aspect  of the pipeline, from slice preparation, recording, and stimulation,  to staining, imaging, reconstruction, and mapping of cells to a reference atlas, employed highly standardized and quality-controlled  methodology. 
+
+All membrane potentials were corrected for liquid junction potential ( $\sim$ 11 mV).
+
+
+ Neurons firing at less than 0.1 Hz were  considered ‘silent neurons’ and excluded from analysis.
+ 
+ 
+ The sole criterion for selection of recorded cells was the absence of an apical dendrite.
+ 
+Therefore, the amplitude (21–24) and the latency (25–28) of the first (AHPf) and second (AHPs) components of afterhyperpolarization was measured for the first two action potentials as the difference between spike threshold and the negative peak of the AHP (Kawaguchi, 1993). In some cortical neurons (Haj-Dahmane and Andrade, 1997), this complex repolarization is accompanied by a fast afterdepolarization (ADP). Its (29, 30) amplitude and (31, 32) latency were measured as the difference between the negative peak of the AHPf and the positive peak of the ADP and between the spike threshold and the peak of the ADP, respectively. When neurons did not exhibit AHPs or ADP, amplitude and latency were arbitrarily set to 0. @karagiannis_2009
+
+
+Whole-cell recordings in mouse PNs, held  at y 70  to y 75  mV,  showed  spontaneous  synaptic inward  currents  that  were  mainly  inhibitory  postsynaptic  currents   IPSCs   as  they  were  drastically  reduced  in  the  presence  of  bicuculline   10–20 m M ,  a  potent  blocker  of GABA    receptor, and were little affected by the presenceA . of  CNQX   20 m M ,  a  blocker  of  AMPA  type  glutamate receptors  Llano et al., 1991a,b; Kano et al., 1992 .
+
+
+We performed immunohistochemistry on CXCR7-EGFP transgenic mice to further characterize the types of cells expressing CXCR7 in adult mouse brain. Using cell type specific markers, CXCR7 expression was mainly found in neurons, astrocytes and endothelial cells. 
+
+Around 75% of the GABA-responsive neurones showed responsiveness to MCP-1/CCL2. The effect was not inhibited when GTP was omitted from the patch  pipette  medium  (Fig. 8b,  right).
+
+The percentage of MCH neurons that express CXCR4 in a given field was calculated as the ratio of the number of double labelled CXCR4 ⁄ MCH over that of MCH-positive cells

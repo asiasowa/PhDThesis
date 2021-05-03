@@ -1,5 +1,8 @@
----
-output: pdf_document
----
-
 # Conclusions
+
+Nevertheless, our data support the notion that an adequate
+cross-talk between microglia and neurons is required for the cor- rect functional maturation of newborn granule neurons and for the proper regulation of emotional behavior. These data contribute to increasing our understanding of AHN under both physiological and pathological conditions. - Bolos2018
+
+In summary, our data demonstrate that baseline inhibitory synaptic transmission in SG neurons is markedly enhanced by minocycline. This may function to decrease the excitability of SG neurons, thus leading to a modulation of nociceptive transmission.- Peng2016
+
+ Our data lay the fundamental groundwork to investigate microglia-astrocyte cross talk and juxtavascular microglial function in the healthy and diseased brain.

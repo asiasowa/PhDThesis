@@ -1,5 +1,58 @@
----
-output: pdf_document
----
-
 # Results
+
+To elucidate how IFNg affects nociceptive responses in the spinal dorsal horn, we analyzed the effects of IFNg on postsy- naptic action by using whole-cell patch-clamp recordings from SG neurons.
+
+To determine the nature of local connections between neurons in the CeL, paired whole-cell recordings were made in acute coronal slices of wild-type mice (Fig. - Hunt2017
+
+## BLA
+
+To investigate the effect of <!--minocycline on inhibitory transmission-->, whole-cell voltage-clamp recordings from SG neurons were made under control conditions and after bath application of minocycline (100 lM)
+
+Taken together, our findings indicate that minocycline increases the frequency of sIPSCs in a concentration-dependent manner (EC50 of 85 lM) without changing their amplitude, suggesting a presynaptic mechanism that contributes to the effect of minocycline
+
+To further examine whether neuronal activity
+contributes to the increase in sIPSC frequency produced by minocycline, we next tested whether TTX affected the response of minocycline. 
+
+
+2.1-fold   2 r 4   in  the  spontaneous  postsynaptic  currents . was  elicited  by  GRO a 50  nM   even  in  the  presence  of . TTX   3 m M   indicating  that  the  action  of  the  chemokine was exerted on neurotransmitter release mechanisms rather than  on  nerve  cell  excitability
+
+Therefore, we hypothesized that intrathecal administration of CCL2 would enhance spinal nociceptive transmission and cause thermal hyperalgesia by activating the spinal microglia. This hypothesis was tested using intrathecal administration of minocycline, a specific inhibitor of microglial activation [38,39]. Previous studies [40,41] showed that an intrathecal injection of minocycline (100 μg) blocked microglial activation.
+
+
+To analyze <!--the afferent connectivity of fully mature newborn granule neurons-->, we examined the dendritic spines of <!--8-weekold RFP+ cells -->.
+These spines can be classified into various typologies on the basis of morphological criteria (Pallas-Bazarra et al., 2016; Pallas-Bazarra et al., 2017). <!-dać publikacje zespołu Jakuba-->
+
+Fig. 4A and B shows representative images of dendritic fragments of <!--newborn neurons of WT (A) and CX3CR1?/? (B) animals -->. 
+In addition, the classification of dendritic spines into mushroom, thin and stubby types is illustrated. <!-zmienić trochę to zdanie --> 
+Neurons <!--of CX3CR1?/? mice--> showed a reduction in the total number of dendritic spines.
+To further characterize the populations of spines present in these cells, we measured the percentage of each type of spine (D).
+As shown, the percentage of stubby spines was increased in CX3CR1?/? animals, whereas that of mushroom spines was reduced. 
+Thus, these data show that the absence of CX3CR1 leads to a decrease in the number of newborn granule neuron dendritic spines and alterations in their morphology (namely, an enlargement and shortening).
+
+Here, we report rapid modulatory effects of CX3CL1 on neuronal events in hippocampal tissue. Our data does not conclusively support a direct action of CX3CL1 on neurons and we cannot discount the possibility that the effects we see on LTP and calcium influx in neuronal cell types happen as a consequence of CX3CL1-mediated activation of CX3CR1 solely on microglial cell types. If this is true, however, the ability of microglia to rapidly regulate multiple hippocampal memory-associated synaptic plasticity processes may be much more extensive than traditionally thought. The evidence from rats that CX3CR1 is expressed on hippocampal neuron allows the possibility that, as is the case for CX3CL1-mediated regulation of serotonergic neurons of the dorsal Raphe, glutamatergic neuron-derived CX3CL1 may act in an autocrine/paracrine fashion in the hippocampus during periods of synaptic plasticity to regulate glutamate-mediated neurotransmission tone. Sheridan2014
+
+
+AMPA-mediated spontaneous and mEPSC frequency is increased in EAE without change in the probability ofrelease The principal neurons of the BLA were morphologically identified by their large pyramidal-like cell bodies. When recorded with standard internal solution, all the cells displaying this morphological feature showed varying degrees ofspike adaptation. They fired 3–7 times to a depolarizing current step of 500 ms length, which is an electrophysiological characteristic of BLA principal neurons (Sah et al., 2003). Thus, we were confident ofrecording from the pyramidal cells, even in experiments where cesiumbased internal solution was used and we could not verify the spike frequency or waveform to a depolarizing current step. Standard cesium-based internal solution was used for recording AMPARmediated sEPSCs at ⫺70 mV
+
+(CFA ⫽ 2.7 ⫾ 0.45 Hz, n ⫽ 11 cells, N⫽ 7 animals; EAE ⫽ 4.3 ⫾ 0.56 Hz, n ⫽ 10, N⫽ 7; unpaired t test: t⫽ 2.287, df⫽ 19, p⫽ 0.03; 3 cohorts ofanimals), w
+
+To determine whether the change in frequency between CFA and EAE was caused by alteration ofunitary synaptic properties, we recorded mEPSCs after bath applying the sodium channel blocker, TTX. The amplitudes ofmEPSCs reflect the number and conductance ofsubsynaptic AMPARs, whereas the frequency reflects the probability of vesicle release (p) and/or the number of synapses (Kerchner and Nicoll, 2008).
+
+We found that mEPSC frequency was significantly increased (....) without any change in mEPSC amplitude.
+
+##### AMPA/NMDA ratio
+An increased number of synapses could result from more den- dritic spines and/or unsilencing of silent synapses. In a silent synapse, anEPSC is absent because ofa postsynaptic complement exclusively of NMDA receptors; hence, in the absence of depo- larization, it cannot conduct current in response to presynaptic glutamate release. In response to sufficient depolarization, AMPARs can be inserted in the postsynaptic density, thereby making the synapse active or “unsilenced.” To this end, we mea- sured the maximum amplitude of the eEPSC at ⫺70 mV (AMPAR-mediated) and then at 40 mV, at a 50 ms latency (NMDA-mediated), both in the presence ofpicrotoxin (Fig. 2A).;;
+
+
+To confirm whether dendritic spine density was increased,
+
+### Spines
+In addition, **we also examined spine morphology because changes in spine morphology are believed to represent one mechanism by which synaptic activity leaves its imprint on neurons**. This was concurrent with an increase in spines with well-defined heads, which is correlated with spine maturation.
+
+### Minocycline
+ However, we acknowledge that minocycline, in addition to impairing microglial proinflammatory and phagocytic activity, has many other unrelated effects; however, our use of ICV injection at least eliminated the peripheral effects of minocycline (Brundula et al., 2002; Giuliani et al., 2005)
+ 
+ The results suggest that IFNg enhances NMDA receptor sig- naling by activating IFNg receptors in the dorsal horn of the spinal cord. Minocycline, an inhibitor of microglial activation, inhibited the IFNg-induced facilitation of NMDA current, but inhibition of the neuronal JAK- STAT signaling did not. Therefore, we conclude that IFNg binds its own receptors in microglia but not SG neurons, and the subsequent microglial activation leads to NMDA receptor activation. - Sonekatsu2016
+ 
+ 
+One possibility for our low inci- dence of SOM(⫹) ¡ SOM(⫺) connections is that we are sampling local connections (⬃50–100 ?m apart) in the coronal plane, and SOM(⫹) ¡ SOM(⫺) connections may be more common among “distal” (i.e. ⬎100 ?m) connec- tions. To address this, we injected an AAV-containing DIO-channelrhodopsin-mCherry into the CeL of SOM-Cre mice (Fig. 9A,B) to directly activate SOM(⫹) terminals.

@@ -1,8 +1,3 @@
----
-output: pdf_document
----
-
-
 # Appendix
 
 ## PhD thesis founding

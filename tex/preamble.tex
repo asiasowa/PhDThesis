@@ -5,6 +5,7 @@
 
 % \input{tex/params}
 \usepackage{alltt} % for knitr code output
+\usepackage{longtable}
 \usepackage{etoolbox} % for toggle
 \usepackage[left=1.5in,right=1in,top=1in,bottom=1in]{geometry}
 \usepackage{nomencl} % for the nomenclature (List of Abbreviations)
@@ -32,7 +33,7 @@
 \usepackage{makeidx}
 \usepackage{booktabs}
 \usepackage[subfigure, titles]{tocloft} % lets us format TOC for VU
-\usepackage[nottoc,notlof,notlot]{tocbibind}
+%\usepackage[nottoc,notlof,notlot]{tocbibind}
 \usepackage{pdflscape}
 \usepackage{placeins} % for \FloatBarrier
 \hypersetup{
@@ -44,12 +45,17 @@
     urlcolor=black,
     pdfstartview=FitH
 }
-% \usepackage{fancyhdr}
-% \pagestyle{fancy}
-% \fancyhead{}% clear headers
-% \fancyfoot{}% clear footers
-% \renewcommand{\headrulewidth}{0pt}% eliminate horizontal line
-% \fancyfoot[c]{\thepage}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead{}     
+%\fancyhead[RE]{\rightmark}     
+\fancyhead[LO]{\leftmark}     
+%\fancyhead[RO]{\thepage}     
+\fancyhead[LE]{\thepage}
+\setlength{\headheight}{14.49998pt}
 
 \urlstyle{same}
 % \bibliographystyle{vandy_dissertation}
@@ -216,27 +222,29 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\setcounter{section}{-1}
+% \setcounter{section}{-1}
 
 % Define floats here
-\floatstyle{plain}
-\newfloat{Box}{h}{lob}
-\newcommand{\boxedtext}[3]{
-    \begin{Box} \caption{\small{#1}}
-    \hspace{1.cm}
-    \fbox{\begin{minipage}[c]{0.85\linewidth}
-
-    \small{#2}
-
-   \end{minipage}}
-
-   \label{#3}
-   \end{Box}
-}
+% \floatstyle{plain}
+% \newfloat{Box}{h}{lob}
+% \newcommand{\boxedtext}[3]{
+%     \begin{Box} \caption{\small{#1}}
+%     \hspace{1.cm}
+%     \fbox{\begin{minipage}[c]{0.85\linewidth}
+%
+%     \small{#2}
+%
+%    \end{minipage}}
+%
+%    \label{#3}
+%    \end{Box}
+% }
 %
 \let\mySpacing=\onehalfspacing
 
 \let\oldmaketitle\maketitle
 \AtBeginDocument{\let\maketitle\relax}
 
-%\setcounter{section}{-4}
+% \begin{document}
+% \blinddocument
+% \end{document}

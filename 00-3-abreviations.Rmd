@@ -1,26 +1,83 @@
----
-output: pdf_document
----
+# Abreviations {-}
+<!-- \renewcommand{\nompreamble}{\vspace{0.25in}} -->
+<!-- \makenomenclature -->
+<!-- \renewcommand{\nomname}{LIST OF ABBREVIATIONS} -->
+
+
+<!-- \item[ACSF] artificial cerebrospinal fluid -->
+<!-- \item[AMPA] alpha-amino-3-hydroxy-5- methyl-4-isoxazilepropionate  -->
+<!-- \item [BLA] basolateral nucleus of the amygdala -->
+<!-- \item [CeA] central nucleus of the amygdala -->
+<!-- \item [CNS] central nervous system  -->
+<!-- \item [DIC] differential interference contrast -->
+<!-- \item [GPCR] G-protein-coupled receptor -->
+<!-- \item [ICM] intercalated cell masses  -->
+<!-- \item [LHA] lateral hypothalamus area -->
+<!-- \item [mEPSC] miniature excibitory post-synaptic currents -->
+<!-- \item [mIPSC] miniature inhibitory post-synaptic currents -->
+<!-- \item [NDS] normal donkey serum -->
+<!-- \item [NMDA] N-methyl-aspartate  -->
+<!-- \item [NTS] nucleus of the solitary tract -->
+<!-- \item [PVN] paraventricular nucleus  -->
+<!-- \item [sEPSC] spontaneous excibitory post-synaptic currents -->
+<!-- \item [sIPSC] spontaneous inhibitory post-synaptic currents -->
 
 
 
-\begin{abbrv}
 
+```{r abbr, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE}
 
-\item[ACSF] artificial cerebrospinal fluid
-\item[AMPA] alpha-amino-3-hydroxy-5- methyl-4-isoxazilepropionate 
-\item [BLA] basolateral nucleus of the amygdala
-\item [CeA] central nucleus of the amygdala
-\item [CNS] central nervous system 
-\item [DIC] differential interference contrast
-\item [GPCRs] G-protein-coupled receptors
-\item [ICM] intercalated cell masses 
-\item [LHA] lateral hypothalamus area
-\item [mEPSC] miniature excibitory post-synaptic currents
-\item [mIPSC] miniature inhibitory post-synaptic currents
-\item [NDS] normal donkey serum
-\item [NMDA] N-methyl-aspartate 
-\item [sEPSC] spontaneous excibitory post-synaptic currents
-\item [sIPSC] spontaneous inhibitory post-synaptic currents
+x <- tribble(
+    ~Abbreviation, ~Explanation,
+    "CNS", "Central Nervous System",
+    "BLA", "basolateral amygdala",
+    "GPCRs", "G-protein-coupled receptors",
+    "PTMs", "post-translational modifications",
+    "MMPs","matrix metalloproteinases",
+    "PKC", "protein kinase C",
+    "MAPK", "mitogen-activated protein kinase",
+    "ERK", "extracellular signal-regulated kinase",
+    "JAK", "Janus kinases",
+    "STATs", "signal transducers and activators of transcription",
+    paste0("NF-", "$\\kappa$", "B"), paste0("nuclear factor-", "$\\kappa$", "B"),
+    "ECM", "extracellular matrix",
+    "GAGs", "Glycosaminoglycans",
+    "HVA", "high voltage-activated calcium",
+    "GIRK", "inward rectifier potassium currents",
+    "MCH", "melanin-concentrating hormone",
+    "DA", "dopamine",
+    "AVP", "arginine–vasopressin",
+    "DRN", "dorsal raphe nucleus",
+    "sIPSCs", "spontaneous inhibitory postsynaptic current",
+    "TTX", "tetrodotoxin",
+    "SN", "substantia nigra",
+    "DRG", "dorsal horn of the spinal cord",
+    "SLMVs", "synaptic-like microvesicles",
+    "VGLUTs", "vesicular glutamate transporters",
+    "sEPSCs", "spontaneous excitatory postsynaptic current",
+    "LTP", "long-term potentiation",
+    "LTD", "long-term depression",
+    "ENK", "enkephalin",
+    "OX", "orexin",
+    "PVN", "paraventricular nucleus",
+    "PFLH", "perifornical lateral hypothalamus",
+    "ACKRs", "atypical chemokine receptors",
+    "DG", "dentate gyrus",
+    "LPS", "lipopolysaccharide",
+    "GDPs", "giant depolarizing potentials",
+    "OF", "open field test",
+    "EPM", "elevated-plus maze",
+    "NOR", "novel object recognition test",
+    "TST", "test suspension test",
+    "FST", "forced swim test",
+    "EZM", "evevated-zero maze",
+    "LDB", "light/dark box test"
+) %>%
+    arrange(Abbreviation)
+knitr::kable(x)
 
-\end{abbrv}
+```
+
+\newpage 
+
+\mainmatter

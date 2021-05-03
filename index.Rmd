@@ -1,0 +1,45 @@
+--- 
+title: |
+  ![](ifpan.jpg){width=1in}  
+  Effects of chosen chemokines on neuronal properties and synaptic transmission in central and basolateral complex of the rat amygdala
+author: "Joanna Ewa Sowa"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [common/thesis_lib.bib]
+csl: common/apa.csl
+classoption: twoside
+fontsize: 12pt
+linestretch: 1.5
+toc-depth: 1
+lof: True
+lot: True
+subparagraph: yes
+link-citations: yes
+
+---
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+# knitr::write_bib(c(
+#   .packages(), 'bookdown', 'knitr', 'rmarkdown'
+# ), 'packages.bib')
+library(knitr)
+library(tidyverse)
+options(gt.html_tag_check = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Keywords{-}
+
+chemokines, chemokine receptors, central nervous system 
+
+
+
+<!-- gitbook(fig_caption = TRUE, number_sections = TRUE, 
+  self_contained = FALSE, anchor_sections = TRUE, 
+  lib_dir = "libs", pandoc_args = NULL, ..., template = "default", 
+  split_by = c("chapter", "chapter+number", "section", 
+    "section+number", "rmd", "none"), split_bib = TRUE, 
+  config = list(), table_css = TRUE) -->

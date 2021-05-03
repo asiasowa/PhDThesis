@@ -1,30 +1,31 @@
----
-output: pdf_document
----
-
 # Introduction
 
 ## Chemokines
 
 Chemokines (chemotactic cytokines) are a family of small (7-11 kDa) secreted proteins. 
 They  were originally identified as serving chemotactic function on immune cells; however, recent evidence has begun to elucidate novel, brain-specific functions of these proteins. 
-So far, 53 human chemokines and 23 chemokine receptors have been cloned or characterized <!--<http:// cytokine.medic.kumamoto-u.ac.jp/>. not active link, find another database or use @Li2008a-->. 
-They can be classified into CXC, CC, C or CX3C subfamilies based on the arrangement of the two cysteine residues near the N-terminus [@Zlotnik2000] \ref{family}.
+So far, 53 human chemokines and 23 chemokine receptors have been cloned or characterized. <!--<http:// cytokine.medic.kumamoto-u.ac.jp/>. not active link, find another database or use @Li2008a--> 
+They can be classified into CXC, CC, C or CX3C ($\delta$) subfamilies based on the arrangement of the two cysteine residues near the N-terminus [@zlotnik_2000] \ref{family}. <!-- CX3C characterized by the presence of 3 amino acidic residues (X3) localized between 2 cysteine residues, thus forming a disulphide bond, a CX3C motif, and also a transmembrane domain (Pan et al., 1997). -->
 
 ![ *Chemokine families.* Chemokines are classified in four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. \label{family} ](images\chemokinefamilies.png) 
 
-Chemokines exert their biological effects through cell surface receptors that belong to the superfamily of seven-membrane domain G-protein-coupled receptors (GPCRs) and are expressed in a wide variety of cells [@Bacon2000a]. 
+Chemokines exert their biological effects through cell surface receptors that belong to the superfamily of seven-membrane domain G-protein-coupled receptors (GPCRs) and are expressed in a wide variety of cells [@bacon_2000a]. 
+
+<!--Chemokine receptors belong to the family of G-protein coupled receptors (GPCR), showing the presence of 7 transmembrane helices connected by several intra- and extracellular loops, as well as N-terminal extracellular and C-terminal intracellular domains. The N-terminal extracellular domain is considered important for chemokine binding and receptor activation, while the C-terminal end is coupled to G-proteins, and is important for receptor signaling upon chemokine binding. Based on their primary amino acid sequence and the respective ligands that they bind, chemokine receptors are also classified into four subfamilies, i.e., CXCR, CCR, CR and CX3CR (Proudfoot et al., 2010). - Paolicelli2014;; -->
+
+
+
 Studies indicate that chemokines and their receptors interact with each other in a complex manner. 
-There are several regions of the chemokine that are critical for receptor binding and signal transduction [@Howard1996].
-Moreover, after interaction with chemokines, some receptors undergo dimerization (heterodimerization, homodimerization) and oligomerization process, which seems to be critical for the triggering of biological responses [@Mellado2001].
+There are several regions of the chemokine that are critical for receptor binding and signal transduction [@howard_1996].<!--inne cytowanie albo wyrzucić-->
+Moreover, after interaction with chemokines, some receptors undergo dimerization (heterodimerization, homodimerization) and oligomerization process, which seems to be critical for the triggering of biological responses [@mellado_2001].
 
 Chemokines were originally identified as serving chemotactic function on immune cells; however, recent evidence has begun to elucidate novel, brain-specific functions of these proteins. 
-Of particular interest is the idea that central nervous system (CNS) chemokines are not only mediators of neuroinflammation, but also function as neuromodulators or neurotransmitters in the brain [@Adler2005]. 
+Of particular interest is the idea that central nervous system (CNS) chemokines are not only mediators of neuroinflammation, but also function as neuromodulators or neurotransmitters in the brain [@adler_2005]. 
 Like those systems, the chemokine system is widely but unevenly distributed in the brain and has both ligands and receptors expressed in neurons. 
 Why do cells (neurons, astrocytes, and microglia) in CNS express chemokines and chemokine receptors, and what is the neurophysiological relevance of chemokines in the CNS? 
 The plausible explanation is that they may provide a bridge between the immune and nervous systems, which are classically viewed as two complex and distinct entities.
 
-In CXC (also known as α) chemokines (see figure, part a), one amino acid separates the first two
+In CXC (also known as $\alpha$) chemokines (see figure, part a), one amino acid separates the first two
 cysteine residues (cysteine–X amino acid–cysteine, or CXC). Chemokines of this family are known to chemoattract neutrophils, T lymphocytes, B lymphocytes and natural killer cells. In CC (also known as β) chemokines (see figure, part b), the first two cysteine residues are adjacent to each other. Members of this chemokine family chemoattract monocytes, macrophages, basophils, T lymphocytes and eosinophils, but have little or no effect on neutrophils. The C (also known as γ) chemokine subfamily (see figure, part c) is distinguished structurally as containing only two of the four conserved cysteine residues that are found in the other families. The only members of this family are lymphotactin α and β (XCL1 and XCL2), which are known to chemoattract T lymphocytes. These chemokines are specific ligands for the XCR1 receptor. The CX3C (also known as δ) chemokine subfamily, which is currently represented by a single member named fractalkine (CX3CL1), is characterized by the presence of three amino acids between the first two cysteine residues, as well as a transmembrane and mucin-like domain (see figure, part d) - Rostene2007
 
 although we focus on the two chemokines that have been extensively described in the CnS and for which the most data are avail- able, we also report on other chemokines that are active in the CnS. The chemokines that we mainly focus on belong to the two main chemokine families; they are the CC chemok- ine CCl2 (also known as monocyte chemoat- tractant protein 1 (mCP1)) and its cognate receptor, CCr2, and the CXC chemokine CXCl12 (also known as stromal cell-derived factor 1 (SDF1)) and its receptor in rodents (which is, as far as is known to date, unique in these species), CXCr4. - Rostene2007
@@ -32,17 +33,23 @@ although we focus on the two chemokines that have been extensively described in 
 Interestingly, the neuroanatomical distributions of a chemokine and its receptor (see below and FIG. 1) overlap in many regions in the normal adult brain. This suggests that these chemokines, through the action on specific GPCrs, might be involved in local neuronal communication.
 
 The effects of chemokines in the brain may be due to their ability to activate chemokine receptors localized on neurons and/or glia, thus leading to changes in neuronal membrane properties and/or synaptic transmission. 
-Specifically, chemokines may alter synaptic transmitter release [@Limatola2000, @Ragozzino2002], modulate the functional properties of ionic channels [@Lax2002, @Oh2002] and promote the release of glutamate from astrocytes [@Lax2002]. 
-In addition, the chemokine system can alter the actions of neuronally active pharmacological agents such as opioids and the cannabinoid system [@Heinisch2011]. 
-Moreover, chemokine receptor knockout mice (CCR6, CCR7, CXCR5) have recently been shown to exhibit behavioral and neurobiological phenotypes of relevance to psychiatric disorders, which suggests their essential role in physiological conditions [@Harrison2014, @Jaehne2014, @Stuart2014].
+Specifically, chemokines may alter synaptic transmitter release [@limatola_2000, @ragozzino_2002], modulate the functional properties of ionic channels [@lax_2002, @oh_2002] and promote the release of glutamate from astrocytes [@lax_2002]. 
+In addition, the chemokine system can alter the actions of neuronally active pharmacological agents such as opioids and the cannabinoid system [@heinisch_2011]. 
+Moreover, chemokine receptor knockout mice (CCR6, CCR7, CXCR5) have recently been shown to exhibit behavioral and neurobiological phenotypes of relevance to psychiatric disorders, which suggests their essential role in physiological conditions [@harrison_2014, @jaehne_2014, @stuart_2014].
 
-In this thesis, CXCL12 and CX3CL1 and their receptors (CXCR4, CXCR7, CX3CR1) have been investigated, as they are both expressed constitutively, even in physiological conditions, throughout the CNS [@Banisadr2002a, @Hesselgesser1999, @Schonemeier2008].
-
-
+In this thesis, CXCL12 and CX3CL1 and their receptors (CXCR4, CXCR7, CX3CR1) have been investigated, as they are both expressed constitutively, even in physiological conditions, throughout the CNS [@banisadr_2002a, @hesselgesser_1999, @schonemeier_2008].
 
 
 
 
+While higher inflammatory and pathophysiological levels of cytokines are implicated in a range of neuropsychiatric and neurodegeneration diseases, it is now equally evident that, within the CNS, cytokines, including the chemoattractant cytokines (chemokines), mediate physiological signaling functions far beyond and independent of their traditional roles in inflammation and disease (Hopkins and Rothwell, 1995; Rothwell and Hopkins, 1995; Reichenberg et al.,2001; Pollmächer et al.,2002;Wilson et al.,2002; Adler and Rogers, 2005; Adler et al., 2006; McAfoose and Baune, 2009; Hoshiko et al., 2012; Williamson and Bilbo, 2013). In particular, pro-inflammatory cytokines such as interleukin (IL)-1, IL-6, and tumor necrosis factor alpha (TNF-&alpha;) have all been implicated in cardinal cellular and molecular processes of long- term hippocampal-dependent memory consolidation including synaptic plasticity, synaptic scaling and neurogenesis (Malenka and Bear, 2004; Bruel-Jungerman et al., 2007a,b; Turrigiano, 2007; Baier et al., 2009; McAfoose and Baune, 2009; Bachstetter et al., 2011; Ben Menachem-Zidon et al., 2011; Yirmiya and Goshen, 2011; del Rey et al., 2013; Gemma and Bachstetter, 2013). For example at physiological levels, IL-1 promotes long-term poten- tiation (LTP), a widely employed electrophysiological model of memory-associated synaptic plasticity, whereas IL-6 appears to exert inhibitory influences on excessive excitation during LTP maintenance (Li et al., 1997; Coogan et al., 1999; Ross et al., 2003; Balschun et al., 2004). Interestingly, production of both IL-1 and IL-6 is increased following LTP induction, further supporting a role for cytokines in modulating memory-associated synaptic plasticity and network-protective synaptic scaling (Schneider et al., 1998; Jankowsky et al., 2000). 
+Several chemokines are widely expressed throughout the CNS during development and throughout life where they have been shown to play diverse roles in cell migration and differentiation (Lu et al., 2002), regulation of cellular communication in the adult brain (Tran and Miller, 2003) and neuroprotection (Araujo and Cotman, 1993; Meucci et al., 1998; Robinson et al., 1998; Bruno et al., 2000; Limatola et al., 2000; Hatori et al., 2002; Deiva et al., 2004; Krathwohl and Kaiser, 2004; Limatola et al., 2005; Catalano et al., 2013; Shepherd et al., 2013).  - Sheridan2014
+
+
+Chemokines are key molecules in neuron-microglia communication in the developing and mature brain under both physiological and pathological conditions (de Jong et al., 2005). Fractalkine is an important neuron-microglia chemokine signal. - Pagani2015
 
 
 
+Several chemokines are widely expressed throughout the CNS during development and throughout life where they have been shown to play diverse roles in cell migration and differentiation (Lu et al., 2002), regulation of cellular communication in the adult brain (Tran and Miller, 2003) and neuroprotection (Araujo and Cotman, 1993; Meucci et al., 1998; Robinson et al., 1998; Bruno et al., 2000; Limatola et al., 2000; Hatori et al., 2002; Deiva et al., 2004; Krathwohl and Kaiser, 2004; Limatola et al., 2005; Catalano et al., 2013; Shepherd et al., 2013). - Sheridan2014
+
+An increasing number of chemokines exhibit extensive regulation across a range of situations where neuronal plasticity is involved; including memory-associated functional plasticity, protective plasticity in the setting of ischemia and maladaptive plasticity such as that underpinning neuropathic pain (Adler et al., 2006; Rostene et al., 2007; McAfoose and Baune, 2009; Old and Malcangio, 2012). Specifically, the role for CX3CL1 in control of hippocampus and Raphe activity suggests that infection-, inflammation-, and/or chronic disease-associated increases in the chemokine could contribute to reduced hippocampal and Raphe output, alterations that could, in turn, precipitate depressed mood and heightened anxiety among other disorders of brain function (Meltzer, 1990; Bast, 2011; Small et al., 2011).- Sheridan2014

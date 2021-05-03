@@ -5,39 +5,50 @@
 \begin{titlepage}
 \thispagestyle{empty}\enlargethispage{\the\footskip}%
 \begin{center}
-    {\setstretch{1.66} {\maintitle}\par }%
-    \vskip.4in
-    By
-    \vskip .3in
-    {\myname}
-    \vskip .3in
-    
-    \begin{doublespace}
-    Dissertation\\
-    Submitted to the Faculty of the \\
-    Graduate School of \myuniversity \\
-    in partial fulfillment of the requirements \\
-    for the degree of \\ [.1in]
-    \end{doublespace}
-    
-    \MakeUppercase{DOCTOR OF PHILOSOPHY} \\[.1in]
-    in \\[.1in]
-    {\mydiscipline} \\[.25in]
-    \mygraddate \\[.25in]
-    \mycitystate
-\end{center}
-\vskip .5in
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%% Approved names %%%%%%%%%%%%%%%%%%
-\begin{center}
-\begin{doublespace}
-Approved:\\
-\Chair\\
-\Advisor \\
-\OtherInternalMember \\
-\ExternalMember \\
-\end{doublespace}
+
+\includegraphics[width=0.19\textwidth]{ifpan.jpg}\\[2pt]
+{Instytut Farmakologii im. Jerzego Maja \\Polskiej Adakemii Nauk}\\[5pt]
+
+\vspace{3cm}
+
+ {\huge\bfseries Effects of chosen chemokines on neuronal properties and synaptic transmission  \\ in central and basolateral complex of the rat amygdala\\}
+
+ \vspace{1.5cm}
+ {\Large\bfseries Joanna Ewa Sowa}\\[5pt]
+
+ \vspace{2cm}
+{Praca doktorska} \\[5pt]
+
+{promotor: dr hab. Krzysztof Tokarski} \\[5pt]
+
+
+ \vfill
+
+
+
+ \vfill
+{Krakow 2020}
+
+
+\thispagestyle{empty}
+
+
+% \begin{abstract}
+% My abstract goes here...
+% \end{abstract}
+
+% Alternative location to write Preface/Acknowledgements
+% \newpage
+% 
+% \chapter*{Preface}
+% 
+% Thanks goes to.
+
+% \setcounter{page}{1}
+
+
+
 \end{center}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -56,43 +67,46 @@ Approved:\\
 % \\[.14in]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{titlepage}
- 
+
+
+\let\maketitle\oldmaketitle
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%% Copyright page %%%%%%%%%%%%%%%%%%
-\thispagestyle{empty}%\enlargethispage{\the\footskip}%
-\vspace*{\fill}
-\begin{center}
-Copyright \copyright ~\mypubyear~by \myname\\
-All Rights Reserved
-\end{center}
-\vspace*{\fill}
-\clearpage
+% \thispagestyle{empty}%\enlargethispage{\the\footskip}%
+% \vspace*{\fill}
+% \begin{center}
+% Copyright \copyright ~\mypubyear~by \myname\\
+% All Rights Reserved
+% \end{center}
+% \vspace*{\fill}
+% \clearpage
 
 
-\mySpacing
-\pagenumbering{roman} \setcounter{page}{3}
+% \mySpacing
+% \pagenumbering{roman} \setcounter{page}{3}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% Dedication page %%%%%%%%%%%%%%%%%%
 
-\chapter*{}
-\addcontentsline{toc}{chapter}{DEDICATION}
-\vspace{7mm}
-\vspace*{\fill}
-\begin{center}
-\input{tex/dedication}
-\end{center}
-\vspace*{\fill}
+% \chapter*{}
+% \addcontentsline{toc}{chapter}{DEDICATION}
+% \vspace{7mm}
+% \vspace*{\fill}
+% \begin{center}
+% \input{tex/dedication}
+% \end{center}
+% \vspace*{\fill}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%% Acknowledgements page %%%%%%%%%%%%%%%
 
-\chapter*{ACKNOWLEDGEMENTS}
-\label{ch:Acknowledgements}
-\addcontentsline{toc}{chapter}{ACKNOWLEDGEMENTS}
-\vspace{7mm}
-\input{tex/acknowledgements}
+% \chapter*{ACKNOWLEDGEMENTS}
+% \label{ch:Acknowledgements}
+% \addcontentsline{toc}{chapter}{ACKNOWLEDGEMENTS}
+% \vspace{7mm}
+% \input{tex/acknowledgements}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

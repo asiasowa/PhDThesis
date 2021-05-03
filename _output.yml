@@ -1,0 +1,44 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">PhD thesis</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    download: ["pdf"]
+
+
+bookdown::word_document2:
+    reference_docx: common/word_template.docx
+# bookdown::markdown_document2:
+#   base_format: rmarkdown::md_document
+#   variant: gfm
+
+bookdown::epub_book: default
+
+bookdown::pdf_book:
+    sansfont: Calibri Light
+    latex_engine: xelatex
+#    header-includes: \AtBeginDocument{\let\maketitle\relax}
+    includes:
+      in_header: tex/preamble.tex
+      before_body: tex/doc_preface.tex
+      
+      
+# bookdown::pdf_book:
+#    includes:
+#    in_header: latex/preamble4.tex
+#    before_body: latex/pre_doc.tex
+#    latex_engine: xelatex
+#    keep_tex: yes
+#    fig_caption: yes
+#    number_sections: yes
+#    toc: true
+#   citation_package: natbib
+#   
+# header-includes:
+#   - \usepackage{titling}
+#   - \pretitle{\begin{center}
+#     \includegraphics[width=2in,height=2in]{images/ifpan.jpg}\LARGE\\}
+#   - \posttitle{\end{center}}

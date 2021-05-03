@@ -1,0 +1,6 @@
+book_filename: "PhD thesis"
+language:
+  ui:
+    chapter_name: ""
+delete_merged_file: true
+#new_session: true

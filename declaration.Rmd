@@ -1,5 +1,1 @@
----
-output: pdf_document
----
-
 # Declarations

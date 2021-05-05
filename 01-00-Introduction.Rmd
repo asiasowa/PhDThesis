@@ -5,18 +5,18 @@
 Chemokines (chemotactic cytokines) are a family of small (7-11 kDa) secreted proteins. 
 They  were originally identified as serving chemotactic function on immune cells; however, recent evidence has begun to elucidate novel, brain-specific functions of these proteins. 
 So far, 53 human chemokines and 23 chemokine receptors have been cloned or characterized. <!--<http:// cytokine.medic.kumamoto-u.ac.jp/>. not active link, find another database or use @Li2008a--> 
-They can be classified into CXC, CC, C or CX3C ($\delta$) subfamilies based on the arrangement of the two cysteine residues near the N-terminus [@zlotnik_2000] \ref{family}. <!-- CX3C characterized by the presence of 3 amino acidic residues (X3) localized between 2 cysteine residues, thus forming a disulphide bond, a CX3C motif, and also a transmembrane domain (Pan et al., 1997). -->
+They can be classified into CXC, CC, C or CX3C (`r knitr::asis_output("\U03B4")`) subfamilies based on the arrangement of the two cysteine residues near the N-terminus [@zlotnik_2000] \ref{family}. <!-- CX3C characterized by the presence of 3 amino acidic residues (X3) localized between 2 cysteine residues, thus forming a disulphide bond, a CX3C motif, and also a transmembrane domain (Pan et al., 1997). -->
 
 ![ *Chemokine families.* Chemokines are classified in four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. \label{family} ](images\chemokinefamilies.png) 
 
-Chemokines exert their biological effects through cell surface receptors that belong to the superfamily of seven-membrane domain G-protein-coupled receptors (GPCRs) and are expressed in a wide variety of cells [@bacon_2000a]. 
+Chemokines exert their biological effects through cell surface receptors that belong to the superfamily of seven-membrane domain G-protein-coupled receptors (GPCRs) and are expressed in a wide variety of cells [@bacon_2000]. 
 
 <!--Chemokine receptors belong to the family of G-protein coupled receptors (GPCR), showing the presence of 7 transmembrane helices connected by several intra- and extracellular loops, as well as N-terminal extracellular and C-terminal intracellular domains. The N-terminal extracellular domain is considered important for chemokine binding and receptor activation, while the C-terminal end is coupled to G-proteins, and is important for receptor signaling upon chemokine binding. Based on their primary amino acid sequence and the respective ligands that they bind, chemokine receptors are also classified into four subfamilies, i.e., CXCR, CCR, CR and CX3CR (Proudfoot et al., 2010). - Paolicelli2014;; -->
 
 
 
 Studies indicate that chemokines and their receptors interact with each other in a complex manner. 
-There are several regions of the chemokine that are critical for receptor binding and signal transduction [@howard_1996].<!--inne cytowanie albo wyrzucić-->
+There are several regions of the chemokine that are critical for receptor binding and signal transduction <!--[@howard_1996].inne cytowanie albo wyrzucić-->
 Moreover, after interaction with chemokines, some receptors undergo dimerization (heterodimerization, homodimerization) and oligomerization process, which seems to be critical for the triggering of biological responses [@mellado_2001].
 
 Chemokines were originally identified as serving chemotactic function on immune cells; however, recent evidence has begun to elucidate novel, brain-specific functions of these proteins. 
@@ -25,7 +25,7 @@ Like those systems, the chemokine system is widely but unevenly distributed in t
 Why do cells (neurons, astrocytes, and microglia) in CNS express chemokines and chemokine receptors, and what is the neurophysiological relevance of chemokines in the CNS? 
 The plausible explanation is that they may provide a bridge between the immune and nervous systems, which are classically viewed as two complex and distinct entities.
 
-In CXC (also known as $\alpha$) chemokines (see figure, part a), one amino acid separates the first two
+In CXC (also known as `r knitr::asis_output("\U03B1")`) chemokines (see figure, part a), one amino acid separates the first two
 cysteine residues (cysteine–X amino acid–cysteine, or CXC). Chemokines of this family are known to chemoattract neutrophils, T lymphocytes, B lymphocytes and natural killer cells. In CC (also known as β) chemokines (see figure, part b), the first two cysteine residues are adjacent to each other. Members of this chemokine family chemoattract monocytes, macrophages, basophils, T lymphocytes and eosinophils, but have little or no effect on neutrophils. The C (also known as γ) chemokine subfamily (see figure, part c) is distinguished structurally as containing only two of the four conserved cysteine residues that are found in the other families. The only members of this family are lymphotactin α and β (XCL1 and XCL2), which are known to chemoattract T lymphocytes. These chemokines are specific ligands for the XCR1 receptor. The CX3C (also known as δ) chemokine subfamily, which is currently represented by a single member named fractalkine (CX3CL1), is characterized by the presence of three amino acids between the first two cysteine residues, as well as a transmembrane and mucin-like domain (see figure, part d) - Rostene2007
 
 although we focus on the two chemokines that have been extensively described in the CnS and for which the most data are avail- able, we also report on other chemokines that are active in the CnS. The chemokines that we mainly focus on belong to the two main chemokine families; they are the CC chemok- ine CCl2 (also known as monocyte chemoat- tractant protein 1 (mCP1)) and its cognate receptor, CCr2, and the CXC chemokine CXCl12 (also known as stromal cell-derived factor 1 (SDF1)) and its receptor in rodents (which is, as far as is known to date, unique in these species), CXCr4. - Rostene2007

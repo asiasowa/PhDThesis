@@ -10,19 +10,19 @@ All efforts were made to minimize suffering and to reduce the number of animals 
 ### Animals
 
 Male Wistar rats (50-180g on arrival) were purchased from Charles River Laboratories (Research Models and Services; Germany).
-Four to five animals were housed per polypropylene cage (55x35x20 cm) in controlled environment (22 ± 1$^{\circ}$C, 45 ± 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. 
+Four to five animals were housed per polypropylene cage (55x35x20 cm) in controlled environment (22 `r knitr::asis_output("\U00B1")` 1`r knitr::asis_output("\U00B0")`C, 45 `r knitr::asis_output("\U00B1")` 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. 
 Animals were acclimated to the housing environment for at least 4 days before the beginning of the experiments. 
-Rats were weighing 180-300g during the tissue preparation / 5-10 weeks of age. 
+Rats were weighing 180-300g (5-10 weeks of age) during the tissue preparation. 
 Animals at this age are considered as young adults.  
 
 
 ### Reagents
 
-Fractalkine 2 and 5nM according to studies @Sheridan2014
-
 All drugs used for electrophysiological experiments were bath applied by gravity or a peristaltic pump. 
-
+Fractalkine 2 and 5nM according to studies @Sheridan2014
 The time necessary for the solution to flow from the stopcocks to the slice was approximately 15 s. The drugs used were minocycline, 100 lM doxycycline (a second-generation tetracycline), 100 lM DL-fluorocitric acid barium salt (a selective astrocyte inhibitor), 10 lM CNQX (an AMPA/kainate receptor antagonist), 50 lM APV (an NMDA receptor antagonist), 0.5–1 lM tetrodotoxin (TTX, a voltage-gated sodium channel blocker), 10–40 lM bicuculline methiodide (a GABAA receptor antagonist), 1–2 lM strychnine (a glycine receptor antagonist), 100 lM NiCl2 (a low voltage- activated calcium channel blocker), and 100 lM CdCl2 (a high voltage-activated calcium channel blocker). Minocycline and doxycycline were freshly dissolved in Krebs solution at the final concentration before perfusion. A stock of fluorocitrate was prepared from DL- fluorocitric acid barium salt as previously described (Wenker et al., 2010). A stock of CNQX was first dissolved in dimethyl sulfoxide, and the other drugs were prepared in distilled water at 1000 times the concentrations to be used and stored at -20 °C as in our previous study (Liu et al., 2015). The drugs were diluted to the final concentration in Krebs solution just before use. Doxycycline, CNQX, APV, and TTX were obtained from Tocris Bioscience (Bristol, UK). All other chemicals were purchased from Sigma–Aldrich (St. Louis, MO). The determination of the doses for minocycline was based on a previous study in which 100 $\upmu$M minocycline markedly reduced the frequency and amplitude of spontaneous EPSCs (sEPSCs) in hippocampal neurons (Gonzalez et al., 2007). - Peng2016
+
+
 
 ## Whole-cell patch-clamp technique in acute brain slices
 
@@ -31,8 +31,8 @@ The time necessary for the solution to flow from the stopcocks to the slice was 
 Male Wistar (4-7-week-old) rats were anesthetised with isoflurane (AErrane, Baxter, Poland) and decapitated between 07:00 and 09:00 a.m. 
 Brains were collected in ice-cold, low-sodium, high-magnesium ACSF (artifical cerebrospinal–fluid), containing (in mM): 65 sucrose, 76 NaCl, 25 NaHCO~3~, 1.4 NaH~2~PO~4~, 25 glucose, 2.5 KCl, 7 MgCl~2~, 0.4 Na-ascorbate, and 2 Na-pyruvate (bubbled with 95% O~2~/5% CO~2~), pH 7.4; osmolality 290–300 mOsmol kg^−1^) and cut into 300 $\upmu$m thick coronal sections on a Leica VT 1000 vibrating microtome (Leica Instruments, Germany). 
 After slicing, brain slices containing amygdala were transfered and held in an incubation chamber filled with carbogenated ACSF, containing (in mM): 92 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 20 HEPES, 2 MgSO~4~ and 25 glucose, 5 Na-ascorbate, 2 thiourea, 3 Na-pyruvate, pH = 7.35; osmolality 290–300 mOsmol kg^−1^). 
-Slices were incubated at 31–33 $^{\circ}$C for 20 min and then allowed to equilibrate for at least 1h at room temperature (RT).
-After this recovery period, individual slices were transferred to a recording chamber placed on a fixed stage of an Zeiss Axioskop 2 (Zeiss, Germany) upright microscope, where the tissue was perfused (1-2 ml/min) with carbogenated, warm (32$^{\circ}$C) ACSF containing (in mM): 124 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 5 HEPES, 2 MgSO~4~ and 10 glucose, pH = 7.35; osmolality 290–300 mOsmol kg^−1^).
+Slices were incubated at 31–33 `r knitr::asis_output("\U00B0")`C for 20 min and then allowed to equilibrate for at least 1h at room temperature (RT).
+After this recovery period, individual slices were transferred to a recording chamber placed on a fixed stage of an Zeiss Axioskop 2 (Zeiss, Germany) upright microscope, where the tissue was perfused (1-2 ml/min) with carbogenated, warm (32`r knitr::asis_output("\U00B0")`C) ACSF containing (in mM): 124 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 5 HEPES, 2 MgSO~4~ and 10 glucose, pH = 7.35; osmolality 290–300 mOsmol kg^−1^).
 
 
 ### Whole-cell patch-clamp recordings and data acquisition
@@ -216,3 +216,17 @@ The percentage of MCH neurons that express CXCR4 in a given field was calculated
 ## Clustering
 
 Hierarchical clustering analysis. To classify the cells, an unsupervised clustering analysis (  Cauli et al., 2000  ;  Jasnow et al., 2009  ;  Sosulina et al., 2010  ) was performed by using squared Euclidean distances and Ward’s method (  Ward, 1963  ). Electrophysiological properties of CeL cells were tested for uniformity in their distributions. Each of the quantified 14 variables (listed in  Table 1  ) was binned and tested by the D’Agostino– Pearson normality test, which is based on the assumption that a variable is normally distributed in a class. Variables with a non-Gaussian distribution were used for subsequent unsupervised clustering. Hierarchical clustering arranges data items into a tree-like dendrogram in which tree leaves represent data items and the length of tree edges between leaves represents the dissimilarity between data items. Tree leaves belonging to a subtree suggest high similarity and therefore form a group. Hierarchical clustering operates as follows. First, each CeL neuron was transformed into a 4D data point with variables of spike delay, ramp ratio, resting membrane potential (RMP), and rheobase. Before clustering, we first normalized variables into the range (0, 1) by performing min–max normalization. The distance between data points represents the dissimilarity between them; closer data points have higher similarity. Next, we clustered all the data points by the following iterative procedure. First, assign each data point to a cluster; every cluster therefore contains only one data point. Second, merge the two closest clusters into one cluster; therefore, Hou et al., 2016
+
+## Sulphoramine staining
+
+For sulforhodamine 101 (SR101) staining [@christian_2013. @nimmerjahn_2004, @kafitz_2008], 250-μm-thick slices were prepared as for electrophysiology, with some slices incubated in 100 μM fluorocitrate (FC) for 30 min at room temperature as described above. 
+Slices were incubated in 1 μM SR101 (Sigma-Aldrich, <!-- kraj-->) in oxygenated ACSF for 20 min at 34 `r knitr::asis_output("\U00B0")`C, then washed in ACSF for at least 10 min at 34 `r knitr::asis_output("\U00B0")`C. 
+The slices were fixed in 4% PFA overnight, washed in PBS,<!--resectioned to 50-μm thickness,--> and processed for GFAP and NeuN immunoreactivity.
+Z-stacks of images with an optical distance of 0.5 μm were captured with a laser scanning confocal microscope (Zeiss LSM510) using a 40× oil-immersion objective. 
+Secondary antibodies tagged to fluorescein 488 and Cy3 were excited with 488- and
+594- nm lasers and observed through 510–530 and 560–615
+emission filters, respectively. A pinhole of 1 Airy unit and
+identical settings for the detector gain and amplifier offset were
+used to capture all confocal images 
+
+## Fluorocitrate

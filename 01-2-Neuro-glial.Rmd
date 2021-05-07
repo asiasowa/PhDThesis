@@ -6,7 +6,10 @@ Often, a particular cell type is uniquely expressing the ligand for a receptor t
 
 ### Neuron-astrocyte signaling  {#astro_inter} 
 
-Moreover, pre- treatment of brain slices with fluorocitrate (100 lM for 30 min) increased sIPSC duration in ventrobasal nucleus neurons or decreased sIPSC duration in the thalamic reticular nucleus neurons (Christian and Huguenard, 2013). - Peng2016
+Moreover, pretreatment of brain slices with fluorocitrate (100 lM for 30 min) increased sIPSC duration in ventrobasal nucleus neurons or decreased sIPSC duration in the thalamic reticular nucleus neurons (Christian and Huguenard, 2013). - Peng2016
+
+
+Astrocytes are integral elements of synapses in developing rodent and human cerebral cortices [ 30 – 32 ]. A single cortical astrocyte is estimated to contact 20,000 to 120,000 synapses in  rodents and up to 2,000,000 synapses in humans [ 30 ]. Several lines of evidence suggest that,  through this close association with neurons, astrocytes alter synaptic functions. Astrocytes have been shown to modulate synaptic transmission [ 33 , 34 ], long-term potentiation [ 34 – 40 ],  and long-term depression [ 15 ] in several brain areas, as well as provide a developmental switch  of synaptic transmission from LTD to LTP in hippocampus [ 41 ]. More and more details about  astrocytic cellular and subcellular mechanisms have recently been presented [ 40 , 42 – 49 ]. It is  of interest to understand how these subcellular mechanisms in astrocytes and their processes are linked with synaptic transmission and plasticity in neocortex [ 13 , 15 , 42 , 50 , 51 ]. [@manninen_2020]
 
 ### Neuron-microglia signaling   {#micro_inter}  
 

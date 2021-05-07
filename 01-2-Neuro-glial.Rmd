@@ -75,7 +75,7 @@ Microglia were also shown to be extremely dynamic in their once presumed “rest
 Their physiological roles discovered so far comprise the elimination of supernumerary neurons and the maturation of synapses in the developing brain (Hoshiko et al., 2012; Cunningham et al., 2013; Lenz et al., 2013; Ueno et al., 2013), the regulation of neuronal and synaptic activity (Li et al., 2012; Pascual et al., 2012), the elimination of apoptotic newborn neurons generated in excess during adult hippocampal neurogenesis (Sierra et al., 2010), and the activityand experience-dependent remodeling of neuronal circuits. <!--Paolicelli2014-->
 Neuronal circuit plasticity is required for learning and memory processes in the developing and mature brain, where microglia contribute to both the formation and elimination of synapses (Tremblay et al., 2010, 2012; Paolicelli et al., 2011; Schafer et al., 2012; Parkhurst et al., 2013). <!--Paolicelli2014-->
 
-
+#### Minocycline
 
 **NEUROGENESIS**
 Unlike other regions of the adult brain, the DG has a unique feature, namely it continuously generates new neurons throughout life – a process known as adult hippocampal neurogenesis (AHN) (Bayer and Altman, 1975; Gould et al., 1990). This property confers the entire hippocampal circuit with an extraordinary degree of plasticity and allows the participation of newly generated neurons in the fine tuning of hippocampal-related behavior (Nakashiba et al., 2012; Sahay et al., 2011).The incorporation of new synaptic elements to the hippocampal trisynaptic circuit as a consequence of AHN triggers a substantial remodeling of the pre-existing synaptic contacts (McAvoy et al., 2016; Toni et al., 2008; Toni et al., 2007). Bolos2018

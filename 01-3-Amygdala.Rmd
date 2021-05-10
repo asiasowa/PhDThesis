@@ -75,11 +75,11 @@ These neurons likely correspond to local-circuit cells.
 Low-treshold bursting cells are endowed with a T-type calcium current, giving rise to spike bursts. 
 They also show display rebound spikes after hyperpolarizing current step [@dumont_2002; @hou_2016]. 
 
-Considering expression of immunohistochemical markers, electrophysiological properties, and synaptic connections, two groups of CeA neurons have emerged: PKC`r knitr::asis_output("\U03B4")`-expressing  (PKC`r knitr::asis_output("\U03B4")`+) and SOM-expressing(SOM+) neurons. 
+Considering expression of immunohistochemical markers, electrophysiological properties, and synaptic connections, two groups of CeA neurons have emerged: PKC`r knitr::asis_output("\U03B4")`-expressing  (PKC`r knitr::asis_output("\U03B4")`+) and SOM-expressing (SOM+) neurons. 
 PKC`r knitr::asis_output("\U03B4")` marker is specific to CeA. 
 PKC`r knitr::asis_output("\U03B4")`+ neurons are relatively homogeneous group: they are mainly late-firing cells (~85%) and display reduction of activity following fear conditioning protocol (CeL~off~ cells). 
 In contrary, most of the PKC`r knitr::asis_output("\U03B4")`- cells are SOM+ display heterogeneous intrinsic excitability with both late-firing (40%) or regular-spiking types (60%). 
-Moreover, these neurons respond to the fear conditioning with an increase in activity, and have therefore been called CeL~ON~ neurons [@Ciocchi2010; @Haubensak2010; @Li2013; @Hou2016]. 
+Moreover, these neurons respond to the fear conditioning with an increase in activity, and have therefore been called CeL~ON~ neurons [[@ciocchi_2010; @haubensak_2010; @hou_2016; @li_2013]]. 
 Therefore, it seems that these distinct populations have been associated with different functional roles.
 
 #### Intercalated masses

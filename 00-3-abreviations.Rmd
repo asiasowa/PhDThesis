@@ -1,4 +1,5 @@
 # Abreviations {-}
+
 <!-- \renewcommand{\nompreamble}{\vspace{0.25in}} -->
 <!-- \makenomenclature -->
 <!-- \renewcommand{\nomname}{LIST OF ABBREVIATIONS} -->
@@ -55,7 +56,9 @@ x <- tribble(
     "ENK", "enkephalin", 
     paste0("PKC", "$\\delta$"), paste0("protein kinase C", "$\\delta$"),
     "LF", "late-firing",
-    
+    "RS", "regular-spiking",
+    "sEPSCs", "spontaneous excitatory postsynaptic current",
+
     
     "PTMs", "post-translational modifications",
     "MMPs","matrix metalloproteinases",
@@ -78,7 +81,7 @@ x <- tribble(
     "DRG", "dorsal horn of the spinal cord",
     "SLMVs", "synaptic-like microvesicles",
     "VGLUTs", "vesicular glutamate transporters",
-    "sEPSCs", "spontaneous excitatory postsynaptic current",
+   
     "LTP", "long-term potentiation",
     "LTD", "long-term depression",
     "ENK", "enkephalin",

@@ -41,6 +41,9 @@ x <- tribble(
     "CeM", "medial part of the central amygdala",
     "CeI", "intermediate part of the central amygdala",
     "BNST", "the bed nucleus of stra terminalis",
+    "MeA", "the medial nucleus of the amygdala",
+    "AAA", "the anterior amygdala area",
+    "AHA", "the amygdalo-hippocampal area",
     "ITC", "intercalated cell clusters",
     "AHP", "afterhyperpolarization",
     "sIPSCs", "spontaneous inhibitory postsynaptic current",
@@ -58,6 +61,11 @@ x <- tribble(
     "LF", "late-firing",
     "RS", "regular-spiking",
     "sEPSCs", "spontaneous excitatory postsynaptic current",
+    "CS", "conditioned stimulus",
+    "US", "unconditioned stimulus",
+    "mPFC", "medial part of prefrontal cortex",
+    "MGN", "the medial geniculate nucleus",
+    "AC", "the auditory cortex",
 
     
     "PTMs", "post-translational modifications",

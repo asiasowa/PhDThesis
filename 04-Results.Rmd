@@ -1,5 +1,13 @@
 # Results
 
+## CX3CL1
+
+### Experiment 1 - Immunohistochemical expression of CX3CL1 and CX3CR1 in the rat amygdala
+
+### Experiment 2 - Electrophysiological effects of CX3CL1 on membrane properties and synaptic transmission in the BLA
+
+###
+
 To elucidate how IFNg affects nociceptive responses in the spinal dorsal horn, we analyzed the effects of IFNg on postsy- naptic action by using whole-cell patch-clamp recordings from SG neurons.
 
 To determine the nature of local connections between neurons in the CeL, paired whole-cell recordings were made in acute coronal slices of wild-type mice (Fig. - Hunt2017

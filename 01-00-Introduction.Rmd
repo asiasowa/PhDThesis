@@ -2,12 +2,89 @@
 
 ## Chemokines
 
+### Background
+
 Chemokines (chemotactic cytokines) are a family of small (7-11 kDa) secreted proteins. 
-They  were originally identified as serving chemotactic function on immune cells; however, recent evidence has begun to elucidate novel, brain-specific functions of these proteins. 
+However, a decade later, the first reports revealed the prominent expression of chemokines and their receptors in the central nervous system (CNS) [@meucci_1998]. 
+Since then, numerous detailed studies on the crucial role of these immune proteins and their receptors in the brain, also under physiological conditions, have been published, highlighting their brain-specific functions, such as the modulation of synaptic transmission [@rostne_2007].
+It is now clear that all types of brain cells synthesize distinct chemokines and might respond to chemokine stimulation *via* their cognate receptor expression. <!-- cytowanie? w review jest to tabelka... -->
+These complex cellular patterns of chemokine/chemokine receptor expression lead to intricate cell-to-cell communications.
+Thus, of particular interest is now the idea that CNS chemokines are not only mediators of neuroinflammation, but also they are emerging as orchestrators of neuron-glia crosstalk, which is essential in maintaining brain homeostasis [@trettel_2020].
+
+### Classification
+
+To date, 53 human chemokines and 23 chemokine receptors have been cloned or characterized [@hughes_2018]. 
+All chemokine family members share a similar tertiary structure: a flexible N-terminus and N-terminal loop, followed by a three-stranded antiparallel `r knitr::asis_output("\U03B2")`-sheet on which a C-terminal `r knitr::asis_output("\U03B1")`-helix is folded (for reviews:  @miller_2017, see: Fig.1).
+Although N-terminus is widely acknowledged as pivotal for receptor activation, it is not sufficient in this regard, and several additional chemokine regions were subsequently identified as critical for receptor binding and signal transduction, including N-loop, or highly conserved GP (glycine-proline) motif (for review: @kleist_2016). 
+Thus, these data illustrate that subtle structural changes in one chemokine domain may significantly alter receptor activation, resulting in unique functional outcomes for chemokine-receptor pairs.
+
+Chemokines were originally named according to their function or from the cell type that produced them.
+However, a systematic nomenclature was introduced in 2000, based on the spacing of the first two cysteine residues closest to the N‐terminus.
+It consists of the subfamily designation (XC, CC, CXC, CX3C), followed by the letter “L” (denoting "ligand"), and the number according to when the gene was first isolated (@zlotnik_2000, Fig.1).
+
 So far, 53 human chemokines and 23 chemokine receptors have been cloned or characterized. <!--<http:// cytokine.medic.kumamoto-u.ac.jp/>. not active link, find another database or use @Li2008a--> 
 They can be classified into CXC, CC, C or CX3C (`r knitr::asis_output("\U03B4")`) subfamilies based on the arrangement of the two cysteine residues near the N-terminus [@zlotnik_2000] \ref{family}. <!-- CX3C characterized by the presence of 3 amino acidic residues (X3) localized between 2 cysteine residues, thus forming a disulphide bond, a CX3C motif, and also a transmembrane domain (Pan et al., 1997). -->
 
 ![ *Chemokine families.* Chemokines are classified in four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. \label{family} ](images\chemokinefamilies.png) 
+
+
+
+Chemokines exert their biological effects through cell surface chemokine receptors (CKRs), which can be divided into two families: conventional chemokine receptors belonging to the classic G protein receptors and atypical chemokine receptors. 
+Conventional receptors are classified according to the subfamily of chemokine ligand, as mentioned above.
+They preferably bind and are named following the same principle as the chemokines, but replacing “L” with “R”, which denotes “receptor” (see: Fig.1). 
+They typically transduce their signals *via* two major routes: G~i~ proteins and `r knitr::asis_output("\U03B2")`‐arrestin [ @zweemer_2014].
+
+ACKRs, a small subset of proteins with at least four representatives [@bachelerie_2014; @salvi_2017], structurally resemble conventional chemokine receptors.
+They bind a wide variety of chemokine ligands with high affinity and signal predominantly through `r knitr::asis_output("\U03B2")`-arrestins [@hughes_2018].  
+Due to their inability to activate typical G protein-signaling pathways and thereby induce chemotactic activity, they were initially thought to scavenge chemokine ligands or function as co-receptors.
+However, recent data cast a new light on the complexity of the ACKRs role in regulating chemokine system signaling, also beyond inflammation (for review: @salvi_2017). <!-- lepiej to napisać i może coś z homeostazą ?? -->
+Pioneer experiments demonstrated the expression of two ACKRs members, ACKR1 and ACKR3, in the CNS, as well as their behavioral relevance (see: \@ref(behavior), Table 1 and Table 3).<!-- problem z tablekami!!! -->
+
+The classical, formulated in the mid-1900s, classification divided chemokine receptors into serving inflammatory, homeostatic, and dual actions.
+On the other hand<!--Yet?-->, considering that the same chemokine may exert both neuroprotective and neurotoxic effects, depending on its concentration, cell type, tissue, and time, this view seems oversimplistic. 
+However, given the advances in genomic methodology, chemokine receptors regarded as homeostatic were shown to be located singly or in mini-clusters in different chromosomes and are well-conserved across species [@nomiyama_2013], highlighting their translational relevance in human diseases.
+
+### Chemokine signaling
+
+The multifaceted role of chemokines in both nervous and immune systems is mirrored by the complexity of the molecular signaling mechanisms underlying their biological functions. 
+
+Firstly, the regulation of chemokines and their receptors may be controlled by post-translational modifications (PTMs), the chemical modification of a protein after its translation, such as citrullination or cleavage by several proteases (@hughes_2018, see: Fig. 2A).
+These changes profoundly affect chemokine system activity, including chemokine activation/inactivation, the change in binding affinity, or even switching from a receptor agonist to an antagonist [@hughes_2018].
+
+Another essential aspect of chemokine-induced signaling is their rich repertoire of ligand-receptor relationships (for reviews: @zlotnik_2000, @hughes_2018,  see: Fig. 2B).
+It is widely accepted that most chemokines may bind to several different receptors, whereas nearly all of CKRs may recognize various chemokine ligands.
+There was a prevailing notion that in the absence (or blockade) of a particular chemokine or chemokine receptor due to genetic or environmental factors, it could be compensated by the presence of other molecules with similar functions, illustrating the robustness of chemokine signaling.
+However, it becomes increasingly evident that the interactions between chemokines and CKRs are far more restricted, complex, and less redundant than previously thought, as further addressed in this section.
+Consequently, each chemokine/CKR pair interaction depends, for example, upon the simultaneous spatial and temporal expression of both molecules [@zweemer_2014]. 
+
+Most chemokine receptors, like many GPCRs, constitutively exist as dimers (heterodimers/homodimers) or oligomers.<!-- homo/hetero/oligomerization // as well as can act as multimeric forms, homo- or heterodimers [248–250].-->
+This phenomenon also has been shown to modify ligand binding properties or activate different signaling pathways [@salanga_2011]. 
+Heterodimers, as they are formed with other GPCRs families (e.g. with opioid receptors), underlie the synergistic or antagonistic activity of various chemokine pairs (@kleist_2016).
+Moreover, an increasing number of data shows that dimer formation is regulated by other factors, such as interactions with glycosaminoglycans (GAGs), adding another level of complexity.
+
+GAGs, polysaccharides present both at the cell surface and within extracellular matrices, bind chemokines and thereby immobilize and accumulate them.
+It is an essential step for the chemokine function, as it regulates their local concentration and availability for their receptors.
+Considering GAGs cell-, tissue- and developmental-specific expression  [@lortatjacob_2009], along with their selective binding of certain chemokines, GAGs-chemokine interactions are regarded as yet another mechanism contributing to chemokines orchestration of cell-to-cell communication. 
+
+Biased signaling, also known as functional selectivity, is another feature specific for GPCR receptors that provides a framework for understanding how a finite set of chemokine ligands generates myriad functionally diverse outcomes (@zweemer_2014, @kleist_2016, see: Fig 2D).
+Three types of biased signaling can be distinguished.<!-- based on??? -->  
+Ligand bias occurs when specific chemokines, although binding to the same receptor, could preferentially activate one of the intracellular pathways, either G-protein or `r knitr::asis_output("\U03B2")`-arrestin.
+Importantly, pathway activation depends  on the cellular expression and availability of signaling elements, resulting in cell-specific differences. 
+Another type of bias signaling, receptor bias, occurs when a specific receptor, which normally binds multiple chemokine ligands, preferentially couples to a particular chemokine.
+Finally, cellular or tissue bias occurs when the same chemokine–receptor pair leads to activation of distinct signaling cascades or cellular responses in different spatial contexts. 
+Therefore, biased signaling is another mechanism of chemokine signaling contributing to better understanding how chemokine ligands coordinate such diverse and complex multiple cell functions. 
+
+Noting the CKRs' diverse cellular distribution and the complexity of chemokine ligand-receptor interactions, it is evident that chemokine receptors may activate different intracellular pathways in a ligand- and cell-specific context (see: Fig. 2C). 
+Chemokine receptors most often signal through canonical G protein pathways and couple either to (1) the G~`r knitr::asis_output("\U03B1")`i~ subunit following inhibition of the adenylyl cyclase activity to reduce the intracellular cAMP levels or (2) G~`r knitr::asis_output("\U03B1")`q~ that activates phospholipase C, leading to the formation of diacylglycerol and inositol 1,4,5-triphosphate with a subsequent increase in a protein kinase C (PKC) activity and transient elevations of cytosolic Ca^2+^ levels.
+However, mounting evidence describes the involvement of other intracellular signaling cascades, including distinct G protein subtypes (G~11~ or G~`r knitr::asis_output("\U03B1")`12/13~), or alternative signaling targets, such as mitogen-activated protein kinase (MAPK), extracellular signal-regulated kinase (ERK) ½, Janus kinases (JAKs), and nuclear factor-`r knitr::asis_output("\U03BA")`B (NF-`r knitr::asis_output("\U03BA")`B) (for reviews: @allen_2007, @rostne_2011).
+
+The mechanisms mentioned above, together with the dualistic nature of some of the chemokine ligands (e.i. a chemokine agonist at one receptor can antagonize another receptor) and the presence of non-chemokine ligands ( e.g., ubiquitin, `r knitr::asis_output("\U03B2")`-defensins, @hughes_2018) presents a multifaceted, highly interconnected, tightly regulated system with possible myriad functionally diverse outcomes.
+
+
+
+
+
+
 
 Chemokines exert their biological effects through cell surface receptors that belong to the superfamily of seven-membrane domain G-protein-coupled receptors (GPCRs) and are expressed in a wide variety of cells [@bacon_2000]. 
 
@@ -175,3 +252,12 @@ Therefore, tight and rapid control of chemokine system signaling is highly requi
 After two decades of research on this topic, we are now starting to appreciate the extent and complexity of these mechanisms responsible for chemokine signaling.
 
 Transport of     chemokines   inside cells occurs     via   the canonical protein trafficking pathway associated with endoplasmic reticulum and   Golgi     [6]  .   Overall  , the secretion of chemokines varies vas  tly between cell types   and   activation stimuli   and can involve a myriad of secretory pathways, including secretory   granules and vesicles   [2, 5, 6]  . [@watson_2020]
+
+Firstly, the regulation of chemokines and their receptors may be controlled by post-translational modifications (PTMs), the chemical modification of a protein after its translation, such as citrullination, nitration/nitrosylation, or cleavage by proteases [@hughes_2018, @thompson_2017].<!--After chemokine production, these molecules may be chemically modified, which profoundly affects chemokine activity. -->
+These changes can lead either to the activation or inactivation of the chemokine, change chemokine affinity for its corresponding receptor, or switch from a receptor agonist to an antagonist [@hughes_2018].<!-- citation review??? 
+11. Struyf S, De Meester I, Scharpe S, Lenaerts JP, Menten P, Wang JM, ProostP, Van Damme J (1998)Eur J Immunol28:1262–1271.
+12. Ludwig A, Schiemann F, Mentlein R, Lindner B, Brandt E (2002)J LeukocyteBiol72:183–191.
+13. Proudfoot AE, Buser R, Borlat F, Alouani S, Soler D, Offord RE, SchroderJM, Power CA, Wells TN (1999)J Biol Chem274:32478–32485.
+14. Clark-Lewis I, Mattioli I, Gong JH, Loetscher P (2003)J Biol Chem278:289–295.
+15. Nufer O, Corbett M, Walz A (1999)Biochemistry38:636–642.16. Macphee CH, Appelbaum ER, Johanson K, Moores KE, Imburgia CS,Fornwald J, Berkhout T, Brawner M, Groot PH, O’Donnell K,et al. (1998) J Immunol161:6273–6279.
+-->

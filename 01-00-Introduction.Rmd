@@ -14,20 +14,23 @@ Thus, of particular interest is now the idea that CNS chemokines are not only me
 ### Classification
 
 To date, 53 human chemokines and 23 chemokine receptors have been cloned or characterized [@hughes_2018]. 
-All chemokine family members share a similar tertiary structure: a flexible N-terminus and N-terminal loop, followed by a three-stranded antiparallel `r knitr::asis_output("\U03B2")`-sheet on which a C-terminal `r knitr::asis_output("\U03B1")`-helix is folded (for reviews:  @miller_2017, see: Fig.1).
+All chemokine family members share a similar tertiary structure: a flexible N-terminus and N-terminal loop, followed by a three-stranded antiparallel `r knitr::asis_output("\U03B2")`-sheet on which a C-terminal `r knitr::asis_output("\U03B1")`-helix is folded (for review:  @miller_2017).
 Although N-terminus is widely acknowledged as pivotal for receptor activation, it is not sufficient in this regard, and several additional chemokine regions were subsequently identified as critical for receptor binding and signal transduction, including N-loop, or highly conserved GP (glycine-proline) motif (for review: @kleist_2016). 
 Thus, these data illustrate that subtle structural changes in one chemokine domain may significantly alter receptor activation, resulting in unique functional outcomes for chemokine-receptor pairs.
 
 Chemokines were originally named according to their function or from the cell type that produced them.
 However, a systematic nomenclature was introduced in 2000, based on the spacing of the first two cysteine residues closest to the N‐terminus.
-It consists of the subfamily designation (XC, CC, CXC, CX3C), followed by the letter “L” (denoting "ligand"), and the number according to when the gene was first isolated (@zlotnik_2000, Fig.1).
+It consists of the subfamily designation (XC, CC, CXC, CX3C), followed by the letter “L” (denoting "ligand"), and the number according to when the gene was first isolated (@zlotnik_2000, , see Figure \@ref(fig:family)). <!--They can be classified into CXC, CC, C or CX3C (`r knitr::asis_output("\U03B4")`) subfamilies based on the arrangement of the two cysteine residues near the N-terminus [@zlotnik_2000] \ref{family}.  CX3C characterized by the presence of 3 amino acidic residues (X3) localized between 2 cysteine residues, thus forming a disulphide bond, a CX3C motif, and also a transmembrane domain (Pan et al., 1997). -->
 
-So far, 53 human chemokines and 23 chemokine receptors have been cloned or characterized. <!--<http:// cytokine.medic.kumamoto-u.ac.jp/>. not active link, find another database or use @Li2008a--> 
-They can be classified into CXC, CC, C or CX3C (`r knitr::asis_output("\U03B4")`) subfamilies based on the arrangement of the two cysteine residues near the N-terminus [@zlotnik_2000] \ref{family}. <!-- CX3C characterized by the presence of 3 amino acidic residues (X3) localized between 2 cysteine residues, thus forming a disulphide bond, a CX3C motif, and also a transmembrane domain (Pan et al., 1997). -->
-
-![ *Chemokine families.* Chemokines are classified in four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. \label{family} ](images\chemokinefamilies.png) 
+(ref:family) *Chemokine families.* Chemokines are classified in four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines.
 
 
+```{r family, fig.cap='(ref:family)'}
+# ![ *Chemokine families.* Chemokines are classified in four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. \label{family} ](images\chemokinefamilies.png) 
+
+knitr::include_graphics("images\chemokinefamilies.png")
+
+```
 
 Chemokines exert their biological effects through cell surface chemokine receptors (CKRs), which can be divided into two families: conventional chemokine receptors belonging to the classic G protein receptors and atypical chemokine receptors. 
 Conventional receptors are classified according to the subfamily of chemokine ligand, as mentioned above.

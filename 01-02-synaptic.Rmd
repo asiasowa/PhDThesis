@@ -1,4 +1,14 @@
-### CXCL12
+### Chemokines on synaptic level
+
+
+<!-- electrophysiological -->
+An increasing number of chemokines exhibit extensive regulation across a range of situations where neuronal plasticity is involved; including memory-associated functional plasticity, protective plasticity in the setting of ischemia and maladaptive plasticity such as that underpinning neuropathic pain (Adler et al., 2006; Rostene et al., 2007; McAfoose and Baune, 2009; Old and Malcangio, 2012). Specifically, the role for CX3CL1 in control of hippocampus and Raphe activity suggests that infection-, inflammation-, and/or chronic disease-associated increases in the chemokine could contribute to reduced hippocampal and Raphe output, alterations that could, in turn, precipitate depressed mood and heightened anxiety among other disorders of brain function (Meltzer, 1990; Bast, 2011; Small et al., 2011).- Sheridan2014
+
+
+
+
+
+#### CXCL12
 
 CXCL12/SDF-1α belongs to the CXC group of chemokines. CXCL12/SDF-1α is the predominant and the smallest isoform (from all of six isoforms that are alternative spicing products of one common mRNA precursor molecule). It is also the smallest, at 89 amino acids, including a signaling peptide of 19 amino acids, which is cleaved to generate the mature protein. 
 

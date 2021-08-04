@@ -18,12 +18,17 @@ bookdown::word_document2:
 bookdown::epub_book: default
 
 bookdown::pdf_book:
-    sansfont: Calibri Light
+    template: null
+    fig_caption: yes
+    number_sections: yes
+    toc: true
+    keep_tex: true
+    fig_crop: false
     latex_engine: xelatex
-#    header-includes: \AtBeginDocument{\let\maketitle\relax}
     includes:
       in_header: tex/preamble.tex
       before_body: tex/doc_preface.tex
+     
       
       
 # bookdown::pdf_book:

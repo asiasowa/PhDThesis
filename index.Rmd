@@ -7,15 +7,16 @@ site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
 bibliography: [common/thesis_lib.bib]
-csl: common/apa.csl
 classoption: twoside
-fontsize: 12pt
-linestretch: 1.5
-toc-depth: 1
+fontsize: 12 pt
+linestretch: 2
+toc-depth: 4
 lof: True
 lot: True
 subparagraph: yes
-link-citations: yes
+mainfont: Calibri
+geometry: "left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm"
+csl: common/neuropharmacology.csl
 
 ---
 
@@ -26,20 +27,13 @@ link-citations: yes
 # ), 'packages.bib')
 library(knitr)
 library(tidyverse)
-options(gt.html_tag_check = FALSE)
-knitr::opts_chunk$set(echo = TRUE)
+# options(gt.html_tag_check = FALSE)
+# knitr::opts_chunk$set(echo = TRUE)
+
+knitr::opts_chunk$set(fig.pos = 'H')
 ```
 
 
 # Keywords{-}
 
 chemokines, chemokine receptors, central nervous system 
-
-
-
-<!-- gitbook(fig_caption = TRUE, number_sections = TRUE, 
-  self_contained = FALSE, anchor_sections = TRUE, 
-  lib_dir = "libs", pandoc_args = NULL, ..., template = "default", 
-  split_by = c("chapter", "chapter+number", "section", 
-    "section+number", "rmd", "none"), split_bib = TRUE, 
-  config = list(), table_css = TRUE) -->

@@ -2,13 +2,79 @@
 
 ## History of chemokines
 
-Chemokines (chemotactic cytokines) are a family of small (7-11 kDa) secreted proteins. 
+Chemokines (chemotactic cytokines) are a family of small (7-11 kDa) secreted proteins with chemoattractant and regulatory activities. <!--( Baggiolini, 1998 )-->
+They were originally identified as being key regulators of  both the peripheral and central immune response, serving chemotactic function on immune cells in late 1980 [@yoshimura_1987]. <!-- Chemokines are important regulators of, which largely explains how they contribute to controlling inflammatory processes in the brain.-->
 However, a decade later, the first reports revealed the prominent expression of chemokines and their receptors in the central nervous system (CNS) [@meucci_1998]. 
-Since then, numerous detailed studies on the crucial role of these immune proteins and their receptors in the brain, also under physiological conditions, have been published, highlighting their brain-specific functions, such as the modulation of synaptic transmission [@rostne_2007].
-It is now clear that all types of brain cells synthesize distinct chemokines and might respond to chemokine stimulation *via* their cognate receptor expression. <!-- cytowanie? w review jest to tabelka... -->
+Since then, numerous detailed studies on the crucial role of these immune proteins and their receptors in the brain have been published.
+Chemokines control neuroinflammation, for example by driving leukocytes trafficking and activation into the CNS, facilitating the immune responses, targeting cells of the innate and adaptive immune system [@williams_2014].
+However, chemokine expression in the CNS is not only related to pathological conditions.
+It is now clear that all types of brain cells synthesize distinct chemokines and might respond to chemokine stimulation *via* their cognate receptor expression, suggesting their brain-specific functions, such as the modulation of synaptic transmission (@rostne_2007, \@ref(tab:chemoexpression)). <!-- table 1 --><!--suggests a role for such molecules in mediating homeostatic cross-talk between cells of the brain parenchyma ( Williams et al., 2014 ). 
+The cross-talk among neurons and glia is determinant to establish and maintain a normal brain function. 
+During brain development, chemokines represent signaling molecules that drive the correct migration and axonal pathfinding of neuronal progenitor cells ( Tran and Miller, 2003 ): -->
+
+```{r chemoexpression, results = 'asis', echo = FALSE, message= FALSE, warning=FALSE}
+library(gt)
+library(tidyverse)
+library(gtsummary)
+library(flextable)
+cell_table <- read_csv("D:\\OneDrive\\articles\\Review_PharmaReports\\cell_type_table.csv")
+cell_table <- cell_table %>% dplyr::rename("not_present"  = "NOT PRESENT")
+cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production","Chemokine Family", "Chemokine Receptor Expression", "not_present")
+cell_table <- cell_table %>% dplyr::filter(is.na(not_present))
+cell_table <- cell_table %>% dplyr::select(- "not_present")
+cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production", "Chemokine Receptor Expression", "Chemokine Family")
+cell_table <- cell_table  %>% tidyr::unite("Ligand", "Chemokine Production":"Chemokine Receptor Expression", na.rm = TRUE, remove = FALSE)
+cell_table <- cell_table %>% dplyr::select("Cell Type", "Ligand")
+cell_table <- dplyr::arrange(cell_table, cell_table$`Cell Type`)
+
+cell_merged <- cell_table %>%
+  dplyr::group_by(`Cell Type`) %>%
+  dplyr::summarise(Ligand = paste(Ligand, collapse = ", "))
+
+x <- cell_merged  %>%
+    gt(caption = "Summary of chemokine and chemokine receptor expression by different types of brain cells") %>%
+#  tab_header(title="Summary of chemokine and chemokine receptor expression by different types of brain cells",
+#             label = 'tab:tab1') %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("? depicts inconsistent results <br> Based on:")) %>%
+   as_raw_html() #as_hux_table(tbl) %>% huxtable::to_latex()
+
+print(x)
+if (knitr::is_latex_output()) {
+  cell_merged  %>%
+    gt(caption = "Summary of chemokine and chemokine receptor expression by different types of brain cells") %>%
+#  tab_header(title="Summary of chemokine and chemokine receptor expression by different types of brain cells",
+#             label = 'tab:tab1') %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("* depicts inconsistent results <br> Based on:")) %>% # add citations
+   as_latex()
+} else if(knitr::is_html_output()) {
+
+    cell_merged  %>%
+    gt(caption = "Summary of chemokine and chemokine receptor expression by different types of brain cells") %>%
+#  tab_header(title="Summary of chemokine and chemokine receptor expression by different types of brain cells",
+#             label = 'tab:tab1') %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("* depicts inconsistent results <br> Based on:"))
+
+
+
+} else  {
+
+    cell_merged  %>%
+    gt(caption = "Summary of chemokine and chemokine receptor expression by different types of brain cells") %>%
+#  tab_header(title="Summary of chemokine and chemokine receptor expression by different types of brain cells",
+#             label = 'tab:tab1') %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("* depicts inconsistent results <br> Based on:")) %>% # add citations
+   gtsummary::as_flex_table() #as_hux_table(tbl) %>% huxtable::to_latex()
+}
+
+```
+
 These complex cellular patterns of chemokine/chemokine receptor expression lead to intricate cell-to-cell communications.
 Thus, of particular interest is now the idea that CNS chemokines are not only mediators of neuroinflammation, but also they are emerging as orchestrators of neuron-glia crosstalk, which is essential in maintaining brain homeostasis [@trettel_2020].
-<!-- może tutaj dodać dlaczego skupiam się na tych dwóch // Of particular interest is the idea that central nervous system (CNS) chemokines are not only mediators of neuroinflammation, but also function as neuromodulators or neurotransmitters in the brain [@adler_2005]. 
+<!-- może tutaj dodać dlaczego skupiam się na tych dwóch //  but also function as neuromodulators or neurotransmitters in the brain [@adler_2005]. 
 Like those systems, the chemokine system is widely but unevenly distributed in the brain and has both ligands and receptors expressed in neurons. 
 Why do cells (neurons, astrocytes, and microglia) in CNS express chemokines and chemokine receptors, and what is the neurophysiological relevance of chemokines in the CNS? 
 The plausible explanation is that they may provide a bridge between the immune and nervous systems, which are classically viewed as two complex and distinct entities.-->
@@ -16,15 +82,6 @@ The plausible explanation is that they may provide a bridge between the immune a
 In this PhD dissertation, we focus on two chemokines, CXCL12 and CX3CL1, the members of x and y family, respectively.
 Although in this dissertation I focus on two chemokines, CXCL12 and CX3CL1, in this chapter I will also report on other chemokines which are present in the CNS.
 
-<!-- rozbudować rolę inflammatory w chemokines -->
-Chemokines are small pro-inflammatory cytokines with chemoattractant and regulatory activities ( Baggiolini, 1998 ).
-Chemokines are important regulators of both the peripheral and central immune response, which largely explains how they contribute to controlling inflammatory processes in the brain. 
-Indeed, in pathological processes, chemokines represent important neuro-inflammatory mediators that drive leukocytes trafficking and activation into the CNS, facilitating the immune responses, targeting cells of the innate and adaptive immune system ( Williams et al., 2014 ). 
-However, chemokine expression in the CNS is not only related to pathological conditions.
-Constitutive brain expression of chemokines and their receptors on endothelial cells, neurons and glia, suggests a role for such molecules in mediating homeostatic cross-talk between cells of the brain parenchyma ( Williams et al., 2014 ). 
-The cross-talk among neurons and glia is determinant to establish and maintain a normal brain function. 
-During brain development, chemokines represent signaling molecules that drive the correct migration and axonal pathfinding of neuronal progenitor cells ( Tran and Miller, 2003 ):
-<!-- pozmieniać to -->
 
 ## Classification and structure of chemokines
 
@@ -247,3 +304,39 @@ Therefore, tight and rapid control of chemokine system signaling is highly requi
 After two decades of research on this topic, we are now starting to appreciate the extent and complexity of these mechanisms responsible for chemokine signaling.
 
 Transport of     chemokines   inside cells occurs     via   the canonical protein trafficking pathway associated with endoplasmic reticulum and   Golgi     [6]  .   Overall  , the secretion of chemokines varies vastly between cell types   and   activation stimuli   and can involve a myriad of secretory pathways, including secretory   granules and vesicles   [2, 5, 6]  . [@watson_2020]
+
+
+#### CXCL12/CXCR4/ACKR3 {#cxcl12}
+
+CXCL12, along with their receptors CXCR4 and ACKR3, is constitutively expressed in the CNS, both during neurodevelopment and adulthood. 
+These molecules are present in nearly all CNS cell types, including endothelial, glial, and notably neuronal cells (see: Fig.2).
+They are widely distributed across the CNS.
+Specifically, both CXCL12 and CXCR4 are co-localized with many neuropeptides, for example, in  dopaminergic neurons in the substantia nigra (SN) and the ventral tegmental area (VTA) [@guyon_2006].
+Additionally, they are often co-expressed with opioid receptors in neurons and astrocytes, frequently forming heterodimers [@burbassi_2010], which implies interactions between those two systems (see Section: \@ref(opio), for review: @mlikparsadaniantz_2015). 
+Likewise, recent evidence has begun to implicate ACKR3 in chemokine-opioid interactions,leading to behavioral manifestations (see: \@ref(behavior), @ikeda_2013; @meyrath_2020).
+
+Moreover, ACKR3 and CXCR4 are co-expressed in the same neuronal [@shimizu_2011] and astrocytic populations [@odemis_2010]. 
+In neurons, prominent cytoplasmic expression of ACKR3 was demonstrated, whereas CXCR4 was found on the cell membrane [@shimizu_2011], suggesting that ACKR3 may affect CXCR4 trafficking and/or coupling to other proteins [@shimizu_2011].
+Consistently, ACKR3 up-regulation was shown to enhance heterodimer formation with CXCR4, which further resulted in its internalization and degeneration [@utokonomi_2013].
+As a member of the atypical chemokine receptor family, ACKR3 is thought to share some peculiar characteristics, such as the inability to induce canonical G protein signaling in response to ligand stimulation, which leads to a decrease in the extracellular chemokine concentration [@naumann_2010].
+However, compelling evidence illustrated that application of CXCL12 results in elevated astrocytic intracellular Ca^2+^ levels following the activation of PTX-sensitive G~i/o~ proteins, leading to either proliferation  or  differentiation of astrocytes [@odemis_2010].  
+Although these events were previously reported to be mediated by CXCR4 (for example: @bajetto_2001a), a recent report has challenged this view by demonstrating that these CXCL12-dependent outcomes persist when CXCR4 receptor is blocked or depleted from astrocytes, but are prevented in astrocytes with depleted or blocked ACKR3 receptor [@odemis_2012].
+These findings suggest that ACKR3 activates classical G protein signaling pathways in these cells.
+It is likely that ACKR3 functions as a ligand-biased receptor in astrocytes, as CXCL11, another ACKR3 agonist [@burns_2006], resulted in activation of `r knitr::asis_output("\U03B2")`-arrestin2 signaling in the same experimental setting [@odemis_2012].  
+Therefore, it is tempting to speculate that depending on the cell type, ACKR3 acts either as an atypical, arrestin-coupled scavenger chemokine receptor or as a classical, G protein-activating GPCR.  
+However, due to contradictory results from previous studies, this issue warrants further clarification. 
+Additionally, it was recently demonstrated that following CXCL12 treatment, ACKR3 impairs  astrocytic gap-junctional communication by inducing a Cx43 internalization in a `r knitr::asis_output("\U03B2")`-arrestin2-dependent manner [@fumagalli_2020], whereas CXCR4 leads to NF-K`r knitr::asis_output("\U03B2")` activation with consequent TNF-`r knitr::asis_output("\U03B1")` and glutamate release from these cells [@bezzi_2001; @cal_2008; @cal_2010].
+Therefore, these findings suggest that CXCR4 and CXCR7 may serve distinct functions *via* different signaling pathways in astrocytes.
+
+#### CX3CL1/CX3CR1 {#cx3cl1}
+
+CX3CL1, previously known as fractalkine or neurotactin, is the only known member of the CX3C chemokine<!--delta---> family.
+Together with CXCL16 (see the section below: \@ref(cxcl12)), CX3CL1 is present in two different forms: a membrane-anchored form, which may be released as a shorter soluble form upon proteolytic cleavage by metalloproteases, such as ADAM10 or ADAM17 (for example: @schulte_2007).
+CX3CL1 and its receptor, CX3CR1, are widely distributed in the CNS.
+Besides the well-documented neuronal expression of CX3CL1, only a handful of studies revealed its presence in astrocytes, albeit at lower levels (for instance: @sunnemark_2005).
+Regarding cellular expression pattern of CX3CL1 receptor, CX3CR1, in the CNS, it remains controversial: some reports confine the localization of CX3CR1 microglia [@tarozzo_2003; @cardona_2006], whereas several lines of biochemical, immunohistochemical, and electrophysiological evidence documented the presence of the functional CX3CR1 receptor also in hippocampal,  hypothalamic, cerebral, striatal, and DRN neurons.
+
+In the  CX3CR1-GFP knock-in mouse line, the CX3CR1 receptor   gene   has   been   replaced   by   a   green   fluorescent protein   (GFP)   reporter  [@jung_2000].
+Based on CX3CL1 and CX3CR1 expression, this genetic strain provides the most studied model to investigate the consequences of neuron-microglia communication following CX3CL1-CX3CR1 axis dysregulation.
+Thus, this model resulted in an  extensive body of evidence, highlighting the key role of CX3CL1 signaling in regulating a broad spectrum  of aspects of microglia functions, as described respectively in detail in the following sections. 
+

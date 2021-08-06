@@ -12,7 +12,61 @@ Moreover, chemokine receptor knockout mice (CCR6, CCR7, CXCR5) have recently bee
 In this thesis, CXCL12 and CX3CL1 and their receptors (CXCR4, CXCR7, CX3CR1) have been investigated, as they are both expressed constitutively, even in physiological conditions, throughout the CNS [@banisadr_2002a, @hesselgesser_1999, @schonemeier_2008].<!-- ładne przejście do kolejnych subchapterów? -->
 
 
+```{r chemoexpression, results = 'asis', echo = FALSE, message= FALSE, warning=FALSE}
+library(gt)
+library(tidyverse)
+library(gtsummary)
+library(flextable)
+cell_table <- read_csv("D:\\OneDrive\\articles\\Review_PharmaReports\\cell_type_table.csv")
+cell_table <- cell_table %>% dplyr::rename("not_present"  = "NOT PRESENT")
+cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production","Chemokine Family", "Chemokine Receptor Expression", "not_present")
+cell_table <- cell_table %>% dplyr::filter(is.na(not_present))
+cell_table <- cell_table %>% dplyr::select(- "not_present")
+cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production", "Chemokine Receptor Expression", "Chemokine Family")
+cell_table <- cell_table  %>% tidyr::unite("Ligand", "Chemokine Production":"Chemokine Receptor Expression", na.rm = TRUE, remove = FALSE)
+cell_table <- cell_table %>% dplyr::select("Cell Type", "Ligand")
+cell_table <- dplyr::arrange(cell_table, cell_table$`Cell Type`)
 
+cell_merged <- cell_table %>%
+  dplyr::group_by(`Cell Type`) %>%
+  dplyr::summarise(Ligand = paste(Ligand, collapse = ", "))
+
+
+
+if (knitr::is_latex_output()) {
+  
+  cell_merged  %>%
+    gt(caption = "Summary of chemokine and chemokine receptor expression by different types of brain cells") %>%
+#  tab_header(title="Summary of chemokine and chemokine receptor expression by different types of brain cells", label = 'tab:tab1') %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("* depicts inconsistent results <br> Based on:")) %>% # add citations
+   as_latex()
+  
+} else {
+
+   x <- cell_merged  %>%
+    gt(caption = "Summary of chemokine and chemokine receptor expression by different types of brain cells") %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("* depicts inconsistent results <br> Based on:")) %>%
+    as_raw_html()
+    print(x)
+
+
+
+} 
+# else if(knitr::is_html_output()) {
+# 
+#    x <- cell_merged  %>%
+#     gt(caption = "Summary of chemokine and chemokine receptor expression by different types of brain cells") %>%
+#     opt_row_striping() %>%
+#    tab_source_note(source_note = "* depicts inconsistent results <br> Based on:") # add citations
+#    
+#   x %>%
+#   gtsummary::as_flex_table() #as_hux_table(tbl) %>% huxtable::to_latex()
+#    
+# }
+
+```
 
 
 
@@ -26,7 +80,7 @@ Besides neuronal expression of CX3CL1, few studies also detected its transcript 
 Another unique feature of this chemokine is that, to date, it appears to be the only ligand of CX3CR1 receptor (Allen et al., 2007).
 
 
-
+CX3CL1, also named fractalkine, is produced almost exclusively by neurons under physiological conditions (Paolicelli et al., 2011; Rogers et al., 2011).
 
 
 In the periphery, CX3CR1 iS expressed by monocytes, dendritic cells, and natural killer cells (Imai et al., 1997; Combadiere et al., 1998; Harrison et al., 1998; Jung et al., 2000). <!-- ZMIENIĆ SCX3CR1 is ubiquitously expressed by monocytes, dendritic cells, and natural killer cells throughout the body (Imai et al., 1997; Combadiere et al., 1998; Harrison et al., 1998; Jung et al., 2000). Since these cells rarely infiltrate the brain parenchyma during normal physiological conditions, resident microglia are considered the only source of CX3CR1 expression and thus the only recipient of fractalkine signaling in the healthy brain (Jung et al., 2000; Mizutani et al., 2012).-->
@@ -40,9 +94,89 @@ Since the CX3CR1-GFP homozygous mice (CX3CR1KO/KO) are completely devoid of micr
 The CX3CR1-GFP heterozygous mice may be partially deficient in fractalkine signaling. <!--zmienić!!!!-->
 Nevertheless, microglial morphology, dynamic surveillance (Nimmerjahn et al., 2005; Wake et al., 2009), dendritic spine turnover (Parkhurst et al., 2013), and microglial interactions with synaptic elements (Wake et al., 2009; Tremblay et al., 2010) were comparable in vivo between these CX3CR1-GFP heterozygous mice and the Iba1-GFP mice from Hirasawa and colleagues where CX3CR1 is not deleted (Hirasawa et al., 2005). - Paolicelli2014 <!--zmienić!!!!-->
 
+### CXCL12/CXCR4/ACKR3
+
+The first evidence that CXCL12 has effects on neurons and promotes neuroprotection were given by Meucci et al. (1998) when, for the first time, the authors demonstrated that CXCL12 reduced the apoptotic death of hippocampal neurons induced by gp120 or by glia deprivation. 
+Following glia deprivation, neuroprotection was promoted by administration of CXCL12 specifically to neurons highlighting a direct activity of the chemokine on these cells. 
+Further, stimulation of hippocampal neurons with CXCL12 was able to induce Akt phosphorylation and p65NF-kB nuclear translocation, both signaling implicated in pro-survival cell fate ( Khan et al., 2004 ).
+Accordingly, in primary cortical neurons, CXCL12 promotes Rb function increasing its expression, nuclear localization, and transcriptional activity and reducing the excitotoxic cell death due to NMDA receptors over-activation ( Khan et al., 2008 ). 
+ 
+CXCL12 neuroprotection is also sustained by an increase in the pro-survival signaling of synaptic NMDA receptor, and in the down-regulation of the extrasynaptic NR2B-NMDA receptor subunit (whose activity is known to mediate neurotoxicity) ( Nicolai et al., 2010 ). 
+Since all the experiments presented in the above cited papers were performed using neuronal cultures with a separate astrocytes layer, it cannot be excluded that the neuroprotective effects might be also mediated by glial cells. 
+Indeed, CXCL12 stimulates astrocytes promoting Akt phosphorylation ( Khan et al., 2004 ), G-protein-PI-3Kinase-ERK1/2 signaling cascade leading to cell proliferation ( Bajetto et al., 2001b ), NF-Kb activation with consequent TNFα (Han, 2001) and glutamate
+ 
+Recently it has been reported that gliptin (Dipeptidyl-peptidase 4 DPP-4 inhibitor) improves motor functions and reduces tissue damage upon MCAO, increasing the cerebral level of CXCL12 ( Chiazza et al., 2018 ). 
+Since CXCR4 antagonist reduced gliptin induced functional recovery ( Chiazza et al., 2018 ), it was speculated that CXCL12 represents  an  endogenous  modulator  counteracting  brain damage. 
+The upregulation and the release of CXCL12 from astrocytes was also observed in the ischemic penumbra ( Stumm et al., 2002; Hill et al., 2004; Miller et al., 2005 ). 
+In vitro, ischemia alters the expression of miRNAs associated with CXCL12 regulation, leading to increased CXCL12 expression and release from astrocytes ( Shin et al., 2014 ). 
+In addition, acting on microglial cells, CXCL12 activates signaling pathways that trigger the release of IL-6 ( Lu et al., 2009 ), which has neuroprotective properties in ischemia ( Loddick et al., 1998; Ali et al., 2000; Ohtaki et al., 2006 ). 
+Another novel neuroprotective activity of CXCL12/CXCR4 signaling has been identified in its ability to increase dendritic spine numbers ( Pitcher et al., 2014 ). 
+In particular authors found that, in opiate abuser and in neuroAIDS patients, deregulation of CXCL12/CXCR4 is determinant to cognitive dysfunction associated with dendritic spine loss. The authors also demonstrated that CXCL12/CXCR4 regulates dendritic spine density both in vitro, in pure neuronal cultures, and in vivo, in a rat model of opiate abuse. 
+CXCL12-CXCR4 signaling plays a role in neuroprotection also in Alzheimer disease: CXCL12 protected neurons from A β -induced apoptosis through the activation of Akt, ERK1/2 and the maintenance of metalloproteinase ADAM17 and, in vivo, counteracted the oxidative damage and the loss of spine density in the hippocampus (Raman et al., 2011 ). 
+Furthermore, a decreased expression of CXCL12 was observed in the brain of Tg2576 and in 3XTg AD animal models at the stage of cognitive decline, as well as in brain tissue from AD patients ( Parachikova and Cotman, 2007).
+
+CXCL12, along with their receptors CXCR4 and ACKR3, is constitutively expressed in the CNS, both during neurodevelopment and adulthood. 
+These molecules are present in nearly all CNS cell types, including endothelial, glial, and notably neuronal cells (see: Fig.2).
+They are widely distributed across the CNS.
+Specifically, both CXCL12 and CXCR4 are co-localized with many neuropeptides, for example, in  dopaminergic neurons in the substantia nigra (SN) and the ventral tegmental area (VTA) [@guyon_2006].
+Additionally, they are often co-expressed with opioid receptors in neurons and astrocytes, frequently forming heterodimers [@burbassi_2010], which implies interactions between those two systems (see Section: \@ref(opio), for review: @mlikparsadaniantz_2015). 
+Likewise, recent evidence has begun to implicate ACKR3 in chemokine-opioid interactions,leading to behavioral manifestations (see: \@ref(behavior), @ikeda_2013; @meyrath_2020).
 
 
 
+Moreover, ACKR3 and CXCR4 are co-expressed in the same neuronal [@shimizu_2011] and astrocytic populations [@odemis_2010]. 
+In neurons, prominent cytoplasmic expression of ACKR3 was demonstrated, whereas CXCR4 was found on the cell membrane [@shimizu_2011], suggesting that ACKR3 may affect CXCR4 trafficking and/or coupling to other proteins [@shimizu_2011].
+Consistently, ACKR3 up-regulation was shown to enhance heterodimer formation with CXCR4, which further resulted in its internalization and degeneration [@utokonomi_2013].
+
+ In adult brain, high expression of CXCR4 has been reported in neuronal progenitor cells in the subventricular region and in the subgranular zone of the hippocampus, the two major niches of neuronal stem cells in the adult brain ( Stumm et al., 2002; Berger et al., 2007 ). The expression of CXCL12 in the hippocampal granular layer regulates the generation and the positioning of new granule neurons ( Abe et al., 2018 ), as well as axonal elongation and sprouting ( Pujol et al., 2005; Lysko et al., 2011; Su et al., 2012 ). According to its role in neurogenesis, the upregulation of CXCL12 upon stroke ( Wang et al., 2012 ), or demyelination ( Carbajal et al., 2011; Patel et al., 2012; Williams et al., 2014 ) contributes to generate new cells and to restore normal CNS functions. Postnatal development of neurons in the cortical layer V depends on CX3CL1 signaling, which regulates the release of insulin-like growth factor (IGF1) by microglia, important for survival of these neurons ( Ueno et al., 2013 ).
+ 
+However, CXCL12 exhibits broad tissue expression including brain, thymus, heart, lung, liver, kidney,  spleen, and bone marrow. 
+CXCR4 can be considered as a node which is integrating  and transducing inputs from a range of ligand-receptor interactions into a responsive  and divergent network of intracellular signaling pathways that impact multiple cellular processes such as proliferation, migration, and stress resistance.
+
+CXCR4 is a G protein-coupled receptor (GPCR), originally  termed Fusin due to its role in cell-cell fusion12 and its expression was first described in peripheral blood leukocytes and  subsequently in hematopoietic stem cells, B-lymphocytes,  epithelial, endothelial, stromal fibroblasts, and cancer cells.13
+
+@fumagalli_2020 - ACKR3 expressed in HEK293T cells recruits the gap junction protein Connexin 43 (Cx43). <!-- zmienić -->
+Cx43 and ACKR3 are co-expressed in mouse brain astrocytes and human glioblastoma cells and form a complex in embryonic mouse brain. <!-- zmienić -->
+Functional in vitro studies show enhanced ACKR3 interaction with Cx43 upon ACKR3 agonist stimulation. <!-- zmienić -->
+Furthermore, ACKR3 activation promotes β-arrestin2- and dynamin-dependent Cx43 internalization to inhibit gap junctional intercellular communication in primary astrocytes. <!-- zmienić -->
+These results demonstrate a functional link between ACKR3 and gap junctions that might be of pathophysiological relevance. <!-- zmienić -->
+
+CXCL12 is another chemokine which has recently attracted much attention due to its extensive distribution in the CNS as well as the fact that it can be produced not only by glial cells but also by neurons [@banisadr_2003, @heinisch_2010a, @stumm_2002].
+
+<!-- Unlike many chemokines whose expression is strongly up-regulated during inflammatory responses, the chemokine CXCL12 and its receptors CXCR4 and CXCR7 are constitutively and widely expressed in the developing and adult nervous system (Banisadr et al. 2002; Sanchez-Alcaniz et al. 2011; Schonemeier et al. 2008; Stumm et al. 2002; Stumm et al. 2003). -->
+
+During embryogenesis, ACKR3 is necessary for proper migration of primordial germ cells to CXCL12 *via* CXCR4 by acting as a sink for CXCL12 <!-- (Boldajipour et al., 2008)., zmienić, in agreement with the scavenger role ...., choć nie wiem czy nie odchodzimy za bardzo od CNS--> 
+<!-- another tissue development and tumors
+ACKR3 is also involved in cardiac tissue development along with CXCR4 and CXCL12 (Sierro et al., 2007).
+Although poorly expressed in normal adult tissues, ACKR3 is widely expressed in a variety of tumors and tumor-associated vessels and appears to promote tumor growth and neoangiogenesis partly by signaling *via* mitogen activated protein kinase (MAPK) cascades (Maksym et al., 2009). /// The ability of the CXCR4-CXCL12 axis in directing stem cell homing is probably related to its prominent role in directing the metastatic destination of tumor cells as well (Zlotnik et al., 2011) ///  -->
+
+<!-- CXCR4 ane neurodevelopment -->
+These developments underscore the important roles that CXCR4 plays in development. <!-- zmienić -->
+Other studies have documented that the CXCL12-CXCR4 axis plays pivotal roles in homing of various stem cells to particular places of the embryo during development. <!-- zmienić -->
+In zebrafish, a cannonical model of the developmental studies, ... More recent studies have documented the coordinated roles of CXCR4, CXCL12, and ACKR3 in the development of the central nervous system in the zebrafish (Diotel et al., 2010; Tiveron and Cremer, 2008). <!-- zmienić -->
+Thus, certain homeostatic chemokine receptors play key roles in the homing of various stem cells. <!-- zmienić -->
+In the developing and mature brain, virtually all types of CNS cells such as neural progenitors, neurons, microglial cells, and astrocytes as well as endothelial cells of brain blood vessels are targets for CXCL12 (Li and Ransohoff, 2008). <!-- ŁADNE ZDANIE ALE TROCHĘ ZMIENIĆ -->
+Developmental aspects controlled by CXCL12 in the CNS include cell proliferation, migration, and (neuronal) cell survival (Li and Ransohoff, 2008). <!-- zmienić -->
+
+<!--cxcl12 functions-->
+A recognized function of CXCL12 in the mature CNS is the control of intercellular communication between brain cells (Bezzi et al., 2001; Rostene et al., 2007). 
+In the injured CNS, CXCL12 regulates inflammatory processes (Cartier et al., 2005; Li and Ransohoff, 2008) and promotes tissue regeneration by recruiting neural progenitor cells to the site of injury (Tran et al., 2007).
+
+
+   Banisadr 2016: ACKR3 in the brain (Schönemeier et al. 2008a , b ; Shimizu et al. 2011 ). Knowledge of the precise expression pattern and characterization of cells expressing ACKR3 is required to further explore the function of ACKR3 in the brain. It is well established that CXCL12/CXCL12 is constitutively expressed by endothelial and neuronal cells in various regions of the adult rat brain (Tham et al. 2001 ; Stumm et al. 2002 ; Banisadr et al. 2003 ) and the expression patterns of CXCL12/CXCL12 and CXCR4 have been well established in structures associated with various functions such as their role in adult neurogenesis and neuroinflammation among other functions (Banisadr et al. 2002 ; Stumm et al. 2002 ; Tissir et al. 2004 ;Tranetal. 2007 ).
+   
+   Subsequent worked suggested that ACKR3 can act to preserve CXCL12 gradients and CXCR4  sensitivity to CXCL12 62 as well as to enable tighter control of such gradients and of cell migration, for example,  for guidance of interneurons in the cortex and of B cells  in diffuse large B-cell lymphoma.63-65 
+   
+   CXCL12, a chemokine, is  involved in primordial germ cell migration (Blaser et al., 2005),  migration of neural progenitors (via its receptor CXCR4) and axon  growth and branching during development of the nervous system  (Tran and Miller, 2003; Pujol et al., 2005). 
+Recent work has shown  that GABA and CXCL12 may act synergistically to alter cell  movement (Seidel et al., 2007; Bhattacharyya et al., 2008). [@casoni_2012]
+
+CXCL12 has been shown to act in the brain as a neurotransmitter  (Banisadr et al., 2005) and to be released with GABA from  inhibitory neurons (Bhattacharyya et al., 2008). However, [@casoni_2012]
+
+CXCL12 induced changes in saltatory GnRH movement  were shown to occur through a GIRK dependent mechanism.  GIRK channels open via a signal transduction cascade triggered  by the G  bc  dimeric protein released by activated G protein-  coupled receptors (Dascal, 1997; Yamada et al., 1998). Opening  of the GIRK channel results in permeability to potassium ions  and hyperpolarization of the cell. To date, only melanin-  concentrating hormone neurons (involved in feeding behavior  regulation) have been shown to respond to CXCL12 directly  through GIRK current activation and in these cells, CXCL12  influenced neuronal activity (Guyon et al., 2005). [@casoni_2012]
+
+Finally, we addressed the striking mismatch between intense CXCR4 mRNA expression (Stumm et al., 2002, 2003; Tissir et al., 2004; Tran et al., 2007) and weak CXCR4 protein expression in the SGL (Stumm et al., 2002).
+Studies in non-neuronal cell lines showed that CXCR4 is sequestered from the cell surface (internalized), sorted to lysosomes, and degraded after agonist stimulation (Orsini et al., 1999; Marchese and Benovic, 2001). Therefore, the mismatch between CXCR4 mRNA and CXCR4 protein in the SGL may reflect tonic activation and turnover of CXCR4 by endogenous CXCL12
+   
 
 #### Functions in the CNS
 

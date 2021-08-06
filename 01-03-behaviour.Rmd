@@ -1,4 +1,4 @@
-## Chemokines modulates behaviour
+## Chemokines modulates behavior {#behavior}
 
 Since mounting evidence supports the notion that chemokines coordinate several brain circuits of behavioral relevance, including hippocampus, DRN, SN, hypothalamus, it may indicate their contribution to these behaviors.  <!-- zmienić to zdanie -->
 Consistent with this idea, disturbances of several chemokines/chemokine receptor axes were implicated in the pathophysiology of neurobiological disorders [@paolicelli_2014; @poon_2016; @stuart_2015].
@@ -7,12 +7,11 @@ Hence, here we discuss a handful of studies on the regulation of chemokines on v
 <!-- zmienić bardziej na co wiadomo o CXCL12 i CX3CL1 -->
 Results from those studies are summarized in Table 1. <!--nazwy tabeli!!!! the battery of behavioral tests related toczy na pewno dobre słowo? chemokine signaling are summarized in Table 3. -->
 
-### CX3CL1
-
-### CXCL12
 
 
 ### Learning and memory {#learn}
+
+#### CX3CL1/CX3CR1
 
 As described in the section on synaptic plasticity (see: \@ref(LTP)), several chemokines were documented to modulate LTP in the hippocampus, a cellular mechanism underlying learning and memory [@bols_2018; @necula_2021; @rogers_2011; @zhou_2016].
 Of these chemokines, CX3CL1 is the best characterized in this context.
@@ -22,13 +21,13 @@ It should be noted that findings from studies of synaptic plasticity correlate w
 Those discrepancies may result from differences in housing conditions, animal gender, and age, or behavioral test protocols between laboratories. 
 However, those apparent discrepancies warrant further clarifications.
 
-
-Increasing evidence has indicated the role of another chemokine receptor, CCR5, in cognitive functions (Table 3).<!-- poprawna nazwa tabeli -->
-While the activation or overexpression of CCR5 was reported to impair the hippocampal and cortical neuronal plasticity, leading to deficits in learning and memory [@zhou_2016],<!--Recent evidence suggests that CCR5 may impact learning and memory by acting on CREB signaling, a pathway critical for learning and memory (Josselyn et al., 2004; Sano et al., 2014; Zhou et al., 2009). --> both genetic depletion and pharmacological inhibition of CCR5 was shown to enhance memory in rats [@merino_2020], as measured by both fear-conditioning (contextual learning) and Morris water maze (spatial learning; see Table 3).
-
 Hence, these findings indicate that implications to memory-related functions are not specific for CX3CR1 action and studies have just begun to elucidate the mechanisms and other targets implicated in memory and learning.  
 
+
+
 ### Locomotor activity
+
+#### CXCL12/CXCR4/ACKR3
 
 Since many chemokines with their cognate receptors are expressed in dopaminergic neurons and regulate their activity to induce the release of DA (see Sections: \@ref(DA) and \@ref(expr)), the behavioral relevance of their actions was further investigated.
 
@@ -40,9 +39,9 @@ It is worth noting that when chemokines were injected through the SN, animals' l
 However, when CCL2 was injected intracerebroventricular, the animal locomotor activity was decreased.<!-- see table --> 
 
 
-A recent study revealed the involvement of microglia and their receptor CX3CR1 in the adaptive response to psychosocial stress, which is a major risk factor for psychotic disorders such as schizophrenia [@piirainen_2021].
-
 ### Emotional behavior 
+
+#### CX3CL1/CX3CR1
 
 Besides its involvement in memory and learning, CX3CR1^-/-^ knockout mice have been gaining attention in relation to chronic stress. 
 Briefly, in comparison to wild-type littermates, CX3CR1 is important for  controlling social behavior and social dominance (@zhan_2014; @piirainen_2021, Table3).
@@ -53,6 +52,8 @@ A similar situation is with depressive-like behavior: one study indicates knocko
 It seems like the main difference between those experiments was the gender between animals.
 Specifically, CX3CR1^-/-^ females are more depressive and anxiolytic than wild-type littermates, whereas the depletion of the same receptor in males elicit the opposite reaction.  
 However, as this hypothesis is based only on two studies, further investigation is needed.
+
+A recent study revealed the involvement of microglia and their receptor CX3CR1 in the adaptive response to psychosocial stress, which is a major risk factor for psychotic disorders such as schizophrenia [@piirainen_2021].
 
 Interestingly, consistent with a recent report on ACKR3 and opioids crosstalk,<!-- wyrzuciłam (see: \@ref(opioids) ),--> along with implications that the modulation of circadian glucocorticoid oscillation may affect emotional behavior (e.g. @keers_2012), it was shown that ACKR3 binds intermediate opioid peptides, specifically BAM22 and peptide E, which results in enhancement of circadian glucocorticoid oscillation in the adrenal glands, and, therefore, anxiolytic-like behavior [@ikeda_2013]. <!-- może poprawic albo wrocić do innej wersji? -->
 BAM22 and peptide E were shown to be released under a condition named subcapsular cell hyperplasia (SCH) [@ikeda_2013], which is a pathohistological change of adrenal tissue.

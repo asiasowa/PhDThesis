@@ -1,123 +1,123 @@
 ## Amygdala       
 
 The amygdala, a complex comprised of heterogenous collection of nuclei, is located in the medial temporal lobe. 
-Its nulei can be distinguished based on their different connectivity, immunohistochemical and cytoarchitectural profiles.
+Its nulei can be distinguished based on their different connectivity, immunohistochemical and cytoarchitectural profiles (for a review, see: @duvarci_2014).
 Unfortunately, due to the complexity of this structure, there is no <!--anatomical--> standardization of amygdaloid nuclei terminology. <!-- although there is no standardization in relation to correct term, -->
-Historically, amygdala nuclei are divided into three groups: (1) the deep or basolateral group, which includes the lateral nucleus, the basal nucleus, and accessory basal nucleus; (2) the superficial or cortical-like group, which includes <!--synonym-->the cortical nuclei and nucleus of the lateral olfactory tract; and 3) the centromedial group composed of the medial and central nuclei and listed separately nuclei that do not easily fall into any of these three groups - intercalated cell masses and the amygdalohippocampal area [@mcdonald_1998; @sah_2003].
-However, since then many excellent papers mainly focused on three domains due to their contribution in fear-conditioning: the basolateral complex of the amygdala (BLA), the central amygdala (CeA) and intercalated cell masses (ICM) [@bocchio_2016; @duvarci_2014; @ehrlich_2009; @pape_2010; @spampanato_2011], here this classification will be used <!--{ref. figure classification}-->. <!-- better written -->
+Historically, amygdala nuclei are divided into three groups: (1) the deep or basolateral group, which includes the lateral nucleus, the basal nucleus, and accessory basal nucleus; (2) the superficial or cortical-like group, which includes <!--synonym-->the cortical nuclei and nucleus of the lateral olfactory tract; and (3) the centromedial group composed of the medial and central nuclei, such as the medial nucleus of the amygdala (MeA), the anterior amygdala area (AAA), and the amygdalo-hippocampal area (AHA) [@mcdonald_1998; @sah_2003].
+However, here the following classification will be used: the basolateral complex of the amygdala (BLA), the central amygdala (CeA) and intercalated cell masses (ICM), as it was presented in many excellent papers focusing on these domains due to their contribution in fear-conditioning (@bocchio_2016; @duvarci_2014; @ehrlich_2009; @pape_2010; @spampanato_2011, see Fig. \@ref:fig(amygdalanuclei)).
+Nuclei that do not fall into any of these categories are beyond the scope of this dissertation and are described elsewhere []. <!-- old version and citations -->
+
+
+```{r amygdalanuclei, fig.cap='(ref:family)', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images/amygdalanuclei.png")
+```
+
+(ref:amygdalanuclei) *A schematic illustrating classification of amygdalar nuclei together with physiological and morphological properties of their neurons* (A) <!-- dokończyć -->
 
 This limbic region is involved in mood regulation, fear-conditioning/associative learning, and modulation of cognitive functions [@ehrlich_2009; @herry_2010; @ledoux_2000; @roozendaal_2009].
-Amygdala is also involved in an integration of autonomic responses to homeostatic challenges, including those of the peripheral immune system [@pachecolpez_2005]. <!--więcej cytowań / lepiej napisać-->
-Finally, as amygdalar circuitry and function are well-conserved across evolution [@jarvis_2005], better understanding the complexity of this circuit using animal models has the potential to be directly relevant to humans. 
+Amygdala is also an important player in tuning autonomic responses to homeostatic challenges, including those of the peripheral immune system [@pachecolpez_2005]. <!--więcej cytowań / lepiej napisać-->
+Finally, as amygdalar circuitry and function are well-conserved across evolution [@jarvis_2005], better understanding the complexity of this circuit using animal models has the potential to be directly relevant to humans. <!-- mam bardzo podobne zdanie chyba, więc zmienić !!!!!!!!!!!! --->
 
 ### Structure
 
 #### The basolateral complex of the amygdala (BLA)
 
-The basolateral complex consist of the lateral nucleus (LA), the basal nucleus (B), which is sometimes called the basolateral nucleus (BLA), and the basomedial nucleus (BMA), which is also known as accessory basal nucleus [@krettek_1978]. <!-- figure -->
-In order to avoid misunderstanding, I will refer to the basolateral complex as BLA and basal/basolateral nucleus as B. 
+The basolateral complex is comprised of the lateral nucleus (LA), the basal nucleus (B), and the basomedial nucleus (BMA), the latter is also known as accessory basal nucleus (@krettek_1978, see Fig \@ref:fig(amygdalanuclei)). <!-- nowsze cytowania? -->
+It is also often referred as the basolateral nucleus (BLA) and hereafter this term will be used.<!-- In order to avoid misunderstanding, I will refer to the basolateral complex as BLA and basal/basolateral nucleus as B. -->
 The BLA is considered to be the main point of entry for cortical and subcortical sensory inputs into the amygdala [@duvarci_2014]. 
 This nuclei developmentally and structurally is a cortical-like structure [@waclaw_2010]. 
-Within this nuclei approximately 80% of all neurons are glutamatergic pyramidal-like principal cells and the remaining 20% belong to a heterogeneous group of interneurons [@duvarci_2014; @mcdonald_1993; @spampanato_2011].
+Within the BLA, approximately 80% of all neurons are glutamatergic pyramidal-like principal cells and the remaining 20% belong to a heterogeneous group of interneurons [@duvarci_2014; @mcdonald_1993; @spampanato_2011]. <!-- figure? -->
 
 ##### Principal cells
 
-Principal cells show many morphological and electrophysiological characteristics similar to their cortical and hippocampal pyramidal counterparts, including spiny complex dendritic trees and prominent spike frequency adaptation in response to current injections [@faber_2001; @par_1995]. 
-However, these cells are heterogenous regarding their morphological profile as well as their spike frequency adaptation degree varies forming continuum: at one end cells fire two to three spikes only and show marked spike frequency accommodation, whereas at the other end cells fire repetitively throughout the current injection with little accommodation [@faber_2001; @funahashi_2000]. <!-- może jakiś figure? see Fig. in methods?-->
-Moreover, no correlation was found between the cells’ firing properties and their morphology [@faber_2001; @funahashi_2000]. 
-
+Principal cells show many morphological and electrophysiological characteristics similar to their cortical and hippocampal pyramidal counterparts, including spiny complex dendritic trees and prominent spike frequency adaptation in response to current injections [@faber_2001; @par_1995]. <!-- see figure? -->
+However, population of principal cells is not homogeneous. <!-- their morphological profile and  -->
+Specifically, these cells not only vary on the morphological axis, but also the degree of their spike frequency adaptation forms an continuum: at one end cells fire two to three spikes only and show marked spike frequency accommodation, whereas at the other end cells fire repetitively throughout the current injection with little accommodation [@faber_2001; @funahashi_2000]. <!-- może jakiś figure? see Fig. in methods?-->
+Nonetheless, no correlation was found between the cells’ firing properties and their morphology [@faber_2001; @funahashi_2000].
 
 Interestingly, neurons with prominent spike frequency adaptation were shown to have larger afterhyperpolarization (AHP) than those that fire repetitively [@faber_2002; @sah_1996]. 
-As a rich repertoire of ion channels shape the firing pattern of mammalian central neurons (for example: @bean_2007), it is suggested that principal cells have differential distribution of calcium-activated potassium channels responsible for AHP, which leads to difference in their repetitive firing properties [@faber_2001; @faber_2002].
-Additionally, another electrophysiological characteristics of principal neurons in BLA are: relatively wide  action potentials (half-width = 1.2 ms), <!--....., .....-->. 
-Interestingly, some of them display bursting activity or a delay in firing when depolarized from more negative membrane potentials, which is thought to be due to the presence of low-treshold, slowly inactivating potassium current  [@washburn_1992].
+As a rich repertoire of ion channels shape the firing pattern of mammalian central neurons (for example: @bean_2007), it is suggested that principal cells have a <!--differential-->distinct distribution of calcium-activated potassium channels responsible for AHP, which leads to difference in their repetitive firing properties [@faber_2001; @faber_2002].
+<!-- HERE: additional electrophysiological features of principal cells Additionally, another electrophysiological characteristics of principal neurons in BLA are: relatively wide  action potentials (half-width = 1.2 ms), ....., .....-->
+<!-- ALSO more on channels in these neurons // channels and their electrophysiological properties. As electrophysiological properties of neurons are mirrored by their ... of ionic channels -->
+Interestingly, some of them display bursting activity or a delay in firing when depolarized from more negative membrane potentials, which is thought to be due to the presence of low-threshold, slowly inactivating potassium current  [@washburn_1992].
 
 ##### Interneurons
 
-Interneurons, in contrast to BLA principal cells, have aspine, smooth dendrites and their axon collaterals are restricted to the basolateral nuclei [@mcdonald_2001; @mcdonald_2002; @mcdonald_2004].
-However, it is difficult to identify different types of interneurons based on their immunohistochemical, morphological, and electrophysiological characteristics [@spampanato_2011].
-Morphologically they could be subdivided into multipolar, bitufted, and bipolar cells according to their dendritic trees [@mcdonald_1982]. 
-Moreover, similar to the neocortex and the hippocampus, interneurons in the BLA can be characterized by their expression of similar<!--?--> neurochemical markers. 
-Although there may be differences in relative ratios of interneuron types regarding brain region, in the BLA the main two non-overlapping groups are those that express calbindin (around 50% of neurons in the BLA) and calretinin (around 20% of neurons in the BLA) [@kemppainen_2000; @mcdonald_2001; @mcdonald_2002].
-Each of these groups can be further sub-divided based on their expression of somatostatin (SOM+), vasoactive intestinal peptide  (VIP+), cholecystokinin (CCK+), and parvalbumin (PV+) (for review: @spampanato_2011). 
+Interneurons, in contrast to principal cells, have aspine, smooth dendrites and their axon collaterals are restricted to the basolateral nuclei [@mcdonald_2001; @mcdonald_2002; @mcdonald_2004].
+According to their dendritic trees, they could be subdivided into multipolar, bitufted, and bipolar cells [@mcdonald_1982]. 
+Moreover, analogous to their counterparts in the neocortex and hippocampus, interneurons in the BLA can be characterized by their expression of the same neurochemical markers. 
+Although brain regions may differ in relative ratios of interneuron types, in the BLA, the main two non-overlapping groups are those expressing calbindin (CB+; around 50% of neurons) or calretinin (CR+; around 20% of neurons) [@kemppainen_2000; @mcdonald_2001; @mcdonald_2002]. 
+Each of these groups can be further sub-divided based on their expression of somatostatin (SOM+), vasoactive intestinal peptide  (VIP+), cholecystokinin (CCK+), and parvalbumin (PV+) (for a review, see: @spampanato_2011). 
 
-Regarding the electrophysiological profile of BLA interneurons, contrary to principal cells, they show no apparent spike frequency adaptation in response to a prolonged depolarizing current injection, their action potentials have shorter duration (half-width 0.7 ms), and they fire spontaneously *in vivo* at high frequencies (10-15 Hz)  [@spampanato_2011; @pare_1995]. 
-Consistent with the notion that the BLA is a cortical-like structure, these firing properties are similar to those found in cortical interneurons [@petillainterneuronnomenclaturegroup_2008], but different from those of GABAergic neurons in the CeA [@dumont_2002; @lopezdearmentia_2004]. 
-Specifically, electrophysiological analyses have identified at least six distinct types of firing properties [@jasnow_2009; @mahanty_1998; @sosulina_2010; @woodruff_2007]. 
-There is no correlation between neurochemical markers and electrophysiological profile. <!--usunąć?//zminić-->
+Regarding the electrophysiological profile of BLA interneurons, contrary to principal cells, they show no apparent spike frequency adaptation in response to a prolonged depolarizing current injection, their action potentials have shorter duration (half-width 0.7 ms), and they fire spontaneously *in vivo* at high frequencies (10-15 Hz)  [@spampanato_2011; @pare_1995]. <!-- figure? -->
+Consistent with the notion that the BLA is a cortical-like structure, these firing properties resemble those found in cortical interneurons [@petillainterneuronnomenclaturegroup_2008], but not those of GABAergic neurons in the CeA [@dumont_2002; @lopezdearmentia_2004]. <!-- see citations for figure -->
+Specifically, electrophysiological analyses have identified at least six distinct types of firing properties [@jasnow_2009; @mahanty_1998; @sosulina_2010; @woodruff_2007]. <!-- figure ? -->
+However, there is no correlation between neurochemical markers and electrophysiological profile. 
 For example, four electrophysiologically separable types of cells were found to express PV in combination with either CCK or CB [@sosulina_2010]. 
-The roles of these neurons with different firing properties are not currently understood, but it speculated that cells with disparate electrophysiological properties will involve different local circuits and have distinct afferent/efferent connections. <!-- cytowanie?-->
+Although the role of this electrophysiological heterogeneity  is currently unclear, it is tempting to speculate that neurons with disparate electrophysiological properties have distinct afferent/efferent connections and may modulate local circuits differently. <!-- cytowanie? yup, szczególnie ważne!!!! [@spampanato_2011]-->
+
+<!-- + KANAŁYYYYYYYYYY -->
 
 #### Central amygdala 
 
-Central amygdala (CeA) is comprised of capsular (CeC), lateral (CeL), medial (CeM) and intermediate (CeI) divisions [@jolkkonen_1998; @mcdonald_1982a; @sah_2003]; however the classification of these areas is inconsistent. <!-- inne cytowanie? problem z nim bo takiego nie ma  [@Cassell1986].-->
-Significantly, the capsular region of the CeA appears to overlap with intercalated cell clusters (ITC) [@mcdonald_1982a; @pape_2010] and latter term will be used in this dissertation.
-Additionally, CeA is commonly divided into the CeL and CeM divisions and there is a sparse number of investigations regarding CeI and CeL as a functionally and anatomically distinct subdivisions [@ciocchi_2010; @duvarci_2014; @haubensak_2010]. 
-Therefore, in this dissertation, the latter classification will be used. 
-In some papers, CeA is also considered to be a part of extended amygdala, together with the bed nucleus of stra terminalis (BNST), as they have similar cell types and they are densely inter-connected and share similar connectivity patterns with other brain regions [@fox_2015; @sah_2003]. 
-However, BDST is out of the scope of this dissertation. 
+Central amygdala (CeA) is comprised of capsular (CeC), lateral (CeL), medial (CeM) and intermediate (CeI) divisions [@jolkkonen_1998; @mcdonald_1982a; @sah_2003]; however, the classification of these regions is inconsistent. <!-- inne cytowanie? problem z nim bo takiego nie ma  [@Cassell1986].-->
+Importantly, the capsular region of the CeA appears to overlap with intercalated cell clusters [@mcdonald_1982a; @pape_2010] and will be hereafter referred to as ITCs and will be described in the next section.<!--latter term will be used in this dissertation.-->
+Additionally, CeA is commonly divided into the CeL and CeM divisions and there is a sparse number of investigations regarding CeI and CeL as a functionally and anatomically distinct subdivisions [@ciocchi_2010; @duvarci_2014; @haubensak_2010]. <!-- zobaczyć co z tym CeI bo nie rozumiem .... Therefore, in this dissertation, the latter classification will be used. odwołanie się do figury!!!!-->
+Of note, in some papers, CeA, together with the bed nucleus of stra terminalis (BNST), is also considered to be a part of extended amygdala due to their similar phenotype of neurons and intra-connectivity patterns with other brain regions, along with their dense inter-connectivity [@fox_2015; @sah_2003]. 
+However, BNST is out of the scope of this dissertation and will not be discussed here. 
 
 Contrary to the BLA, CeA is considered as a main output nuclei [@ciocchi_2010; @haubensak_2010; @hou_2016].
-Its neurons are GABAergic, morphologically reminiscent of striatal medium spiny neurons [@mcdonald_1993; @sun_1993].  
+Its neurons are GABAergic, morphologically reminiscent of striatal medium spiny neurons [@mcdonald_1993; @sun_1993].  <!-- figure -->
 This is consistent with different developmental origins of the BLA and the CeA [@medina_2004; @waclaw_2010]. 
-Precisely, CeL neurons mainly have similar medium spiny neurons-like morphology with relatively small soma and multiple primary dendrites with numerous branches with high density of spines. <!-- bardziej porównanie BLA i CeA a nie CeA i CeM-->
-In contrast, CeM neurons have a large soma, dendrites with few branches with low density of dendritic spines [@cassell_1989; @mcdonald_1982a]. <!--[@Marina1999; @Hall1972-->
-Similarly to neurons in striatum, neuronal cells in CeA also express wide selection of neuropeptides and markers, including protein kinase C`r knitr::asis_output("\U03B4")` (PKC`r knitr::asis_output("\U03B4")`), somatostatin (SOM), corticotropin-releasing factor (CRF), oxytoxin receptors (OR), enkephalin and others [@cassell_1989; @haubensak_2010]. 
+Precisely, CeL neurons mainly have similar medium spiny neurons-like morphology, displaying relatively small soma and multiple primary dendrites rich in branches and spines. <!--with numerous branches with high density of-->
+On the other hand, CeM neurons have a large soma, dendrites with few branches with low density of dendritic spines [@cassell_1989; @mcdonald_1982a]. <!--[@Marina1999; @Hall1972-->
+Like neurons in striatum, neuronal cells in CeA also express wide selection of neuropeptides and markers, including protein kinase C`r knitr::asis_output("\U03B4")` (PKC`r knitr::asis_output("\U03B4")`), somatostatin (SOM), corticotropin-releasing factor (CRF), oxytocin receptors (OR), enkephalin and others [@cassell_1989; @haubensak_2010]. 
 Of these, PKC`r knitr::asis_output("\U03B4")` and SOM are the two most highly expressed and largely non-overlapping neurochemical markers [@haubensak_2010; @hunt_2017; @li_2013].
 
-Based on their electrophysiological profiles<!--response to current injections-->, two major types have been described in the CeA: (1) late-firing neurons (LF), which display a pronounced delay before onset of the first action potential (100-200 ms) mediated by K~v1~-dependent slowly inactivated D-type K^+^ currents [@hou_2016; @martina_1999] and (2) regular-spiking neurons (RS), which fire spikes repetitively  [@dumont_2002; @lopezdearmentia_2004].
-Two further types of neurons were described in the CeA, however they are very rare (each does not exceed more than 10% of whole CeA neuronal population): (3) fast-spiking cells and (4) low-treshold bursting cells [@marina_1999].
+Based on neuronal electrophysiological firing profiles<!--response to current injections-->, two major types have been described in the CeA: (1) late-firing neurons (LF), displaying a pronounced delay before onset of the first action potential (100-200 ms) mediated by K~v1~-dependent slowly inactivated D-type K^+^ currents [@hou_2016; @martina_1999] and (2) regular-spiking neurons (RS), generating repetitive firing spikes [@dumont_2002; @lopezdearmentia_2004].
+Two further types of neurons were described in the CeA: (3) fast-spiking cells and (4) low-threshold bursting cells [@marina_1999]. <!-- figure-->
+However, each of these groups do not exceed more than 10% of whole CeA neuronal population.
 
-Fast-spiking cells have a high membrane resistance and a high action potential frequency (>40 Hz), showing no accommodation, similarly to subtype of interneurons present in cortex, hippocampus or BLA. 
-Their action potentials are significantly briefer with a half-width of around 0.6 ms compared with more than 1 ms in other cell types in CeA. 
-They have also higher frequency of spontaneous synaptic events (sEPSP). 
-CeA neurons display aspiny morphology. 
-These neurons likely correspond to local-circuit cells. 
-Low-treshold bursting cells are endowed with a T-type calcium current, giving rise to spike bursts. 
-They also show display rebound spikes after hyperpolarizing current step [@dumont_2002; @hou_2016]. 
+<!-- description of Late Firing neurons-->
 
-Considering expression of immunohistochemical markers, electrophysiological properties, and synaptic connections, two groups of CeA neurons have emerged: PKC`r knitr::asis_output("\U03B4")`-expressing  (PKC`r knitr::asis_output("\U03B4")`+) and SOM-expressing (SOM+) neurons. 
-PKC`r knitr::asis_output("\U03B4")` marker is specific to CeA. 
-PKC`r knitr::asis_output("\U03B4")`+ neurons are relatively homogeneous group: they are mainly late-firing cells (~85%) and display reduction of activity following fear conditioning protocol (CeL~off~ cells). 
-In contrary, most of the PKC`r knitr::asis_output("\U03B4")`- cells are SOM+ display heterogeneous intrinsic excitability with both late-firing (40%) or regular-spiking types (60%). 
-Moreover, these neurons respond to the fear conditioning with an increase in activity, and have therefore been called CeL~ON~ neurons [@ciocchi_2010; @haubensak_2010; @hou_2016; @li_2013]. 
-Therefore, it seems that these distinct populations have been associated with different functional roles.
+<!-- description of Regular Spiking neurons -->
+
+Fast-spiking cells shows a high membrane resistance and a high action potential frequency (>40 Hz), showing no accommodation, analogous to a subtype of interneurons present in the cortex, the hippocampus or the BLA,  discussed in previous section. <!-- poprawić to zdanie -->
+Their action potentials are significantly briefer with a half-width of around 0.6 ms compared with > 1 ms in other cell types in CeA. <!-- citations? -->
+They have also higher frequency of spontaneous synaptic potentials (sEPSPs). <!-- citations? -->
+<!--  CeA neurons display aspiny morphology. which one? citations? -->
+<!--These neurons likely correspond to local-circuit cells.  which one? -->
+<!-- neuromarkers and morphology? -->
+<!-- more about channels -->
+
+Low-threshold bursting cells are endowed with T-type calcium channels, giving rise to spike bursts. <!-- citations? -->
+One of their characteristics is the presence of rebound spikes after hyperpolarizing current step [@dumont_2002; @hou_2016]. <!-- fig -->
+<!-- neuromarkers? -->
+<!-- more about channels -->
+
+Considering the expression of immunohistochemical markers, together with their electrophysiological properties and synaptic connections, two groups of CeA neurons have emerged: those expressing protein kinase C `r knitr::asis_output("\U03B4")`(PKC`r knitr::asis_output("\U03B4")`+) or somatostatin (SOM+). 
+Of note, PKC`r knitr::asis_output("\U03B4")` marker is specific to CeA. 
+PKC`r knitr::asis_output("\U03B4")`+ neurons form relatively homogeneous group, which is comprised mainly of late-firing cells (~85%).
+These neurons display a reduced firing<!--+rate?--><!--activity--> following a fear conditioning protocol and thus are often referred as CeL~off~ cells. 
+In contrary, most of the PKC`r knitr::asis_output("\U03B4")`- cells are SOM+.
+However those cells are classified as both late-firing (40%) or regular-spiking types (60%). <!-- może jakoś inaczej napisać -->
+Moreover, these neurons respond to the fear conditioning with an increase in activity, and have, therefore, been termed CeL~ON~ neurons [@ciocchi_2010; @haubensak_2010; @hou_2016; @li_2013]. 
+Hence, it is plausible that these distinct populations fulfill different functional roles.
 
 #### Intercalated masses
 
-Intercalated (ITC) neurons do not form a compact nucleus but form numerous small densely packed cell clusters distributed in the main fiber bundles found in and around the amygdala. <!-- figure -->
-In particular, these fiber bundles are the external capsule that borders the BLA laterally as well as the intermediate capsule, the fiber bundle separating the BLA from the CeA. 
-ITC clusters located in the external and intermediate capsules called lateral (ITC~L~) and medial (ITC~M~), respectively.
-Intercalated neurons are GABAergic cells [@McDonald1993; @Nitecka1987] with small (10–15 `r knitr::asis_output("\U00B5")`m) ovoid cell bodies. Their dendritic trees are spiny, flattened, long and mostly remains within border of the fiber bundle where their soma is located [@Millhouse1986]. 
-Regarding their electrophysiological features, ITC cells have higher membrane resistance and firing frequency compared with BLA and CeA interneurons [@duvarci_2014; @royer_2000]. 
-Their high intrinsic firing frequency could be explained by their ability to express afterhyperpolarization (AHP) after action potential, which is explained by slowly-inactivating K+ currents (I~SD~) [@royer_2000].
-ITC neurons express the highest density of `r knitr::asis_output("\U00B5")`-opioid and dopamine type-1 receptor (D1) in whole amygdala [@jacobsen_2006; @palomarescastillo_2012; @pape_2010], that indicates the possibility of modulation of amygdala activity by opioid and dopaminergic systems. 
-As the intercalated cells inhibit neurons in the CeA, therefore modulation of the activity of these neurons will have an impact on the output of this structure.
+Intercalated neurons (ITCs) do not form a compact nucleus but rather gather in numerous small densely packed clusters distributed in the main fiber bundles found in and around the amygdala. <!-- figure -->
+In particular, these fiber bundles are the external capsule bordering on the lateral part of the BLA and the intermediate capsule separating the BLA from the CeA. <!-- figure-->
+Clusters located in the external and intermediate capsules are called lateral (ITC~L~) and medial (ITC~M~), respectively. <!-- poprawić to zdanie -->
+ITCs are GABAergic cells with small (10–15 `r knitr::asis_output("\U00B5")`m) ovoid cell bodies [@mcdonald_1993; @nitecka_1987]. 
+Their dendritic trees are spiny, flattened, long, and mostly remains within border of<!--constrainted within?--> the fiber bundle where their soma is located [@millhouse_1986]. 
+Regarding their electrophysiological features, ITCs have higher membrane resistance and firing frequency compared with BLA and CeA interneurons [@duvarci_2014; @royer_2000]. 
+Their high intrinsic firing frequency could be explained by their expression of the afterhyperpolarization (AHP) after action potential, which is explained by slowly-inactivating K+ currents (I~SD~) [@royer_2000]. <!-- zmienić -->
+ITCs express the highest density of `r knitr::asis_output("\U00B5")`-opioid and dopamine type-1 receptor (D1) in the whole amygdala [@jacobsen_2006; @palomarescastillo_2012; @pape_2010], indicating the possible modulation of amygdala activity by opioid and dopaminergic systems. 
+As intercalated cells inhibit neurons in the CeA, thereby their activity will have an impact on the output of this structure. <!-- może lepiej napisać -->
 Additionally, these neurons are surrounded by a small subset of larger (>50 `r knitr::asis_output("\U00B5")`m) cells with long thick dendrites. 
-Still, little is known about these larger neurons within ITC masses. 
-Previously, they were regarded as cholinergic neurons [@nitecka_1989]; however recent a report demonstrated that they are also GABAergic, and in addition display strong expression of metabotropic glutamate receptor 1`r knitr::asis_output("\U03B1")` (mGluR1`r knitr::asis_output("\U03B1")`) and GABA~A~ receptor `r knitr::asis_output("\U03B1")`1 subunit, and parvalbumin (PV) [@bienvenu_2015].
-
-
-#### Other nuclei
-
-Here, I will briefly describe the remaining amygdala nuclei, as they are beyond of scope of this dissertation. They include <!--the cell types and connectivity of--> the medial nucleus of the amygdala (MeA), the anterior amygdala area (AAA), and the amygdalo-hippocampal area (AHA).
-
-##### Medial nucleus
-
-The MeA consists of two types of morphologically distinct neurons: multipolar bitufted and spiny stellet neurons [@rasiafilho_2004]. 
-Physiologically, MeA neurons are either regular-spiking neurons, adapting neurons, or fully accommodating neurons [@niimi_2012]. 
-Interestingly, MeA is fuctionally different from other amygdala nuclei due to its key role in the reproductive, defensive, maternal and social behaviors and its involvement in pheromone and olfactory signaling [@bian_2013; @ferguson_2001].
-
-##### AAA
-
-<!-- czyli rozumiem, że mam uzupełnić? -->
-
-##### AHA
-
-The cell types observed in the nucleus of the lateral olfactory tract, the amygdalohippocampal area, and the cortical nuclei are similar to those in the basolateral complex. 
-The majority of the cells are pyramidal-like with smaller stellate cells (which resemble the local circuit neurons), spiny stellate cells, and neurogliaform cells also present to lesser degrees <!--później dodać cytowanie--> [MCDONALD AJ. Cytoarchitecture of the nucleus of the lateral olfactory tract: a Golgi study in the rat. Brain Res Bull 10: 497–503, 1983.]. <!-- uzupełnić cytowanie-->
-Orientation of neurons in the olfactory areas is more cortical-like with apical dendrites oriented parallel to each other. 
-To the best of my knowledge, there have been no detailed studies of the electrophysiological properties of neurons in these other nuclei. 
+Still, little is known about these neurons within ITC masses. 
+Previously, they were regarded as cholinergic neurons [@nitecka_1989]; however a recent report demonstrated their GABAergic nature and strong expression of metabotropic glutamate receptors 1`r knitr::asis_output("\U03B1")` (mGluR1`r knitr::asis_output("\U03B1")`), GABA~A~ receptors `r knitr::asis_output("\U03B1")`1 subunit, and parvalbumin (PV) [@bienvenu_2015].
 
 ### Amygdala functional circuits
 

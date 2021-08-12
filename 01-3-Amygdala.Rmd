@@ -18,9 +18,9 @@ This limbic region is involved in mood regulation, fear-conditioning/associative
 Amygdala is also an important player in tuning autonomic responses to homeostatic challenges, including those of the peripheral immune system [@pachecolpez_2005]. <!--więcej cytowań / lepiej napisać-->
 Finally, as amygdalar circuitry and function are well-conserved across evolution [@jarvis_2005], better understanding the complexity of this circuit using animal models has the potential to be directly relevant to humans. <!-- mam bardzo podobne zdanie chyba, więc zmienić !!!!!!!!!!!! --->
 
-### Structure
+### Amygdala Structure {#amygdalastructure}
 
-#### The basolateral complex of the amygdala (BLA)
+#### The basolateral complex of the amygdala (BLA) {#BLAstructure}
 
 The basolateral complex is comprised of the lateral nucleus (LA), the basal nucleus (B), and the basomedial nucleus (BMA), the latter is also known as accessory basal nucleus (@krettek_1978, see Fig \@ref:fig(amygdalanuclei)). <!-- nowsze cytowania? -->
 It is also often referred as the basolateral nucleus (BLA) and hereafter this term will be used.<!-- In order to avoid misunderstanding, I will refer to the basolateral complex as BLA and basal/basolateral nucleus as B. -->
@@ -28,7 +28,7 @@ The BLA is considered to be the main point of entry for cortical and subcortical
 This nuclei developmentally and structurally is a cortical-like structure [@waclaw_2010]. 
 Within the BLA, approximately 80% of all neurons are glutamatergic pyramidal-like principal cells and the remaining 20% belong to a heterogeneous group of interneurons [@duvarci_2014; @mcdonald_1993; @spampanato_2011]. <!-- figure? -->
 
-##### Principal cells
+##### Principal cells {#PC}
 
 Principal cells show many morphological and electrophysiological characteristics similar to their cortical and hippocampal pyramidal counterparts, including spiny complex dendritic trees and prominent spike frequency adaptation in response to current injections [@faber_2001; @par_1995]. <!-- see figure? -->
 However, population of principal cells is not homogeneous. <!-- their morphological profile and  -->
@@ -41,7 +41,7 @@ As a rich repertoire of ion channels shape the firing pattern of mammalian centr
 <!-- ALSO more on channels in these neurons // channels and their electrophysiological properties. As electrophysiological properties of neurons are mirrored by their ... of ionic channels -->
 Interestingly, some of them display bursting activity or a delay in firing when depolarized from more negative membrane potentials, which is thought to be due to the presence of low-threshold, slowly inactivating potassium current  [@washburn_1992].
 
-##### Interneurons
+##### Interneurons {#BLAinter}
 
 Interneurons, in contrast to principal cells, have aspine, smooth dendrites and their axon collaterals are restricted to the basolateral nuclei [@mcdonald_2001; @mcdonald_2002; @mcdonald_2004].
 According to their dendritic trees, they could be subdivided into multipolar, bitufted, and bipolar cells [@mcdonald_1982]. 
@@ -58,7 +58,7 @@ Although the role of this electrophysiological heterogeneity  is currently uncle
 
 <!-- + KANAŁYYYYYYYYYY -->
 
-#### Central amygdala 
+#### Central amygdala {#CeAstructure}
 
 Central amygdala (CeA) is comprised of capsular (CeC), lateral (CeL), medial (CeM) and intermediate (CeI) divisions [@jolkkonen_1998; @mcdonald_1982a; @sah_2003]; however, the classification of these regions is inconsistent. <!-- inne cytowanie? problem z nim bo takiego nie ma  [@Cassell1986].-->
 Importantly, the capsular region of the CeA appears to overlap with intercalated cell clusters [@mcdonald_1982a; @pape_2010] and will be hereafter referred to as ITCs and will be described in the next section.<!--latter term will be used in this dissertation.-->
@@ -104,7 +104,7 @@ However those cells are classified as both late-firing (40%) or regular-spiking 
 Moreover, these neurons respond to the fear conditioning with an increase in activity, and have, therefore, been termed CeL~ON~ neurons [@ciocchi_2010; @haubensak_2010; @hou_2016; @li_2013]. 
 Hence, it is plausible that these distinct populations fulfill different functional roles.
 
-#### Intercalated masses
+#### Intercalated masses {#ITCs}
 
 Intercalated neurons (ITCs) do not form a compact nucleus but rather gather in numerous small densely packed clusters distributed in the main fiber bundles found in and around the amygdala. <!-- figure -->
 In particular, these fiber bundles are the external capsule bordering on the lateral part of the BLA and the intermediate capsule separating the BLA from the CeA. <!-- figure-->
@@ -119,64 +119,62 @@ Additionally, these neurons are surrounded by a small subset of larger (>50 `r k
 Still, little is known about these neurons within ITC masses. 
 Previously, they were regarded as cholinergic neurons [@nitecka_1989]; however a recent report demonstrated their GABAergic nature and strong expression of metabotropic glutamate receptors 1`r knitr::asis_output("\U03B1")` (mGluR1`r knitr::asis_output("\U03B1")`), GABA~A~ receptors `r knitr::asis_output("\U03B1")`1 subunit, and parvalbumin (PV) [@bienvenu_2015].
 
-### Amygdala functional circuits
+### Amygdala connectivity {#amygdalaconnectivity}
 
-The amygdala is documented to have widespread connections with a variety of other structures, from the prefrontal cortex to the brainstem (for reviews: @duvarci_2014; @pape_2010; @sah_2003. 
-The oversimplified model of the amygdala circuit is as follows: it receives many distinct inputs.
-Then, it computes the information *via* complex connections of intra-connected nuclei with many levels of modulation.
-Finally, it sends output to various brain regions, which suggests that the amygdala could influence other parts of the brain as well as behaviors mediated by those regions. <!--  It serves as a hub .-->
+The amygdala is documented to have<!--inne słówko--> widespread connections with an array of other brain regions, from the prefrontal cortex to the brainstem (for reviews: @duvarci_2014; @pape_2010; @sah_2003), suggesting the amygdala could influence other parts of the brain as well as behaviors mediated by those regions, which will be further discussed in next section. <!--  illustrating amygdala as a hub?-->
 
-Indeed, several lines of evidence indicate that amygdala is involved in very distinct behavior related with learning, fear, anxiety, reward and addiction. <!-- citations? --> 
-At first glimpse, this variety of functions could be surprising, but most of them are related to associative learning, e.g fear conditioning and its malfunctions. 
-In order to survive, when confronted with particular events, animals must discriminate and learn specific environmental stimuli that predict potentially life-threatening or sustaining events, so that they can mobilize adaptive responses to those stimuli in the future. 
-This form of learning is termed Pavlovian conditioning. 
-For example, during fear conditioning, an neutral stimulus, such as an acoustic tone (i.e., the conditioned stimulus [CS]), that predicts an aversive outcome, such as a footshock (i.e., the unconditioned stimulus [US]), results in defensive responses, such as freezing behavior [@janak_2015; @ledoux_2000].
-Therefore, amygdala has been conserved throught evolution and even non-mammalian species such as reptiles, birds and fishes have a counterpart with similar circuits and functions to the amygdala in mammals [@janak_2015]. <!-- już to chyba wcześniej pisałam, jak tak to wywalić wcześniej-->
-Recent technological advances and approaches, including optogenetic and pharmacogenetic, in conjunction with genetic targeting of specified cells, battery of behavioral tests and electrophysiology, enable determining how neuronal activity within the amygdala could contribute to each of these distinct processes.
-It can provide new insights into behavioral functions of amygdala neuronal activity, revealing a complex picture of amygdalar control of behavior.
+#### Amygdala afferents {#amygdalainputs}
 
-#### Amygdala afferents
+##### BLA 
 
-As amygdala is involved in complex processes crucial for learning adaptive responses for survival, it indicates that there must be a diversity of neuronal responses in the BLA. 
-BLA complex is regarded as the main input nuclei of the amygdala, because pyramidal-like cells receives glutamatergic projections from all sensory modalities, mainly *via* cerebral cortex: olfactory, somatosensory, gustatory and visceral, auditory, and visual (for review: @pape_2010; @sah_2003). 
-The majority are ipsilateral connections that enter the amygdala *via* the external capsule [@mascagni_1993; @sah_2003].
-The prefrontal cortex is a major source of cortical projections to the amygdaloid complex in all species [@duvarci_2014; @mcdonald_1996; @pape_2010; @sah_2003]. 
-Especially its medial part (mPFC) serves as a major input to the BLA, regulating fear extinction and expression [@burgosrobles_2009; @milad_2002; @sotresbayon_2010].
-A large body of evidence, including fMRI studies in humans [@labar_1998], highlight the BLA involvement, its lateral part, in acqusition of fear conditioning [@ledoux_1990] @Blanchard1972]. <!-- nie podoba mi sie to its lateral part, dodać cytowanie, chociaż ona jest ... -->
-Principal cells in the LA are thought to simultaneously receive initially weak afferent carrying sensory information about the CS and a strong afferent carrying US information when these experiences are paired. 
-This leads to LTP-mediated enhanced strength of the excitatory synapses carrying CS information [@kim_2017], which enables CS alone to activate LA neurons and induce the freezing behaviour. 
-Importantly, optogenetic stimulation of principal cells in LA, paired with a neutral tone (CS; without footshock) produced an increase in freezing both during training and in a later retention test [@johansen_2010]. 
-Similarly, photoactivation of LA axonal terminals from the auditory thalamus (the medial geniculate nucleus, MGN) and the auditory cortex (AC) when applying footshock (without a neutral tone) leads to conditioned freezing and synaptic potentiation [@nabavi_2014]. 
-Intriguingly, optical stimulation of a subset of principal neurons, which express Thy1 promoter, did not affect freezing behaviour during acoustic fear conditioning [@jasnow_2013]. <!-- DODAĆ CYTOWANIE, JUŻ ŚCIĄGNIĘTE -->
-However, stimulation of these neurons enhanced the retention of the extinction learning [@jasnow_2013]. <!-- DODAĆ CYTOWANIE, JUŻ ŚCIĄGNIĘTE -->
-Therefore, as suggested @lalumiere_2014<!-- dodać cytowanie, ściągnięte -->, optical activation of this neuronal subpopulation had no effect on the acute expression of fear but rather appeared to influence consolidation specifically for memories that oppose fear conditioning. 
-Above-mentioned notion that BLA neurons contribute to consolidation of learning is further supported by several lines of evidence. 
-Firstly, the BLA complex has strong reciprocal connections with structures involved in long-term declarative memory, including the perirhinal cortex, the entorhinal cortex, the parahippocampal cortex, and the hippocampus [@McDonald2000; <!--cognitive review i brak tego artykułu...-->]. 
-Moreover, the consolidation in the BLA is thought to be mediated by synchronized oscillations at theta and gamma frequencies in local ensembles of projection neurons [@bauer_2007; @pelletier_2004]. 
-Recent work by @huff_2013 shows that optical stimulation of BLA pyramidal cells with bursts of light pulses in gamma frequency (40 Hz) for 15 min, right after inhibitory avoidance training, enhanced retention 2 days later. 
-Importantly, other frequencies did not change retention. 
-Conversely, inhibition of these neuron for 15 minutes impaired retention of the learning [@huff_2013].
+As mentioned above, the BLA is regarded as the main input nuclei of the amygdala (see Section: \@ref(BLAstructure)), because pyramidal-like cells receive glutamatergic projections from all sensory modalities (e.g., olfactory, somatosensory, gustatory and visceral, auditory, and visual), mainly *via* cerebral cortex (for review: @pape_2010; @sah_2003). <!-- może poprawić to zdanie? -->
+The majority of connections are ipsilateral, entering the amygdala *via* the external capsule [@mascagni_1993; @sah_2003]. <!-- figure -->
+In all species, the prefrontal cortex (PFC), especially its medial part, is a major source of cortical projections to the amygdaloid complex [@duvarci_2014; @mcdonald_1996; @pape_2010; @sah_2003], regulating fear extinction and expression [@burgosrobles_2009; @milad_2002; @sotresbayon_2010].
+A large body of evidence, including fMRI studies in humans [@labar_1998], highlight the involvement of lateral BLA, in acquisition of fear conditioning [@blanchard_1972; @ledoux_1990]. <!-- może bardziej it is well known that -->
+Principal cells in the LA are described to<!--może jakoś inaczej?--> simultaneously receive initially weak afferent carrying sensory information about the CS<!--wytłumaczyć--> and a strong input carrying US<!--wytłumaczyć--> information when these experiences are paired. 
+This leads to LTP at excitatory synapses onto LA neurons, and in turn, enables CS alone to activate them and induce the freezing behavior [@kim_2017]. 
+Consistently, based on optogenetic stimulation of principal cells in the LA, paired with a neutral tone (CS; without a footshock), an increase in freezing behavior both during training and in a later<!--further--> retention test was reported [@johansen_2010]. 
+Similarly, photoactivation of LA axonal terminals from the auditory thalamus (the medial geniculate nucleus, MGN) and the auditory cortex (AC) when applying footshock (without a neutral tone) results in<!-- were shown to produce?--> conditioned freezing and synaptic potentiation [@nabavi_2014]. 
+Intriguingly, optical stimulation of a subset of principal neurons expressing Thy1 promoter did not affect freezing behavior during fear conditioning, but rather appeared to influence consolidation specifically for memories that oppose<!--coś z tym słówkiem jest nie tak--> fear conditioning [@jasnow_2013].<!-- Stimulation of these neurons enhanced the retention of the extinction learning [@jasnow_2013].-->
+The notion that BLA neurons contribute to consolidation of learning is further supported by several lines of evidence. 
+Firstly, the BLA complex is known to have strong reciprocal connections with structures involved in long-term declarative memory, including the perirhinal cortex, the entorhinal cortex, the parahippocampal cortex, and the hippocampus <!-- cytowanie!!!! McDonald pewnie ale brak tego artykułu  [@McDonald2000; cognitive review i brak tego artykułu...-->. 
+Moreover, synchronized oscillations at theta and gamma frequencies in local ensembles of projection neurons have emerged as a key element of the consolidation in the BLA [@bauer_2007; @pelletier_2004]. 
+In addition, @huff_2013 highlighted the role of gamma frequency (40 Hz), but not other frequencies, induced in the BLA by bursts of light pulses, in enhancing retention. <!-- końcówka może inaczej?-->
+In line with these findings, inhibition of BLA neurons impaired retention of the learning [@huff_2013].
+Likewise integrating CS and aversive stimuli by BLA neurons, similar scenario takes place when CS is paired with rewarding stimuli, such as sweet liquid or food pellets [@schoenbaum_1998; @tye_2007; @tye_2008].
+These findings supports the notion that learning that particular environmental stimulus predicts the occurrence of food or other rewarding stimuli is also adaptive [@janak_2015]. <!--jeszcze bardziej zmienić... Thus, not only fear conditioning, but also reward cue responses develop through long-lasting enhancement of glutamatergic inputs from sensory thalamic stimuli onto LA principal cells in the LA 78. /// Clearly, learning about environmental stimuli that predict the occurrence of food and other rewards is adaptive, as is learning about potential aversive outcomes. Thus, learning across a valence continuum of positive (rewarding) to negative (punishing or aversive) outcomes engages the amygdala -> Hence, amygdala seems to be involved in learning a spectrum of .....-->
+Consistent with this notion, it is well-established that both fear- and reward-induced conditioning response <!--the acquisition of conditioned responding to both fear and reward cues--> are associated with a synaptic potentiation in the LA, resulting in excitatory drive in LA neurons following the cue and thereby mediating cue-triggered behavior [@clem_2010; @johansen_2010; @tye_2008]. <!-- nowsze cytowania i sprawdzić to zdanie... -->
 
-Just as BLA neurons develop excitatory responses to a CS paired with aversive stimuli, the same scenario takes place when CS is paired with rewarding stimuli, such as sweet liquid or food pellets [@schoenbaum_1998; @tye_2007; @tye_2008]. 
-Thus, not only fear conditioning, but also reward cue responses develop through long-lasting enhancement of glutamatergic inputs from sensory thalamus onto principal neurons in the LA 78. 
-Moreover, the acquisition of conditioned responding to both fear and reward cues requires an NMDA-receptor-dependent increase in AMPA-receptor function in LA neurons44,46,78. The end result of this synaptic potentiation is that the cue is able to drive spiking in LA neurons, which in turn activates neuronal populations in downstream regions that contribute to the cue-triggered behaviour. Clearly, learning about environmental stimuli that predict the occurrence of food and other rewards is adaptive, as is learning about potential aversive outcomes. Thus, learning across a valence continuum of positive (rewarding) to negative (punishing or aversive) outcomes engages the amygdala.
+Principal cells in the BLA complex are not the only cells receiving projections from other brain structures. <!-- popracować może jeszcze nad tym zdaniem... -->
+Interneurons in the BLA have also emerged as recipients of cortical and thalamic excitatory inputs [@szinyei_2000]. 
+Moreover, @chu_2012 demonstrated that activation of D2 receptor in parvalbumin-expressing interneurons in LA reduced GABAergic transmission only to principal cells, but not to other interneurons. <!-- zdecydowanie zmienić... -->
+Thus, different stimuli could affect distinct neuronal populations in the BLA. 
+Moreover, dopamine, released by axons originated from the midbrain neurons [@asan_1997], plays crucial role in modulating BLA activity. <!-- ??? citations?? review-->
+Some studies also show actions of this neuromodulator on intercalated cells, especially the medial cluster, but in D1 receptor-dependent manner [@marowsky_2005]. 
+These cells receive sensory input as well, participating in fear conditioning [].<!--Citation and better written????!!!Thus, multiple plastic systems, and especially those integrating GABAergic neurons, could act in concert to encode aspects of stimulus associations in the amygdala.-->
 
-Principal cells in the BLA complex are not the only cell types that receives projection from other structures. Some reports indicates that interneurons in the BLA also receives excitatory inputs from cortical and thalamic sources [@Szinyei2000]. Moreover, @Chu2012 demonstrated that activation of D2 receptor in parvalbumin-expressing interneurons in LA reduced GABAergic transmission only to principal cells, but not to other interneurons. Therefore, different stimuli could influence only a subset of cell population in BLA. Moreover, dopamine, released by axons originated in midbrain [@Asan1997], has crucial role in modulating BLA actiity. Some studies also show actions of this neuromodulatior on intercalated cells, especially the medial cluster, but in D1 receptor-dependent manner [@Marowsky2005]. These cells receive sensory input as well, participating in fear conditioning [].<!--Thus, multiple plastic systems, and especially those integrating GABAergic neurons, could act in concert to encode aspects of stimulus associations in the amygdala.-->
+<!-- other neuromodulators in the BLA???!-->
+<!-- tu mniej więcej skończyłam...-->
 
-Importantly, CeA, which is regarded as main output nuclei, also receive substantial inputs . Moreover, CeL receives oxytonergic innervation from hypothalamus and release of oxytocin from their axon terminals results in increase in neuronal activity in this region [@Knobloch2012]. Additionally, a stimulation of oxytogenic terminals during fear conditioning leads to attenuation of freezing behavior [@Knobloch2012]. Stimulation of axons from another CeL input, parabrachial nucleus, leads to suppression of appetite [@Carter2013], which suggests that CeL has many parallel circuits. <!--CeA receives projections from BNST [@Gungor2015]-->
+Importantly, CeA, which is regarded as main output nuclei, also receive substantial inputs. 
+Specifically, CeL receives oxytonergic innervation from hypothalamus and release of oxytocin from their axon terminals results in increase in neuronal activity in this region [@Knobloch2012]. 
+Additionally, a stimulation of oxytogenic terminals during fear conditioning leads to attenuation of freezing behavior [@Knobloch2012]. 
+Stimulation of axons from another CeL input, parabrachial nucleus, leads to suppression of appetite [@Carter2013], which suggests that CeL has many parallel circuits. <!--CeA receives projections from BNST [@Gungor2015]-->
 
-In addition to excitatory, oxygenic and dopaminergic innervations, nuclei in amygdala are also strongly modulated by acetylocholine [@Washburn1992a], norepinephire [@Faber2002], serotonin, and opioids <!-- more citations -->. 
+<!-- This picture is more complex when added a role of neuromodulators. 
+Neurons in CeL and CeM express many neuropeptides (Gray and Magnuson 1987, 1992; Woodhams et al. 1983) that likely modulate fast inhibitory and excitatory neurotransmission (Kash et al. 2015; McElligott and Winder 2009).  zmienić -->
+In addition to excitatory, oxygenic and dopaminergic innervations, nuclei in amygdala are also strongly modulated by acetylocholine [@Washburn1992a], norepinephire [@Faber2002], serotonin, and opioids <!-- more citations and figure!!!!!!!!!!!!!!!!!!!-->. 
+<!-- division by BLA and CeA?!---> 
 
-Thus, each nuclei receives multiple inputs from yet distinct brain regions //unique set of inputs, which 
-On a larger level, these findings contribute to our understanding of how specific inputs, and even genetically distinct inputs, to the amygdala regulate both behavior and local circuit activity
-
-This picture is more complex when added a role of neuromodulators. Neurons in CeL and CeM express many neuropeptides (Gray and Magnuson 1987, 1992; Woodhams et al. 1983) that likely modulate fast inhibitory and excitatory neurotransmission (Kash et al. 2015; McElligott and Winder 2009). 
+Thus, each nuclei receives unique set of multiple inputs from distinct brain regions.
+These findings contribute to our better understanding of functional and behavioral significance of those diverse sets of inputs to the amygdala.<!-- better written .... how specific inputs, and even genetically distinct inputs, to the amygdala regulate both behavior and local circuit activity --> 
 
 #### Intrinsic amygdala connections
 
-In the BLA, principal cells prefer to form local synapses with proximal interneurons [@Szineyi2000] and longer distance collaterals send onto other principal cells. The latter connections seems to be formed with preferential lateromedial directionality: LA principal neurons send many projections onto neurons in basal nuclei (B) [@Krettek1978; @Pitkanen1997; @Duvarci2014]. 
+In the BLA, principal cells prefer to form local synapses with proximal interneurons [@Szineyi2000] and longer distance collaterals send onto other principal cells. 
+The latter connections seems to be formed with preferential lateromedial directionality: LA principal neurons send many projections onto neurons in basal nuclei (B) [@Krettek1978; @Pitkanen1997; @Duvarci2014]. 
 On the other hand, interneurons in the BLA form synaptic connections, creating local circuit networks [@Lang1998]. Consistent with this idea, their axon branch several times creating many axon collaterals and terminals near the cell body [Millhouse1983]. 
------------
+
 Activation of these cells in the basolateral complex generates inhibitory synaptic potentials that have GABA~A~ receptor dependent fast and GABA~B~ receptor dependent slow components (108, 218, 284) (135, 218, 284).  Measurements of spontaneously occurring miniature inhibitory synaptic currents have suggested that different interneurons in the basolateral complex are responsible for generating the GABAA and GABAB receptor-mediated component of inhibitory synaptic current (263).  In contrast to most other cells, the slow component of the inhibitory synaptic potential in LA pyramidal neurons is in part generated by a calcium-activated potassium conductance that is activated by calcium influx via NMDA receptors (39, 108). This observation raises the possibility that NMDA receptors in lateral amygdala neurons might be coupled to calcium-activated potassium channels.
 However, it is possible that the excitatory inputs to interneurons are due to activation of axon collaterals of pyramidal cells, which indicates a feedback role for interneurons. Tract tracing studies in the cat and monkey found that cortical afferents form few if any synapses with parvalbumin positive neurons, while local afferents do make synapses onto them (262). In contrast, a similar study in the rat has described thalamic inputs to interneurons in the LA (295). These findings are consistent with the proposal that different populations of interneurons can have a feed-forward and/or a feedback role in the basolateral complex.
 Interestingly, glutamatergic input of BLA interneurons, partly from local principal cells, have unusual properties: their synapses contain AMPA receptors with low GluR2 subunit in the postsynaptic membrane and no NMDA receptors [@McDonald1996; @Mahanty1998]. Generally, including principal BLA or interneurons from other brain areas, their glutamatergic input contain both NMDA- and AMPA- receptors. Moreover,
@@ -219,7 +217,8 @@ New findings continue to enlarge our conceptions of CeA circuitry in non-fear be
 <!--neurons in both the CeM and CeL receive glutamatergic inputs from the lateral and basal nucleus which activate both AMPA and NMDA receptors [(Royer and M de A 2004)]]. Excitatory inputs to CeL neurons also express presynaptic metabotropic glutamate receptors (186). As in many other regions of the central nervous system (Debanne2011), activation of these receptors leads to depression of the synaptic input. The activity of these receptors is modulated following kindling and chronic cocaine treatment (Neugebauer2000). These findings suggest that alterations in synaptic efficacy at inputs to the CeA may be involved in the changes seen in epilepsy and behavioral sensitization to cocaine.-->
  
 #### Amygdala projections
-//////////////////////Efferent projections from the amygdala are also widespread and include both cortical and subcortical regions (208).
+
+In addition to complex patterns of inputs<!--?-->, amygdala has also widespread efferent projections, including both cortical and subcortical regions (208).
 /// Although many cortical regions are contacted by BLA axons, this review will only consider the medial prefrontal cortex (mPFC), because it plays a critical role in regulating condi- tioned fear (Sotres-Bayon and Quirk, 2010). Other amygdala outputs thought to contribute to conditioned fear include projec- tions to BNST (Dong et al., 2001) and various hypothalamic nuclei (Pitkanen, 2000).
 //// Finally, the amygdala can also indirectly influence the excitability of the entire prosencephalon via its projections to neuromodulatory cell groups (releasing acetylcholine, noradrenaline [NA], and dopamine [DA]) of the basal forebrain and brainstem (Steriade and Pare, 2007).
 On the output side, the targets of the amygdala are extremely diverse, however the CeM is widely accepted to be the main output nuclei.
@@ -248,6 +247,18 @@ Moreover, some set of projections are sent from both BLA and CeA. This connectio
 <!--The central amygdala is particularly sensitive to a kindling stimulus (123a) and has been implicated in the reinforcing ability of repeated cocaine exposure (170). These findings suggest that alterations in synaptic efficacy at inputs to the CeA may be involved in the changes seen in epilepsy and behavioral sensitization to cocaine. Sah2003-->
 
 ### Amygdala functions
+
+<!--nawiazanie do wcześniejszego complex connectivity najlepiej coś w deseń While suppression of neural activity in the rostrolateral prefrontal cortex implemented this key
+regulatory mechanism, the ventromedial prefrontal cortex coordinated with an array of other brain
+regions to integrate several dimensions of knowledge valuation, including surprise-->
+Indeed, several lines of evidence indicate that amygdala is involved in very distinct behaviors related with learning, fear, anxiety, reward, and addiction. <!-- citations? --> 
+At first glimpse, this variety of functions could be surprising, but most of them are related<!--inne słówko // reduced?--> to associative learning, e.g, fear conditioning and its malfunctions. 
+In order to survive when confronted with particular events, animals must discriminate and learn specific environmental stimuli that predict potentially life-threatening or sustaining events, so that they can mobilize<!--inne słówko?--> adaptive responses to those stimuli in the future. <!-- lepiej napisać to zdanie -->
+This form of learning is termed Pavlovian conditioning. 
+For example, during fear conditioning, an neutral stimulus, such as an acoustic tone (i.e., the conditioned stimulus [CS]), that predicts an aversive outcome, such as a footshock (i.e., the unconditioned stimulus [US]), results in defensive responses, such as freezing behavior [@janak_2015; @ledoux_2000].
+Therefore, amygdala has been conserved throught evolution and even non-mammalian species such as reptiles, birds and fishes have a counterpart with similar circuits and functions to the amygdala in mammals [@janak_2015]. <!-- już to chyba wcześniej pisałam, jak tak to wywalić wcześniej-->
+Recent technological advances and approaches, including optogenetic and pharmacogenetic, in conjunction with genetic targeting of specified cells, battery of behavioral tests and electrophysiology, enable determining how neuronal activity within the amygdala could contribute to each of these distinct processes.
+It can provide new insights into behavioral functions of amygdala neuronal activity, revealing a complex picture of amygdalar control of behavior.
 #### Fear/ Anxiety
 
 The fear circuitry orchestrates defense mechanisms in response to environmental threats. This circuitry is evolutionarily crucial for survival, but its dysregulation is thought to play a major role in the pathophysiology of psychiatric conditions in humans.

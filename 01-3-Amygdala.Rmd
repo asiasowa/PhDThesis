@@ -36,29 +36,24 @@ The BLA is considered to be the main point of the entry for cortical and subcort
 This complex developmentally and structurally is a cortical-like structure [@waclaw_2010]. 
 Within the BLA, approximately 80% of all neurons are glutamatergic pyramidal-like principal cells and the remaining 20% belong to a heterogeneous group of interneurons [@duvarci_2014; @mcdonald_1993; @spampanato_2011]. <!-- figure? i może usunąć review i dać jednak ... research?-->
 
-##### Cells
+##### Neuronal Composition <!-- choć może cellular i tutaj też astrocyty? -->
 
 ###### Principal cells {#PC}
 
-Principal cells (PC) show many morphological and electrophysiological characteristics similar to their cortical and hippocampal pyramidal counterparts, including spiny complex dendritic trees and prominent spike frequency adaptation in response to depolarizing somatic current injections [@faber_2001; @par_1995]. <!-- see figure? -->
+Principal cells (PC) show many morphological and electrophysiological characteristics similar to their cortical and hippocampal pyramidal counterparts, including spiny complex dendritic trees, the presence of apical dendrite, and prominent spike frequency adaptation in response to depolarizing somatic current injections [@faber_2001; @par_1995]. <!-- see figure? -->
 BLA principal cells are not homogeneous, but differ mainly in both of those characteristics. <!-- However, no correlation was found between their neuronal firing properties and morphology   -->
 However, these variables seem not to be inter-correlated [@faber_2001; @funahashi_2000].
 Pyramidal-like cells of the BLA are characterized by large triangle-shaped soma, dendritic spines, and the presence of a thicker apical dendrite [@mcdonald_1982]. <!-- (McDonald 1982, 1984, 1992). ///mocniej zmienić szczególnie drugą część zdania.../// Previous morphological characterization of BLA principal cells has revealed that these neurons exhibit large, complex dendritic arbors and contain a more prominent apical dendrite similar to that of cortical neurons (McDonald 1982). ///  Our data also show that principal cell dendrite spine density increased at distal regions compared with proximal regions [@klenowski_2015]-->
-Based on their morphological profile, BLA neurons display variation in soma volume [@klenowski_2015], <!-- klenowski_2015 // The observed level of somatic variation, dendritic organization, and spine localization is likely to provide important morphological control over the integration of synaptic inputs, which would be expected to influence cellular output and potentially contribute to differences in BLA principal cell physiology. // can be classified including semipyramidal and stellate-like morphology (Rainnie et al. 1993; Sah et al. 2003).-->
-
-Electrophysiologically, the degree of the spike frequency adaptation of PCs forms an continuum: at one end cells fire two to three spikes only and show marked spike frequency accommodation, whereas at the other end cells fire repetitively throughout the current injection with little accommodation [@faber_2001; @funahashi_2000]. <!-- może jakiś figure? see Fig. in methods?-->
-
-Interestingly, neurons with prominent spike frequency adaptation were shown to have larger afterhyperpolarization (AHP) than those that fire repetitively [@faber_2002; @sah_1996]. 
-As it is well-established that a rich repertoire of ion channels shape the firing pattern of mammalian central neurons (for example: @bean_2007), it is suggested that principal cells have a <!--differential-->distinct distribution of calcium-activated potassium channels responsible for AHP, which leads to difference in their repetitive firing properties [@faber_2001; @faber_2002].
-<!-- HERE: additional electrophysiological features of principal cells Additionally, another electrophysiological characteristics of principal neurons in BLA are: relatively wide  action potentials (half-width = 1.2 ms), ....., .....-->
-<!-- ALSO more on channels in these neurons // channels and their electrophysiological properties. As electrophysiological properties of neurons are mirrored by their ... of ionic channels -->
-Interestingly, some of them display bursting activity or a delay in firing when depolarized from more negative membrane potentials, which is thought to be due to the presence of low-threshold, slowly inactivating potassium current  [@washburn_1992].
-<!-- principal cell apical dendrite structure is organized to support the formation of high levels of distal synaptic inputs, which are likely to be excitatory (Fig. 5). Furthermore, reduced proximal spine density suggests that this region may receive a greater portion of inhibitory inputs compared with distal dendrites. our neurochemical results show a higher number of GABAergic synapses on the soma and proximal dendrites compared with the distal dendrites of principal neurons (Fig. 8), potentially facilitating inhibitory control of principal neuron firing (Miles et al. 1996). @klenowski_2015-->
+Based on their morphological profile, BLA neurons display variation in soma volume [@klenowski_2015] and/or shape (pyramidal vs. stellate-like morphology, @faber_2001, @par_1995).
+Electrophysiologically, the degree of the spike frequency adaptation of PCs forms an continuum: at one end cells fire two to three spikes only and show marked spike frequency accommodation, whereas at the other end cells fire repetitively throughout the current injection with little accommodation [@faber_2001; @funahashi_2000]. <!-- może jakiś figure i trochę lepiej napisać? see Fig. in methods?-->
+Moreover, principal neurons with prominent spike frequency adaptation were shown to have larger afterhyperpolarization (AHP) than those that fire repetitively, which is suggested to be due to their distinct distribution of calcium-activated potassium channels [@faber_2001; @faber_2002; @sah_1996]. <!-- HERE: additional electrophysiological features of principal cells Additionally, another electrophysiological characteristics of principal neurons in BLA are: relatively wide  action potentials (half-width = 1.2 ms), ....., .....-->
+On the other hand, the presence of low-threshold, slowly inactivating potassium current is thought to lead to bursting activity in those cells [@par_1995]. <!-- ładniej napisać, wcześniej Interestingly, some of them display bursting activity or a delay in firing when depolarized from more negative membrane potentials, which is thought to be due to the presence . -->
 
 ###### Interneurons {#BLAinter}
 
-Interneurons, in contrast to principal cells, have smaller cell bodies, aspiny dendrites, and their axon collaterals are restricted to the basolateral nuclei [@mcdonald_2001; @mcdonald_2002; @mcdonald_2004]. <!-- BLA interneurons generally have smaller cell bodies compared with principal cells, lack spines, and have no apparent apical dendrite (McDonald 1982).-->
-According to their dendritic trees, they could be subdivided into multipolar, bitufted, and bipolar cells [@mcdonald_1982]. <!-- After we divided our interneuron data set into spiny and aspiny interneurons on this basis, examination of these subgroups did not reveal any significant morphological differences, nor did we find any obvious localization patterns, as each BLA subnucleus we sampled from contained both spiny and aspiny interneurons (Fig. 1). Interestingly, we found that interneurons classified as spiny had similar proximal and distal spine densities compared with principal cell basal dendrites. This finding is noteworthy, as previous studies have suggested that BLA interneurons are generally spine sparse or aspiny (McDonald 1982; Sah et al. 2003; Washburn and Moises 1992).@klenowski_2015-->
+In contrast to principal cells, interneurons have smaller cell bodies, and their axon collaterals are restricted to the BLA [@mcdonald_2001; @mcdonald_2002; @mcdonald_2004]. <!-- BLA interneurons generally have smaller cell bodies compared with principal cells, lack spines, and have no apparent apical dendrite (McDonald 1982).-->
+According to their dendritic trees, they could be subdivided into multipolar, bitufted, and bipolar cells [@mcdonald_1982]. 
+Moreover, their dendrites can be either aspiny or spiny [@klenowski_2015]. <!-- lepiej napisać --><!--podzielone na aspiny and spiny)-->,<!-- After we divided our interneuron data set into spiny and aspiny interneurons on this basis, examination of these subgroups did not reveal any significant morphological differences, nor did we find any obvious localization patterns, as each BLA subnucleus we sampled from contained both spiny and aspiny interneurons (Fig. 1). Interestingly, we found that interneurons classified as spiny had similar proximal and distal spine densities compared with principal cell basal dendrites. This finding is noteworthy, as previous studies have suggested that BLA interneurons are generally spine sparse or aspiny (McDonald 1982; Sah et al. 2003; Washburn and Moises 1992).@klenowski_2015-->
 Moreover, analogous to their counterparts in the neocortex and hippocampus, interneurons in the BLA can be characterized by their expression of the same neurochemical markers. 
 Although brain regions may differ in relative ratios of interneuron types, in the BLA, the main two non-overlapping groups are those expressing calbindin (CB+; around 50% of neurons) or calretinin (CR+; around 20% of neurons) [@kemppainen_2000; @mcdonald_2001; @mcdonald_2002]. 
 Each of these groups can be further sub-divided based on their expression of somatostatin (SOM+), vasoactive intestinal peptide  (VIP+), cholecystokinin (CCK+), and parvalbumin (PV+) (for a review, see: @spampanato_2011). 
@@ -72,7 +67,9 @@ Although the role of this electrophysiological heterogeneity  is currently uncle
 
 <!-- + KANAŁYYYYYYYYYY -->
 
-##### Afferents
+##### Connectivity
+
+###### Afferents
 
 As mentioned above, the BLA is regarded as the main input nuclei of the amygdala, receiving strong glutamatergic projections from nearly all sensory modalities (e.g., olfactory, somatosensory, gustatory and visceral, auditory, and visual), mainly *via* cerebral cortex (for review: @pape_2010; @sah_2003). <!-- może poprawić to zdanie? i chyba nie tylko PC? //  -->
 Synapses are made not only on principal neurons<!-- citation?-->, but interneurons in the BLA have also emerged as recipients of cortical and thalamic excitatory inputs [@szinyei_2000]. <!-- zmienić? -->
@@ -119,9 +116,11 @@ These fast glutamate-and slow 5-HT-mediated responses often coexisted in the sam
 Interestingly, fast-spiking and non-fast-spiking INs displayed differential modulation by glutamate and 5-HT.
 Furthermore, optical stimulation of 5-HT terminals did not evoke glutamate release onto BA principal neurons, but inhibited these cells directly *via* activation of 5-HT~1A~ receptors and indirectly *via* enhanced GABA release. 
 --> 
+
+<!-- principal cell apical dendrite structure is organized to support the formation of high levels of distal synaptic inputs, which are likely to be excitatory (Fig. 5). Furthermore, reduced proximal spine density suggests that this region may receive a greater portion of inhibitory inputs compared with distal dendrites. our neurochemical results show a higher number of GABAergic synapses on the soma and proximal dendrites compared with the distal dendrites of principal neurons (Fig. 8), potentially facilitating inhibitory control of principal neuron firing (Miles et al. 1996). @klenowski_2015-->
 The integration of sensory inputs and subsequent generation of emotional responses is largely determined by the proportion of excitatory and inhibitory input to BLA principal cells (Davis et al. 1994), in addition to local inhibition provided by GABAergic interneurons (Ehrlich et al. 2009; Spampanato et al. 2011). Furthermore, it has been proposed that the pattern of local innervation within the BLA promotes synchronous firing of principal cells that facilitates rapid oscillations and synaptic plasticity (Muller et al. 2006).<!--klenowski 2016-->
 
-##### Intrinsic connectivity
+###### Intrinsic connectivity
 
 Principal cells prefer to form local synapses with proximal interneurons and send longer distance collaterals onto other principal cells [@szinyei_2000].<!-- cytowanie tylko do interneuronów czy ogólnie? sprawdzić-->
 This glutamatergic inputs to BLA interneurons have an unusual property<!--lepiej napisać-->: synapses containing AMPA receptors with low GluR2 subunit in the postsynaptic membrane and no NMDA receptors [@mahanty_1998]. <!-- zmienić bardziej...  i rozbudować o coś takiego ale z nowszymi cytowaniami i lepiej napisane 
@@ -162,7 +161,7 @@ Our Sholl analysis revealed an increased number of neurochemical GABAergic synap
 
 While it is conceivable that a proportion of the neurochemical GABAergic synapses we quantified arose via connections between neurons in and outside the BLA (presumably those formed at distal dendrites), we believe that the cellular organization observed within this region suggests that the majority are formed by BLA interneuron-BLA interneuron and BLA interneuron-BLA principal cell contacts. Hence, our data suggest that BLA interneurons not only provide strong regulation of principal cell output by targeting the soma and proximal dendrites but also form a densely interconnected inhibitory network consisting of a high number of interneuron-interneuron GABAergic contacts. This level of somatodendritic organization, coupled with reciprocal excitatory connections provided by principal cells (McDonald et al. 2005; Smith et al. 2000), which can fire synchronously (Pare et al. 1995; Pare and Gaudreau 1996), may facilitate the propagation of inhibitory signals within the BLA. Furthermore, the subsequent inhibitory feedback onto principal cells is thought to contribute to rhythmic cell firing and synchronization of BLA activity (Pare et al. 2002). This was recently demonstrated for rhythmic compound IPSCs of PV interneurons, which improved spike-timing precision and synchronized principal cell firing in the BLA (Ryan et al. 2012).
 
-##### Efferents
+###### Efferents
 
 
 

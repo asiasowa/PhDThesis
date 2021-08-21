@@ -4,14 +4,14 @@ The amygdala, a complex comprised of heterogenous collection of nuclei, is locat
 Its nulei can be distinguished based on their different connectivity, immunohistochemical and cytoarchitectural profiles (for a review, see: @duvarci_2014).
 Unfortunately, due to the complexity of this structure, there is no <!--anatomical--> standardization of amygdaloid nuclei terminology. <!-- although there is no standardization in relation to correct term, -->
 Historically, amygdala nuclei are divided into three groups: (1) the deep or basolateral group, which includes the lateral nucleus, the basal nucleus, and accessory basal nucleus; (2) the superficial or cortical-like group, which includes <!--synonym-->the cortical nuclei and nucleus of the lateral olfactory tract; and (3) the centromedial group composed of the medial and central nuclei, such as the medial nucleus of the amygdala (MeA), the anterior amygdala area (AAA), and the amygdalo-hippocampal area (AHA) [@mcdonald_1998; @sah_2003].
-However, here the following classification will be used: the basolateral complex of the amygdala (BLA), the central amygdala (CeA) and intercalated cell (ITC) masses, as it was presented in many excellent papers focusing on these domains due to their contribution in fear-conditioning (@bocchio_2016; @duvarci_2014; @ehrlich_2009; @pape_2010; @spampanato_2011, see Fig. \@ref:fig(amygdalanuclei)).
+However, here the following classification will be used: the basolateral complex of the amygdala (BLA), the central amygdala (CeA) and intercalated cell (ITC) masses, as it was presented in many excellent papers focusing on these domains due to their contribution in fear-conditioning (@bocchio_2016; @duvarci_2014; @ehrlich_2009; @pape_2010; @spampanato_2011, see Fig. \@ref:fig(amygdalastr)).
 Nuclei that do not fall into any of these categories are beyond the scope of this dissertation and are described elsewhere [@pitknen_1997; @sah_2003]. <!--check citations and more? -->
 
-```{r amygdalanuclei, fig.cap='(ref:family)', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images/amygdalanuclei.png")
+```{r amygdalastr, fig.cap='(ref:amygdalastr)', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images/amygdalastr.png")
 ```
 
-(ref:amygdalanuclei) *A schematic illustrating classification of amygdalar nuclei together with physiological and morphological properties of their neurons* (A) <!-- dokończyć -->
+(ref:amygdalastr) *A schematic illustrating classification of amygdalar nuclei together with physiological and morphological properties of their neurons* (A) <!-- dokończyć -->
 
 ### Functions
 
@@ -30,8 +30,8 @@ Here, I summarize the current state of knowledge of the role, anatomy, and physi
 <!-- Anatomy and Physiology?-->
 #### The basolateral complex of the amygdala (BLA) {#BLAstructure}
 
-The basolateral complex is anatomically divided into the lateral nucleus (LA), the basal nucleus (B), and the basomedial nucleus (BMA), the latter is also known as accessory basal nucleus (@krettek_1978, see Fig. \@ref:fig(amygdalanuclei)). <!-- nowsze cytowania? -->
-It is also often referred as the basolateral nucleus (BLA) and hereafter this term will be used.<!-- In order to avoid misunderstanding, I will refer to the basolateral complex as BLA and basal/basolateral nucleus as B. -->
+The basolateral complex is anatomically divided into the lateral nucleus (LA), the basal nucleus (B), and the basomedial nucleus (BMA), the latter is also known as accessory basal nucleus (@krettek_1978, see Fig. \@ref:fig(amygdalastr)). <!-- nowsze cytowania? -->
+All these nuclei are often referred as the basolateral nucleus (BLA) and hereafter this term will be used.<!-- In order to avoid misunderstanding, I will refer to the basolateral complex as BLA and basal/basolateral nucleus as B. -->
 The BLA is considered to be the main point of the entry for cortical and subcortical sensory inputs into the amygdala (for reviews: @duvarci_2014; @lalumiere_2014; @sah_2003a). 
 This complex developmentally and structurally is a cortical-like structure [@waclaw_2010]. 
 Within the BLA, approximately 80% of all neurons are glutamatergic pyramidal-like principal cells and the remaining 20% belong to a heterogeneous group of interneurons [@duvarci_2014; @mcdonald_1993; @spampanato_2011]. <!-- figure? i może usunąć review i dać jednak ... research?-->
@@ -43,20 +43,20 @@ Within the BLA, approximately 80% of all neurons are glutamatergic pyramidal-lik
 Principal cells (PC) show many morphological and electrophysiological characteristics similar to their cortical and hippocampal pyramidal counterparts, including spiny complex dendritic trees, the presence of apical dendrite, and prominent spike frequency adaptation in response to depolarizing somatic current injections [@faber_2001; @par_1995]. <!-- see figure? -->
 BLA principal cells are not homogeneous, but differ mainly in both of those characteristics. <!-- However, no correlation was found between their neuronal firing properties and morphology   -->
 However, these variables seem not to be inter-correlated [@faber_2001; @funahashi_2000].
-Pyramidal-like cells of the BLA are characterized by large triangle-shaped soma, dendritic spines, and the presence of a thicker apical dendrite [@mcdonald_1982]. <!-- (McDonald 1982, 1984, 1992). ///mocniej zmienić szczególnie drugą część zdania.../// Previous morphological characterization of BLA principal cells has revealed that these neurons exhibit large, complex dendritic arbors and contain a more prominent apical dendrite similar to that of cortical neurons (McDonald 1982). ///  Our data also show that principal cell dendrite spine density increased at distal regions compared with proximal regions [@klenowski_2015]-->
-Based on their morphological profile, BLA neurons display variation in soma volume [@klenowski_2015] and/or shape (pyramidal vs. stellate-like morphology, @faber_2001, @par_1995).
+Pyramidal-like cells of the BLA are characterized by large triangle-shaped soma, dendritic spines, and the presence of a thicker apical dendrite [@mcdonald_1982]. <!-- (McDonald 1982, 1984, 1992). /// Previous morphological characterization of BLA principal cells has revealed that these neurons exhibit large, complex dendritic arbors and contain a more prominent apical dendrite similar to that of cortical neurons (McDonald 1982). ///  Our data also show that principal cell dendrite spine density increased at distal regions compared with proximal regions [@klenowski_2015]-->
+Based on their morphological profile, BLA neurons display variation in soma volume [@klenowski_2015] and/or shape (triangle vs. stellate-like morphology, @faber_2001, @par_1995).
 Electrophysiologically, the degree of the spike frequency adaptation of PCs forms an continuum: at one end cells fire two to three spikes only and show marked spike frequency accommodation, whereas at the other end cells fire repetitively throughout the current injection with little accommodation [@faber_2001; @funahashi_2000]. <!-- może jakiś figure i trochę lepiej napisać? see Fig. in methods?-->
-Moreover, principal neurons with prominent spike frequency adaptation were shown to have larger afterhyperpolarization (AHP) than those that fire repetitively, which is suggested to be due to their distinct distribution of calcium-activated potassium channels [@faber_2001; @faber_2002; @sah_1996]. <!-- HERE: additional electrophysiological features of principal cells Additionally, another electrophysiological characteristics of principal neurons in BLA are: relatively wide  action potentials (half-width = 1.2 ms), ....., .....-->
-On the other hand, the presence of low-threshold, slowly inactivating potassium current is thought to lead to bursting activity in those cells [@par_1995]. <!-- ładniej napisać, wcześniej Interestingly, some of them display bursting activity or a delay in firing when depolarized from more negative membrane potentials, which is thought to be due to the presence . -->
+Moreover, principal neurons with prominent spike frequency adaptation were shown to have larger afterhyperpolarization (AHP) than those that fire repetitively, which is suggested to be due to their higher expression of calcium-activated potassium channels [@faber_2001; @faber_2002; @sah_1996]. <!-- HERE: additional electrophysiological features of principal cells Additionally, another electrophysiological characteristics of principal neurons in BLA are: relatively wide  action potentials (half-width = 1.2 ms), ....., .....-->
+On the other hand, the presence of low-threshold, slowly inactivating potassium current is thought to results in bursting activity in those cells [@par_1995]. <!-- ładniej napisać, wcześniej Interestingly, some of them display bursting activity or a delay in firing when depolarized from more negative membrane potentials, which is thought to be due to the presence . -->
 
 ###### Interneurons {#BLAinter}
 
 In contrast to principal cells, interneurons have smaller cell bodies, and their axon collaterals are restricted to the BLA [@mcdonald_2001; @mcdonald_2002; @mcdonald_2004]. <!-- BLA interneurons generally have smaller cell bodies compared with principal cells, lack spines, and have no apparent apical dendrite (McDonald 1982).-->
 According to their dendritic trees, they could be subdivided into multipolar, bitufted, and bipolar cells [@mcdonald_1982]. 
-Moreover, their dendrites can be either aspiny or spiny [@klenowski_2015]. <!-- lepiej napisać --><!--podzielone na aspiny and spiny)-->,<!-- After we divided our interneuron data set into spiny and aspiny interneurons on this basis, examination of these subgroups did not reveal any significant morphological differences, nor did we find any obvious localization patterns, as each BLA subnucleus we sampled from contained both spiny and aspiny interneurons (Fig. 1). Interestingly, we found that interneurons classified as spiny had similar proximal and distal spine densities compared with principal cell basal dendrites. This finding is noteworthy, as previous studies have suggested that BLA interneurons are generally spine sparse or aspiny (McDonald 1982; Sah et al. 2003; Washburn and Moises 1992).@klenowski_2015-->
-Moreover, analogous to their counterparts in the neocortex and hippocampus, interneurons in the BLA can be characterized by their expression of the same neurochemical markers. 
-Although brain regions may differ in relative ratios of interneuron types, in the BLA, the main two non-overlapping groups are those expressing calbindin (CB+; around 50% of neurons) or calretinin (CR+; around 20% of neurons) [@kemppainen_2000; @mcdonald_2001; @mcdonald_2002]. 
-Each of these groups can be further sub-divided based on their expression of somatostatin (SOM+), vasoactive intestinal peptide  (VIP+), cholecystokinin (CCK+), and parvalbumin (PV+) (for a review, see: @spampanato_2011). 
+Moreover, their dendrites can be either aspiny or spiny [@klenowski_2015]. <!-- lepiej napisać /// After we divided our interneuron data set into spiny and aspiny interneurons on this basis, examination of these subgroups did not reveal any significant morphological differences, nor did we find any obvious localization patterns, as each BLA subnucleus we sampled from contained both spiny and aspiny interneurons (Fig. 1). Interestingly, we found that interneurons classified as spiny had similar proximal and distal spine densities compared with principal cell basal dendrites. This finding is noteworthy, as previous studies have suggested that BLA interneurons are generally spine sparse or aspiny (McDonald 1982; Sah et al. 2003; Washburn and Moises 1992).@klenowski_2015-->
+Analogous to their counterparts in the neocortex and hippocampus, interneurons in the BLA can be characterized by their expression of the same neurochemical markers. 
+Although brain regions may differ in relative ratios of interneuron types, in the BLA, the main two non-overlapping groups are those expressing calbindin (CB+; around 50% of neurons) or calretinin (CR+; around 20% of neurons) [@mcdonald_2001; @mcdonald_2002]. 
+Each of these groups can be further sub-divided based on their expression of somatostatin (SOM+), vasoactive intestinal peptide  (VIP+), cholecystokinin (CCK+), and parvalbumin (PV+) (for a review, see: @spampanato_2011). <!-- można by było zrobić  różnymi kolorami interneurony w BLA i CeA ale nie wiem czy nie za dużo pracy... -->
 
 Regarding the electrophysiological profile of BLA interneurons, contrary to principal cells, they show no apparent spike frequency adaptation in response to a prolonged depolarizing current injection, their action potentials have shorter duration (half-width 0.7 ms), and they fire spontaneously *in vivo* at high frequencies (10-15 Hz)  [@spampanato_2011; @pare_1995]. <!-- figure? -->
 Consistent with the notion that the BLA is a cortical-like structure, these firing properties resemble those found in cortical interneurons [@petillainterneuronnomenclaturegroup_2008], but not those of GABAergic neurons in the CeA [@dumont_2002; @lopezdearmentia_2004]. <!-- see citations for figure -->
@@ -71,56 +71,43 @@ Although the role of this electrophysiological heterogeneity  is currently uncle
 
 ###### Afferents
 
-As mentioned above, the BLA is regarded as the main input nuclei of the amygdala, receiving strong glutamatergic projections from nearly all sensory modalities (e.g., olfactory, somatosensory, gustatory and visceral, auditory, and visual), mainly *via* cerebral cortex (for review: @pape_2010; @sah_2003). <!-- może poprawić to zdanie? i chyba nie tylko PC? //  -->
-Synapses are made not only on principal neurons<!-- citation?-->, but interneurons in the BLA have also emerged as recipients of cortical and thalamic excitatory inputs [@szinyei_2000]. <!-- zmienić? -->
-The majority of connections are ipsilateral, entering the amygdala *via* the external capsule [@mascagni_1993; @sah_2003]. <!-- figure i cytowanie które nie jest review?-->
-In all species, the prefrontal cortex (PFC), especially its medial part, is a major source of cortical projections to the amygdaloid complex [@duvarci_2014; @mcdonald_1996; @pape_2010; @sah_2003], regulating fear extinction and expression [@burgosrobles_2009; @milad_2002; @sotresbayon_2010]. <!-- add that it is important AND BI-DIRECTIONAL -->
-
-Previous studies using anterograde and retrograde tracing have shown that excitatory input from cortical and thalamic regions is received primarily at distal dendritic processes and spines of BLA principal neurons (Brinley-Reed et al. 1995; Farb and Ledoux 1997, 1999). More recently, there has been a plethora of research demonstrating that these connections play a pivotal role in associative learning tasks such as fear conditioning and extinction (reviewed in Duvarci and Pare 2014; Johansen et al. 2011; Pape and Pare 2010) and the formation of memories that encode incentive value to rewarding stimuli (Everitt et al. 1999; Robbins and Everitt 2002).<!--klenowski_2015-->
+Sensory information derived from all modalities (e.g., olfactory, somatosensory, gustatory and visceral, auditory, and visual) converge in the BLA (for a review: @pape_2010, @sah_2003). 
+It is carried by afferents from brain regions, including thalamus, hippocampus, and cortex, entering the amygdala *via* the external or internal capsules [@sah_2003]. <!-- figure i cytowanie które nie jest review?-->
+Moreover, the BLA complex is known to have strong reciprocal connections with prefrontal cortex (PFC), especially its medial part, perirhinal cortex, the entorhinal cortex, the parahippocampal cortex, and the hippocampus, which are known to be involved in long-term declarative memory and suggests high functional relevance [@duvarci_2014; @par_2002]
 
 <!-- FEAR CONDITIONING-->
-A large body of evidence, including fMRI studies in humans [@labar_1998], highlight the involvement of lateral BLA in acquisition of fear conditioning [@blanchard_1972; @ledoux_1990]. <!-- może bardziej it is well known that -->
+A large body of evidence highlight the role of these afferent in acquisition of fear conditioning [@blanchard_1972; @ledoux_1990]. <!-- Considerable work indicates that long-term potentiation (LTP) at synapses transmitting CS information to the BLA underlies fear conditioning conditioning. That is, the ability of the once neutral CS to generate defensive behavior is mediated by an LTP-mediated increase in synaptic transmission onto BLA principal neurons ( Bocchio et al., 2017 ). -->
 Principal cells in the LA are described to<!--może jakoś inaczej?--> simultaneously receive initially weak afferent carrying sensory information about the CS and a strong input carrying US information when these experiences are paired. 
-This leads to LTP at excitatory synapses onto LA neurons, and in turn, enables CS alone to activate them and induce the freezing behavior [@kim_2017]. 
-Consistently, based on optogenetic stimulation of principal cells in the LA, paired with a neutral tone (CS; without a footshock), an increase in freezing behavior both during training and in a later<!--further--> retention test was reported [@johansen_2010]. <!-- DZIWNE ZDANIE ... -->
-Similarly, photoactivation of LA axonal terminals from the auditory thalamus (the medial geniculate nucleus, MGN) and the auditory cortex (AC) when applying footshock (without a neutral tone) results in<!-- were shown to produce?--> conditioned freezing and synaptic potentiation [@nabavi_2014]. 
+This leads to LTP at those synapses onto LA neurons<!-- dodać że origin excitatory...-->, and in turn, enables CS alone to activate them and induce the freezing behavior.
+Consistently, for example, it was shown that photoactivation of LA axonal terminals from the auditory thalamus (the medial geniculate nucleus, MGN) and the auditory cortex (AC) when applying footshock (without a neutral tone) results in<!-- were shown to produce?--> conditioned freezing and synaptic potentiation [@nabavi_2014]. 
+<!-- !!!!!!!!!!!!!!!tutaj to specificity  [@kim_2017]./// A fundamental property of LTP is that it is only induced at synapses at which there is correlated pre- and post-synaptic activity  (e.g.,  presynaptic  neurotransmitter release coupled with postsynaptic depolarization). It has been argued that the ‘‘input specificity’’ of LTP might serve as a putative mechanism for the selectivity of conditioned fear responses to CSs that predict danger over those that do not ( Shin et al., 2006 ).-->
 Intriguingly, optical stimulation of a subset of principal neurons expressing Thy1 promoter did not affect freezing behavior during fear conditioning, but rather appeared to influence consolidation specifically for memories that oppose<!--coś z tym słówkiem jest nie tak--> fear conditioning [@jasnow_2013].<!-- Stimulation of these neurons enhanced the retention of the extinction learning [@jasnow_2013].-->
 
-<!-- LEARNING PARAGRAPH - SHORTEN OR DELETE? -->
-The notion that BLA neurons contribute to consolidation of learning is further supported by several lines of evidence. 
-Firstly, the BLA complex is known to have strong reciprocal connections with structures involved in long-term declarative memory, including the perirhinal cortex, the entorhinal cortex, the parahippocampal cortex, and the hippocampus<!-- cytowanie!!!! McDonald pewnie ale brak tego artykułu  [@McDonald2000; cognitive review i brak tego artykułu...-->. 
-Moreover, synchronized oscillations at theta and gamma frequencies in local ensembles of projection neurons have emerged as a key element of the consolidation in the BLA [@bauer_2007; @pelletier_2004]. 
-In addition, @huff_2013 highlighted the role of gamma frequency (40 Hz), but not other frequencies, induced in the BLA by bursts of light pulses, in enhancing retention. <!-- końcówka może inaczej?-->
-In line with these findings, inhibition of BLA neurons impaired retention of the learning [@huff_2013].
-
-Likewise integrating CS and aversive stimuli by BLA neurons, CS can be paired with rewarding stimuli, such as sweet liquid or food pellets [@schoenbaum_1998; @tye_2007; @tye_2008].
-Consistent with this notion, it is well-established that both fear- and reward-induced conditioning responses <!--the acquisition of conditioned responding to both fear and reward cues--> are associated with a synaptic potentiation in the LA, resulting in excitatory drive in LA neurons following the cue and thereby mediating cue-triggered behavior [@clem_2010; @johansen_2010; @tye_2008]. <!-- nowsze cytowania i poprawić to zdanie... -->
+Like integrating CS and aversive stimuli by BLA neurons, CS can be paired with rewarding stimuli, such as sweet liquid or food pellets [@schoenbaum_1998; @tye_2007; @tye_2008].
+Consistent with this notion, reward-induced conditioning responses <!--the acquisition of conditioned responding to both fear and reward cues--> are also associated with a synaptic potentiation in the LA, resulting in excitatory drive in LA neurons following the cue, and thereby mediating cue-triggered behavior [@clem_2010; @johansen_2010; @tye_2008]. <!-- nowsze cytowania i poprawić to zdanie... -->
 Hence, learning about potential rewards is adaptive, as is learning about environmental stimuli that predict danger, and both engage the amygdala [@janak_2015]. <!--poprawić.. Thus, not only fear conditioning, but also reward cue responses develop through long-lasting enhancement of glutamatergic inputs from sensory thalamic stimuli onto LA principal cells in the LA 78. ///  -> Hence, amygdala seems to be involved in learning a spectrum of of positive (rewarding) to negative (aversive) outcomes-->
 
-<!--NEUROMODULATORS-->
-While the balance of glutamate and GABA transmission within the BLA orchestrates learning, anxiety states and addition, these two neurotransmitter systems are tightly regulated by numerous neuromodulators, such as <!-- wymienić --> that fine-tune these behavioral outputs. <!-- nie wiem czy to nie bardziej zdanie na podsumowanie, a tutaj coś innego jak : it should be noted that amygdala is also strongly innervated by different types of neuromodulators, such as dopamine, serotonine, ..., and will be discussed in details in next section --> 
-For example, dopamine, released by axons originated from the midbrain neurons [@asan_1997], plays crucial role in modulating BLA activity.
-<!-- chu 2012 jednak później na razie ... -->
-
-Another neuromodulator, serotonin (5-HT), has been suggested to have a fast excitatory inputs in the BLA (264). <!-- zmienić drugą część zdania i sprawdzić tę cytację z sah 2003 -->
-However, since this initial report, subsequent experiments have been unable to reproduce these results as all inputs to these neurons can be blocked with a combination of glutamatergic and GABAergic antagonists (136, 259, 290). <!-- zmienić -->
-Instead, 5-HT3 receptors in this nucleus have been proposed to be present presynaptically on interneuron terminals (103, 104). <!-- sah 2003 zmienić-->
-
-
-By combining optogenetic, electrophysiological and pharmacological approaches, it was suggested that 5-HT neurons exert a frequency-dependent, cell-type-specific control over BA circuitry *via* 5-HT and glutamate co-release to inhibit the BA output. <!-- zmienić to od 5-HT neurons... Sengupta 2017 i rozbudować...
-Optical stimulation of 5-HT terminals at low frequencies ( < 1 Hz) evoked a short-latency excitation of BA interneurons (INs) that was depressed at higher frequencies. 
-Pharmacological analysis revealed that this effect was mediated by glutamate and not 5-HT because it was abolished by ionotropic glutamate receptor antagonists. 
-Optical stimulation of 5-HT terminals at higher frequencies (10–20 Hz) evoked both slow excitation and slow inhibition of INs. 
+In addition to excitatory inputs, BLA also receives GABAergic projections originating from .... and is strongly innervated by different types of neuromodulators, such as dopamine, serotonine.
+While the balance of glutamate and GABA transmission within the BLA orchestrates learning, anxiety states and addition, these two neurotransmitter systems are tightly regulated by these molecules that fine-tune behavioral outputs. 
+For example, by combining optogenetic, electrophysiological and pharmacological approaches, it was shown that while stimulating 5-HT terminals at low frequencies (< 1 Hz) resulted in a short-latency excitation of BLA interneurons, at higher frequencies (10–20 Hz) these cells showed both slow excitation and slow inhibition.
+These findings illustrate<!-- elucidate?--> frequency-dependent, cell-type-specific control over BLA circuitry *via* 5-HT and glutamate co-release to inhibit the BA output [@sengupta_2017]. <!-- jeszcze bardziej rozbudować? -->
+<!-- Pharmacological analysis revealed that this effect was mediated by glutamate and not 5-HT because it was abolished by ionotropic glutamate receptor antagonists. 
+Optical stimulation of 5-HT terminals 
 These effects were mediated by 5-HT because they were blocked by antagonists of 5-HT~2A~ and 5-HT~1A~ receptors, respectively.
 These fast glutamate-and slow 5-HT-mediated responses often coexisted in the same neuron. 
 Interestingly, fast-spiking and non-fast-spiking INs displayed differential modulation by glutamate and 5-HT.
-Furthermore, optical stimulation of 5-HT terminals did not evoke glutamate release onto BA principal neurons, but inhibited these cells directly *via* activation of 5-HT~1A~ receptors and indirectly *via* enhanced GABA release. 
---> 
+Furthermore, optical stimulation of 5-HT terminals did not evoke glutamate release onto BA principal neurons, but inhibited these cells directly *via* activation of 5-HT~1A~ receptors and indirectly *via* enhanced GABA release.  -->
+<!-- Instead, 5-HT3 receptors in this nucleus have been proposed to be present presynaptically on interneuron terminals (103, 104). sah 2003 zmienić-->
+--------------
 
-<!-- principal cell apical dendrite structure is organized to support the formation of high levels of distal synaptic inputs, which are likely to be excitatory (Fig. 5). Furthermore, reduced proximal spine density suggests that this region may receive a greater portion of inhibitory inputs compared with distal dendrites. our neurochemical results show a higher number of GABAergic synapses on the soma and proximal dendrites compared with the distal dendrites of principal neurons (Fig. 8), potentially facilitating inhibitory control of principal neuron firing (Miles et al. 1996). @klenowski_2015-->
-The integration of sensory inputs and subsequent generation of emotional responses is largely determined by the proportion of excitatory and inhibitory input to BLA principal cells (Davis et al. 1994), in addition to local inhibition provided by GABAergic interneurons (Ehrlich et al. 2009; Spampanato et al. 2011). Furthermore, it has been proposed that the pattern of local innervation within the BLA promotes synchronous firing of principal cells that facilitates rapid oscillations and synaptic plasticity (Muller et al. 2006).<!--klenowski 2016-->
+Another neuromodulator, serotonin (5-HT)
+<!-- dopamine, released by axons originated from the midbrain neurons [@asan_1997], plays crucial role in modulating BLA activity.. -->
 
 ###### Intrinsic connectivity
+
+<!-- zacząć od inhibitory neurons - the main source - local -->
+<!-- principal cell apical dendrite structure is organized to support the formation of high levels of distal synaptic inputs, which are likely to be excitatory (Fig. 5). Furthermore, reduced proximal spine density suggests that this region may receive a greater portion of inhibitory inputs compared with distal dendrites. our neurochemical results show a higher number of GABAergic synapses on the soma and proximal dendrites compared with the distal dendrites of principal neurons (Fig. 8), potentially facilitating inhibitory control of principal neuron firing (Miles et al. 1996). @klenowski_2015-->
+The integration of sensory inputs and subsequent generation of emotional responses is largely determined by the proportion of excitatory and inhibitory input to BLA principal cells (Davis et al. 1994), in addition to local inhibition provided by GABAergic interneurons (Ehrlich et al. 2009; Spampanato et al. 2011). Furthermore, it has been proposed that the pattern of local innervation within the BLA promotes synchronous firing of principal cells that facilitates rapid oscillations and synaptic plasticity (Muller et al. 2006).<!--klenowski 2016-->
 
 Principal cells prefer to form local synapses with proximal interneurons and send longer distance collaterals onto other principal cells [@szinyei_2000].<!-- cytowanie tylko do interneuronów czy ogólnie? sprawdzić-->
 This glutamatergic inputs to BLA interneurons have an unusual property<!--lepiej napisać-->: synapses containing AMPA receptors with low GluR2 subunit in the postsynaptic membrane and no NMDA receptors [@mahanty_1998]. <!-- zmienić bardziej...  i rozbudować o coś takiego ale z nowszymi cytowaniami i lepiej napisane 
@@ -128,6 +115,7 @@ Generally, including principal BLA or interneurons from other brain areas, their
 Moreover, AMPA receptor are heterodimers with four possible subunits: mGluR1-4. 
 It was documented that AMPA receptors with few or no mGluR2 component results in strong inward rectification and calcium permeability [@washburn_1997].  -->
 On the other hand, long-distance collaterals are seems to be sent with preferential lateromedial directionality, i.e., LA principal neurons send many projections onto neurons in the basal nuclei (B) [@duvarci_2014; @krettek_1978; @pitkanen_1997]. <!-- poprawić zdanie i fig ??? -->
+<!-- PV+ interneurons forms inhibitory network that may be ...  receive a robust GABAergic innervation. Because the most likely source of this innervation is intrinsic, these results suggest that PV  interneurons could constitute an important component of interneuronal networks in the ABL. These networks may be critical for the generation of synchronized rhythmic oscillations involved in consolidation of emotional memories @mcdonald_2004 -->
 
 Anatomically, PV-INs with this characteristic feedback excitation are chandelier INs ( Woodruff et al., 2006 ; Spampanato et al., 2016 ; Szabadics et al., 2006 ).
 
@@ -160,6 +148,23 @@ Previous studies have shown that a large amount of BLA inhibitory activity is pr
 Our Sholl analysis revealed an increased number of neurochemical GABAergic synapses at the soma and proximal dendrites of principal cells, which was reduced on dendrites with increased radial distance away from the soma (Fig. 8). Coupled with observed differences in proximal and distal spine density, our results suggest that the ratio of inhibitory to excitatory innervation is increased along the distal to proximal axis of principal cells in the BLA. This arrangement was also observed for BLA interneurons; however, densities of neurochemical GABAergic synapses at this cell type were significantly increased compared with principal cells (Fig. 7). Given that inhibitory input to BLA cells (McDonald et al. 2011) and locally projecting interneurons predominantly innervates perisomatic targets and subtypes shown to selectively target dendrites at distal regions (CB and somatostatin expressing) primarily interact with principal cells (Bienvenu et al. 2012; Muller et al. 2007), the high density of neurochemical GABAergic synapses formed at distal dendrites of BLA interneurons may arise from non-local inhibitory input; however, the source of this input remains to be determined.
 
 While it is conceivable that a proportion of the neurochemical GABAergic synapses we quantified arose via connections between neurons in and outside the BLA (presumably those formed at distal dendrites), we believe that the cellular organization observed within this region suggests that the majority are formed by BLA interneuron-BLA interneuron and BLA interneuron-BLA principal cell contacts. Hence, our data suggest that BLA interneurons not only provide strong regulation of principal cell output by targeting the soma and proximal dendrites but also form a densely interconnected inhibitory network consisting of a high number of interneuron-interneuron GABAergic contacts. This level of somatodendritic organization, coupled with reciprocal excitatory connections provided by principal cells (McDonald et al. 2005; Smith et al. 2000), which can fire synchronously (Pare et al. 1995; Pare and Gaudreau 1996), may facilitate the propagation of inhibitory signals within the BLA. Furthermore, the subsequent inhibitory feedback onto principal cells is thought to contribute to rhythmic cell firing and synchronization of BLA activity (Pare et al. 2002). This was recently demonstrated for rhythmic compound IPSCs of PV interneurons, which improved spike-timing precision and synchronized principal cell firing in the BLA (Ryan et al. 2012).
+
+ PN axons and PV neurons, light microscopy revealed numerous synapse-like contacts between these structures. The main PV+ targets of PN axons were the somata and proximal dendrites of PV neurons, although there were also contacts with more distal PV dendrites. In many cases, the PN axons ran along PV somata and/or proximal dendrites, forming multiple contacts. However, the great majority the PN axon terminals did not contact PV neurons. These observations suggest that there are robust reciprocal perisomatic PN-to-PV connections that may be important for the precise timing of rhythmic activity in the basolateral amygdala. [@mcdonald_2005]
+ 
+<!-- LEARNING PARAGRAPH - SHORTEN OR DELETE? -->
+The notion that BLA neurons contribute to consolidation of learning is further supported by several lines of evidence. 
+
+Moreover, synchronized oscillations at theta and gamma frequencies in local ensembles of projection neurons have emerged as a key element of the consolidation in the BLA [@bauer_2007; @pelletier_2004]. 
+In addition, @huff_2013 highlighted the role of gamma frequency (40 Hz), but not other frequencies, induced in the BLA by bursts of light pulses, in enhancing retention. <!-- końcówka może inaczej?-->
+In line with these findings, inhibition of BLA neurons impaired retention of the learning [@huff_2013].
+
+
+
+
+
+-----------
+Synapses are made not only on principal neurons<!-- citation?-->, primarily<!--specifically?--> at distal dendritic processes and spines <!-- (Brinley-Reed et al. 1995; Farb and Ledoux 1997, 1999)-->, but interneurons in the BLA have also were reported to receive monosynaptic contacts from those cortical and thalamic sensory afferents [@szinyei_2000]. <!-- zmienić? -->
+-----------------
 
 ###### Efferents
 
@@ -445,3 +450,13 @@ Finally, as amygdalar circuitry and function are well-conserved across evolution
 
 Taken together, these combinations of connections between BLA and CeA, including the feedforward inhibition generated by intercalated neurons, enables to increase or decrease the amplitude of the CeA responses depending on which set of amygdala nuclei are activated and in what sequence. <!-- zmienć -->
 Thus, the CeA output depends not only on the nature and intensity of received inputs, but also on their timing and origin. <!-- zmienić // ładne podsumowanie-->
+
+
+<!-- sentences:
+Recent  studies  indicate  that  the  basolateral amygdala, like the neocortex and hippocampus, receives GABAergic inputs from the basal forebrain in addition to the well-established cholinergic inputs. @mcdonald_2011
+
+As a group, amygdala nuclei receive inputs from and project to virtually all levels of the central nervous system
+
+In order to survive,animals must be able to discriminate dangerous stimuli from those that are safe.
+Without a mechanism for learning specific stimulus-outcome relationships, fear  and  defensive  behavior  broadly generalize to many stimuli and settings. This is a maladaptive state of affairs that may underlie fear and anxiety disorders.
+--->

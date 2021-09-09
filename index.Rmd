@@ -6,7 +6,7 @@ author: "Joanna Ewa Sowa"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [common/thesis_lib.bib]
+bibliography: [common/thesis_lib.bib, common/thesis_lib2.bib]
 classoption: twoside
 fontsize: 12 pt
 linestretch: 2
@@ -31,6 +31,8 @@ library(tidyverse)
 # knitr::opts_chunk$set(echo = TRUE)
 
 knitr::opts_chunk$set(fig.pos = 'H')
+options(gt.html_tag_check = FALSE) #but if <br> in tables in latex then remove this output
+#knitr::opts_chunk$set(echo = params$printcode)
 ```
 
 

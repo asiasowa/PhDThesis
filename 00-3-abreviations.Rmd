@@ -31,6 +31,16 @@
 x <- tribble(
     ~Abbreviation, ~Explanation,
     "CNS", "Central Nervous System",
+    "GPCRs", "G-protein-coupled Receptors", # zobaczyć czy dobrze myślniki 
+    "CKRs", "Chemokine Receptors",
+    "ACKRs", "Atypical Chemokine Receptors",
+    
+    
+    
+    
+    "PTMs", "post-translational modifications",
+
+    
     "BLA", "basolateral amygdala",
     "LA", "lateral amygdala",
     "B", "basal amygdala",
@@ -68,7 +78,7 @@ x <- tribble(
     "AC", "the auditory cortex",
 
     
-    "PTMs", "post-translational modifications",
+   
     "MMPs","matrix metalloproteinases",
     "PKC", "protein kinase C",
     "MAPK", "mitogen-activated protein kinase",

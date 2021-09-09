@@ -32,7 +32,7 @@ Chemokines containing the first two cysteine residues which are adjacent to each
 C chemokines (also known as `r knitr::asis_output("\U03B3")`, see see Figure \@ref(fig:family), part c) are characterized by the presence of only two <!-- of the four-->cysteine residues.  
 The CX3C (also known as `r knitr::asis_output("\U03B4")`) chemokine subfamily currently represents only a single member, CX3CL1 (also known as fractalkine), which is characterized by the presence of three amino acids between the first two cysteine residues, as well as a transmembrane and mucin-like domain (see Figure \@ref(fig:family), part d). 
 
-(ref:family) *Chemokine families.* Chemokines are classified into four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines.
+(ref:family) *Chemokine families.* Chemokines are classified into four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. <!-- Classification of the four families of chemokines and their respective receptors Chemokines are small proteins consisting of 60 to 100 amino acids with 20 to 90% homology in  their sequences. Their molecular weight varies from 8 to 14 kDa. They are subdivided into four  families (see figure), based on the number and spacing of the conserved cysteine residues in their  amino termini. These families are the CXC, CC, C and CX3C chemokines. Chemokines exert their biological effects through cell-surface receptors that belong to the  superfamily of seven-transmembrane-domain G-protein-coupled receptors. Chemokine-receptor  nomenclature follows that of chemokines, and the receptors are thus designated CXCRn, CCRn,  XCRn and CX3CRn.  In CXC (also known as α) chemokines (see figure, part a), one amino acid separates the first two  cysteine residues (cysteine–X amino acid–cysteine, or CXC). Chemokines of this family are known to  chemoattract neutrophils, T lymphocytes, B lymphocytes and natural killer cells. In CC (also known  as β) chemokines (see figure, part b), the first two cysteine residues are adjacent to each other.  Members of this chemokine family chemoattract monocytes, macrophages, basophils,   T lymphocytes and eosinophils, but have little or no effect on neutrophils. The C (also known as γ)  chemokine subfamily (see figure, part c) is distinguished structurally as containing only two of the  four conserved cysteine residues that are found in the other families. The only members of this family  are lymphotactin   α   and   β   (XCL1 and XCL2), which are known to chemoattract T lymphocytes. These  chemokines are specific ligands for the XCR1 receptor. The CX3C (also known as δ) chemokine  subfamily, which is currently represented by a single member named fractalkine (CX3CL1), is  characterized by the presence of three amino acids between the first two cysteine residues, as well  as a transmembrane and mucin-like domain (see figure, part d).    -->
 
 
 ```{r family, fig.cap='(ref:family)', fig.align = 'center', echo = FALSE, message= FALSE }
@@ -117,7 +117,7 @@ Specifically, <!-- Another fundamental finding was that upon stimulation, neuron
 #### CXCL12/CXCR4/ACKR3
 
 
-### Redudancy
+### Redudancy {#redudancy}
 
 Another essential aspect of chemokine-induced signaling is their rich repertoire of ligand-receptor relationships (for reviews: @zlotnik_2000, @hughes_2018, Fig. \@ref(fig:chem_mol_mechanisms), part b and Fig. \@ref(fig:chemoexpression)).
 It is widely accepted that most chemokines may bind to several different receptors, whereas nearly all of CKRs may recognize various chemokine ligands.
@@ -145,7 +145,7 @@ When considering CXCL12 and its receptors in this context, extracellular loops a
 In all, these data show that chemokines can preferentially bind unique subsets of EC domains and/or available receptor conformations to elicit specific functional outcomes. <!-- zmienić -->
 
 
-### Dimerization
+### Dimerization {#dimerization}
 
 The most straightforward chemokine-CRKs interaction model would be based on the assumption that CKRs exist as monomers. <!-- However, the CKRs' ability to form dimers is yet another mechanism that is a part of chemokine signal transduction.  /// Throughout the past two decades, it has been assumed that CKRs exist as monomers, which behave as fully competent signaling units. This assumption, in part, forms the basis of the classical two-site binding model. However, a number of studies demonstrated that CKRs can form homodimers and/or heterodimers ( Fig. 4 A) [152] . -->
 However, like many GPCRs, most chemokine receptors exist in multimeric form. <!-- , but very little is known regarding the molecular mechanisms by which the monomerdimer equilibrium modulates in vivo function. -->
@@ -199,7 +199,7 @@ Accordingly, many different approaches regulating these interactions are being d
 
 
 
-### Biased signaling
+### Biased signaling {#biasedsignaling}
 
 Biased signaling, also known as functional selectivity, is another feature specific for GPCR receptors that provides a framework for understanding how a finite set of chemokine ligands generates myriad functionally diverse outcomes (@zweemer_2014, @kleist_2016, see: Fig. \@ref(fig:chem_mol_mechanisms), part d).
 Three types of biased signaling can be distinguished.<!-- based on??? -->  
@@ -209,13 +209,13 @@ Another type of bias signaling, receptor bias, occurs when a specific receptor, 
 Finally, cellular or tissue bias occurs when the same chemokine–receptor pair leads to activation of distinct signaling cascades or cellular responses in different spatial contexts. 
 Therefore, biased signaling is another mechanism of chemokine signaling contributing to better understanding how chemokine ligands coordinate such diverse and complex multiple cell functions. <!-- może to rozbudować bardziej na zasadzie wcześniejszej wersji manuskryptu  /// Notably, these biased responses can be modulated through changes in ligand, receptor, and or the specific cellular context (system)-->
 
-### Diverse signaling pathways
+### Diverse signaling pathways {#signalingpathways}
 
 Noting the CKRs' diverse cellular distribution and the complexity of chemokine ligand-receptor interactions, it is evident that chemokine receptors may activate different intracellular pathways in a ligand- and cell-specific context (see: Fig. \@ref(fig:chem_mol_mechanisms), part c). 
 Chemokine receptors most often signal through canonical G protein pathways and couple either to (1) the G~`r knitr::asis_output("\U03B1")`i~ subunit following inhibition of the adenylyl cyclase activity to reduce the intracellular cAMP levels or (2) G~`r knitr::asis_output("\U03B1")`q~ that activates phospholipase C, leading to the formation of diacylglycerol and inositol 1,4,5-triphosphate with a subsequent increase in a protein kinase C (PKC) activity and transient elevations of cytosolic Ca^2+^ levels.
 However, mounting evidence describes the involvement of other intracellular signaling cascades, including distinct G protein subtypes (G~11~ or G~`r knitr::asis_output("\U03B1")`12/13~), or alternative signaling targets, such as mitogen-activated protein kinase (MAPK), extracellular signal-regulated kinase (ERK) ½, Janus kinases (JAKs), and nuclear factor-`r knitr::asis_output("\U03BA")`B (NF-`r knitr::asis_output("\U03BA")`B) (for reviews: @allen_2007, @rostne_2011).
 
-### Non-chemokine CKR ligands
+### Non-chemokine CKR ligands {#nonchemokineligands}
 
 Chemokine receptors may also associate with cell surface molecules other than chemokine receptors. <!-- zmienić -->
 ( e.g., ubiquitin, `r knitr::asis_output("\U03B2")`-defensins, @hughes_2018)
@@ -239,24 +239,11 @@ As suggested recently [@odemis_2012], when ACKR3 is activated on neurons, it sig
 All chemokines  are  produced  with  a  signal  peptide  at  the  N‐terminal  end,  which  is  removed  before secretion. 
 Besides, some present an extended C‐terminus and can bind to the cell surface through a mucin‐like  domain,  which  can  be  cleaved  later  to  release  the  proteins  into  the  extracellular  area (Hughes and Nibbs, 2018). 
 
-Firstly, the regulation of chemokines and their receptors may be controlled by post-translational modifications (PTMs), the chemical modification of a protein after its translation, such as citrullination, nitration/nitrosylation, or cleavage by proteases [@hughes_2018, @thompson_2017].<!--After chemokine production, these molecules may be chemically modified, which profoundly affects chemokine activity. -->
-These changes can lead either to the activation or inactivation of the chemokine, change chemokine affinity for its corresponding receptor, or switch from a receptor agonist to an antagonist [@hughes_2018].<!-- citation review??? 
-11. Struyf S, De Meester I, Scharpe S, Lenaerts JP, Menten P, Wang JM, ProostP, Van Damme J (1998)Eur J Immunol28:1262–1271.
-12. Ludwig A, Schiemann F, Mentlein R, Lindner B, Brandt E (2002)J LeukocyteBiol72:183–191.
-13. Proudfoot AE, Buser R, Borlat F, Alouani S, Soler D, Offord RE, SchroderJM, Power CA, Wells TN (1999)J Biol Chem274:32478–32485.
-14. Clark-Lewis I, Mattioli I, Gong JH, Loetscher P (2003)J Biol Chem278:289–295.
-15. Nufer O, Corbett M, Walz A (1999)Biochemistry38:636–642.16. Macphee CH, Appelbaum ER, Johanson K, Moores KE, Imburgia CS,Fornwald J, Berkhout T, Brawner M, Groot PH, O’Donnell K,et al. (1998) J Immunol161:6273–6279.
--->
 
 Complicating these levels of regulation is the fact that overall protein synthesis rates are high in the young brain, decline through adulthood, and fall sharply with old age [13], [56]. Protein turnover in the brain appears to follow a similar pattern [13]; however, little is known about the effects of age on other protein modifications. In addition, proteins such as GFAP show increased metabolic turnover with age, even in the absence of neurodegeneration. Our results are consistent with independent regulation of chemokine expression at the mRNA and post-translational levels.
 
-Protein expression and/or production is controlled by gene regulation, mRNA, and protein synthesis, which are considered relatively slow processes. 
-As brain cells often need to quickly respond to their quickly changing microenvironment, these mechanisms may not be indispensable for chemokine coordination of homeostatic brain functions. 
-Therefore, tight and rapid control of chemokine system signaling is highly required and can be achieved by several chemokine-induced signaling mechanisms.
-
-After two decades of research on this topic, we are now starting to appreciate the extent and complexity of these mechanisms responsible for chemokine signaling.
-
-Transport of     chemokines   inside cells occurs     via   the canonical protein trafficking pathway associated with endoplasmic reticulum and   Golgi     [6]  .   Overall  , the secretion of chemokines varies vastly between cell types   and   activation stimuli   and can involve a myriad of secretory pathways, including secretory   granules and vesicles   [2, 5, 6]  . [@watson_2020]
+Transport of chemokines inside cells occurs via the canonical protein trafficking pathway associated with endoplasmic reticulum and   Golgi     [6]  .   
+Overall, the secretion of chemokines varies vastly between cell types   and   activation stimuli   and can involve a myriad of secretory pathways, including secretory   granules and vesicles   [2, 5, 6]  . [@watson_2020]
 
 ### CX3CL1/CX3CR1 {#cx3cl1}
 
@@ -433,12 +420,12 @@ CXCR4 activation is implicated in many physiological systems, from CXCL12-induce
 Dysregulation of the CXCR4 network is evident in multiple pathologies including viral infection,113 malignancy,114 ischemic disease,7  inflammatory disease,115 autoimmune conditions,116 and immunodeficiency in the Warts, Hypogammaglobulinemia,  Immunodeficiency, and Myelokathexis syndrome (WHIM)  disorder.117 Therefore, CXCR4 represents a potential therapeutic target for multiple diseases. 
 However, while the nuanced biology of CXCR4 offers a finely tuneable system  influencing core physiology, therapeutic intervention should  consider the effects on the target tissue in context of its perturbation of other physiological processes, in order to maximize therapeutic benefit and minimize off-target effects.  Hence, we briefly review the role of CXCR4 in physiological  processes.
 
-In summary, CXCR4 is a G protein-coupled receptor that impacts cellular survival, growth, proliferation, and migration. 
-A signaling network underlying such a range of fundamental cellular processes must be finely modulated and  this is achieved at multiple levels: receptor isoforms and  cross talk, termination of signaling, and ligand diversity. 
-The  regulatory complexity of this signaling network is necessary to achieve homeostatic control of fundamental cellular  processes across a broad range of tissue types. 
-The potential  success of therapeutic modulation lies in engaging with this  complexity, rather than taking a reductionist approach to targeting, thereby enabling fine tuning of the intricate signaling  network.
+### Summary <!--usunąć pewnie-->
 
-
+In summary, CKRs are a subgroup of GPCRs that impacts many crucial functions, such as <!-- cellular survival, growth, proliferation, and migration. /// is implicated in many physiological systems, from CXCL12-induced signaling in homing of hematopoietic stem and progenitor cells to the bone marrow108  to neovascularization,109 angiogenesis,110 neurogenesis,111  and adaptive immune responses.112 -->
+A signaling network underlying such a range of fundamental cellular processes must be finely modulated and  this is achieved at multiple levels: receptor isoforms and  cross talk, termination of signaling, and ligand diversity. <!-- zmienić --> 
+Hence, this network's  regulatory complexity is necessary to achieve homeostatic control of fundamental cellular  processes across a broad range of tissue types. <!-- zmienić znacznie--> 
+The potential  success of therapeutic modulation lies in engaging with this  complexity, rather than taking a reductionist approach to targeting, thereby enabling fine tuning of the intricate signaling  network. <!-- zmienić albo wyrzucić --> 
 
 Chemokine biology is nonetheless more complex than was initially predicted, as several studies suggest that chemokines can dimerize and that their receptors are found as dimers and/or higher order oligomers at the cell surface.
 It is therefore clear that chemokine biology is more complex than simple monomolecular ligand–receptor  interactions. 

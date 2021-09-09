@@ -1,10 +1,17 @@
 # Results
 
-## CX3CL1
+## CX3CL1/CX3CR1
 
-### Experiment 1 - Immunohistochemical expression of CX3CL1 and CX3CR1 in the rat amygdala
+### BLA
 
-### Experiment 2 - Electrophysiological effects of CX3CL1 on membrane properties and synaptic transmission in the BLA
+#### Experiment 1 - Immunohistochemical expression of CX3CL1 and CX3CR1 in the rat amygdala
+
+We first asked how BLA circuits are organized to generate SWs. To address this question, we first determined the properties of local synaptic connections between PNs, chandelier INs, and other INs.
+
+#### Experiment 2 - Electrophysiological effects of CX3CL1 on membrane properties and synaptic transmission in the BLA
+
+The representative traces of sEPSCs in the absence (referred to as control hereafter) or presence of harmine (10μM) (referred to as harmine) were shown in supplemental Fig. S1(A)
+
 
 ###
 
@@ -12,7 +19,9 @@ To elucidate how IFNg affects nociceptive responses in the spinal dorsal horn, w
 
 To determine the nature of local connections between neurons in the CeL, paired whole-cell recordings were made in acute coronal slices of wild-type mice (Fig. - Hunt2017
 
-## BLA
+## CeA
+
+
 
 To investigate the effect of <!--minocycline on inhibitory transmission-->, whole-cell voltage-clamp recordings from SG neurons were made under control conditions and after bath application of minocycline (100 lM)
 
@@ -73,3 +82,34 @@ To further test whether ES and LS cells arise from two separate classes of CeL n
  1.5 s at rheobase as the LS cells and the remainders as the ES cells in the subsequent experiments of this study.
  
 Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
+
+
+Do these synaptic changes affect neuronal firing?
+
+
+To understand the intracellular activity during SWs (SWi), simultaneous whole-cell recordings were obtained from BLA neurons. 
+INs were distinguished from PNs ( Figures S1 B–S1E) by using action potential discharge properties ( Mahanty and Sah, 1998 <!-- perumal_2021 -->
+
+To gain insight into the inhibitory regulation of the local hippocampal circuitry, we examined the functional characteristic of the IPSCs in DG granule cells (Figure 1) and CA3 pyramidal neurons (Figure 2) in the dorsal and ventral hippocampus.
+
+Comparison of neurochemical GABAergic synapse labeling between cell types showed that BLA interneurons receive a significantly higher density of putative GABAergic synapses compared with principal cells (Figs. 7 and 8).
+
+This was also accompanied by significant increases in the frequency of sIPSCs (Fig. 9 and Table 3) compared with principal cells.
+Although our neurochemical immunolabeling is limited by antibody penetration (Fogarty et al. 2013)<!--@klenowski_2015-->, and is therefore confined to subsampling of cell bodies and neuronal arbors that lie within 32um of the surface of the slice, we found an association between sIPSC frequency and neurochemical
+
+ Of these cells, nine were classed as type 1 and the other nine as type 2
+ 
+ 
+ 
+Next, we measured cellular excitability from EGFP-expressing neurons infected with CTR ( n = 14) or NF1707 ( n = 15) in BLA projection neurons. We injected a series of depolarizing current steps to assess the number of action potentials (Figure 4a – c). Repeated-measure ANOVA revealed that projection neurons fired significantly less after NF knockdown (group × current steps intensity interaction: F(1.973,53.279) = 19.648, [@saha_2016] <!-- repeated measure anova to measure excitability ... -->
+
+## LTP BLA
+
+To address the functional physiological consequences of NF knockdown, we turned to in vivo recordings, and examined properties of vSub-evoked field potentials in the BLA in animals with confirmed viral expression and recording sites (Supplementary Figure S6). Comparing NF1707 ( n = 10) and CTR ( n = 8) groups, no significant effect on basal excitability, as assessed by input – output curves, was found despite a trend   toward   increased   excitability   (Supplementary Figure  S7;  F(1,16) = 2.280, P = 0.151).  Repeated-measure ANOVA  showed  no  group × intensity  interaction  (F (2.080,33.27) = 1.984, P = 0.152, Greenhouse – Geisser correction).
+
+Upon application of HFS, vSub-evoked field potentials in the BLA were effectively potentiated in the control group, but not in the NF knockdown group as revealed by mixed model  repeated-measure  ANOVA  (group  effect:  (F (1,16) = 16.27, P = 0.001; and group × post-HFS time point interaction: F(2.071,33.136) = 9.231, P = 0.001, Greenhouse – Geisser correction; Figure 4f). The comparison of average potentiation across time points after induction also revealed a highly significant difference between the two groups (Figure 4g, t (16) = 4.03, P = 0.001).
+
+NF knockdown with the less effective NF1196 vector also reduced vSub-BLA LTP (Supplementary Figure S8b and c) without altering the input – output curve (Supplementary Figure S8a). Together, this demonstrates a specific impairment of BLA synaptic plasticity to vSub inputs after NF knockdown. 
+
+
+Quantitative analysis of GABAergic synapse markers and measurement of miniature inhibitory postsynaptic currents in BLA projection neurons after neurofascin knockdown ex vivo confirmed the loss of GABAergic input.

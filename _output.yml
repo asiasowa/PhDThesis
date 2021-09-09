@@ -47,3 +47,5 @@ bookdown::pdf_book:
 #   - \pretitle{\begin{center}
 #     \includegraphics[width=2in,height=2in]{images/ifpan.jpg}\LARGE\\}
 #   - \posttitle{\end{center}}
+
+#preview_chapter("01-00-Introduction.Rmd", output_format = "word_document")

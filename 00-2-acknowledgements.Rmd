@@ -1,9 +1,19 @@
 # Acknowledgements {-}
 
+<!-- 
+Wielkie podziękowania za niewyczerpane pokłady wsparcia, cierpliwości i wiary we mnie przede wszystkim moim najbliższym: rodzicom, bratu i Bartkowi. 
 
 
 
 
+
+
+
+
+
+
+
+-->
 
 \newpage
 

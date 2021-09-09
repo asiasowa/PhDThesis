@@ -1,6 +1,8 @@
 ### Chemokine expression in the CNS cells
 
 <!-- po signalling inny sub-chapter? -->
+<!-- Complicating these levels of regulation is the fact that overall protein synthesis rates are high in the young brain, decline through adulthood, and fall sharply with old age [13], [56]. Protein turnover in the brain appears to follow a similar pattern [13]; however, little is known about the effects of age on other protein modifications. In addition, proteins such as GFAP show increased metabolic turnover with age, even in the absence of neurodegeneration. Our results are consistent with independent regulation of chemokine expression at the mRNA and post-translational levels.-->
+<!-- Most of them are widely expressed during neuroinflammation, but plenty of them are also found during the physiological state or neurodevelopment.-->
 Interestingly, the neuroanatomical distributions of a chemokine and its receptor <!--(see below and FIG. 1)inne odwołania do figur i nie wiem czy uznawać -->overlap in many regions in the normal adult brain. 
 This suggests that these chemokines, through the action on specific GPCRs, might be involved in local neuronal communication.
 

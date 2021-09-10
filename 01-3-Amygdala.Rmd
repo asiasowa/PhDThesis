@@ -1,4 +1,4 @@
-## Amygdala       
+## Amygdala  {#amygdalamain}     
 
 The amygdala, a complex comprised of heterogenous collection of nuclei, is located in the medial temporal lobe. 
 Its nulei can be distinguished based on their different connectivity, immunohistochemical and cytoarchitectural profiles (for a review, see: @duvarci_2014).
@@ -13,7 +13,7 @@ knitr::include_graphics("images/amygdalastr.png")
 
 (ref:amygdalastr) *A schematic illustrating classification of amygdalar nuclei together with physiological and morphological properties of their neurons* (A) <!-- dokończyć -->
 
-### Functions
+### Functions {#amygdalafunctions}
 
 This limbic region is involved in very distinct behaviors related with learning, fear, anxiety, reward, and addiction [@ehrlich_2009; @herry_2010; @ledoux_2000; @roozendaal_2009].<!-- Accumulating evidence indicate that amygdala is involved in. wcześniej: mood regulation, fear-conditioning/associative learning, and modulation of cognitive functions-->
 At first glimpse, this variety of functions could be surprising, but most of them are related<!--inne słówko // reduced?--> to associative learning, i.e., fear conditioning and its malfunctions. 
@@ -36,10 +36,10 @@ The BLA is considered to be the main point of the entry for cortical and thalami
 This complex developmentally and structurally is a cortical-like structure [@waclaw_2010], although BLA neurons do not exhibit a laminar organization [@sah_2003].
 Within the BLA, approximately 80% of all neurons are glutamatergic pyramidal-like principal cells and the remaining 20% belong to a heterogeneous group of interneurons [@duvarci_2014; @mcdonald_1993; @spampanato_2011]. 
 
-##### Neuronal Composition 
+##### Neuronal Composition {#BLAcells}
 <!-- choć może cellular i tutaj też astrocyty? -->
 
-###### Principal cells {#PC}
+###### Principal cells {#PC} {#BLAPC}
 
 Principal cells (PC) show many morphological and electrophysiological characteristics similar to their cortical and hippocampal pyramidal counterparts. <!-- such as a low input resistance? low excitability, not sponteneously active,  presence of prominent apical dendrite (McDonald 1982).-->
 
@@ -77,7 +77,7 @@ Although some evidence has distinguished the difference among interneuronal subt
 However, it is tempting to speculate that neurons with disparate electrophysiological properties have distinct afferent/efferent connections and may modulate local circuits differently (for reviews: @spampanato_2011, @tremblay_2016). 
 <!-- + KANAŁYYYYYYYYYY -->
 
-##### Connectivity
+##### Connectivity {#BLAconnectivity}
 
 <!-- zdanie wprowadzające? coś w deseń, że amygdala ogarnia wiele funkcji, więc parallel microcircuits, complex connectivity // The  basolateral  nucleus  of  the  amygdala  (BL)  is  thought  to  support  numerous  emotional  behaviors  through specific microcircuits.--><!-- Most of the knowledge of the extrinsic connectivity of the BLA arises from tracer
 experiments in rats, although cats and monkeys have also been extensively studied. In all
@@ -89,7 +89,7 @@ suggests that the computation performed by BLA circuits to control defensive (an
 emotional) responses is heavily influenced by a myriad of inputs conveying both sensory and
 cognitive information.-->
 
-###### Afferents
+###### Afferents {#BLAinputs}
 
 Multisensory and highly processed information derived from all modalities (e.g., olfactory, somatosensory, gustatory, visceral, auditory, and visual) converge in the BLA (for a more comprehensive review, see: @pape_2010, @sah_2003). 
 It is carried by afferents from higher-order thalamic nuclei, sensory,associative cortices, and the hippocampus, entering the amygdala *via* the external or internal capsules (for reviews: @hjos_2021; @sah_2003). <!-- figure i cytowanie które nie jest review? // thalamic nuclei and secondary or higher-order sensory cortices besides the associative cortices-->
@@ -120,7 +120,7 @@ Hence, BLA is strongly innervated by different types of neuromodulators (see Fig
 Specifically, this region receives: (1) noradrenergic (NE; norepinephrine) innervation from the locus coeruleus (LC) and nucleus of the solitary tract (NTS; Pitkanen, 2000;  Williams  et  al.,  2000), (2) serotonergic projections originating from the dorsal raphe nucleus (DRN), (3) dense dopaminergic innervation from the ventral tegmental area (VTA) and the substantia nigra (SN; Fallon and Ciofi, 1992; Asan, 1997), and (4) projections from the basal forebrain (Emson et al., 1979; Woolf et al., 1984; Carlsen et al., 1985; Zaborszky et al., 1986). <!-- /// krótsza wersja: Monoaminergic inputs (serotonin [5-HT], norepinephrine [NE], and dopamine [DA]) as well as cholinergic inputs arise from subcortical nuclei and are released into the BNC during particular brain states (e.g., during stress and certain aspects of sleep) //// Moreover, most of fibers from the basal forebrain (Emson et al., 1979; Woolf et al., 1984; Carlsen et al., 1985; Zaborszky et al., 1986) release acetylcholine (Ach), leading to one of the highest levels of choline acetyltransferase, the synthesizing enzyme for acetylcholine (ACh), and acetylcholinesterase (AChE), the hydrolyzing enzyme for ACh, in the BLA compared with other brain regions (Ben-Ari et al., 1977; Prager et al., 2013).  zmienić bardziej i cytowanie -->
 These molecules are regarded as key players in modulating BLA activity, which will be discussed more in detail below.<!--section --> <!-- The remaining (approx. ~ 10– 15%)  basal forebrain projections to the BLA are from PV-immunopositive GABAergic interneurons (Mascagni and McDonald, 2009). // They mostly target PV interneurons, but some also reach principal neurons [@mcdonald_2011].  cytowania /// Recent  studies  indicate  that  the  basolateral amygdala, like the neocortex and hippocampus, receives GABAergic inputs from the basal forebrain in addition to the well-established cholinergic inputs. @mcdonald_2011  /// as well as corticofugal neocortical GABAergic neurons projecting to the amygdala (Lee et al., 2014b) /// The amygdala is inhibited by the cortex through the activation of  local  GABAergic  interneurons.  -->
 
-###### Intrinsic connectivity
+###### Intrinsic connectivity {#BLAinside}
 
 As BLA is involved in the integration of sensory inputs and subsequent generation of emotional responses, which is largely determined by the balance  of  excitatory  and  inhibitory  inputs BLA principal cells [@bocchio_2016; @capogna_2014; @hjos_2021; @spampanato_2011] + neurmodulators? , leading to complex network computations.<!-- ///  The   modulation   of emotional  responses  by  the  BLA  is  mainly  determined  by  the balance  of  excitatory  and  inhibitory  inputs  to  its  dominated neurons which are tightly controlled by GABAergic interneurons (Równiak  et  al.,  2017). /// Destruction of   GABAergic   inhibition   in   the   BLA   can   cause   behavioral hyperexcitability,   such   as   increased   anxiety   and   depression, emotional  dysregulation,  and  development  of  seizure  activity (Prager et al., 2016). @JIE_2018--> 
 Here, I briefly discuss the current knowledge about the wiring patterns of principal cells and interneurons in the BLA. <!--detailed wiring diagram of-->
@@ -217,34 +217,52 @@ Although this work has not yet been confirmed in the amygdala it has been hypoth
 In addition, @huff_2013 highlighted the role of gamma frequency (40 Hz), but not other frequencies, induced in the BLA by bursts of light pulses, in enhancing retention. <!-- końcówka może inaczej?-->
 In line with these findings, inhibition of BLA neurons impaired retention of the learning [@huff_2013].
 
-###### Efferents
+###### Efferents {#BLAoutputs}
 
-Among many sensory inputs, the BLA complex is known to have strong reciprocal connections with prefrontal cortex (PFC), <!-- its medial part,--> [@lee_2014], perirhinal cortex, the entorhinal cortex, the parahippocampal cortex, and the hippocampus, which are known to be involved in long-term declarative memory, suggesting a high functional relevance [@duvarci_2014; @par_2002]. <!-- The amygdala and the medial prefrontal cortex (mPFC) are interconnected brain structures involved in the extinction of conditioned fear. Here, we show that a defined subpopulation of basal amygdala (BA) projection neurons targeting the prelimbic (PL) subdivision of mPFC is active during states of high fear, whereas BA neurons targeting the infralimbic (IL) subdivision are recruited, and exhibit cell-type-specific plasticity, during fear extinction. Pathway-specific optogenetic manipulations demonstrate that the activity balance between pathways is causally involved in fear extinction. Together, our findings demonstrate that, although intermingled locally, long-range connectivity defines distinct subpopulations of amygdala projection neurons and indicate that the formation of long-term extinction memories depends on the balance of activity between two defined amygdala-prefrontal pathways.  @senn_2014 -->
+Among many sensory inputs mentioned in previous section (\@ref(BLA_inputs)), the BLA complex is known to have strong reciprocal connections with prefrontal cortex (PFC), <!-- its medial part,--> [@lee_2014], perirhinal cortex, the entorhinal cortex, the parahippocampal cortex, and the hippocampus, which are known to be involved in long-term declarative memory, suggesting a high functional relevance [@duvarci_2014; @par_2002]. <!-- The reciprocal connections between BLA and the mPFC appear to be involved in a wide variety of behavioral and higher cognitive functions. // medial prefrontal cortex (mPFC), because it plays a critical role in regulating conditioned fear (Sotres-Bayon and Quirk, 2010).////  The amygdala and the medial prefrontal cortex (mPFC) are interconnected brain structures involved in the extinction of conditioned fear. Here, we show that a defined subpopulation of basal amygdala (BA) projection neurons targeting the prelimbic (PL) subdivision of mPFC is active during states of high fear, whereas BA neurons targeting the infralimbic (IL) subdivision are recruited, and exhibit cell-type-specific plasticity, during fear extinction. Pathway-specific optogenetic manipulations demonstrate that the activity balance between pathways is causally involved in fear extinction. Together, our findings demonstrate that, although intermingled locally, long-range connectivity defines distinct subpopulations of amygdala projection neurons and indicate that the formation of long-term extinction memories depends on the balance of activity between two defined amygdala-prefrontal pathways.  @senn_2014 -->
+
+It should be also noted, that despite being the main input of the amygdaloid complex, BLA is also reported to send few projections.
+
+Multiple BLA projections to cortical and subcortical regions have been revealed to regulate defensive behaviors. Forexample, optogenetic activation of BLA projections to the CeA (BLA-CeA) drives real-time place aversion (Namburi et al., 2015). Similarly, opto-activation of the BLA projections to the ventral hippocampus (BLA-vHPC) (Felix-Ortizet al., 2013;Felix-Ortiz & Tye, 2014), the mPFC (BLA-mPFC) (Felix-Ortiz et al., 2016), and the anterodorsal BNST(BLA-adBNST) were shown to increase anxiety-related behaviors. 
+Other studies probing the BLA-mPFC projections have shown that it is causally involved in fear conditioning (Burgos-Robles et al., 2017;Herry et al., 2008;Klavir, P  rigge, Sarel, Paz, & Yizhar, 2017;Yizhar & Klavir, 2018), as well as the projection to the entorhinal cortex (BLA-eCx)(Majak & Pitk€ anen, 2003;Sparta et al., 2014)
+Interestingly, a chronic restraint stress in mice dysregulates the activityo  f the BLA-mPFC pathway by enhancing glutamate release in the mPFC (Lowery-Gionta et al., 2018). Conversely,optogenetic activation of BLA projections to the nucleus accumbens (BLA-NAc) has repeatedly been shown to supportpositive reinforcement (Britt et al., 2012;Namburi et al., 2015;Stuber et al., 2011), and pharmacological disconnectiono  f the BLA and NAc identified that the BLA-NAc pathway is critical for cocaine seeking (Di Ciano & Everitt, 2004).
+
+The BLA has two main output fiber bundles which originate in the amygdala: the stria terminalis and the amyg-dalofugal pathway (Leonard & Scott, 1971;Mori et al., 2017). The stria terminalis connects the amygdala to the septalarea of the basal forebrain and hypothalamus, while the amygdalofugal pathway is believed to contain both afferent and efferent connections to the basal forebrain, hypothalamus, and thalamus. Through these two pathways and direct axonal projections, the BLA targets a wide range of cortical and subcortical downstream regions.
+
 (vSub) – BLA pathway, which represents the major connection between hippocampus and BLA as part of the fear conditioning and extinction network (Biedenkapp and Rudy, 2009; Hobin et al , 2006; Horovitz and Richter-Levin, 2015; Kim et  al , 2013; Maren et  al , 1995). [@saha_2016]
-<!--  Heterologous expression of GluR subunits in host cells suggested that these receptors are
-multimeric proteins and that their functional properties depend on the subunit composition -->
-<!-- not structured yet -->
-As mentioned above (see Section \@ref()<!-- inputs -->), 
-The reciprocal connections between BLA and the mPFC appear to be involved in a wide variety of behavioral and higher cognitive functions. <!-- zmienić @LaLumiere -->
-Therefore, Little and Carter (2012) investigated how BLA, ventral hippocampal, midline thalamus, and contralateral mPFC inputs to the layer two pyramidal neurons of the mPFC make synaptic connections. <!-- zmienić @LaLumiere -->
-The authors used optogenetics to target specific pathways by transducing the efferent structures with ChR2 and providing illumination to their axonal terminals in the mPFC. <!-- zmienić @LaLumiere -->
-Moreover, they combined their optogenetic manipulations with two-photon microscopy in order to determine the functional connections on a subcellular level. <!-- zmienić @LaLumiere -->
-The results from this study indicate that the different regions do, in fact, make different subcellular connections. <!-- zmienić @LaLumiere -->
-The BLA appears to make synaptic connections much closer to the soma, relative to other regions, especially the thalamic inputs. <!-- zmienić @LaLumiere -->
-Additionally, the BLA inputs target spines of an “intermediate” size, along with ventral hippocampal inputs, in contrast to the thalamic inputs to the large spines and the contralateral mPFC inputs to the small spines. <!-- zmienić @LaLumiere -->
-As both the size of the spine and the distance from the soma govern the relative strengths of the inputs, these findings shed light on how different regions influence local circuit activity in other regions. <!-- zmienić @LaLumiere -->
-In a follow-up study, Little and Carter (2013) extended their findings, again using optogenetics combined with two-photon microscopy. <!-- zmienić @LaLumiere -->
-In this case, their findings indicated that BLA inputs to the mPFC were considerably stronger on mPFC neurons that innervated the BLA, compared to mPFC neurons that provide inputs to the contralateral mPFC. <!-- zmienić @LaLumiere -->
-Together, these findings have contributed to a deeper understanding for how the BLA and mPFC inter-act and, critically, provide a foundation for understanding how BLA inputs to the mPFC may regulate PFC activity and PFC- dependent functions.<!-- zmienić @LaLumiere -->
 
-Although many cortical regions are contacted by BLA axons, this review will only consider the medial prefrontal cortex (mPFC), because it plays a critical role in regulating conditioned fear (Sotres-Bayon and Quirk, 2010).  <!-- sprawdzić -->
+BLA principal neurons send projections to the central nucleus of the amygdala (Tye et al. 2011), bed nucleus of the stria terminalis (Weller and Smith 1982), nucleus accumbens (Stuber et al. 2011), and medial prefrontal cortex (Senn et al. 2014) to facilitate the coordination of emotional responses. 
 
-BLA projects to the ventral hippocampus, structure which is also involved in anxiety (Pitkänen et al., 1995, 2000; Bannerman et al., 2003). <!-- zmienić @LaLumiere -->
-Felix-Ortiz et al. found that inhibition of BLA afferents to the ventral hippocampus, via activation of halorhodopsin, decreased anxiety-related behaviors. <!-- zmienić @LaLumiere -->
-Similarly, stimulation of such afferents, using 20 Hz light pulses to activate ChR2, increased anxiety-related behaviors. 
+However, importantly, principal cells in the BLA innervate the CeA, either directly by forming glutamatergic synapses on CeA neurons (@krettek_1978, @lopezdearmentia_2004, see Section \@ref(CeA)) or indirectly *via* GABAergic ITC~m~ neurons<!--explain-->, leading to feed-forward inhibition [@jngling_2008, @royer_1999].<!-- poprawić to zdanie -->
+
+Hence, the BLA transmits information widely throughout cortical regions, but its neuronal processing is greatly affected by excitatory projections from these regions. 
+Predominantly unidirectional outputs of the BLA include the striatum, especially the nucleus accumbens (NAc), and the bed nucleus of the stria terminalis (BNST) and the CeA. 
+In turn, the striatum, BNST and CeA have been considered to mediate the translation of BLA signals to behavioural output. 
+Of note, there are exceptions to this serial model of information flow; the BA and CeA also receive sensory inputs, and the CeA contributes to some behavioural processes independently from the BLA23,24
+
+
+ <!-- BLA -> mPFC --> <!-- For example, one elegant study by applying .... techniques, has shown that 
+Therefore, Little and Carter (2012) investigated how BLA, ventral hippocampal, midline thalamus, and contralateral mPFC inputs to the layer two pyramidal neurons of the mPFC make synaptic connections. 
+The authors used optogenetics to target specific pathways by transducing the efferent structures with ChR2 and providing illumination to their axonal terminals in the mPFC. Moreover, they combined their optogenetic manipulations with two-photon microscopy in order to determine the functional connections on a subcellular level. The results from this study indicate that the different regions do, in fact, make different subcellular connections.The BLA appears to make synaptic connections much closer to the soma, relative to other regions, especially the thalamic inputs. Additionally, the BLA inputs target spines of an “intermediate” size, along with ventral hippocampal inputs, in contrast to the thalamic inputs to the large spines and the contralateral mPFC inputs to the small spines. As both the size of the spine and the distance from the soma govern the relative strengths of the inputs, these findings shed light on how different regions influence local circuit activity in other regions. In a follow-up study, Little and Carter (2013) extended their findings, again using optogenetics combined with two-photon microscopy. In this case, their findings indicated that BLA inputs to the mPFC were considerably stronger on mPFC neurons that innervated the BLA, compared to mPFC neurons that provide inputs to the contralateral mPFC. Together, these findings have contributed to a deeper understanding for how the BLA and mPFC interact and, critically, provide a foundation for understanding how BLA inputs to the mPFC may regulate PFC activity and PFC- dependent functions. // @LaLumiere -->
+
+Their axons course through the stria terminalis, ventral amygdalofugal path-way, and external capsule to reach targets in the forebrain.
+
+At the output sites, both the LA and BA innervate a substantial part of the basal ganglia, including the nucleus accumbens, olfactory  tuberculum,  and  posterior  striatum  (McDonald, 1991). Moreover, the LA and BA target the amygdalostriatal transition area (astria) and the dorsomedial striatum, respectively (McDonald, 1992; Barsy et al., 2020).
+Besides the basal ganglia, the BLA also projects to other striatal structures that are considered to be parts of the amygdala or rather the extended amygdala, namely the central nucleus of amygdala, interstitial nucleus of the posterior limb of the anterior commissure (IPAC), and the bed nucleus of stria terminalis (BNST; Sah et al., 2003).
+
+<!-- BLA -> vhippo, anxiety, skrócić -->
+
+Of note, there are other pathways that originate in the BLA that have since been implicated in bidirectional regulation of anxiety. <!-- zmienić janak 2015-->
+Optically driving BLA projections to the ventral HPC (vHPC) is anxiogenic61 , whereas photostimulation of BLA inputs in the anterodorsal BNST (adBNST) is anxiolytic62. <!-- zmienić janak 2015-->
+Photostimulation of the BLA–Vhpc pathway also decreases social interaction63, an effect perhaps related to the increase in anxiety that is seen following BLA–vHPC activation64 <!-- zmienić janak 2015-->
+
+For example, BLA projections to the ventral hippocampus are also thought to mediate anxiety-related behavior. 
+ <!-- zmienić @LaLumiere // BLA projects to the ventral hippocampus, structure which is also involved in anxiety (Pitkänen et al., 1995, 2000; Bannerman et al., 2003).-->, Felix-Ortiz et al. found that inhibition of BLA afferents to the ventral hippocampus, via activation of halorhodopsin, decreased anxiety-related behaviors. <!-- zmienić @LaLumiere --><!-- AND electrophysiological data... Functionallly --->
+
+It was elegantly illustrated that inhibition of those afferents has anxiolytics effect, whereas stimulation of those terminals ...  <!-- Similarly, stimulation of such afferents, using 20 Hz light pulses to activate ChR2, increased anxiety-related behaviors. In other work, Felix-Ortiz and Tye (2014) examined optical stimulation and inhibition of the BLA axon terminals in the ventral hippocampus during tests of social behavior. In a resident-juvenile-intruder test, stimulation of these terminals, using 20 Hz light pulses, reduced social interactions of the resident, whereas inhibition of these terminals increased such interactions, suggesting that activation of this pathway increased anxiety in the animals whereas silencing of this pathway produced the opposite effect. -->
+
 Moreover, electrophysiology analysis suggested that the effects of stimulating BLA inputs to the ventral hippocampus were mediated through local circuit mechanisms involving both direct activation of principal cells in the hippocampus and indirect recruitment of inhibitory neurons. <!-- zmienić @LaLumiere -->
-In other work, Felix-Ortiz and Tye (2014) examined optical stimulation and inhibition of the BLA axon terminals in the ventral hippocampus during tests of social behavior. <!-- zmienić @LaLumiere -->
-In a resident-juvenile-intruder test, stimulation of these terminals, using 20 Hz light pulses, reduced social interactions of the resident, whereas inhibition of these terminals increased such interactions, suggesting that activation of this pathway increased anxiety in the animals whereas silencing of this pathway produced the opposite effect. <!-- zmienić @LaLumiere -->
+<!-- zmienić @LaLumiere -->
 The effects with stimulation were blocked with microinjections of glutamate receptor antagonists into the ventral hippocampus, indicating that the results were due to stimulation of BLA axon terminals and the concomitant release of glutamate from those terminals. <!-- zmienić @LaLumiere -->
 
 Prior work has noted the existence of neurons within the basal nucleus of the BLA that are responsive to cues associated with footshocks and other neurons that are responsive to cues previously associated with footshocks that have been extinguished. <!-- zmienić @LaLumiere -->
@@ -261,9 +279,7 @@ While much previous research has focused on the mPFC inputs to the BLA in regula
 
  Unconditioned animals show hippocampus-related  q  oscillations in BLA at the levels of individual  principal cells and neuron populations (as reflected in local field  potentials, LFPs) (  Pare   ́  and Gaudreau, 1996  ). Amplitude and  power of this rhythm increase after auditory, contextual or social  fear learning (  Jeon et al., 2010; Pare   ́  and Collins, 2000; Seiden-  becher et al., 2003  ). Moreover, the degree of  q  synchrony  between BLA and CA1 after fear conditioning predicts memory  performance (  Popa et al., 2010  ). Precise timing of activity in the  BLA is likely important not only for oscillations. It may also be crit-  ical for memory encoding, by selectively assigning emotional  valence to incoming sensory stimuli. [@bienvenu_2012]-->
 
-Moreover, some set of projections are sent from both BLA and CeA. This connections are sent to BNST (Dong et al., 2001) and various hypothalamic nuclei (Pitkanen, 2000). <!-- zmienić @duvarci2014 -->
-Finally, the amygdala can also indirectly influence the excitability of the entire prosencephalon via its projections to neuromodulatory cell groups (releasing acetylcholine, noradrenaline [NA], and dopamine [DA]) of the basal forebrain and brainstem (Steriade and Pare, 2007).<!-- zmienić @LaLumiere -->
-
+<!-- BLA -> NaCC-->
 As part of understanding the precise role played by the BLA in such behaviors, Stuber et al. (2011) examined the pathway from the BLA to the nucleus accumbens (NA) core in modulating and driving reinforcement of operant behavior. <!-- zmienić @LaLumiere -->
 Although previous evidence had suggested that the BLA could directly influence dopamine release in the NA (Howland et al., 2002), a key mechanism for reinforcement, it was not clear whether activity in the BLA inputs to the NAcore could actually reinforce operant behavior or was necessary for reward seeking. <!-- zmienić @LaLumiere -->
 Stuber et al. found that mice engaged in an operant behavior (nose pokes) in order to receive optical stimulation (burst of 20 Hz light pulses) of the BLA axon terminals in the NAcore. <!-- zmienić @LaLumiere -->
@@ -277,49 +293,11 @@ Recent work by Stefanik and Kalivas (2013) has used optogenetics to investigate 
 The BLA was transduced with ArchT. <!-- zmienić @LaLumiere -->
 Inhibition of BLA terminals in either the PL or NAcore reduced cue-induced reinstatement of cocaine-seeking, indicating that activity in both pathways is obligatory for associative cue-driven cocaine-seeking. <!-- zmienić @LaLumiere -->
 
-Of note, there are other pathways that originate in the BLA that have since been implicated in bidirectional regulation of anxiety. <!-- zmienić janak 2015-->
-Optically driving BLA projections to the ventral HPC (vHPC) is anxiogenic61 , whereas photostimulation of BLA inputs in the anterodorsal BNST (adBNST) is anxiolytic62. <!-- zmienić janak 2015-->
-Photostimulation of the BLA–Vhpc pathway also decreases social interaction63, an effect perhaps related to the increase in anxiety that is seen following BLA–vHPC activation64 <!-- zmienić janak 2015-->
-
-BLA principal neurons send projections to the central nucleus of the amygdala (Tye et al. 2011), bed nucleus of the stria terminalis (Weller and Smith 1982), nucleus accumbens (Stuber et al. 2011), and medial prefrontal cortex (Senn et al. 2014) to facilitate the coordination of emotional responses. 
-
-However, importantly, principal cells in the BLA innervate the CeA, either directly by forming glutamatergic synapses on CeA neurons (@krettek_1978, @lopezdearmentia_2004, see Section \@ref(CeA)) or indirectly *via* GABAergic ITC~m~ neurons<!--explain-->, leading to feed-forward inhibition [@jngling_2008, @royer_1999].<!-- poprawić to zdanie -->
-
-Hence, the BLA transmits information widely throughout cortical regions, but its neuronal processing is greatly affected by excitatory projections from these regions. 
-Predominantly unidirectional outputs of the BLA include the striatum, especially the nucleus accumbens (NAc), and the bed nucleus of the stria terminalis (BNST) and the CeA. 
-In turn, the striatum, BNST and CeA have been considered to mediate the translation of BLA signals to behavioural output. 
-Of note, there are exceptions to this serial model of information flow; the BA and CeA also receive sensory inputs, and the CeA contributes to some behavioural processes independently from the BLA23,24
-
-<!-- valence
-In order to survive,animals must be able to discriminate dangerous stimuli from those that are safe.
-Without a mechanism for learning specific stimulus-outcome relationships, fear  and  defensive  behavior  broadly generalize to many stimuli and settings. This is a maladaptive state of affairs that may underlie fear and anxiety disorders.
-
-Under this model, the responses of BLA cells to conditioned stimuli (CSs) and the activity that drives CRs are closely related. We tested the strength of this correlation using a task where rats could emit different CRs in response to the same CSs. At odds with this model, the CS responses and CR-related activity of individual BLA cells were separable. Moreover, while the incidence of valence-coding cells did not exceed chance, at the population level there was similarity between valence coding for CSs and CRs. In fact, both lateral and basolateral neurons concurrently encoded multiple task features and behaviors. Thus, conditioned emotional behaviors may not depend on the recruitment of single cells that explicitly encode individual task variables but from multiplexed representations distributed across the BLA.@kyriasi_2018
---->
-
-It should be also noted, that despite being the main input of the amygdaloid complex, BLA is also reported to send few projections.
-<!-- BLA outputs
-@luna_2012  BLA inputs to the posterior piriform cortex. this structure was found to innervate deep pyramidal cells of the posterior piriform.
-Specifically, the BLA produced strong connections with fast-spiking interneurons. 
-As these different classes of interneurons synapse on different regions of the pyramidal cells (somatic vs. distal dendritic), the feedforward inhibition from BLA vs. anterior piriform inputs would be expected to have profoundly different effects on the likelihood of spiking in the principal cells of the posterior piriform.
--->
-
-However, recent studies have shown that GABAergic long-range nonpyramidal neurons (LRNP neurons) in the cortex also contribute to inter-areal connections. The present study combined Fluorogold (FG) retrograde tract tracing with immunohistochemistry for cortical nonpyramidal neuronal markers to determine if cortical LRNP neurons project to the BLC in the rat. [@mcdonald_2015] <!--  a small number of FG+/SOM+/NPY+ neurons and FG+/SOM+/NPY  neurons in the lateral entorhinal area, amygdalopiriform transition area, and piriform cortex, but not in the prefrontal and insular cortices, or in the diencephalon. In addition, FG+/ SOM+/NPY+ neurons were observed in the amygdalostriatal transition area and in a zone surrounding the intercalated nuclei. About half of the SOM+ neurons in the lateral entorhinal area labeled by FG were GABA+. FG+ neurons containing parvalbumin were only seen in the basal forebrain, and no FG+ neurons containing vasoactive intestinal peptide were observed in any brain region. Since LRNP neurons involved in corticocortical connections are critical for synchronous oscillations that allow temporal coordination between distant cortical regions, the LRNP neurons identified in this study may play a role in the synchronous oscillations of the BLC and hippocampal region that are involved   -->
-
-With the exception of few long-range inhibitory interneurons, projecting to theento rhinal cortex (McDonald & Zaric, 2015a) or the basal forebrain (McDonald, Mascagni, & Zaric, 2012), inhibitoryinter  neurons synapse locally, whereas excitatory neurons are projection neurons.
-
-The BLA has two main output fiber bundles which originate in the amygdala: the stria terminalis and the amyg-dalofugal pathway (Leonard & Scott, 1971;Mori et al., 2017). The stria terminalis connects the amygdala to the septalarea of the basal forebrain and hypothalamus, while the amygdalofugal pathway is believed to contain both afferent and efferent connections to the basal forebrain, hypothalamus, and thalamus. Through these two pathways and direct axonal projections, the BLA targets a wide range of cortical and subcortical downstream regions.
-
-Multiple BLA projections to cortical and subcortical regions have been revealed to regulate defensive behaviors. Forexample, optogenetic activation of BLA projections to the CeA (BLA-CeA) drives real-time place aversion (Namburi et al., 2015). Similarly, opto-activation of the BLA projections to the ventral hippocampus (BLA-vHPC) (Felix-Ortizet al., 2013;Felix-Ortiz & Tye, 2014), the mPFC (BLA-mPFC) (Felix-Ortiz et al., 2016), and the anterodorsal BNST(BLA-adBNST) were shown to increase anxiety-related behaviors. 
-Other studies probing the BLA-mPFC projections have shown that it is causally involved in fear conditioning (Burgos-Robles et al., 2017;Herry et al., 2008;Klavir, P  rigge, Sarel, Paz, & Yizhar, 2017;Yizhar & Klavir, 2018), as well as the projection to the entorhinal cortex (BLA-eCx)(Majak & Pitk€ anen, 2003;Sparta et al., 2014)
-Interestingly, a chronic restraint stress in mice dysregulates the activityo  f the BLA-mPFC pathway by enhancing glutamate release in the mPFC (Lowery-Gionta et al., 2018). Conversely,optogenetic activation of BLA projections to the nucleus accumbens (BLA-NAc) has repeatedly been shown to supportpositive reinforcement (Britt et al., 2012;Namburi et al., 2015;Stuber et al., 2011), and pharmacological disconnectiono  f the BLA and NAc identified that the BLA-NAc pathway is critical for cocaine seeking (Di Ciano & Everitt, 2004).
-
-Int  erestingly, ex vivo optogenetic circuit mapping has demonstrated preferential feedback connectivity within func-tionally related circuits. Specifically, it has been shown that mPFC inputs in BLA are much stronger onto BLA-mPFCand BLA-vHPC neurons compared to PFC inputs onto BLA-NAc projecting neurons (McGarry & Carter, 2017).  <!-- nie rozumiem -->
-
-Their axons course through the stria terminalis, ventral amygdalofugal path-way, and external capsule to reach targets in the forebrain.
-
-At the output sites, both the LA and BA innervate a substantial part of the basal ganglia, including the nucleus accumbens, olfactory  tuberculum,  and  posterior  striatum  (McDonald, 1991). Moreover, the LA and BA target the amygdalostriatal transition area (astria) and the dorsomedial striatum, respectively (McDonald, 1992; Barsy et al., 2020).
-Besides the basal ganglia, the BLA also projects to other striatal structures that are considered to be parts of the amygdala or rather the extended amygdala, namely the central nucleus of amygdala, interstitial nucleus of the posterior limb of the anterior commissure (IPAC), and the bed nucleus of stria terminalis (BNST; Sah et al., 2003).
+<!-- nie rozumiem ale chodzi o valence-->
+Interestingly, ex vivo optogenetic circuit mapping has demonstrated preferential feedback connectivity within functionally related circuits. Specifically, it has been shown that mPFC inputs in BLA are much stronger onto BLA-mPFCand BLA-vHPC neurons compared to PFC inputs onto BLA-NAc projecting neurons (McGarry & Carter, 2017).  
+<!-- long range interneurons... --> 
+However, recent studies have shown that GABAergic long-range nonpyramidal neurons (LRNP neurons) in the cortex also contribute to inter-areal connections. <!-- Despite innervating locally /// With the exception of few long-range inhibitory interneurons, projecting to the entorhinal cortex (McDonald & Zaric, 2015a) or the basal forebrain (McDonald, Mascagni, & Zaric, 2012), inhibitory interneurons synapse locally, whereas excitatory neurons are projection neurons.--> 
+The present study combined Fluorogold (FG) retrograde tract tracing with immunohistochemistry for cortical nonpyramidal neuronal markers to determine if cortical LRNP neurons project to the BLC in the rat. [@mcdonald_2015] <!--  a small number of FG+/SOM+/NPY+ neurons and FG+/SOM+/NPY neurons in the lateral entorhinal area, amygdalopiriform transition area, and piriform cortex, but not in the prefrontal and insular cortices, or in the diencephalon. In addition, FG+/ SOM+/NPY+ neurons were observed in the amygdalostriatal transition area and in a zone surrounding the intercalated nuclei. About half of the SOM+ neurons in the lateral entorhinal area labeled by FG were GABA+. FG+ neurons containing parvalbumin were only seen in the basal forebrain, and no FG+ neurons containing vasoactive intestinal peptide were observed in any brain region. Since LRNP neurons involved in corticocortical connections are critical for synchronous oscillations that allow temporal coordination between distant cortical regions, the LRNP neurons identified in this study may play a role in the synchronous oscillations of the BLC and hippocampal region that are involved   -->
 
 #### Intercalated masses {#ITCs}
 
@@ -614,3 +592,12 @@ These fast glutamate-and slow 5-HT-mediated responses often coexisted in the sam
 
 <!-- Neuropeptides -->
 Administration  of  CRF  into  the  BLA  induced pronounced  increases  in  cFos-ir  in  the  CaMKII-ir  population and altered the activity of GABAergic interneurons (Rostkowski et al., 2013).<!-- neuropeptides? -->
+
+<!--  Heterologous expression of GluR subunits in host cells suggested that these receptors are
+multimeric proteins and that their functional properties depend on the subunit composition -->
+
+<!-- valence
+In order to survive,animals must be able to discriminate dangerous stimuli from those that are safe.
+Without a mechanism for learning specific stimulus-outcome relationships, fear  and  defensive  behavior  broadly generalize to many stimuli and settings. This is a maladaptive state of affairs that may underlie fear and anxiety disorders.
+Under this model, the responses of BLA cells to conditioned stimuli (CSs) and the activity that drives CRs are closely related. We tested the strength of this correlation using a task where rats could emit different CRs in response to the same CSs. At odds with this model, the CS responses and CR-related activity of individual BLA cells were separable. Moreover, while the incidence of valence-coding cells did not exceed chance, at the population level there was similarity between valence coding for CSs and CRs. In fact, both lateral and basolateral neurons concurrently encoded multiple task features and behaviors. Thus, conditioned emotional behaviors may not depend on the recruitment of single cells that explicitly encode individual task variables but from multiplexed representations distributed across the BLA.@kyriasi_2018
+--->

@@ -277,9 +277,10 @@ Thus, our findings support the idea that mPFC gates impulse transmission from th
 #### Central amygdala {#CeAstructure}
 
 Central amygdala (CeA) is a GABAergic nucleus comprised of capsular (CeC), lateral (CeL), medial (CeM) and intermediate (CeI) divisions [@jolkkonen_1998; @mcdonald_1982a; @sah_2003]; however, the classification of these regions is inconsistent. <!-- inne cytowanie? problem z nim bo takiego nie ma  [@Cassell1986].--><!--Importantly, the capsular region of the CeA appears to overlap with intercalated cell clusters [@mcdonald_1982a; @pape_2010] and will be hereafter referred to as ITCs. raczej błędne -->
+Often the CeL and CeC are considered together as CeL [@duvarci_2014]. 
 However, CeA is commonly divided into the CeL and CeM divisions and there is a sparse number of investigations regarding CeI and CeL as a functionally and anatomically distinct subdivisions [@ciocchi_2010; @duvarci_2014; @haubensak_2010]. <!-- sprawdzić cytowania....bo nie rozumiem.... Therefore, in this dissertation, the latter classification will be used. odwołanie się do figury!!!!-->
 Of note, in some papers, CeA, together with the bed nucleus of the stria terminalis (BNST), is also considered to be a part of extended amygdala due to their similar neuronal phenotypes and intra-connectivity patterns with other brain regions, along with their dense inter-connectivity [@fox_2015; @sah_2003]. 
-However, BNST is out of the scope of this dissertation and will not be discussed here. 
+However, BNST is out of the scope of this dissertation and will not be discussed here. <!-- + and nucleus accumbens shell [  27 ]) that exhibit similar cytoarchitecture, overlapping afferents and efferents, and strong interconnectivity ( 28 , 29 ). @gilpin_2015 Krettek JE, Price JL (1978): A description of the amygdaloid complex in the rat and cat with observations on intra-amygdaloid axonal connections. J Comp Neurol 178:255 – 280.  29.  Dong HW, Petrovich GD, Watts AG, Swanson LW (2001): Basic organization of projections from the oval and fusiform nuclei of the bed nuclei of--> 
 
 ##### Neuronal composition
 
@@ -295,9 +296,11 @@ The remaining types do not exceed more than 10% of whole CeA neuronal population
 <!-- description of Late Firing neurons-->
 LF neurons display a pronounced delay before onset of the first action potential (100-200 ms) in response to depolarizing somatic current injections. <!-- figure? --><!-- exhibiting a substantial delay to action potential (AP) initiation in response to depolarizing somatic current injections. -->
 It is thought that this characteristic delay<!--synonym--> is mediated by K~v1~-dependent slowly inactivated D-type K^+^ currents [@hou_2016; @martina_1999].
+Although late firing (LF) neurons are very rare in rat CeL and CeM (Dumont et al., 2002), nearly all neurons in rat CeC  are classified as LF type (Chieng, Christie, & Osborne, 2006). These neurons are characterized by a noticeable delay between the beginning of depolarizing current injection and firing onset (Dumont et al., 2002).
 
 <!-- description of Regular Spiking neurons -->
 generating repetitive firing spikes [@dumont_2002; @lopezdearmentia_2004].
+Regular spiking neurons (RS) constitute the majority of neurons in rat CeL. Like LTB neurons, RS cells also display variable degrees of time-dependent inward rectification (IHcurrent). However, in contrast to LTB cells, these neurons do not show spike bursts in response to hyperpolarizing current pulses (Dumont et al., 2002). 
 
 <!-- description of fast-spiking -->
 Fast-spiking cells are characterized by a high input resistance and action potential frequency (>40 Hz) with no accommodation, as their counterparts in the cortex, the hippocampus or the BLA. <!-- citations? -->
@@ -307,12 +310,14 @@ They also have higher frequency of spontaneous synaptic potentials (sEPSPs) than
 <!--These neurons likely correspond to local-circuit cells.  which one? -->
 <!-- neuromarkers and morphology? -->
 <!-- more about channels -->
+The fourth,fast-spiking (FS) neuron type is also rare in rat CeA and is characterized by high firing rates with no spike frequency adaptation (Dumont et al., 2002). 
 
 <!-- description of bursting -->
 Low-threshold bursting cells are endowed with T-type calcium channels, contributing to characteristic spike bursts. <!-- citations? -->
 One of their characteristics is the presence of rebound spikes after hyperpolarizing current step [@dumont_2002; @hou_2016]. <!-- poprawić to zdanie  fig -->
 <!-- neuromarkers? -->
 <!-- more about channels -->
+From all four types, low threshold bursting (LTB) neurons constitute the majority of CeM neurons (Dumont, Martina, Samson, Drolet, & Pare , 2002). They generate spike doublets or  bursts in response to hyperpolarizing current pulses, whereas depolarizing currents elicit trains of action potentials with variable degrees of spike frequency accommodation. LTB neurons typically also display inward rectification, reflecting activation of hyperpolarization-activated cationic current (IH)(Dumont et al., 2002), mediated by hyperpolarization-activated cyclic nucleotide-gated (HCN 1–4) channels (Benarroch, 2013). The opening of HCN channels elicits membrane depolarization toward the threshold for action potential generation and reduces membrane resistance and thus the magnitude of excitatory and inhibitory postsynaptic potentials (Benarroch, 2013). 
 
 Like neurons in striatum, neuronal cells in CeA also express wide selection of neuropeptides and markers, including protein kinase C`r knitr::asis_output("\U03B4")` (PKC`r knitr::asis_output("\U03B4")`), somatostatin (SOM), corticotropin-releasing factor (CRF), oxytocin receptors (OR), enkephalin and others [@cassell_1989; @haubensak_2010].
 Of these, PKC`r knitr::asis_output("\U03B4")` and SOM are the two most highly expressed and largely non-overlapping neurochemical markers [@haubensak_2010; @hunt_2017; @li_2013].
@@ -329,14 +334,18 @@ Moreover, these neurons respond to the fear conditioning with an increase in act
 Hence, it is plausible that these distinct populations fulfill different functional roles. <!-- We suggest that PKC␦-expressing and SOM- expressing neurons form heterogeneous populations of neurons, with different populations contributing to different behavioral outcomes. Understanding the flow of information through the CeA and its outputs, in a behaviorally specific and relevant manner, will be a challenge for future experiments. Hunt 2017 // Electrophysiologically, PKC`r knitr::asis_output("\U03B4")`-expressing neurons which are predominantly SOM(+), have been described as either LF or regular spiking (RS). 
 Following fear conditioning, PKC`r knitr::asis_output("\U03B4")`-positive neurons respond to the CS with an increase in activity, and have therefore been called CeL~ON~ neurons (Ciocchi et al., 2010; Haubensak et al., 2010), which likely also correspond to SOM-... negative?! check neurons (Yu et al., 2016). -->
 
+An  overlap between peptidergic phenotypes and the electrophysiological subtypes of CeA neurons is largely unknown.
+
 ##### Connectivity
 ###### Afferents
 
 <!-- BLA -> CeL -->
 As  mentioned  above,  the  GABAergic neurons  of  the  amygdala  modulate  activation  of  the  CeA  via projections from the BLA (Nuss, 2015). <!--Although pieces of information are continually emerging, these circuit analyses reveal a rich interaction between the LA and CeL — and among neurons within the CeL — in both acquiring and expressing conditioned freezing in response to a fear cue, as well as multiple neural projections from the CeL that may regulate this behavioural response. @janak_2015 /// Accumulating  evidence  demonstrates that   BLA   projections   to   the   CeA   distinctly   alter   motivated behavior (Beyeler et al., 2018).-->
 There are some local preferentially/biased/ <!-- zmienić ... -->
-In particular, whereas LA exclusively projects to CeL, the BA nuclei additionally make synapses onto CeM neurons [@krettek_1978]. <!-- poprawić jakoś -->
+In particular, whereas LA exclusively projects to CeL, the BA nuclei additionally make synapses onto CeM neurons [@krettek_1978]. <!-- poprawić jakoś // In a classical top-down scenario, the CeL receives input from the lateral amygdala and the CeM from the basolateral amygdala (Duvarci and Pare2014) that carries processed sensory infor-mation of negative salience (Namburi et al.2015).-->
 Moreover, neurons in the LA preferentially make synapses onto ITC cluster located dorsally (ITC~DM~), whereas ventral medial cluster (ITC~VM~) receives input from BL and BM principal cells [@royer_2000]. <!-- poprawić i figure ... -->
+
+In addition, recent research has dem-onstrated that the CeL receives sensory input not only from the lateral amygdala but also directly from the parabrachial nucleus (nociception; Bernard and Bandler1998), the insula(interoception; Shi and Cassell1998; Guzmán-Ramos andBermúdez-Rattoni2012), the paraventricular thalamus (fearmemory; Do-Monte et al.2015; Penzo et al.2015), and thehypothalamic paraventricular nucleus (Knobloch et al.2012). 
 
 
 At cellular level, the BLA was shown to form functional excitatory synapses onto both SOM-containing cells in the CeL, and the excitatory strength of these synapses greatly increased as a result of fear conditioning (Li 2013). <!-- zmienić // These neurons receive direct synaptic input from the lateral amygdala, which is potentiated following auditory fear conditioning (Li et al., 2013). // -->
@@ -377,21 +386,66 @@ multiple inputs to CeL:PKCδ+ neurons that are activated by anorexigenic signals
 
 <!--CeA receives projections from BNST [@Gungor2015]-->
 
+
+The CeA also receives noxious stimulus information from brainstem regions ( 38 , 39 ). <!-- 38.  Bernard JF, Huang GF, Besson JM (1992): Nucleus centralis of the amygdala and the globus pallidus ventralis: Electrophysiological evidence for an involvement in pain processes. J Neurophysiol 68: 551 – 569.  39.  Neugebauer V, Galhardo V, Maione S, Mackey SC (2009): Forebrain pain mechanisms. Brain Res Rev 60:226 – 24 -->
+
 <!-- neuromodulators-->
 Similar to BLA, CeA nucleus is strongly innervated<!--moze nie, skoro też ekspresjonują?--> by neuromodulators such as oxytocin <!--citations-->, dopamine <!-- citations-->, acetylocholine [@washburn_1992], norepinephrine [@faber_2002], serotonin <!--citations--> and opioids <!--citations?-->. <!-- jakoś inaczej// This picture is more complex when added a role of neuromodulators. //  more citations and figure!!!!!!!!!!!!!!!!!!!--><!-- Neurons in CeL and CeM express many neuropeptides (Gray and Magnuson 1987, 1992; Woodhams et al. 1983) that likely modulate fast inhibitory and excitatory neurotransmission (Kash et al. 2015; McElligott and Winder 2009).  zmienić --> 
 Specifically, hypothalamic axon terminals release oxytocin onto CeL neurons, resulting in their increased excitability [@knobloch_2012]. 
 Moreover,  when these terminals are stimulated during fear conditioning, the freezing behavior is attenuated [@knobloch_2012]. <!--it leads to attenuation of freezing behavior ///  poprawić this is especially the case for.. -->
 
+Activation of CeM is sufficient to induce freezing responses, whereasinactivation of CeL alone produces unconditioned freezing, indicating that CeM is under tonic inhibitory control from CeL interneurons (Ciocchi et al., 2010;Gozzi et al., 2010;Pape, 2010). CeL also contains populations of projections neu-rons, some of which control cortical activity via basal cholinergic neurons and can shift fear responses from freezing behavior toward an active escape (Gozzi et al., 2010).
+
+The peptidergic neurons are not entirely mutually exclusive. In the rat CeA, neurons expressing CRF reside in CeL(Pomrenze et al., 2015) and approximately half of them are immunoreactive for DYN (Marchant, Densmore, &Osbo  rne, 2007) and SOM (Pomrenze et al., 2015). To the contrary, neurons expressing ENK do not overlap withDYN (Marchant et al., 2007) or CRF (Day, Curran, Watson, & Akil, 1999;Marchant et al., 2007;Veinante, Stoe  ckel, & Freund-Mercier, 1997) but do overlap with NT (Day et al., 1999;Roberts et al., 1982) and PKCδexpressing neurons in the CeL (Haubensak et al., 2010). Accordingly, PKCδandCRF neurons belong to nonoverlapping neuronalpopulations (Pomrenze et al., 2015), but nearly all CRF neurons in the CeL coexpress striatal-enriched protein tyrosinephosp hatase (STEP) (Dabrowska et al., 2013).
+
+For example, optogenetic stimulation of CRF neurons in rat CeL produces cFos expression in non-CRF neurons in the CeL (Pomrenze et al., 2015), an effect dependent on CRF receptor type 1 (CRFR1). CRF has been also  shown to increase the frequency of spontaneous excitatory postsynaptic currents (sEPSCs) in the rat (Ji, Fu, Adwa  nikar, & Neugebauer, 2013) and mouse CeL (Silberman & Winder, 2013a) through its action on CRFR1 and CRFR2. 
+
+
 It is widely accepted that the midbrain dopamine (DA) neurons are critical for the reward-related behaviors. Recent studies have shown that the centromedial nucleus of the amygdala (CeMA) has a distinct role in regulating reward-related behaviors. 
 
 The CeM is the major output nucleus of the amygdala and plays a pivotal role in mediating anxiety-promoting behavioral responses via its inhibitory projections to downstream targets14 , 15. The CeM receives excitatory inputs from threat-encoding projection neurons in the BLA and inhibitory inputs from the CeL, and the extent of CeM output and hence of anxiety behavior is determined  by  the  balance  between  these  two inputs16 , 26 , 27. [@babev_2018]
 
+Notably, CRF and SOM cells also receive distinct afferentin  puts from the BLA and ventral hippocampus (vHPC), respectively (Fadok et al., 2017).
+
+The CeA also receives input from the BNST ( 56 ), important for anxiety regulation, and is sensitized by glucocorticoid feedback following hypothalamic-pituitary-adrenal (HPA) axis activation ( 57 , 58 ),
+
 ###### Intrinsic connectivity 
+
+activation of CRF neurons in the CeL promotes an active defensive behavior (flight) in contrast to neighboring SOM neurons, which were shown to mediate passive fear responses (freezing) (Fadok et al., 2017). Accordingly, selective silencing of CRF, but not SOM or PKCδ-e xpressing neurons inthe CeL, completely abolishes conditioned flight behavior. Notably, the resultant behavioral output was dependent on the strength of mutual inhibitory connections between CRF and SOM neurons in the CeL. Whereas CRF neurons provide GABAergic inhibitory input to both SOM and PKCδneurons in the CeL, CRF neurons receive input mainly fromSOM rather than PKCδneurons (Fig. 3)(Fadok et al., 2017). 
+
+In the intrinsic neuronal network of the CeA, CRF neurons serve as inhibitory interneurons and provide inhibitorycontrol of other CeL neurons, including SOM and PKCδneurons (Fadok et al., 2017) and, to a lesser extent, other CRFneuron  s (Partridge et al., 2016).
+
+Also, in rat CeL, optogenetic stimulation of CRFneuron s evokes GABAAreceptor-dependent synaptic transmission in approximately half of non-CRF neurons inthe CeL (Pomrenze et al., 2015). However, after optogenetic stimulation of CRF neurons, increased cFos expressionwas observed in non-CRF neurons of rat CeL, an effect that could be prevented by blocking CRFR1. These results suggest that CRF neurons provide both inhibitory (via GABA) and excitatory (via CRFR1) information in the CeL (Pomrenze et al., 2015)
+
+Here, CRF and SOM neuronswer  e identified as mutually exclusive neuronal populations mediating distinct behavioral outcomes (Fadok et al., 2017). How  ever, this is in contrast with a more recent study showing high levels of co-localization between CRF and SOM neu-rons in mouse CeL, but not CeM (McCullough, Morrison, Hartmann, Carlezon, & Ressler, 2018). Substantial overlap wasals  o found between CRF and SOM neurons in rat CeL (Pomrenze et al., 2015). Although functional separation of thesene  uronal populations might not be as apparent, CRF neurons are clearly distinct from neuronal populations expressingPKCδin both mice (Fadok et al., 2017;McCullough et al., 2018) and rat CeL (Pomrenze et al., 2015)(Table 1,Fig. 3).
+
+Chemogenetic stimulation of CeA CRF neurons induced Fos in a similar proportion of non-CRF CeM neurons but a smaller proportion of non-CRF CeL neurons. The CRF1 receptor antagonist R121919 reduced this Fos induction by two-thirds in these regions. These results indicate that CeL CRF neurons provide both local inhibitory GABA and excitatory CRF signals to other CeA neurons, [@pomrenze_2015]
+
+SOM neurons constitute one of a major neuronal population in mouse CeL. They display heterogeneous electro-physiological properties and belong to RS or LF neuron types. SOM neurons have been crucially implicated in the positive modulation of conditioned fear (Fear-ON neurons,Fig. 3)(Li et al., 2013). Selective silencing of SOM neuronsin  SOM-IRES-Cre mice during fear conditioning markedly impairs fear memory, measured as a reduction of freezingbehavior. Activation of SOM neurons, on the other hand, is sufficient to induce freezing in naïve freely moving mice (Li et al., 2013). SOM neurons are largely nonoverlapping with PKCδneurons, which have been identified as Fear-OFFneurons (Haubensak et al., 2010).
+
+Neurons expressing PKCδare localized in the CeL and CeC (Haubensak et al., 2010). They are GABAergic and dis-tinct  from those expressing CRF or DYN; almost half of the PKCδneurons express ENK and more than half expressOTR, which has been implicated in inhibitory gating of CeM (Huber et al., 2005;Viviani et al., 2011).
+
+In fact, similarly toOTR-exp ressing neurons, PKCδneurons project to and inhibit CeM output neurons to the brainstem that control freez-ing and make a connection with other PKCδ-negative neurons in the CeL. The great majority of PKCδneurons wereidentified as LF type, and a small fraction as RS neurons (Haubensak et al., 2010).
+After discriminatory fear conditioning, whereas a group of CeL neurons acquires an excitatory response (Fear-ON neurons), another group of CeL neurons displays a strong inhibitory response to the CS (Fear-OFF neurons). Notably, both ON and OFF CeL neurons inhibit CeM output. Following cued fear conditioning, levels of discrimination between paired vs un-paired cue could be predicted from tonic activity of CeA neurons such as a decrease in tonic activity of CeM output neurons is associated with generalization, whereas decreases in tonic activity of CeL OFF and ON neurons predicted better discrimination, consistent with tonic inhibition of CeM output neurons by both CeL ON and CeL OFF neurons (Haubensak et al., 2010). CeL Fear-OFF neurons largely overlap with neurons expres-sing  PKCδ(Haubensak et al., 2010). Accordingly, optogenetic stimulation of PKCδneurons increases anxiety-likebehavior and fear generalization, and overall degree of fear generalization correlates with spontaneous activity of PKCδneurons (Botta et al., 2015)(
+
+PKCδneuron s are also sensitive to opioids such that 95% of morphine-induced cFos activation in the CeL is found inPKCδneurons (Xiu et al., 2014). Lastly, PKCδneurons are also activated by diverse anorexigenic signals in vivo and arerequired for the inhibition of feeding by these signals. Activation of PKCδneurons in the CeL suppresses food intake(Cai et al., 2014). 
+
+ENK belongs to the family of endogenous opioid peptides and primarily acts via the delta and mu-opioid recep-tors (MOPR) (Mansour, Hoversten, Taylor, Watson, & Akil, 1995). Opioid transmission is crucial for pain perceptionand  analgesia, which plays an important role during a threat or predator confrontation (Helmstetter & Fanselow, 1987; Olson, Olson, Vaccarino, & Kastin, 1998). 
+ Opioid transmission is crucial for pain perceptionand  analgesia, which plays an important role during a threat or predator confrontation (Helmstetter & Fanselow, 1987; Olson, Olson, Vaccarino, & Kastin, 1998). Accordingly, conditioned fear responses (Petrovich et al., 2000), as well as 803.  NEURONAL DIVERSITY OF THE AMYGDALA AND THE BNST
+innate fear responses (Wilson & Junor, 2008) upregulate opioid levels. Chemogenetic activation of ENK neurons pro-duces robust analgesia in mice with sciatic nerve constriction as well as the reduction in anxiety-like behavior(Paretkar & Dimitrov, 2019)(Table 1). The CeA is part of the circuitry mediating hypoalgesia induced by conditionedstimul i or systemic morphine administration (Chieng et al., 2006). In situ hybridization studies demonstrated thatmRNA levels of ENK (but not CRF) increase in CeA neurons (CeL and CeC but not CeM) after rats are placed inan environment that was previously associated with fear conditioning (Petrovich et al., 2000), providing an increasedopioid  tone in a threatening environment (Chieng et al., 2006;Petrovich et al., 2000).
+ERK From CeL and CeC, ENK neurons, similarly to CRFneuron s, send projections to the CeM (Veening, Swanson, & Sawchenko, 1984) and the BNST (Arluison et al.,1994;Roberts et al., 1982), which also expresses high levels of opioid receptors (Mansour et al., 1995).
+
+A single injection of DREADD's ligand CNO decreased the anxiety-like behavior in both, uninjured mice and in mice with neuropathic pain and produced robust analgesia that lasted for 24 h. Furthermore, the activation of Enk neurons by the DREADD ligand led to increased c-Fos expression in PKC-δinterneurons of the CeA and in non-serotonergic neurons in the ventrolateralperiaqueductal gray (vlPAG), a brain structure that is an essential part of the descending pain inhibitory system.  [@paretkar_2019].
+All together, the results of our experiments point to an important role of the CeA Enk neurons in the control ofboth nociception and emotion. 
 
 <!-- CeL -> CeM -->
 Recent study by combining an optogenetic approach with whole-cell patch-clamp recordings<!-- in order to determine the...?--> nicely illustrated that neurons within the CeL are extensively<!--densely--> interconnected, with local connections apparent between all types of neurons, but strongest between like neurons (SOM(+) `r knitr::asis_output("\U2192")`SOM(+) and PKC`r knitr::asis_output("\U03B4")`(+) `r knitr::asis_output("\U2192")` PKC`r knitr::asis_output("\U03B4")`(+))[@hunt_2017]. <!-- ZMIENIĆ JESZCZE BARDZIEJ -->
 Moreover, by combining tracing, optogenetic, and electrophysiological techniques,<!--using similar approaches?--> it was demonstrated that both types of CeL neurons mainly unidirectionally project to CeM [@haubensak_2010; @jolkkonen_1998; @li_2013a; @petrovich_1997]. <!-- lepiej napisać i BRAKUJE cytowania @Cocchi2010] // substantial unidirectional connections between the CeL and the CeM (McDonald, 1982; Grove, 1988)-->
 Neurons in both regions also make extensive local connections (McDonald, 1982; Sun and Cassell, 1993; Jolkkonen and Pitkänen, 1998), with local glutamate excitation of CeL neurons evoking IPSCs in neighboring neurons (Lopez de Armentia and Sah, 2004). <!-- zmienić, poprawić, usunąć, zobaczyć cytowania? -->
+
+Following Pavlovian fear conditioning, neuronal activity of the CeL is required for the fear acquisition, whereas activity in the CeM is required for the expression of conditioned fear responses (Ciocchi et al., 2010)
+Activation of CeM is sufficient to induce freezing responses, whereas inactivation of CeL alone produces unconditioned freezing, indicating that CeM is under tonic inhibitory control from CeL interneurons (Ciocchi et al., 2010;Gozzi et al., 2010;Pape, 2010). CeL also contains populations of projections neurons, some of which control cortical activity via basal cholinergic neurons and can shift fear responses from freezing behavior toward an active escape (Gozzi et al., 2010). 
+
 
 Although both subtypes of CeL neurons inhibit one another and both project to the CeM52,53 , CeLON neurons respond to a fear CS at a shorter latency than CeLOFF52, suggesting that conditioned fear responses occur following activation of CeLON neurons that inhibit CeLOFF neurons projecting to CeM output neurons53 , thereby promoting freezing through disinhibition52,53. <!-- @janak_2015; zmienić-->
 
@@ -413,12 +467,26 @@ In particular, CeM cells that project to the periaqueductal gray (PAG) are conta
 It should be noted that many of the OR+ CeL neurons also express PKC<!--delta--> but not SOM and conversely for OR- CeL neurons (Haubensak et al., 2010; Li et al., 2013).
 
 
+
+
 ###### Efferents 
 
+The CeAMis the major output nucleus of the amygdala and projects to regions that produce behavioral and physiologic responses to emotionally relevant events ( 49 – 51 ), but more recent data suggest the CeALalso sends GABAergic projections to behavioral and physiologic effector regions ( 52 ).
+
+
+We detected major projections from CeL CRF neurons to parabrachial nuclei and the locus coeruleus, dorsal and ventral BNST, and more minor projections to lateral portions of the substantia nigra, ventral tegmental area, and lateral hypothalamus [@pomrenze_2015].
 <!-- JAKIEŚ INTRO? The basolateral nuclear complex (BNC), the subject of this chapter, is characterized by extensive interconnections with higher order cortical areas in the prefrontal, temporal, insular, and hippocampal cortices. -->
 On the output side, the targets of the amygdala are extremely diverse, however the CeM is widely accepted to be the main output nuclei. <!-- zmienić/// The CeA network then receives signals from the BLA and computes the inhibitory GABAergic output to various brain areas. -->
 
 Indeed, nearly all brainstem projections of the amygdala are sent from CeM (Hopkins and Holstege 1978; Petrovich and Swanson 1997; Veening et al. 1984). <!-- Indeed, CeA supplies most amygdala projections to the brainstem nuclei that generate the behavioral and visceral correlates of conditioned fear, including the PAG, parabrachial nuclei, solitary nucleus, and DVC (Hopkins and Holstege, 1978). /// Neurons from parabranchial area (PB) receives inputs from CeA [@Bester1995]  -->
+From CeM, separate neuronal populations project to the ventrolateral periaqueductal gray (vlPAG), where theymodulate freezing behavior, and to the dorsal vagal complex (DVC), where they modulate cardiovascular responses (Viviani et al., 2011). These two populations of CeM projection neurons also differ in their electrophysiological prop-erties, CeM-PAG projecting neurons are more depolarized at rest and have lower membrane resistance but highermembrane capacitance in comparison to CeM-DVC projecting neurons. The average spiking frequencies of CeMPAG projecting neurons are also significantly higher than CeM-DVC neurons. Notably, OT selectively inhibits CeM neurons projecting to PAG such as activation of OTR increased GABA transmission in CeM-PAG but not in CeM-DVC projecting neurons (Viviani et al., 2011). 
+
+In  addition to dense inputs to the adjacent CeM, CeL sends projections via the stria terminalis to the BNST, to the hindbrain parabrachial nucleus (Petrovich et al., 2000), and to basal cholinergic neurons (Gozzi et al., 2010).
+
+In  addition to CeM output neurons (Haubensak et al., 2010), a subpopulation of CeL neurons projects to cholinergicneuron s in the basal forebrain (substantia innominata and nucleus basalis of Meynert), which control cortical arousal(Gozzi et al., 2010). These two parallel CeA outputs have been shown to control behavioral output balanced betweenpassiv e freezing (via CeM output to the brainstem) and active exploration (via CeL-mediated disinhibition of corticalneurons).
+
+Under regular conditions (freezing ON), CeL projection neurons are tonically inhibited by Type I neurons [putative SOM neurons (Gozzi et al., 2010), which correspond to type B neurons described in rats (Lopez de 81THE CENTRAL AMYGDALA (CeA)
+Armentia & Sah, 2004;Sah & Lopez De Armentia, 2003;Schiess et al., 1999)]. Therefore, brainstem projecting CeMneuron s are disinhibited and induce freezing. However, when Type I neurons are silenced (freezing OFF), Type II,OTR-expressing CeL projection neurons (Huber et al., 2005), putative PKCδneurons (Haubensak et al., 2010), become acti  ve. This leads to (1) inhibition of brainstem-projecting CeM output (freezing OFF), and (2) disinhibition of cholin-ergic neurons, which increase cortical arousal and promote active escape (Gozzi et al., 2010;Tsetsenis et al., 2007)(Fig. 3)
 
 <!-- PAG Keeping in mind that CeA is .... -->
 Specifically, CeM is the sole source of amygdala projections to the periaqueductal gray, which generates freezing (LeDoux et al. 1988), the most common index of conditioned fear. 
@@ -426,9 +494,13 @@ Moreover, CeM neurons fire at high rates during fear-inducing conditioned stimul
 
 <!-- BNST -->
 Other amygdala outputs thought to contribute to conditioned fear include projections to BNST (Dong et al., 2001) and various hypothalamic nuclei (Pitkanen, 2000). <!-- CEA provides an important GABAergic input to the BNST, one that has been implicated as a critical pathway in the central stress system (Jasnow et al., 2004; Walker and Davis, 2008).-->
+Following fear conditioning, CRF neurons undergo plasticity, which allows them to selectively respond to threatpredictive cues. CRF neurons then enhance the excitability of another population of neurons in the CeA, via a CRFR1dependent mechanism, and this process is critical for the proper discrimination of threat-predictive cues (Sanford et  al., 2017). As CeL also sends substantial CRF projection to the BNST (Petrovich & Swanson, 1997), activation of the BNST-projecting CRF neurons might affect sustained fear- and anxiety-related behaviors (Lee & Davis, 1997). Indeed, selec  tive optogenetic silencing of CRF release from the CeA to the BNST during contextual fear acquisition disrupts sus-tained fear responses, measured as freezing behavior (Asok et al., 2018)(
 
 <!-- hypothalamus and brainstem -->
 Inhibitory  GABAergic  neurons  project  from  the  CeA  to  the hypothalamus  and  brainstem  (Jongen-Rêlo  and  Amaral,  1998).
+
+<!-- locus coruleus -->
+In mouse CeA, CRF neurons have alsobeen  implicated in the modulation of anxiety (Paretkar & Dimitrov, 2018). For example, chemogenetic activation of CRFneurons was sufficient to increase anxiety-like behavior measured in the elevated plus-maze (EPM,Table 1). Specific acti-va  tion of locus coeruleus (LC)-projecting CeA CRF neurons had a similar anxiogenic effect (Table 1 )(Paretkar &D  imitrov, 2018).
 
 <!-- neuromodulatory?? -->
 Finally, the amygdala can also indirectly influence the excitability of the entire prosencephalon<!-- przód mózgu --> via its projections to neuromodulatory cell groups (releasing acetylcholine, noradrenaline [NA], and dopamine [DA]) of the basal forebrain and brainstem (Steriade and Pare, 2007).
@@ -445,6 +517,8 @@ Imaging studies in humans and multidisciplinary work in animals collectively sug
  
 <!-- synapses? -->
 As with the majority of cells in the striatum, but in contrast to BLA, projections from the CeA are predominantly GABAergic (for a review: @sah_2003).<!-- może zmienić bardziej? -->
+
+The CeA integrates cortical and sensory inputs with innervation from “ downstream ” brainstem regions (  50 ), including 1) the ventral tegmental area, important for reward and synthesis of forebrain dopamine; 2) the locus coeruleus (LC) and nucleus tractus solitarius, important for stress response, autonomic function, and synthesis of brain norepinephrine; and 3) the periaqueductal gray (PAG), critical for pain processing.
  
 ### Summary of amygdala structure and connectivity
 
@@ -462,6 +536,10 @@ These findings contribute to our better understanding of functional and behavior
 <!--  Moreover,  the BLA,  the  CeA,  and  their  connections  play  a  crucial  role  in  the modulation GABAergic control in the amygdala. These amygdala GABAergic  neurons  are  hence  adequately  positioned  to  play  a central  role  in  the  regulation  of  stress.  However, @jie_2018-->
 
 Thus, multiple plastic systems, and especially those integrating GABAergic neurons, could act in concert to encode aspects of stimulus associations in the amygdala.
+
+The central amygdala (CeA) functions as an integrative hub that converts emotionally relevant sensory information about the  external  and  internal  environment  into  behavioral and physiologic responses. <!-- ja bym to bardziej napisała ogólnie o amygdali... -->
+
+Amygdala microcircuitry is critical for emotional processing, especially for interpretation of emotionally relevant stimuli or the attachment of emotional relevance to otherwise neutral stimuli (i.e., learning). Amygdala microcircuitry receives and integrates complex multimodal information to produce behavioral responses. Amygdala dysfunction is implicated in both anxiety disorders (  53 ) and substance abuse ( 30 ). 
 
 ### Amygdala and its crosstalk with immune system
 <!-- raczej we wcześniejszym rozdziale...-->
@@ -563,3 +641,15 @@ Another emerging principle is that plasticity of inhibitory synapses and interne
 
 <!-- PAVLOVIAN CONDITIONING 
 In the classic Pavlovian fear-conditioning paradigm, subjects learn to associate a neutral sensory stimulus (conditioned stimulus [CS]), such as a tone, with an aversive stimulus (unconditioned stimulus [US]), such as a foot shock. After several pairings, the CS acquires an aversive property, which can elicit fear responses even in a different context. This fear learning requires the integration of sensory information about the CS and US from specific thalamic and cortical areas by the amygdala. -->
+
+<!-- opioids and CeA 
+ ENK belongs to the family of endogenous opioid peptides and primarily acts via the delta and mu-opioid recep-tors (MOPR) (Mansour, Hoversten, Taylor, Watson, & Akil, 1995). Opioid transmission is crucial for pain perceptionand  analgesia, which plays an important role during a threat or predator confrontation (Helmstetter & Fanselow, 1987; Olson, Olson, Vaccarino, & Kastin, 1998). Accordingly, conditioned fear responses (Petrovich et al., 2000), as well as
+ 
+ -->
+ 
+ <!-- CeA
+ 
+ The central amygdala is hence more than just a passive gateway conveying information from the basolateral amygdala to the brainstem and hypothalamus; it also plays a role in fear learning (Wilensky et al.2006;Keiferetal.2015). Furthermore, 
+ 
+ 
+ Furthermore, thecentral amygdala controls synaptic plasticity underlying learn-ing in the lateral amygdala, by conveying information about the unconditioned stimulus in Pavlovian fear conditioning.However, this seems to concern an indirect control, as direct connections from the central to the lateral amygdala have not been found (Yu et al.2017). -->

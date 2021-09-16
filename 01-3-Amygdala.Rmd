@@ -267,7 +267,7 @@ However, auditory input to ITC~MP~ neurons is strong from thalamus and weak from
 Those neurons receive projections from BLA and mainly target more ventrally located ITCs and the CeA, forming an inhibitory interface<!--gate--> between the BLA and CeA [@busti_2011; @marowsky_2005; @royer_2000]. <!-- Notably, infralimbic prefrontal (IL) input to mITC neurons is thought to play a key role in fear extinction. /// Here, we show that mpITCs receive convergent sensory thalamic and cortical inputs that undergo fear learning-related changes and are dynamically modulated via presynaptic GABABreceptors recruited by GABA released from the mpITC network. @ascede_2015--><!--It is tempting to speculate that similar to their medial counterparts, these intercalated neurons modulate cortical inputs to the BLA. Similar to BLA connections pattern, neurons in ITC cluster located dorsolaterally (ICMMD) send more projections to the CeM than CeL, whereas the opposite tendency was observed in dorsally located ITC mass [@Royer1999; @Pare1993] /// The mpITCs receive excitatory inputs from BLA and mainly target more ventrally located ITCs and the CeA, thus, functioning as an inhibitory gate for the information flow between BLA and CeA ( Busti et al., 2011; Duvarci and Pare, 2014; Ju  ̈ ngling et al., 2008; Royer et al., 1999, 2000 ) /// Auditory input to medial ITC neurons is strong from thalamus but weak from cortex  [@strobel_2015] -->
 Interestingly, within this cluster, there are neurons that are mutually activated by BLA principal neurons and inhibit those cells [@asede_2015].
 In addition, ITC~PM~ neurons were suggested to directly inhibit ITC~VM~ cluster, resulting in disinhibition of the CeA and thereby facilitation of fear responses [@busti_2011; @royer_2000], demonstrating that intercalated neurons not only are interconnected within each cluster, but also between clusters. <!-- jeszcze bardziej zmienić // The  vmITC  has  been  proposed  to  be  directly  inhibited  by  the mpITC leading to disinhibition of the CeM and facilitation of fear responses (Royer et al., 2000; Busti et al., 2011).--><!--In addition, intercalated neurons are interconnected  within each cluster as well as between clusters, at least between dorsal and ventral medial clusters [].  CITATIONS //   within each ITC cluster,  --><!--form GABAergic reciprocal synapses onto other intercalated cell /// [@Geracitano2012; @Royer2000]dodać cytowania--> 
-Hence, intercalated cell clusters are parts of feedforward, feedback, and disinhibiting inhibitory circuits and modulate amygdala-related behaviors, especially by gating CeA output.<!--Among mpITCs, we identify cells that inhibit but are also mutually activated by BLA principal neurons. Thus, mpITCs take part in fear learning-modulated feedforward and feedback inhibitory circuits to simultaneously control amygdala input and output nuclei. Our findings place mpITCs in a unique position to gate acquired amygdala-dependent behaviors via their direct sensory inputs. -->
+Hence, intercalated cell clusters are parts of feedforward, feedback, and disinhibiting inhibitory circuits and modulate amygdala-related behaviors, especially by gating CeA output.<!--Among mpITCs, we identify cells that inhibit but are also mutually activated by BLA principal neurons. Thus, mpITCs take part in fear learning-modulated feedforward and feedback inhibitory circuits to simultaneously control amygdala input and output nuclei. Our findings place mpITCs in a unique position to gate acquired amygdala-dependent behaviors via their direct sensory inputs. /// Moreover, neurons in the LA preferentially make synapses onto ITC cluster located dorsally (ITC~DM~), whereas ventral medial cluster (ITC~VM~) receives input from BL and BM principal cells [@royer_2000]. <!-- poprawić i figure ... -->
 
 <!-- mPFC inhibits conditioned fear via feedforward inhibition of Ce output neurons. 
 Recording extracellularly from physiologically identified brainstem-projecting Ce neurons, we tested the effect of mPFC prestimulation on Ce responsiveness to synaptic input. 
@@ -277,76 +277,48 @@ Thus, our findings support the idea that mPFC gates impulse transmission from th
 #### Central amygdala {#CeAstructure}
 
 Central amygdala (CeA) is a GABAergic nucleus comprised of capsular (CeC), lateral (CeL), medial (CeM) and intermediate (CeI) divisions [@jolkkonen_1998; @mcdonald_1982a; @sah_2003]; however, the classification of these regions is inconsistent. <!-- inne cytowanie? problem z nim bo takiego nie ma  [@Cassell1986].--><!--Importantly, the capsular region of the CeA appears to overlap with intercalated cell clusters [@mcdonald_1982a; @pape_2010] and will be hereafter referred to as ITCs. raczej błędne -->
-Often the CeL and CeC are considered together as CeL [@duvarci_2014]. 
-However, CeA is commonly divided into the CeL and CeM divisions and there is a sparse number of investigations regarding CeI and CeL as a functionally and anatomically distinct subdivisions [@ciocchi_2010; @duvarci_2014; @haubensak_2010]. <!-- sprawdzić cytowania....bo nie rozumiem.... Therefore, in this dissertation, the latter classification will be used. odwołanie się do figury!!!!-->
-Of note, in some papers, CeA, together with the bed nucleus of the stria terminalis (BNST), is also considered to be a part of extended amygdala due to their similar neuronal phenotypes and intra-connectivity patterns with other brain regions, along with their dense inter-connectivity [@fox_2015; @sah_2003]. 
-However, BNST is out of the scope of this dissertation and will not be discussed here. <!-- + and nucleus accumbens shell [  27 ]) that exhibit similar cytoarchitecture, overlapping afferents and efferents, and strong interconnectivity ( 28 , 29 ). @gilpin_2015 Krettek JE, Price JL (1978): A description of the amygdaloid complex in the rat and cat with observations on intra-amygdaloid axonal connections. J Comp Neurol 178:255 – 280.  29.  Dong HW, Petrovich GD, Watts AG, Swanson LW (2001): Basic organization of projections from the oval and fusiform nuclei of the bed nuclei of--> 
+Often the CeL and CeC are considered together as CeL [@duvarci_2014]. <!--However, CeA is commonly divided into the CeL and CeM divisions and there is a sparse number of investigations regarding CeI and CeL as a functionally and anatomically distinct subdivisions [@ciocchi_2010; @duvarci_2014; @haubensak_2010].  sprawdzić cytowania....bo nie rozumiem.... Therefore, in this dissertation, the latter classification will be used. odwołanie się do figury!!!!-->
+Of note, in some papers, CeA, together with the bed nucleus of the stria terminalis (BNST) and nucleus accumbens shell, is also considered to be a part of extended amygdala due to their similar neuronal phenotypes and intra-connectivity patterns with other brain regions, along with their dense inter-connectivity (@krettek_1978 and for a review: @fox_2015, @gilpin_2015, @sah_2003). 
+However, here we focus mainly on the CeA. <!-- wcześniej BNST is out of the scope of this dissertation and will not be discussed here.--> 
 
 ##### Neuronal composition
 
-Contrary to the BLA, CeA is considered as a main output nucleus [@ciocchi_2010; @haubensak_2010; @hou_2016].
+Contrary to the BLA, CeA is considered as a main output nucleus [@ciocchi_2010; @haubensak_2010; @hou_2016]. <!-- nie wiem czy dobre cytowania-->
 Neurons within this nucleus are diverse group of GABAergic interneurons, forming functional subclasses based on their morphological, electrophysiological, and neurochemical features, as well as connectivity and *in vivo* patterns of activity.<!-- figure /// with different functional and molecular features. //  -->
 Morphologically, they are reminiscent of striatal medium spiny neurons [@mcdonald_1993; @sun_1993], further supporting the notion of different developmental origins of the BLA and the CeA [@medina_2004; @waclaw_2010]. 
-Precisely, CeL neurons mainly have similar medium spiny neurons-like morphology,  <!--with numerous branches with high density of-->
-On the other hand, CeM neurons have a large soma, dendrites with few branches with low density of dendritic spines [@cassell_1989; @mcdonald_1982a]. <!--[@Marina1999; @Hall1972-->
+More precisely, CeL neurons mainly have similar medium spiny neurons-like morphology,  <!--with numerous branches with high density of-->, whereas CeM neurons have a large soma, dendrites with few branches with low density of dendritic spines [@cassell_1989; @mcdonald_1982a]. <!--ZOBACZYĆ !!! [@Marina1999; @Hall1972-->
+Based on neuronal electrophysiological firing profiles<!--response to current injections-->, two major types have been described in the CeA: (1) late-firing neurons (LF), display a pronounced delay before onset of the first action potential (100-200 ms) in response to depolarizing somatic current injections, mediated by K~v1~-dependent slowly inactivated D-type K^+^ currents [@hou_2016], and (2) regular-spiking neurons (RS), generating repetitive firing spikes [@dumont_2002; @lopezdearmentia_2004], both accounting for nearly 90% of all neurons in this region.<!-- CeL or CeA in general? -->
+The remaining types do not exceed more than 10% of whole CeA neuronal population and are:<!--inny czasownik?--> (3) fast-spiking cells and (4) low-threshold bursting cells [@marina_1999]. <!-- figure--><!--,which are predominantly in CeL-->  <!-- figure? --><!-- exhibiting a substantial delay to action potential (AP) initiation in response to depolarizing somatic current injections. // Although late firing (LF) neurons are very rare in rat CeL and CeM (Dumont et al., 2002), nearly all neurons in rat CeC  are classified as LF type (Chieng, Christie, & Osborne, 2006). These neurons are characterized by a noticeable delay between the beginning of depolarizing current injection and firing onset (Dumont et al., 2002).  -->
+<!-- Although late firing (LF) neurons are very rare in rat CeL and CeM (Dumont et al., 2002), nearly all neurons in rat CeC  are classified as LF type (Chieng, Christie, & Osborne, 2006). nowsze cytowania i przez to lepsze informacje ile % i gdzie --><!--proportion? Regular spiking neurons (RS) constitute the majority of neurons in rat CeL. --><!-- Like LTB neurons, RS cells also display variable degrees of time-dependent inward rectification (IHcurrent).However, in contrast to LTB cells, these neurons do not show spike bursts in response to hyperpolarizing current pulses (Dumont et al., 2002). -->
+Fast-spiking cells are characterized by a high input resistance and action potential frequency (>40 Hz) with no accommodation [@dumont_2002], as their counterparts in the cortex, the hippocampus or the BLA. <!-- The fourth,fast-spiking (FS) neuron type is also rare in rat CeA and is characterized by high firing rates with no spike frequency adaptation (Dumont et al., 2002). -->
+Moreover, their action potentials are significantly briefer with a half-width of around 0.6 ms compared with > 1 ms in other cell types in CeA [@dumont_2002]. <!-- citations? -->
+<!-- They also have higher frequency of spontaneous synaptic potentials (sEPSPs) than ?. citations? -->
+The fourth, low-threshold bursting neuron type, is endowed with T-type calcium channels, contributing to characteristic spike bursts or spike doublets generation in response to depolarizing current pulses, eliciting high degree of spike frequency accommodation, whereas those neurons generate rebound spikes after hyperpolarizing current step [@dumont_2002; @hou_2016]. <!--ZMIENIĆ BARDZIEJ!!!! citations? // They generate spike doublets or  bursts in response to hyperpolarizing current pulses, whereas depolarizing currents elicit trains of action potentials with variable degrees of spike frequency accommodation. --><!-- From all four types, low threshold bursting (LTB) neurons constitute the majority of CeM neurons (Dumont, Martina, Samson, Drolet, & Pare , 2002). // LTB neurons typically also display inward rectification, reflecting activation of hyperpolarization-activated cationic current (IH)(Dumont et al., 2002), mediated by hyperpolarization-activated cyclic nucleotide-gated (HCN 1–4) channels (Benarroch, 2013). The opening of HCN channels elicits membrane depolarization toward the threshold for action potential generation and reduces membrane resistance and thus the magnitude of excitatory and inhibitory postsynaptic potentials (Benarroch, 2013). -->
 
-Based on neuronal electrophysiological firing profiles<!--response to current injections-->, two major types have been described in the CeA: (1) late-firing neurons (LF) and (2) regular-spiking neurons (RS), both accounting for nearly 90% of all neurons in this region.
-The remaining types do not exceed more than 10% of whole CeA neuronal population and are:<!--inny czasownik?--> (3) fast-spiking cells and (4) low-threshold bursting cells [@marina_1999]. <!-- figure-->
-
-<!-- description of Late Firing neurons-->
-LF neurons display a pronounced delay before onset of the first action potential (100-200 ms) in response to depolarizing somatic current injections. <!-- figure? --><!-- exhibiting a substantial delay to action potential (AP) initiation in response to depolarizing somatic current injections. -->
-It is thought that this characteristic delay<!--synonym--> is mediated by K~v1~-dependent slowly inactivated D-type K^+^ currents [@hou_2016; @martina_1999].
-Although late firing (LF) neurons are very rare in rat CeL and CeM (Dumont et al., 2002), nearly all neurons in rat CeC  are classified as LF type (Chieng, Christie, & Osborne, 2006). These neurons are characterized by a noticeable delay between the beginning of depolarizing current injection and firing onset (Dumont et al., 2002).
-
-<!-- description of Regular Spiking neurons -->
-generating repetitive firing spikes [@dumont_2002; @lopezdearmentia_2004].
-Regular spiking neurons (RS) constitute the majority of neurons in rat CeL. Like LTB neurons, RS cells also display variable degrees of time-dependent inward rectification (IHcurrent). However, in contrast to LTB cells, these neurons do not show spike bursts in response to hyperpolarizing current pulses (Dumont et al., 2002). 
-
-<!-- description of fast-spiking -->
-Fast-spiking cells are characterized by a high input resistance and action potential frequency (>40 Hz) with no accommodation, as their counterparts in the cortex, the hippocampus or the BLA. <!-- citations? -->
-Their action potentials are significantly briefer with a half-width of around 0.6 ms compared with > 1 ms in other cell types in CeA. <!-- citations? -->
-They also have higher frequency of spontaneous synaptic potentials (sEPSPs) than ?. <!-- citations? -->
-<!--  CeA neurons display aspiny morphology. which one? citations? -->
-<!--These neurons likely correspond to local-circuit cells.  which one? -->
-<!-- neuromarkers and morphology? -->
-<!-- more about channels -->
-The fourth,fast-spiking (FS) neuron type is also rare in rat CeA and is characterized by high firing rates with no spike frequency adaptation (Dumont et al., 2002). 
-
-<!-- description of bursting -->
-Low-threshold bursting cells are endowed with T-type calcium channels, contributing to characteristic spike bursts. <!-- citations? -->
-One of their characteristics is the presence of rebound spikes after hyperpolarizing current step [@dumont_2002; @hou_2016]. <!-- poprawić to zdanie  fig -->
-<!-- neuromarkers? -->
-<!-- more about channels -->
-From all four types, low threshold bursting (LTB) neurons constitute the majority of CeM neurons (Dumont, Martina, Samson, Drolet, & Pare , 2002). They generate spike doublets or  bursts in response to hyperpolarizing current pulses, whereas depolarizing currents elicit trains of action potentials with variable degrees of spike frequency accommodation. LTB neurons typically also display inward rectification, reflecting activation of hyperpolarization-activated cationic current (IH)(Dumont et al., 2002), mediated by hyperpolarization-activated cyclic nucleotide-gated (HCN 1–4) channels (Benarroch, 2013). The opening of HCN channels elicits membrane depolarization toward the threshold for action potential generation and reduces membrane resistance and thus the magnitude of excitatory and inhibitory postsynaptic potentials (Benarroch, 2013). 
-
-Like neurons in striatum, neuronal cells in CeA also express wide selection of neuropeptides and markers, including protein kinase C`r knitr::asis_output("\U03B4")` (PKC`r knitr::asis_output("\U03B4")`), somatostatin (SOM), corticotropin-releasing factor (CRF), oxytocin receptors (OR), enkephalin and others [@cassell_1989; @haubensak_2010].
-Of these, PKC`r knitr::asis_output("\U03B4")` and SOM are the two most highly expressed and largely non-overlapping neurochemical markers [@haubensak_2010; @hunt_2017; @li_2013].
-
-
-Considering the expression of immunohistochemical markers, together with their electrophysiological properties and synaptic connections, two groups of CeA neurons have emerged: those expressing protein kinase C `r knitr::asis_output("\U03B4")` or somatostatin (SOM). <!-- -->
+Similar to neurons in striatum, neuronal cells in CeA also express wide selection of neuropeptides and markers, including SOM, protein kinase C`r knitr::asis_output("\U03B4")` (PKC`r knitr::asis_output("\U03B4")`), corticotropin-releasing factor (CRF), oxytocin receptors (OR), enkephalin (ENK), and others [@cassell_1989; @haubensak_2010]. <!-- An  overlap between peptidergic phenotypes and the electrophysiological subtypes of CeA neurons is largely unknown. -->
+<!-- There is no clear distinction based on expression of these peptides and electrophysiological features, except for PKC`r knitr::asis_output("\U03B4")`-expressing neurons form relatively homogeneous group, which is comprised mainly of late-firing cells (~85%).-->
+Based on the expression of immunohistochemical markers, together with their electrophysiological properties and synaptic connections, two groups of CeA neurons have emerged<!-- więcej...-->: those expressing protein kinase C `r knitr::asis_output("\U03B4")` or somatostatin (SOM).<!--  // Of these, PKC`r knitr::asis_output("\U03B4")` and SOM are the two most highly expressed and largely non-overlapping neurochemical markers [@haubensak_2010; @hunt_2017; @li_2013]. -->
 <!--Of note, PKC`r knitr::asis_output("\U03B4")` marker is specific to CeA. -->
-PKC`r knitr::asis_output("\U03B4")`+ neurons form relatively homogeneous group, which is comprised mainly of late-firing cells (~85%).<!-- and these neurons are predominantly described as late-firing (LF) neurons -->
+PKC`r knitr::asis_output("\U03B4")`-expressing neurons form relatively homogeneous group, which is comprised mainly of late-firing cells (~85%).<!-- and these neurons are predominantly described as late-firing (LF) neurons -->
 These neurons display a reduced firing<!--+rate?--><!--activity--> following a fear conditioning protocol and thus are often referred as CeL~off~ cells. <!-- Following fear conditioning, these neurons respond to the CS with a reduction in activity and have therefore been called Ce- LOFF cells (Ciocchi et al., 2010; Haubensak et al., 2010). -->
 
-In contrary, most cells that are absent of PKC`r knitr::asis_output("\U03B4")` marker are SOM-immunopositive.
+In contrary, most cells that are absent of PKC`r knitr::asis_output("\U03B4")` marker express SOM [@li_2013].
 However, those cells are classified as both late-firing (40%) or regular-spiking types (60%). <!-- może jakoś inaczej napisać  // A second population of CeL neurons, which is largely separate from the PKC(+) population, expresses somatostatin [somatostatin-positive (SOM+); Li et al., 2013].-->
 Moreover, these neurons respond to the fear conditioning with an increase in activity, and have, therefore, been termed CeL~ON~ neurons [@ciocchi_2010; @haubensak_2010; @hou_2016; @li_2013]. 
-Hence, it is plausible that these distinct populations fulfill different functional roles. <!-- We suggest that PKC␦-expressing and SOM- expressing neurons form heterogeneous populations of neurons, with different populations contributing to different behavioral outcomes. Understanding the flow of information through the CeA and its outputs, in a behaviorally specific and relevant manner, will be a challenge for future experiments. Hunt 2017 // Electrophysiologically, PKC`r knitr::asis_output("\U03B4")`-expressing neurons which are predominantly SOM(+), have been described as either LF or regular spiking (RS). 
+Hence, it is plausible that these distinct populations fulfill different functional roles. <!-- We suggest that PKC␦-expressing and SOM- expressing neurons form heterogeneous populations of neurons, with different populations contributing to different behavioral outcomes. Hunt 2017 // Electrophysiologically, PKC`r knitr::asis_output("\U03B4")`-expressing neurons which are predominantly SOM(+), have been described as either LF or regular spiking (RS). 
 Following fear conditioning, PKC`r knitr::asis_output("\U03B4")`-positive neurons respond to the CS with an increase in activity, and have therefore been called CeL~ON~ neurons (Ciocchi et al., 2010; Haubensak et al., 2010), which likely also correspond to SOM-... negative?! check neurons (Yu et al., 2016). -->
 
-An  overlap between peptidergic phenotypes and the electrophysiological subtypes of CeA neurons is largely unknown.
+<!-- inne markery-->
 
 ##### Connectivity
+
+The central amygdala is more than just a passive gateway conveying information from the basolateral amygdala to downstream structures manifesting behavior and understanding the flow of information through the CeA and its outputs is a challenge. <!-- zmienić i poprawić... // The central amygdala is hence more than just a passive gateway conveying information from the basolateral amygdala to the brainstem and hypothalamus; it also plays a role in fear learning (Wilensky et al.2006;Keiferetal.2015). //  Understanding the flow of information through the CeA and its outputs, in a behaviorally specific and relevant manner, will be a challenge for future experiments. //  multiple neural projections from the CeL that may regulate this behavioural response.-->
 ###### Afferents
 
 <!-- BLA -> CeL -->
-As  mentioned  above,  the  GABAergic neurons  of  the  amygdala  modulate  activation  of  the  CeA  via projections from the BLA (Nuss, 2015). <!--Although pieces of information are continually emerging, these circuit analyses reveal a rich interaction between the LA and CeL — and among neurons within the CeL — in both acquiring and expressing conditioned freezing in response to a fear cue, as well as multiple neural projections from the CeL that may regulate this behavioural response. @janak_2015 /// Accumulating  evidence  demonstrates that   BLA   projections   to   the   CeA   distinctly   alter   motivated behavior (Beyeler et al., 2018).-->
+As  mentioned  above,  the  GABAergic neurons  of  the  amygdala  modulate  activation  of  the  CeA  *via* projections from the BLA (Nuss, 2015). <!--Although pieces of information are continually emerging, these circuit analyses reveal a rich interaction between the LA and CeL — and among neurons within the CeL — in both acquiring and expressing conditioned freezing in response to a fear cue, as well as multiple neural projections from the CeL that may regulate this behavioural response. @janak_2015 /// Accumulating  evidence  demonstrates that   BLA   projections   to   the   CeA   distinctly   alter   motivated behavior (Beyeler et al., 2018).-->
 There are some local preferentially/biased/ <!-- zmienić ... -->
-In particular, whereas LA exclusively projects to CeL, the BA nuclei additionally make synapses onto CeM neurons [@krettek_1978]. <!-- poprawić jakoś // In a classical top-down scenario, the CeL receives input from the lateral amygdala and the CeM from the basolateral amygdala (Duvarci and Pare2014) that carries processed sensory infor-mation of negative salience (Namburi et al.2015).-->
-Moreover, neurons in the LA preferentially make synapses onto ITC cluster located dorsally (ITC~DM~), whereas ventral medial cluster (ITC~VM~) receives input from BL and BM principal cells [@royer_2000]. <!-- poprawić i figure ... -->
-
-In addition, recent research has dem-onstrated that the CeL receives sensory input not only from the lateral amygdala but also directly from the parabrachial nucleus (nociception; Bernard and Bandler1998), the insula(interoception; Shi and Cassell1998; Guzmán-Ramos andBermúdez-Rattoni2012), the paraventricular thalamus (fearmemory; Do-Monte et al.2015; Penzo et al.2015), and thehypothalamic paraventricular nucleus (Knobloch et al.2012). 
-
+In particular, while the lateral part of the BLA exclusively projects to CeL, CeM neurons receives also input from the basal nucleus [@duvarci_2014; @krettek_1978]. <!-- poprawić jakoś // In a classical top-down scenario, the CeL receives input from the lateral amygdala and the CeM from the basolateral amygdala (Duvarci and Pare2014) that carries processed sensory infor-mation of negative salience (Namburi et al.2015).-->
 
 At cellular level, the BLA was shown to form functional excitatory synapses onto both SOM-containing cells in the CeL, and the excitatory strength of these synapses greatly increased as a result of fear conditioning (Li 2013). <!-- zmienić // These neurons receive direct synaptic input from the lateral amygdala, which is potentiated following auditory fear conditioning (Li et al., 2013). // -->
 
@@ -355,11 +327,13 @@ Importantly, this fear-related behavior was dependent on feed-forward inhibition
 
 Thus, a glutamatergic BLA projection to the CeA can promote anxiolytic behavior. <!-- poprawić -->
 
-when ChR2 was selectively expressed in CeL:PKC`r knitr::asis_output("\U03B4")`^+^ neurons to allow their direct photoactivation, increased time in the open arms of the EPM was observed 58. <!-- cai 2014  from janak_2015-->
-These data support the notion that a population of BLA neurons preferentially excites CeL:PKC`r knitr::asis_output("\U03B4")`^+^ neurons that lead to reduced anxiety, perhaps through the projection from CeL:PKC`r knitr::asis_output("\U03B4")`^+^ to CeM output neurons. <!-- nie ogarniam ... -->
-Alternatively, the CeL:PKC`r knitr::asis_output("\U03B4")`^+^ neuronal projection to the BNST, also implicated in anxiety [@kim_2013], could mediate anxiolysis. <!-- zmienić -->
-These studies show that the BLA–CeA pathway does not universally promote aversive states. <!-- zmienić -->
- 
+<!-- synapses, receptor? -->
+neurons in both the CeM and CeL receive glutamatergic inputs from the lateral and basal nucleus which activate both AMPA and NMDA receptors [(Royer and M de A 2004)]]. <!-- zmienić -->
+Excitatory inputs to CeL neurons also express presynaptic metabotropic glutamate receptors (186). <!-- zmienić i sah2003-->
+As in many other regions of the central nervous system  (132, 207), activation of these receptors leads to depression of the synaptic input. <!-- zmienić i sah2003-->
+The activity of these receptors is modulated following kindling and chronic cocaine treatment 186 . <!-- zmienić i sah2003-->
+These findings suggest that alterations in synaptic efficacy at inputs to the CeA may be involved in the changes seen in epilepsy and behavioral sensitization to cocaine. <!-- zmienić i sah2003-->
+
 <!-- przejście do ITC? -->
 It should be noted that CeA<!--, the most crucial target of BLA projections,--> is innervated by BLA principal cells either directly by forming glutamatergic synapses on CeA neurons (@krettek_1978, @lopezdearmentia_2004, see Section \@ref(CeA)) or indirectly *via* GABAergic ITC~m~ neurons<!--explain-->, leading to feed-forward inhibition [@jngling_2008, @royer_1999].<!-- poprawić to zdanie -->
 
@@ -369,32 +343,32 @@ The two GABA receptor types appear to be localized to different GABAergic inputs
 Thus, inputs from the intercalated neurons that form synapses onto the dendrites of CeL neurons express both GABA~A~- and GABA~C~-like receptors. <!--zmienić, cytowanie sah2003-->
 These results suggest that the different GABA receptors may play distinct roles in the local circuitry of the central amygdala (47).<!--zmienić, cytowanie sah2003-->
 
-<!-- synapses, receptor? -->
-neurons in both the CeM and CeL receive glutamatergic inputs from the lateral and basal nucleus which activate both AMPA and NMDA receptors [(Royer and M de A 2004)]]. <!-- zmienić -->
-Excitatory inputs to CeL neurons also express presynaptic metabotropic glutamate receptors (186). <!-- zmienić i sah2003-->
-As in many other regions of the central nervous system  (132, 207), activation of these receptors leads to depression of the synaptic input. <!-- zmienić i sah2003-->
-The activity of these receptors is modulated following kindling and chronic cocaine treatment 186 . <!-- zmienić i sah2003-->
-These findings suggest that alterations in synaptic efficacy at inputs to the CeA may be involved in the changes seen in epilepsy and behavioral sensitization to cocaine. <!-- zmienić i sah2003-->
 
-<!-- parabranchail nucleus and appetite? -->
-Besides their previously described inputs from either BLA or ITCs, CeA is also innervated by structures outside the amygdaloid complex. <!-- zmienić ? -->
-For example, stimulation of axons from parabrachial nucleus projecting to CeL was reported to results in suppression of appetite  [@carter_2013], suggesting that CeL has many parallel circuits. 
-In mice, reducing the activity of CeL:PKCδ+ neurons was found to block decreased feeding stimulated by sickness or unpalatable tastes 58. <!-- [@janak_2015] zmienić -->
-Conversely, optogenetic excitation of CeL:PKCδ+ neurons dramatically decreased feeding in both hungry and sated mice, and this was not a confound of reduced activity or increased anxiety. <!-- [@janak_2015] zmienić -->
-These results indicate that CeL:PKCδ+ neurons suppress feeding in response to anorexigenic stimuli58. <!-- [@janak_2015] zmienić -->
-multiple inputs to CeL:PKCδ+ neurons that are activated by anorexigenic signals, including the BLA, the parabrachial nucleus (PBN) and the insula (IN)58 <!-- [@janak_2015] zmienić cytowanie do którego się odwołuje cai_2014-->
+
+In addition to inputs from BLA and ITCs, CeL was shown to receive input not only from the BLA, but also directly from extra-amygdala areas. <!-- Besides their previously described inputs from either BLA or ITCs, CeA is also innervated by structures outside the amygdaloid complex. // In addition, recent research has demonstrated that the CeL receives sensory input not only from the lateral amygdala but also directly from the parabrachial nucleus (nociception; Bernard and Bandler1998), the insula(interoception; Shi and Cassell1998; Guzmán-Ramos andBermúdez-Rattoni2012), the paraventricular thalamus (fearmemory; Do-Monte et al.2015; Penzo et al.2015), and thehypothalamic paraventricular nucleus (Knobloch et al.2012). /// . -->
+For instance, the paraventricular nucleus of the thalamus (PVT), a region that is activated by both physical and psychological stressors<!-- stress sensor 1-3-->, was demonstrated to send projections to the CeL,  preferentially innervating SOM-containing neurons [@domonte_2015; @penzo_2015]. 
+Stimulation of those afferents resulted in the facilitation of SOM neurons activity and overall inhibition within CeL, which are critical for fear-conditioning and expression [@domonte_2015; @penzo_2015]. <!-- Selective inactivation of CeL-projecting PVT neurons prevented fear-conditioning /// PVT neurons preferentially innervate SOM neurons in the CeL,and stimulation of PVT afferents facilitated SOM neuron activity and promoted intra-CeL inhibition, two processes that are critical for fear learning and expression // Retrieval at late time points also activated PVT neurons projecting to the central nucleus of the amygdala, and silencing these projections at late, but not early, time points induced a persistent attenuation of fear. Thus,the PVT may act as a crucial thalamic node recruited into cortico-amygdalar networks for retrieval and maintenance of long-term fear memories. @do-monte_2012 // In addition to the connection with CeM, the CeL sends long-range projections to innervate extra-amygdala areas.-->
+
+<!-- neuromodulators + fear conditioning-->
+Similar to BLA, CeA nucleus is strongly innervated<!--moze nie, skoro też ekspresjonują?--> by neuromodulators such as oxytocin <!--citations-->, dopamine <!-- citations-->, acetylcholine [@washburn_1992], norepinephrine [@faber_2002], serotonin <!--citations--> and opioids <!--citations?-->. <!-- jakoś inaczej// This picture is more complex when added a role of neuromodulators. //  more citations and figure!!!!!!!!!!!!!!!!!!!--><!-- Neurons in CeL and CeM express many neuropeptides (Gray and Magnuson 1987, 1992; Woodhams et al. 1983) that likely modulate fast inhibitory and excitatory neurotransmission (Kash et al. 2015; McElligott and Winder 2009).  zmienić --> 
+Specifically, hypothalamic axon terminals release oxytocin onto CeL neurons, resulting in their increased excitability [@knobloch_2012]. 
+Moreover,  when these terminals are stimulated during fear conditioning, the freezing behavior is attenuated [@knobloch_2012]. <!--it leads to attenuation of freezing behavior ///  poprawić this is especially the case for.. -->
+
+Besides its well-known role in fear-conditioning, CeL, especially its PK`r knitr::asis_output("\U03B4")`-expressing neurons, has revealed to be involved in feeding <!-- sending anorexigenic signals. -->
+For example, stimulation of axons from parabrachial nucleus (PBN) directly projecting to CeL was reported to results in suppression of appetite  [@carter_2013].<!--, suggesting that CeL has many parallel circuits. // trochę inaczej to napisać // multiple inputs to CeL:PKCδ+ neurons that are activated by anorexigenic signals, including the BLA, the parabrachial nucleus (PBN) and the insula (IN) [@cai_2014]--> 
+It is consistent with another study, where optogenetic excitation of those neurons dramatically decreased feeding in both hungry and sated mice, and this was not a confound of reduced activity or increased anxiety [@cai_2014]. <!-- zmienić mocnooooo // [@janak_2015] These results indicate that CeL:PKCδ+ neurons suppress feeding in response to anorexigenic stimuli [@cai_2014]. -->
+Conversely, in mice, reducing the activity of PK`r knitr::asis_output("\U03B4")`-immunopositive neurons in CeL was reported to reverse the effects of decreased feeding induced by sickness or unpalatable tastes [@cai_2014]. <!-- [@janak_2015] was found to block decreased feeding stimulated by sickness or unpalatable tastes-->
+Hence, these findings indicate that this particular subtype of neurons in CeL suppresses feeding in response to anorexigenic stimuli from PBN, but also from insula (IN) <!-- nie wiem czy tego nie połączyć.. // multiple inputs to CeL:PKCδ+ neurons that are activated by anorexigenic signals, including the BLA, the parabrachial nucleus (PBN) and the insula (IN) [@cai_2014]-->
+
 
 <!--CeA receives projections from BNST [@Gungor2015]-->
 
 
 The CeA also receives noxious stimulus information from brainstem regions ( 38 , 39 ). <!-- 38.  Bernard JF, Huang GF, Besson JM (1992): Nucleus centralis of the amygdala and the globus pallidus ventralis: Electrophysiological evidence for an involvement in pain processes. J Neurophysiol 68: 551 – 569.  39.  Neugebauer V, Galhardo V, Maione S, Mackey SC (2009): Forebrain pain mechanisms. Brain Res Rev 60:226 – 24 -->
 
-<!-- neuromodulators-->
-Similar to BLA, CeA nucleus is strongly innervated<!--moze nie, skoro też ekspresjonują?--> by neuromodulators such as oxytocin <!--citations-->, dopamine <!-- citations-->, acetylocholine [@washburn_1992], norepinephrine [@faber_2002], serotonin <!--citations--> and opioids <!--citations?-->. <!-- jakoś inaczej// This picture is more complex when added a role of neuromodulators. //  more citations and figure!!!!!!!!!!!!!!!!!!!--><!-- Neurons in CeL and CeM express many neuropeptides (Gray and Magnuson 1987, 1992; Woodhams et al. 1983) that likely modulate fast inhibitory and excitatory neurotransmission (Kash et al. 2015; McElligott and Winder 2009).  zmienić --> 
-Specifically, hypothalamic axon terminals release oxytocin onto CeL neurons, resulting in their increased excitability [@knobloch_2012]. 
-Moreover,  when these terminals are stimulated during fear conditioning, the freezing behavior is attenuated [@knobloch_2012]. <!--it leads to attenuation of freezing behavior ///  poprawić this is especially the case for.. -->
 
-Activation of CeM is sufficient to induce freezing responses, whereasinactivation of CeL alone produces unconditioned freezing, indicating that CeM is under tonic inhibitory control from CeL interneurons (Ciocchi et al., 2010;Gozzi et al., 2010;Pape, 2010). CeL also contains populations of projections neu-rons, some of which control cortical activity via basal cholinergic neurons and can shift fear responses from freezing behavior toward an active escape (Gozzi et al., 2010).
+
+
 
 The peptidergic neurons are not entirely mutually exclusive. In the rat CeA, neurons expressing CRF reside in CeL(Pomrenze et al., 2015) and approximately half of them are immunoreactive for DYN (Marchant, Densmore, &Osbo  rne, 2007) and SOM (Pomrenze et al., 2015). To the contrary, neurons expressing ENK do not overlap withDYN (Marchant et al., 2007) or CRF (Day, Curran, Watson, & Akil, 1999;Marchant et al., 2007;Veinante, Stoe  ckel, & Freund-Mercier, 1997) but do overlap with NT (Day et al., 1999;Roberts et al., 1982) and PKCδexpressing neurons in the CeL (Haubensak et al., 2010). Accordingly, PKCδandCRF neurons belong to nonoverlapping neuronalpopulations (Pomrenze et al., 2015), but nearly all CRF neurons in the CeL coexpress striatal-enriched protein tyrosinephosp hatase (STEP) (Dabrowska et al., 2013).
 
@@ -408,6 +382,11 @@ The CeM is the major output nucleus of the amygdala and plays a pivotal role in 
 Notably, CRF and SOM cells also receive distinct afferentin  puts from the BLA and ventral hippocampus (vHPC), respectively (Fadok et al., 2017).
 
 The CeA also receives input from the BNST ( 56 ), important for anxiety regulation, and is sensitized by glucocorticoid feedback following hypothalamic-pituitary-adrenal (HPA) axis activation ( 57 , 58 ),
+
+when ChR2 was selectively expressed in CeL:PKC`r knitr::asis_output("\U03B4")`^+^ neurons to allow their direct photoactivation, increased time in the open arms of the EPM was observed 58. <!-- cai 2014  from janak_2015-->
+These data support the notion that a population of BLA neurons preferentially excites CeL:PKC`r knitr::asis_output("\U03B4")`^+^ neurons that lead to reduced anxiety, perhaps through the projection from CeL:PKC`r knitr::asis_output("\U03B4")`^+^ to CeM output neurons. <!-- nie ogarniam ... -->
+Alternatively, the CeL:PKC`r knitr::asis_output("\U03B4")`^+^ neuronal projection to the BNST, also implicated in anxiety [@kim_2013], could mediate anxiolysis. <!-- zmienić -->
+These studies show that the BLA–CeA pathway does not universally promote aversive states. <!-- zmienić -->
 
 ###### Intrinsic connectivity 
 
@@ -466,12 +445,14 @@ More recently, it was found that distinct subtypes of CeL neurons contact CeM ce
 In particular, CeM cells that project to the periaqueductal gray (PAG) are contacted by CeL neurons expressing oxytocin receptors (OR+), whereas CeM cells projecting to the dorsal vagal complex (DVC) receive inputs from OR- CeL neurons (Viviani et al., 2011). 
 It should be noted that many of the OR+ CeL neurons also express PKC<!--delta--> but not SOM and conversely for OR- CeL neurons (Haubensak et al., 2010; Li et al., 2013).
 
-
+Activation of CeM is sufficient to induce freezing responses, whereas inactivation of CeL alone produces unconditioned freezing, indicating that CeM is under tonic inhibitory control from CeL interneurons (Ciocchi et al., 2010;Gozzi et al., 2010;Pape, 2010). CeL also contains populations of projections neu-rons, some of which control cortical activity via basal cholinergic neurons and can shift fear responses from freezing behavior toward an active escape (Gozzi et al., 2010).
 
 
 ###### Efferents 
 
 The CeAMis the major output nucleus of the amygdala and projects to regions that produce behavioral and physiologic responses to emotionally relevant events ( 49 – 51 ), but more recent data suggest the CeALalso sends GABAergic projections to behavioral and physiologic effector regions ( 52 ).
+
+In addition to the connection with CeM, the CeL sends long-range projections to innervate extra-amygdala areas. However, the long-range projection CeL neurons have not been well characterized, and their role in fear regulation is unknown. Here we show in mice that a subset of CeL neurons directly project to the midbrain periaqueductal gray (PAG) and the paraventricular nucleus of the thalamus, two brain areas implicated in defensive behavior. These long-range projection CeL neurons are predominantly somatostatin-positive (SOM) neurons, which can directly inhibit PAG neurons, and some of which innervate both the PAG and paraventricular nucleus of the thalamus. [@penzo_2014]
 
 
 We detected major projections from CeL CRF neurons to parabrachial nuclei and the locus coeruleus, dorsal and ventral BNST, and more minor projections to lateral portions of the substantia nigra, ventral tegmental area, and lateral hypothalamus [@pomrenze_2015].
@@ -648,8 +629,4 @@ In the classic Pavlovian fear-conditioning paradigm, subjects learn to associate
  -->
  
  <!-- CeA
- 
- The central amygdala is hence more than just a passive gateway conveying information from the basolateral amygdala to the brainstem and hypothalamus; it also plays a role in fear learning (Wilensky et al.2006;Keiferetal.2015). Furthermore, 
- 
- 
  Furthermore, thecentral amygdala controls synaptic plasticity underlying learn-ing in the lateral amygdala, by conveying information about the unconditioned stimulus in Pavlovian fear conditioning.However, this seems to concern an indirect control, as direct connections from the central to the lateral amygdala have not been found (Yu et al.2017). -->

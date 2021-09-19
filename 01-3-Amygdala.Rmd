@@ -391,109 +391,23 @@ Thus, the CeA output depends not only on the nature and intensity of received in
 <!-- diverse complex inputs --> 
 Taken together, each nuclei receives unique set of multiple inputs from distinct brain regions.<!--In summary, recent studies have demonstrated that the BLA–CeA circuitry is involved in a diverse array of behaviors in addition to those related to fear.  The key to understanding the production of these different behaviors is in the functional anatomy. // receives and integrates complex multimodal information --><!-- These amygdala functions depend upon outputs that modify a variety of endocrine, autonomic, and sensory systems. -->
 The complex pattern of connections together with the balance of activity between them represents a mosaic set of regulatory motifs that orchestrates a distributed neural parallel circuitries. <!--oryginał Our findings show that the balance of activity between ITC clusters represents a unique regulatory motif that orchestrates a distributed neural circuitry, which in turn regulates the switch between high- and low-fear states.  --><!-- Thus, multiple plastic systems, and especially those integrating GABAergic neurons, could act in concert to encode aspects of stimulus associations in the amygdala. -->
-This may enable the amygdala complex to play a crucial role in surprisingly diverse functions, including memory formation, social interactions, affective and parental behavior, and homeostatic control. <!-- , just to list a few (LeDoux, 2000; Phelps et al., 2014) -->
+This may enable the amygdala complex to play a crucial role in surprisingly diverse functions, including emotional memory formation, social interactions, affective and parental behavior, and homeostatic control. <!-- , just to list a few (LeDoux, 2000; Phelps et al., 2014) -->
 Thus, the amygdala functions as an integrative hub that converts emotionally relevant sensory information about the  external  and  internal  environment  into  behavioral and physiologic responses. <!--  jeszcze bardziej zmienić // One of the main amygdala functions is integration of sensory signals to coordinate a range of emotional responses and trigger adaptive behavior (Yu et al., 2016). // Amygdala microcircuitry is critical for emotional processing, especially for interpretation of emotionally relevant stimuli or the attachment of emotional relevance to otherwise neutral stimuli (i.e., learning). Amygdala microcircuitry receives and integrates complex multimodal information to produce behavioral responses.-->
 <!--  Moreover,  the BLA,  the  CeA,  and  their  connections  play  a  crucial  role  in  the modulation GABAergic control in the amygdala. These amygdala GABAergic  neurons  are  hence  adequately  positioned  to  play  a central  role  in  the  regulation  of  stress.  However, @jie_2018-->
 <!-- human and evolution -->
 Finally, as amygdalar circuitry and function are well-conserved across evolution [@jarvis_2005], better understanding the complexity of this circuit using animal models has the potential to be directly relevant to humans.<!-- Consistent with this notion,  /// Imaging studies in humans and multidisciplinary work in animals collectively suggest that CeA structure and function are altered in individuals with anxiety disorders and alcohol use disorder, the end result of which may be disinhibition of downstream “ effector ” regions that regulate anxiety-related and alcohol-related behaviors. --><!-- These findings contribute to our better understanding of functional and behavioral significance of those diverse sets of inputs to the amygdala.--> <!-- Amygdala dysfunction is implicated in both anxiety disorders (  53 ) and substance abuse ( 30 ). -->
 
 ### Amygdala and its crosstalk with immune system
-<!-- raczej we wcześniejszym rozdziale...-->
-Amygdala is considered to be an essential component of the brain circuitry that forms the neural response to systemic immune activation  [@Gaykema2007] and it is involved in sickness behavior [@Dantzer2008, @Goehler2007, @Roozendaal2009]. <!-- dodać cytowania do PhD2-->
-Regarding neuroinflammation circuit, pro-inflammatory cytokines signal the brain mainly through the activation of vagal afferent fibers projecting to the nucleus of the solitary tract (NTS) and then to amygdala [@Goehler2000, @Quan2008]. 
-Therefore, it is important to get better insights into brain activity during acute and chronic immune responses.
-Evidence from many animal studies indicates that LPS significantly increases c-fos expression in the central nucleus of the amygdala (CeA) and, to a lesser extent, in the basolateral nucleus of the amygdala (BLA) [@Engler2011, @Frenois2007, @Vitkovic2000]. 
-Moreover, functional and neuroanatomical studies indicate that peripheral immune activation may also affect amygdala function in humans. 
-For example, depressive-like symptoms and anxiety can be transiently elicited in healthy human subjects by peripheral administration of LPS [@Grigoleit2011, @Harrison2009, @Wright2005]. 
+
+Amygdala is strategically positioned to regulate homeostatic function, and thus, one may speculate that would be involved in processing immune signals. <!-- jakieś lepsze intro... As being strategically positioned to be a hub, amygdala together with playing homeostatic function, one may speculate that i że several evidence i wymienić od 1 2 3-->
+Consistently, evidence from many animal studies indicates that LPS significantly increases c-Fos expression in the CeA and, to a lesser extent, in the BLA [@engler_2011; @frenois_2007].<!--Consistent with this hypothesis, neurons in amygdala were demonstrated to respond to systemic immune activation  [@gaykema_2007] and mediate sickness behavior [@dantzer_2008]. /// + wytłumaczenie + HPA axis // is considered to be an essential component of the brain circuitry .. //  The NTS and VLM provide immune-responsive input to all four regions, via direct, predominantly catecholaminergic, projections to the PVN, the lateral BST, and the CEA, and mostly non-catecholaminergic projections to the PBL. The PBL provides a major LPS-activated input to the BST and CEA. The pattern of LPS-activated catecholaminergic projections from the VLM and NTS to the forebrain is characterized by a strong predominance of VLM input to the PVN, whereas the NTS provides a greater contribution to the BST. These findings indicate that direct and indirect pathways originate in the caudal brainstem that propagate immune-related information from the periphery with multiple levels of processing en route to the forebrain nuclei, which may allow for integration of brain responses to infection.-->
+Moreover, regarding neuroimmune circuit, it is well-known that pro-inflammatory cytokines signal the brain mainly through the activation of vagal afferent fibers projecting to the nucleus of the solitary tract (NTS) and then to the amygdala, predominantly its central part (for a review: @vitkovic_2000). <!--more recent reviews? or add this [Goehler2000, Quan2008].   Therefore, it is important to get better insights into brain activity during acute and chronic immune responses. -->
+Importantly, functional and neuroanatomical studies indicate that peripheral immune activation may also affect amygdala function in humans. 
+For example, depressive-like symptoms and anxiety can be transiently elicited in healthy human subjects by peripheral administration of LPS [@harrison_2009]. 
 These findings suggest that in humans, similar to rodents, the amygdala is involved in the integration of behavioral and immune responses.
-A recent study documented that LPS-induced anxiety in mice as well as a pronounced increase in sEPSC frequency resulting in the hyperexcitability of BLA neurons were mediated through the CXCL12/CXCR4 interaction [@Yang2016]. 
-This suggests that alterations of CXCL12 signaling in this area play critical roles in the development of anxiety induced by systemic inflammation, and that CXCR4 may be a potential therapeutic target for inflammation-induced anxiety, a key component of a sickness behavior. 
-Several studies have indicated the relative abundance of a CX3CL1 receptor within the amygdala complex, including the BLA and the CeA [@Nishiyori1998, @Tarrozo2003], suggesting a possible influence on amygdala function. 
-Although CX3CL1 also modulate synaptic activity and has been shown to modulate glutamate and GABA release in the hippocampus [@Ragozzino2006] and dorsal raphe nucleus [@Heinisch2009a], its neuromodulatory role in other brain centers remains unknown. 
-Surprisingly, so far there have been no neurophysiological studies of CX3CL1 effects in the amygdala.
+<!--A recent study documented that LPS-induced anxiety in mice as well as a pronounced increase in sEPSC frequency resulting in the hyperexcitability of BLA neurons were mediated through the CXCL12/CXCR4 interaction [@yang_2016]. 
+Of note, anxiety is a component of sickness behavior -->
+Moreover, several studies have indicated the relative abundance of a CX3CL1 and CXCL12 receptors within the amygdala complex, including the BLA and the CeA [@nishiyori_1998; @tarozzo_2003]<!-- dodać CXCR4, CXCR7 CYTOWANIA-->, suggesting a functional roles of these chemokines on amygdala circuit. 
 
-<!-- zdania z dupy: 
-
-Furthermore, V1a  arginine-vasopressin  receptor  mRNA  was  only  found  in GABAergic neurons, demonstrated by complete co-localization of V1a transcripts in CeA neurons expressing GAD transcripts  (Hernández   et   al.,   2016).  
-
-In extinction of auditory fear conditioning, rats learn that a tone no longer predicts the occurrence of a footshock.
-
-The PV group includes the FS basket and chandelier cells ( Figure 1 ; Table 1 ). Chandelier INs, also known as axo-axonic neurons, are the most recognizable INs in terms of morphology ( DeFelipe et al., 2013 ) due to the unique candlestick-like synaptic terminal arrays they form to specifically target the axon initial segment of pyramidal cells. In contrast, the much more numerous basket cells make perisomatic ‘‘basket’’ terminals on the soma and proximal dendrites of PCs and INs. By producing hyperpolarizing and/or shunting inhibition ( Fishell and Rudy, 2011 ) close to the site of action potential generation, both types powerfully influence the output of their target neurons.
-
-Theta stimulation of CA1 ventral hippocampal fibers activates amygdala interneurons
-Theta-evoked inhibition attenuates to broaden excitation on principal neurons 
-Feedforward inhibition gates heterosynaptic plasticity via GABABreceptors 
--->
-
-<!-- intra-nuclear
-
- Virtually all amygdalar nuclei, including all of the BNC nuclei, have projections to the central amygdalar nucleus (CeA), which provides outputs to subcortical regions involved in various components of fear behavior (Davis, 1992;LeDoux, Iwata, Cicchetti, & Reis, 1988). The CeA does not have projections back to the BNC.
- 
- The lateral ICNs, located near the external capsule, provide feedforward inhibition to BL PNs from cortical regions (Marowsky, Yanagawa, Obata, & Vogt, 2005).
- The medialICNs, located between the BL and the CeA, have reciprocal connections with BL PNs, and project to the central nucleus (Asede, Bosch, Luthi, Ferraguti, & Ehrlich, 2015;Marowsky et al., 2005). -->
-
- <!-- ITC
- Anatomical data suggests that the local feedback interneurons synapse on the soma and proximal dendritic compartments of principal neurons (McDonald and Betette, 2001), whereas LPC feedforward interneurons synapse onto distal dendritic processes (Marowskyet  al, 2005; Mulleret  al, 2007). This anatomical arrangement suggests that these synapses might be functionally independent.<!-- zmienić i bardziej do ITCs czy coś... -->
-
-<!-- NA
-Noradrenergic innervation  synapse  onto GABAergic interneurons (Li et al., 2002). NA released from LC terminals activates three distinct classes of adrenoreceptors (AR; a 1, a 2, and ß AR) that have multiple subtypes. 
-In addition to direct enhancement of inhibitory activity by LC afferents, NA enhancement of inhibitory activity in the BLA occurs indirectly. Indeed, activation of ß1 and ß3 ARs in lateral paracapsular (LPCS) interneurons, which are a distinct class of GABAergic interneurons bordering the BLA and external capsule and are thought to provide cortical feedforward inhibition to the BLA (Marowsky et al., 2005), enhances  LPCS  GABAergic  inhibition  of  the  BLA (Silberman et al., 2010, 2012)
-
-Stimulation of afferents from basal forebrain cholinergic neurons leads to the release of ACh, which extensively  regulates  neuronal  excitability  by  acting  on muscarinic (mAChR) and nicotinic (nAChR) acetylcholine receptors, both of which are abundant in the BLA (Mash and Potter, 1986; Swanson et al., 1987; Hill et al., 1993; Zhu et al., 2005; Pidoplichko et al., 2013).-->
-
-<!-- Although the BLA expresses all of mus... types of receptors (e.g., M1–M4, mAChRs, (Mash and Potter, 1986; Cortes et al., 1987; McDonald and Mascagni, 2010)), M1 mAChR is the most common subtype in the amygdala. <!-- citation? 
-
-The cholinergic neurons basal forebrain neurons (Carlsen et al., 1985; Zaborszky et al., 1986; Mascagni and McDonald, 2009), project primarily to dendritic shafts and spines of BLA principal neurons, and innervate PV GABAergic interneurons to a small extent ( ~ 7% of postsynaptic targets; Muller et al., 2011). -->
-<!-- prager 2016 
-
-Activation of DA receptors has also been found to induce rhythmic inhibitory oscillations (Loretan et al., 2004; Ohshiro et al., 2011), although increases in  excitatory  transmission  are  required  to  precede GABAergic interneuronal burst firing (Ohshiro et al., 2011) 
-Although DA fibers synapse onto both GABAergic interneurons and principal neurons, there appears to be a net increase in excitatory activity within the BLA in response to DA application.  zmienić i może przenieść do network ? // Here we show that dopamine gates the induction of LTP in the mouse lateral amygdala by suppressing feedforward inhibition from local interneurons. Our findings provide a cellular mechanism for the dopaminergic modulation of fear conditioning and indicate that suppression of feedforward inhibition represents a key mechanism for the induction of associative synaptic plasticity in the lateral amygdala. [@bissire_2003]-->
-This increase in excitatory activity may be the result of 1) reduced activation of GABAergic interneurons, which occurs when activation of D2 receptors on GABAergic interneurons causes a reduction in the probability of presynaptic quantal release (Seamans et al., 2001); 2) amygdala disinhibition and the subsequent increase in excitatory activity, which may occur when DA suppresses GABA release from PV interneurons onto principal neurons but not interneurons (Chu et al., 2012); or 3) DA increasing the excitatory drive onto disinhibitory interneurons, which would subsequently increase excitatory activity (Kemppainen and Pitkanen, 2000; Bissiere et al., 2003). <!-- zmienić i może przenieść do network ?-->
-
-In  addition, inhibition through the activation of local GABAergic interneurons is  significantly  decreased  when  dopamine  is  released  during heightened  emotional  states  (Mcdonald  et  al.,  1996;  Dallman et   al.,   2003;   Pinto   and   Sesack,   2008).  <!-- zmienić --> 
-
-
-Interestingly, fast-spiking and non-fast-spiking INs displayed differential modulation by glutamate and 5-HT. <!-- zmienić -->
-Furthermore, optical stimulation of 5-HT terminals did not evoke glutamate release onto BLA principal neurons, but inhibited these cells directly *via* activation of 5-HT~1A~ receptors and indirectly *via* enhanced GABA release. <!-- chyba zmienić -->
-For example, by combining optogenetic, electrophysiological and pharmacological approaches, it was shown that while stimulating 5-HT terminals at low frequencies (< 1 Hz) resulted in a short-latency excitation of BLA interneurons, at higher frequencies (10–20 Hz) these cells showed both slow excitation and slow inhibition.
-These findings illustrate<!-- elucidate?--> frequency-dependent, cell-type-specific control over BLA circuitry *via* 5-HT and glutamate, which often co-existed in the same neuron [@sengupta_2017]. <!-- trochę inaczej napisać --><!-- Pharmacological analysis revealed that this effect was mediated by glutamate and not 5-HT because it was abolished by ionotropic glutamate receptor antagonists. 
-Optical stimulation of 5-HT terminals 
-These effects were mediated by 5-HT because they were blocked by antagonists of 5-HT~2A~ and 5-HT~1A~ receptors, respectively.
-These fast glutamate-and slow 5-HT-mediated responses often coexisted in the same neuron. -->
-<!-- Instead, 5-HT3 receptors in this nucleus have been proposed to be present presynaptically on interneuron terminals (103, 104). sah 2003 zmienić-->
-
-<!-- Neuropeptides 
-Administration  of  CRF  into  the  BLA  induced pronounced  increases  in  cFos-ir  in  the  CaMKII-ir  population and altered the activity of GABAergic interneurons (Rostkowski et al., 2013).<!-- neuropeptides? -->
-
-<!--  Heterologous expression of GluR subunits in host cells suggested that these receptors are
-multimeric proteins and that their functional properties depend on the subunit composition -->
-
-<!-- valence
-In order to survive,animals must be able to discriminate dangerous stimuli from those that are safe.
-Without a mechanism for learning specific stimulus-outcome relationships, fear  and  defensive  behavior  broadly generalize to many stimuli and settings. This is a maladaptive state of affairs that may underlie fear and anxiety disorders.
-Under this model, the responses of BLA cells to conditioned stimuli (CSs) and the activity that drives CRs are closely related. We tested the strength of this correlation using a task where rats could emit different CRs in response to the same CSs. At odds with this model, the CS responses and CR-related activity of individual BLA cells were separable. Moreover, while the incidence of valence-coding cells did not exceed chance, at the population level there was similarity between valence coding for CSs and CRs. In fact, both lateral and basolateral neurons concurrently encoded multiple task features and behaviors. Thus, conditioned emotional behaviors may not depend on the recruitment of single cells that explicitly encode individual task variables but from multiplexed representations distributed across the BLA.@kyriasi_2018
---->
-
-<!-- oscillations and hippo - BLA connectivity -->
-<!--  Studies in humans (  Richardson  et al., 2004  ) and rodents (  Maren and Fanselow, 1995  ) indicate  that cooperation between amygdala and hippocampus is critical  for emotional memory formation. This communication involves  the synchronization of neuronal activity at theta (  q  ) frequencies  (4–10 Hz) across the basolateral amygdala complex (BLA)  and the CA1 hippocampal field. In fear conditioning, a model of  emotional memory, animals learn to associate a negative 
-
- Unconditioned animals show hippocampus-related  q  oscillations in BLA at the levels of individual  principal cells and neuron populations (as reflected in local field  potentials, LFPs) (  Pare   ́  and Gaudreau, 1996  ). Amplitude and  power of this rhythm increase after auditory, contextual or social  fear learning (  Jeon et al., 2010; Pare   ́  and Collins, 2000; Seiden-  becher et al., 2003  ). Moreover, the degree of  q  synchrony  between BLA and CA1 after fear conditioning predicts memory  performance (  Popa et al., 2010  ). Precise timing of activity in the  BLA is likely important not only for oscillations. It may also be critical for memory encoding, by selectively assigning emotional  valence to incoming sensory stimuli. [@bienvenu_2012]-->
- 
- <!-- serial model
-  According to the serial circuit model of amygdala function, associative information is conveyed from the LA, following internuclear excitatory projections via the basal and basomedial nuclei to the medial division of the central amygdala (CeM) to generate fear output ( Maren, 2005; Moscarello and LeDoux, 2013 ). Such a model of passive information transfer is challenged by growing evidence that BLA and central amygdala (CeA) can mediate either independent parallel or additional associative functions in aversive conditioning ( Balleine and Killcross, 2006; Jimenez and Maren, 2009; Moscarello and LeDoux, 2013 ). For example, fear-related synaptic and cellular plasticity is observed in the lateral part of the CeA (CeL), but the role of specific afferent pathways is incompletely understood ( Ciocchi et al., 2010; Haubensak et al., 2010; Li et al., 2013; Wilensky et al., 2006 ) -->
-  
-<!-- E/I
-Another emerging principle is that plasticity of inhibitory synapses and interneurons in the amygdala controls acquired fear ( Ehrlich et al., 2009 ). On one hand, regulation of inhibition within the BLA and of specific inhibitory synapses onto BLA principal neurons (PNs) has been implicated in the behavioral suppression of fear following extinction learning ( Chhatwal et al., 2005; Trouche et al., 2013 ). On the other hand, activity of local GABAergic neurons may be regulated by plasticity of their excitatory inputs, both in BLA ( Bauer and LeDoux, 2004; Mahanty and Sah, 1998; Polepalli et al., 2010 ) and CeL ( Fu and Shinnick-Gallagher, 2005; Li et al., 2013; Samson and Pare  ́ ,2005 ). Furthermore, a recent study showed that specific local interneurons within the BLA are differentially recruited during CS-US associations, mediating inhibition and disinhibition of distinct subcellular domains to control fear learning ( Wolff et al., 2014 ). Thus, multiple plastic systems, and especially those integrating GABAergic neurons, could act in concert to encode aspects of stimulus associations in the amygdala. -->
-
-<!-- PAVLOVIAN CONDITIONING 
-In the classic Pavlovian fear-conditioning paradigm, subjects learn to associate a neutral sensory stimulus (conditioned stimulus [CS]), such as a tone, with an aversive stimulus (unconditioned stimulus [US]), such as a foot shock. After several pairings, the CS acquires an aversive property, which can elicit fear responses even in a different context. This fear learning requires the integration of sensory information about the CS and US from specific thalamic and cortical areas by the amygdala. -->
-
-<!-- opioids and CeA 
- ENK belongs to the family of endogenous opioid peptides and primarily acts via the delta and mu-opioid recep-tors (MOPR) (Mansour, Hoversten, Taylor, Watson, & Akil, 1995). Opioid transmission is crucial for pain perceptionand  analgesia, which plays an important role during a threat or predator confrontation (Helmstetter & Fanselow, 1987; Olson, Olson, Vaccarino, & Kastin, 1998). Accordingly, conditioned fear responses (Petrovich et al., 2000), as well as
- 
- -->
- 
- <!-- CeA
- Furthermore, thecentral amygdala controls synaptic plasticity underlying learn-ing in the lateral amygdala, by conveying information about the unconditioned stimulus in Pavlovian fear conditioning.However, this seems to concern an indirect control, as direct connections from the central to the lateral amygdala have not been found (Yu et al.2017). 
- 
-  Freezing is an evolutionarily conserved passive fear  response that has been used extensively to study the neuronal  mechanisms of fear and fear conditioning in rodents4. [@fadok_2017] -->
+<!-- Although CX3CL1 also modulate synaptic activity and has been shown to modulate glutamate and GABA release in the hippocampus [@Ragozzino2006] and dorsal raphe nucleus [@Heinisch2009a], its neuromodulatory role in other brain centers remains unknown. 
+Surprisingly, so far there have been no neurophysiological studies of CX3CL1 effects in the amygdala.-->

@@ -6,6 +6,16 @@ Alternatively: Based on the evidence reviewed above, dissecting the immune modul
 The amygdala, as an essential hub in the brain, integrating information about external and internal environment, is an important player in homeostasis, and mediate a diverse array of functions. 
 Consistently, malfunctions in amygdala circuits have been suggested to underlie many disorders (addition, fear, epilepsy, obesity, pain, ...). <!-- dokończyć-->
 Surprisingly, still little is known about the regulation of immune system and glial cells in this structure.
+
+
+Alternatively2: 
+Receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala<!-- cytowania-->, however their specific distribution is not fully examined. 
+Thus, the first aim of this dissertation was to fully investigate ... 
+Functionally, previous studies have demonstrated complex electrophysiological effects based on, among others, the brain region or neuronal population. <!--and these effect are summarized in section/table?/ -->
+Moreover, at least some of those effects, were mediated by glial cells.
+Accordingly, the next aim of this paper was to dissect the ... <!--- jakoś ładnie opisać --> 
+
+
 Thus, this dissertation aimed to investigate the the modulation of two amygdalar circuits, namely basolateral and central nuclei, by two chosen chemokines.
 I focused on the CXCL12 and CX3CL1 chemokines <!--axes?--> as they are implicated in neurodevelopmental processes, synaptic transmission, neuroimmune responses, glial regulation, and dysfunctions of their axis were reported to share similar characteristics as those in amygdala. <!-- NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology. -->
 
@@ -99,7 +109,3 @@ Aim of the study
 
 <!-- To better understand the holistic ... , both amygdalar nuclei was investigated -->
 
-Receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala<!-- cytowania-->, however their specific distribution and cellular patterns were not fully examined. 
-Application of ... resulted in different electrophysiological actions, depending on the structure, and are summarized in section ....
-Moreover, glial contribution of at least some of these electrophysiological effects were confirmed. 
-Thus, aims of this dissertation was ... <!-- Dlatego też, pierwszym celem niniejszej pracy było określenie w jaki sposób aktywacja oraz zablokowanie receptora 5-HT7 wpływają na aktywność neuronów serotoninergicznych DRN, jak również w jaki sposób modulacja receptora 5-HT7 wpływa na przekaźnictwo pobudzające oraz hamujące w połączeniach docierających do neuronów grzbietowego jądra szwu szczura. -->

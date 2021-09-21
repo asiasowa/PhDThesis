@@ -4,51 +4,37 @@
 
 
 % \input{tex/params}
-
-header-includes:
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow} % need this for table in Paper 1
-\usepackage[table]{xcolor}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{colortbl}
-\usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
-\usepackage[normalem]{ulem}
-\usepackage{makecell}  
-\doublespacing
-\usepackage{caption} %# Insert the package used by gt
-\usepackage{fontspec}
-\setmainfont{Calibri}
 \usepackage{alltt} % for knitr code output
+\usepackage{longtable}
 \usepackage{etoolbox} % for toggle
-%\usepackage[left=1.5in,right=1in,top=1in,bottom=1in]{geometry}
-%\usepackage{nomencl} % for the nomenclature (List of Abbreviations)
+\usepackage[left=1.5in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{nomencl} % for the nomenclature (List of Abbreviations)
 \usepackage{amsmath, amsfonts, amssymb, amsthm}
 \usepackage{amsbsy,bm} 
-%\usepackage{lmodern} % Latin modern fonts
-%\usepackage[T1]{fontenc} % font encodings
+\usepackage{lmodern} % Latin modern fonts
+\usepackage[T1]{fontenc} % font encodings
 \usepackage{framed} % for knitr code output
 \usepackage{graphicx}
-% \usepackage[font=doublespacing]{caption} I guess it is already there
+\usepackage{multirow} % need this for table in Paper 1
+\usepackage[font=doublespacing]{caption}
 \usepackage{setspace}
 \usepackage{titlesec}
-%\usepackage{xcolor}% \usepackage[table]{xcolor}
+\usepackage{xcolor}% \usepackage[table]{xcolor}
+\usepackage{float}
 \usepackage{colortbl} % allows coloring of individual cells
-\usepackage{natbib} %- maybe different bibliography, we will see if there will be mistake in the future
+\usepackage{natbib}
 \usepackage{mathtools} % allows split fractions
 %\usepackage{indentfirst} % Indent first paragraph at beginning of section
-%\usepackage{subfig} % This one is required by something else
+\usepackage{subfig} % This one is required by something else
 %\usepackage[titletoc,title]{appendix}
 %\usepackage[tocgraduated]{tocbasic} % This package is still in alpha, but we need it for VU {tocstyle}
+\usepackage{array}
 \usepackage{listings} % Typeset source code listings using LATEX
 %\usepackage{makeidx}
+\usepackage{booktabs}
 %\usepackage[subfigure, titles]{tocloft} % lets us format TOC for VU
 %\usepackage[nottoc,notlof,notlot]{tocbibind}
+\usepackage{pdflscape}
 \usepackage{placeins} % for \FloatBarrier
 % \hypersetup{
 %     bookmarksnumbered=false, % true means bookmarks in left window are numbered
@@ -73,7 +59,7 @@ header-includes:
 \renewcommand{\footrulewidth}{0pt}
 \addtolength{\headheight}{3.0pt} 
 
-%\usepackage[Bjornstrup]{fncychap} %Lenny też dawał radę Bjornstrup
+\usepackage[Sonny]{fncychap} %Lenny też dawał radę Bjornstrup
 
 % \usepackage[pdftex]{graphicx} % Use very cool pictures..
 % \graphicspath{{images/}} 
@@ -276,6 +262,7 @@ header-includes:
 \let\oldmaketitle\maketitle
 \AtBeginDocument{\let\maketitle\relax}
 
+\doublespacing 
 
 %\begin{document}
 % \blinddocument

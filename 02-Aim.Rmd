@@ -1,21 +1,64 @@
 # Aim of the study
 
-Considering described evidence and proposed hypotheses, this dissertation aimed to investigate the functional role of two  representatives of distinct families (CX3C and CXC) of chemokines in main input and output amygdalar nuclei. Therefore, this project can be sub-divided into 4 main groups of experiment (<!--fig-->):
-the present project can be sub-divided into 4 separate, but physiologically and functionally related, parts:   <!-- Considering described evidence and proposed hypotheses, the present studies were focused on two separate but physiologically and functionally related subjects:   -->
+Considering described evidence, this dissertation aimed to investigate the functional role of two  representatives of distinct families (CX3C and CXC) of chemokines in main input and output amygdalar nuclei. Therefore, this project can be sub-divided into 4 separate, but physiologically and functionally related, parts(<!--fig-->): <!-- Considering described evidence and proposed hypotheses, the present studies were focused on two separate but physiologically and functionally related subjects:  /// 4 major groups of experiment -->
 
-* Investigation of electrophysiological actions and cellular distribution of CX3CL1 in the rat basolateral nucleus
+Therefore, the aim of this dissertation was to investigate the modulation of chosen chemokines (CX3CL1 and CXCL12) on two main amygdala circuits: BLA and CeA. 
+whether two representatives of distinct families (CX3C1 and CXC12) of chemokines modulates the synaptic transmission of the input and output amygdalar nuclei and membrane properties of neurons dissect the contribution of glia in those effects. <!--microglial plasticity in the CeA to drive a cascade of downstream cellular events that contribute to the development of stress-induced colonic allodynia and hyperalgesia. -->
 
-* Investigation of electrophysiological actions and cellular distribution of CX3CL1 in the rat central nucleus
+* Investigation of electrophysiological actions and cellular distribution of CX3CL1 and its receptor, CX3CR1, in the rat basolateral nucleus
 
-* Investigation of electrophysiological actions and cellular distribution of CXCL12 in the rat basolateral nucleus
+* Investigation of electrophysiological actions and cellular distribution of CX3CL1 and its receptor, CX3CR1, in the rat central nucleus
 
-* Investigation of electrophysiological actions and cellular distribution of CXCL12 in the rat central nucleus
+* Investigation of electrophysiological actions and cellular distribution of CXCL12 and their receptors, CXCR4 and ACKR3, in the rat basolateral nucleus
+
+* Investigation of electrophysiological actions and cellular distribution of CXCL12 and their receptors, CXCR4 and ACKR3, in the rat central nucleus
 
 To address these issues several research techniques were employed: whole-cell patch-clamp and extracellular recordings *ex vivo*, immunofluorescent staining and <!--dendritic spines-->.
 
-Detailed research objectives addressed in each study, as well as techniques used are listed below:
+Detailed research objectives and hypotheses addressed in each study, as well as techniques used are listed below:
 
-In order to better understand the role of fractalkine signaling
-in microglia physiology and its possible impact on brain development, we studied several functional properties ofmicroglia in acute brain slices from Cx3cr1 knockout mice across the first postnatal weeks (PNWs). We report that the functional properties of microglia undergo dynamic changes during development and that these changes are absent or delayed in mice lacking fractalkine signaling. These data reveal the highly dynamic nature of microglial maturation during brain development and further highlight the importance of fractalkine signaling in this process. Pagani2015
+<!-- In order to better understand the role of CX3CL1 signaling in microglia physiology and its possible impact on brain development, we studied several functional properties of microglia in acute brain slices from Cx3cr1 knockout mice across the first postnatal weeks (PNWs). -->
 
-Therefore, the aim of the current study was to investigate whether chronic psychological stress modulates microglial plasticity in the CeA to drive a cascade of downstream cellular events that contribute to the development of stress-induced colonic allodynia and hyperalgesia. 
+
+
+
+
+Based on the evidence reviewed above, disentangling the functional organization of extrinsic inputs to amygdala neurons is a necessary step to understand the brain circuits underlying emotional memories. 
+In the research presented in this thesis, I focused on two prominent sources of BLA neuromodulation that, to date, have been poorly studied from a mechanistic viewpoint.
+First, I examined the impact of the glutamatergic projection from pyramidal cells of the CA1 region of the vHPC (Chapter 2), a connection that has been suggested to be involved in learning and memory and may be altered in PTSD (Zhang et al., 2015; McDonald and Mott, 2016).
+Second, I investigated the modulation of BLA circuits by 5-HT (Chapter 3 and 4).
+This input regulates emotionality (Asan et al., 2013) and bears clinical significance, because selective serotonin reuptake inhibitors (SSRIs), drugs that increase extracellular 5-HT levels,
+are a widely prescribed medication for PTSD and pathological anxiety (Nemeroff and Owens,
+2002).
+My central hypothesis is that GABAergic neurons of the BA are pivotal targets of these inputs, and their recruitment shapes the activity of PNs, the main output of the BA. In
+Chapter 2, I investigated feedforward INs targeted by CA1 pyramidal cells, while Chapter
+3 concentrates on the impact of 5-HT recruitment of PV+ INs on fear conditioning. Finally, to
+further characterise the GABAergic system in the BLA, I investigated a class of inhibitory
+neurons expressing nNOS (Chapter 4). These cells display an unusual 5-HT modulation
+that appears to be important for their activity across the sleep-wake cycle.
+
+
+<!-- z dupy 
+
+Neuroimmunomodulation
+
+
+
+
+-->
+
+
+
+
+
+
+NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology. <!-- chemokines -->
+
+We targeted CXCL12 and CX3CL1 chemokines <!--axes?--> as they are implicated in neurodevelopmental processes, synaptic transmission, neuroimmune responses, glial regulation, and thus their dysfunctions may lead to ... pathology
+
+The central hypotheses of the research study are: 
+1) Chemokines and/or   chemokine receptors are co-expressed in amygdalar neurons and/or glia.
+2) Chemokines directly alter membrane properties and indirectly  impact the  synaptic activity in the basolateral and/or central amygdala.
+
+The   specific AIMS are designed to test these hypotheses:     
+AIM 1  :     Determine the distribution of chemokines or chemokine receptors in relation to     serotonergic neurons in the midbrain raphe nuclei.     The   co  -  localization of chemokines (SDF  -  1α and fractalkine) and chemokine   receptors (CXCR4 and CX3CR1)   in     5  -  HT   neurons present in the dorsal and median   raphe nuclei (DRN, MRN)     wa  s examined  .      Coronal rat br  ain slices containing the DRN   and MRN   were     selected and immunohistochemically processed using specific primary   antibodies for tryptophan hydroxylase (TPH), the rate limiting enzyme in serotonin   biosynthesis, and for the chemokine     or   chemokine receptor of i  nterest.  Confocal   and   fluorescent   microscopy   wa  s utilized to   investigate     and quantify   co  -  localization   throughout the DRN (dorsomedial (DM), ventromedial (VM),   and   lateral wing (LW)     subdivisions  ) and MRN     (Appendix A)  .  

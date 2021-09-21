@@ -26,57 +26,17 @@ Therefore, based on different nuclei of amygdala and different chemokine axes, t
 4. Investigation of electrophysiological actions and cellular distribution of CXCL12 and their receptors, CXCR4 and ACKR3, in the rat central nucleus
 
 To address these issues, mainly whole-cell patch-clamp and immunofluorescent techniques were employed. <!-- several research techniques were employed: whole-cell patch-clamp and extracellular recordings *ex vivo*, immunofluorescent staining and <!--dendritic spines--><!-- // Considering described evidence and proposed hypotheses, the present studies were focused on two separate but physiologically and functionally related subjects:  /// 4 major groups of experiment -->
-Detailed aims and hypotheses addressed in each study, as well as techniques used are listed below. <!-- The   specific AIMS are designed to test these hypotheses:    -->
+<!--Detailed aims and hypotheses addressed in each study, as well as techniques used are listed below.  The   specific AIMS are designed to test these hypotheses:    -->
 
-*AIM 1:*  Determine the distribution of chemokines or chemokine receptors in relation to cell type in the chosen amygdalar nuclei. 
-
-The   co-localization of chemokines (CXCL12 and CX3CL1) and chemokine   receptors (CXCR4, ACKR3, and CX3CR1)   in  different cell types (neurons, microglia, astrocytes)  present in the amygdala (BLA and CeA) was examined.
+To determine the distribution of chemokines or chemokine receptors in relation to cell type in the chosen amygdalar nuclei, the   co-localization of chemokines (CXCL12 and CX3CL1) and chemokine   receptors (CXCR4, ACKR3, and CX3CR1)   in  different cell types (neurons, microglia, astrocytes)  present in the amygdala (BLA and CeA) was examined.
 Coronal rat brain slices containing the BLA and CeA were selected and immunohistochemically processed using specific primary antibodies for NeUN, IBA, GFAP, and for the chemokine  or chemokine receptor of interest. <!-- dodać markery-->
 Fluorescent   microscopy  was utilized to investigate and quantify  co-localization throughout the amygdala. <!--   (Appendix A)  .     -->
 
-*AIM 2:* Examine the membrane properties and  synaptic transmission of BLA and CeA neurons in brain slices, and their sensitivity to chosen chemokine application.    GABA synaptic activity of DRN     neurons   in brain slices  ,     and their sensitivity to SDF  -  1α application.
-
- <!-- AIM 1  :        The   co  -  localization of chemokines (SDF  -  1α and fractalkine) and chemokine   receptors (CXCR4 and CX3CR1)   in     5  -  HT   neurons present in the dorsal and median   raphe nuclei (DRN, MRN)     wa  s examined  .      Coronal rat br  ain slices containing the DRN   and MRN   were     selected and immunohistochemically processed using specific primary   antibodies for tryptophan hydroxylase (TPH), the rate limiting enzyme in serotonin   biosynthesis, and for the chemokine     or   chemokine receptor of i  nterest.  Confocal   and   fluorescent   microscopy   wa  s utilized to   investigate     and quantify   co  -  localization   throughout the DRN (dorsomedial (DM), ventromedial (VM),   and   lateral wing (LW)     subdivisions  ) and MRN     (Appendix A)  .   --><!-- Examine   the   membrane properti  es and     GABA synaptic activity of DRN     neurons   in brain slices  ,     and their sensitivity to SDF  -  1α application.   -->
-
-The co-localization of CX3CL1 or CX3CR1 with neural and glial markers was examined. 
-Coronal rat brain slices containing the BLA were selected and immunohistochemically processed using specific primary antibodies for CX3CL1, CX3CR1, GFAP, IBA1, ... <!-- dokończyć -->
-Fluorescent microscopy was utilized to investigate and quantify co-localization throughout the BLA. 
-
-* 
-
-
-
+To examine the membrane properties and  synaptic transmission of BLA and CeA neurons in brain slices, and their sensitivity to chosen chemokine application, *in vitro*     whole  -  cell   patch  -  clamp   recordings  were performed in rat brain slices containing the amygdala. 
+BLA or CeA neuron membrane properties, spontaneous and miniature excitatory and inhibitory synaptic transmission (sEPSC/mEPSC/sIPSC/mIPSC) were collected before and after bath application of chosen chemokines. 
+Additionally, 
 <!-- 
 <!-- In order to better understand the role of CX3CL1 signaling in microglia physiology and its possible impact on brain development, we studied several functional properties of microglia in acute brain slices from Cx3cr1 knockout mice across the first postnatal weeks (PNWs). -->
-
-
-
-
-
-
-First, I examined the impact of the glutamatergic projection from pyramidal cells of the CA1 region of the vHPC (Chapter 2), a connection that has been suggested to be involved in learning and memory and may be altered in PTSD (Zhang et al., 2015; McDonald and Mott, 2016).
-Second, I investigated the modulation of BLA circuits by 5-HT (Chapter 3 and 4).
-This input regulates emotionality (Asan et al., 2013) and bears clinical significance, because selective serotonin reuptake inhibitors (SSRIs), drugs that increase extracellular 5-HT levels,
-are a widely prescribed medication for PTSD and pathological anxiety (Nemeroff and Owens,
-2002).
-My central hypothesis is that GABAergic neurons of the BA are pivotal targets of these inputs, and their recruitment shapes the activity of PNs, the main output of the BA. In
-Chapter 2, I investigated feedforward INs targeted by CA1 pyramidal cells, while Chapter
-3 concentrates on the impact of 5-HT recruitment of PV+ INs on fear conditioning. Finally, to
-further characterise the GABAergic system in the BLA, I investigated a class of inhibitory
-neurons expressing nNOS (Chapter 4). These cells display an unusual 5-HT modulation
-that appears to be important for their activity across the sleep-wake cycle.
-
-First, investigation of distribution and cellular pattern of chosen chemokines along the amygdala axis. 
-
-
-<!-- z dupy 
-
-Neuroimmunomodulation
-
-
-
-
--->
 
   
 <!-- Preludium
@@ -138,3 +98,8 @@ Aim of the study
 • Characterisation of the electrophysiology of OXT and AVP MNCs in the PVN as well as related potential sex differences– ex vivo patch-clamp in male and female Sprague Dawley rats -->
 
 <!-- To better understand the holistic ... , both amygdalar nuclei was investigated -->
+
+Receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala<!-- cytowania-->, however their specific distribution and cellular patterns were not fully examined. 
+Application of ... resulted in different electrophysiological actions, depending on the structure, and are summarized in section ....
+Moreover, glial contribution of at least some of these electrophysiological effects were confirmed. 
+Thus, aims of this dissertation was ... <!-- Dlatego też, pierwszym celem niniejszej pracy było określenie w jaki sposób aktywacja oraz zablokowanie receptora 5-HT7 wpływają na aktywność neuronów serotoninergicznych DRN, jak również w jaki sposób modulacja receptora 5-HT7 wpływa na przekaźnictwo pobudzające oraz hamujące w połączeniach docierających do neuronów grzbietowego jądra szwu szczura. -->

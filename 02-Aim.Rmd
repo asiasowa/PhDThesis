@@ -1,6 +1,6 @@
 # Aim of the study
 
-Considering described evidence, this dissertation aimed to investigate the the modulation of two amygdalar circuits, namely BLA and CeA, by two chosen chemokines. <!-- functional role of two  representatives of distinct families (CX3C and CXC) of chemokines in main input and output amygdalar nuclei. --><!-- Therefore, the aim of this dissertation was to investigate the modulation of chosen chemokines (CX3CL1 and CXCL12) on two main amygdala circuits: BLA and CeA.  /// whether two representatives of distinct families (CX3C1 and CXC12) of chemokines modulates the synaptic transmission of the input and output amygdalar nuclei and membrane properties of neurons dissect the contribution of glia in those effects. --><!--microglial plasticity in the CeA to drive a cascade of downstream cellular events that contribute to the development of stress-induced colonic allodynia and hyperalgesia. --><!-- Based on the evidence reviewed above, disentangling the functional organization of extrinsic inputs to amygdala neurons is a necessary step to understand the brain circuits underlying emotional memories. In the research presented in this thesis, I focused on two prominent sources of BLA neuromodulation that, to date, have been poorly studied from a mechanistic viewpoint. -->
+Considering described evidence, especially in the previous subsection, this dissertation aimed to investigate the modulation of two amygdalar subdivisions, namely BLA and CeA, by two chosen chemokines. <!-- functional role of two  representatives of distinct families (CX3C and CXC) of chemokines in main input and output amygdalar nuclei. --><!-- Therefore, the aim of this dissertation was to investigate the modulation of chosen chemokines (CX3CL1 and CXCL12) on two main amygdala circuits: BLA and CeA.  /// whether two representatives of distinct families (CX3C1 and CXC12) of chemokines modulates the synaptic transmission of the input and output amygdalar nuclei and membrane properties of neurons dissect the contribution of glia in those effects. --><!--microglial plasticity in the CeA to drive a cascade of downstream cellular events that contribute to the development of stress-induced colonic allodynia and hyperalgesia. --><!-- Based on the evidence reviewed above, disentangling the functional organization of extrinsic inputs to amygdala neurons is a necessary step to understand the brain circuits underlying emotional memories. In the research presented in this thesis, I focused on two prominent sources of BLA neuromodulation that, to date, have been poorly studied from a mechanistic viewpoint. -->
 
 Alternatively: Based on the evidence reviewed above, dissecting the immune modulation in the CNS under basal condition is a necessary step to better understand the dysfunction <!-- jakoś lepiej to napisać - popatrzeć na moje review --> 
 The amygdala, as an essential hub in the brain, integrating information about external and internal environment, is an important player in homeostasis, and mediate a diverse array of functions. 
@@ -11,7 +11,7 @@ Surprisingly, still little is known about the regulation of immune system and gl
 Alternatively2: 
 Receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala<!-- cytowania-->, however their specific distribution is not fully examined. 
 Thus, the first aim of this dissertation was to fully investigate ... 
-Functionally, previous studies have demonstrated complex electrophysiological effects based on, among others, the brain region or neuronal population. <!--and these effect are summarized in section/table?/ -->
+Functionally, previous studies have demonstrated complex electrophysiological effects based on, among others, the brain region or neuronal population (see Section: \@ref(chemokineselectro)). <!--and these effect are summarized in section/table?/ -->
 Moreover, at least some of those effects, were mediated by glial cells.
 Accordingly, the next aim of this paper was to dissect the ... <!--- jakoś ładnie opisać --> 
 
@@ -109,3 +109,4 @@ Aim of the study
 
 <!-- To better understand the holistic ... , both amygdalar nuclei was investigated -->
 
+\newpage 

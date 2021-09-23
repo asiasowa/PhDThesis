@@ -1,31 +1,24 @@
 # Aim of the study
 
-Considering described evidence, especially in the previous subsection, this dissertation aimed to investigate the modulation of two amygdalar subdivisions, namely BLA and CeA, by two chosen chemokines. <!-- functional role of two  representatives of distinct families (CX3C and CXC) of chemokines in main input and output amygdalar nuclei. --><!-- Therefore, the aim of this dissertation was to investigate the modulation of chosen chemokines (CX3CL1 and CXCL12) on two main amygdala circuits: BLA and CeA.  /// whether two representatives of distinct families (CX3C1 and CXC12) of chemokines modulates the synaptic transmission of the input and output amygdalar nuclei and membrane properties of neurons dissect the contribution of glia in those effects. --><!--microglial plasticity in the CeA to drive a cascade of downstream cellular events that contribute to the development of stress-induced colonic allodynia and hyperalgesia. --><!-- Based on the evidence reviewed above, disentangling the functional organization of extrinsic inputs to amygdala neurons is a necessary step to understand the brain circuits underlying emotional memories. In the research presented in this thesis, I focused on two prominent sources of BLA neuromodulation that, to date, have been poorly studied from a mechanistic viewpoint. -->
+Considering described evidence, this dissertation aimed to investigate the modulation of two amygdalar subdivisions, namely BLA and CeA, by two chosen chemokines. 
+I focused on CXCL12 and CX3CL1, as they, together with their receptors, were implicated in neurodevelopmental processes, synaptic transmission, neuroimmune responses, and glial regulation.
+Moreover, dysfunctions in their signaling were reported to share similar characteristics as those in the amygdala.
+To better understand chemokines' modulation at the network level of the whole complex of amygdala, both the main input nucleus (the basolateral complex) and the main output nucleus (the central complex) were investigated.
 
-Alternatively: Based on the evidence reviewed above, dissecting the immune modulation in the CNS under basal condition is a necessary step to better understand the dysfunction <!-- jakoś lepiej to napisać - popatrzeć na moje review --> 
-The amygdala, as an essential hub in the brain, integrating information about external and internal environment, is an important player in homeostasis, and mediate a diverse array of functions. 
-Consistently, malfunctions in amygdala circuits have been suggested to underlie many disorders (addition, fear, epilepsy, obesity, pain, ...). <!-- dokończyć-->
-Surprisingly, still little is known about the regulation of immune system and glial cells in this structure.
+Briefly, receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala (see Section: \@ref(chemokinesexpress)); however, their specific distribution is not thoroughly examined. 
+Thus, the first aim of this dissertation was to investigate fully... 
 
+Functionally, previous studies have demonstrated complex electrophysiological effects of CXCL12 and CX3CL1, which differ in relation to, for instance, the brain region or neuronal population (see Section: \@ref(chemokineselectro)). <!--and these effect are summarized in section/table?/ -->
+Moreover, at least some of those effects were mediated by glial cells.
+Accordingly, this dissertation further aimed to dissect the ... <!--- jakoś ładnie opisać --> 
 
-Alternatively2: 
-Receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala<!-- cytowania-->, however their specific distribution is not fully examined. 
-Thus, the first aim of this dissertation was to fully investigate ... 
-Functionally, previous studies have demonstrated complex electrophysiological effects based on, among others, the brain region or neuronal population (see Section: \@ref(chemokineselectro)). <!--and these effect are summarized in section/table?/ -->
-Moreover, at least some of those effects, were mediated by glial cells.
-Accordingly, the next aim of this paper was to dissect the ... <!--- jakoś ładnie opisać --> 
-
-
-Thus, this dissertation aimed to investigate the the modulation of two amygdalar circuits, namely basolateral and central nuclei, by two chosen chemokines.
-I focused on the CXCL12 and CX3CL1 chemokines <!--axes?--> as they are implicated in neurodevelopmental processes, synaptic transmission, neuroimmune responses, glial regulation, and dysfunctions of their axis were reported to share similar characteristics as those in amygdala. <!-- NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology. -->
-
-The central hypotheses of the research study are: 
+The central hypotheses of the research presented here are: 
 
 1.  Chemokines and chemokine receptors are expressed in the BLA and/or CeA in both neuronal and glial cells.
 
 2. Chemokines directly and/or indirectly *via* glial modulation alter neuronal membrane properties and synaptic transmission in the basolateral and/or central nuclei of the amygdala.
 
-Therefore, based on different nuclei of amygdala and different chemokine axes, this project can be sub-divided into four separate, but physiologically and functionally related, parts (see Fig. ..).
+Therefore,<!-- based on different nuclei of the amygdala and different chemokine axes,--> this project can be sub-divided into four separate but physiologically and functionally related parts (see Fig. ..).
 
 1. Investigation of electrophysiological actions and cellular distribution of CX3CL1 and its receptor, CX3CR1, in the rat basolateral nucleus of the amygdala.
 
@@ -35,78 +28,13 @@ Therefore, based on different nuclei of amygdala and different chemokine axes, t
 
 4. Investigation of electrophysiological actions and cellular distribution of CXCL12 and their receptors, CXCR4 and ACKR3, in the rat central nucleus
 
-To address these issues, mainly whole-cell patch-clamp and immunofluorescent techniques were employed. <!-- several research techniques were employed: whole-cell patch-clamp and extracellular recordings *ex vivo*, immunofluorescent staining and <!--dendritic spines--><!-- // Considering described evidence and proposed hypotheses, the present studies were focused on two separate but physiologically and functionally related subjects:  /// 4 major groups of experiment -->
-<!--Detailed aims and hypotheses addressed in each study, as well as techniques used are listed below.  The   specific AIMS are designed to test these hypotheses:    -->
+To address these issues, mainly whole-cell patch-clamp and immunofluorescent techniques were employed. <!-- several research techniques were employed: whole-cell patch-clamp and extracellular recordings *ex vivo*, immunofluorescent staining and <!--dendritic spines--><!-- // Considering described evidence and proposed hypotheses, the present studies were focused on two separate but physiologically and functionally related subjects:  /// 4 major groups of experiment --><!--Detailed aims and hypotheses addressed in each study, as well as techniques used are listed below.  The   specific AIMS are designed to test these hypotheses:    -->
+Precisely, to determine the distribution of chemokines (CXCL12/CX3CL1) or chemokine receptors (CXCR4, ACKR3, and CX3CR1) in relation to the cell type in the chosen amygdalar nuclei (BLA/CeA), their co-localization in different cell types (neurons, microglia, astrocytes) was examined.
+Coronal rat brain slices containing the BLA and CeA were selected and immunohistochemically processed using specific primary antibodies for NeUN, IBA, GFAP, and for the chemokine or chemokine receptor of interest. <!-- dodać markery-->
+Fluorescent microscopy was utilized to investigate and quantify co-localization throughout the amygdala. <!--   (Appendix A)  .     -->
 
-To determine the distribution of chemokines or chemokine receptors in relation to cell type in the chosen amygdalar nuclei, the   co-localization of chemokines (CXCL12 and CX3CL1) and chemokine   receptors (CXCR4, ACKR3, and CX3CR1)   in  different cell types (neurons, microglia, astrocytes)  present in the amygdala (BLA and CeA) was examined.
-Coronal rat brain slices containing the BLA and CeA were selected and immunohistochemically processed using specific primary antibodies for NeUN, IBA, GFAP, and for the chemokine  or chemokine receptor of interest. <!-- dodać markery-->
-Fluorescent   microscopy  was utilized to investigate and quantify  co-localization throughout the amygdala. <!--   (Appendix A)  .     -->
-
-To examine the membrane properties and  synaptic transmission of BLA and CeA neurons in brain slices, and their sensitivity to chosen chemokine application, *in vitro*     whole  -  cell   patch  -  clamp   recordings  were performed in rat brain slices containing the amygdala. 
+Next, to examine the membrane properties and synaptic transmission of BLA and CeA neurons in brain slices and their sensitivity to chosen chemokine application, *in vitro*  whole-cell patch-clamp recordings were performed in rat brain slices containing the amygdala. 
 BLA or CeA neuron membrane properties, spontaneous and miniature excitatory and inhibitory synaptic transmission (sEPSC/mEPSC/sIPSC/mIPSC) were collected before and after bath application of chosen chemokines. 
-Additionally, 
-<!-- 
-<!-- In order to better understand the role of CX3CL1 signaling in microglia physiology and its possible impact on brain development, we studied several functional properties of microglia in acute brain slices from Cx3cr1 knockout mice across the first postnatal weeks (PNWs). -->
-
-  
-<!-- Preludium
-
-There are four main objectives of proposed project:
-A. Determination of the distribution of fractalkine (CX3CL1) and SDF-1α (CXCL12) immunoreactivity, as
-well as the location of the corresponding receptors (CX3CR1, CXCR4) in relation to different neural populations
-of the rat basolateral (BLA) and central (CeA) amygdala.
-B. Description of the physiological effects of CXCL12 or CX3CL1 on excitability and basal synaptic
-transmission in different neuronal populations of the basolateral (BLA) and central (CeA) amygdala.
-C. Analysis of the possible modulatory effect of CXCL12 or CXC3CL1 corticosterone-induced changes in
-neuronal excitability and basal synaptic transmission in the basolateral (BLA) and central (CeA) amygdala.
-D. Investigation of the CXCL12 or CX3CL1 involvement in the modulation of cortical and thalamic inputs
-into the BLA, including short-term synaptic plasticity.
-The hypotheses are as following:
-a. application of CXCL12 in the BLA will result in the increased excitatory drive of BLA principal neurons
-(80% of neurons are excitatory in this structure). This will in turn increase the excitatory drive of the CeA, thereby
-enhancing the inhibitory output from the amygdala (the overwhelming majority of CeA neurons is GABAergic).
-Application of CXCL12 directly in the CeA will as well result in increase in excitatory drive of neurons there.
-b. application of CX3CL1 in the BLA will result in the decrease excitatory drive of BLA principal neurons,
-which will in turn decrease the excitatory drive of the CeA, thereby abolishing the inhibitory output from the
-amygdala. Application of CX3CL1 directly in the CeA will as well result in decrease in the excitatory drive of
-neurons there.
-c. Corticosterone administration/injections will enhance the excitatory drive of BLA and CeA principal cells,
-which will be modulated by chemokine application, mainly enhanced by CXCL12 and decreased by CX3CL1.
-However, principal cell axons projecting from the BLA to the CeA also have collaterals ending in the intercalated
-GABAergic cell clusters between the two structures. Therefore, it will be tested whether application of
-CXCL12/CX3CL1 results in net excitation or inhibition of principal neurons in the CeA. There is also the
-possibility of tonic CX3CL1/CXCL12 activity within the amygdala due to their constitutive expression by neurons
-and glia. This will be examined by recording synaptic activity before and after application of selective
-antibodies/receptor antagonists.
-Detailed description of electrophysiological effects of these compounds in control/corticosterone conditions in the 
-BLA and CeA parts of amygdala will bring us closer to understanding the mechanisms underlying the interaction
-of stress and immune signaling in the central nervous system and neural circuitry. This will greatly contribute to
-our understanding of neuroimmunoendocrinological mechanisms governing the central nervous system response
-to stress, and raise the possibility of uncovering new neurochemical targets for future therapeutic evaluation -->
-
-<!-- Alan
-6 Aim of the study
-Considering described evidence and proposed hypotheses the present studies were focused on two separate but physiologically and functionally related subjects:
-• Investigation of the RLN3/RXFP3 signalling in the rat PVN as a putative neuronal mechanism of RLN3 orexigenic action: its characteristics, potential sex differences possibly responsible for stronger orexigenic effect of RLN3 in female rats and its involvement in binge eating behaviour.
-• Investigation of MNCs in the rat PVN: their characteristics and potential sex differences possibly shaping sex-specific roles of OXT, AVP and RLN3 peptides.
-To address these issues several research techniques were employed: patch-clamp recordings ex vivo, single-cell reverse-transcription polymerase chain reaction (scRT-PCR), immunofluorescent and immunohistochemical staining, neural tract tracing and behavioural testing using a model of binge eating behaviour combined with intra-PVN microinjections.
-Initial part of studies aimed at the characterisation of RLN3/RXFP3 signalling in the PVN was carried out on Wistar rats. Due to the relative resistance to binge eating behaviour displayed by this rat strain (161) and common use of Sprague Dawley rats in studies on the RLN3 orexigenic effect (51, 52, 56, 61, 63), the experiments on potential sex differences in PVN RLN3/RXFP3 signalling as well as PVN neuron characteristics focused on Sprague Dawley rats.
-Detailed research objectives addressed in each study, as well as techniques used are listed below:
-1. RLN3/RXFP3 signalling in the rat PVN:
-• Investigation of the influence of native RLN3 and high affinity, selective RXFP3 receptor agonist – RXFP3 analogue 2 (RXFP3-A2) on the electrophysiology of identified PVN neurons as well as related potential sex differences – ex vivo patch-clamp in male Wistar rats and male and female Sprague Dawley rats
-• Investigation of the influence of RXFP1 agonist – H2 on electrophysiology of identified PVN neurons – ex vivo patch-clamp in male Wistar rats
-• Pharmacological verification of the type of G protein involved in transduction of RXFP3-mediated effects in the PVN neurons – ex vivo patch-clamp in male Wistar rats
-Aim of the study
-28
-• Pharmacological verification of the pre- vs. postsynaptic localisation of RXFP3 in PVN neurons and possible influence of the RXFP3 activation on synaptic inputs into PVN MNCs – ex vivo patch-clamp in male and female Sprague Dawley rats
-• Identification and molecular verification of an ionic mechanisms involved in the RXFP3-induced inhibition of PVN MNCs – ex vivo patch-clamp and scRT-PCR in male and female Sprague Dawley rats
-• Characterisation of RLN3 innervation in the PVN area as well as related potential sex differences – immunofluorescent and immunohistochemical staining in male Wistar rats and male and female Sprague Dawley rats
-• Identification of a source of RLN3 innervation of the PVN area as well as related potential sex differences – neural tract tracing in male Wistar rats and male and female Sprague Dawley rats
-• Pharmacological verification of the RXFP3 involvement in binge eating of HPF – behavioural testing using binge eating model combined with intra-PVN microinjections in female Sprague Dawley rats
-2. Characteristics of MNCs in the rat PVN:
-• Investigation of the number and anatomical distribution of OXT- and AVP-ir neurons within the identified PVN subnuclei as well as related potential sex differences– immunofluorescent staining in male and female Sprague Dawley rats
-• Characterisation of the electrophysiology of OXT and AVP MNCs in the PVN as well as related potential sex differences– ex vivo patch-clamp in male and female Sprague Dawley rats -->
-
-<!-- To better understand the holistic ... , both amygdalar nuclei was investigated -->
+Additionally, <!-- glia -->
 
 \newpage 

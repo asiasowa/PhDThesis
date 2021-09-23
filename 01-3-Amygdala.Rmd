@@ -280,6 +280,8 @@ Hence, these findings indicate that CeL, especially the PK`r knitr::asis_output(
 The CeA also receives noxious stimulus information *via* processed input from the BLA and direct projections from the spino-parabrachial-amygdaloid pathway [@braz_2005]. 
 In this regard, especially important seems capsular part of the central nucleus of the amygdala (CeC), called "nociceptive amygdala", due to its projections from the lateral parabrachial nucleus (LPB; a critical target of dorsal horn afferents; for example: @dong_2010), along with the well-demonstrated potentiation of synaptic transmission between those areas in many pain models (for example @cheng_2011 or @ikeda_2007). 
 
+<!-- We recently discovered that fear conditioning induces cell-type-specific plasticity in the CeL, with excitatory synapses onto SOMneurons being strengthened and excitatory synapses onto SOMneurons being weakened (  Li et al., 2013  ).-->
+
 ###### Intrinsic connectivity 
 
 Over the last decade, the conjunction of optogenetics and electrophysiological approaches not only has further supported the prevailing notion that CeL neurons send mainly unidirectional afferents to CeM [@haubensak_2010; @jolkkonen_1998; @li_2013a; @petrovich_1997] but also has illustrated the complexity and extent of CeL intraconnectivity (i.e., within the network) and interconnectivity (i.e., between networks). 
@@ -290,50 +292,57 @@ Similarly, CRF-expressing neurons provide inhibitory input to both SOM- and PKC`
 In addition to its GABA~A~-receptor-dependent synaptic modulation, CRF was also shown to increase excitatory synaptic transmission *via* its receptors, CRFR1 and CRFR2 [@ji_2013; @pomrenze_2015; @silberman_2013].<!--Moreover, a more recent study has documented that CRF-expressing neurons undergo plasticity following fear-conditioning and that CRF1-dependent mechanisms are critical for proper discrimination of threat-predictive cues (Sanford et  al., 2017).--> 
 
 It is widely accepted that following fear conditioning, neuronal activity of the CeL is required for the fear acquisition, whereas activity in the CeM is required for the expression of conditioned fear responses [@ciocchi_2010].
-Consistently, either CeM activation or CeL inactivation alone is sufficient to induce unconditioned freezing, indicating that both ON and OFF CeL neurons tonically inhibit CeM output  [@ciocchi_2010; @gozzi_2010].
-During the presence of fearful stimuli, CeL projection neurons are tonically inhibited by CeL~ON~, SOM-immunopositive neurons [@gozzi_2010], leading to disinhibition of CeM neurons and the induction of freezing. 
-However, when SOM-containing neurons are silenced, PK`r knitr::asis_output("\U03B4")`-expressing CeL projection neurons become active, inhibiting brainstem-projecting CeM output. 
-Hence, these two parallel CeA outputs have been shown to control behavioral output balanced between passive freezing (*via* CeM output to the brainstem) and active exploration (*via* CeL-mediated disinhibition of cortical neurons). <!-- spróbować zmienić --><!--Moreover, the activity of those neurons was reported to regulate anxiety-like behavior and fear generalization *via* extrasynaptic inhibition mediated by `r knitr::asis_output("\U03B1")`5 subunit-containing GABA~A~ receptors [@botta_2015].-->
+Moreover, CeM activation alone is well-documented to be sufficient to induce unconditioned freezing [@ledoux_1988].
+This effect can be mimicked by CeL inactivation, indicating that CeL neurons tonically inhibit CeM output  [@ciocchi_2010; @gozzi_2010].
+Precisely, activation of SOM-expressing CeL neurons results rather in local inhibition within CeL, especially inhibiting PK`r knitr::asis_output("\U03B4")`-expressing cells than inhibition of CeM neurons, as they do not send noticeable projections to the CeM [@li_2013a].
+In contrast, the PKC-containing CeL neurons strongly project to and inhibit CeM neurons [@haubensak_2010; @li_2013a].
+Hence, during the presence of fearful stimuli, CeL projection neurons are tonically inhibited by CeL~ON~, SOM-immunopositive neurons [@gozzi_2010], leading to disinhibition of CeM neurons and the induction of freezing.<!-- dobrze wytłumaczone w Penzo 2014  --> 
+However, when SOM-containing neurons are silenced, PK`r knitr::asis_output("\U03B4")`-expressing CeL projection neurons become active, inhibiting brainstem-projecting CeM output. <!-- Therefore, the balance between activation of these two parallel CeA subpopulations results in two  /// Therefore, these two parallel CeA outputs have been shown to control behavioral output balanced between passive freezing (*via* CeM output to the brainstem) and active exploration (*via* CeL-mediated disinhibition of cortical neurons). -->
+Therefore, the balance between the activation of these two parallel CeA subpopulations greatly impacts the behavioral output of this region.
 
 ###### Efferents 
 
-While there is a general acceptance that the CeM is the major output nucleus of the amygdala playing a pivotal role in mediating behavioral and physiologic responses to emotionally relevant events *via* its inhibitory projections to downstream targets, there are some data suggesting that the CeL also sends GABAergic projections to behavioral and physiologic effector<!--relevant--> regions. 
+While there is a general acceptance that the CeM is the major output nucleus of the amygdala playing a pivotal role in mediating behavioral and physiologic responses to emotionally relevant events *via* its inhibitory projections to downstream targets, some data indicate that the CeL also sends GABAergic projections to behaviorally and physiologically relevant regions. <!-- These findings raise the possibility that, in addition to the CeL–CeM pathway, additional channels exist for CeL to participate in fear processing.-->
 Accumulating studies have illustrated that distinct neuronal subpopulations in CeM project to different brainstem sites. 
 Specifically, CeM cells projecting to the dorsal vagal complex (DVC), a region important for autonomic regulation, receive inputs from those CeL neurons, which lack oxytocin receptors, whereas CeL neurons expressing oxytocin receptors target CeM cells projecting to PAG [@viviani_2011]. 
-In addition to its well-known role in generating freezing behavior, PAG is also a crucial component of the pain pathway.
-Interestingly, activation of ENK-containing neurons in CeL and CeC resulted in an increased c-Fos expression in PAG and reduced anxiety-like behavior and analgesia in both uninjured mice and in mice with neuropathic pain, strongly suggesting the role of ENK-expressing neurons in the regulation of both nociception and emotion [@paretkar_2019].  
-In addition to CeM outputs and ENK-expressing CeL neurons, another subset of CeL neurons, specifically SOM-immunopositive neurons, was shown to directly inhibit the PAG and PVT, two brain areas implicated in defensive behavior [@penzo_2014], further supporting that the CeL also sends long-range projections to innervate regions outside the amygdala complex. 
+
+PAG, together with PVT, are also implicated in mediating defensive behavior [@penzo_2014]. 
+Accordingly, these regions were shown to be directly inhibited by another subpopulation of CeL neurons, SOM-immunopositive neurons [@penzo_2014].
+Thus, these data further support that the CeL also sends long-range projections to innervate regions outside the amygdala complex. 
 Moreover, both CeM and CeL neurons, especially those expressing CRF, send substantial projections to the BNST, affecting fear- and anxiety-related behaviors, such as freezing [@asok_2018].
-These subpopulations also project to locus coeruleus (LC), and their activation was sufficient to increase anxiety-like behavior [@paretkar_2018]. 
-Additionally, CRF-expressing neurons send projections to the SN, the VTA, and the LH [@pomrenze_2015; @reyes_2011; @tsumori_2006], regions mediating brain reward function.
+These subpopulations also send afferents to locus coeruleus (LC), and their activation was sufficient to increase anxiety-like behavior [@paretkar_2018]. 
+Additionally, CRF-expressing neurons were shown to project to the SN, the VTA, and the LH [@pomrenze_2015; @reyes_2011; @tsumori_2006], regions mediating brain reward function.
 Furthermore, CeM neurons were reported to innervate PFC, which stimulation was shown to modulate reward-related behaviors [@seo_2016]. 
 Similarly, CeL also contains populations of projections neurons, some of which control cortical activity *via* basal cholinergic neurons and shift fear responses from freezing behavior toward an active escape [@gozzi_2010]. 
 Hence, besides strong neuromodulatory innervation of the whole amygdala, this region can also indirectly influence the excitability of neuromodulatory cell groups releasing Ach, NE, DA located in the basal forebrain and brainstem.
 
+In addition to its well-known role in generating freezing behavior, PAG is also a crucial component of the pain pathway.
+Interestingly, activation of ENK-containing neurons in CeL and CeC resulted in an increased c-Fos expression in PAG and reduced anxiety-like behavior and analgesia in both uninjured mice and mice with neuropathic pain [@paretkar_2019].
+This evidence strongly suggests the role of ENK-expressing neurons in regulating both nociception and emotion.
+
 Taken together, these combinations of connections between BLA and CeA, including the feedforward inhibition generated by intercalated neurons, enable to increase or decrease the amplitude of the CeA responses depending on which set of amygdala nuclei are activated and in what sequence. <!-- bardziej zmienić -->
 Thus, the CeA output depends not only on the nature and intensity of received inputs but also on their timing and origin. <!-- bardziej zmienić // ładne podsumowanie-->
 
-### Summary of amygdala structure and connectivity
+### Summary 
 
-<!-- diverse complex inputs --> 
 Taken together, each nucleus receives a unique set of multiple inputs from distinct brain regions.
-The complex pattern of connections together with the balance of activity between them represents a mosaic set of regulatory motifs that orchestrates a distributed neural parallel circuitries. 
-This may enable the amygdala complex to play a crucial role in surprisingly diverse functions, including emotional memory formation, social interactions, affective and parental behavior, and homeostatic control.
-Considering this diversity, it is not surprising that the disruption of the amygdala functioning is associated with many disorders, including alcoholism and other reward-related disorders<!-- citations -->, anxiety<!-- citations-->, PTSD<!-- citations -->, and stress-related disorders<!-- citations-->, autism<!--citations-->, obesity<!-- citations-->, epilepsy <!--citations-->, pain<!--citations-->, just to list a few.  <!-- , just to list a few (LeDoux, 2000; Phelps et al., 2014) -->
+The complex pattern of connections along with the balance of activity between them represents a mosaic set of regulatory motifs that orchestrates a distributed neural parallel circuitries. 
+All of these may enable the amygdala complex to play a crucial role in surprisingly diverse functions, including emotional memory formation, social interactions, affective and parental behavior, and homeostatic control.
+Considering this diversity, it is not surprising that the disruption of the amygdala functioning is associated with many disorders, including alcoholism and other reward-related disorders<!-- citations -->, anxiety<!-- citations-->, PTSD<!-- citations -->, and stress-related disorders<!-- citations-->, autism<!--citations-->, obesity<!-- citations-->, epilepsy<!--citations-->, pain<!--citations-->, just to list a few.  <!-- , just to list a few (LeDoux, 2000; Phelps et al., 2014) -->
 Thus, the amygdala functions as an integrative hub that converts emotionally relevant sensory information about the external and internal environment into behavioral and physiologic responses, playing a crucial role in homeostasis.
 Finally, as amygdalar circuitry and function are well-conserved across evolution [@jarvis_2005], better understanding the complexity of this circuit using animal models has the potential to be directly relevant to humans.
 
 ## Chemokines action in the amygdala
 
-Amygdala is strategically positioned to regulate homeostatic function, and thus, one may speculate that would be involved in integrating signals from endocrine and immune systems. <!-- jakieś lepsze intro... As being strategically positioned to be a hub, amygdala together with playing homeostatic function, one may speculate that i że several evidence i wymienić od 1 2 3-->
-It is supported by several lines of evidence. 
-<!-- review how immune system sub the brain -->
+Amygdala is strategically positioned to regulate homeostatic function, and thus, one may speculate that it would be involved in integrating signals from endocrine and immune systems. <!-- jakieś lepsze intro... As being strategically positioned to be a hub, amygdala together with playing homeostatic function, one may speculate that i że several evidence i wymienić od 1 2 3-->
+It is supported by several lines of evidence. <!-- review how immune system sub the brain -->
 First, findings from many animal and human studies indicate that peripheral activation of the immune system engages CeA and, to a lesser extent, the BLA [@engler_2011; @frenois_2007; @harrison_2009]. 
-Peripheral signal of immune activation is thought to be mediated either *via*  activation of vagal afferent fibers projecting by proinflammatory cytokines and/or glucocorticoids to the nucleus of the solitary tract (NTS) and then to the amygdala, predominantly its central part (for a review: @vitkovic_2000; @critchley_2013) or alternatively by activation of the HPA axis, which is also connected with the amygdala <!-- citations -->. 
+Peripheral signal of immune activation is thought to be mediated either *via*  activation of vagal afferent fibers projecting by proinflammatory cytokines and/or glucocorticoids to the nucleus of the solitary tract (NTS) and then to the amygdala, predominantly its central part (for a review: @vitkovic_2000; @critchley_2013).
+Alternatively, this signal activates the HPA axis, which is also connected with the amygdala [@diiorio_2017; @green_2007; @herman_2005]. 
 Moreover, activation of the immune system by injection of lipopolysaccharide (LPS) was reported to induce anxiety-like behaviors in rodents, as measured, for example, by elevated plus-maze test (EPM), a test assessing amygdala-mediated functions (for example: @yang_2016). 
 
-Second, mounting evidence illustrated many similarities between dysfunctions of amygdala function and chemokine signaling, pointing to the possibility that their mechanisms may, at least in part, overlap. 
-This includes anxiety and stress-related neuropsychiatric disorders [@girgenti_2017; @tovote_2015; @yang_2016], epilepsy [@fabene_2010; @roseti_2013; @suleymanova_2021; @tian_2017], obesity [@guillemotlegris_2017; @kawamura_2021], pain [@mlikparsadaniantz_2015; @old_2012; @paretkar_2019; @yuan_2020], drug dependence (mainly alcohol and opioid; @coller_2012, @freeman_2012, @jacobsen_2016; @wang_2012).
+Second, mounting evidence illustrated many similarities between dysfunctions of amygdala function and chemokine signaling, pointing to the possibility that their mechanisms may overlap at least in part. 
+These involve anxiety and stress-related neuropsychiatric disorders [@girgenti_2017; @tovote_2015; @yang_2016], epilepsy [@fabene_2010; @roseti_2013; @suleymanova_2021; @tian_2017], obesity [@guillemotlegris_2017; @kawamura_2021], pain [@mlikparsadaniantz_2015; @old_2012; @paretkar_2019; @yuan_2020], drug dependence (mainly alcohol and opioid; @coller_2012, @freeman_2012, @jacobsen_2016; @wang_2012).
 Despite those similarities, still little is known about immune modulation in the amygdala.
 
 Third, many recent studies demonstrating glial involvement in behavior, including the amygdala [@althammer_2020; @martinfernandez_2017]. 

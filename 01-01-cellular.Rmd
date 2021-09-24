@@ -1,4 +1,45 @@
-### Chemokine expression in the CNS cells
+### Chemokine expression in the CNS cells {#chemokinesexpress}
+
+#### Cellular distribution of chemokine and chemokine receptors in the brain {#expr}
+
+Chemokines and CKRs are expressed by healthy neurons, microglia, astrocytes, oligodendrocytes, and endothelial cells.
+They are widely distributed in the CNS and involved in many physiological brain functions [@adler_2005].
+Chemokines and receptors expressed in the CNS under physiological conditions are summarized in Table 1.
+As delineated, the neuroanatomical distributions of several chemokines and their corresponding receptors overlap in many regions in the healthy CNS.
+Thus, these may lead to co-localization of chemokine and its corresponding receptors within the same cells, raising the possibility of autocrine signaling and complex cross-talks between different types of cells.
+
+##### CXCL12/CXCR4/ACKR3 {#cxcl12}
+
+CXCL12, along with their receptors CXCR4 and ACKR3, is constitutively expressed and widely distributed in the CNS, both during neurodevelopment and adulthood. <!-- They are widely distributed across the CNS. -->
+Moreover, these molecules are present in nearly all CNS cell types, including endothelial, glial, and notably neuronal cells (see: Table 1).
+Specifically, both CXCL12 and CXCR4 are co-localized with many neuropeptides, for example, in dopaminergic neurons in the substantia nigra (SN) and the ventral tegmental area (VTA)[@guyon_2006].
+Additionally, they are often co-expressed with opioid receptors in neurons and astrocytes, frequently forming heterodimers [@burbassi_2010], which implies interactions between those two systems (see Section: \@ref(opio), for review: @mlikparsadaniantz_2015). 
+Likewise, as mentioned in previous chapter, recent evidence has begun to implicate ACKR3 in chemokine-opioid interactions, leading to behavioral manifestations (see: \@ref(behavior), @ikeda_2013, @meyrath_2020).
+
+Moreover, ACKR3 and CXCR4 are co-expressed in the same neuronal [@shimizu_2011] and astrocytic populations [@odemis_2010]. 
+In neurons, prominent cytoplasmic expression of ACKR3 was demonstrated, whereas CXCR4 was found on the cell membrane [@shimizu_2011], suggesting that ACKR3 may affect CXCR4 trafficking and/or coupling to other proteins [@shimizu_2011].
+Consistently, ACKR3 up-regulation was shown to enhance heterodimer formation with CXCR4, which further resulted in its internalization and degeneration [@utokonomi_2013].
+As a member of the atypical chemokine receptor family, ACKR3 is thought to share some peculiar characteristics, such as the inability to induce canonical G protein signaling in response to ligand stimulation, which leads to a decrease in the extracellular chemokine concentration [@naumann_2010].
+However, compelling evidence illustrated that application of CXCL12 results in elevated astrocytic intracellular Ca^2+^ levels following the activation of PTX-sensitive G~i/o~ proteins, leading to either proliferation  or  differentiation of astrocytes [@odemis_2010].  
+Although these events were previously reported to be mediated by CXCR4 (for example: @bajetto_2001a), a recent report has challenged this view by demonstrating that these CXCL12-dependent outcomes persist when CXCR4 receptor is blocked or depleted from astrocytes but are prevented in astrocytes with depleted or blocked ACKR3 receptor [@odemis_2012].
+These findings suggest that ACKR3 activates classical G protein signaling pathways in these cells.
+It is likely that ACKR3 functions as a ligand-biased receptor in astrocytes, as CXCL11, another ACKR3 agonist [@burns_2006], resulted in activation of `r knitr::asis_output("\U03B2")`-arrestin2 signaling in the same experimental setting [@odemis_2012].  
+Therefore, it is tempting to speculate that depending on the cell type, ACKR3 acts either as an atypical, arrestin-coupled scavenger chemokine receptor or as a classical GPCR, manifesting as biased receptor (see Section: \@ref(biasedsignaling)) 
+However, this issue warrants further clarification. 
+Additionally, it was recently demonstrated that following CXCL12 treatment, ACKR3 impairs  astrocytic gap-junctional communication by inducing a Cx43 internalization in a `r knitr::asis_output("\U03B2")`-arrestin2-dependent manner [@fumagalli_2020], whereas CXCR4 leads to NF-K`r knitr::asis_output("\U03B2")` activation with consequent Tumour Necrosis Factor `r knitr::asis_output("\U03B1")` (TNF`r knitr::asis_output("\U03B1")`) and glutamate release from these cells [@bezzi_2001; @cal_2008; @cal_2010].
+Therefore, these findings suggest that CXCR4 and ACKR3 may serve distinct functions *via* different signaling pathways in astrocytes.
+
+##### CX3CL1/CX3CR1 {#cx3cl1}
+
+CX3CL1 and its receptor, CX3CR1, are widely distributed in the CNS.
+Besides the well-documented neuronal expression of CX3CL1, only a handful of studies revealed its presence in astrocytes, albeit at lower levels (for instance: @sunnemark_2005).
+Regarding cellular expression pattern of CX3CL1 receptor, CX3CR1, in the CNS, it remains controversial: some reports confine the localization of CX3CR1 microglia [@tarozzo_2003; @cardona_2006], whereas several lines of biochemical, immunohistochemical, and electrophysiological evidence documented the presence of the functional CX3CR1 receptor also in hippocampal,  hypothalamic, cerebral, striatal, and dorsal raphe nucleus (DRN) neurons.
+
+In the  CX3CR1-GFP knock-in mouse line, the CX3CR1 receptor   gene   has   been   replaced   by   a   green   fluorescent protein   (GFP)   reporter  [@jung_2000].
+Based on CX3CL1 and CX3CR1 expression, this genetic strain provides the most studied model to investigate the consequences of neuron-microglia communication following CX3CL1-CX3CR1 axis dysregulation.
+
+
+
 
 <!-- po signalling inny sub-chapter? -->
 <!-- Complicating these levels of regulation is the fact that overall protein synthesis rates are high in the young brain, decline through adulthood, and fall sharply with old age [13], [56]. Protein turnover in the brain appears to follow a similar pattern [13]; however, little is known about the effects of age on other protein modifications. In addition, proteins such as GFAP show increased metabolic turnover with age, even in the absence of neurodegeneration. Our results are consistent with independent regulation of chemokine expression at the mRNA and post-translational levels.-->
@@ -96,7 +137,20 @@ Since the CX3CR1-GFP homozygous mice (CX3CR1KO/KO) are completely devoid of micr
 The CX3CR1-GFP heterozygous mice may be partially deficient in fractalkine signaling. <!--zmienić!!!!-->
 Nevertheless, microglial morphology, dynamic surveillance (Nimmerjahn et al., 2005; Wake et al., 2009), dendritic spine turnover (Parkhurst et al., 2013), and microglial interactions with synaptic elements (Wake et al., 2009; Tremblay et al., 2010) were comparable in vivo between these CX3CR1-GFP heterozygous mice and the Iba1-GFP mice from Hirasawa and colleagues where CX3CR1 is not deleted (Hirasawa et al., 2005). - Paolicelli2014 <!--zmienić!!!!-->
 
-### CXCL12/CXCR4/ACKR3
+### CX3CL1/CX3CR1 {#cx3cl1}
+
+CX3CL1 and its receptor, CX3CR1, are widely distributed in the CNS.
+Besides the well-documented neuronal expression of CX3CL1, only a handful of studies revealed its presence in astrocytes, albeit at lower levels (for instance: @sunnemark_2005).
+Regarding cellular expression pattern of CX3CL1 receptor, CX3CR1, in the CNS, it remains controversial: some reports confine the localization of CX3CR1 microglia [@tarozzo_2003; @cardona_2006], whereas several lines of biochemical, immunohistochemical, and electrophysiological evidence documented the presence of the functional CX3CR1 receptor also in hippocampal,  hypothalamic, cerebral, striatal, and DRN neurons.
+
+In the  CX3CR1-GFP knock-in mouse line, the CX3CR1 receptor   gene   has   been   replaced   by   a   green   fluorescent protein   (GFP)   reporter  [@jung_2000].
+Based on CX3CL1 and CX3CR1 expression, this genetic strain provides the most studied model to investigate the consequences of neuron-microglia communication following CX3CL1-CX3CR1 axis dysregulation.
+Thus, this model resulted in an  extensive body of evidence, highlighting the key role of CX3CL1 signaling in regulating a broad spectrum  of aspects of microglia functions, as described respectively in detail in the following sections. 
+
+The subunit G~i~ inhibits the production of cAMP, triggering a variety of intracellular second messengers including phosphoinositide 3-kinase (PI3K), protein kinase B (AKT) and nuclear factor kappa-light-chain-enhancer (NFκB),  (Al-Aoukaty et al., 1998; Chandrasekar et al., 2003). <!-- ZMIENIĆ!!!! The fractalkine receptor CX3CR1 is a Gi-protein coupled receptor encoded by the Cx3cr1 gene, previously named V28, located on the chromosome 3 in human (Combadiere et al., 1995) and the chromosome 9 in mouse (Combadiere et al., 1998). The subunit protein Gi inhibits the production of cAMP, triggering a variety of intracellular second messengers including phosphoinositide 3-kinase (PI3K), protein kinase B (AKT) and nuclear factor kappa-light-chain-enhancer of activated B cells (NFκB), which are well-known for mediating a wide range of cellular functions, including apoptosis, proliferation, transcription and migration (Al-Aoukaty et al., 1998; Chandrasekar et al., 2003).-->
+
+
+#### CXCL12/CXCR4/ACKR3 {#cxcl12}
 
 The first evidence that CXCL12 has effects on neurons and promotes neuroprotection were given by Meucci et al. (1998) when, for the first time, the authors demonstrated that CXCL12 reduced the apoptotic death of hippocampal neurons induced by gp120 or by glia deprivation. 
 Following glia deprivation, neuroprotection was promoted by administration of CXCL12 specifically to neurons highlighting a direct activity of the chemokine on these cells. 

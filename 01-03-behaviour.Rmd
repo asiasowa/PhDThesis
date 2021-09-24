@@ -1,9 +1,9 @@
 ### Chemokines modulates behavior {#behavior}
 
-Since mounting evidence supports the notion that chemokines coordinate several brain circuits of behavioral relevance, including hippocampus, DRN, SN, hypothalamus, it may indicate their contribution to these behaviors.  <!-- zmienić to zdanie /// Since mounting evidence supports the notion that chemokines coordinate several brain circuits of behavioral relevance, including the hippocampus, DRN, SN, hypothalamus, disturbances of several chemokines/chemokine receptor axes were reported in the pathophysiology of neurobiological disorders [@paolicelli_2014; @poon_2016; @stuart_2015].-->
+Since mounting evidence supports the notion that chemokines coordinate several brain circuits of behavioral relevance, including hippocampus, DRN, SN, hypothalamus, it may indicate their contribution to these behaviors.
 Consistent with this idea, disturbances of several chemokines/chemokine receptor axes were implicated in the pathophysiology of neurobiological disorders [@paolicelli_2014; @poon_2016; @stuart_2015].
 Moreover, despite increasing evidence about the chemokine system's role in mediating homeostatic brain functions, the mechanisms underlying chemokines regulation of behavior under physiological conditions remains largely unknown. 
-Hence, here we discuss a handful of studies on the regulation of chemokines on various types of behavior, such as learning and memory, social interactions, locomotor activity, anxiety. <!-- anhedonia??-->
+Hence, here I discuss a handful of studies on the regulation of chemokines on various types of behavior, such as learning and memory, social interactions, locomotor activity, anxiety. <!-- anhedonia??-->
 <!-- zmienić bardziej na co wiadomo o CXCL12 i CX3CL1 -->
 Results from those studies are summarized in Table 3. <!--nazwy tabeli!!!! the battery of behavioral tests related toczy na pewno dobre słowo? chemokine signaling are summarized in Table 3. -->
 
@@ -11,66 +11,56 @@ Results from those studies are summarized in Table 3. <!--nazwy tabeli!!!! the b
 
 ##### CX3CL1/CX3CR1
 
-As described in the section on synaptic plasticity (see: \@ref(LTP)), several chemokines were documented to modulate LTP in the hippocampus, a cellular mechanism underlying learning and memory [@bols_2018; @necula_2021; @rogers_2011; @zhou_2016].
+As described in the section on synaptic plasticity (see: \@ref(LTP)), several chemokines were documented to modulate LTP in the hippocampus, a cellular mechanism underlying learning and memory [@bols_2018; @necula_2021; @rogers_2011; @zhou_2016]. <!-- pewnie jeszcze zmienić -->
 Of these chemokines, CX3CL1 is the best characterized in this context.
-Nevertheless, behavioral studies on the CX3CL1/CX3CR1 axis in the regulation of learning and memory were giving contradictory results (see: Table 3).<!-- poprawna nazwa tabeli -->
-Briefly, CX3CR^-/-^ mice have shown impaired [@rogers_2011], improved [@maggi_2011; @reshef_2017]  or unaltered [@serchov_2015] cognitive functions. 
+Nevertheless, behavioral studies on the CX3CL1/CX3CR1 axis in the regulation of learning and memory were giving contradictory results (see: Table 3).<!-- poprawna nazwa tabeli  // Of note, there is great controversy regarding the behavioral phenotype of *CX3CR1-/-* mice in the literature (Paolicelli et al., 2014).-->
+Briefly, CX3CR^-/-^ mice have shown impaired [@rogers_2011], improved [@maggi_2011; @reshef_2017]  or unaltered [@serchov_2015] cognitive functions.  <!-- For instance, reports of impairment (Rogers et al., 2011), improvement (Maggi et al., 2011; Reshef et al., 2014) or no changes (Serchov et al., 2015) in hippocampal-dependent learning have been reported.  -->
 It should be noted that findings from studies of synaptic plasticity correlate with behavioral output (see Table 1 and 2). <!-- tabeleeee -->
-Those discrepancies may result from differences in housing conditions, animal gender, and age, or behavioral test protocols between laboratories. 
-However, those apparent discrepancies warrant further clarifications.
+Those discrepancies may result from differences in housing conditions, animal gender, and age, or behavioral test protocols between laboratories. <!-- In each study involving behavioral studies with these animals, the relevance of housing conditions, animal gender and age, feeding and behavioral test protocols is brought to light (Gemma and Bachstetter, 2013). -->
+However, this issue warrant further clarifications.
 
-Hence, these findings indicate that implications to memory-related functions are not specific for CX3CR1 action and studies have just begun to elucidate the mechanisms and other targets implicated in memory and learning.  
-
+<!-- CXCL12 and memory? -->
 
 #### Locomotor activity
 
 ##### CXCL12/CXCR4/ACKR3
 
-Since many chemokines with their cognate receptors are expressed in dopaminergic neurons and regulate their activity to induce the release of DA (see Sections: \@ref(DA) and \@ref(expr)), the behavioral relevance of their actions was further investigated.
-
-<!--It should be noted that CXCR4 and CXCL12 knockout mice are embryonic lethal, probably due to their key role in many diverse cellular processes, especially during development.-->
-By using unilateral intranigral or intracerebroventricular injections of CXCL12 or CCL2 in the rat SN, it was shown that both of these chemokines induced contralateral turns in circling behavior [@skrzydelski_2007; @guyon_2009].
-These data is consistent with CXCL12- or CCL2-induced dopamine release from dopaminergic neurons in substantia nigra (see Section \@ref(DA)). 
-
-It is worth noting that when chemokines were injected through the SN, animals' locomotor activity was increased and it resulted in the contralateral turning [@skrzydelski_2007; @guyon_2009]. 
-However, when CCL2 was injected intracerebroventricular, the animal locomotor activity was decreased.<!-- see table --> 
+Since many chemokines with their cognate receptors are expressed in dopaminergic neurons and regulate their activity to induce the release of DA (see Sections: \@ref(DA) and \@ref(expr)), the behavioral relevance of their actions was further investigated.<!--It should be noted that CXCR4 and CXCL12 knockout mice are embryonic lethal, probably due to their key role in many diverse cellular processes, especially during development.-->
+By using unilateral intranigral or intracerebroventricular injections of CXCL12 in the rat SN, it was shown that this chemokine induced contralateral turns in circling behavior [@skrzydelski_2007]. 
+These data are consistent with CXCL12-induced dopamine release from dopaminergic neurons in the SN (see Section \@ref(DA)). <!-- It is worth noting that when chemokines were injected through the SN, animals' locomotor activity was increased and it resulted in the contralateral turning [@skrzydelski_2007].  However, when CCL2 was injected intracerebroventricular, the animal locomotor activity was decreased. sprawdzić o co cho-->
 
 <!--Moreover, a recent study revealed the involvement of microglia and their receptor CX3CR1 in the adaptive response to psychosocial stress, which is a major risk factor for psychotic disorders such as schizophrenia [@piirainen_2021]. --><!-- A recent study revealed the involvement of microglia and their receptor CX3CR1 in the adaptive response to psychosocial stress, which is a major risk factor for psychotic disorders such as schizophrenia [@piirainen_2021].-->
 
+<!-- CX3CR1 and locomotor activity? -->
 
 #### Emotional behavior 
 
 ##### CX3CL1/CX3CR1
 
-Besides its involvement in memory and learning, CX3CR1^-/-^ knockout mice have been gaining attention in relation to chronic stress. 
-Briefly, in comparison to wild-type littermates, CX3CR1 is important for  controlling social behavior and social dominance (@zhan_2014; @piirainen_2021, Table3).
+Besides its involvement in memory and learning, CX3CR1^-/-^ knockout mice have been gaining attention in relation to chronic stress. <!-- Regarding the regulation of emotional behavior, previous evidence shows that the connectivity of brain regions involved in the regulation of mood disorders is impaired in CX3CR1-/- animals (Squarzoni et al., 2014). -- WAŻNE CYTOWANIE SPRAWDZIĆ!!!! -->
+Briefly, in comparison to wild-type littermates, CX3CR1 is important for  controlling social behavior and social dominance (@zhan_2014; @piirainen_2021, Table3). <!-- Here we report that 4-month- old female CX3CR1-/- mice show a hyperactive, anxiolytic-like and depressive-like phenotype, in agreement with previous data indicating altered social behavior in these mice (Zhan et al., 2014).-->
 However, there are many inconsistencies. 
-Regarding anxiety, most studies did not show any differences between genotypes [@rogers_2011, @hellwig_2016, @schubert_2018].
+Regarding anxiety, most studies did not show any differences between genotypes [@rogers_2011, @hellwig_2016, @schubert_2018]. <!-- Although other authors detected no depressive-like phenotype of these mice in the sucrose preference (Milior et al., 2016) or in the TST (Hellwig et al., 2016), male and female animals were grouped and tested together. -->
 Nonetheless, there is one study that suggests anxiolytic effects of CX3CR1 depletion [@bols_2018], whereas the other study indicates the opposite (@schubert_2018, Table3).<!--table-->
 A similar situation  was described regarding depressive-like behavior: one study indicates knockout is more depressive measured by Forced Swim Test and/or Tail Suspension Test, whereas the other reported the opposite conclusion.
 It seems like the main difference between those experiments was the gender between animals.
 Specifically, CX3CR1^-/-^ females are more depressive and anxiolytic than wild-type littermates, whereas the depletion of the same receptor in males elicit the opposite reaction.  
 However, as this hypothesis is based only on two studies, further investigation is needed.
 
+<!-- SPRAWDZIĆ TEŻ TE CYTOWANIA
+Interestingly, although stress resilience has been described in CX3CR1-/- mice (Rimmerman et al., 2017; Yirmiya et al., 2015), other authors found that these animals show greater depressive- like behavior in response to inflammation compared to WT counterparts (Corona et al., 2013). -->
 
-
-
-Interestingly, consistent with a recent report on ACKR3 and opioids crosstalk,<!-- wyrzuciłam (see: \@ref(opioids) ),--> along with implications that the modulation of circadian glucocorticoid oscillation may affect emotional behavior (e.g. @keers_2012), it was shown that ACKR3 binds intermediate opioid peptides, specifically BAM22 and peptide E, which results in enhancement of circadian glucocorticoid oscillation in the adrenal glands, and, therefore, anxiolytic-like behavior [@ikeda_2013]. <!-- może poprawic albo wrocić do innej wersji? -->
+<!-- nie czaję o co mi tutaj chodziło xDDDDDDDDDD -->
+Interestingly, consistent with a recent report on ACKR3 and opioids crosstalk,<!-- wyrzuciłam (see: \@ref(opioids) ),--> along with implications that the modulation of circadian glucocorticoid oscillation may affect emotional behavior (e.g., @keers_2012), it was shown that ACKR3 binds intermediate opioid peptides, specifically BAM22 and peptide E, which results in enhancement of circadian glucocorticoid oscillation in the adrenal glands, and, therefore, anxiolytic-like behavior [@ikeda_2013]. <!-- może poprawic albo wrocić do innej wersji? -->
 BAM22 and peptide E were shown to be released under a condition named subcapsular cell hyperplasia (SCH) [@ikeda_2013], which is a pathohistological change of adrenal tissue.
 SCH cells lack prohormone convertase, an enzyme required for processing these proteins to mature enkephalins [@ikeda_2013].
 Therefore, this study highlights the functional relevance of chemokine and opioid systems interactions. 
 
 To sum up, these findings reinforce the idea that chemokines and their receptors are involved in higher brain functions regulating many types of behavior, including cognitive, motor, and emotional behavioral effects.
 However, to date, very little is known about their cellular, molecular, and electrophysiological profile with regard to potential interaction with glia to put these results in a broader context. <!-- and glial-mediated mechanisms to put these results in a broader context.-->
-/////
 
-
+<!-- dobre połączenie z AMYGDALA-->
 Although many brain regions have been found to participate in anxiety regulation it is commonly accepted that among them the amygdala plays a prominent role (Canteras et al., 2010; Davis and Whalen, 2001; Ehrlich et al., 2009; Engin and Treit, 2008; Everitt et al., 2003; Herry et al., 2010; LeDoux, 2000, 2007; McNally et al., 2011; Pape and Paré, 2010; Paré et al., 2004; Pérez de la Mora et al., 2008, 2010; Roozendaal et al., 2009).
-
-
-
-
-Of note, there is great controversy regarding the behavioral phenotype of *CX3CR1-/-* mice in the literature (Paolicelli et al., 2014). For instance, reports of impairment (Rogers et al., 2011), improvement (Maggi et al., 2011; Reshef et al., 2014) or no changes (Serchov et al., 2015) in hippocampal-dependent learning have been reported. In each study involving behavioral studies with these animals, the relevance of housing conditions, animal gender and age, feeding and behavioral test protocols is brought to light (Gemma and Bachstetter, 2013). Regarding the regulation of emotional behavior, previous evidence shows that the connectivity of brain regions involved in the regulation of mood disorders is impaired in CX3CR1-/- animals (Squarzoni et al., 2014). Although other authors detected no depressive-like phenotype of these mice in the sucrose preference (Milior et al., 2016) or in the TST (Hellwig et al., 2016), male and female animals were grouped and tested together. Here we report that 4-month- old female CX3CR1-/- mice show a hyperactive, anxiolytic-like and depressive-like phenotype, in agreement with previous data indicating altered social behavior in these mice (Zhan et al., 2014). Interestingly, although stress resilience has been described in CX3CR1-/- mice (Rimmerman et al., 2017; Yirmiya et al., 2015), other authors found that these animals show greater depressive- like behavior in response to inflammation compared to WT coun- terparts (Corona et al., 2013). - Bolos2018
 
 Several behavioral comorbidities, such as anxiety, depression, and other mood disorders, commonly occur in mice with CX3CR1 deletion.
 

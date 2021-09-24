@@ -186,6 +186,128 @@ However, considering that dendritic spines reflect the structural level of synap
 
 Taken together, as expected from their complex expression of cellular pattern and dynamic chemokine-receptor<!--może inne określenie--> interactions, chemokines modulate intrinsic membrane properties, synaptic transmission, and gliotransmission by implementing diverse cell- and region-specific mechanisms. 
 
+### Chemokines action at the network level {#network} 
+
+The finding that chemokines exert a neuromodulatory role in the brain is essential for a better understanding of the complex communication network between neurons and cells from their surrounding microenvironment. 
+This section illustrates the emergent concept of chemokine coordination of neural networks, such as neuroendocrine functions, GABA receptor-mediated synaptic transmission, and synchronized oscillatory activity. 
+
+#### Interneurons {#interinter}
+
+All neuronal circuits of higher animals comprise excitatory and inhibitory neurons forming intense feed-forward and feedback connections [@mohler_1990, @ferrante_2009, @roth_2012].
+However, the precise control of network operations would not be possible without interneurons.
+Although they constitute only 20-30% of all cells in cortical circuits, this small, diverse group of inhibitory neurons enables higher brain functions, such as working memory, cognitive flexibility, attention, or social interaction (for a review: @mederos_2019). 
+Through inhibition, GABAergic interneurons can shape the circuit activity controlling (1) frequency of surrounding pyramidal neurons, (2) network excitation level by feed-forward mechanism, and (3) synchronized oscillation events [@mederos_2019]. 
+
+The importance of interneurons in relation to network functioning illustrates the highly controlled manner by which interneurons connect with other neurons [@tremblay_2016]. 
+The best-characterized feature of constitutively expressed chemokines in the brain, particularly CXCL12 and CX3CL1, is the regulation of cell and axonal/neurite migration during neurodevelopment.
+Noting their documented modulation of GABAergic transmission (see Section: \@ref(GABA)) may indicate that chemokines participate in this process.
+Consistently, CXCL12/CXCR4 axis was demonstrated to guide interneurons (for example: @casoni_2012) and promote the maturation of GABAergic neurons during neurodevelopment [@luo_2008].
+Moreover, as expected, perturbation of CXCL12/CXCR4 signaling, e.g., in their gradients, leads<!--was revealed to lead--> to premature cortical plate invasion by cortical interneurons and, in the long term, disturbance in their laminar and regional distribution [@lpezbendito_2008], leading to the dysfunctional neural network. 
+
+Disturbances were also present regarding CX3CL1/CX3CR1 pathway, which plays an essential role in neurodevelopment. 
+Similar to CXCL12, the CX3CL1/CX3CR1 axis was demonstrated to affect the outgrowth of dopaminergic axons in the forebrain and the laminar positioning of subsets of cortical interneurons [@squarzoni_2014].
+Moreover, CX3CR1 deficiency impairs the functional maturation of thalamocortical synapses in the developing barrel cortex, indicating crucial involvement of CX3CL1/CX3CR1 signaling in this process [@hoshiko_2012].
+As the CX3CR1 receptor is mainly expressed by microglia, and those cells display a well-documented process of network maturation, called synaptic pruning, microglia are likely to participate in the maturation of synapses. 
+Therefore, these findings highlight the importance of chemokines regulation of  proper neural network functioning by their effects on interneurons migration and maturation.
+
+Neuronal growth and synapse formation can also be achieved by a phenomenon called giant depolarizing potentials (GDPs).
+GDPs are spontaneous network-driven rhythmic-like large neuronal oscillations in the developing hippocampus, formed by GABA, exerting depolarizing and excitatory actions during postnatal development. 
+CXCL12 was reported to tonically inhibit GDPs,  further highlighting the role of this chemokine in neuronal development [@benari_2002].
+Moreover, they are modulated by external factors, including chemokines, such as  CXCL12, CX3CL1, and CCL2 [@meucci_1998; @liu_2003; @sheridan_2014].<!-- może lepiej to sklecić -->
+
+Importantly, Sheridan et al. [@sheridan_2014] reported that the CX3CL1 application in the hippocampus has  opposing effects on glutamate-induced Ca^2+^ transients depending on whether it was applied alone or simultaneously with a GABA~A~ blocker, picrotoxin.
+These results highlight the possible modulation of CX3CL1 in regulating the balance between excitation and inhibition on the network level.
+However, whether the chemokine system participates in feed-forward inhibition signaling remains an open question for future research.
+
+#### Synaptic plasticity {#plast}
+
+Synaptic plasticity is defined as a molecular form of learning, memory, and development in neural circuits.
+It mainly comprises such mechanisms as Hebbian plasticity, synaptic scaling, and adult neurogenesis. 
+Among different factors regulating synaptic plasticity, glial cells have been considered key players in maintaining synapse homeostasis [@deluca_2020; @field_2020; @kettenmann_2011; @mederos_2018].
+
+##### Hebbian plasticity - LTP and LTD {#LTP}
+
+Hebbian synaptic plasticity is the earliest and most widely accepted neurobiological theory of memory consolidation. 
+According to this concept, a synapse will be strengthened if the presynaptic neuron is active while the postsynaptic neuron is firing, a process called Hebbian modification. 
+
+As mentioned earlier in the section on synaptic transmission (see: \@ref(Glu)), in the CA1 hippocampus, CX3CL1 induced phosphorylation of AMPA subunit GluR1 at postsynaptic sites [@ragozzino_2006], which is one of the hallmarks of the LTD.
+Moreover, one group reported  no difference in LTD in the hippocampus between adult wild-type and knockout mice.<!--cytowanie--> 
+In contrast, LTD is enhanced in CX3CR1^-/-^ mice at P13 [@paolicelli_2011], suggesting that CX3CL1 has the highest relevance during early postnatal age.
+
+However, similar electrophysiological studies indicated either a complete lack of LTP in knockout mice [@rogers_2011] or a more pronounced LTP than in wild-type counterparts when LTP was induced by a weak stimulation protocol [@maggi_2011]. 
+Interestingly, when mice were housed in an enriched environment compared to wild-type mice, they had enhanced plasticity [@maggi_2009].
+These results suggest that the absence of  microglia-driven CX3CR1 signaling impedes enrichment effects, possibly due to some shared  mechanisms that warrant further investigation. <!-- coś nie w porządku z tym zdaniem -->
+It is speculative that this lack of beneficial response to environmental stimulation might be explained by altered microglia–neurons cross-talk, affecting the circuitry underlying synaptic plasticity.
+
+Regarding the DG, CX3CL1 decreased the LTP at those synapses; however, when GABA~A~ receptors were blocked, the magnitude of the LTP was enhanced [@sheridan_2014], indicating that the CX3CL1-exerted actions may differ based on inhibitory/excitatory balance (see: Table 2). 
+Alternatively, noting the CX3CL1-induced potentiation of NMDA function and thereby the increase in calcium transients [@scianni_2013] together with the inhibition of the LTP induction following NMDAR activation, it is also possible that CX3CL1-induced elevated level of intracellular calcium could interfere with the LTP induction [@scianni_2013]. 
+
+These inconsistent findings between laboratories might result from differences in age, gender, diet, housing conditions, or electrophysiological protocols.
+Especially age and gender could be relevant, as the same laboratories cannot replicate their results when those variables had differed. 
+Hence, effects on synaptic plasticity and behavioral outcomes resulted from the CX3CL1-CX3CR1 axis may be transient and quickly compensated in knockout mice. 
+
+Chemokine regulation of synaptic plasticity is not restricted to the hippocampus. 
+CX3CL1 was shown to induce synaptic depression of evoked parallel fibers inputs onto Purkinje neurons [@giovannelli_1998], and mice with CX3CR1^-/-^ receptor deletion were characterized by the LTP in the spinal cord [@bian_2015].
+Future research should clarify whether mechanisms underlying CX3CL1-induced synaptic plasticity are general.  
+However, it would be implausible, considering that (i) microglia displays many region-specific features, especially when compared in cerebellum and cortex [@stowell_2018], (ii) CX3CR1-induced microglial during development are region-specific [@lowery_2017], as well as (iii) mechanisms governing LTP may differ between structures, for instance, between the hippocampus and spinal cord [@liu_2017].
+
+In addition, another chemokine, CCL3, one of the CCR5 ligands (see Section: \@ref(ccr5)), was also shown to significantly reduced basal synaptic transmission and  LTP at the Schaffer collateral-CA1 hippocampal synapses [@marciniak_2015]. 
+Furthermore, CCL3-induced LTP impairment was completely prevented by co-injection with maraviroc, a blocker of the CCR5 receptor. 
+
+<!-- It was suggested that CCR5 may also serve 
+Astrocytes may also indirectly participate in inducing LTP by microglia by cognition by releasing CCR5 ligands that act on and recruit CCR5-expressing microglia to neighboring neurons, after which the microglia engage in functions related to synaptic remodeling and modulation. 
+Although the exact mechanism of CCR5-regulated microglial pruning remains unknown, microglial CCR5 is well-positioned to contribute to synaptic plasticity and resultant regulation of cognitive function. -->
+
+
+##### Synaptic scaling {#scal}
+
+In order to prevent the destabilizing component of Hebbian plasticity in network function, neurons are able to sense their excitability and trigger negative-feedback homeostatic mechanisms to counteract perturbations in synaptic activity and restrain it within a dynamical but physiological range [@field_2020]. <!-- computational -->
+Recent accumulating data also highlight the essential role of glial cells, as they are equipped with, for instance, glutamate transporters to control the concentration of glutamate and other neurotransmitters in the microenvironment. <!-- może jakoś lepiej napisać --> 
+Importantly, stable but flexible neural activity is fundamental for proper brain function and support of animal behavior, depending on a dynamic interface between homeostatic synaptic  plasticity  mechanisms  and  Hebbian  forms  of plasticity [@field_2020; @tremblay_2016].
+
+It is widely accepted that TNF`r knitr::asis_output("\U03B1")` mediates synaptic scaling, a form of homeostatic plasticity leading to the adjustment of synaptic strength [@stellwagen_2006]. 
+Glia, mainly astrocytes, have been identified as the main source of TNF`r knitr::asis_output("\U03B1")` in the CNS.
+Therefore, by modulating TNF`r knitr::asis_output("\U03B1")` levels, glia participate in homeostatic activity-dependent regulation of synaptic plasticity [@stellwagen_2006].
+As it is well-documented that CXCR4 is mainly expressed on astrocytes, CXCL12/CXCR4 pathway is also involved in regulating synaptic plasticity. <!-- cytowanie??? -->
+Moreover, evidence also implicated microglia in the regulation of synaptic plasticity, as they release TNF`r knitr::asis_output("\U03B1")` [@pascual_2012]. 
+
+##### Adult neurogenesis
+
+Adult neurogenesis in the rodent brain is thought to reside in two niches, the SVZ adjacent to the lateral ventricles and the subgranular zone (SGZ) located in the DG.
+Division, maturation, and forming functional synapses or apoptosis are key processes that need to be tightly controlled to maintain an adequate balance between plasticity and stability.
+As expected, more and more data shows an increasing impact of glial cells and chemokines on this phenomenon. 
+Consistently, increasing studies implicated both exogenous or exercise-induced CX3CL1 in promoting neurogenesis and  NSC/NPC activity in a microglia-dependent manner, whereas depletion of CX3CR1 resulted in a decreased number of newly generated neurons [@vukovic_2012, @bachstetter_2011, @rogers_2011]. 
+Moreover, morphological alternations in mature granule cells were still present in CX3CR1 deficient mice [@bols_2018], suggesting their long-lasting changes.
+Similar to CX3CL1, CXCR5 was also reported to enhance the proliferation of SGZ cells in the DG.
+Nonetheless, no difference in microglial density or their activation was observed [@stuart_2014], implying microglia-independent action.
+
+
+#### Neuroendocrine circuit {#neuroendo}
+
+The hypothalamus, a brain region comprised of different nuclei and several neuronal populations producing neuropeptides, is critically involved in the regulation of major neuroendocrine functions, including water/food intake, metabolism, and also stress.
+
+Depending on the concentration, CXCL12 is thought to exert opposite effects on the action potential discharge [@guyon_2005], which may have functional consequences on the activity of neuroendocrine networks.
+Specifically, CXCR4 is tonically active at low physiological concentrations, constantly exerting its action on MCH neurons.
+Under basal conditions, those cells showed more hyperpolarized membrane potential than orexin neurons, which do not express CXCR4 [@eggermann_2003]. 
+Moreover, CXCL12/CXCR4/ACKR3 signaling dysfunctions are associated with feeding disorders, such as anorexia.
+Consistently, a high-fat diet was reported to increase the expression of CXCL12, its receptors, and neuropeptides, such as enkephalin, galanin, orexin, and MCH in the PVN and perifornical lateral hypothalamus [@poon_2016]. 
+Importantly, intracerebroventricular injection of CXCL12 was shown to mimic those effects of the high-fat diet in the hypothalamus, suggesting a vital role of the CXCL12/CXCR4/ACKR3 axis in feeding behavior [@poon_2016]. 
+
+<!-- Some chemokines such as cytokine-induced neutrophil chemoattractant (CINC, the rat counterpart of the human growth-related oncogene, GRO/), neutrophil-activating peptide-1, stromal cell-derived factor (SDF-1) also named CXCL12 and monocyte chemoattractant protein-1 (MCP-1) also named CCL2 have been found to be expressed in the hypothalamus and in the pituitary [10,31,76]. --><!-- CXCL14 protein is present in a subset of hypothalamic neurons and suggest that CXCL14 participates in hypothalamic functions such as control of autonomic nervous systems and/or participates in immune cell recruitment via the median eminence Yamato2011 też feeding ale nie wiem czy to poruszać...-->
+
+
+#### Functional connectivity
+
+
+Considering the relevance of chemokines' role in neurodevelopment (i.e., neuronal/axonal migration and synaptic pruning), it can be hypothesized that proper chemokine signaling during neurodevelopment is of high importance to provide functional connectivity between many cortical regions. 
+However, to date, there is a scarcity of data on this topic. 
+In particular, by measuring connections between hippocampus and prefrontal cortex, mice with deletion of CX3CR1 revealed a decrease in  the  coherence  between  those two structures, compared  to  their wild-type  littermates (@zhan_2014, see Fig 4D).<!-- !-->
+Thus, this finding suggests that the depletion of CX3CR1 leads to  a  decrease in  hippocampal–prefrontal connectivity, which may have behavioral consequences, such as anxiety or cognitive impairments [@zhan_2014].  
+Moreover, knockout mice showed reduced frontal cortex oscillatory driving to the hippocampus than their wild-type littermates at baseline conditions  [@zhan_2015]. 
+It is speculative whether it is the consequence of morphological modifications of microglia depleted of CX3CR1 [@piirainen_2021], but scanty evidence is available so far. <!-- tutaj może poprawić tę drugą część zdania...-->
+Nevertheless, these results highlight a fundamental role of CX3CL1 at the network level. 
+More recently, in another study, the expression of one chemokine, CXCL1, was elevated in the  visual cortex, which was exposed to gamma frequency synchronization [@garza_2020].
+Hence, considering those findings and accumulating evidence of glial impact on the network, investigating chemokines’ role in neural networks may be an exciting direction in the future.
 
 
 ///////////////////

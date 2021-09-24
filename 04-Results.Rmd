@@ -113,3 +113,8 @@ NF knockdown with the less effective NF1196 vector also reduced vSub-BLA LTP (Su
 
 
 Quantitative analysis of GABAergic synapse markers and measurement of miniature inhibitory postsynaptic currents in BLA projection neurons after neurofascin knockdown ex vivo confirmed the loss of GABAergic input.
+
+# Electrophysiology
+
+significantly inhibited the amplitude of electrically evoked GABAergic IPSCs elicited from both the LPC and local synapses (Figure 3a). The inhibition of GABAergic transmission  by  10mM  PD128907  did  not  recover  during an extensive washout period.
+Despite this, the pipette resistance did not significantly change during the duration  of  these  recordings.

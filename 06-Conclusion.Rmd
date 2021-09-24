@@ -1,8 +1,11 @@
 # Conclusions
 
-Nevertheless, our data support the notion that an adequate
-cross-talk between microglia and neurons is required for the cor- rect functional maturation of newborn granule neurons and for the proper regulation of emotional behavior. These data contribute to increasing our understanding of AHN under both physiological and pathological conditions. - Bolos2018
+Nevertheless, our data support the notion that an adequate cross-talk between microglia and neurons is required for the correct functional maturation of newborn granule neurons and for the proper regulation of emotional behavior. These data contribute to increasing our understanding of AHN under both physiological and pathological conditions. - Bolos2018
 
 In summary, our data demonstrate that baseline inhibitory synaptic transmission in SG neurons is markedly enhanced by minocycline. This may function to decrease the excitability of SG neurons, thus leading to a modulation of nociceptive transmission.- Peng2016
 
  Our data lay the fundamental groundwork to investigate microglia-astrocyte cross talk and juxtavascular microglial function in the healthy and diseased brain.
+ 
+ 
+ 
+Another important aspect of neuropeptide signalling in the central amygdala that we illustrated is that neuropeptides can antagonise each other’s action (CRF vs nociception and NPY;vasopressin vs oxytocin), or at least have opposing effects (PACAP and CGRP vs galanin), work synergistically (oxytocin and angiotensin IV), or have at least similar effects  (PACAP and CGRP, CRF and angiotensin-II). This makes neuropeptide signalling in the central amygdala highly dynamic, which is further amplified by their ability to interfere with synaptic plasticity as seen for CGRP in threat learning (Han et al.2010). Taken together, the rich diversity of neuro-peptides and their receptors in the central amygdala, second only to the hypothalamus, makes it possible to fine-tune amygdala activity and resulting output to maintain emotional homeostasis.  <!-- zerżnięte z van der bourg review o peptides in CeA - analogicznie dla chemokin -->

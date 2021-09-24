@@ -1,5 +1,45 @@
 # Discussion
 
+<!-- introduction -->
+
+Various chemokines and their receptors are increased in both parenchymal brain cells and leukocytes in human and experimental epilepsy (Cerri et al., 2017; de Vries et al., 2016; van Vliet et al., 2018). 
+In addition to their role as chemotactic molecules that govern the tissue extravasation of peripheral immune cells, chemokines are endowed with neuromodulatory actions which make them potential candidates for altering neuronal network excitability in epilepsy. For example, frac  -  talkine (CX3CL1) was shown to reduce GABAA use-dependent receptor desensitization (i.e., rundown), as shown in oocytes transfected with human TLE membranes (Roseti et al., 2013), suggesting it reduces excitability by stabilizing receptor currents.
+
+
+These data, together with the reported changes in chemokines level in brain and biofluids in epilepsy patients, support a potential involve  -  ment of chemokine signaling networks in the pathophysiology of seizures
+
+
+## CX3CL1 
+
+
+### BLA
+
+
+### CeA
+
+The  central  nucleus  of  the  amygdala  (CeA)  is  a  limbic  hub involved   in   autonomic   regulation,   emotion,   and   motivated behavior, and has been strongly implicated in opioid dependence (Koob,  2009a;  Upadhyay  et  al.,  2010). 
+
+<!-- repeat the most important findings -->
+In this context, we provide new evidence for  the neuromodulatory properties of CXCL12/CXCR4 axis in synaptic transmission and membrane properties in the amygdala. 
+First, we showed that
+
+<!-- summary if increased... -->
+Taken  together,  along  with  the  decreased  expression  seen  in antioxidant   genes Cat and Gpx3,   and   increased   expression of cFos and   proinflammatory Il6st,   these   findings   indicate that  the  CeA  experiences  deleterious  glial-neuronal  signaling during   opioid   withdrawal   that   may   lead   to   increased   and dysregulated     neuronal     firing. 
+
+
+We identified the target cells of CXCL1/IL-8 by assessing CXCR1 and CXCR2 receptor expression in the same brain tissue where the chemo  -  kine was induced. Immunohistochemical analysis of human hippocam  -  pal specimens showed that both receptors were expressed by neurons and glia (Liu et al., 2020). 
+<!-- what we know so far about cellular expression --> 
+
+The predominant neuronal expression of CXCR1 and CXCR2 re  -  ceptors in epileptic mice suggests that the ictogenic effects of brainborne CXCL1 are mediated by neuronal cells. However, we cannot exclude that functional receptors are expressed by glia (i.e. CXCR1) or by brain vessels (Liu et al., 2020) and are involved in CXCL1 effects, although we did not detect receptor expression in vessel in our model.
+
+Both neuronal and glial effects of CXCL1 have been reported which may be relevant for its involvement in seizures. In particular,
+
+
+Overall, the described CXCL1-mediated effects may decrease the seizure threshold, thereby contributing to seizure generation. Accord ingly
+
+
+Only behavioral seizures were monitored in the Xu et al. (2017) study, therefore it is unclear if the CXCR2 receptor antagonist reduced the motor component of seizures by limiting seizure generalization, or also decreased EEG seizure activity like in our study. Since we did not monitor motor seizures in our mice, the comparison between the two treatments remains speculative. S
+
 ## BLA, channels?
 
 
@@ -42,6 +82,29 @@ Adenosine exerts two parallel modulatory roles in the CNS, acting as a homeostat
 
 
 ### cx3cl1
+
+DIO mice exhibited significant cognitive deficits in the Y-  maze test and decrease in fractalkine and CX3CR1 in the hippocampus and amygdala compared with mice fed a control diet [@kawamura_2021]. <!-- Our findings revealed that decreased fractalkine-  CX3CR1 signaling in the corticolimbic system contrib-utes to the impaired cognition observed in DIO mice in association with decreased expression of glutamate receptor subunits and synaptic components. --><!-- Furthermore, intracerebroven-tricular administration of the CX3CR1 antagonist 18a in normal mice induced significant cognitive deficits in  the Y- maze test.///  More-over, CX3CR1 antagonist-  treated mice exhibited a significant decrease in NR2A, GluR1 and PSD-95 in the hippocampus./// Administration of the IGF-1 receptor inhibitor PPP and the TrkB antagonist ANA-12 significantly decreased mRNA expression of fractalkine and CX3CR1 in the hippocampus of normal mice//  These findings suggest that the cognitive decline observed in DIO mice is due, at least in part, to reduced fractalkine- CX3CR1 signaling in the corticolimbic system --><!--  The amygdala regulates hippocampal LTP, spatial memory and dentate gyrus field potentials.34 35 --><!-- The present study provides the first evidence that DIO mice have significant decrease in fractalkine and CX3CR1 levels in the hippocampus and amygdala, and that the administration of a CX3CR1 antagonist significantly impairs learning and memory in the Y- maze test in normal mice, consistent with cognitive deficits in CX3CR1-  deficient mice.20--><!-- Moreover, the present study showed that the administration of the IGF-1 receptor inhibitor PPP significantly decreased mRNA expres-sion of fractalkine and CX3CR1 in the hippocampus, providing different lines of evidence that bloodborne IGF-1 is a potent positive regulator for fractalkine- CX3CR1 signaling in the brain.--><!--  In addition, the administration of the BDNF receptor TrkB antagonist ANA-12 significantly decreased fractalkine and CX3CR1 levels in the hippocampus in normal mice. The mRNA and protein expression of fractalkine and CX3CR1 is significantly decreased in the hippocampus of BDNF- deficit mice.39 Together, these findings suggest that HFD induces a significant decrease in hippocampal BDNF  levels, which in turn decreases fractalkine and CX3CR1 levels in the hippocampus.-->
+
+ LTP in amygdala is predominantly regulated by glutamate receptors, such as NMDA and AMPA receptors, and is considered to be a form of synaptic plasticity that underlies learning and memory in the hippocampus.8 <!-- trochę bardziej zmienić --> Activation of CX3CR1 on microglia within the CA1 region of the hippocampus triggers the release of adenosine that in turn, via the activation of type A2 adenosine recep-tors, increases the release of D-  serine as a coagonist for NMDA receptors from the glia, leading to a potentiation of NMDA function, suggesting that fractalkine-  CX3CR1 signaling may enhance LTP as well as learning and memory processes.37 
+On the other hand, CX3CR1-  deficient mice exhibit impaired LTP in the hippocampus.20 <!-- These findings suggest that the cognitive impairment observed in DIO mice may be due to decreased fractalkine-  CX3CR1 signaling in the hippocampus.-->
+
+<!-- CX3CL1 and NMDA, AMPA, PSD etc.
+
+A recent study demonstrated that the detrimental effects of HFD consumption on learning and memory may be mediated in part by the alterations of glutamate receptors, such as NMDA and AMPA receptors.3 4 40–42 HFD feeding decreases hippocampal NR2B of NMDA receptor subunits and GluR-1 of AMPA receptor subunits.43 44 The present study also demonstrated a significant decrease in NR1, NR2A and GluR1 in the hippocampus of DIO mice. Moreover, the present study demonstrated that CX3CR1 antagonist-  treated mice also exhibited a significant decrease in NR2A and GluR1 in the hippocampus coincident with significant cognitive deficits, similar to DIO mice. Presynaptic and postsynaptic machinery asso-ciated with synapse formation and activity is involved in learning and memory processes. Compared with control mice, DIO mice exhibit abnormal expression of factors involved in the synaptic plasticity, such as synaptosomal- associated protein 25 (SNAP-25) and synaptophysin I in the presynaptic site and PSD-95 in the postsynaptic site.5 6 9 10 14 43 HFD- fed animals exhibit cognitive decline in a water maze test and step-  through task, and a decrease in synapsin 1 and PSD-95 in the hippocampus and cere-bral cortex.3 14 Further, HFD-  fed mice display impaired hippocampal-  dependent memory in the Y-  maze test, and reduced SNAP-25, PSD-95 and syntaxin-4, but not synap-tophysin, in the hippocampus.6 In the present study, DIO mice exhibited a significant decrease in synaptophysin and PSD-95 levels in the hippocampus compared with CD mice. Synaptophysin is presynaptic vesicle marker, and PSD-95 interacts with ion channels, membrane  receptors, cytoskeletal components, and intracellular signaling molecules,45 46 and increases AMPA receptor currents by selectively delivering GluR1-  containing receptors to synapses, thus mimicking LTP.47 These findings suggest that the synaptic dysfunction might be an important contributor to the hippocampal-  dependent spatial memory impairment in DIO mice.6 Furthermore, in the present study, the administration of a CX3CR1 antagonist induced a significant decrease in PSD-95 in the hippocampus of normal mice compared with vehicle- treated mice, the same changes observed in the hippo-campus of DIO mice. Moreover, the same changes in the NMDA receptor subunits, AMPA receptor subunits, and synaptic markers were observed in both DIO mice and CX3CR1 antagonist-  treated mice, indicating that HFD feeding induced impaired fractalkine-  CX3CR1 signaling in the hippocampus, leading to synaptic deterioration and resulting in impaired cognition
+
+-->
+
+<!-- CX3CL1 and inflammation and microglia 
+
+There is convincing evidence that enhanced inflamma-tion in both the brain and peripheral organs is strongly involved in several dysfunctions associated with HFD feeding for a long time.48 In this regard, fractalkine-  CX3CR1 signaling is demonstrated to regulate the inflam-matory responses of macrophage and microglia.20 49 50  Especially, enhanced inflammation in both the brain and peripheral organs induced by HFD feeding has been reported to influence cognitive function.20 31 49 50 Therefore, enhanced inflammation may be an another pivotal event to regulate processing of learning and memory in obesity.
+
+-->
+
+The present study revealed that long-  term HFD feeding in mice may induce impaired fractalkine-  CX3CR1 signaling in the corticolimbic system, leading to defec-tive synaptic plasticity and subsequently to cognitive impairment in DIO mice. Taken together, these findings provide compelling evidence that neuron–microglia interactions, especially those underpinned by fractalkine- CX3CR1 signaling, play crucial roles in brain dysfunction associated with obesity.
+
+
+
+Therefore, fractalkine-  CX3CR1 signaling is postulated to represent a primary neuron–glia inter-  regulatory system that is important for brain function.18
 
 We have previously shown that another transmembrane chemokine, CX3CL1, in duces protection of hippocampal neurons from Glu-induced excitotoxicity with a mechanism mediated by microglia (Lauro et al., 2008, 2010). <!-- opposite -->
 the inhibition of microglia activation selectively  prevented  CX3CL1-induced neuroprotection, while CXCL16 was still able to rescue neurons from cell death (Fig. 4 A , n  4–5; p  0.05) indicating that microglia activation is not required for CXCL16-mediated neuroprotection.
@@ -134,3 +197,64 @@ The composition of GABAAreceptors has been found to be quite diverse because the
  
  
  -->
+ 
+Dendritic spines on excitatory principal cells are critical sites of learning-induced plasticity.
+<!-- Interestingly, it has been shown that conditioned stimuli (CS) activate PV INs during fear conditioning, which in turn inhibit SOM INs, resulting in a disinhibition of PN dendrites which facilitates excitatory synaptic plasticity (Wolff et al., 2014). -->
+
+It  is  unclear  how  the ... observed  here influence  opioid  withdrawal  syndrome  or  vice  versa.
+
+NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology. <!-- chemokines-->
+
+#### Astrocytes in neuroinflammation? 
+
+For   example,   astrocyte   TNFa has  
+
+#### Negative reinforcement
+
+Negative   reinforcement   models   posit   that   avoidance   of unpleasant    physical    and    emotional    withdrawal    symptoms motivates  substance  dependence.  Our  findings  are  consistent with this model. Increased activity in the amygdala can lead to negative emotion and autonomic dysregulation—both of which are associated with opioid and alcohol withdrawal and may drive drug-seeking (Tovote et al., 2015).
+
+
+#### GLIA AND INFLAMMATION 
+
+Owing to the focus of the existing literature the majority of the central immune signaling and non-neuronal modi fi cations will be focused on microglia and astrocytes, and their related traditional signaling systems, such as cytokines and chemokines. A complicated issue that faces the glial research fi eld is the use of the phrase “ glial activation ” as it has become apparent within the immunology fi eld that immune activation can be both proin fl ammatory and anti-in fl ammatory in nature. As such we have attempted to provide information as to the direction of this response. Moreover, simple quanti fi cation of “ proinfl ammatory markers of glial activation ” such as microglial CD11b or Iba1 and the astrocyte marker GFAP, does not necessarily ensure a proin fl ammatory phenotype of these populations at the time of tissue analysis ( Watkins et al., 2007a; Ransohoff & Perry, 2009 ).
+
+#### E/I
+
+The balance of major excitatory (glutamate, Glu) and inhibitory (γ-aminobutyric acid, GABA), named as E/I neurotransmission, is critical for proper information processing
+
+
+#### Sickness behavior, peripheral immune activation
+
+Earlier studies in rats have shown that peripheral immune  activation  using  LPS  or  streptococcal enterotoxin  B  alters  EEG-like  activity  in  central amygdala 125–200 min post-treatment ( Engler et al., 2011; Prager et al., 2013 ) and caudal amygdala at 110 min post-treatment ( Doenlen et al., 2011 ). [@munshi_2018].  We found that peripheral inflammagens rapidly increase the firing of BLA neurons, thereby providing a clue as to how it might trigger changes in behavior.
+
+#### CXCL12 
+
+This acceleration observed at higher concentrations of CXCL12 a could be mediated by a CXCL12 a metabolite generated in the slice. Indeed, it has been shown that CXCL12 a can be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment, namely CXCL12 a (5–67), that exerts its effect through a G-protein coupled receptor distinct from CXCR4 (Zhang et al ., 2003). These effects could overcome the CXCR4 effects. Further experiments using specific MPP inhibitors should clarify this point.[@guyon_2005]
+
+Multiple mechanisms may terminate CXCR4 signaling: desensitization, internalization, and degradation, each of which  act to guard against inappropriately sustained signaling.Desensitization of CXCR4 and other GPCRs can be either acute or sustained: short-term desensitization spans  minutes and results from β-arrestin-mediated steric hinderance of G-protein engagement. Longer term desensitization  occurs over hours to days and results from persistent internalization, degradation, and transcriptional downregulation.  Following ligand binding, CXCR4 phosphorylation, and G  protein recruitment, β-arrestin is recruited to sterically hinder  G-protein engagement with the receptor (desensitization).
+<!-- raczej nieważne -->
+Control over receptor internalization is exerted at the level of  ligand binding. Recent studies demonstrate that inverse agonists (TAK779) of CXCR4 stimulate a higher rate of receptor internalization compared to partial agonists (Met-CCL5),  suggesting an actively driven internalization process.39  Following internalization, CXCR4 signaling can continue.  For example, CXCL12 mediates human neural progenitor  cell survival by binding CXCR4 localized to the endosome.40  CXCR4 also localizes to the endosome for degradation  which is controlled at several levels
+Cytoskeletal activity  can link CXCR4 internalization to endosomal degradation.  Rho and Gα13 mediate the actin polymerization necessary  for trafficking CXCR4 into the endosomal compartment.41  Furthermore, adaptor proteins are necessary for endocytosis:  a complex interplay between CXCR4, β-arrestin, and adaptor protein, AP2, is necessary to mediate CXCR4 endocytosis—mechanistic insight is lacking.42 Adaptor proteins are also necessary for CXCR4 recycling, for example, IQGAP1  regulates endosome interactions with microtubules during  CXCR4 trafficking back to the cell membrane.43 
+Whether a receptor is recycled or degraded is largely a function of the overall number of receptors internalized,42 competing cargo for CXCR4-binding motifs42 and the cytoskeleton.43 A network of CXCR4-binding proteins and cytoskeletal processes control CXCR4 signal  termination—finer mechanistic insight will provide potential  for therapeutic modulation.
+
+In cerebellum,  the  activation  of  this  signalling  pathway  by neurotransmitters  is  known  to  play  a  crucial  role  both  in synaptic  activity  and  plasticity  processes   Linden,  1994; . Chen  and  Tonegawa,  1997 . <!-- ANALOGICAL - in amygdala, this pathways .... -->
+
+CXCL14 did not activate CXCR4-expressing cells (i.e.,failed to trigger chemotaxis and Ca2+ mobilization, as well as signaling *via* ERK1/2<!-- symbol--> and the small GTPase Rac1); however, CXCL14 bound to CXCR4 with high affinity, induced redistribution of cell-surface CXCR4, and enhanced HIV-1 infection by>3-fold.
+Thus, these data suggest that CXCL14 is a positive allosteric modulator of CXCR4 that enhances the potency of CXCR4 ligands. 
+
+
+
+<!-- Complicating these levels of regulation is the fact that overall protein synthesis rates are high in the young brain, decline through adulthood, and fall sharply with old age [13], [56]. Protein turnover in the brain appears to follow a similar pattern [13]; however, little is known about the effects of age on other protein modifications. In addition, proteins such as GFAP show increased metabolic turnover with age, even in the absence of neurodegeneration. Our results are consistent with independent regulation of chemokine expression at the mRNA and post-translational levels.-->
+
+# CX3CL1
+
+## DOSE
+
+At levels reached during inflammatory conditions, CX3CL1 signaling has previously been associated with activation of pro-survival and anti-apoptotic pathways through phosphorylation of molecules such as Akt, as well as activation of MAP kinases such as p-38 and Erk1/2 (p44/42; Maciejewski-Lenoir et al., 1999; Meucci et al., 2000; Cambien et al., 2001; Deiva et al., 2004; Klosowska et al., 2009; Lyons et al., 2009)
+
+While previous studies have shown that CX3CL1 causes an increase in intracellular calcium in neurons and other cell types (Oh et al., 2002; Deiva et al., 2004; Ragozzino et al., 2006) this effect of CX3CL1 becomes apparent at concentrations of 25 nM and higher (Oh et al., 2002; Deiva et al., 2004), well above the levels we investigated here and we observed no such increase in intracellular calcium. At a concentration of 2 nM, in both neurons and non-neurons, CX3CL1 pre-incubation suppressed glutamate-mediated rises in intracellular calcium levels. These data are in good agreement with previous findings of a protective effect of inflammatory levels of CX3CL1 against glutamate excitotoxicity and glutamate NMDA receptor activation, in particular (Meucci et al., 1998; Deiva et al., 2004; Limatola et al., 2005), although, unlike the current work, the latter effect was linked to increased intracellular calcium (Ragozzino et al., 2006). Calcium oscillations in both neuronal and non-neuronal cells are important for cellular growth, migration and synaptic structural refinement (Katz and Shatz, 1996; Komuro and Rakic, 1998; Spitzer et al., 2000). Thus, the dampening of such signaling by CX3CL1 is suggestive of a role in stability of network connectivity and activity. Overall, the current data along with information in the published literature reveal that a role for CX3CL1 in control of glutamate-mediated excitatory neurotransmission during excitotoxic events can be extended to situations of synaptic plasticity required for normal functions such as memory formation.
+
+## GABA~A~
+
+The GABA~A~ receptor/chloride channel blocker, picrotoxin, used in the current studies would decrease GABAergic inhibitory transmission promoting depolarization in some cells with corresponding increases in intracellular calcium (Antonucci et al., 2012). Thus, the current work suggests GABA~A~ receptor/chloride channel activity within the hippocampal neuronal network must be intact for CX3CL1 to attenuate glutamatergic neurotransmission or LTP. 
+This situation is remarkably similar to that described for CX3CL1 inhibition of serotonergic neurons of the Raphe nucleus (Heinisch and Kirby, 2009). While this effect may relate to basal inhibitory tone, CX3CL1 could actually be enhancing GABAA receptor function. For example, CX3CL1 enhances phosphorylation and activation of Akt in neurons and this serine/threonine kinase has been associated with phosphorylation of the GABAA beta2 receptor subunit, a modification that enhances activity of the receptor (Meucci et al., 2000; Wang et al., 2003). Moreover, several signaling systems can enhance GABAmediated inhibition through promotion of rapid insertion of GABA~A~ receptors into the post-synaptic plasma membrane (Wan et al., 1997; Nusser et al., 1998; Mizoguchi et al., 2003; Jovanovic et al., 2004) - Sheridan2014

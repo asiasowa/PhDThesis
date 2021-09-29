@@ -34,7 +34,7 @@ C chemokines (also known as `r knitr::asis_output("\U03B3")`, see Figure \@ref(f
 The CX3C (also known as `r knitr::asis_output("\U03B4")`) chemokine subfamily currently represents only a single member, CX3CL1 (also called fractalkine).
 It is characterized by the presence of three amino acids between the first two cysteine residues, as well as a transmembrane and mucin-like domain (see Figure \@ref(fig:family), part d). 
 
-(ref:family) **Classification of chemokines and chemokine receptors**. **a** Chemokines are classified into four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. Receptors for the CXC family are shown in violet, whereas receptors for the CC family are depicted in blue. In addition, the receptor for the C family is presented in yellow and the receptor for the CX3R family is shown in red. **b** Atypical chemokine receptors, their initial names, ligand selectivity, and crosstalk with classical chemokine receptors. ACKR1 and ACKR2 bind a broad spectrum of chemokines, whereas ACKR3 and ACKR4 bind a more limited number of chemokines.
+(ref:family) *Chemokine families.* Chemokines are classified into four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. 
 
 ```{r family, fig.cap='(ref:family)', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/chemokinefamilies.png")
@@ -57,48 +57,6 @@ However, recent data cast a new light on the complexity of the ACKRs role as reg
 Regarding the CNS, the knowledge about the role of ACKRs is started to accumulate.
 Pioneer experiments demonstrated the expression of two ACKRs members, ACKR1 and ACKR3, in the CNS <!--citations-->(see Table \@ref(tab:chemoexpression)), along with their behavioral relevance (see Chapter \@ref(behavior)). 
 
-### Chemokine signaling
-
-After two decades of research on this topic, we are now beginning to appreciate the extent and complexity of the mechanisms responsible for chemokine signaling (see for reviews: @eiger_2021; @hughes_2018; @zweemer_2014). 
-They enable tight and rapid control of chemokine signaling and quick response by the chemokine system to the dynamic microenvironment.
-These processes include redundancy, post-translational modifications, dynamic chemokine-receptor interactions, atypical chemokine receptors, dimerization, interactions with other proteins on the membrane surface, and biased-signaling (see Fig. \@ref(fig:chemmechanisms)). <!-- ominięte (4)  diversity in signaling pathways after chemokine activation, -->
-
-Firstly, the regulation of chemokines and their receptors may be controlled by post-translational modifications (PTMs), the chemical modification of a protein after its translation, such as citrullination or cleavage by several proteases (@hughes_2018, see: Fig. \@ref(fig:chemmechanisms), part a).
-These changes profoundly affect chemokine system activity, including chemokine activation/inactivation, the change in binding affinity, or even switching from a receptor agonist to an antagonist [@hughes_2018].
-
-Another essential aspect of chemokine-induced signaling is their rich repertoire of ligand-receptor relationships (for reviews: @zlotnik_2000, @hughes_2018, Fig. \@ref(fig:chemmechanisms), part b).
-It is widely accepted that most chemokines may bind to several different receptors, whereas nearly all of CKRs may recognize various chemokine ligands.
-However, it becomes increasingly evident that the interactions between chemokines and CKRs are far more restricted, complex, and less redundant than previously thought, as further addressed in this section.
-Consequently, each chemokine/CKR pair interaction depends, for example, upon the simultaneous spatial and temporal expression of both molecules [@zweemer_2014]. 
-
-Most CKRs, like many GPCRs, constitutively exist as dimers (heterodimers/homodimers) or oligomers, thereby modifying ligand binding properties or activating different signaling pathways [@salanga_2011]. 
-Heterodimers, as they are formed with other GPCRs families (e.g., with opioid receptors), underlie the synergistic or antagonistic activity of various chemokine pairs [@kleist_2016].
-Moreover, increasing data shows that dimer formation is regulated by other factors, such as glycosaminoglycans (GAGs).
-
-GAGs, polysaccharides present at the cell surface and within extracellular matrices, bind chemokines and thereby immobilize and accumulate them.
-It is an essential step for the chemokine function, as it regulates their local concentration and availability for their receptors.
-Considering GAGs cell-, tissue- and developmental-specific expression  [@lortatjacob_2009], along with their selective binding of certain chemokines, GAGs-chemokine interactions are regarded as yet another mechanism contributing to chemokines orchestration of cell-to-cell communication. 
-
-Biased signaling, also known as functional selectivity, is another feature specific for GPCR receptors (@zweemer_2014, @kleist_2016, see: Fig 2D).
-Three types of biased signaling can be distinguished.<!-- based on??? -->  
-Ligand bias occurs when specific chemokines, although binding to the same receptor, could preferentially activate one of the intracellular pathways, either G-protein or `r knitr::asis_output("\U03B2")`-arrestin, and their downstream elements, accordingly to cell-specific differences. 
-Another type of bias signaling, receptor bias, occurs when a specific receptor, which typically binds multiple chemokine ligands, preferentially couples to a particular chemokine.
-Finally, cellular or tissue bias occurs when the same chemokine–receptor pair leads to activation of distinct signaling cascades or cellular responses in different spatial contexts. 
-
-CKRs may activate different intracellular pathways in a ligand- and cell-specific context (see: Fig. 2C). 
-Chemokine receptors most often signal through canonical G protein pathways and couple either to (1) the G~`r knitr::asis_output("\U03B1")`i~ subunit following inhibition of the adenylyl cyclase activity to reduce the intracellular cAMP levels or (2) G~`r knitr::asis_output("\U03B1")`q~ that activates phospholipase C, leading to the formation of diacylglycerol and inositol 1,4,5-triphosphate with a subsequent increase in a protein kinase C (PKC) activity and transient elevations of cytosolic Ca^2+^ levels.
-However, mounting evidence describes the involvement of other intracellular signaling cascades, including distinct G protein subtypes (G~11~ or G~`r knitr::asis_output("\U03B1")`12/13~), or alternative signaling targets, such as mitogen-activated protein kinase (MAPK), extracellular signal-regulated kinase (ERK) ½, Janus kinases (JAKs), and nuclear factor-`r knitr::asis_output("\U03BA")`B (NF-`r knitr::asis_output("\U03BA")`B) (for reviews: @allen_2007, @rostne_2011).
-
-<!-- (ref:chemmechanisms) **Molecular mechanisms of the chemokine system in the CNS.** **a** Post-translational modifications exemplified by CX3CL1 transmembrane form cleavage by ADAM10 and ADAM17 proteases into its soluble variant. **b** The chemokine family redundancy is exemplified by ACKR3, an atypical chemokine receptor, which binds two chemokines, CXCL11 and CXCL12. Besides the ACKR3 receptor, these two chemokines activate other chemokine receptors, namely CXCR3 and CXCR4, respectively. **c** Most chemokine receptors can form homo- and hetero-dimers. It is exemplified by the well-known CXCR4-ACKR3 complex. CXCR4 receptor is a 'classical' chemokine receptor, which activates G~`r knitr::asis_output("\U03B1")`q/i~ signaling pathways, including PKC or (ERK) ½. As an atypical receptor, ACKR3 alone activates `r knitr::asis_output("\U03B2")`-arrestin-mediated pathways, leading to receptor internalization or scavenging. However, after heterodimerization with CXCR4, it can modify ligand binding properties and receptor signaling as well as intracellular trafficking. **d** Chemokine bias signaling occurs when specific chemokines could preferentially activate different intracellular pathways, either G-protein or `r knitr::asis_output("\U03B2")`-arrestin, although binding to the same receptor. It can be due to a specific ligand or receptor, as exemplified here, due to a specific cell. 
-As suggested recently [@odemis_2012], when ACKR3 is activated on neurons, it signals through `r knitr::asis_output("\U03B2")`-arrestin-mediated pathways, but when it is activated on astrocytes, it recruits `r knitr::asis_output("\U03B2")`-arrestin-mediated pathways. -->
-
-
-```{r chemmechanisms, fig.cap='**Molecular mechanisms of the chemokine system in the CNS.** **a** Post-translational modifications exemplified by CX3CL1 transmembrane form cleavage by ADAM10 and ADAM17 proteases into its soluble variant. **b** The chemokine family redundancy is exemplified by ACKR3, an atypical chemokine receptor, which binds two chemokines, CXCL11 and CXCL12. Besides the ACKR3 receptor, these two chemokines activate other chemokine receptors, namely CXCR3 and CXCR4, respectively. **c** Most chemokine receptors can form homo- and hetero-dimers. It is exemplified by the well-known CXCR4-ACKR3 complex. CXCR4 receptor is a classical chemokine receptor, which activates G~\U03B1q/i~ signaling pathways, including PKC or (ERK)\U00BD. As an atypical receptor, ACKR3 alone activates \U03B2-arrestin-mediated pathways, leading to receptor internalization or scavenging. However, after heterodimerization with CXCR4, it can modify ligand binding properties and receptor signaling as well as intracellular trafficking. **d** Chemokine bias signaling occurs when specific chemokines could preferentially activate different intracellular pathways, either G-protein or \U03B2-arrestin, although binding to the same receptor. It can be due to a specific ligand or receptor, as exemplified here, due to a specific cell. As suggested recently [@odemis_2012], when ACKR3 is activated on neurons, it signals through \U03B2-arrestin-mediated pathways, but when it is activated on astrocytes, it recruits \U03B2-arrestin-mediated pathways.', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images/chem_mol_mechanisms.png")
-```
-
-<!-- nie działa \\$`r knitr::asis_output("\U03B2")`$\\ ani nic innego, chyba spróbować opcji z if loop w zależności od outputu.... -->
-
 In addition, the classical, formulated in the mid-1900s classification, divided chemokines into inflammatory (or inducible) chemokines, whose expression is upregulated upon inflammation, and homeostatic chemokines, which display constitutive expression.
 Several chemokines share both properties and have been called dual-function chemokines [@zlotnik_2012].
 On the other hand, considering that the same chemokine may exert both neuroprotective and neurotoxic effects, depending on its concentration, cell type, tissue, and time, this view seems oversimplistic.
@@ -120,11 +78,6 @@ Both forms of CX3CL1 interact with the same affinity with CX3CR1, a G~i~-protein
 The subunit G~i~ inhibits the production of cAMP, inducing a variety of intracellular second messengers including phosphoinositide 3-kinase (PI3K), protein kinase B (AKT), and nuclear factor kappa-light-chain-enhancer (NF`r knitr::asis_output("\U03BA")`B) [@alaoukaty_1998; @chandrasekar_2003]. 
 These molecules are known for regulating a wide range of cellular functions,  including apoptosis,  proliferation,  transcription, and migration. <!-- regulates  apoptotic,  proliferative,  transcriptional  and  migratory functions  in  microglia-->
 
-```{r cx3cr1sig, fig.cap='**CX3CL1-CX3CR1 signaling.** CX3CR1, which is G protein-coupled and transduces several well-characterized signaling pathways leading to activation of transcription factors, including NF-\U03BA B and CREB. Gi, heterotrimeric G protein-coupled to Gi protein; PI3K, phosphatidylinositide 3-kinases; Ras/Raf small GTPases; PLC, phospholipase C; PKC, protein kinase C; Akt, serine/threonine-specific protein kinase; MEK, mitogen-activated protein kinase kinase; MEKK, MAP3kinase; p38, p38 mitogen-activated protein kinase; I\U03BA B, inhibitor of kappa B; IKK, inhibitor of kappa B kinase; ERK, extracellular signal-regulated kinases; JNK, c-Jun N-terminal kinase; NF\U03BA B, nuclear factor kappa B; CREB, cAMP response element-binding protein.', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images/cx3cr1sig.png")
-```
-
-<!-- CX3CL1 induces transient phosphorylation of Akt and ERK1/2. Soluble CX3CL1 activates the transcription factor CREB and ERK1/2 and induces the translocation of NF-κB p65 subunit to the nucleus. NF-κB p65 subunit nuclear translocation is avoided by a specific inhibitor of PI3-K, suggesting that CX3CL1-CX3CR1 activates NF-κB through Akt.// https://www.researchgate.net/publication/322645691_Microglia_and_aging_The_role_of_the_TREM2-DAP12_and_CX3CL1-CX3CR1_Axes/figures?lo=1 -->
 
 #### CXCL12/CXCR4/ACKR3 {#cxcl12str}
 
@@ -139,13 +92,13 @@ CXCL12 signal through its canonical CXCR4 receptor and atypical ACKR3 receptor, 
 All three molecules are well-conserved across the vertebrate species [@nomiyama_2013; @nomiyama_2015].
 Surprisingly, the binding affinity between CXCL12 and ACKR3 is roughly ten times higher than those between CXCL12 and CXCR4 [@balabanian_2005]. 
 
-Following CXCL12 binding to CXCR4, in addition to the enhancement of receptor-ligand binding, there is a subsequent GDP exchange for GTP, and the trimeric G~i~-protein dissociates into its constituent parts,  G~`r knitr::asis_output("\U03B1")`i~ and G~`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")`~ [@ganju_1998]. 
+Following CXCL12 binding to CXCR4, in addition to the enhancement of receptor-ligand binding, there is an subsequently GDP exchanges for GTP and the trimeric G~i~-protein dissociates into its constituent parts,  G~`r knitr::asis_output("\U03B1")`i~ and G~`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")`~ [@ganju_1998]. 
 These molecules activate several intracellular signaling cascades, specifically phosphatidylinositol-3-OH kinase (PI3K), phospholipase C (PLC), and integrins (for a review: @britton_2021, @ward_2006).  
-PLC hydrolyses phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) into diacyl glycerol (DAG) and  inositol 1,4,5-trisphosphate (IP3). <!-- /// In parallel, CXCR4-oriented migration is mediated by the phosphatidylinositide 3-kinases (PI3Ks), which can be activated by both G`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")` and G `r knitr::asis_output("\U03B1")` subunits [45]. -->
+PLC hydrolyses phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) into diacyl glycerol (DAG) and  inositol 1,4,5-trisphosphate (IP3).  /// In parallel, CXCR4-oriented migration is mediated by the phosphatidylinositide 3-kinases (PI3Ks), which can be activated by both G`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")` and G `r knitr::asis_output("\U03B1")` subunits [45]. 
 IP3 production leads to increased intracellular calcium from the endoplasmic reticulum, while DAG activates protein kinase C (PKC). 
 Both intracellular free calcium and PKC promote the activation of mitogen-activated protein kinase  (MAPK) pathways, leading to cell migration, growth, and proliferation.  
-In parallel, the `r knitr::asis_output("\U03B1")`~i~ subunit inhibits adenylate cyclase and a consequent cyclic adenosine monophosphate (cAMP) production and activates the Ras/Raf/MEK/ERK pathway, resulting in cell cycle entry and proliferation [@cheng_2015]. 
-In addition to the well-characterized coupling to  G~`r knitr::asis_output("\U03B1")`i~, convincing evidence illustrates that CXCR4 can also bind to other G~`r knitr::asis_output("\U03B1")`~ proteins such as G~`r knitr::asis_output("\U03B1")`q~, G~`r knitr::asis_output("\U03B1")`o~, and G~`r knitr::asis_output("\U03B1")`s~ (for a comprehensive review: @pozzobon_2016).
+In parallel, the `r knitr::asis_output("\U03B1")`i subunit inhibits adenylate cyclase and a consequent cyclic adenosine monophosphate (cAMP) production and activates the Ras/Raf/MEK/ERK pathway, resulting in cell cycle entry and proliferation [@cheng_2015]. 
+In addition to the well-characterized coupling to  G`r knitr::asis_output("\U03B1")`i~, convincing evidence illustrate that CXCR4 can also bind to other G`r knitr::asis_output("\U03B1")` proteins such as G`r knitr::asis_output("\U03B1")`q~, G`r knitr::asis_output("\U03B1")`o~, and G`r knitr::asis_output("\U03B1")`s~ (for a comprehensive review: @pozzobon_2016).
 For example, by binding to G~`r knitr::asis_output("\U03B1")`12/13~, CXCR4 leads to Rho activation, whereas  G~`r knitr::asis_output("\U03B1")`q~ signal through Rac activation. 
 Moreover, it is well documented that CXCR4 can trigger a G-protein-independent signal pathway.
 
@@ -153,19 +106,139 @@ Following CXCR4 activation, G-protein coupled receptor kinases (GRKs) are recrui
 These molecules result in the uncoupling of CXCR4 from G protein and subsequent receptor internalization. 
 Moreover, `r knitr::asis_output("\U03B2")`-arrestins were reported to induce clathrin-mediated endocytosis of CXCR4, leading to receptor downregulation and trafficking to endosomal compartments [@denies_2019]. 
 
-CXCL12 second receptor, ACKR3, contains a modified typical DRY motif in the second intracellular loop (DRYLAIV), a highly conserved region within the second loop of GPCRs<!--see figure...-->, similar to the other ACKRs [@thelen_2008].
+Regarding CXCL12 second receptor, ACKR3, it contains a modified typical DRY motif in the second intracellular loop (DRYLAIV), a highly conserved region within the second loop of GPCRs<!--see figure...-->, similarly to the other ACKRs [@thelen_2008].
 It is thought to be essential for G protein binding and their subsequent activation [@thelen_2008].
 
 Like other atypical receptors, ACKR3 was demonstrated to (i) fail to activate G proteins and subsequent Ca^2+^-induced chemotaxis [@burns_2006; @levoye_2009; @rajagopal_2010a], (ii)  sequester CXCL12 extracellular gradient and thus control CXCR4-mediated cell migration. 
-ACKR3's signaling pathways are discussed later in section "Biased Signaling" \@ref(biasedsignaling).
+ACKR3's signaling pathways are discussed later in section "Biased Signaling" (\@ref:biasedsignaling).
+
+As chemokines constitute a complex system, besides their function and signaling pathways are modulated *via* broad array of factors, which are discussed below, focusing on CXCL12/CXCR4/ACKR3 as well as CX3C1/CX3CR1 axes.
+
+### Chemokine signaling {#chemokinesignaling}
+
+After two decades of research on this topic, we are now beginning to appreciate the extent and complexity of the mechanisms responsible for chemokine signaling (see for reviews: @eiger_2021; @hughes_2018; @zweemer_2014). 
+They enable tight and rapid control of chemokine signaling and quick response by the chemokine system to the dynamic microenvironment.
+These processes include (1) redundancy, (2) post-translational modifications,  (3) dynamic chemokine-receptor interactions, (4) atypical chemokine receptors, (5) dimerization, (6) interactions with other proteins on the membrane surface, and (7) biased-signaling. <!-- ominięte (4)  diversity in signaling pathways after chemokine activation, -->
+
+#### Redundancy {#redundancy}
+
+The most distinctive aspect of chemokine-induced signaling is their rich repertoire of ligand-receptor relationships (for reviews: @zlotnik_2000, @hughes_2018, Fig. \@ref(fig:chemmechanisms), part b and Fig. \@ref(fig:chemoexpression)).
+It is widely accepted that most chemokines may bind to several different receptors, whereas nearly all of CKRs may recognize various chemokine ligands.
+There is a prevailing notion that in the absence (or blockade) of a particular chemokine or chemokine receptor due to genetic or environmental factors, it could be compensated by the presence of other molecules with similar functions, illustrating the robustness of chemokine signaling.
+However, it becomes increasingly evident that the interactions between chemokines and CKRs are far more restricted, complex, and less redundant than previously thought, as further addressed in this chapter.
+Consequently, each chemokine/CKR pair interaction depends, for example, upon the simultaneous spatial and temporal expression of both molecules [@zweemer_2014]. 
+Moreover, there are also a few exceptions of exclusive chemokine-chemokine receptor pairs, including  CX3CL1 and its only receptor, CX3CR1, forming a non-promiscuous pair. 
+
+#### Dynamic chemokine-receptor interactions {#chemockrinteractions} 
+
+Besides complex relations between chemokine ligands and their receptors, several chemokine regions are critical for receptor binding and signal transduction.
+In addition to N-terminal, a chemokine region widely believed to be sufficient for binding specific CKRs,<!-- receptor N-terminus is not sufficient to recognize chemokine ligand and signal transduction.--> chemokine N-loop has been documented to be a critical domain of chemokine receptor recognition and activation for many chemokine-chemokine receptor pairs (for example: @booth_2002, @fernando_2007, @love_2012). 
+Moreover, as exemplified by a CXCL12/CXCR4 axis, extracellular domains of CXCR4 also participate in ligand recognition and selectivity [@chevign_2014], further supporting the notion that chemokine-CRK interactions are highly dynamic.
+
+#### Posttranslational modifications
+
+Moreover, the regulation of chemokines and their receptors may be controlled by post-translational modifications (PTMs), the chemical modification of a protein after its translation, such as citrullination [@loos_2008] or cleavage by matrix metalloproteinases (MMPs), cathepsins, and other proteases (@hughes_2018, @thompson_2017, see: Fig. \@ref(fig:chemmechanisms), part a).
+These changes profoundly affect chemokine system activity, including chemokine activation/inactivation, the change in binding affinity, or even switching from a receptor agonist to an antagonist [@hughes_2018].
+PTMs are present both under pathophysiological and physiological conditions.
+As mentioned above (see Section: \@ref(cx3cl1str)), one example is proteolytic processing of transmembrane CX3CL1 to release its soluble variant.
+This process was reported to be elicited by many factors, such as neurotoxic insult, suggesting its essential role in regulating inflammation [@chapman_2000].
+PTMs can also modulate CXCL12/CXCR4/ACKR3 axis.
+For instance, following CXCL12 binding, site-specific phosphorylation of CXCR4 was revealed to be dynamically regulated by multiple kinases resulting in both positive and negative modulation of this receptor signaling [@busillo_2010].
+In addition,  CXCL12 might be proteolytically cleaved matrix metalloproteinases (MMPs), leading to the loss of its binding activity to CXCR4 [@mcquibban_2001].
+
+#### Interactions with surface molecules
+
+After being secreted from cells, chemokine availability and distribution are dependent on the interaction with extracellular matrix (ECM)<!-- especially gags?--> [@salanga_2011; @hughes_2018].
+GAGs, polysaccharides present both at the cell surface and within extracellular matrices, are particularly important in this regard.
+By binding chemokines, GAGs immobilize and accumulate them, which is an essential step for chemokine function, as it regulates their local concentration and availability for their receptors. 
+This results in:  (i) creating a gradient, which serves as a directional signal for migrating cells, (ii) enabling/disabling chemokine-chemokine receptor interactions, and (iii) transporting chemokines across cell surfaces [@tanino_2010].
+Moreover, considering their cell-, tissue-, developmental stage-specific expression [@lortatjacob_2009], as well as their selectivity of chemokine binding, GAGs are emerging as a scaffold to ensure that particular chemokine mediating a specific function will be presented at the correct localization and time. 
+For instance, one of GAGs, heparin, was reported to modulate CXCL12/CXCR4 interaction [@vega_2011], illustrating that in addition to their known role in modulating local chemokine availability, GAGs affect the chemokine/CKRs interaction.
 
 
 
-```{r cxcl12sig, fig.cap='**A schematic of the CXCL12/CXCR4 intracellular signal transduction pathways.** ', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images/cxcl12sig.png")
+#### Dimerization {#dimerization}
+
+Like many other GPCRs, most chemokine receptors exist in multimeric form.
+Specifically, several CKRs can undergo dimerization (heterodimerization/homodimerization) or oligomerization processes (see Fig. \@ref(fig:chemmechanisms), part c). 
+CXCR4 is one of the best-studied chemokine receptors in this context.
+It was shown to undergo homodimerization upon CXCL12 binding, which was demonstrated to be crucial for its functionality and signaling [@babcock_2003; @mellado_2001; @toth_2004; @vilacoro_1999].
+Moreover, microscopic approaches, including bioluminescence resonance energy transfer (BRET)  or fluorescence resonance energy transfer (FRET) assay, revealed the constitutive expression of chemokine receptor dimers (for a review: @wang_2008).
+Thus, chemokine ligands' binding is thought instead of stabilizing or reorganizing these pre-existing complexes  [@thelen_2010] than inducing this phenomenon.
+
+
+CXCR4 receptors can also form heterodimers. 
+When heterodimers of CXCR4 and CXCR5 form, binding of a cognate  ligand to either of these receptors inhibits chemokine binding  to the other via a mechanism known as allosteric trans-inhibition.51
+
+Heterodimers can be formed with other GPCRs families (e.g., other CKRs or opioid receptors), and thus, they underlie the synergistic or antagonistic activity between chemokine-CKRs pairs [@kleist_2016].
+For instance, CXCR4 can form heterodimers with other chemokine receptors, such as CCR2 or CCR5 [@contento_2008; @isik_2008; @sohy_2007; @wang_2006] or GPCRs outside of the chemokine family, including `r knitr::asis_output("\U03B1")`~1A/B~-adrenergic receptors [@tripathi_2015] and `r knitr::asis_output("\U03B4")`-opioid receptors [@pello_2008].
+Importantly, CXCR4 heterodimerizes with another CXCL12 receptor, ACKR3 [@levoye_2009; @dcaillot_2011], leading to decreased G~`r knitr::asis_output("\U03B1")`i~ signaling and constitutive `r knitr::asis_output("\U03B2")`-arrestin recruitment [@dcaillot_2011].
+As a consequence, `r knitr::asis_output("\U03B2")`-arrestin-linked signaling pathways are potentiated, including ERK`r knitr::asis_output("\U00BD")`, p38 MAPK, and SAPK, resulting in increased cell migration compared  to homodimers [@dcaillot_2011].
+
+Besides its heterodimer with CXCR4, ACKR3 was also shown to form constitutive homodimers [@kalatskaya_2009; @levoye_2009; @luker_2009].
+Moreover, both CXCR4 and ACKR3 were shown to form heterodimers with BILF1, a GPCR receptor, present at the surface of viral-infected antibody-secreting cells [@vischer_2008], suggesting the crucial function of this phenomenon also in immunology. 
+
+Additionally, some chemokines or CKRs have been shown to form higher-order oligomers [@kleist_2016].
+Among these immune proteins, CXCR4 was illustrated to exist in the form of both homo-oligomeric [@hamatake_2009] and hetero-oligomeric complexes composed of CCR2, CCR5, and CXCR4 [@sohy_2009].
+
+Intriguingly, as exemplified by CXCL12, besides CKRs complexes, chemokine ligand can also form dimers, inducing alternative signaling responses [@veldkamp_2005].
+This phenomenon was also reported to be critical for chemokine functionality, their binding to CKRs, and activation of different signaling pathways [@salanga_2011; @wang_2008].
+Consistently, by using computational approaches, it was illustrated that such chemokine ligand complexes might dynamically change their stoichiometries and structures [@cutolo_2017], which can also contribute to the functional plasticity of CXCL12 signaling.
+Moreover, dimer formation was shown to be regulated by several other factors, such as mentioned previously mentioned interactions between CKRs and glycosaminoglycans (GAGs) [@salanga_2011]. 
+
+#### Biased signaling {#biasedsignaling}
+
+Biased signaling, also known as functional selectivity, is another feature specific for GPCR receptors that provides a framework for understanding how a finite set of chemokine ligands generates myriad functionally diverse outcomes (for a comprehensive review, see: @eiger_2021, @zweemer_2014, Fig. \@ref(fig:chemmechanisms), part d).
+It can be grouped into three categories: 
+(1) ligand bias,
+(2) receptor bias, and
+(3) cellular/tissue bias.   
+
+Chemokine ligand bias occurs when specific chemokines could preferentially activate different intracellular pathways, either G-protein or `r knitr::asis_output("\U03B2")`-arrestin, although binding to the same receptor.
+More subtle differences in the activation of downstream signaling proteins, such as ERK`r knitr::asis_output("\U00BD")` activation or Ca^2+^ mobilization, are also included [@zweemer_2014].
+Importantly, @drury_2011 demonstrated that while monomeric CXCL12 inhibited cAMP signaling and recruited `r knitr::asis_output("\U03B2")`-arrestin-2 pathways, the dimeric form of this chemokine activated G-protein-dependent signaling, including inhibition of adenylyl cyclase, and the activation of ERK`r knitr::asis_output("\U00BD")`.
+These findings strongly suggest that dimerization might elicit biased signaling, and the mechanisms of chemokine signaling may be interconnected. 
+
+Another type of bias signaling, receptor bias, occurs when a specific receptor, which typically binds multiple chemokine ligands, preferentially couples to a particular chemokine.
+ACKR3 is an excellent example of a biased receptor. 
+As a member of the atypical chemokine receptor family, ACKR3 is thought to share some peculiar characteristics, such as the inability to induce canonical G protein signaling in response to ligand stimulation, which leads to a decrease in the extracellular chemokine concentration [@naumann_2010].
+However, it was later discovered that despite being a decoy receptor, ACKR3 was also able to signal *via* `r knitr::asis_output("\U03B2")`-arrestin pathway [@rajagopal_2010a; @wang_2011].
+Moreover, although CXCR4 and ACKR3 are activated by the same chemokine, they signal through different pathways (`r knitr::asis_output("\U03B2")`-arrestin vs. G-coupled).<!-- poprawić -->
+Thus, relative to CXCR4, ACKR3 acts as a β-arrestin biased receptor.
+Nonetheless, more recently, it was shown that this receptor has functionality independent of the `r knitr::asis_output("\U03B2")`-arrestins.
+For example, [@montpas_2018] demonstrated that both siRNA knockdown of  `r knitr::asis_output("\U03B2")`-arrestin 1 and or `r knitr::asis_output("\U03B2")`-arrestin2 in HEK293 cells does not affect ACKR3-mediated scavenging of either of its chemokine ligands. 
+In addition, the following studies further complicate this issue by illustrating that application of CXCL12 results in elevated astrocytic intracellular Ca^2+^ levels following the activation of PTX-sensitive G~i/o~ proteins, leading to proliferation or differentiation of astrocytes [@odemis_2010].  
+Although these events were previously reported to be mediated by CXCR4 (for example: @bajetto_2001a), a recent report has challenged this view by demonstrating that these CXCL12-dependent outcomes persist when CXCR4 receptor is blocked or depleted from astrocytes but are prevented in astrocytes with depleted or blocked ACKR3 receptor [@odemis_2012]. 
+These findings suggest that ACKR3 activates classical G-protein signaling pathways in those cells.
+Hence, it is likely that ACKR3 functions as a ligand-biased receptor in astrocytes, as CXCL11, another ACKR3 agonist [@burns_2006], resulted in activation of `r knitr::asis_output("\U03B2")`-arrestin2 signaling in the same experimental setting [@odemis_2012].  
+Therefore, it is tempting to speculate that depending on the cell type, ACKR3 acts either as an atypical, arrestin-coupled scavenger chemokine receptor or as a classical, G protein-activating GPCR.  
+However, due to contradictory results from previous studies, this issue warrants further clarification. 
+Additionally, it was recently demonstrated that following CXCL12 treatment, ACKR3 impairs  astrocytic gap-junctional communication by inducing a Cx43 internalization in a `r knitr::asis_output("\U03B2")`-arrestin2-dependent manner [@fumagalli_2020], whereas CXCR4 leads to NF-K`r knitr::asis_output("\U03B2")` activation with consequent TNF-`r knitr::asis_output("\U03B1")` and glutamate release from these cells [@bezzi_2001; @cal_2008; @cal_2010].
+Therefore, these findings suggest that CXCR4 and ACKR3 may serve distinct functions *via* different signaling pathways in astrocytes. 
+Thus, these data illustrate that, in particular cellular contexts, ACKR3 might trigger G protein-dependent or -independent signaling [@heuninck_2019].  
+<!-- połączyć to bardziej i nie robić powtórzenia... -->
+Finally, cellular or tissue bias occurs when the same chemokine–receptor pair leads to activation of distinct signaling cascades or cellular responses in different spatial contexts.
+This type of bias is a consequence of differential expression or function of receptor and transducer elements, including every element of the signal transduction cascade, from proximal effectors (e.g., G proteins and `r knitr::asis_output("\U03B2")`-arrestins), to all of the downstream signal transduction machinery (e.g., ERK`r knitr::asis_output("\U00BD")` or MAPK) in different cells and tissue during different developmental stages.
+
+Thus, the final cellular behavior of chemokine receptor activation highly depends on the ligand, the receptor, and the spatiotemporal context. 
+
+#### Non-chemokine CKR ligands {#nonchemokineligands}
+
+Chemokine receptors may also bind molecules other than chemokine, such as ubiquitin or `r knitr::asis_output("\U03B2")`-defensins [@hughes_2018].
+Although these unconventional CKRs ligands often have no sequence or structural resemblance with chemokines, they can usually induce signaling pathways similar to those triggered by conventional ligands.
+For example, in addition to CXCL12, CXCR4 was reported to bind macrophage migration inhibitory factor (MIF) and extracellular ubiquitin; however, these ligands differentially impact the signaling pathways downstream of CXCR4 [@klasen_2014; @saini_2010].
+Moreover, recent studies have shown that ACKR3 also serves as a receptor for endogenous opioids, contributing to circadian glucocorticoid oscillations [@ikeda_2013] and acting as a decoy for opioids in the brain [@meyrath_2020]. <!--Moreover, unlike the rest of atypical receptors, ACKR3 was initially thought to only bind CXCL12 and CXCL11 (formerly known as interferon-inducible T-cell a chemoattractant, I-TAC) [@burns_2006].
+However, a recent study demonstrated its broad-spectrum selectivity for opioid peptides [@meyrath_2020], indicating .... --> 
+
+<!-- (ref:chemmechanisms) **Molecular mechanisms of the chemokine system in the CNS.** **a** Post-translational modifications exemplified by CX3CL1 transmembrane form cleavage by ADAM10 and ADAM17 proteases into its soluble variant. **b** The chemokine family redundancy is exemplified by ACKR3, an atypical chemokine receptor, which binds two chemokines, CXCL11 and CXCL12. Besides the ACKR3 receptor, these two chemokines activate other chemokine receptors, namely CXCR3 and CXCR4, respectively. **c** Most chemokine receptors can form homo- and hetero-dimers. It is exemplified by the well-known CXCR4-ACKR3 complex. CXCR4 receptor is a 'classical' chemokine receptor, which activates G~`r knitr::asis_output("\U03B1")`q/i~ signaling pathways, including PKC or (ERK) ½. As an atypical receptor, ACKR3 alone activates `r knitr::asis_output("\U03B2")`-arrestin-mediated pathways, leading to receptor internalization or scavenging. However, after heterodimerization with CXCR4, it can modify ligand binding properties and receptor signaling as well as intracellular trafficking. **d** Chemokine bias signaling occurs when specific chemokines could preferentially activate different intracellular pathways, either G-protein or `r knitr::asis_output("\U03B2")`-arrestin, although binding to the same receptor. It can be due to a specific ligand or receptor, as exemplified here, due to a specific cell. 
+As suggested recently [@odemis_2012], when ACKR3 is activated on neurons, it signals through `r knitr::asis_output("\U03B2")`-arrestin-mediated pathways, but when it is activated on astrocytes, it recruits `r knitr::asis_output("\U03B2")`-arrestin-mediated pathways. -->
+
+
+```{r chemmechanisms, fig.cap='**Molecular mechanisms of the chemokine system in the CNS.** **a** Post-translational modifications exemplified by CX3CL1 transmembrane form cleavage by ADAM10 and ADAM17 proteases into its soluble variant. **b** The chemokine family redundancy is exemplified by ACKR3, an atypical chemokine receptor, which binds two chemokines, CXCL11 and CXCL12. Besides the ACKR3 receptor, these two chemokines activate other chemokine receptors, namely CXCR3 and CXCR4, respectively. **c** Most chemokine receptors can form homo- and hetero-dimers. It is exemplified by the well-known CXCR4-ACKR3 complex. CXCR4 receptor is a classical chemokine receptor, which activates G~\U03B1q/i~ signaling pathways, including PKC or (ERK)\U00BD. As an atypical receptor, ACKR3 alone activates \U03B2-arrestin-mediated pathways, leading to receptor internalization or scavenging. However, after heterodimerization with CXCR4, it can modify ligand binding properties and receptor signaling as well as intracellular trafficking. **d** Chemokine bias signaling occurs when specific chemokines could preferentially activate different intracellular pathways, either G-protein or \U03B2-arrestin, although binding to the same receptor. It can be due to a specific ligand or receptor, as exemplified here, due to a specific cell. As suggested recently [@odemis_2012], when ACKR3 is activated on neurons, it signals through \U03B2-arrestin-mediated pathways, but when it is activated on astrocytes, it recruits \U03B2-arrestin-mediated pathways.', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images/chem_mol_mechanisms.png")
 ```
 
-
+<!-- nie działa \\$`r knitr::asis_output("\U03B2")`$\\ ani nic innego, chyba spróbować opcji z if loop w zależności od outputu.... -->
 
 #### Summary
 

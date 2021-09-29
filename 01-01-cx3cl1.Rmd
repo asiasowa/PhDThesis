@@ -1,4 +1,4 @@
-### CX3CL1/CX3CR1
+## CX3CL1/CX3CR1
 
 CX3CL1, also known as fractalkine or neurotactin, is a unique chemokine on many levels.
 First of all, to date, it is the only known member of the CX3C chemokine `r knitr::asis_output("\U03B4")` family [@pan_1997]. <!--((Pan et al., 1997))??.-->
@@ -19,7 +19,7 @@ knitr::include_graphics("images/cx3cr1sig.png")
 <!-- CX3CL1 induces transient phosphorylation of Akt and ERK1/2. Soluble CX3CL1 activates the transcription factor CREB and ERK1/2 and induces the translocation of NF-κB p65 subunit to the nucleus. NF-κB p65 subunit nuclear translocation is avoided by a specific inhibitor of PI3-K, suggesting that CX3CL1-CX3CR1 activates NF-κB through Akt.// https://www.researchgate.net/publication/322645691_Microglia_and_aging_The_role_of_the_TREM2-DAP12_and_CX3CL1-CX3CR1_Axes/figures?lo=1 -->
 
 
-#### CX3CL1/CX3CR1 expression {#cx3cl1expr}
+### CX3CL1/CX3CR1 expression {#cx3cl1expr}
 
 In the brain, CX3CL1 and its receptor, CX3CR1, are widely distributed in the CNS, including hippocampus, amygdala, cerebral cortex, globus pallidus, striatum, and thalamus [@harrison_1998; @tarozzo_2003]. <!-- Moreover, unlike most chemokines, CX3CL1 is constitutively expressed in the CNS with particularly high levels in forebrain structures, including hippocampus, amygdala, cerebral cortex, globus pallidus, striatum, and thalamus (Harrison et al., 1998; Tarozzo et al., 2003). --><!-- In the brainstem, a few scattered cells immunoreactive for fractalkine were initially depicted by Tarozzo and colleagues, while significant expression of the protein was subsequently observed in situ (Heinisch and Kirby, 2009; Ruchaya et al., 2012).CX3CL1 is highly expressed on hippocampal neurons in the post-natal and adult rat and declines in old age which has been linked to cognitive decline in rodents (Lyons et al., 2009).///The high basal level of CX3CL1 mRNA and protein expression in the hippocampus is suggestive of a physiological, non- inflammatory function.///Fractalkine is constitutively expressed at high levels by neurons, mostly in forebrain structures such as the hippocampus, amygdala, cerebral cortex, globus pallidus, striatum and thalamus, but also in the olfactory bulb, with almost no expression in the cerebellum, at the mRNA and protein levels in adult mouse in situ (Tarozzo et al., 2003).--> 
 Besides the well-documented neuronal expression of CX3CL1, a handful of studies also revealed its presence in astrocytes, albeit at lower levels (for instance: @sunnemark_2005). <!-- Besides neuronal expression of CX3CL1, few studies also detected its transcript and protein level in astrocytes, albeit at lower levels (Hulshof et al., 2003; Sunnemark et al., 2005) -->
@@ -37,7 +37,7 @@ it is believed that the binding of soluble CX3CL1 to its receptor CX3CR1 maintai
 
 Recently it has been established in vitro and in vivo, that the acute activation of dorsal horn microglia by inflammaory insult or sciatic nerve impairments result in a release of CatS from microglia, which liberates FKN from dorsal horn of spinal cord neurons (Clark and Malcangio, 2012; Clark et al., 2010, 2009). 
 
-
+Fractalkine is an important neuron-microglia chemokine signal. - Pagani2015
 
 
 Post-synaptic modulation of GABA-A receptors has been reported for CX3CL1 onto serotoninergic neurons in the dorsal raphe and cortical neurons ( Heinisch and Kirby, 2009; Roseti et al., 2013 ). At Schaffer's collateral-CA1 pyramidal neurons CX3CL1 depresses AMPA-mediated currents with a mechanism that involves inhibition of forskolin-induced Ser-845 GluR1 phosphorylation ( Ragozzino et al., 2006 ), whereas it enhances NMDAmediated neurotransmission via adenosine A2A subtype activation and D-serine release by glial cells ( Maggi et al., 2009; Scianni et al., 2013 ). In the same area it has been reported that: i) CCL2 exerts pre-synaptic effects increasing the release of glutamate onto CA1 pyramidal neurons ( Zhou et al., 2011 ); ii) CXCL16 enhances both the release of glutamate and GABA, requiring adenosine type 3 receptor (A3R) and microglia activation ( Di Castro et al., 2016 ). <!-- Trettel 2020-->
@@ -92,78 +92,47 @@ Importantly, neither of these phenotypes was altered by transgenic expression of
 
 The unique transmembrane structure of CX3CL1 raises the possibility of additional functional regulation by altering its abundance at the cell surface. This could be accomplished in principle by changes in traffic between subcellular compartments. To analyze this possibility we examined the subcellular distribution of CX3CL1 in human ECV-304 cells stablyexpressing  untagged  or  green  fluorescent  proteintagged forms of the chemokine. CX3CL1 was present intwo distinct compartments, diffusely on the plasma membrane and in a punctate juxtanuclear compartment. The latter shared some features with, yet was distinct from the conventional endocytic pathway and may represent a specialized recycling subcompartment. Accordingly, surface CX3CL1 was found to be in dynamic equilibrium with the juxtanuclear vesicular compartment. Intracellular CX3CL1 co-localized with theSNARE (solubleN-ethylmaleimide factor attachmentprotein receptor) proteins syntaxin-13 and VAMP-3. Cleavage of VAMP-3 by tetanus toxin or impairment of syntaxin-13 function by expression of a dominant-negative allele inhibited the ability of internalized CX3CL1 totraffic back to the plasma membrane. These data demonstrate the existence of a dynamic, SNARE-mediated recycling of CX3CL1 from the cell surface to and from anendomembrane storage compartment. The intracellular storage depot may serve as a source of the chemokine that could be rapidly mobilized by stimuli. [@liu_2005]
 
-#### Neuro-glial cross-talk {#crosstalk}
+#### ELECTRO
 
-Having a diverse cellular distribution in the CNS,  chemokines  and their receptors plays a  key role  as mediators of homeostatic crosstalk between neurons and glia. 
-Efficient communication between cells is a key element in establishing and maintaining a healthy microenvironment essential for proper brain functioning. <!--Figure 4 presents many different mechanisms regulating such communication, exemplified by CX3CL1, as their actions are the most studied.-->  
-Moreover, depending on the context, chemokines or glial cells can trigger different mechanisms of neuroprotection or neurotoxicity (for example: @lauro_2015).
-Glia are emerging as highly dynamics and heterogeneous cells, which constantly monitor brain parenchyma to sense local perturbation, and they express a rich repertoire of chemokine receptors.
-Thus, it can be speculated that these communicating molecules might orchestrate neuron-glia actions, linking  the  influence  of the  environment  to  brain function and behavior.
-Therefore, dissecting mechanisms of neuron-glial communications in the brain is of high importance, as identifying molecular targets may be used to counteract brain damage and preserve brain homeostasis. 
+In the hippocampus, a region crucial for cognition, CX3CL1 was demonstrated to reduce the amplitude of both synaptic [@ragozzino_2006] and AMPA-evoked currents [@ragozzino_2006; @lauro_2008], suggesting a postsynaptic mechanism.
+These effects are probably a result of a PKA-related phosphorylation of GluR1 Ser845 [@ragozzino_2006]. <!-- of CX3CR1? -->
+Further investigations revealed that CX3CL1 did not act directly on postsynaptic neurons, but instead this chemokine activated microglia, which in turn, released adenosine.
+The presence of this molecule<!--?-->led to the inhibition of the glutamatergic transmission by its receptors, adenosine A3 receptor (A~3~R), and to the lesser extend adenosine A1 receptor (A~1~R)  (@lauro_2008, @lauro_2010; @piccinin_2010, see: Fig4B).<!--!!!-->  
 
-This section will briefly introduce glial functions underlying their capacity to maintain homeostasis and an example of a chemokine-modulated cellular circuit. 
+Adenosine is an endogenous modulator of brain functions  with increasingly evident actions on synaptic transmission [@ribeiro_2010] or glia [@boison_2010], which acts by binding to its GPCR presynaptic receptor subtypes (A~1~, A~2A~, A~2C~, A~3~) and alter neurotransmitter release probability [@verkhratsky_2009]. <!-- Gliotransmitters include adenosine triphosphate, which, when converted to adenosine, acts on presynaptic adenosine receptors to alter neurotransmitter release probability and short-term plasticity.-->
+In the hippocampus, adenosine was demonstrated to decrease the glutamatergic synaptic transmission in these cells, even despite the absence of CX3CL1, suggesting adenosine tonic activity in this structure [@piccinin_2010]. <!-- poprawić ... -->
+Further evidence indicates that the activation of A~1~R and A~3~R results in a decrease in synaptic transmission, whereas A~2A~R exerts the opposite effect, manifested as CX3CL1-induced increase of evoked EPSC (eEPSC) in the blockade of A~1~R and A~3~R receptors [@piccinin_2010]. 
 
-///
+CX3CL1 was also shown to trigger D-serine<!--release?-->, NMDAR co-agonist released from glial cells, and potentiate NMDAR function in an A~2A~- and D-serine-dependent manner, which was driven by microglial cells [@scianni_2013]. <!-- okropne zdanie...-->
+Therefore, the CX3CL1-induced adenosine release may affect glutamatergic neurotransmission by a mechanism involving a combination of three different AR subtypes and both glutamatergic receptors. 
+Nevertheless, the opposite effects of CX3CL1 on AMPAR and NMDAR functions are nicely correlated with the difference between A~3~R/A~1~R and A~2A~R receptors.
+Moreover, the depressed glutamatergic transmission following CX3CL1 and adenosine application corresponds with results from studies of synaptic plasticity (see: Section \@ref(LTP)).
 
-Chemokines are key molecules in neuron-microglia communication in the developing and mature brain under both physiological and pathological conditions (de Jong et al., 2005). Fractalkine is an important neuron-microglia chemokine signal. - Pagani2015
+Regarding CX3CL1 actions on GABAergic transmission, this molecule was shown to increase the amplitude of sIPSC and eIPSC, without affecting paired-pulse ratio (PPR).
+These effects lead to an increased sensitivity of serotoninergic DRN neurons to GABA inputs, therefore indirectly inhibits serotoninergic neurotransmission [@heinisch_2009].
 
-Functional and molecular analysis of glial voltage- and ligand-gated ion channels underwent tremendous boost over the last 15 years. The traditional image of the glial cell as a passive, structural element of the nervous system was transformed into the concept of a plastic cell,  capable  of  expressing  a  large  variety  of  ion  channels  and  neurotransmitter receptors.  These  molecules  might  enable  glial  cells  to sense neuronal activity and to integrate it within glial networks, e.g., by means of spreading
+### Behavior
 
-Since, as reported in this review, all the cited chemokines can trigger different mechanisms o f neuroprotection, limiting apoptotic and excitotoxic cell death as well as inflammatory conditions, it can be speculated that upon noxious insult endogenous protective programs, such as the chemokine induced-chemokine release, might orchestrate neurons-microglia-astrocytes action to preserve and limit brain damage.
+As described in the section on synaptic plasticity (see: \@ref(LTP)), several chemokines were documented to modulate LTP in the hippocampus, a cellular mechanism underlying learning and memory [@bols_2018; @necula_2021; @rogers_2011; @zhou_2016]. <!-- pewnie jeszcze zmienić -->
+Of these chemokines, CX3CL1 is the best characterized in this context.
+Nevertheless, behavioral studies on the CX3CL1/CX3CR1 axis in the regulation of learning and memory were giving contradictory results (see: Table 3).<!-- poprawna nazwa tabeli  // Of note, there is great controversy regarding the behavioral phenotype of *CX3CR1-/-* mice in the literature (Paolicelli et al., 2014).-->
+Briefly, CX3CR^-/-^ mice have shown impaired [@rogers_2011], improved [@maggi_2011; @reshef_2017]  or unaltered [@serchov_2015] cognitive functions.  <!-- For instance, reports of impairment (Rogers et al., 2011), improvement (Maggi et al., 2011; Reshef et al., 2014) or no changes (Serchov et al., 2015) in hippocampal-dependent learning have been reported.  -->
+It should be noted that findings from studies of synaptic plasticity correlate with behavioral output (see Table 1 and 2). <!-- tabeleeee -->
+Those discrepancies may result from differences in housing conditions, animal gender, and age, or behavioral test protocols between laboratories. <!-- In each study involving behavioral studies with these animals, the relevance of housing conditions, animal gender and age, feeding and behavioral test protocols is brought to light (Gemma and Bachstetter, 2013). -->
+However, this issue warrant further clarifications.
 
-<!--Accordingly, another layer of complexity to neuronal information processing is added by astrocyte and microglia actions at synapses. 
- Recently, there was substantial "glial revolution" which completely challenged our view on both of these cells. -->
+Besides its involvement in memory and learning, CX3CR1^-/-^ knockout mice have been gaining attention in relation to chronic stress. <!-- Regarding the regulation of emotional behavior, previous evidence shows that the connectivity of brain regions involved in the regulation of mood disorders is impaired in CX3CR1-/- animals (Squarzoni et al., 2014). -- WAŻNE CYTOWANIE SPRAWDZIĆ!!!! -->
+Briefly, in comparison to wild-type littermates, CX3CR1 is important for  controlling social behavior and social dominance (@zhan_2014; @piirainen_2021, Table3). <!-- Here we report that 4-month- old female CX3CR1-/- mice show a hyperactive, anxiolytic-like and depressive-like phenotype, in agreement with previous data indicating altered social behavior in these mice (Zhan et al., 2014).-->
+However, there are many inconsistencies. 
+Regarding anxiety, most studies did not show any differences between genotypes [@rogers_2011, @hellwig_2016, @schubert_2018]. <!-- Although other authors detected no depressive-like phenotype of these mice in the sucrose preference (Milior et al., 2016) or in the TST (Hellwig et al., 2016), male and female animals were grouped and tested together. -->
+Nonetheless, there is one study that suggests anxiolytic effects of CX3CR1 depletion [@bols_2018], whereas the other study indicates the opposite (@schubert_2018, Table3).<!--table-->
+A similar situation  was described regarding depressive-like behavior: one study indicates knockout is more depressive measured by Forced Swim Test and/or Tail Suspension Test, whereas the other reported the opposite conclusion.
+It seems like the main difference between those experiments was the gender between animals.
+Specifically, CX3CR1^-/-^ females are more depressive and anxiolytic than wild-type littermates, whereas the depletion of the same receptor in males elicit the opposite reaction.  
+However, as this hypothesis is based only on two studies, further investigation is needed.
 
-##### Astrocytes {#astro}
-
-Since the tripartite synapse concept emerged in 1999 [@araque_1999], it is well-established that astrocytes are involved in the dynamic regulation of synaptic transmission (for example: @araque_2014).
-To react to changing microenvironment, they are endowed with a great variety of voltage and ligand-operated  ion  channels [@kofuji_2021].
-Astrocytes display a wide variety of Ca^2+^ signals, particularly relevant in astrocytic signaling, as Ca^2+^ fluctuations are thought to integrate environmental information  and  generate  functional outputs, such as releasing gliotransmitters, including glutamate, D-serine, GABA, ATP, adenosine, or TNF`r knitr::asis_output("\U03B1")` [@araque_2014, @guerragomes_2017].  
-
-Moreover, astrocytes are enriched in gap junctions, by which they form broad cellular networks comprised of hundreds of cells, allowing for the intercellular diffusion of ions, second messengers, cyclic AMP, Ca^2+^, glutamate, ATP, among others. 
-Gap junctions are formed by connexins, mainly by Cx43 and Cx30, which differ in their expression.
-Despite their scale, such networks were illustrated to preferentially couple one astrocyte over the other.
-Therefore neighboring astrocytes may not necessarily be connected by gap junctions, and such preference may be of functional relevance.
-Moreover, gap junction networks were demonstrated to play an essential role in complex brain functions, including cognition and behavior (for a review: @guerragomes_2017). 
-As ACKR3 was demonstrated to induce the internalization of Cx43 [@fumagalli_2020], future studies aimed at establishing its functional significance and whether other chemokine receptors may elicit similar actions are warranted. 
-
-/////
-
-Astrocytes, which were considered as supporting and nourishing neurons, are now known as the highly heterogeneous group of active players in complex brain functions, such as synaptic transmission and synaptic plasticity, network oscillations [@perea_2009, @mederos_2019].
-To react to changing microenvironment, they are endowed with a great variety of voltage and ligand-operated ion  channels [@olsen_2015, @seifert_2018, @kofuji_2021] as well as they can release a substantial set of gliotransmitters [@araque_2014, @savtchouk_2018, @covelo_2018].
-Ca^2+^ levels are particularly relevant in astrocyte signaling, as their elevated Ca^2+^ levels are thought to induce gliotransmission and facilitate synaptic transmission. <!-- nie podoba mi się to zdanie -->
-Thus, astrocytic intracellular Ca^2+^ elevations are of specific spatial and temporal properties, and this topic  has been extensively discussed in several excellent reviews [@araque_2014, @guerragomes_2017, @bazargani_2016].
-
-Astrocytes tightly enwrap neuronal cell bodies, axons, dendrites and synapses (Montagnese et al., 1988; Ventura and Harris, 1999; Khan et al., 2001; Witcher et al., 2010), and their endfoot processes associate with vascular endothelial cells and pericytes (Liebner et al., 2018), being ideally positioned to monitor and regulate both synaptic activity and blood brain barrier. The close association between astrocytes and neuronal synapses is a critical factor required for the maintenance of brain homeostasis (Perea et al., 2009).
-
-
-Astrocytes are integral elements of synapses in developing rodent and human cerebral cortices [ 30 – 32 ]. 
-A single cortical astrocyte is estimated to contact 20,000 to 120,000 synapses in  rodents and up to 2,000,000 synapses in humans [ 30 ]. 
-Several lines of evidence suggest that,  through this close association with neurons, astrocytes alter synaptic functions. 
-Astrocytes have been shown to modulate synaptic transmission [ 33 , 34 ], long-term potentiation [ 34 – 40 ],  and long-term depression [ 15 ] in several brain areas, as well as provide a developmental switch  of synaptic transmission from LTD to LTP in hippocampus [ 41 ]. 
-More and more details about  astrocytic cellular and subcellular mechanisms have recently been presented [ 40 , 42 – 49 ]. 
-It is  of interest to understand how these subcellular mechanisms in astrocytes and their processes are linked with synaptic transmission and plasticity in neocortex [ 13 , 15 , 42 , 50 , 51 ]. [@manninen_2020]
-
-They are prominently found in proximity of nerve terminals, sensing neural activity and being activated during synaptic transmission.
- 
-Astrocytes can also modulate synaptic transmission by releasing transmitters
-
-In agreement with this hypothesis is the observation that astrocyte stimulation in mice’s primary sensory areas increases neural firing beyond stimulation (Perea et al., 2014; Poskanzer et al., 2016).
-
-Astrocytes are specialized cells, organized in non-overlapping domains within the CNS parenchyma and coupled into multicellular networks via gap junctions ( Sofroniew and Vinters, 2010 ). Astrocytes are essential for brain homeostasis affecting: i) the blood – brainbarrier (BBB) integrity; ii) the cerebral blood fl ow, fl uid, ion, pH and transmitter homeostasis; iii) the synaptic function, being components of the (tripartite) synapsis and releasing gliotransmitters; iv) the CNS metabolism regulating energy supply to neurons ( Sofroniew and Vinters, 2010 ). Upon acute brain insults or chronic brain diseases (such as neurodegenerative disease, brain tumor, epilepsy) astrocytes become reactive and undergo morphological, transcriptional and functional changes that can be either bene fi cial or detrimental ( Sofroniew and Vinters, 2010; Liddelow and Barres, 2017 ). <!--Trettel2020-->
-
-A1 astrocytes lose the ability to promote synapses formation, are defective in phagocytosis, and release soluble factors that induce apoptosis of neurons and oligodendrocytes ( Zamanian et al., 2012; Liddelow et al., 2017 ). A2 reactive astrocytes might have protective/reparative functions, since they upregulate neurotrophic factors and thrombospondins (which promote synapses repair) ( Liddelow and Barres, 2017 ). These and other evidence support the notion that the interplay among neurons, microglia and astrocytes orchestrates the endogenous response to limit brain damage upon toxic insult. <!--Trettel2020-->
-
-Observational studies from postmortem human tissues have revealed that human astrocytes are much larger and more complex than their murine counterparts (Oberheim et al., 2006, Oberheim et al., 2009). More recently, transplantation of human glial progenitors into mouse brains has been shown to improve learning and memory (Han et al., 2013). These observations raise questions about how murine astrocyte physiology and function might extend to humans. Are there distinct properties of human astrocytes that contribute to human intelligence and cognition? Can we extend findings about astrocyte pathology in neurological disorders from mouse and rat studies to develop effective therapeutic approaches in humans?
-
-Interestingly, the GABA transporters (GATs) GAT-1 and GAT-3 show particular cellular and sub-cellular distributions throughout the brain (Ribak et al., 1996; Boisvert et al., 2018). GAT-3 is the most abundant GAT in astrocytes and is localized in astrocytic processes that are adjacent to synapses and cell bodies, but are also close to basal and apical dendrites (Boddum et al., 2016), while GAT-1 can be found in distal astrocytic processes and is more abundant in neurons (Borden, 1996; Scimemi, 2014). 
-
-Glial cells continuously monitor the neural parenchyma and any disturbance or loss of CNS homeostasis (e.g. infection, trauma, ischaemia, neurodegenerative diseases or altered neuronal activity) evokes morphological changes and alterations in the gene expression pattern of microglia, a process called microglial activation [16]
-Glial cells are crucial for the maintenance of correct neuronal functionality in a physiological state and intervene to restore the equilibrium when environmental or pathological conditions challenge central nervous system homeostasis.
-
-###### Pharmacological blockade of astrocytes - fluorocitrate
-
-Moreover, pretreatment of brain slices with fluorocitrate (100 lM for 30 min) increased sIPSC duration in ventrobasal nucleus neurons or decreased sIPSC duration in the thalamic reticular nucleus neurons (Christian and Huguenard, 2013). - Peng2016
+<!-- SPRAWDZIĆ TEŻ TE CYTOWANIA
+Interestingly, although stress resilience has been described in CX3CR1-/- mice (Rimmerman et al., 2017; Yirmiya et al., 2015), other authors found that these animals show greater depressive- like behavior in response to inflammation compared to WT counterparts (Corona et al., 2013). -->
 
 ##### Microglia {#micro}
 
@@ -325,3 +294,121 @@ Given the essential role played by the CX3CL1/CX3CR1 axis in neuron-microglia co
 Furthermore, fractalkine seems to play an essential role in a unique neuronal-glial interaction between neurons and CX3CR1-expressing microglia under normal and pathological states.
 
 end -->
+
+#### Dendritic spines {#spines}
+
+Synaptic transmission is explicitly related to dendritic spines, as these tiny, actin-rich, postsynaptic protrusions from a dendrite, receive most of the excitatory synaptic input in the brain. 
+Functional and structural changes in dendritic spines are also critical for synaptic plasticity (see Section: \@ref(network)), a cellular model of learning and memory. 
+It should be noted that their spine morphology is tightly correlated with their synaptic function [@nishiyama_2019]. <!-- Therefore, it is plausible that long-term potentiation (LTP) and depression (LTD), two major forms of synaptic plasticity, are correlated with the spine enlargement and shrinkage, respectively [@nishiyama_2019]. -->
+Moreover, the spine morphology is highly dynamic: it could vary within the same dendritic arbor and thus is  interdependently regulated.
+
+In agreement with glial contribution to synaptic functions,<!--może inaczej ująć--> astrocytes [@perezalvarez_2014], microglia [@paolicelli_2011], and oligodendrocytes [@zemmar_2018] are implicated in interactions with dendritic spines in a highly active-dependent manner.
+
+The first evidence of a link between chemokines and dendritic spines was provided by Paolicelli et al. [@paolicelli_2011].
+Deficient of CX3CR1 microglia displayed impairment in synaptic pruning, reflected as a transient deficit in excitatory synaptic transmission and a reduced synaptic density as compared to their wild-type littermates, indicating immature synaptic properties. 
+These changes were present during the early postnatal stage (P8-P28) and then returned to baseline, highlighting CX3CR1 impact on synaptic pruning during neurodevelopment.
+However, these mice were also tested in similar experimental settings in their adulthood (P40) [@zhan_2014]. 
+Interestingly, despite unchanged dendritic spine density, neurons from CX3CR1^-/-^ mice displayed a lower frequency of mEPSCs and sEPSCs in comparison to their wild-type littermates. 
+These results illustrate that a transient reduction in microglial synaptic pruning during development is sufficient to induce the long-term deficit in synaptic multiplicity, whereas the number of excitatory synapses remained the same [@zhan_2014].
+These data support the idea of a critical window during which microglia-mediated synaptic pruning is crucial for proper circuit maturation.
+ 
+Similarly, CX3CL1 impact on dendritic spines was documented investigating newborn cells. 
+By using the same strain of mice, it was documented that adult transgenic animals displayed a reduced number of dendritic spines with morphological changes, reflected as enlargement and shortening,  in adult-born granule neurons in the dentate gyrus (DG) [@bols_2018]. 
+Despite being ultrastructurally enlarged, synapses at both afferent and efferent levels were depleted of synaptic vesicles, suggesting impaired functionality. <!-- lepiej, ale upewnić się -->
+
+These results are nicely complemented by findings obtained by the following elegant study.
+Specifically, adding microglial cells to the hippocampal neuronal culture results in an upregulation of excitatory synaptic currents together with a higher density of dendritic spines.
+In constrast, microglial depletion from hippocampal organotypic cultures led to both reduction in the dendritic spine density and excitatory synaptic transmission [@ji_2013]. 
+Moreover, in adult mice,  pharmacological inhibition of microglial activation was associated with the prevention of dendritic spine loss in obese mice [@cope_2018].
+These findings strongly suggest that microglia are key players in the regulation of the dendritic spine density. 
+
+Moreover, dysfunctions in glutamatergic neurotransmission in CX3CR1 KO mice were further confirmed in CA3-CA1 synapses in hippocampal slices [@basilico_2019]. <!-- ale during development ? -->
+Recordings from slices of transgenic mice displayed an immature AMPA/NMDA ratio with defective AMPA components and decreased release probability when compared to wild-type mice.
+These results illustrate that neuron–microglia interactions profoundly influence the functional maturation of excitatory presynaptic function. <!-- zmienić -->
+
+However, considering that dendritic spines reflect the structural level of synaptic plasticity along with extensive evidence of chemokine actions on excitatory synaptic transmission and synaptic plasticity, it is tempting to speculate that chemokines actions on dendritic spines are still unexplored. 
+
+## network
+
+The finding that chemokines exert a neuromodulatory role in the brain is essential for a better understanding of the complex communication network between neurons and cells from their surrounding microenvironment. 
+This section illustrates the emergent concept of chemokine coordination of neural networks, such as neuroendocrine functions, GABA receptor-mediated synaptic transmission, and synchronized oscillatory activity.
+
+## neurodevelopment
+
+Disturbances were also present regarding CX3CL1/CX3CR1 pathway, which plays an essential role in neurodevelopment. 
+Similar to CXCL12, the CX3CL1/CX3CR1 axis was demonstrated to affect the outgrowth of dopaminergic axons in the forebrain and the laminar positioning of subsets of cortical interneurons [@squarzoni_2014].
+Moreover, CX3CR1 deficiency impairs the functional maturation of thalamocortical synapses in the developing barrel cortex, indicating crucial involvement of CX3CL1/CX3CR1 signaling in this process [@hoshiko_2012].
+As the CX3CR1 receptor is mainly expressed by microglia, and those cells display a well-documented process of network maturation, called synaptic pruning, microglia are likely to participate in the maturation of synapses. 
+Therefore, these findings highlight the importance of chemokines regulation of  proper neural network functioning by their effects on interneurons migration and maturation.
+
+## E/I balance
+
+Importantly, Sheridan et al. [@sheridan_2014] reported that the CX3CL1 application in the hippocampus has  opposing effects on glutamate-induced Ca^2+^ transients depending on whether it was applied alone or simultaneously with a GABA~A~ blocker, picrotoxin.
+These results highlight the possible modulation of CX3CL1 in regulating the balance between excitation and inhibition on the network level.
+However, whether the chemokine system participates in feed-forward inhibition signaling remains an open question for future research.
+
+#### Synaptic plasticity {#plast}
+
+Synaptic plasticity is defined as a molecular form of learning, memory, and development in neural circuits.
+It mainly comprises such mechanisms as Hebbian plasticity, synaptic scaling, and adult neurogenesis. 
+Among different factors regulating synaptic plasticity, glial cells have been considered key players in maintaining synapse homeostasis [@deluca_2020; @field_2020; @kettenmann_2011; @mederos_2018]. 
+
+///
+
+
+
+##### Hebbian plasticity - LTP and LTD {#LTP}
+
+Hebbian synaptic plasticity is the earliest and most widely accepted neurobiological theory of memory consolidation. 
+According to this concept, a synapse will be strengthened if the presynaptic neuron is active while the postsynaptic neuron is firing, a process called Hebbian modification. 
+
+As mentioned earlier in the section on synaptic transmission (see: \@ref(Glu)), in the CA1 hippocampus, CX3CL1 induced phosphorylation of AMPA subunit GluR1 at postsynaptic sites [@ragozzino_2006], which is one of the hallmarks of the LTD.
+Moreover, one group reported  no difference in LTD in the hippocampus between adult wild-type and knockout mice.<!--cytowanie--> 
+In contrast, LTD is enhanced in CX3CR1^-/-^ mice at P13 [@paolicelli_2011], suggesting that CX3CL1 has the highest relevance during early postnatal age.
+
+However, similar electrophysiological studies indicated either a complete lack of LTP in knockout mice [@rogers_2011] or a more pronounced LTP than in wild-type counterparts when LTP was induced by a weak stimulation protocol [@maggi_2011]. 
+Interestingly, when mice were housed in an enriched environment compared to wild-type mice, they had enhanced plasticity [@maggi_2009].
+These results suggest that the absence of  microglia-driven CX3CR1 signaling impedes enrichment effects, possibly due to some shared  mechanisms that warrant further investigation. <!-- coś nie w porządku z tym zdaniem -->
+It is speculative that this lack of beneficial response to environmental stimulation might be explained by altered microglia–neurons cross-talk, affecting the circuitry underlying synaptic plasticity.
+
+Regarding the DG, CX3CL1 decreased the LTP at those synapses; however, when GABA~A~ receptors were blocked, the magnitude of the LTP was enhanced [@sheridan_2014], indicating that the CX3CL1-exerted actions may differ based on inhibitory/excitatory balance (see: Table 2). 
+Alternatively, noting the CX3CL1-induced potentiation of NMDA function and thereby the increase in calcium transients [@scianni_2013] together with the inhibition of the LTP induction following NMDAR activation, it is also possible that CX3CL1-induced elevated level of intracellular calcium could interfere with the LTP induction [@scianni_2013]. 
+
+These inconsistent findings between laboratories might result from differences in age, gender, diet, housing conditions, or electrophysiological protocols.
+Especially age and gender could be relevant, as the same laboratories cannot replicate their results when those variables had differed. 
+Hence, effects on synaptic plasticity and behavioral outcomes resulted from the CX3CL1-CX3CR1 axis may be transient and quickly compensated in knockout mice. 
+
+Chemokine regulation of synaptic plasticity is not restricted to the hippocampus. 
+CX3CL1 was shown to induce synaptic depression of evoked parallel fibers inputs onto Purkinje neurons [@giovannelli_1998], and mice with CX3CR1^-/-^ receptor deletion were characterized by the LTP in the spinal cord [@bian_2015].
+Future research should clarify whether mechanisms underlying CX3CL1-induced synaptic plasticity are general.  
+However, it would be implausible, considering that (i) microglia displays many region-specific features, especially when compared in cerebellum and cortex [@stowell_2018], (ii) CX3CR1-induced microglial during development are region-specific [@lowery_2017], as well as (iii) mechanisms governing LTP may differ between structures, for instance, between the hippocampus and spinal cord [@liu_2017].
+
+#### Functional connectivity
+
+Considering the relevance of chemokines' role in neurodevelopment (i.e., neuronal/axonal migration and synaptic pruning), it can be hypothesized that proper chemokine signaling during neurodevelopment is of high importance to provide functional connectivity between many cortical regions. 
+However, to date, there is a scarcity of data on this topic. 
+In particular, by measuring connections between hippocampus and prefrontal cortex, mice with deletion of CX3CR1 revealed a decrease in  the  coherence  between  those two structures, compared  to  their wild-type  littermates (@zhan_2014, see Fig 4D).<!-- !-->
+Thus, this finding suggests that the depletion of CX3CR1 leads to  a  decrease in  hippocampal–prefrontal connectivity, which may have behavioral consequences, such as anxiety or cognitive impairments [@zhan_2014].  
+Moreover, knockout mice showed reduced frontal cortex oscillatory driving to the hippocampus than their wild-type littermates at baseline conditions  [@zhan_2015]. 
+It is speculative whether it is the consequence of morphological modifications of microglia depleted of CX3CR1 [@piirainen_2021], but scanty evidence is available so far. <!-- tutaj może poprawić tę drugą część zdania...-->
+Nevertheless, these results highlight a fundamental role of CX3CL1 at the network level. 
+Hence, considering those findings and accumulating evidence of glial impact on the network, investigating chemokines’ role in neural networks may be an exciting direction in the future.
+
+Indeed, there is mounting evidence which implicates both CX3CL1 and its receptor, CX3CR1, in synaptic plasticity and neuromodulation (Bertollini et al., 2006; Ragozzino et al., 2006; Piccinin et al., 2010; Maggi et al., 2011; Rogers et al., 2011; Roseti et al.,2013; Scianni et al.,2013). <!-- zmienić // In fact, CX3CL1 is a confirmed inhibitor of basal glutamate synaptic activity in the hippocampus [@Bertollini2006]. -->
+
+Regarding electrophysiological effects of CX3CL1 action, hippocampus is the most documented structure, as it has most-known network // a golden structure for electrophysiologist, with high basal levels of CX3CL1 transcript and protein expression. <!-- zmienić The high basal level of CX3CL1 mRNA and protein expression in the hippocampus is suggestive of a physiological, non-inflammatory function. -->
+For example, CX3CL1 has been shown to reduce post-synaptic glutamate currents (Meucci et al., 1998; Limatola et al., 2005), involving an increased intracellular calcium and dephosphorylation of the GluR1 AMPA receptor subunit on serine 845 (Ragozzino et al., 2006). <!-- zmienić jeszcze trochę -- SPRAWDZIĆ spontaneous glutamate release and-->
+The latter mechanism has been linked to ability of CX3CL1 to inhibit LTP and mimocs long-term depression (LTD) at the CA3–CA1 synapses in acute hippocampal slices (Bertollini et al., 2006; Ragozzino et al., 2006; Maggi et al., 2009).  <!-- zmienić CX3CL1-mediated regulation of glutamate transmission has been shown to be due to its post-synaptic effects on neurons and involves the dephosphorylation of the GluR1 AMPA receptor subunit on serine 845, a mechanism reminiscent of LTD (Ragozzino et al., 2006). //Previous studies have shown that CX3CL1 inhibits LTP and mimics long-term depression (LTD) at the CA3–CA1 synapses in acute hippocampal slices (Bertollini et al., 2006; Ragozzino et al., 2006; Maggi et al., 2009). -->
+LTD can play vital roles in the context of memory-associated synaptic plasticity including synaptic scaling and enhanced signal-to-noise ratio mechanisms <!-- CITATION, ZMIENIĆ -->
+These synaptic effects are consistent with a direct action of CX3CL1 on neurons most likely exerted through the CX3CR1 receptor, which is reportedly expressed on the dendrites of hippocampal neurons (Meucci et al., 2000; Limatola et al., 2005). <!-- zmienić -->
+The ability of CX3CL1 to inhibit glutamate function is thought to be responsible for some of its neuroprotective actions, and provides further support for the chemokine-neuromodulatory role in the CNS [@adler_2005, @callewaere_2007, @guyon_2007]. <!-- not sure if it is my sentence Overall, previous studies indicate a predominantly inhibitory role for CX3CL1, perhaps as a component of neuroprotective synaptic scaling mechanisms necessary for hippocampal memory-associated synaptic plasticity processes (Bertollini et al., 2006; Turrigiano, 2008; Piccinin et al., 2010).-->
+Consistent with this hypothesis, neuroprotective ADAM17-mediated increase in in soluble CX3CL1 is observed in multiple settings of glutamatergic neurotransmission where the chemokine is suggested to performa neuroprotective function (Chapman et al., 2000; Tsou et al., 2001; Erichsen et al., 2003; Limatola et al., 2005; Ragozzino et al., 2006; Lauro et al., 2010; Pabon et al., 2011). <!-- zmienić-->
+
+Beyond the hippocampus, CX3CL1 is also documented to reduce the activity of serotonergic neurons in the raphe nucleus through enhanced GABA~A~ receptor-mediated inhibition (Heinisch and Kirby, 2009).<!-- zmienić trochę drugą część -->
+
+
+LTP-inducing TBS resulted in an up-regulation in CX3CL1 expression after 2 h on the stimulated DG blade compared to the upper unstimulated blade. - Sheridan2014
+
+CX3CL1 has been reportedly up-regulated in several settings of augmented glutamatergic transmission where the chemokine is clearly protective against excitotoxic cell death (Tong et al., 2000; Tarozzo et al., 2002; Limatola et al., 2005; Cipriani et al., 2011; Briones et al., 2014). Moreover, both CX3CL1 and its receptor, CX3CR1, have been shown to be up-regulated in hippocampal neurons after pilocarpine-induced status epilepticus (Yeo et al., 2011), a condition characterized by excessive glutamatergic excitation. Overall, the abundance and expression pattern of CX3CL1 make the chemokine ideally suited for sensing hippocampal glutamate tone. Our data supports a possible role for CX3CL1 in homeostatic mechanisms of synaptic scaling during memory-associated synaptic plasticity.-Sheridan2014
+
+DOSE- SHERIDAN - DISCUSSION

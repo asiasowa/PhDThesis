@@ -1,6 +1,6 @@
 # Introduction
 
-## Chemokines 
+## Chemokines - introduction
 
 ### Brief history of chemokines {#history}
 
@@ -15,6 +15,13 @@ These results suggest their brain-specific functions, such as the modulation of 
 Indeed, mounting evidence illustrates that chemokine can act on cellular, synaptic, network, and behavioral levels (for a comprehensive review: @sowa_2021).
 Moreover, the complex cellular patterns of chemokine/chemokine receptor expression lead to intricate cell-to-cell communications.
 Thus, of particular interest is now the idea that CNS chemokines are not only mediators of neuroinflammation but also orchestrators of neuron-glia crosstalk, which is essential in maintaining brain homeostasis [@trettel_2020].
+
+Chemokines and CKRs are expressed by healthy neurons, microglia, astrocytes, oligodendrocytes, and endothelial cells, summarized in Table 1.
+They are widely distributed in the CNS and involved in many physiological brain functions, such as cell migration and differentiation, regulation of cellular communication, and neuroprotection [@adler_2005].<!--Several chemokines are widely expressed throughout the CNS during development and throughout life where they have been shown to play diverse roles in cell migration and differentiation (Lu et al., 2002), regulation of cellular communication in the adult brain (Tran and Miller, 2003) and neuroprotection (Araujo and Cotman, 1993; Meucci et al., 1998; Robinson et al., 1998; Bruno et al., 2000; Limatola et al., 2000; Hatori et al., 2002; Deiva et al., 2004; Krathwohl and Kaiser, 2004; Limatola et al., 2005; Catalano et al., 2013; Shepherd et al., 2013). - Sheridan2014--><!-- In physiological conditions, CX3CL1/CX3CR1 signaling is involved in different neural functions both in development (participation in functional maturation of neuronal circuits driving cell positioning) and adulthood (regulation of synaptic plasticity and cognitive functions) [@lauro_2015]. zmienić -->
+As delineated, the neuroanatomical distributions of several chemokines and their corresponding receptors overlap in many regions in the healthy CNS.
+Thus, these may lead to co-localization of chemokine and its corresponding receptors within the same cells, raising the possibility of autocrine signaling and complex cross-talks between different types of cells. <!-- Interestingly, the neuroanatomical distributions of a chemokine and its receptor ///(see below and FIG. 1)inne odwołania do figur i nie wiem czy uznawać// overlap in many regions in the normal adult brain. 
+This suggests that these chemokines, through the action on specific GPCRs, might be involved in local neuronal communication. --> 
+In this subchapter, I will briefly describe the expression of chemokine axes (CX3CL1/CX3CR1 and CXCL12/CXCR4/ACKR3) investigated in this thesis in the central nervous system, focusing on their local communication between different cell types. <!-- alternatively : involvement in neuro-glial communication? -->
 
 This PhD dissertation will mainly focus on two chemokines, CX3CL1 and CXCL12, together with their corresponding receptors, CX3CL1 and CXCR4 or ACKR3, respectively, as they are expressed in the brain under non-inflammatory, basal conditions. 
 
@@ -113,65 +120,3 @@ knitr::include_graphics("images/chem_mol_mechanisms.png")
 
 <!-- nie działa \\$`r knitr::asis_output("\U03B2")`$\\ ani nic innego, chyba spróbować opcji z if loop w zależności od outputu.... -->
 
-
-
-
-
-#### CX3CL1/ CX3CR1 {#cx3cl1str}
-
-CX3CL1, also known as fractalkine or neurotactin, is a unique chemokine on many levels.
-First of all, to date, it is the only known member of the CX3C chemokine `r knitr::asis_output("\U03B4")` family [@pan_1997]. <!--((Pan et al., 1997))??.-->
-In humans, the full length of CX3CL1 consists of 397 amino acids, whereas in mice, 395 amino acids [@bazan_1997; @pan_1997].<!-- (Bazan et al., 1997; Pan et al., 1997)--><!-- (Rossi et al., 1998). -->
-Thus, it is also larger than most other chemokines, whose most common size is around 70–80 amino acids [@zlotnik_2012]. 
-CX3CL1 is comprised of an extracellular 76-amino acid N-terminal domain, a 241-amino acid glycosylated mucin-like stalk, an 18-amino acid transmembrane helix, and a short acid cytoplasmic C-terminal domain.
-Like CXCL16, fractalkine is present in two different forms: a membrane-anchored form tethered to cell membranes by a mucin-line stalk (approximately 95 kDa) and a shorter soluble form released upon proteolytic cleavage of its N-terminal chemokine domain (approximately 70 kDa) *via* the action of several proteases [@bajetto_2001a; @schulte_2007]. <!--(for example: @schulte_2007)(Garton et al., 2001).-->
-These enzymes are metalloproteinases (enzymes containing a disintegrin and metalloproteinase domain) such as ADAM10, ADAM17<!--TACE?-->, or cysteine protease Cathepsin S (CatS)<!--(TACE: TNF-α-converting enzyme)-->, acting both in the periphery and the CNS [@clark_2007; @cook_2010; @garton_2001; @hundhausen_2003; @jones_2013].
-While soluble CX3CL1 acts as a conventional chemokine, promoting migration and chemotaxis of CX3CR1-expressing cells, mostly monocytes, membrane-bound CX3CL1 actions are similar to those of an adhesion molecule, mediating leukocyte capture and infiltration [@ransohoff_2009]. 
-Both forms of CX3CL1 interact with the same affinity with CX3CR1, a G~i~-protein-coupled receptor [@imai_1997].  
-The subunit G~i~ inhibits the production of cAMP, inducing a variety of intracellular second messengers including phosphoinositide 3-kinase (PI3K), protein kinase B (AKT), and nuclear factor kappa-light-chain-enhancer (NF`r knitr::asis_output("\U03BA")`B) [@alaoukaty_1998; @chandrasekar_2003]. 
-These molecules are known for regulating a wide range of cellular functions,  including apoptosis,  proliferation,  transcription, and migration. <!-- regulates  apoptotic,  proliferative,  transcriptional  and  migratory functions  in  microglia-->
-
-```{r cx3cr1sig, fig.cap='**CX3CL1-CX3CR1 signaling.** CX3CR1, which is G protein-coupled and transduces several well-characterized signaling pathways leading to activation of transcription factors, including NF-\U03BA B and CREB. Gi, heterotrimeric G protein-coupled to Gi protein; PI3K, phosphatidylinositide 3-kinases; Ras/Raf small GTPases; PLC, phospholipase C; PKC, protein kinase C; Akt, serine/threonine-specific protein kinase; MEK, mitogen-activated protein kinase kinase; MEKK, MAP3kinase; p38, p38 mitogen-activated protein kinase; I\U03BA B, inhibitor of kappa B; IKK, inhibitor of kappa B kinase; ERK, extracellular signal-regulated kinases; JNK, c-Jun N-terminal kinase; NF\U03BA B, nuclear factor kappa B; CREB, cAMP response element-binding protein.', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images/cx3cr1sig.png")
-```
-
-<!-- CX3CL1 induces transient phosphorylation of Akt and ERK1/2. Soluble CX3CL1 activates the transcription factor CREB and ERK1/2 and induces the translocation of NF-κB p65 subunit to the nucleus. NF-κB p65 subunit nuclear translocation is avoided by a specific inhibitor of PI3-K, suggesting that CX3CL1-CX3CR1 activates NF-κB through Akt.// https://www.researchgate.net/publication/322645691_Microglia_and_aging_The_role_of_the_TREM2-DAP12_and_CX3CL1-CX3CR1_Axes/figures?lo=1 -->
-
-#### CXCL12/CXCR4/ACKR3 {#cxcl12str}
-
-CXCL12, also known as the stromal cell-derived factor 1`r knitr::asis_output("\U03B1")`, is another chemokine yet belonging to the CXC subfamily.
-In humans, CXCL12 precursor mRNA precursor yields the expression of six isoforms (`r knitr::asis_output("\U03B1")`,  `r knitr::asis_output("\U03B2")`, `r knitr::asis_output("\U03B3")`, `r knitr::asis_output("\U03B4")`, `r knitr::asis_output("\U03B5")`, `r knitr::asis_output("\U03C6")`), ranging in size from 10 to 16 kDa [@yu_2006]. 
-The `r knitr::asis_output("\U03B1")` product of alternative splicing is the smallest and most abundant one [@yu_2006].
-Hence, as used here, the term "CXCL12" refers to the `r knitr::asis_output("\U03B1")` isoform, which is the main focus of the presented PhD dissertation.  
-It consists of 89 amino acids, including a signaling peptide of 19 amino acids, which is cleaved to generate the mature protein. <!-- citation i trochę zmienić...-->
-However, other isoforms are also likely to play a key role in physiologic and pathological processes [@britton_2021]. <!-- zmienić trochę --> 
-CXCL12 is comprised of a three-stranded  `r knitr::asis_output("\U03B2")`-sheet held in close apposition to an `r knitr::asis_output("\U03B1")`-helix, which are essential for CXCR4 activation [@murphy_2007; @wu_2010].
-CXCL12 signal through its canonical CXCR4 receptor and atypical ACKR3 receptor, previously known as CXCR7.
-All three molecules are well-conserved across the vertebrate species [@nomiyama_2013; @nomiyama_2015].
-Surprisingly, the binding affinity between CXCL12 and ACKR3 is roughly ten times higher than those between CXCL12 and CXCR4 [@balabanian_2005]. 
-
-Following CXCL12 binding to CXCR4, in addition to the enhancement of receptor-ligand binding, there is a subsequent GDP exchange for GTP, and the trimeric G~i~-protein dissociates into its constituent parts,  G~`r knitr::asis_output("\U03B1")`i~ and G~`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")`~ [@ganju_1998]. 
-These molecules activate several intracellular signaling cascades, specifically phosphatidylinositol-3-OH kinase (PI3K), phospholipase C (PLC), and integrins (for a review: @britton_2021, @ward_2006).  
-PLC hydrolyses phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) into diacyl glycerol (DAG) and  inositol 1,4,5-trisphosphate (IP3). <!-- /// In parallel, CXCR4-oriented migration is mediated by the phosphatidylinositide 3-kinases (PI3Ks), which can be activated by both G`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")` and G `r knitr::asis_output("\U03B1")` subunits [45]. -->
-IP3 production leads to increased intracellular calcium from the endoplasmic reticulum, while DAG activates protein kinase C (PKC). 
-Both intracellular free calcium and PKC promote the activation of mitogen-activated protein kinase  (MAPK) pathways, leading to cell migration, growth, and proliferation.  
-In parallel, the `r knitr::asis_output("\U03B1")`~i~ subunit inhibits adenylate cyclase and a consequent cyclic adenosine monophosphate (cAMP) production and activates the Ras/Raf/MEK/ERK pathway, resulting in cell cycle entry and proliferation [@cheng_2015]. 
-In addition to the well-characterized coupling to  G~`r knitr::asis_output("\U03B1")`i~, convincing evidence illustrates that CXCR4 can also bind to other G~`r knitr::asis_output("\U03B1")`~ proteins such as G~`r knitr::asis_output("\U03B1")`q~, G~`r knitr::asis_output("\U03B1")`o~, and G~`r knitr::asis_output("\U03B1")`s~ (for a comprehensive review: @pozzobon_2016).
-For example, by binding to G~`r knitr::asis_output("\U03B1")`12/13~, CXCR4 leads to Rho activation, whereas  G~`r knitr::asis_output("\U03B1")`q~ signal through Rac activation. 
-Moreover, it is well documented that CXCR4 can trigger a G-protein-independent signal pathway.
-
-Following CXCR4 activation, G-protein coupled receptor kinases (GRKs) are recruited, inducing the intracellular C-terminal domain phosphorylation, which, in turn, results in `r knitr::asis_output("\U03B2")`-arrestins recruitment. 
-These molecules result in the uncoupling of CXCR4 from G protein and subsequent receptor internalization. 
-Moreover, `r knitr::asis_output("\U03B2")`-arrestins were reported to induce clathrin-mediated endocytosis of CXCR4, leading to receptor downregulation and trafficking to endosomal compartments [@denies_2019]. 
-
-CXCL12 second receptor, ACKR3, contains a modified typical DRY motif in the second intracellular loop (DRYLAIV), a highly conserved region within the second loop of GPCRs<!--see figure...-->, similar to the other ACKRs [@thelen_2008].
-It is thought to be essential for G protein binding and their subsequent activation [@thelen_2008].
-
-Like other atypical receptors, ACKR3 was demonstrated to (i) fail to activate G proteins and subsequent Ca^2+^-induced chemotaxis [@burns_2006; @levoye_2009; @rajagopal_2010a], (ii)  sequester CXCL12 extracellular gradient and thus control CXCR4-mediated cell migration. 
-ACKR3's signaling pathways are discussed later in section "Biased Signaling" \@ref(biasedsignaling).
-
-
-
-```{r cxcl12sig, fig.cap='**A schematic of the CXCL12/CXCR4 intracellular signal transduction pathways.** ', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images/cxcl12sig.png")
-```

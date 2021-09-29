@@ -34,7 +34,7 @@ C chemokines (also known as `r knitr::asis_output("\U03B3")`, see Figure \@ref(f
 The CX3C (also known as `r knitr::asis_output("\U03B4")`) chemokine subfamily currently represents only a single member, CX3CL1 (also called fractalkine).
 It is characterized by the presence of three amino acids between the first two cysteine residues, as well as a transmembrane and mucin-like domain (see Figure \@ref(fig:family), part d). 
 
-(ref:family) *Chemokine families.* Chemokines are classified into four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. 
+(ref:family) **Classification of chemokines and chemokine receptors**. **a** Chemokines are classified into four distinct subclasses: C, CC, CXC, and CX3C according to the number and spacing of their cysteine residues in their N-terminus. Cys – cysteine residue, X – amino acid residue, disulfide bridges are shown as dotted lines. Receptors for the CXC family are shown in violet, whereas receptors for the CC family are depicted in blue. In addition, the receptor for the C family is presented in yellow and the receptor for the CX3R family is shown in red. **b** Atypical chemokine receptors, their initial names, ligand selectivity, and crosstalk with classical chemokine receptors. ACKR1 and ACKR2 bind a broad spectrum of chemokines, whereas ACKR3 and ACKR4 bind a more limited number of chemokines.
 
 ```{r family, fig.cap='(ref:family)', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/chemokinefamilies.png")
@@ -78,6 +78,11 @@ Both forms of CX3CL1 interact with the same affinity with CX3CR1, a G~i~-protein
 The subunit G~i~ inhibits the production of cAMP, inducing a variety of intracellular second messengers including phosphoinositide 3-kinase (PI3K), protein kinase B (AKT), and nuclear factor kappa-light-chain-enhancer (NF`r knitr::asis_output("\U03BA")`B) [@alaoukaty_1998; @chandrasekar_2003]. 
 These molecules are known for regulating a wide range of cellular functions,  including apoptosis,  proliferation,  transcription, and migration. <!-- regulates  apoptotic,  proliferative,  transcriptional  and  migratory functions  in  microglia-->
 
+```{r cx3cr1sig, fig.cap='**CX3CL1-CX3CR1 signaling.** CX3CR1, which is G protein-coupled and transduces several well-characterized signaling pathways leading to activation of transcription factors, including NF-\U03BA B and CREB. Gi, heterotrimeric G protein-coupled to Gi protein; PI3K, phosphatidylinositide 3-kinases; Ras/Raf small GTPases; PLC, phospholipase C; PKC, protein kinase C; Akt, serine/threonine-specific protein kinase; MEK, mitogen-activated protein kinase kinase; MEKK, MAP3kinase; p38, p38 mitogen-activated protein kinase; I\U03BA B, inhibitor of kappa B; IKK, inhibitor of kappa B kinase; ERK, extracellular signal-regulated kinases; JNK, c-Jun N-terminal kinase; NF\U03BA B, nuclear factor kappa B; CREB, cAMP response element-binding protein.', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images/cx3cr1sig.png")
+```
+
+<!-- CX3CL1 induces transient phosphorylation of Akt and ERK1/2. Soluble CX3CL1 activates the transcription factor CREB and ERK1/2 and induces the translocation of NF-κB p65 subunit to the nucleus. NF-κB p65 subunit nuclear translocation is avoided by a specific inhibitor of PI3-K, suggesting that CX3CL1-CX3CR1 activates NF-κB through Akt.// https://www.researchgate.net/publication/322645691_Microglia_and_aging_The_role_of_the_TREM2-DAP12_and_CX3CL1-CX3CR1_Axes/figures?lo=1 -->
 
 #### CXCL12/CXCR4/ACKR3 {#cxcl12str}
 
@@ -92,13 +97,13 @@ CXCL12 signal through its canonical CXCR4 receptor and atypical ACKR3 receptor, 
 All three molecules are well-conserved across the vertebrate species [@nomiyama_2013; @nomiyama_2015].
 Surprisingly, the binding affinity between CXCL12 and ACKR3 is roughly ten times higher than those between CXCL12 and CXCR4 [@balabanian_2005]. 
 
-Following CXCL12 binding to CXCR4, in addition to the enhancement of receptor-ligand binding, there is an subsequently GDP exchanges for GTP and the trimeric G~i~-protein dissociates into its constituent parts,  G~`r knitr::asis_output("\U03B1")`i~ and G~`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")`~ [@ganju_1998]. 
+Following CXCL12 binding to CXCR4, in addition to the enhancement of receptor-ligand binding, there is a subsequent GDP exchange for GTP, and the trimeric G~i~-protein dissociates into its constituent parts,  G~`r knitr::asis_output("\U03B1")`i~ and G~`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")`~ [@ganju_1998]. 
 These molecules activate several intracellular signaling cascades, specifically phosphatidylinositol-3-OH kinase (PI3K), phospholipase C (PLC), and integrins (for a review: @britton_2021, @ward_2006).  
-PLC hydrolyses phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) into diacyl glycerol (DAG) and  inositol 1,4,5-trisphosphate (IP3).  /// In parallel, CXCR4-oriented migration is mediated by the phosphatidylinositide 3-kinases (PI3Ks), which can be activated by both G`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")` and G `r knitr::asis_output("\U03B1")` subunits [45]. 
+PLC hydrolyses phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) into diacyl glycerol (DAG) and  inositol 1,4,5-trisphosphate (IP3). <!-- /// In parallel, CXCR4-oriented migration is mediated by the phosphatidylinositide 3-kinases (PI3Ks), which can be activated by both G`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")` and G `r knitr::asis_output("\U03B1")` subunits [45]. -->
 IP3 production leads to increased intracellular calcium from the endoplasmic reticulum, while DAG activates protein kinase C (PKC). 
 Both intracellular free calcium and PKC promote the activation of mitogen-activated protein kinase  (MAPK) pathways, leading to cell migration, growth, and proliferation.  
-In parallel, the `r knitr::asis_output("\U03B1")`i subunit inhibits adenylate cyclase and a consequent cyclic adenosine monophosphate (cAMP) production and activates the Ras/Raf/MEK/ERK pathway, resulting in cell cycle entry and proliferation [@cheng_2015]. 
-In addition to the well-characterized coupling to  G`r knitr::asis_output("\U03B1")`i~, convincing evidence illustrate that CXCR4 can also bind to other G`r knitr::asis_output("\U03B1")` proteins such as G`r knitr::asis_output("\U03B1")`q~, G`r knitr::asis_output("\U03B1")`o~, and G`r knitr::asis_output("\U03B1")`s~ (for a comprehensive review: @pozzobon_2016).
+In parallel, the `r knitr::asis_output("\U03B1")`~i~ subunit inhibits adenylate cyclase and a consequent cyclic adenosine monophosphate (cAMP) production and activates the Ras/Raf/MEK/ERK pathway, resulting in cell cycle entry and proliferation [@cheng_2015]. 
+In addition to the well-characterized coupling to  G~`r knitr::asis_output("\U03B1")`i~, convincing evidence illustrates that CXCR4 can also bind to other G~`r knitr::asis_output("\U03B1")`~ proteins such as G~`r knitr::asis_output("\U03B1")`q~, G~`r knitr::asis_output("\U03B1")`o~, and G~`r knitr::asis_output("\U03B1")`s~ (for a comprehensive review: @pozzobon_2016).
 For example, by binding to G~`r knitr::asis_output("\U03B1")`12/13~, CXCR4 leads to Rho activation, whereas  G~`r knitr::asis_output("\U03B1")`q~ signal through Rac activation. 
 Moreover, it is well documented that CXCR4 can trigger a G-protein-independent signal pathway.
 
@@ -106,13 +111,17 @@ Following CXCR4 activation, G-protein coupled receptor kinases (GRKs) are recrui
 These molecules result in the uncoupling of CXCR4 from G protein and subsequent receptor internalization. 
 Moreover, `r knitr::asis_output("\U03B2")`-arrestins were reported to induce clathrin-mediated endocytosis of CXCR4, leading to receptor downregulation and trafficking to endosomal compartments [@denies_2019]. 
 
-Regarding CXCL12 second receptor, ACKR3, it contains a modified typical DRY motif in the second intracellular loop (DRYLAIV), a highly conserved region within the second loop of GPCRs<!--see figure...-->, similarly to the other ACKRs [@thelen_2008].
+CXCL12 second receptor, ACKR3, contains a modified typical DRY motif in the second intracellular loop (DRYLAIV), a highly conserved region within the second loop of GPCRs<!--see figure...-->, similar to the other ACKRs [@thelen_2008].
 It is thought to be essential for G protein binding and their subsequent activation [@thelen_2008].
 
 Like other atypical receptors, ACKR3 was demonstrated to (i) fail to activate G proteins and subsequent Ca^2+^-induced chemotaxis [@burns_2006; @levoye_2009; @rajagopal_2010a], (ii)  sequester CXCL12 extracellular gradient and thus control CXCR4-mediated cell migration. 
-ACKR3's signaling pathways are discussed later in section "Biased Signaling" (\@ref:biasedsignaling).
+ACKR3's signaling pathways are discussed later in section "Biased Signaling" \@ref(biasedsignaling).
 
-As chemokines constitute a complex system, besides their function and signaling pathways are modulated *via* broad array of factors, which are discussed below, focusing on CXCL12/CXCR4/ACKR3 as well as CX3C1/CX3CR1 axes.
+As chemokines constitute a complex system, besides their function and signaling pathways are modulated *via* a broad array of factors, which are discussed below, focusing on CXCL12/CXCR4/ACKR3 as well as CX3C1/CX3CR1 axes.
+
+```{r cxcl12sig, fig.cap='**A schematic of the CXCL12/CXCR4 intracellular signal transduction pathways.** ', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images/cxcl12sig.png")
+```
 
 ### Chemokine signaling {#chemokinesignaling}
 
@@ -122,7 +131,7 @@ These processes include (1) redundancy, (2) post-translational modifications,  (
 
 #### Redundancy {#redundancy}
 
-The most distinctive aspect of chemokine-induced signaling is their rich repertoire of ligand-receptor relationships (for reviews: @zlotnik_2000, @hughes_2018, Fig. \@ref(fig:chemmechanisms), part b and Fig. \@ref(fig:chemoexpression)).
+The most distinctive aspect of chemokine-induced signaling is their rich repertoire of ligand-receptor relationships (for reviews: @zlotnik_2000, @hughes_2018, Fig. \@ref(fig:chemmechanisms), part b).
 It is widely accepted that most chemokines may bind to several different receptors, whereas nearly all of CKRs may recognize various chemokine ligands.
 There is a prevailing notion that in the absence (or blockade) of a particular chemokine or chemokine receptor due to genetic or environmental factors, it could be compensated by the presence of other molecules with similar functions, illustrating the robustness of chemokine signaling.
 However, it becomes increasingly evident that the interactions between chemokines and CKRs are far more restricted, complex, and less redundant than previously thought, as further addressed in this chapter.
@@ -204,7 +213,7 @@ ACKR3 is an excellent example of a biased receptor.
 As a member of the atypical chemokine receptor family, ACKR3 is thought to share some peculiar characteristics, such as the inability to induce canonical G protein signaling in response to ligand stimulation, which leads to a decrease in the extracellular chemokine concentration [@naumann_2010].
 However, it was later discovered that despite being a decoy receptor, ACKR3 was also able to signal *via* `r knitr::asis_output("\U03B2")`-arrestin pathway [@rajagopal_2010a; @wang_2011].
 Moreover, although CXCR4 and ACKR3 are activated by the same chemokine, they signal through different pathways (`r knitr::asis_output("\U03B2")`-arrestin vs. G-coupled).<!-- poprawić -->
-Thus, relative to CXCR4, ACKR3 acts as a β-arrestin biased receptor.
+Thus, relative to CXCR4, ACKR3 acts as a `r knitr::asis_output("\U03B2")`-arrestin biased receptor.
 Nonetheless, more recently, it was shown that this receptor has functionality independent of the `r knitr::asis_output("\U03B2")`-arrestins.
 For example, [@montpas_2018] demonstrated that both siRNA knockdown of  `r knitr::asis_output("\U03B2")`-arrestin 1 and or `r knitr::asis_output("\U03B2")`-arrestin2 in HEK293 cells does not affect ACKR3-mediated scavenging of either of its chemokine ligands. 
 In addition, the following studies further complicate this issue by illustrating that application of CXCL12 results in elevated astrocytic intracellular Ca^2+^ levels following the activation of PTX-sensitive G~i/o~ proteins, leading to proliferation or differentiation of astrocytes [@odemis_2010].  
@@ -213,7 +222,7 @@ These findings suggest that ACKR3 activates classical G-protein signaling pathwa
 Hence, it is likely that ACKR3 functions as a ligand-biased receptor in astrocytes, as CXCL11, another ACKR3 agonist [@burns_2006], resulted in activation of `r knitr::asis_output("\U03B2")`-arrestin2 signaling in the same experimental setting [@odemis_2012].  
 Therefore, it is tempting to speculate that depending on the cell type, ACKR3 acts either as an atypical, arrestin-coupled scavenger chemokine receptor or as a classical, G protein-activating GPCR.  
 However, due to contradictory results from previous studies, this issue warrants further clarification. 
-Additionally, it was recently demonstrated that following CXCL12 treatment, ACKR3 impairs  astrocytic gap-junctional communication by inducing a Cx43 internalization in a `r knitr::asis_output("\U03B2")`-arrestin2-dependent manner [@fumagalli_2020], whereas CXCR4 leads to NF-K`r knitr::asis_output("\U03B2")` activation with consequent TNF-`r knitr::asis_output("\U03B1")` and glutamate release from these cells [@bezzi_2001; @cal_2008; @cal_2010].
+Additionally, it was recently demonstrated that following CXCL12 treatment, ACKR3 impairs  astrocytic gap-junctional communication by inducing a Cx43 internalization in a `r knitr::asis_output("\U03B2")`-arrestin2-dependent manner [@fumagalli_2020], whereas CXCR4 leads to NF-`r knitr::asis_output("\U03BA")`B activation with consequent TNF-`r knitr::asis_output("\U03B1")` and glutamate release from these cells [@bezzi_2001; @cal_2008; @cal_2010].
 Therefore, these findings suggest that CXCR4 and ACKR3 may serve distinct functions *via* different signaling pathways in astrocytes. 
 Thus, these data illustrate that, in particular cellular contexts, ACKR3 might trigger G protein-dependent or -independent signaling [@heuninck_2019].  
 <!-- połączyć to bardziej i nie robić powtórzenia... -->

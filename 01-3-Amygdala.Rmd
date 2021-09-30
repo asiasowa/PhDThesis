@@ -12,8 +12,6 @@ Nuclei that do not fall into any of these categories are beyond the scope of thi
 ```{r amygdalastr, fig.cap= '**Physiological and morphological properties of amygdalar neurons**', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/amygdalastr.png")
 ```
-<!-- showing dendritic trees-->
-
 
 
 ### Functions {#amygdalafunctions}
@@ -83,7 +81,7 @@ Nevertheless, it is tempting to speculate that neurons with disparate electrophy
 
 <!-- zdanie wprowadzające? coś w deseń, że amygdala ogarnia wiele funkcji, więc parallel microcircuits, complex connectivity // The  basolateral  nucleus  of  the  amygdala  (BL)  is  thought  to  support  numerous  emotional  behaviors  through specific microcircuits.-->
 
-```{r amygdalaconnect, fig.cap='**A schematic illustrating (a) amygdala inputs, (b) amygdala outputs (c) intracellular connectivity.', fig.align = 'center', echo = FALSE, message= FALSE }
+```{r amygdalaconnect, fig.cap='**A schematic illustrating (a) amygdala inputs, (b) amygdala outputs (c) intracellular connectivity.**', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/amygdalaconnect.png")
 ```
 

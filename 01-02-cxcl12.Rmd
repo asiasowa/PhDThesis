@@ -1,99 +1,162 @@
-## CXCL12/CXCR4/ACKR3 {#cxcl12str}
+## CXCL12/CXCR4/ACKR3 {#CXCL12}
+
+### CXCL12 structure {#CXCL12str}
 
 CXCL12, also known as the stromal cell-derived factor 1`r knitr::asis_output("\U03B1")`, is another chemokine yet belonging to the CXC subfamily.
 In humans, CXCL12 precursor mRNA precursor yields the expression of six isoforms (`r knitr::asis_output("\U03B1")`,  `r knitr::asis_output("\U03B2")`, `r knitr::asis_output("\U03B3")`, `r knitr::asis_output("\U03B4")`, `r knitr::asis_output("\U03B5")`, `r knitr::asis_output("\U03C6")`), ranging in size from 10 to 16 kDa [@yu_2006]. 
 The `r knitr::asis_output("\U03B1")` product of alternative splicing is the smallest and most abundant one [@yu_2006].
 Hence, as used here, the term "CXCL12" refers to the `r knitr::asis_output("\U03B1")` isoform, which is the main focus of the presented PhD dissertation.  
 It consists of 89 amino acids, including a signaling peptide of 19 amino acids, which is cleaved to generate the mature protein. <!-- citation i trochę zmienić...-->
-However, other isoforms are also likely to play a key role in physiologic and pathological processes [@britton_2021]. <!-- zmienić trochę --> 
+However, other isoforms are also likely to play a key role in physiologic and pathological processes (for a review: @britton_2021). <!-- zmienić trochę --> 
 CXCL12 is comprised of a three-stranded  `r knitr::asis_output("\U03B2")`-sheet held in close apposition to an `r knitr::asis_output("\U03B1")`-helix, which are essential for CXCR4 activation [@murphy_2007; @wu_2010].
 CXCL12 signal through its canonical CXCR4 receptor and atypical ACKR3 receptor, previously known as CXCR7.
 All three molecules are well-conserved across the vertebrate species [@nomiyama_2013; @nomiyama_2015].
 Surprisingly, the binding affinity between CXCL12 and ACKR3 is roughly ten times higher than those between CXCL12 and CXCR4 [@balabanian_2005]. 
 
-Following CXCL12 binding to CXCR4, in addition to the enhancement of receptor-ligand binding, there is a subsequent GDP exchange for GTP, and the trimeric G~i~-protein dissociates into its constituent parts,  G~`r knitr::asis_output("\U03B1")`i~ and G~`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")`~ [@ganju_1998]. 
+### CXCL12/CXCR4/ACKR3 expression {#cxcl12expr}
+
+CXCL12, along with their receptors CXCR4 and ACKR3, is constitutively expressed and widely distributed in the CNS, both during neurodevelopment and adulthood [@banisadr_2002a; @schnemeier_2008; @stumm_2002; @stumm_2003]. <!-- They are widely distributed across the CNS. /// CXCL12 is another chemokine which has recently attracted much attention due to its extensive distribution in the CNS as well as the fact that it can be produced not only by glial cells but also by neurons [@banisadr_2003, @heinisch_2010a, @stumm_2002].--><!-- Unlike many chemokines whose expression is strongly up-regulated during inflammatory responses, the chemokine CXCL12 and its receptors CXCR4 and CXCR7 are constitutively and widely expressed in the developing and adult nervous system (Banisadr et al. 2002; Sanchez-Alcaniz et al. 2011; Schonemeier et al. 2008; Stumm et al. 2002; Stumm et al. 2003). -->
+Moreover, these molecules are present in nearly all CNS cell types, including endothelial, glial, and notably neuronal cells.
+Specifically, both CXCL12 and CXCR4 are co-localized with many neuropeptides, for example, in dopaminergic neurons in the substantia nigra (SN) and the ventral tegmental area (VTA)[@guyon_2006]. <!--CXCL12, together with its corresponding receptor, CXCR4, are constitutively expressed in the dopaminergic neurons (DA) of the SN (see: \@ref(expr)).  ( Banisadr et al., 2000, 2002a, 2005a,b, 2003 ).--><!-- czy ACKR3 też????? -->
+Furthermore, ACKR3 and CXCR4 are co-expressed in the same neuronal [@shimizu_2011] and astrocytic populations [@odemis_2010]. 
+In neurons, prominent cytoplasmic expression of ACKR3 was demonstrated, whereas CXCR4 was found on the cell membrane [@shimizu_2011], suggesting that ACKR3 may affect CXCR4 trafficking and/or coupling to other proteins [@shimizu_2011].
+Consistently, ACKR3 up-regulation was shown to enhance heterodimer formation with CXCR4, which further resulted in its internalization and degeneration [@utokonomi_2013].
+Moreover, as described in detail in Section Biased signaling (\@ref(biasedsignaling)), there is a possibility that in certain cellular contexts, CXCL12 might trigger different ACKR3- or CXCR4- signaling, which also could lead to either G protein-dependent or -independent biased response. <!-- poprawić-->
+<!-- subcellular
+Confocal imaging of CXCR4 immunostaining as presented in this study clearly showed that in neurons of the caudate putamen the receptor is mostly located along the plasma membrane of perikarya and dendritic processes. Furthermore, CXCR4 in this region is also expressed in beaded Æbres that resemble varicosed axonal processes. A similar pattern of CXCR4 labelling was observed in the substantia innominata (not shown). This reinforces the hypothesis that CXCR4 activation could modulate synaptic transmission (Limatola et al ., 2000). Interestingly, a markedly different cellular localization of CXCR4 was observed in neurons from other brain regions such as the lateral hypothalamus. In these neurons, CXCR4 labelling was punctate and apparent throughout the cytoplasm of the perikaryon, and was barely visible in dendritic processes. This indicates that the cellular localization of CXCR4 may vary depending on the type of neurons that express the receptor. Although the functional consequences of this observation are unclear at present, it may suggest that speciÆc cellular mechanisms of CXCR4 addressing and trafÆcking could operate in different neuronal populations [@banisadr_2002a]-->
+<!--Additionally, CXCR4 is often co-expressed with opioid receptors in neurons and astrocytes, frequently forming heterodimers [@burbassi_2010], whereas ACKR3 is implicated in chemokine-opioid interactions [@ikeda_2013, @meyrath_2020], illustrating interactions between chemokine and opioid systems (see Section: \@ref(opio), for review: @mlikparsadaniantz_2015). TO TUTAJ NIE PASUJE!!!!!!!!!!!!!! poprawić odwołanie-->
+
+### CXCL12/CXCR4/ACKR3 signaling {#CXCL12signal}
+
+Following CXCL12 binding to CXCR4, in addition to the enhancement of receptor-ligand binding, there is a subsequent GDP exchange for GTP, and the trimeric G~i~-protein dissociates into its constituent parts,  G~`r knitr::asis_output("\U03B1")`i~ and G~`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")`~ (@ganju_1998; see Fig. \@ref(fig:cxcl12sig)). 
 These molecules activate several intracellular signaling cascades, specifically phosphatidylinositol-3-OH kinase (PI3K), phospholipase C (PLC), and integrins (for a review: @britton_2021, @ward_2006).  
 PLC hydrolyses phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) into diacyl glycerol (DAG) and  inositol 1,4,5-trisphosphate (IP3). <!-- /// In parallel, CXCR4-oriented migration is mediated by the phosphatidylinositide 3-kinases (PI3Ks), which can be activated by both G`r knitr::asis_output("\U03B2")``r knitr::asis_output("\U03B3")` and G `r knitr::asis_output("\U03B1")` subunits [45]. -->
 IP3 production leads to increased intracellular calcium from the endoplasmic reticulum, while DAG activates protein kinase C (PKC). 
 Both intracellular free calcium and PKC promote the activation of mitogen-activated protein kinase  (MAPK) pathways, leading to cell migration, growth, and proliferation.  
 In parallel, the `r knitr::asis_output("\U03B1")`~i~ subunit inhibits adenylate cyclase and a consequent cyclic adenosine monophosphate (cAMP) production and activates the Ras/Raf/MEK/ERK pathway, resulting in cell cycle entry and proliferation [@cheng_2015]. 
-In addition to the well-characterized coupling to  G~`r knitr::asis_output("\U03B1")`i~, convincing evidence illustrates that CXCR4 can also bind to other G~`r knitr::asis_output("\U03B1")`~ proteins such as G~`r knitr::asis_output("\U03B1")`q~, G~`r knitr::asis_output("\U03B1")`o~, and G~`r knitr::asis_output("\U03B1")`s~ (for a comprehensive review: @pozzobon_2016).
+In addition to the well-characterized coupling to  G~`r knitr::asis_output("\U03B1")`i~, convincing evidence illustrates that CXCR4 can also bind to other G~`r knitr::asis_output("\U03B1")`~ proteins such as G~`r knitr::asis_output("\U03B1")`q~, G~`r knitr::asis_output("\U03B1")`o~, and G~`r knitr::asis_output("\U03B1")`s~ (for a comprehensive review: @pozzobon_2016; see Fig. \@ref(fig:cxcl12sig)).
 For example, by binding to G~`r knitr::asis_output("\U03B1")`12/13~, CXCR4 leads to Rho activation, whereas  G~`r knitr::asis_output("\U03B1")`q~ signal through Rac activation. 
 Moreover, it is well documented that CXCR4 can trigger a G-protein-independent signal pathway.
 
-Following CXCR4 activation, G-protein coupled receptor kinases (GRKs) are recruited, inducing the intracellular C-terminal domain phosphorylation, which, in turn, results in `r knitr::asis_output("\U03B2")`-arrestins recruitment. 
-These molecules result in the uncoupling of CXCR4 from G protein and subsequent receptor internalization. 
+Following CXCR4 activation, G-protein coupled receptor kinases (GRKs) are also activated, inducing the intracellular C-terminal domain phosphorylation, which, in turn, results in `r knitr::asis_output("\U03B2")`-arrestins recruitment. 
+These molecules lead to the uncoupling of CXCR4 from G protein and subsequent receptor internalization. 
 Moreover, `r knitr::asis_output("\U03B2")`-arrestins were reported to induce clathrin-mediated endocytosis of CXCR4, leading to receptor downregulation and trafficking to endosomal compartments [@denies_2019]. 
 
-CXCL12 second receptor, ACKR3, contains a modified typical DRY motif in the second intracellular loop (DRYLAIV), a highly conserved region within the second loop of GPCRs<!--see figure...-->, similar to the other ACKRs [@thelen_2008].
-It is thought to be essential for G protein binding and their subsequent activation [@thelen_2008].
+CXCL12 second receptor, ACKR3, like other ACKR receptors, contains a modified typical DRY motif in the second intracellular loop (DRYLAIV), a highly conserved region within the second loop of GPCRs<!--see figure...--> [@thelen_2008].<!-- It is thought to be essential for G protein binding and their subsequent activation [@thelen_2008]-->
+The modification of this motif is believed to unable the activation of G proteins and subsequent Ca^2+^-induced chemotaxis [@burns_2006; @levoye_2009; @rajagopal_2010a].
+Thus, for a long time, as a member of the atypical chemokine receptor family, ACKR3 was thought to share some peculiar characteristics, such as the inability to induce canonical G protein signaling in response to ligand stimulation, which leads to a decrease in the extracellular chemokine concentration [@naumann_2010].<!-- there was a prevailing notion that ACKR3 only sequesters CXCL12 extracellular gradient and thus control CXCR4-mediated cell migration. ////ACKR3's signaling pathways are discussed later in section "Biased Signaling" \@ref(biasedsignaling). skopiować z later...-->
+However, it was later discovered that despite being a decoy receptor, ACKR3 was also able to signal *via* `r knitr::asis_output("\U03B2")`-arrestin pathway [@rajagopal_2010a; @wang_2011].
+Moreover, although CXCR4 and ACKR3 are activated by the same chemokine, they signal through different pathways (`r knitr::asis_output("\U03B2")`-arrestin vs. G-coupled).
+Thus, relative to CXCR4, ACKR3 acts as a  `r knitr::asis_output("\U03B2")`-arrestin biased receptor (see: \@ref(biasedsignaling)).
+Nonetheless, more recently, it was shown that ACKR3 has functionality independent of the `r knitr::asis_output("\U03B2")`-arrestins.
+Specifically, [@montpas_2018] demonstrated that both siRNA knockdown of  `r knitr::asis_output("\U03B2")`-arrestin 1 and or `r knitr::asis_output("\U03B2")`-arrestin2 in HEK293 cells does not affect ACKR3-mediated scavenging of either of ACKR3's ligands (e.i., CXC11 and CXCL12). 
+In addition, the following studies further complicate this issue by illustrating that application of CXCL12 results in elevated astrocytic intracellular Ca^2+^ levels following the activation of PTX-sensitive G~i/o~ proteins, leading to proliferation or differentiation of astrocytes [@odemis_2010].  
+Although these events were previously reported to be mediated by CXCR4 (for example: @bajetto_2001a), a recent report has challenged this view by demonstrating that these CXCL12-dependent outcomes persist when CXCR4 receptor is blocked or depleted from astrocytes but are prevented in astrocytes with depleted or blocked ACKR3 receptor [@odemis_2012]. 
+These findings suggest that ACKR3 activates classical G-protein signaling pathways in those cells.
+Hence, it is likely that ACKR3 functions as a ligand-biased receptor in astrocytes, as CXCL11, another ACKR3 agonist [@burns_2006], resulted in activation of `r knitr::asis_output("\U03B2")`-arrestin2 signaling in the same experimental setting [@odemis_2012].  
+Therefore, it is tempting to speculate that depending on the cell type, ACKR3 acts either as an atypical, arrestin-coupled scavenger chemokine receptor or as a classical, G protein-activating GPCR.  
+However, due to contradictory results from previous studies, this issue warrants further clarification.
 
-Like other atypical receptors, ACKR3 was demonstrated to (i) fail to activate G proteins and subsequent Ca^2+^-induced chemotaxis [@burns_2006; @levoye_2009; @rajagopal_2010a], (ii)  sequester CXCL12 extracellular gradient and thus control CXCR4-mediated cell migration. 
-ACKR3's signaling pathways are discussed later in section "Biased Signaling" \@ref(biasedsignaling).<!-- skopiować z later...-->
-
+Additionally, it was recently demonstrated that following CXCL12 treatment, ACKR3 impairs  astrocytic gap-junctional communication by inducing a Cx43 internalization in a `r knitr::asis_output("\U03B2")`-arrestin2-dependent manner [@fumagalli_2020], whereas CXCR4 leads to NF-K`r knitr::asis_output("\U03B2")` activation with consequent TNF-`r knitr::asis_output("\U03B1")` and glutamate release from these cells [@bezzi_2001; @cal_2008; @cal_2010].
+Therefore, these data suggest that CXCR4 and ACKR3 may serve distinct functions *via* different signaling pathways in astrocytes, indicating that, in particular cellular contexts, ACKR3 might trigger G protein-dependent or -independent signaling [@heuninck_2019].  
 
 ```{r cxcl12sig, fig.cap='**A schematic of the CXCL12/CXCR4 intracellular signal transduction pathways.** ', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/cxcl12sig.png")
 ```
 
+### Astrocytes
 
-### CXCL12/CXCR4/ACKR3 expression {#cxcl12expr}
+<!-- kilka zdań -->
 
-CXCL12, along with their receptors CXCR4 and ACKR3, is constitutively expressed and widely distributed in the CNS, both during neurodevelopment and adulthood [@banisadr_2002a; @schnemeier_2008; @stumm_2002; @stumm_2003]. <!-- They are widely distributed across the CNS. /// CXCL12 is another chemokine which has recently attracted much attention due to its extensive distribution in the CNS as well as the fact that it can be produced not only by glial cells but also by neurons [@banisadr_2003, @heinisch_2010a, @stumm_2002].--><!-- Unlike many chemokines whose expression is strongly up-regulated during inflammatory responses, the chemokine CXCL12 and its receptors CXCR4 and CXCR7 are constitutively and widely expressed in the developing and adult nervous system (Banisadr et al. 2002; Sanchez-Alcaniz et al. 2011; Schonemeier et al. 2008; Stumm et al. 2002; Stumm et al. 2003). -->
-Moreover, these molecules are present in nearly all CNS cell types, including endothelial, glial, and notably neuronal cells.
-Specifically, both CXCL12 and CXCR4 are co-localized with many neuropeptides, for example, in dopaminergic neurons in the substantia nigra (SN) and the ventral tegmental area (VTA)[@guyon_2006].
-Additionally, as mentioned previously, CXCR4 is often co-expressed with opioid receptors in neurons and astrocytes, frequently forming heterodimers [@burbassi_2010], whereas ACKR3 is implicated in chemokine-opioid interactions [@ikeda_2013, @meyrath_2020]<!-- inaczej napisać -->, illustrating interactions between chemokine and opioid systems (see Section: \@ref(opio), for review: @mlikparsadaniantz_2015). <!-- poprawić odwołanie-->
+### CXC12 functions
 
-Furthermore, ACKR3 and CXCR4 are co-expressed in the same neuronal [@shimizu_2011] and astrocytic populations [@odemis_2010]. 
-In neurons, prominent cytoplasmic expression of ACKR3 was demonstrated, whereas CXCR4 was found on the cell membrane [@shimizu_2011], suggesting that ACKR3 may affect CXCR4 trafficking and/or coupling to other proteins [@shimizu_2011].
-Consistently, ACKR3 up-regulation was shown to enhance heterodimer formation with CXCR4, which further resulted in its internalization and degeneration [@utokonomi_2013].
-Moreover, as described in detail in Section Biased signaling (\@ref(biasedsignaling)), there is a possibility that in certain cellular contexts, CXCL12 might trigger different ACKR3- or CXCR4- signaling, which also could lead to either G protein-dependent or -independent biased response. <!-- poprawić-->
+It is well established that CXCL12 a mobilizes cytosolic calcium following stimulation of CXCR4 in astrocytes and microglia (Tanabe et al . 1997), and that an increased calcium concentration in these cells may cause a massive release of glutamate (Araque et al . 2001).
 
+#### neurodevelopment
 
+Similar to CX3CL1, CXCL12 is also involved in neurodevelopment.
+For example, CXCL12/CXCR4 axis was demonstrated to guide interneurons (for example: @casoni_2012) and promote the maturation of GABAergic neurons during this period [@luo_2008].
+Consistently, perturbations of CXCL12/CXCR4 signaling lead to premature cortical plate invasion by cortical interneurons and, in the long term, disturbance in their laminar and regional distribution [@lpezbendito_2008], leading to the dysfunctional neural network.
 
-<!--Accumulating data reveals that chemokines modulate neuronal electrical activity through both postsynaptic (i.e., including electrophysiological output following chemokine receptor activation, such as Ca^2+^ transients, intrinsic membrane properties by activation/inactivation of particular channels/receptors) and  presynaptic (i.e., including presence in synaptic vesicle and (co-)release of neuropeptides/neurotransmitters/gliotransmitters) mechanisms (@rostne_2007).
-In addition, mounting evidence shows interactions between the chemokine system and "classical" neurotransmitters or neuromodulators.  + glial // indirect effects of glial components, --><!--Considering complexity resulting from differences in postsynaptic cell machinery, including (i) diverse signaling pathways, (ii) a rich repertoire of channels and receptors present among cells expressing a particular chemokine receptor and channels, (iii) dual/opposite action of the same chemokine, (iv) multiple chemokine ligands for particular chemokine receptors or few receptors binding one particular chemokine ligand present at the same cell, as well as possible (v) indirect effects of glial components, chemokines may exert mixed, both pre- and postsynaptic (for example: @guyon_2005) and/or functional outcomes due to chemokine receptor activation may differ in a cell- and circuit-specific manner (for example: @heinisch_2010). -->  
+Interneurons are guided to the correct cortical layer via CXCL12 gradients while  ACKR3 acts as a sink to collect excess CXCL12. [@snchezalcaiz_2011] !!!!!!!!!!!!!!!!!!!!!!!!!!!
+Similarly, Saaber et al. demonstrate that ACKR3 chemokine scavenging and endocytosis is dependent on receptor phosphorylation but independent of β-arrestins. Utilizing a variety of transgenic mice, they  further demonstrate that β-arrestin is dispensable and receptor phosphorylation is indispensable in ACKR3 mediated migration of cortical interneurons [@saaber_2019]. <!-- Similarly, Saaber et al. demonstrate that ACKR3 chemokine scavenging and endocytosis is dependent on receptor phosphorylation but independent of β-arrestins. Utilizing a variety of transgenic mice, they  further demonstrate that β-arrestin is dispensable and receptor phosphorylation is indispensable in ACKR3 mediated migration of cortical interneurons [71].[@saaber_2019] -->
+
+<!-- niekoniecznie istotne
+Neuronal growth and synapse formation can also be achieved by a phenomenon called giant depolarizing potentials (GDPs).
+GDPs are spontaneous network-driven rhythmic-like large neuronal oscillations in the developing hippocampus, formed by GABA, exerting depolarizing and excitatory actions during postnatal development. 
+CXCL12 was reported to tonically inhibit GDPs,  further highlighting the role of this chemokine in neuronal development [@benari_2002].Moreover, they are modulated by external factors, including chemokines, such as  CXCL12 and CX3CL1 [@meucci_1998; @liu_2003; @sheridan_2014].??? sprawdzić czy nie chodzi o calcium -->
+
+Again, analogous to CX3CL1, CXCL12 is also implicated in the regulation of neurogenesis.
+It has been shown that the development of adult DG neural stem cells is regulated by the release of GABA from neurons of this type (Ge et al. 2007; Bhattacharyya et al. 2008). 
+Release of CXCL12 within the DG neural stem cell niche is able to enhance GABAergic transmission to neural stem cells (Ge et al. 2007; Bhattacharyya et al. 2008).
+<!--We observed that CXCL14 had essentially the opposite effect and could inhibit GABAergic inputs to these cells.-->
+<!--The GABAergic input to DG neural stem cells takes the form of both tonic and phasic transmission.
+Interestingly, both tonic and phasic effects of synaptically released GABA were inhibited by CXCL14. -->
+We also observed that some cells responded to both CXCL12, which enhanced, and CXCL14, which decreased GABAergic transmission to nestin-expressing cells. 
+Hence, it seems likely that CXCL12 and CXCL14 represent ‘up’ and ‘down’ volume controls that can regulate GABA inputs to neural stem cells in a reciprocal fashion. 
+The fact that CXCL14 and CXCL12 are also both contained in DG GABAergic interneurons (Bhattacharyya et al. 2008) increases the probability of a meaningful connection between the effects of these three molecules in the control of DG neuron development in the adult. 
+By comparison neither CXCL14 nor CXCL12 altered GABAergic transmission to mature granule cells in the DG (Figure S3 and Bhattacharyya et al. 2008).  
+
+CXCL12/CXCR4 pair modulates cerebral cortex (Bagri et al., 2002; Lu et al., 2002; Stumm et al., 2003; Stumm and Höllt, 2007) and cerebellar (Ma et al., 1998; Zou et al., 1998) development. 
+In adult brain, high expression of CXCR4 has been reported in neuronal progenitor cells in the subventricular region and in the subgranular zone of the hippocampus, the two major niches of neuronal stem cells in the adult brain (Stumm et al., 2002; Berger et al., 2007). 
+The expression of CXCL12 in the hippocampal granular layer regulates the generation and the positioning of new granule neurons (Abe et al., 2018), as well as axonal elongation and sprouting (Pujol et al., 2005; Lysko et al., 2011; Su et al., 2012). 
+According to its role in neurogenesis, the upregulation of CXCL12 upon stroke (Wang et al., 2012), or demyelination (Carbajal et al., 2011; Patel et al., 2012; Williams et al., 2014) contributes to generate new cells and to restore normal CNS functions <!-- tRETTEL2020-->
+
 
 #### Electro
 
-In sharp contrast, CXCL12 increased glutamate release in SN, cerebellum, or hypothalamus [@guyon_2005; @guyon_2006; @ragozzino_1998].
-Since blocking action potential-dependent sodium channel or GABA~A~ receptors in SN did not block this effect, it is possible that this chemokine induces glutamate release from CXCR4-absent astrocytes [@guyon_2006]. 
-Interestingly, the observed CXCL12-induced increase in Glu was independent of CXCR4 receptor.
-Consistently, immunohistological analyses revealed that astrocytes in SN lacked CXCR4, further supporting the possibility of astrocytic mediation [@guyon_2006]. <!-- CXCL12 a increased glutamate release in SN slices, as previously described in other brain structures such as cerebellum (Ragozzino et al . 1998) or hypothalamus (Guyon et al . 2005b). This current was not blocked by TTX, suggesting that it did not involve action potential-dependent release through the glutamate terminals. Glutamatergic terminals on DA neurones arise from the output of the subthalamic nucleus or prefrontal cortex, which are absent from our slices. Increased calcium permeability in terminals might raise the probability of spontaneous release of glutamate or uptake of glutamate might be inhibited at the axon terminal exposed to CXCL12 a . However, sEPSCs recorded in 10 lM bicuculline were unaffected by CXCL12 a . It is therefore likely that CXCL12 a induces glutamate release from glial cells present in the slice. It is well established that CXCL12 a mobilizes cytosolic calcium following stimulation of CXCR4 in astrocytes and microglia (Tanabe et al . 1997), and that an increased calcium concentration in these cells may cause a massive release of glutamate (Araque et al . 2001). Interestingly, in the SN, the CXCL12 a effect was independent of CXCR4 as it was not blocked by AMD (1 lM) (Fig. 6), consistent with the lack of CXCR4 on astrocytes revealed by immunostaining. The mechanism of action of CXCL12 a on glutamate release thus needs further investigation. -->
+Electrophysiologically, CXCL12 increased glutamate release in the substantia nigra (SN), the cerebellum, or the hypothalamus [@guyon_2005; @guyon_2006; @ragozzino_1998]. <!--CXCL12 depresses the evoked input of the parallel fibers to Purkinje neurons ( Giovannelli et al., 1998; Ragozzino et al., 1998, 2002 ). trettel-->
 
-Unlike in SN, astrocytes cultured from the cerebral cortex presented the high expression of CXCR4  [@cal_2008].
-Moreover, CXCR4 activation was reported to trigger a burst of exocytosis, <!--on a millisecond time scale -->leading to the release of Ca^2+^ from internal stores in those cells [@cal_2008].
-These results further support the notion that astrocytes can respond to external stimuli and communicate *via* fast release of glutamate on a millisecond time scale [@cal_2010]. <!-- Interestingly, astrocytic synaptic-like microvesicles (SLMVs) express vesicular glutamate transporters (VGLUTs), and they can release glutamate by Ca^2+^-dependent regulated exocytosis [@cal_2008]. both in tissue and in cultured astrocytes-->
-<!--In relation to astrocytes, it is increasingly evident that these cells actively participate in synaptic transmission.  nowe cytowania? -->
+##### Cerebellum? 
+Furthermore, following CXCL12 treatment, Purkinje cells in the cerebellum showed an increase in the spontaneous GABAergic activity by CXCR4 activation [@limatola_2000a].
 
-In addition to glutamate, CXCR4 is also known to release prostaglandins and TNF`r knitr::asis_output("\U03B1")` upon activation by CXCL12 on astrocytes [@bezzi_2001], which has key functional consequences on the neuronal networks as described in the next section (\@ref(scal)). <!-- CXCL12 induces the tumor necrosis factor a (TNF a )-mediated Glu release from astrocytes (Bezzi et al., 2001) and TNF a increases the surface expression of synaptic AMPARs (Beattie et al., 2002) . @lax_2002-->
-Evidence indicates that CXCR4 can also affect NMDAR. 
+Evidence indicates that CXCR4 can also affect NMDAR.
 For instance, CXCR4 receptors were shown to be presynaptically located in hippocampal noradrenergic and glutamatergic nerve endings.
-They were connected with presynaptic NMDA receptors, suggesting that CXCR4-NMDAR interactions can regulate both noradrenaline and glutamate exocytosis (@diprisco_2016, see also: \@ref(NE)). 
+They were connected with presynaptic NMDA receptors, suggesting that CXCR4-NMDAR interactions can regulate both noradrenaline and glutamate exocytosis [@diprisco_2016]. 
 Moreover, in the cerebellum, CXCR4 activation results in a decrease in NMDAR function, and thus, leads to synaptic depression [@ragozzino_2002], probably by CXCL12-induced reduction in NR2B expression subunit of NMDAR [@nicolai_2010].
 CXCR4 is also widely expressed on microglia, and thus being able to react to astrocytic glutamate. <!-- najlepiej rozbudować -->
 
-Pioneer experiments demonstrated that IL8 and CXCL1 potentiate the spontaneous and evoked excitatory transmission in cerebellar neurons by increasing the cytosolic Ca2+levels, whereas CXCL12 depresses the evoked input of the parallel fibers to Purkinje neurons ( Giovannelli et al., 1998; Ragozzino et al., 1998, 2002 ).<!-- trettel-->
+Interestingly, by acting on presynaptic site, CXCL12 seems to affect neurons in the DRN, SN, hypothalamus, and in turn, modulate release of such neuromodulators as serotonin, dopamine, MCH, respectively. <!-- CXCL12 also induces a presynaptic increase of both glutamatergic and GABAergic neurotransmission onto serotoninergic neurons in the dorsal raphe, onto cortical immature neurons upon transient MCAO and onto dopaminergic neurons of substantia nigra (SN) ( Guyon et al., 2006; Heinisch and Kirby, 2010; Ardelt et al., 2013 ). -->
 
-#### GABA {#GABA}
- 
-Among chemokines, CXCL12 is the most widely studied and was demonstrated to exert diverse electrophysiological effects in distinct neuronal populations within the same or different structures. 
+#### Peptides
+
+
+
+##### 5-HT
+
 Specifically, by CXCR4 activation in the dorsal raphe nucleus (DRN), CXCL12 enhanced sIPSC frequency on serotonergic neurons, whereas it reduced sIPSC amplitude in non-serotonergic neurons [@heinisch_2010], suggesting postsynaptic and presynaptic mechanisms, respectively.
+
+Like CX3CL1,  CXCL12 was also found to modulate GABAergic synaptic transmission onto serotoninergic neurons.
+CXCL12 was shown to increase sIPSC frequency, which may inhibit the excitability of serotoninergic cells and the release of its neurotransmitter.
+In contrast CX3CL1  increases the amplitude of sIPSCs and eIPSC, without affecting PPR, increasing the sensitivity of serotoninergic neurons to GABA inputs and consequently inhibiting 5-HT neurotransmission  [@heinisch_2009, @heinisch_2011]. 
+
+Thus, despite different mechanisms of modulation of GABAergic transmission, the electrophysiological output is similar, and to date, all chemokines are suggested to inhibit serotoninergic cells in DRN. 
+
+##### MCH
+
 Evidence from another electrophysiological study has illustrated that CXCL12 increases the release of GABA from hypothalamic melanin-concentrating hormone (MCH) neurons, which affects the excitability of these cells in a dose-dependent manner [@guyon_2005].
+
+In addition, CXCL12 was reported to co-localize with neurons releasing neuropeptides, such as vasopressin (AVP)<!-- also called arginine vasopressin--> and melanin-concentrating hormone (MHC) in posterior pituitary neurons, and substance P in DRG neurons (see Sections: \@ref(cell)).<!-- nie wiem co się złego stało z , \@ref(autocrine) --><!-- cytowania? --> 
+These findings suggest that CXCL12 cognate receptor, CXCL12, is involved in the autocrine regulation of these neurons.
+Consistent with this idea, CXCR4 was described to directly modulate several voltage-dependent channels, including Na^+^ and K^+^ channels of the action potential in MCH neurons [@guyon_2005], or tetrodotoxin-sensitive sodium currents in hypothalamic neurons [@guyon_2005a].
+Moreover, this chemokine is packed in small dense vesicles in the nerve terminals of these neurons, which are then released from neuronal cell bodies and terminal nerve endings in a calcium-dependent manner (for example: ). <!-- cytowanie z CXCL12 --><!-- CXCL12 is stored in vesicle like structures within neurons which seem to be neurotransmitter storage vesicles (Bhattacharyya et al. 2008). --> 
+
+Furthermore, electrophysiological recordings of supraoptic neurons have demonstrated that CXCL12 decreases the electrical activity of AVP neurons *via* CXCR4, resulting in modifications in AVP release.
+In addition, intracerebroventricular injections of CXCL12 were illustrated to significantly inhibit the release of AVP induced by high plasma osmolarity [@callewaere_2006].
+
+The hypothalamus, a brain region comprised of different nuclei and several neuronal populations producing neuropeptides, is critically involved in the regulation of major neuroendocrine functions, including water/food intake, metabolism, and also stress.
+
+Depending on the concentration, CXCL12 is thought to exert opposite effects on the action potential discharge [@guyon_2005], which may have functional consequences on the activity of neuroendocrine networks.
+Specifically, CXCR4 is tonically active at low physiological concentrations, constantly exerting its action on MCH neurons.
+Under basal conditions, those cells showed more hyperpolarized membrane potential than orexin neurons, which do not express CXCR4 [@eggermann_2003]. 
+Moreover, CXCL12/CXCR4/ACKR3 signaling dysfunctions are associated with feeding disorders, such as anorexia.
+Consistently, a high-fat diet was reported to increase the expression of CXCL12, its receptors, and neuropeptides, such as enkephalin, galanin, orexin, and MCH in the PVN and perifornical lateral hypothalamus [@poon_2016]. 
+Importantly, intracerebroventricular injection of CXCL12 was shown to mimic those effects of the high-fat diet in the hypothalamus, suggesting a vital role of the CXCL12/CXCR4/ACKR3 axis in feeding behavior [@poon_2016]. 
+<!-- Both SDF-1 and GABA have been shown to  regulate the rate of GnRH neuronal migration by accelerating and slowing migration, respectively. As such, this system was used to  explore the mechanism by which these molecules act to produce coordinated cell movement during development. In the present study,  GABA and SDF-1 are shown to exert opposite effects on the speed of cell movement by activating depolarizing or hyperpolarizing  signaling pathways, GABA via changes in chloride and SDF-1 via changes in potassium. GABA and SDF-1 were also found to act  synergistically to promote linear rather than random movement. The simultaneous activation of these signaling pathways, therefore,  results in tight control of cellular speed and improved directionality along the migratory pathway of GnRH neurons.  -->
+
+
+##### DA
 Similarly, in the SN, CXCL12 enhanced the frequency of sIPSCs and mIPSCs, indicating  presynaptic mechanisms, which is consistent with the documented presence of CXCR4 on the GABAergic neurons [@guyon_2006].
-Furthermore, following CXCL12 treatment, Purkinje cells in the cerebellum showed an increase in the spontaneous GABAergic activity by CXCR4 activation [@limatola_2000a].
-Interestingly, CXCR4 is associated with outward TTX-sensitive G protein-coupled inward rectifying potassium (GIRK) channel.
-This current was shown to be prevented by applying the GABA~B~ antagonist, suggesting GABA spillover onto GABA~B~ receptors [@guyon_2007] as well as CXCR4-exerted actions by additional GABAergic receptor.<!-- nie wiem czy tak w ogóle mogę napisać, ale niech będzie...-->
-<!-- CXCL12 has been shown to be released with GABA from  inhibitory neurons (Bhattacharyya et al., 2008).  -->
-
-<!-- neurogenesis-->
-It has been shown that the development of adult DG neural stem cells is regulated by the release of GABA from neurons of this type (Ge et al. 2007; Bhattacharyya et al. 2008). 
-Release of CXCL12 within the DG neural stem cell niche is able to enhance GABAergic transmission to neural stem cells (Ge et al. 2007; Bhattacharyya et al. 2008).
-We observed that CXCL14 had essentially the opposite effect and could inhibit GABAergic inputs to these cells.
-The GABAergic input to DG neural stem cells takes the form of both tonic and phasic transmission.Interestingly, both tonic and phasic effects of synaptically released GABA were inhibited by CXCL14. We also observed that some cells responded to both CXCL12, which enhanced, and CXCL14, which decreased GABAergic transmission to nestin-expressing cells. Hence, it seems likely that CXCL12 and CXCL14 represent ‘up’ and ‘down’ volume controls that can regulate GABA inputs to neural stem cells in a reciprocal fashion. The fact that CXCL14 and CXCL12 are also both contained in DG GABAergic interneurons (Bhattacharyya et al. 2008) increases the probability of a meaningful connection between the effects of these three molecules in the control of DG neuron development in the adult. By comparison neither CXCL14 nor CXCL12 altered GABAergic transmission to mature granule cells in the DG (Figure S3 and Bhattacharyya et al. 2008).  --> 
-
-<!-- electro dopamine-->
-CXCL12, together with its corresponding receptor, CXCR4, are constitutively expressed in the dopaminergic neurons (DA) of the SN (see: \@ref(expr)). <!-- ( Banisadr et al., 2000, 2002a, 2005a,b, 2003 ).--><!-- czy ACKR3 też????? -->
 
 ... CXCL12/CXC4 pairs (an increase in the N-type channel, one of high voltage-activated (HVA) channels), they both produce a similar effect: the increase in excitability of dopaminergic neurons of SN, which leads to an enhanced DA release [@guyon_2008a;  @guyon_2009]. <!-- sprawdzić jakie kanały i czy na pewno te /// induced: (i) a depolarization and increased action potential frequency; and (ii) switched the firing pattern of depolarized DA neurons from a tonic to a burst firing mode. This suggests that SDF-1 could increase DA release from neurons. []-->
 <!-- Moreover, by using neuronal cultures from SN, it was elegantly shown that CXCL12 alone did not affect DA release, but neurons need prior depolarization (e.i. with the potassium chloride (KCl) solution), which activates the calcium HVA currents, and consequent CXCL12-induced DA secretion [@guyon_2008].-->
@@ -104,26 +167,31 @@ It was speculated that its source might be glutamate secreted from non-neural ce
 As CXCR4 was not present on astrocytic cells in the SN [@guyon_2008], thus this inward current likely resulted from the activation of CXCR4 on microglia. 
 However, further experiments need to verify this hypothesis.
 
-<!-- CXCL12 serotonine -->
-CXCL12 also induces a presynaptic increase of both glutamatergic and GABAergic neurotransmission onto serotoninergic neurons in the dorsal raphe, onto cortical immature neurons upon transient MCAO and onto dopaminergic neurons of substantia nigra (SN) ( Guyon et al., 2006; Heinisch and Kirby, 2010; Ardelt et al., 2013 ). <!-- trettel-->
+##### Astrocytic impact 
+Intriguingly, in the SN, this effect was independent on CXCR4 receptor, action potential-dependent sodium channel, or GABA~A~ receptors [@guyon_2006], suggesting that this chemokine may induce glutamate release from astrocytes.<!-- Interestingly, the observed CXCL12-induced increase in Glu was independent of CXCR4 receptor. -->
+Consistently, immunohistological analyses revealed that astrocytes in this structure lacked CXCR4, further supporting the possibility of astrocytic mediation [@guyon_2006]. 
+Considering abovementioned expression of another ACKR3 receptor in astrocytes, it is possible that this receptor is responsible for this CXCL12-induced increase in glutamate. 
+However, the exact mechanism of action of CXCL12 a on glutamate release still warrants further investigation.<!-- CXCL12 a increased glutamate release in SN slices, as previously described in other brain structures such as cerebellum (Ragozzino et al . 1998) or hypothalamus (Guyon et al . 2005b). This current was not blocked by TTX, suggesting that it did not involve action potential-dependent release through the glutamate terminals. Glutamatergic terminals on DA neurones arise from the output of the subthalamic nucleus or prefrontal cortex, which are absent from our slices. Increased calcium permeability in terminals might raise the probability of spontaneous release of glutamate or uptake of glutamate might be inhibited at the axon terminal exposed to CXCL12 a . However, sEPSCs recorded in 10 lM bicuculline were unaffected by CXCL12 a . It is therefore likely that CXCL12 a induces glutamate release from glial cells present in the slice. It is well established that CXCL12 a mobilizes cytosolic calcium following stimulation of CXCR4 in astrocytes and microglia (Tanabe et al . 1997), and that an increased calcium concentration in these cells may cause a massive release of glutamate (Araque et al . 2001). Interestingly, in the SN, the CXCL12 a effect was independent of CXCR4 as it was not blocked by AMD (1 lM) (Fig. 6), consistent with the lack of CXCR4 on astrocytes revealed by immunostaining. The mechanism of action of CXCL12 a on glutamate release thus needs further investigation. -->
 
-As described above, both CXCL12 and CX3CL1 were found to modulate GABAergic synaptic transmission onto serotoninergic neurons.
-CXCL12 was shown to increase sIPSC frequency, which may inhibit the excitability of serotoninergic cells and the release of its neurotransmitter.
-In contrast CX3CL1  increases the amplitude of sIPSCs and eIPSC, without affecting PPR, increasing the sensitivity of serotoninergic neurons to GABA inputs and consequently inhibiting 5-HT neurotransmission  [@heinisch_2009, @heinisch_2011]. 
+Unlike in the SN, astrocytes cultured from the cerebral cortex presented the high expression of CXCR4  [@cal_2008].
+Moreover, CXCR4 activation was reported to trigger a burst of exocytosis, <!--on a millisecond time scale -->leading to the release of Ca^2+^ from internal stores in those cells [@cal_2008].
+These results further support the notion that astrocytes can respond to external stimuli and communicate *via* fast release of glutamate on a millisecond time scale [@cal_2010]. <!-- Interestingly, astrocytic synaptic-like microvesicles (SLMVs) express vesicular glutamate transporters (VGLUTs), and they can release glutamate by Ca^2+^-dependent regulated exocytosis [@cal_2008]. both in tissue and in cultured astrocytes-->
+<!--In relation to astrocytes, it is increasingly evident that these cells actively participate in synaptic transmission.  nowe cytowania? -->
 
-Thus, despite different mechanisms of modulation of GABAergic transmission, the electrophysiological output is similar, and to date, all chemokines are suggested to inhibit serotoninergic cells in DRN. 
+In addition to glutamate, CXCR4 is also known to release prostaglandins and TNF`r knitr::asis_output("\U03B1")` upon activation by CXCL12 on astrocytes [@bezzi_2001], which has key functional consequences on the neuronal networks ..... <!-- CXCL12 induces the tumor necrosis factor a (TNF a )-mediated Glu release from astrocytes (Bezzi et al., 2001) and TNF a increases the surface expression of synaptic AMPARs (Beattie et al., 2002) . @lax_2002-->
+It is widely accepted that TNF`r knitr::asis_output("\U03B1")` mediates synaptic scaling, a form of homeostatic plasticity leading to the adjustment of synaptic strength [@stellwagen_2006]. 
+Glia, mainly astrocytes, have been identified as the main source of TNF`r knitr::asis_output("\U03B1")` in the CNS.
+Therefore, by modulating TNF`r knitr::asis_output("\U03B1")` levels, glia participate in homeostatic activity-dependent regulation of synaptic plasticity [@stellwagen_2006].
+As it is well-documented that CXCR4 is mainly expressed on astrocytes, CXCL12/CXCR4 pathway is also involved in regulating synaptic plasticity. <!-- cytowanie??? -->
+Moreover, evidence also implicated microglia in the regulation of synaptic plasticity, as they release TNF`r knitr::asis_output("\U03B1")` [@pascual_2012].
 
 
-<!-- cxcl12 and neuropeptides-->
-In addition, CXCL12 was reported to co-localize with neurons releasing neuropeptides, such as vasopressin (AVP)<!-- also called arginine vasopressin--> and melanin-concentrating hormone (MHC) in posterior pituitary neurons, and substance P in DRG neurons (see Sections: \@ref(cell)).<!-- nie wiem co się złego stało z , \@ref(autocrine) --><!-- cytowania? --> 
-These findings suggest that CXCL12 cognate receptor, CXCL12, is involved in the autocrine regulation of these neurons.
-Consistent with this idea, CXCR4 was described to directly modulate several voltage-dependent channels, including Na^+^ and K^+^ channels of the action potential in MCH neurons [@guyon_2005], or tetrodotoxin-sensitive sodium currents in hypothalamic neurons [@guyon_2005a].
-Moreover, this chemokine is packed in small dense vesicles in the nerve terminals of these neurons, which are then released from neuronal cell bodies and terminal nerve endings in a calcium-dependent manner (for example: ). <!-- cytowanie z CXCL12 --><!-- CXCL12 is stored in vesicle like structures within neurons which seem to be neurotransmitter storage vesicles (Bhattacharyya et al. 2008). --> 
+#### WHERE?
+Interestingly, CXCR4 is associated with outward TTX-sensitive G protein-coupled inward rectifying potassium (GIRK) channel.
+This current was shown to be prevented by applying the GABA~B~ antagonist, suggesting GABA spillover onto GABA~B~ receptors [@guyon_2007] as well as CXCR4-exerted actions by additional GABAergic receptor.<!-- nie wiem czy tak w ogóle mogę napisać, ale niech będzie...-->
+<!-- CXCL12 has been shown to be released with GABA from  inhibitory neurons (Bhattacharyya et al., 2008).  -->
 
-Furthermore, electrophysiological recordings of supraoptic neurons have demonstrated that CXCL12 decreases the electrical activity of AVP neurons *via* CXCR4, resulting in modifications in AVP release.
-In addition, intracerebroventricular injections of CXCL12 were illustrated to significantly inhibit the release of AVP induced by high plasma osmolarity [@callewaere_2006].
 
-<!-- Both SDF-1 and GABA have been shown to  regulate the rate of GnRH neuronal migration by accelerating and slowing migration, respectively. As such, this system was used to  explore the mechanism by which these molecules act to produce coordinated cell movement during development. In the present study,  GABA and SDF-1 are shown to exert opposite effects on the speed of cell movement by activating depolarizing or hyperpolarizing  signaling pathways, GABA via changes in chloride and SDF-1 via changes in potassium. GABA and SDF-1 were also found to act  synergistically to promote linear rather than random movement. The simultaneous activation of these signaling pathways, therefore,  results in tight control of cellular speed and improved directionality along the migratory pathway of GnRH neurons.   -->
 
 #### Opioids {#opio}
 
@@ -137,90 +205,20 @@ Accordingly, treatment with ACKR3 agonist LIH383, even at high concentration, di
 Interestingly, in the presence of the ACKR3 agonist, dynorphin A improved its potency towards its classical receptors, which resulted in more significant inhibition of neuronal firing than in the absence of ACKR3 activation [@meyrath_2020]. 
 These findings suggest that ACKR3 regulates opioid peptide availability, and consequently its signaling through their classical receptors [@meyrath_2020], adding another level of complexity and fine-tuning to the opioid system but also opens additional therapeutic opportunities.
 
-<!-- dendritic spines-->
+Consistent with this idea, ACKR3 was reported to bind intermediate opioid peptides, specifically BAM22 and peptide E, which results in enhancement of circadian glucocorticoid oscillation in the adrenal glands, and, therefore, anxiolytic-like behavior [@ikeda_2013]. <!-- może poprawic albo wrocić do innej wersji? -->
+BAM22 and peptide E were shown to be released under a condition named subcapsular cell hyperplasia (SCH) [@ikeda_2013], which is a pathohistological change of adrenal tissue.
+SCH cells lack prohormone convertase, an enzyme required for processing these proteins to mature enkephalins [@ikeda_2013].
+Therefore, this study highlights the functional relevance of chemokine and opioid systems interactions.
+
+#### dendritic spines
 
 CXCL12 is another chemokine that is documented to be involved in dendritic spine modifications [@pitcher_2014,  @festa_2020].<!-- Another chemokine receptor demonstrating an association with dendritic spines is CCR5. -->
-Specifically, this chemokine increases dendritic spine density in cerebral cortex human neurons.
+Specifically, this chemokine increases dendritic spine density in cerebral cortex neurons in human.
 For example, CXCR4 activation by CXCL12 was reported to positively regulate neuronal survival and dendritic spine density in cortical neurons.<!-- what deficits? /// citations? -->
 However, the molecular mechanisms underlying CXCR4 regulation of dendritic spines are not completely defined [@nash_2019].
 
 
-#### Interneurons {#interinter} / neurodevelopment
-
-All neuronal circuits of higher animals comprise excitatory and inhibitory neurons forming intense feed-forward and feedback connections [@mohler_1990, @ferrante_2009, @roth_2012].
-However, the precise control of network operations would not be possible without interneurons.
-Although they constitute only 20-30% of all cells in cortical circuits, this small, diverse group of inhibitory neurons enables higher brain functions, such as working memory, cognitive flexibility, attention, or social interaction (for a review: @mederos_2019). 
-Through inhibition, GABAergic interneurons can shape the circuit activity controlling (1) frequency of surrounding pyramidal neurons, (2) network excitation level by feed-forward mechanism, and (3) synchronized oscillation events [@mederos_2019]. 
-
-The importance of interneurons in relation to network functioning illustrates the highly controlled manner by which interneurons connect with other neurons [@tremblay_2016]. 
-The best-characterized feature of constitutively expressed chemokines in the brain, particularly CXCL12 and CX3CL1, is the regulation of cell and axonal/neurite migration during neurodevelopment.
-Noting their documented modulation of GABAergic transmission (see Section: \@ref(GABA)) may indicate that chemokines participate in this process.
-Consistently, CXCL12/CXCR4 axis was demonstrated to guide interneurons (for example: @casoni_2012) and promote the maturation of GABAergic neurons during neurodevelopment [@luo_2008].
-Moreover, as expected, perturbation of CXCL12/CXCR4 signaling, e.g., in their gradients, leads<!--was revealed to lead--> to premature cortical plate invasion by cortical interneurons and, in the long term, disturbance in their laminar and regional distribution [@lpezbendito_2008], leading to the dysfunctional neural network. 
-
-Neuronal growth and synapse formation can also be achieved by a phenomenon called giant depolarizing potentials (GDPs).
-GDPs are spontaneous network-driven rhythmic-like large neuronal oscillations in the developing hippocampus, formed by GABA, exerting depolarizing and excitatory actions during postnatal development. 
-CXCL12 was reported to tonically inhibit GDPs,  further highlighting the role of this chemokine in neuronal development [@benari_2002].
-Moreover, they are modulated by external factors, including chemokines, such as  CXCL12 and CX3CL1 [@meucci_1998; @liu_2003; @sheridan_2014].<!-- może lepiej to sklecić -->
-
-Interneurons are guided to the correct cortical layer via CXCL12 gradients while  ACKR3 acts as a sink to collect excess CXCL12. [@snchezalcaiz_2011]
-
-Similarly, Saaber et al. demonstrate that ACKR3 chemokine scavenging and endocytosis is dependent on receptor phosphorylation but independent of β-arrestins. Utilizing a variety of transgenic mice, they  further demonstrate that β-arrestin is dispensable and receptor phosphorylation is indispensable in ACKR3 mediated migration of cortical interneurons [71]. <!-- Similarly, Saaber et al. demonstrate that ACKR3 chemokine scavenging and endocytosis is dependent on receptor phosphorylation but independent of β-arrestins. Utilizing a variety of transgenic mice, they  further demonstrate that β-arrestin is dispensable and receptor phosphorylation is indispensable in ACKR3 mediated migration of cortical interneurons [71].[@saaber_2019] -->
-
-
-##### Synaptic scaling {#scal}
-
-In order to prevent the destabilizing component of Hebbian plasticity in network function, neurons are able to sense their excitability and trigger negative-feedback homeostatic mechanisms to counteract perturbations in synaptic activity and restrain it within a dynamical but physiological range [@field_2020]. <!-- computational -->
-Recent accumulating data also highlight the essential role of glial cells, as they are equipped with, for instance, glutamate transporters to control the concentration of glutamate and other neurotransmitters in the microenvironment. <!-- może jakoś lepiej napisać --> 
-Importantly, stable but flexible neural activity is fundamental for proper brain function and support of animal behavior, depending on a dynamic interface between homeostatic synaptic  plasticity  mechanisms  and  Hebbian  forms  of plasticity [@field_2020; @tremblay_2016].
-
-It is widely accepted that TNF`r knitr::asis_output("\U03B1")` mediates synaptic scaling, a form of homeostatic plasticity leading to the adjustment of synaptic strength [@stellwagen_2006]. 
-Glia, mainly astrocytes, have been identified as the main source of TNF`r knitr::asis_output("\U03B1")` in the CNS.
-Therefore, by modulating TNF`r knitr::asis_output("\U03B1")` levels, glia participate in homeostatic activity-dependent regulation of synaptic plasticity [@stellwagen_2006].
-As it is well-documented that CXCR4 is mainly expressed on astrocytes, CXCL12/CXCR4 pathway is also involved in regulating synaptic plasticity. <!-- cytowanie??? -->
-Moreover, evidence also implicated microglia in the regulation of synaptic plasticity, as they release TNF`r knitr::asis_output("\U03B1")` [@pascual_2012]. 
-
-##### Adult neurogenesis
-
-Adult neurogenesis in the rodent brain is thought to reside in two niches, the SVZ adjacent to the lateral ventricles and the subgranular zone (SGZ) located in the DG.
-Division, maturation, and forming functional synapses or apoptosis are key processes that need to be tightly controlled to maintain an adequate balance between plasticity and stability.
-As expected, more and more data shows an increasing impact of glial cells and chemokines on this phenomenon. 
-Consistently, increasing studies implicated both exogenous or exercise-induced CX3CL1 in promoting neurogenesis and  NSC/NPC activity in a microglia-dependent manner, whereas depletion of CX3CR1 resulted in a decreased number of newly generated neurons [@vukovic_2012, @bachstetter_2011, @rogers_2011]. 
-Moreover, morphological alternations in mature granule cells were still present in CX3CR1 deficient mice [@bols_2018], suggesting their long-lasting changes.
-
-CXCL12/CXCR4 pair modulates cerebral cortex ( Bagri et al., 2002; Lu et al., 2002; Stumm et al., 2003; Stumm and Höllt, 2007 ) and cerebellar ( Ma et al., 1998; Zou et al., 1998 ) development. In adult brain, high expression of CXCR4 has been reported in neuronal progenitor cells in the subventricular region and in the subgranular zone of the hippocampus, the two major niches of neuronal stem cells in the adult brain ( Stumm et al., 2002; Berger et al., 2007 ). The expression of CXCL12 in the hippocampal granular layer regulates the generation and the positioning of new granule neurons ( Abe et al., 2018 ), as well as axonal elongation and sprouting ( Pujol et al., 2005; Lysko et al., 2011; Su et al., 2012 ). According to its role in neurogenesis, the upregulation of CXCL12 upon stroke ( Wang et al., 2012 ), or demyelination ( Carbajal et al., 2011; Patel et al., 2012; Williams et al., 2014 ) contributes to generate new cells and to restore normal CNS functions <!-- tRETTEL2020-->
-
-CXCL12 also induces a presynaptic increase of both glutamatergic and GABAergic neurotransmission onto serotoninergic neurons in the dorsal raphe, onto cortical immature neurons upon transient MCAO and onto dopaminergic neurons of substantia nigra (SN) ( Guyon et al., 2006; Heinisch and Kirby, 2010; Ardelt et al., 2013 ). <!-- trettel-->
-
-#### Neuroendocrine circuit {#neuroendo}
-
-The hypothalamus, a brain region comprised of different nuclei and several neuronal populations producing neuropeptides, is critically involved in the regulation of major neuroendocrine functions, including water/food intake, metabolism, and also stress.
-
-Depending on the concentration, CXCL12 is thought to exert opposite effects on the action potential discharge [@guyon_2005], which may have functional consequences on the activity of neuroendocrine networks.
-Specifically, CXCR4 is tonically active at low physiological concentrations, constantly exerting its action on MCH neurons.
-Under basal conditions, those cells showed more hyperpolarized membrane potential than orexin neurons, which do not express CXCR4 [@eggermann_2003]. 
-Moreover, CXCL12/CXCR4/ACKR3 signaling dysfunctions are associated with feeding disorders, such as anorexia.
-Consistently, a high-fat diet was reported to increase the expression of CXCL12, its receptors, and neuropeptides, such as enkephalin, galanin, orexin, and MCH in the PVN and perifornical lateral hypothalamus [@poon_2016]. 
-Importantly, intracerebroventricular injection of CXCL12 was shown to mimic those effects of the high-fat diet in the hypothalamus, suggesting a vital role of the CXCL12/CXCR4/ACKR3 axis in feeding behavior [@poon_2016]. 
-
-<!-- Some chemokines such as cytokine-induced neutrophil chemoattractant (CINC, the rat counterpart of the human growth-related oncogene, GRO/), neutrophil-activating peptide-1, stromal cell-derived factor (SDF-1) also named CXCL12 and monocyte chemoattractant protein-1 (MCP-1) also named CCL2 have been found to be expressed in the hypothalamus and in the pituitary [10,31,76]. --><!-- CXCL14 protein is present in a subset of hypothalamic neurons and suggest that CXCL14 participates in hypothalamic functions such as control of autonomic nervous systems and/or participates in immune cell recruitment via the median eminence Yamato2011 też feeding ale nie wiem czy to poruszać...-->
-<!-- Both SDF-1 and GABA have been shown to  regulate the rate of GnRH neuronal migration by accelerating and slowing migration, respectively. As such, this system was used to  explore the mechanism by which these molecules act to produce coordinated cell movement during development. In the present study,  GABA and SDF-1 are shown to exert opposite effects on the speed of cell movement by activating depolarizing or hyperpolarizing  signaling pathways, GABA via changes in chloride and SDF-1 via changes in potassium. GABA and SDF-1 were also found to act  synergistically to promote linear rather than random movement. The simultaneous activation of these signaling pathways, therefore,  results in tight control of cellular speed and improved directionality along the migratory pathway of GnRH neurons.  -->
-
-
-////
- 
-Confocal imaging of CXCR4 immunostaining as presented in this study  clearly  showed  that  in  neurons  of  the  caudate  putamen  the receptor is mostly located along the plasma membrane of perikarya and dendritic processes.  Furthermore, CXCR4 in  this region is  also expressed in beaded Æbres that resemble varicosed axonal processes. A similar pattern of CXCR4 labelling was observed in the substantia innominata (not shown). This reinforces the hypothesis that CXCR4 activation  could  modulate  synaptic  transmission  (Limatola et  al ., 2000).  Interestingly,  a  markedly  different  cellular  localization  of CXCR4 was observed in neurons from other brain regions such as the lateral   hypothalamus.   In   these   neurons,   CXCR4   labelling   was punctate  and  apparent  throughout  the  cytoplasm  of  the  perikaryon, and was barely visible in dendritic processes. This indicates that the cellular  localization  of CXCR4 may  vary  depending  on  the type  of neurons  that  express  the  receptor.  Although  the  functional  consequences of this observation are unclear at present, it may suggest that speciÆc  cellular  mechanisms  of  CXCR4  addressing  and  trafÆcking could operate in different neuronal populations [@banisadr_2002a]
-
-
-
-<!-- glia and synaptic plasticity -->
-A fundamental property of the mammalian brain is its ability to modify its function based on experience, and thereby to alter subsequent behavior. By changing the strength of transmission at preexisting synapses, transient experiences can be incorporated into the neuronal circuits as persistent memory traces during both development and adulthood. As such, synaptic plasticity is a fundamental mechanism that supports brain function (Buzsáki and Chrobak, 2005). Among the different factors that regulate synaptic plasticity, glial cells have been found to be key players in maintenance of synapse homeostasis (Eroglu and Barres, 2010). The biggest challenge when studying the effects of glial cells on brain activity is isolating the different cell-type components, i.e., neurons vs. glia. Recent research advances using various strategies, such as pharmacological or genetic manipulation and gene expression from viral vectors (Nimmerjahn and Bergles, 2015; Oliveira et al., 2015; Ben Haim and Rowitch, 2017), have allowed researchers to elucidate the role of glial cells in several aspects of brain function, and such knowledge may lead to the development of new therapies and biomarkers for many types of neurological dysfunction (Almad and Maragakis, 2018). [@mederos_2018]<!-- use all of the review -->
-
-
-////
-
-
-
+/////////////////
 The first evidence that CXCL12 has effects on neurons and promotes neuroprotection were given by Meucci et al. (1998) when, for the first time, the authors demonstrated that CXCL12 reduced the apoptotic death of hippocampal neurons induced by gp120 or by glia deprivation. Following glia deprivation, neuroprotection was promoted by administration of CXCL12 specifically to neurons highlighting a direct activity of the chemokine on these cells. Further, stimulation of hippocampal neurons with CXCL12 was able to induce Akt phosphorylation and p65NF-kB nuclear translocation, both signaling implicated in pro-survival cell fate ( Khan et al., 2004 ).
 Accordingly, in primary cortical neurons, CXCL12 promotes Rb function increasing its expression, nuclear localization, and transcriptional activity and reducing the excitotoxic cell death due to NMDA receptors over-activation ( Khan et al., 2008 ). 
  
@@ -339,17 +337,11 @@ Moreover, pretreatment of brain slices with fluorocitrate (100 lM for 30 min) in
 
 ### behavior
 
-Since many chemokines with their cognate receptors are expressed in dopaminergic neurons and regulate their activity to induce the release of DA (see Sections: \@ref(DA) and \@ref(expr)), the behavioral relevance of their actions was further investigated.<!--It should be noted that CXCR4 and CXCL12 knockout mice are embryonic lethal, probably due to their key role in many diverse cellular processes, especially during development.-->
+#### DA
+
 By using unilateral intranigral or intracerebroventricular injections of CXCL12 in the rat SN, it was shown that this chemokine induced contralateral turns in circling behavior [@skrzydelski_2007]. 
 These data are consistent with CXCL12-induced dopamine release from dopaminergic neurons in the SN (see Section \@ref(DA)). <!-- It is worth noting that when chemokines were injected through the SN, animals' locomotor activity was increased and it resulted in the contralateral turning [@skrzydelski_2007].  However, when CCL2 was injected intracerebroventricular, the animal locomotor activity was decreased. sprawdzić o co cho-->
 
-<!--Moreover, a recent study revealed the involvement of microglia and their receptor CX3CR1 in the adaptive response to psychosocial stress, which is a major risk factor for psychotic disorders such as schizophrenia [@piirainen_2021]. --><!-- A recent study revealed the involvement of microglia and their receptor CX3CR1 in the adaptive response to psychosocial stress, which is a major risk factor for psychotic disorders such as schizophrenia [@piirainen_2021].-->
-
-<!-- nie czaję o co mi tutaj chodziło xDDDDDDDDDD -->
-Interestingly, consistent with a recent report on ACKR3 and opioids crosstalk,<!-- wyrzuciłam (see: \@ref(opioids) ),--> along with implications that the modulation of circadian glucocorticoid oscillation may affect emotional behavior (e.g., @keers_2012), it was shown that ACKR3 binds intermediate opioid peptides, specifically BAM22 and peptide E, which results in enhancement of circadian glucocorticoid oscillation in the adrenal glands, and, therefore, anxiolytic-like behavior [@ikeda_2013]. <!-- może poprawic albo wrocić do innej wersji? -->
-BAM22 and peptide E were shown to be released under a condition named subcapsular cell hyperplasia (SCH) [@ikeda_2013], which is a pathohistological change of adrenal tissue.
-SCH cells lack prohormone convertase, an enzyme required for processing these proteins to mature enkephalins [@ikeda_2013].
-Therefore, this study highlights the functional relevance of chemokine and opioid systems interactions.
 
 <!--sickness behavior, nie wiem czy nie do behavior-->
 The chemokines released bind to CXCR4 present on neurons and induce changes in excitability that could induce an adaptive response to inflammation, leading to “sickness behavior,” characterized by decreased mood, anorexia, and fatigue [@dantzer_2001, @dantzer_2007]. <!-- zmienić -->

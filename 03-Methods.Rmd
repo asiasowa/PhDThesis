@@ -1,68 +1,153 @@
-# Materials and methods
+# Materials and methods {#methods}
 
-## General
+## General {#general}
 
 ### Ethic approval
+
 All procedures were conducted in accordance with the directive 2010/63/EU of the European Parliament and of the Council of 22 September 2010 on the protection of animals used for scientific purposes. 
 Procedures in immunostaining and patch-clamp experiments were additionally conducted in accordance with the Polish Act on the Protection of Animals Used for Scientific or Educational Purposes of 15 January 2015, and approved by the 2nd Local Ethics Commissions on Animal Research (Krakow, Poland). 
 All efforts were made to minimize suffering and to reduce the number of animals used.
 
 ### Animals
 
-Male Wistar rats (50-180g on arrival) were purchased from Charles River Laboratories (Research Models and Services; Germany).
-Four to five animals were housed per polypropylene cage (55x35x20 cm) in controlled environment (22 `r knitr::asis_output("\U00B1")` 1`r knitr::asis_output("\U00B0")`C, 45 `r knitr::asis_output("\U00B1")` 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. 
+Male Wistar rats (50-180g on arrival) were purchased from Charles River Laboratories (Research Models and Services; Germany).<!-- Po dostawie zwierzęta przechodziły kilkudniową adaptację do warunków pomieszczenia hodowlanego -->
+Four to five animals were housed per polypropylene cage (55x35x20 cm) lined with wooden bedding in controlled environment (22 `r knitr::asis_output("\U00B1")` 1`r knitr::asis_output("\U00B0")`C, 45 `r knitr::asis_output("\U00B1")` 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. 
 Animals were acclimated to the housing environment for at least 4 days before the beginning of the experiments. 
-Rats were weighing 180-300g (5-10 weeks of age) during the tissue preparation. 
-Animals at this age are considered as young adults.  
+For the patch-clamp experiments 4-7-week old male Wistar, as well as 6-8- week-old male and female Sprague Dawley rats were used. For the immunohistochemical experiments 8-10-week-old male Wistar, as well as 3-4-month-old male and female Sprague Dawley rats were used.
+For patch-clamp experiments, rats weighing 180-300g (5-10 weeks of age) were used.
+For immunostaining experiments, rats weighing 300-350 g were used.
+<!-- zwierzęta na hodowle? -->
+Animals at this age are considered as young adults. 
+The age of the animals for each experiment was determined to assure credible and interpretable results.
 
 
-### Reagents
+### Reagents {#drugs}
 
-All drugs used for electrophysiological experiments were bath applied by gravity or a peristaltic pump. 
-Fractalkine 2 and 5nM according to studies @Sheridan2014
-The time necessary for the solution to flow from the stopcocks to the slice was approximately 15 s. The drugs used were minocycline, 100 lM doxycycline (a second-generation tetracycline), 100 lM DL-fluorocitric acid barium salt (a selective astrocyte inhibitor), 10 lM CNQX (an AMPA/kainate receptor antagonist), 50 lM APV (an NMDA receptor antagonist), 0.5–1 lM tetrodotoxin (TTX, a voltage-gated sodium channel blocker), 10–40 lM bicuculline methiodide (a GABAA receptor antagonist), 1–2 lM strychnine (a glycine receptor antagonist), 100 lM NiCl2 (a low voltage- activated calcium channel blocker), and 100 lM CdCl2 (a high voltage-activated calcium channel blocker). Minocycline and doxycycline were freshly dissolved in Krebs solution at the final concentration before perfusion. A stock of fluorocitrate was prepared from DL- fluorocitric acid barium salt as previously described (Wenker et al., 2010). A stock of CNQX was first dissolved in dimethyl sulfoxide, and the other drugs were prepared in distilled water at 1000 times the concentrations to be used and stored at -20 °C as in our previous study (Liu et al., 2015). The drugs were diluted to the final concentration in Krebs solution just before use. Doxycycline, CNQX, APV, and TTX were obtained from Tocris Bioscience (Bristol, UK). All other chemicals were purchased from Sigma–Aldrich (St. Louis, MO). The determination of the doses for minocycline was based on a previous study in which 100 $\upmu$M minocycline markedly reduced the frequency and amplitude of spontaneous EPSCs (sEPSCs) in hippocampal neurons (Gonzalez et al., 2007). - Peng2016
+<!-- Reagents/buffers needed for electrophysiology -->
 
-A highly selective antagonist for CX3CR1, 18a (Axon Medchem, Groningen, The Netherlands), with a Ki value of 3.9 nM, was dissolved in dimethyl sulfoxide (DMSO), and diluted in saline to a final concentration of 0.1% DMSO.28 <!-- kawamura_2021, ale ja nie taki antagonista -->
+All reagents used for preparing ACSF and internal solution were purchased from ...<!--uzupełnić--> and bath-applied by a peristaltic pump, unless stated otherwise. <!-- Details regarding the primary and secondary antibodies used in our   immunohistochem  istry experiments are provided in Table 2  -  1. --><!-- All reagents for phosphate-buffered saline solution (PBS), artificial cerebrospinal fluid and intrapipette solution (ACSF) were purchased from Sigma-Aldrich (Darmstadt, Germany), apart from single biocytin batches purchased from Tocris Bioscience (Bristol, UK, Cat No. 3349). Pertussis toxin was purchased from Invitrogen, Thermo Fisher (Waltham, Massachusetts, USA, Cat No. PHZ1174). -->
+<!-- The time necessary for the solution to flow from the stopcocks to the slice was approximately 15 s.  -->
+
+Chemokines were purchased from <!--Peptides used were as follows: RLN3 peptide, Phoenix Pharmaceuticals, Karlsruhe, Germany, Cat No. 035-36A. RXFP3 agonist, RXFP3-A2 {[R3A(11–24,C15→A)B]} was synthesised using solid-phase peptide synthesis and purified using reverse-phase HPLC (The Florey Institute of Neuroscience and Mental Health, Victoria, Australia -->
+All peptides were dissolved in PBS, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C.
 
 
+
+Electrophysiological reagents suppliers were as follows: minocycline (100 `r knitr::asis_output("\U03BC")`M), <!-- jaki manufacturer? -->
+DL-fluorocitric acid barium salt (a selective astrocyte inhibitor; 100 `r knitr::asis_output("\U03BC")`M), 
+10 lM CNQX (an AMPA/kainate receptor antagonist), <!-- sprawdzić/ zmienić --> 
+biocytin batches purchased from Tocris Bioscience, <!-- sprawdzić/ zmienić --> 
+50 lM APV (an NMDA receptor antagonist), <!-- sprawdzić/ zmienić --> 
+0.5–1 lM tetrodotoxin (TTX, a voltage-gated sodium channel blocker), <!-- sprawdzić/ zmienić --> 
+10–40 lM bicuculline methiodide (a GABAA receptor antagonist), <!-- sprawdzić/ zmienić --> 
+1–2 lM strychnine (a glycine receptor antagonist), <!-- sprawdzić/ zmienić --> 
+100 lM NiCl2 (a low voltage- activated calcium channel blocker), and 100 lM CdCl2 (a high voltage-activated calcium channel blocker). <!-- sprawdzić/ zmienić --> 
+All drugs were dissolved in deionised water, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C, unless stated otherwise.
+Minocycline was freshly dissolved in ACSF at the final concentration before recordings. 
+A stock of fluorocitrate was prepared from DL- fluorocitric acid barium salt as previously described (Wenker et al., 2010). <!-- sprawdzić/ zmienić --> 
+A stock of CNQX was first dissolved in dimethyl sulfoxide, and the other drugs were prepared in distilled water at 1000 times the concentrations to be used and stored at -20 °C as in our previous study (Liu et al., 2015). <!-- sprawdzić/ zmienić --> 
+The drugs were diluted to the final concentration in the recording ACSF just before use. <!-- jakoś zaznaczyć ze ze stocków, i że nie minocycline-->
+<!--Doxycycline, CNQX, APV, and -->TTX were obtained from Tocris Bioscience (Bristol, UK). <!-- sprawdzić/ zmienić --> 
+All other chemicals were purchased from Sigma–Aldrich (St. Louis, MO). <!-- czy na pewno? -->
+The determination of the doses for CX3CL1, CXCL12, minocycline, and fluorocitrate was based on a previous studies [@sheridan_2014]<!--citations--><!--in which 100 $\upmu$M minocycline markedly reduced the frequency and amplitude of spontaneous EPSCs (sEPSCs) in hippocampal neurons (Gonzalez et al., 2007). - Peng2016 // CX3CL1 were purchased from .... and its final concentration were 2 and 5nM, according to studies -->
+A highly selective antagonist for CX3CR1, AZD<!--dokończyć--> (Axon Medchem, Groningen, The Netherlands)<!--zmienić-->, with a K~i~ value of 3.9 nM<!--sprawdzić-->, was dissolved in dimethyl sulfoxide (DMSO), and diluted in saline to a final concentration of 0.1% DMSO.<!-- kawamura_2021, ale ja nie taki antagonista -->
+
+Immunostaining reagents suppliers were as follows: formaldehyde 36-38% solution, POCH, Gliwice, Poland, Cat No. 432173111; <!-- sprawdzić/ zmienić --> 
+Triton X100, Sigma Aldrich, X100; <!-- sprawdzić/ zmienić --> 
+Normal Donkey Serum, abcam, Cambridge, UK, Cat No. ab7475; <!-- sprawdzić/ zmienić --> 
+avidin-fluorescein conjugate, Sigma Aldrich, Cat No. 94091; <!-- sprawdzić/ zmienić --> 
+mouse anti-oxytocin antibody, abcam, Cat No. ab78364 or Merk Milipore, Darmstadt, Germany, Cat No. MAB5296; <!-- sprawdzić/ zmienić --> 
+rabbit anti-vasopressin antibody, abcam, Cat No. ab39363; <!-- sprawdzić/ zmienić --> 
+anti-mouse Alexa Fluor 647-conjugated antibody, West Grove, PA, USA, Cat No. 715-606-150; <!-- sprawdzić/ zmienić --> 
+anti-rabbit Cy3-conjugated antibody, Jackson ImmunoResearch, Cat No. 711-165-152; <!-- sprawdzić/ zmienić --> 
+ImmPRESS® HRP Anti-Mouse IgG Polymer Detection Kit, <!-- sprawdzić/ zmienić --> 
+Vector Laboratories, Burlingame, California USA, Cat No. MP-7402; <!-- sprawdzić/ zmienić --> 
+DAB Peroxidase Substrate Kit, Vector Laboratories, Cat No. MP-4100; <!-- sprawdzić/ zmienić --> 
+Fluoroshield with DAPI, Sigma Aldrich, Cat No. F6057; <!-- sprawdzić/ zmienić --> 
+Vectashield® with DAPI, Vector Laboratories, Cat No. H1200.<!-- sprawdzić/ zmienić --> 
+
+```{r reagents_table, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE}
+library(gt)
+library(tidyverse)
+reagents_table <- read_csv(".//reagents_electrophysiology.csv")
+#cell_table <- cell_table %>% dplyr::rename("not_present"  = "NOT PRESENT")
+# cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production","Chemokine Family", "Chemokine Receptor Expression", "not_present")
+# cell_table <- cell_table %>% dplyr::filter(is.na(not_present))
+# cell_table <- cell_table %>% dplyr::select(- "not_present")
+# cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production", "Chemokine Receptor Expression", "Chemokine Family")
+# cell_table <- cell_table  %>% tidyr::unite("Ligand", "Chemokine Production":"Chemokine Receptor Expression", na.rm = TRUE, remove = FALSE)
+# cell_table <- cell_table %>% dplyr::select("Cell Type", "Ligand")
+# cell_table <- dplyr::arrange(cell_table, cell_table$`Cell Type`)
+
+
+#cell_table <-  cell_table[order(cell_table, "Cell Type"),]
+
+#cell_table$`Cell Type` <- as.factor(cell_table$`Cell Type`)
+
+# Astrocytes <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Astrocyte') %>% dplyr::select('Ligand')
+# Microglia <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Microglia')  %>% dplyr::select('Ligand')
+# Oligodendrocytes <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Oligodendrocyte')  %>% dplyr::select('Ligand')
+# NSC <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Neural Stem Cells')  %>% dplyr::select('Ligand')
+# Neurons <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Neuron')  %>% dplyr::select('Ligand')
+
+
+# cell_merged <- cell_table %>%
+#   dplyr::group_by(`Cell Type`) %>%
+#   dplyr::summarise(Ligand = paste(Ligand, collapse = ", "))
+# 
+# cell_merged  %>%
+#     gt() %>%
+#     tab_header(
+#     title = ("Table 1. Summary of chemokine and chemokine receptor expression by different types of brain cells"),
+#      subtitle = md("")) %>%
+#     opt_row_striping() %>%
+#    tab_source_note(source_note = "* depicts inconsistent results") %>%
+#     gtsave("cell_table.html")
+
+
+#local_image(filename, height = 30)
+#to-do for later: 1) image instead of neuron/astrocyte etc. 2) renaming column Ligand -> Chemokine/ Chemokine Receptor
+```
 
 ## Whole-cell patch-clamp technique in acute brain slices
 
 ### Tissue Preparation {#decap}
 
-Male Wistar (4-7-week-old) rats were anesthetised with isoflurane (AErrane, Baxter, Poland) and decapitated between 07:00 and 09:00 a.m. 
-Brains were collected in ice-cold, low-sodium, high-magnesium ACSF (artifical cerebrospinal–fluid), containing (in mM): 65 sucrose, 76 NaCl, 25 NaHCO~3~, 1.4 NaH~2~PO~4~, 25 glucose, 2.5 KCl, 7 MgCl~2~, 0.4 Na-ascorbate, and 2 Na-pyruvate (bubbled with 95% O~2~/5% CO~2~), pH 7.4; osmolality 290–300 mOsmol kg^−1^) and cut into 300 $\upmu$m thick coronal sections on a Leica VT 1000 vibrating microtome (Leica Instruments, Germany). 
-After slicing, brain slices containing amygdala were transfered and held in an incubation chamber filled with carbogenated ACSF, containing (in mM): 92 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 20 HEPES, 2 MgSO~4~ and 25 glucose, 5 Na-ascorbate, 2 thiourea, 3 Na-pyruvate, pH = 7.35; osmolality 290–300 mOsmol kg^−1^). 
+Male Wistar (4-7-week-old) rats were anesthetized with isoflurane (AErrane, Baxter, Poland) and decapitated between 07:00 and 09:00 a.m. 
+Brains were collected in ice-cold, low-sodium, high-magnesium ACSF (artificial cerebrospinal–fluid), containing (in mM): 65 sucrose, 76 NaCl, 25 NaHCO~3~, 1.4 NaH~2~PO~4~, 25 glucose, 2.5 KCl, 7 MgCl~2~, 0.4 Na-ascorbate, and 2 Na-pyruvate (bubbled with 95% O~2~/5% CO~2~), pH 7.4; osmolarity 290–300 mOsmol kg^−1^) and cut into 300 `r knitr::asis_output("\U03BC")`m thick coronal sections on a Leica VT 1000 vibrating microtome (Leica Instruments, Germany). 
+After slicing, brain slices containing amygdala were transfered and held in an incubation chamber filled with carbogenated ACSF, containing (in mM): 92 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 20 HEPES, 2 MgSO~4~ and 25 glucose, 5 Na-ascorbate, 2 thiourea, 3 Na-pyruvate, pH = 7.35; osmolarity 290–300 mOsmol kg^−1^). 
 Slices were incubated at 31–33 `r knitr::asis_output("\U00B0")`C for 20 min and then allowed to equilibrate for at least 1h at room temperature (RT).
-After this recovery period, individual slices were transferred to a recording chamber placed on a fixed stage of an Zeiss Axioskop 2 (Zeiss, Germany) upright microscope, where the tissue was perfused (1-2 ml/min) with carbogenated, warm (32`r knitr::asis_output("\U00B0")`C) ACSF containing (in mM): 124 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 5 HEPES, 2 MgSO~4~ and 10 glucose, pH = 7.35; osmolality 290–300 mOsmol kg^−1^).
+After this recovery period, individual slices were transferred to a recording chamber placed on a fixed stage of an Zeiss Axioskop 2 (Zeiss, Germany) upright microscope, where the tissue was perfused (1-2 ml/min) with carbogenated, warm (32`r knitr::asis_output("\U00B0")`C) ACSF containing (in mM): 124 NaCl, 30 NaHCO~3~, 2.5 KCl, 1.2 NaH~2~PO~4~, 2 CaCl~2~, 5 HEPES, 2 MgSO~4~ and 10 glucose, pH = 7.35; osmolarity 290–300 mOsmol kg^−1^).
 
 
 ### Whole-cell patch-clamp recordings and data acquisition
 
 Neurons were identified based on their location and somatic morphological characteristics under infrared differential interference contrast (DIC). 
 The image from the microscope was enhanced using a CCD camera and displayed on a computer monitor. 
-The border of basolateral or central amygdala were identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@Paxinos2007], corresponding to -1.92 mm -3.12 caudal to bregma \ref{photoneuronDIC}. 
+The border of the basolateral or central amygdala were identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@paxinos_2006], corresponding to -1.92 mm -3.12 caudal to bregma \ref{photoneuronDIC}. <!-- lepszy figure (see Fig. \@ref(fig:method_patch))--> 
 Neurons with a healthy appearance presented a smooth surface, and the cell body and parts of the dendrites could be clearly seen. 
 Cells were approached under visual control with a patch pipette using a three-dimensional micromanipulator (uMp micromanipulator system, Sensapex, Finland). 
-Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 MΩ; Sutter Instruments, USA) using horizontal puller (Sutter Instruments P–97) and filled with following solutions. 
+Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 M`r knitr::asis_output("\U038F")`; Sutter Instruments, USA) using horizontal puller (Sutter Instruments P–97) and filled with following solutions. 
 
- <!-- ![Figure caption \label{photoneuronDIC}](images\zdjeciedic40x.png) -->
+```{r method_patch, fig.cap='(ref:family)', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images/zdjeciedic40x.png")
+```
  
-For experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolality 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). 
-For experiment measuring inhibitory synaptic transmission, the solution contained 122 Cs-gluconate, 10 CsCl, 10 HEPES, 0.3 EGTA, 10 phosphocreatine-Na~2~, 5 Mg-ATP, 0.4 Na-GTP, pH = 7.35; osmolality 280-290 mOsmol kg^−1^.
+For experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolarity 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). 
+For experiment measuring inhibitory synaptic transmission, the solution contained 122 Cs-gluconate, 10 CsCl, 10 HEPES, 0.3 EGTA, 10 phosphocreatine-Na~2~, 5 Mg-ATP, 0.4 Na-GTP, pH = 7.35; osmolarity 280-290 mOsmol kg^−1^.
 
 The pipette was positively pressurized by applying a mouth suction to help prevent contamination of the tip and to blow aside surrounding tissue and lowered to the vicinity of the membrane keeping a positive pressure. 
-After forming a high-resistance seal (> 1 G$\Omega$, cell-atached configuration) between the recording pipette and cell membrane by applying negative pressure, a second pulse of negative pressure was used to break the patch of membrane enclosed with the pipette's tip and access inside of the neuron. 
+After forming a high-resistance seal (> 1 G`r knitr::asis_output("\U038F")`, cell-attached configuration) between the recording pipette and cell membrane by applying negative pressure, a second pulse of negative pressure was used to break the patch of membrane enclosed with the pipette's tip and access inside of the neuron. 
 An electrical contact between the cytoplasm and a patch electrode was established (whole-cell configuration). 
 After break-in, cells stabilized for 5 min, during which intracellular solution slowly diffuses from the pipette into cytoplasm.
 Ground electrode, which was chloride-coated silver wire in chamber filled with bath solution, kept the electrical potential of the outer side of cell membrane at 0 mV. 
 Electrical potential of the inner side of cell membrane was controlled through an patch electrode filled with intrapipette solution with chlorided silver wire connected to headstage (CV-4 Headstage, Axon Instruments, USA) and Axopatch 1D amplifier (Axon Instrument, USA). 
 Signals were low-pass filtered at 3 kHz, digitized at 20kHz and sampled through an analogue-to-digital converter (Digidata 1440, Molecular Devices, USA). 
 Data were stored on a computer disk and analyzed offline using Clampfit 10.2 software (Molecular Devices, USA). 
-Voltages were corrected for the liquid-junction potential (estimated as ~12 mV). 
+Voltages were corrected for the liquid-junction potential (estimated as `r knitr::asis_output("\U223C")`12 mV).  
 The access resistance was monitored throughout each experiment. 
-Only recordings with stable access resistance lower than 30 MΩ were considered acceptable for analysis. 
-All peptides and drugs were delivered via a bath perfusion system.
+Only recordings with stable access resistance lower than 30 M`r knitr::asis_output("\U038F")` were considered acceptable for analysis. 
+All drugs were delivered *via* a bath perfusion system. <!-- antibodies? -->
 
 ### Electrophysiological identification and classification of chosen neurons
 
@@ -84,10 +169,15 @@ A third, smaller population of low-threshold bursting neurons has also been desc
 
 #### Electrophysiological identification of regular-firing cells in the CeA
 
+
+```{r method_firingpattern, fig.cap='(ref:family)', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images/firingpattern.png")
+```
+
 ### Recording protocols and data analysis
 
 The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model. 
-The gain (slope) and rheobase (minimal current necessary to fire the first action potential) parameters will be determined for further analysis.
+The gain (slope) and rheobase (minimal current necessary to fire the first action potential) parameters was determined for further analysis.
 
 
 ### Post-recording immunostaining

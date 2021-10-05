@@ -3,14 +3,15 @@
 Considering described evidence, this dissertation aimed to investigate the modulation of two amygdalar subdivisions, namely BLA and CeA, by two chosen chemokines. 
 I focused on CXCL12 and CX3CL1, as they, together with their receptors, were implicated in neurodevelopmental processes, synaptic transmission, neuroimmune responses, and glial regulation.
 Moreover, dysfunctions in their signaling were reported to share similar characteristics as those in the amygdala.
-To better understand chemokines' modulation at the network level of the whole complex of amygdala, both the main input nucleus (the basolateral complex) and the main output nucleus (the central complex) were investigated.
+To better understand chemokines' modulation at the network level of the whole complex of the amygdala, both the main input nucleus (the basolateral complex) and the main output nucleus (the central complex) were investigated.
 
-Briefly, receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala (see Section: \@ref(chemokinesexpress)); however, their specific distribution is not thoroughly examined. 
-Thus, the first aim of this dissertation was to investigate fully... 
+Briefly, receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala (see Sections: \@ref(CX3CL1signal) and \@ref(CXCL12signal)); however, their specific distribution is not thoroughly examined. 
+Thus, the first aim of this dissertation was to investigate the cellular distribution of chosen chemokines and their receptors in the BLA and the CeA. 
 
-Functionally, previous studies have demonstrated complex electrophysiological effects of CXCL12 and CX3CL1, which differ in relation to, for instance, the brain region or neuronal population (see Section: \@ref(chemokineselectro)). <!--and these effect are summarized in section/table?/ -->
+Functionally, previous studies have demonstrated complex electrophysiological effects of CXCL12 and CX3CL1, which differ between, among others, brain regions or neuronal populations (see Sections: \@ref(CX3CL1inthebrain) and \@ref(CXCL12inthebrain)).
+
 Moreover, at least some of those effects were mediated by glial cells.
-Accordingly, this dissertation further aimed to dissect the ... <!--- jakoś ładnie opisać --> 
+Accordingly, this dissertation further aimed to dissect the complex mechanisms underlying bidirectional crosstalk between neurons and glial cells (e.i., astrocytes and microglia) regarding its regulation of membrane properties and synaptic transmission in the amygdala.<!---na razie ok, może uda się coś lepszego --> 
 
 The central hypotheses of the research presented here are: 
 
@@ -18,7 +19,7 @@ The central hypotheses of the research presented here are:
 
 2. Chemokines directly and/or indirectly *via* glial modulation alter neuronal membrane properties and synaptic transmission in the basolateral and/or central nuclei of the amygdala.
 
-Therefore,<!-- based on different nuclei of the amygdala and different chemokine axes,--> this project can be sub-divided into four separate but physiologically and functionally related parts (see Fig. ..).
+Therefore,<!-- based on different nuclei of the amygdala and different chemokine axes,--> this project can be sub-divided into four separate but physiologically and functionally related parts.<!--, summarized in Fig. \@ref(fig:design). figure...-->
 
 1. Investigation of electrophysiological actions and cellular distribution of CX3CL1 and its receptor, CX3CR1, in the rat basolateral nucleus of the amygdala.
 
@@ -29,12 +30,21 @@ Therefore,<!-- based on different nuclei of the amygdala and different chemokine
 4. Investigation of electrophysiological actions and cellular distribution of CXCL12 and their receptors, CXCR4 and ACKR3, in the rat central nucleus
 
 To address these issues, mainly whole-cell patch-clamp and immunofluorescent techniques were employed. <!-- several research techniques were employed: whole-cell patch-clamp and extracellular recordings *ex vivo*, immunofluorescent staining and <!--dendritic spines--><!-- // Considering described evidence and proposed hypotheses, the present studies were focused on two separate but physiologically and functionally related subjects:  /// 4 major groups of experiment --><!--Detailed aims and hypotheses addressed in each study, as well as techniques used are listed below.  The   specific AIMS are designed to test these hypotheses:    -->
-Precisely, to determine the distribution of chemokines (CXCL12/CX3CL1) or chemokine receptors (CXCR4, ACKR3, and CX3CR1) in relation to the cell type in the chosen amygdalar nuclei (BLA/CeA), their co-localization in different cell types (neurons, microglia, astrocytes) was examined.
-Coronal rat brain slices containing the BLA and CeA were selected and immunohistochemically processed using specific primary antibodies for NeUN, IBA, GFAP, and for the chemokine or chemokine receptor of interest. <!-- dodać markery-->
-Fluorescent microscopy was utilized to investigate and quantify co-localization throughout the amygdala. <!--   (Appendix A)  .     -->
+Precisely, to determine the distribution of chemokines (CXCL12/CX3CL1) or chemokine receptors (CXCR4 and CX3CR1) in relation to specific cell types (neurons, microglia, astrocytes) in the chosen amygdalar nuclei (BLA/CeA), their co-localization with different population markers (NeuN, GFAP, IBA)  was examined.
+Coronal rat brain slices containing the BLA and the CeA were selected and immunohistochemically processed using specific primary antibodies against chosen cell markers and the chemokine or chemokine receptor of interest. <!-- dodać markery-->
+Fluorescent microscopy was utilized to investigate and quantify co-localization within these two nuclei of the amygdala. <!--   (Appendix A)  .     -->
 
 Next, to examine the membrane properties and synaptic transmission of BLA and CeA neurons in brain slices and their sensitivity to chosen chemokine application, *in vitro*  whole-cell patch-clamp recordings were performed in rat brain slices containing the amygdala. 
-BLA or CeA neuron membrane properties, spontaneous and miniature excitatory and inhibitory synaptic transmission (sEPSC/mEPSC/sIPSC/mIPSC) were collected before and after bath application of chosen chemokines. 
-Additionally, <!-- glia -->
+BLA or CeA neuron membrane properties, spontaneous and miniature excitatory and inhibitory synaptic transmission (sEPSCs/mEPSCs/sIPSCs/mIPSCs) were collected before and after bath application of chosen chemokines. 
+Notably, to verify whether astrocytes or microglia are involved in observed effects, in subsets of experiments, recordings were made in the presence of either astrocytic toxin (e.i., fluorocitrate) or the inhibitor of microglial activity (e.i., minocycline).<!-- were additionally pre-applied.-->
+
+<!--```{r design, fig.cap='**A schematic illustrating experimental designs of presented PhD dissertation** ', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images/design.png")
+```-->
+
+
+<!-- Schemat doświadczeń pokazujący grupy eksperymentów zaplanowane w projekcie oraz oczekiwane typy wyników i obserwacji 
+ Linie ze strzałkami pokazują główne podejścia eksperymentalne, które pozwolą osiągnąć założone cele badawcze. Symbol błyskawicy 
+wskazuje miejsca stymulacji dotyczących protokołów z wywołaną transmisją synaptyczną.-->
 
 \newpage 

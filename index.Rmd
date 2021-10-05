@@ -16,7 +16,7 @@ lot: True
 subparagraph: yes
 mainfont: Calibri
 geometry: "left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm"
-csl: common/neuropharmacology.csl
+csl: common/european-journal-of-neuroscience.csl
 
 ---
 

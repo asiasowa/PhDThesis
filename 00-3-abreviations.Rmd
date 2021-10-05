@@ -1,4 +1,4 @@
-# Abreviations {-}
+# Abreviations {- .unlisted .unnumbered}
 
 <!-- \renewcommand{\nompreamble}{\vspace{0.25in}} -->
 <!-- \makenomenclature -->

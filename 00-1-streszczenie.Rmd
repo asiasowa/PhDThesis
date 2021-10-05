@@ -1,4 +1,4 @@
-# Streszczenie {-}
+# Streszczenie {- .unlisted .unnumbered}
 
 
 

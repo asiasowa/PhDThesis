@@ -1,3 +1,26 @@
+####  CXCL12- and CX3CL1-induced regulation of neuron-astrocyte-microglia communication {#example}
+
+Here, I will introduce<!--propose--> a simplified model of coordinated actions of neuron-glia interactions fine-tuned by chosen chemokines and gliotransmitters. 
+
+As mentioned above, CX3CL1 is the most widely studied chemokines in relation to neuron–microglia crosstalk and regulation of microglial activity. 
+<!-- However, CX3CL1-induced microglial neuroprotection is modulated by other factors, such as glial-soluble factors that synergistically contribute to neuroprotection.-->
+Accumulating evidence illustrates that many environmental triggers can up-regulate CX3CL1 expression, including an insult [@hughes_2002], learning [@sheridan_2014], or the presence of another chemokine, CXCL12, *via* its action on neuronal ADAM17 [@cook_2010] (Fig.3A).<!-- właściwe odwołanie do figury-->
+<!--Upon CX3CR1 activation, CXCL16 was reported to be secreted from astrocytes and microglia (see Fig. 3B, @rosito_2012).
+CXCL16, consequently, acts on astrocytes by inducing the additional release of CCL2, with a mechanism that requires adenosine A3 Receptor subtype (A~3~R) activity (see Fig. 3C, @wittendorp_2004, @rosito_2012, @rosito_2014). 
+Notably, other soluble factors that mediate CXCL16-dependent neuroprotection cannot be excluded since blocking CCL2 activity dramatically reduces, but did not entirely abolish, its ability to preserve neurons (Fig. 3C, @rosito_2012).
+Therefore, mechanisms  underlying the neuroprotective activity of CX3CL1-induced CXCL16 require the neuronal-astrocytic-microglial interplay and the activity of the A3R, with consequent release of CCL2 by glial cells. -->
+CX3CL1 was shown to exert neuroprotective actions against  Glu-induced  excitotoxicity, with  mechanisms  fully  dependent  on  A~1~R  [@lauro_2008; @lauro_2010] and at least partially dependent on  A~3~R  [@rosito_2012; @rosito_2014].
+In contrast, NMDA-induced toxicity, mainly mediated by NR2B-containing extrasynaptic  NMDARs, was reported to require A~2A~R and the presence  of D-serine [@scianni_2013; @lauro_2014].<!-- on WHAT types of cells? // . // Adenosine is a metabolite that acts through different receptor subtypes (Jacobson and Gao, 2006); among them A 1 R (Lauro et al., 2008, 2010) and A 3 R (Rosito et al., 2014) were shown to be involved in CX3CL1 neuroprotection against Glu-induced toxicity.--><!-- in the brain, astrocytes represent the main cellular source of extracellular ADO and express all the four known types of adenosine receptors (ARs): A1R, A2AR, A2BR, A3R (Verkhratsky et al., 2009).--><!--we and others have recently shown that the chemokine CX3CL1 and the cytokines IL-6 and OSM are able to drive neuroprotection only in the presence of functional A1R (Biber et al., 2008; Lauro et al., 2008, 2010; Moidunny et al., 2010; Cipriani et al., 2011). // These results  are  in  line  with  the  data  showing  that  both  CX3CL1induced modulation of NMDA fEPSP and D-serine release from glial cell require A2A R (Scianni et al., 2013). -->
+These results highlight that modulation of glial function by adenosine is essential in the context of neuroprotection, as both microglia and astrocytes release it as a gliotransmitter. <!-- neuroactive substances-->
+
+Additionally, it is well-established that astrocytes might also exert a neuroprotective role upon brain insult by buffering extracellular Glu [@blanger_2009]. 
+Evidence illustrated that CX3CL1, acting on microglia, induced the production and release of adenosine that exerted their effects on astrocytes by binding to A~1~R (Fig. 3D), and consequently inducing the up-regulation of the astrocytic GLT-1 transporter (Fig. 3E, @catalano_2013).
+Microglia can also release CXCL12, which then acts, for example, *via* astrocytic CXCR4 and, in turn, produces TNF`r knitr::asis_output("\U03B1")`, leading to remyelination (see Fig.3F,G, <!-- właściwe odwołanie do figury-->@bezzi_2001, @cunha_2020).
+
+To sum up, the  mentioned above findings strongly support the concept that, in the CNS, chemokines are key communicating molecules between neurons and glia cells aimed at preserving brain functions.
+Please note that this is a simplification of neuron-microglia-astrocyte cross-talk in the context of neuroprotection, and many other factors and connections are omitted for the sake of clarity. <!-- coś takiego dodać ? // Please note that this section only aims to demonstrate that the effect of microglia-dependent actions on neurons may also be mediated via other cell types and not intended to give a comprehensive review of inter-glial interactions. /// It has been shown that in neurons CXCL12 triggers intracellular pathways ( Khan et al., 2005, 2008 ) that can upregulate the transcription of cx3cl1 gene such as NF-Kb and p53 ( Shiraishi et al., 2000 ). Cook et al. (2010) showed that CXCL12 increases the shedding of neuronal CX3CL1, likely via up-regulation of neuronal ADAM17, suggesting that, in addition to the direct neuroprotective activity of CXCL12, its ability to induce CX3CL1 release may further facilitate neuronal recovery after excitotoxic insults. CX3CL1, in turn, can elicit the release of soluble CXCL16 from astrocytes and microglia, and A3R and CCL2, mediators of CXCL16 neuroprotective activity, represent active player in CX3CL1 protection against excitotoxic-insult ( Rosito et al., 2012 ). In line with these data, the neuroprotection induced by CX3CL1 against ischemic insult is significantly reduced in mice that lack CXCL16 signaling ( Rosito et al., 2014 ). The above mentioned findings strongly corroborate the concept that, in the CNS, chemokines could represent key endogenous modulators of the cross-talk between neurons and glia cells aimed at preserve brain functioning ( Fig. 1 ). -->
+
+
 <!--### Chemokines modulates behavior {#behavior}
 
 Since mounting evidence supports the notion that chemokines coordinate several brain circuits of behavioral relevance, including hippocampus, DRN, SN, hypothalamus, it may indicate their contribution to these behaviors.
@@ -13,5 +36,19 @@ However, to date, very little is known about their cellular, molecular, and elec
 Although many brain regions have been found to participate in anxiety regulation it is commonly accepted that among them the amygdala plays a prominent role (Canteras et al., 2010; Davis and Whalen, 2001; Ehrlich et al., 2009; Engin and Treit, 2008; Everitt et al., 2003; Herry et al., 2010; LeDoux, 2000, 2007; McNally et al., 2011; Pape and Paré, 2010; Paré et al., 2004; Pérez de la Mora et al., 2008, 2010; Roozendaal et al., 2009).
 
 Several behavioral comorbidities, such as anxiety, depression, and other mood disorders, commonly occur in mice with CX3CR1 deletion. -->
+<!-- 
+All neuronal circuits of higher animals comprise excitatory and inhibitory neurons forming intense feed-forward and feedback connections [@mohler_1990, @ferrante_2009, @roth_2012].
+However, the precise control of network operations would not be possible without interneurons.
+Although they constitute only 20-30% of all cells in cortical circuits, this small, diverse group of inhibitory neurons enables higher brain functions, such as working memory, cognitive flexibility, attention, or social interaction (for a review: @mederos_2019). 
+Through inhibition, GABAergic interneurons can shape the circuit activity controlling (1) frequency of surrounding pyramidal neurons, (2) network excitation level by feed-forward mechanism, and (3) synchronized oscillation events [@mederos_2019]. 
+The importance of interneurons in relation to network functioning illustrates the highly controlled manner by which interneurons connect with other neurons [@tremblay_2016]. 
+
+##### Synaptic scaling {#scal}
+
+In order to prevent the destabilizing component of Hebbian plasticity in network function, neurons are able to sense their excitability and trigger negative-feedback homeostatic mechanisms to counteract perturbations in synaptic activity and restrain it within a dynamical but physiological range [@field_2020]. 
+Recent accumulating data also highlight the essential role of glial cells, as they are equipped with, for instance, glutamate transporters to control the concentration of glutamate and other neurotransmitters in the microenvironment. 
+Importantly, stable but flexible neural activity is fundamental for proper brain function and support of animal behavior, depending on a dynamic interface between homeostatic synaptic  plasticity  mechanisms  and  Hebbian  forms  of plasticity [@field_2020; @tremblay_2016].-->
+
+Taken together, as expected from their complex expression of cellular pattern and dynamic chemokine-receptor<!--może inne określenie--> interactions, chemokines modulate intrinsic membrane properties, synaptic transmission, and gliotransmission by implementing diverse cell- and region-specific mechanisms.
 
 \newpage 

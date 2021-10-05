@@ -14,120 +14,121 @@ While soluble CX3CL1 acts as a conventional chemokine, promoting migration and c
 
 Both forms of CX3CL1 interact with the same affinity with CX3CR1, a G~i~-protein-coupled receptor [@imai_1997].  
 The subunit G~i~ inhibits the production of cAMP, inducing a variety of intracellular second messengers including phosphoinositide 3-kinase (PI3K), protein kinase B (AKT), and nuclear factor kappa-light-chain-enhancer (NF`r knitr::asis_output("\U03BA")`B) [@alaoukaty_1998; @chandrasekar_2003]. 
-These molecules are known for regulating a wide range of cellular functions,  including apoptosis,  proliferation, and transcription. 
+These molecules are known to regulate a wide range of cellular functions,  including apoptosis,  proliferation, and transcription. 
 
 ```{r cx3cr1sig, fig.cap='**CX3CL1-CX3CR1 signaling.** CX3CR1, which is G protein-coupled and transduces several well-characterized signaling pathways leading to activation of transcription factors, including NF-\U03BA B and CREB. Gi, heterotrimeric G protein-coupled to Gi protein; PI3K, phosphatidylinositide 3-kinases; Ras/Raf small GTPases; PLC, phospholipase C; PKC, protein kinase C; Akt, serine/threonine-specific protein kinase; MEK, mitogen-activated protein kinase kinase; MEKK, MAP3kinase; p38, p38 mitogen-activated protein kinase; I\U03BA B, inhibitor of kappa B; IKK, inhibitor of kappa B kinase; ERK, extracellular signal-regulated kinases; JNK, c-Jun N-terminal kinase; NF\U03BA B, nuclear factor kappa B; CREB, cAMP response element-binding protein.', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/cx3cr1sig.png")
 ```
 
-<!-- CX3CL1 induces transient phosphorylation of Akt and ERK1/2. Soluble CX3CL1 activates the transcription factor CREB and ERK1/2 and induces the translocation of NF-κB p65 subunit to the nucleus. NF-κB p65 subunit nuclear translocation is avoided by a specific inhibitor of PI3-K, suggesting that CX3CL1-CX3CR1 activates NF-κB through Akt.// https://www.researchgate.net/publication/322645691_Microglia_and_aging_The_role_of_the_TREM2-DAP12_and_CX3CL1-CX3CR1_Axes/figures?lo=1 -->
+<!-- CX3CL1 induces transient phosphorylation of Akt and ERK1/2. Soluble CX3CL1 activates the transcription factor CREB and ERK1/2 and induces the translocation of the NF-κB p65 subunit to the nucleus. NF-κB p65 subunit nuclear translocation is avoided by a specific inhibitor of PI3-K, suggesting that CX3CL1-CX3CR1 activates NF-κB through Akt.// https://www.researchgate.net/publication/322645691_Microglia_and_aging_The_role_of_the_TREM2-DAP12_and_CX3CL1-CX3CR1_Axes/figures?lo=1 -->
 
 
 #### CX3CL1/CX3CR1 expression {#CX3CL1expr}
 
 
-In the brain, CX3CL1 and its receptor, CX3CR1, are widely distributed in the CNS, including hippocampus, amygdala, cerebral cortex, globus pallidus, striatum, and thalamus [@harrison_1998; @tarozzo_2003]. 
+In the brain, CX3CL1 and its receptor, CX3CR1, are widely distributed in the CNS, including the hippocampus, amygdala, cerebral cortex, globus pallidus, striatum, and thalamus [@harrison_1998; @tarozzo_2003]. 
 Besides the well-documented neuronal expression of CX3CL1, a handful of studies also revealed its presence in astrocytes, albeit at lower levels (for instance: @sunnemark_2005). 
 However, the expression pattern of CX3CL1 receptor, CX3CR1, in the CNS, remains controversial: some reports confine the localization of CX3CR1 microglia [@tarozzo_2003; @cardona_2006], whereas several lines of biochemical, immunohistochemical, and electrophysiological evidence documented the presence of the functional CX3CR1 receptor also in hippocampal, hypothalamic, cerebral, striatal, and dorsal raphe nucleus (DRN) neurons [@hatori_2002; @heinisch_2009; @hughes_2002; @limatola_2005; @maciejewskilenoir_1999; @meucci_1998; @meucci_2000; @ruchaya_2012; @ruchaya_2014; @tarozzo_2003; @verge_2004; @zhuang_2007].
 Thus, although predominantly expressed by microglia, CX3CR1 is also documented to be present on neuronal membranes, at least in pathological conditions.
 
-In the  CX3CR1-GFP knock-in mouse line, the CX3CR1 receptor   gene   has   been   replaced   by   a   green   fluorescent protein   (GFP)   reporter  [@jung_2000].
-Considering CX3CL1 and CX3CR1 expression, this genetic strain is one of the most important tools for studying the consequences of neuron-microglia communication following CX3CL1-CX3CR1 axis dysregulation [@paolicelli_2014].
-Thus, this model resulted in an  extensive body of evidence, highlighting the key role of CX3CL1 signaling in regulating a broad spectrum  of aspects of microglia functions, as discussed below. 
+In the  CX3CR1-GFP knock-in mouse line, the CX3CR1 receptor gene has been replaced by a green fluorescent protein   (GFP)   reporter  [@jung_2000].
+Considering CX3CL1 and CX3CR1 expression, this genetic strain is one of the most essential tools for studying the consequences of neuron-microglia communication following CX3CL1-CX3CR1 axis dysregulation [@paolicelli_2014].
+Thus, this model resulted in an extensive body of evidence, highlighting the key role of CX3CL1 signaling in regulating a broad spectrum of aspects of microglia functions, as discussed below. 
 
 #### Microglia {#microglia}
 
 Microglia are the resident immune cells of the CNS, constituting about 5–12% of total CNS cells in the healthy brain and the spinal cord [@szepesi_2018].
-They are derived from the myeloid precursors cells and colonize the immature brain during early embryonic development (for a review, see: @prinz_2011).
+They are derived from the myeloid precursor cells and colonize the immature brain during early embryonic development (for a review, see: @prinz_2011).
 Finally, these glial cells are broadly distributed throughout the CNS, albeit their density and functions may differ based on spices and specific brain regions (for a review, see: @szepesi_2018).
-Although microglia have long been recognized as "guardians of the brain", regulating inflammatory responses in the CNS, now it is becoming increasingly evident that their function are much more diverse, particularly in the healthy brain during both development and adulthood.
+Although microglia have long been recognized as "guardians of the brain", regulating inflammatory responses in the CNS, it is becoming increasingly evident that their functions are much more diverse, particularly in the healthy brain during both development and adulthood.
 Being equipped by numerous cell surface receptors and channels, with<!-- or exhibiting--> highly motile processes,  microglia are dynamic and plastic cells that constantly monitor the microenvironment to sense local perturbation. 
-Moreover, their ability to form direct contact and release the soluble factors, such as chemokines, enable to perform bidirectional interaction with other cell types in the CNS. 
+Moreover, their ability to form direct contact and release the soluble factors, such as chemokines, enables bidirectional interaction with other cell types in the CNS. 
 
 #### CX3CL1 action in the CNS
 
-Initially, the binding of CX3CL1 to its receptor CX3CR1 was believed to maintain microglia in a ‘‘resting” or ‘‘off” state by showing that this chemokine is able to restrain LPS-induced microglia activation (@mizuno_2003; @zujovic_2000, for a review: @biber_2007). 
+Initially, the binding of CX3CL1 to its receptor CX3CR1 was believed to maintain microglia in a ‘‘resting” or ‘‘off” state by showing that this chemokine can restrain LPS-induced microglia activation (@mizuno_2003; @zujovic_2000, for a review: @biber_2007). 
 However, further studies illustrated that microglia activation is not an all or none event, but rather a continuum of progressive stages depending on the balance between pro-inflammatory and anti-inflammatory cues in the local environment, which, in turn, change their phenotype and functional activity (@crain_2013; @lively_2013; for a review: @masuda_2020 and @tan_2020). 
 Accordingly, CX3CR1 signaling has been reported to impact microglial function under both physiological and pathological conditions. 
 
-For instance, it is increasingly evident that CX3CL1/CX3CR1 axis is a crucial player during the neurodevelopment.
+For instance, it is increasingly evident that CX3CL1/CX3CR1 axis is a crucial player during neurodevelopment.
 Accordingly, the CX3CL1/CX3CR1 axis was demonstrated to affect the outgrowth of dopaminergic axons in the forebrain and the laminar positioning of subsets of cortical interneurons [@squarzoni_2014].
-Similarly, during hippocampal development, a CX3CR1^-/-^ deficient microglia showed impaired migration during development [@pagani_2015; @paolicelli_2011].
-This observation was associated with their delayed synaptic pruning, reflected as a transient reduction of synaptic density and excitatory synaptic transmission in neurons as compared to their wild-type littermates, indicating immature synaptic properties [@paolicelli_2011].
+Similarly, during hippocampal development, CX3CR1^-/-^ deficient microglia showed impaired migration [@pagani_2015; @paolicelli_2011].
+This observation was associated with their delayed synaptic pruning, reflected as a transient reduction of synaptic density and excitatory synaptic transmission in neurons compared to their wild-type littermates, indicating immature synaptic properties [@paolicelli_2011].
 Precisely, these changes were observed during the early postnatal stage (P8-P28) and then returned to baseline. <!--, highlighting CX3CR1 impact on synaptic pruning during neurodevelopment.-->
 Interestingly, these mice were also tested in similar experimental settings in their adulthood (P40) [@zhan_2014]. 
-Although dendritic spine density remained unchanged, neurons from CX3CR1^-/-^ mice still displayed a lower frequency of mEPSCs and sEPSCs in comparison to their wild-type littermates. 
+Although dendritic spine density remained unchanged, neurons from CX3CR1^-/-^ mice still displayed a lower frequency of mEPSCs and sEPSCs compared to their wild-type littermates. 
 These results illustrate that a transient reduction in microglial synaptic pruning during development is sufficient to induce the long-term deficit in synaptic multiplicity, whereas the number of excitatory synapses remained the same [@zhan_2014].
 These data support the idea of a critical window during which microglia-mediated synaptic pruning is crucial for proper circuit maturation.
 
-Moreover, it is well-established that not only microglia control the elimination and maturation of synapses, but also these cells prune synapses at both presynaptic and postsynaptic sides, and thereby regulate synaptic innervation [@paolicelli_2011; @schafer_2012]. 
-In line with this findings, another study indicated that in different part of the hippocampus, in dentate gyrus (DG), adult-born granule neurons from the same strain of mice also displayed a reduced number of dendritic spines with additionally observed morphological changes, such as enlargement and shortening [@bols_2018]. 
+Moreover, it is well-established that not only microglia control the elimination and maturation of synapses, but also these cells prune synapses at both presynaptic and postsynaptic sides, thereby regulating synaptic innervation [@paolicelli_2011; @schafer_2012]. 
+In line with these findings, by using the same strain of mice, another study indicated that in the dentate gyrus (DG), adult-born granule neurons also displayed a reduced number of dendritic spines with additionally observed morphological changes, such as enlargement and shortening [@bols_2018]. 
 Besides being ultrastructurally enlarged, synapses at both afferent and efferent levels were depleted of synaptic vesicles, suggesting impaired functionality. <!-- lepiej, ale upewnić się -->
 
-Furthermore, dysfunctions in glutamatergic neurotransmission were further confirmed in CA3-CA1 synapses in hippocampal slices [@basilico_2019]. <!-- ale during development ? -->
-Recordings from slices of transgenic mice displayed an immature AMPA/NMDA ratio with defective AMPA components and decreased release probability when compared to wild-type mice, illustrating that neuron–microglia crosstalk profoundly impacts the functional maturation of excitatory presynaptic function.
+Furthermore, dysfunctions in glutamatergic neurotransmission were further confirmed in CA3-CA1 synapses in hippocampal slices [@basilico_2019]. 
+Recordings from slices of transgenic mice displayed an immature AMPA/NMDA ratio with defective AMPA components and decreased release probability compared to wild-type mice, illustrating that neuron–microglia crosstalk profoundly impacts functional maturation of excitatory presynaptic function.
 
 These results are nicely complemented by findings obtained by studies using mixed neuronal and glial cultures [@ji_2013].
-Specifically, adding microglial cells to the hippocampal neuronal culture results in an upregulation of excitatory synaptic currents together with a higher density of dendritic spines in neurons.
+Specifically, adding microglial cells to the hippocampal neuronal culture results in an upregulation of excitatory synaptic currents, together with a higher density of dendritic spines in neurons.
 In contrast, microglial depletion from hippocampal organotypic cultures led to both reduction in the dendritic spine density and excitatory synaptic transmission. 
-Moreover, in adult mice, pharmacological inhibition of microglial activation was associated with the prevention of dendritic spine loss in obese mice [@cope_2018].
+Moreover, in adult mice, pharmacological inhibition of microglial activation was associated with preventing dendritic spine loss in obese mice [@cope_2018].
 These findings strongly support the notion that microglia are key regulators of the dendritic spine density in both developing and adult brain. 
-Another function that was discovered by using CX3CR1^-/-^ mice was neuroprotection.
+Another CX3CL1-mediated function in the CNS is neuroprotection.
 First, CX3CL1 was shown to reduce neuronal cell death following gp120-, glutamate-induced and NMDA-induced neurotoxicity in neuronal cultures from either rodents or humans [@deiva_2004; @limatola_2005; @meucci_2000]. 
-On the other hand, following CX3CL1 application, microglia was reported to release soluble factors that promote neuroprotection, including adenosine [@lauro_2008; @lauro_2010]. <!-- zmienić microglial cells treated with CX3CL1 release soluble factors that promote neuroprotection in mixed hippocampal neuron–glia cultures.-->
+On the other hand, following the CX3CL1 application, microglia was reported to release soluble factors promoting neuroprotection, such as adenosine [@lauro_2008; @lauro_2010]. <!-- zmienić microglial cells treated with CX3CL1 release soluble factors that promote neuroprotection in mixed hippocampal neuron–glia cultures.-->
 It is an endogenous modulator of brain functions, with increasingly evident actions on synaptic transmission [@ribeiro_2010] or glia [@boison_2010], which acts by binding to its GPCR presynaptic receptor subtypes  (adenosine A1 receptor, adenosine A2A receptor,  adenosine A~2C~ receptor, and adenosine A~3~ receptor - A~1~R, A~2A~R, A~2C~, and A~3~R, respectively).
-It was shown that adenosine modulates CX3CL1 neuroprotection *via* A~1~R [@lauro_2008; @lauro_2010].
+Adenosine was shown to modulate CX3CL1 neuroprotection *via* A~1~R [@lauro_2008; @lauro_2010].
 This receptor, expressed on microglia, was also reported to be required for CX3CL1 increase in glutamate transporter 1 (GLT-1) activity in astrocytes, resulting in higher glutamate removal from the extracellular space, and thereby neuroprotective action [@catalano_2013].
 This data nicely illustrate the CX3CL1-regulated local communication between microglia, astrocytes, and neurons. 
 
-Neuroprotective aspect of CX3CL1 was also studied in the context of neurodegeneration. <!-- Disruption of FKN signaling has also been studied in the context of neurodegenerative disorders. -->
+A neuroprotective aspect of CX3CL1 was also studied in the context of neurodegeneration. <!-- Disruption of FKN signaling has also been studied in the context of neurodegenerative disorders. -->
 Specifically, it was shown that deletion of CX3CR1 in microglia led to increased release of IL-1<!--beta--> and neuronal death in such models as systemic inflammation, amyotrophic lateral sclerosis (ALS), and Parkinson’s disease (PD) [@cardona_2006].
-Notably, gene insertion of only soluble variant of CX3CL1, not the membrane-anchored version, was shown to rescue motor coordination and reduce neurodegeneration in model of PD [@morganti_2012].
+Notably, gene insertion of only soluble variant of CX3CL1, not the membrane-anchored version, was shown to rescue motor coordination and reduce neurodegeneration in the PD model [@morganti_2012].
 Similarly, only upregulation of soluble CX3CL1 was reported to reduce Tau-pathology [@finneran_2019]. 
-On the other hand, in the ischemic model, the CX3CL1 i.c.v. injection was shown, again with the involvement of  A~1~Rs, to induce neuroprotective effects, such as the reduction of a lesion volume and neurological deficits [@cipriani_2011].
+On the other hand, in the ischemic model, the CX3CL1 intracerebroventricular injection was shown to induce neuroprotective effects (e.g., a reduction of a lesion volume and neurological deficits) [@cipriani_2011].
+Again, the involvement of  A~1~Rs was associated with those effects.
 
 Considering the CX3CL1-mediated regulation of dendritic spines, along with its inhibition of both glutamate and NMDA-mediated neurotoxicity, one could speculate that CX3CL1 might modulate excitatory synaptic transmission.
-Indeed, there is several lines of evidence supporting this hypothesis.
+Indeed, there are several lines of evidence supporting this hypothesis.
 For example, in the hippocampus, CX3CL1 was demonstrated to reduce spontaneous glutamate release and the postsynaptic glutamate currents [@lauro_2008; @limatola_2005; @meucci_1998; @ragozzino_2006]. 
-These effects are probably a result of a PKA-related phosphorylation of GluR1 Ser845 [@ragozzino_2006].
-Further investigations revealed that CX3CL1 might not exclusively act on postsynaptic neurons, but also activated microglia, which in turn, released adenosine. 
+These effects are probably a result of PKA-related phosphorylation of GluR1 Ser845 [@ragozzino_2006].
+Further investigations revealed that CX3CL1 might not exclusively act on postsynaptic neurons but also activated microglia, which in turn, released adenosine. 
 Of note, sole adenosine was demonstrated to decrease the glutamatergic synaptic transmission in the hippocampus, even despite the absence of CX3CL1, suggesting adenosine tonic activity in this structure [@piccinin_2010]. 
-Similar to studies concerning neuroprotective action of CX3CL1 described above, this CX3CL1-induced adenosine action on the glutamatergic transmission was revealed to be mediated by A~3~R, and to the lesser extend A~1~R  [@lauro_2008, @lauro_2010; @piccinin_2010].   
+Similar to studies concerning the neuroprotective action of CX3CL1 described above, this CX3CL1-induced adenosine action on the glutamatergic transmission was revealed to be mediated by A~3~R, and to the lesser extend A~1~R  [@lauro_2008, @lauro_2010; @piccinin_2010].   
 Further evidence indicates that the activation of A~1~R and A~3~R results in a decrease in synaptic transmission, whereas A~2A~R exerts the opposite effect, manifested as CX3CL1-induced increase of evoked EPSC (eEPSC) observed when the A~1~ and A~3~ receptors are blocked [@piccinin_2010]. 
-Moreover, the A~2A~ receptor, together with the release of D-serine from glial cells, is also required for CX3CL1 regulation of NMDA receptor function [@scianni_2013].
+Moreover, the A~2A~ receptor, together with D-serine release from glial cells, is also required for CX3CL1 regulation of NMDA receptor function [@scianni_2013].
 Overall, several lines of evidence described above indicate a predominantly inhibitory role for CX3CL1, possibly as a component of neuroprotective synaptic scaling mechanisms, required for hippocampal memory-associated synaptic plasticity processes [@bertollini_2006; @piccinin_2010]. 
  
-Indeed, previously described reduction of postsynaptic glutamate currents *via* dephosporylation of GluR1 AMPA in acute brain slices is associated with long term potentiation (LTP) and mimics long-term depression (LTD) [@bertollini_2006; @ragozzino_2006]. 
+Indeed, previously described reduction of postsynaptic glutamate currents *via* dephosphorylation of GluR1 AMPA in acute brain slices is associated with long-term potentiation (LTP) and mimics long-term depression (LTD) [@bertollini_2006; @ragozzino_2006]. 
 Accordingly, LTD is enhanced in CX3CR1^-/-^ mice at P13 [@paolicelli_2011], suggesting that CX3CL1 has the highest relevance during early postnatal age.
 However, similar electrophysiological studies indicated either a complete lack of LTP in knockout mice [@rogers_2011] or a more pronounced LTP than in wild-type counterparts when LTP was induced by a weak stimulation protocol [@maggi_2011]. 
 Interestingly, when mice were housed in an enriched environment compared to wild-type mice, they had enhanced plasticity [@maggi_2009].
-These results suggest that the absence of  microglia-driven CX3CR1 signaling impedes enrichment effects, possibly due to some shared  mechanisms that warrant further investigation. 
-However, at network level, microglial interactions with synapses were shown to be important in regulating the maturation of neural circuits and shaping their connectivity in an activity- and experience-dependent manner, altering synaptic plasticity [@paolicelli_2011; @parkhurst_2013; @schafer_2012; @tremblay_2010; @wake_2009].
+These results suggest that the absence of microglia-driven CX3CR1 signaling impedes enrichment effects, possibly due to some shared mechanisms that warrant further investigation. 
+However, at the network level, microglial interactions with synapses were shown to be important in regulating the maturation of neural circuits and shaping their connectivity in an activity- and experience-dependent manner, altering synaptic plasticity [@paolicelli_2011; @parkhurst_2013; @schafer_2012; @tremblay_2010; @wake_2009].
 
-As synaptic plasticity is widely known as molecular model of learning, the changes in synaptic plasticity correlates should results in modulation in learning and memory. 
-In line with this hypothesis, behavioral studies on the CX3CL1/CX3CR1 axis in the regulation of learning and memory were giving contradictory results, reflecting changes in synaptic plasticity in studies described above.
-Briefly, CX3CR^-/-^ mice have shown impaired [@rogers_2011], improved [@maggi_2011; @reshef_2017]  or unaltered [@serchov_2015] cognitive functions. 
-Those discrepancies may result from differences in housing conditions, animal gender, and age, or behavioral test protocols between laboratories.
-However, this issue warrant further clarifications. 
+As synaptic plasticity is widely known as a molecular model of learning, the changes in synaptic plasticity correlates should results in modulation in learning and memory. 
+In line with this hypothesis, behavioral studies on the CX3CL1/CX3CR1 axis in the regulation of learning and memory were giving contradictory results, reflecting changes in synaptic plasticity in the studies described above.
+Briefly, CX3CR^-/-^ mice have shown impaired [@rogers_2011], improved [@maggi_2011; @reshef_2017], or unaltered [@serchov_2015] cognitive functions. 
+Those discrepancies may result from differences in housing conditions, animal gender, age, or behavioral test protocols between laboratories.
+However, this issue warrants further clarifications. 
 
 Moreover, adult neurogenesis, especially in the DG, is also believed to affect memory and learning, and CX3CL1 is suggested to be implicated in those processes. <!-- lepiej to napisać --> 
-Accordingly, disruption of CX3CL1/CX3CR1 signaling has deleterious effects on both neurogenesis and cognition. 
+Accordingly, disruption of CX3CL1/CX3CR1 signaling has harmful effects on both neurogenesis and cognition. 
 Increasing studies implicated both exogenous or exercise-induced CX3CL1 in promoting neurogenesis and  NSC/NPC activity in a microglia-dependent manner, whereas depletion of CX3CR1 resulted in a decreased number of newly generated neurons [@vukovic_2012, @bachstetter_2011, @rogers_2011].
 In addition to microglial mediation, CX3CR1^-/-^  knockout mice were found to have a significant reduction in neurogenesis, which could be reversed by IL-1`r knitr::asis_output("\U03B2")` receptor antagonist administration [@bachstetter_2011].
 When behaviorally assessed, these mice displayed impaired motor learning, spatial recognition, and fear-conditioning. 
-Interestingly, blocking IL-1`r knitr::asis_output("\U03B2")` signaling successfully reversed hippocampal-dependent learning, whereas motor learning was still impaired [@rogers_2011]. 
+Interestingly, blocking IL-1`r knitr::asis_output("\U03B2")` signaling reversed hippocampal-dependent learning, whereas motor learning was still impaired [@rogers_2011]. 
 
-Another aspect in relation to CX3CL1 involvement in the synaptic plasticity concerns the activity of interneurons.
+Another aspect in relation to CX3CL1 involvement in synaptic plasticity concerns the activity of interneurons.
 Importantly, CX3CL1 was shown to decrease the LTP at synapses in the DG; however, when GABA~A~ receptors were blocked, the magnitude of the LTP was enhanced [@sheridan_2014].
-This results might highlight the possible modulation of CX3CL1 in regulating the balance between excitation and inhibition on the network level. 
+These results might highlight the possible modulation of CX3CL1 in regulating the balance between excitation and inhibition on the network level. 
 In line with this hypothesis, CX3CL1 is also able to modulate inhibitory synaptic transmission. 
-For example, beyond the hippocampus,  CX3CL1 was documented to increase the amplitude of sIPSCs and eIPSC, without affecting PPR, increasing the sensitivity of serotoninergic neurons to GABA inputs and consequently inhibiting 5-HT neurotransmission  [@heinisch_2009, @heinisch_2011]. 
-In addition, by using human tissue from epileptic patients, which is normally less responsive to the repeated activation of GABA~A~ receptors than those from healthy tissue [@ragozzino_2005], it was shown that CX3CL1 reduced this desensitization of GABA~A~ currents in cortical pyramidal neurons [@roseti_2013].
+For example, beyond the hippocampus,  CX3CL1 was documented to increase the amplitude of sIPSCs and eIPSC without affecting PPR, increasing the sensitivity of serotoninergic neurons to GABA inputs and consequently inhibiting 5-HT neurotransmission  [@heinisch_2009, @heinisch_2011]. 
+In addition, by using human tissue from epileptic patients, which is usually less responsive to the repeated activation of GABA~A~ receptors than those from healthy tissue [@ragozzino_2005], it was shown that CX3CL1 reduced this desensitization of GABA~A~ currents in cortical pyramidal neurons [@roseti_2013].
 
-Of note, not only CX3CL1 modulates local communication and networks within structure, but also some initial evidence implicates this chemokine in coupling between brain regions. 
-Neuronal populations are thought to couple, reflecting information processing, which  can  be  quantified  using  coherence as  a  measure (for a review: @schnitzler_2005). 
+Of note, not only CX3CL1 modulates local communication and networks within a structure, but also some initial evidence implicates this chemokine in coupling between brain regions. 
+Neuronal populations are thought to couple, reflecting information processing, which can be quantified using coherence as a  measure (for a review: @schnitzler_2005). 
 In particular, by measuring connections between hippocampus and prefrontal cortex, mice with deletion of CX3CR1 revealed a decrease in  the  coherence  between  those two structures, compared  to  their wild-type  littermates [@zhan_2014].<!-- , see Fig 4D-->
-Thus, this finding suggests that the CX3CR1 knockdown leads to  a  decrease in  hippocampal–prefrontal connectivity, which may have behavioral consequences, such as anxiety or cognitive impairments [@zhan_2014].  
+Thus, this finding suggests that the CX3CR1 knockdown leads to  a  decrease in hippocampal–prefrontal connectivity, which may have behavioral consequences, such as anxiety or cognitive impairments [@zhan_2014].  
 Moreover, knockout mice showed reduced frontal cortex oscillatory driving to the hippocampus than their wild-type littermates at baseline conditions  [@zhan_2015]. 
 It is speculative whether it is the consequence of morphological modifications of microglia depleted of CX3CR1 [@piirainen_2021], but scanty evidence is available so far. <!-- tutaj może poprawić tę drugą część zdania...-->
 
@@ -135,12 +136,12 @@ CX3CL1 regulation of synaptic plasticity is not restricted to the hippocampus.
 Briefly, this signaling molecule was shown to induce synaptic depression of evoked parallel fibers inputs onto Purkinje neurons [@giovannelli_1998], and mice with CX3CR1^-/-^ receptor deletion were characterized by the LTP in the spinal cord [@bian_2015], which may have behavioral consequences regarding motor coordination and pain [@rogers_2011; @verge_2004].
 
 Besides mentioned above behavioral phenotypes, CX3CR1^-/-^ knockout mice have been gaining attention in relation to chronic stress. 
-Briefly, in comparison to wild-type littermates, CX3CR1 is important for  controlling social behavior and social dominance [@zhan_2014; @piirainen_2021. 
+Briefly, in comparison to wild-type littermates, CX3CR1 is essential for controlling social behavior and social dominance [@zhan_2014; @piirainen_2021. 
 However, there are many inconsistencies. 
 Regarding anxiety, most studies did not show any differences between genotypes [@rogers_2011, @hellwig_2016, @schubert_2018]. 
 Nonetheless, there is one study that suggests anxiolytic effects of CX3CR1 depletion [@bols_2018], whereas the other study indicates the opposite [@schubert_2018].
-A similar situation  was described regarding depressive-like behavior: one study indicates knockout is more depressive measured by Forced Swim Test and/or Tail Suspension Test, whereas the other reported the opposite conclusion.
+A similar situation was described regarding depressive-like behavior: one study indicates knockout is more depressive measured by Forced Swim Test and/or Tail Suspension Test, whereas the other reported the opposite conclusion.
 It seems like the main difference between those experiments was the gender between animals.
 Specifically, CX3CR1^-/-^ females are more depressive and anxiolytic than wild-type littermates, whereas the depletion of the same receptor in males elicit the opposite reaction.  
 However, as this hypothesis is based only on two studies, further investigation is needed.
-Moreover, a recent study demonstrated that the depletion of CX3CR1 might affect the adaptive response to psychosocial stress, which is a major risk factor for psychotic disorders such as schizophrenia [@piirainen_2021].
+Moreover, a recent study demonstrated that the depletion of CX3CR1 might affect the adaptive response to psychosocial stress, which is a significant risk factor for psychotic disorders such as schizophrenia [@piirainen_2021].

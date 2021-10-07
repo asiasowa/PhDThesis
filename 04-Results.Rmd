@@ -1,126 +1,164 @@
 # Results
 
-## CX3CL1/CX3CR1
+## CX3CL1/CX3CR1 in the BLA
 
-### BLA
+We performed immunohistochemistry on CXCR7-EGFP transgenic mice to further characterize the types of cells expressing CXCR7 in adult mouse brain. 
+Using cell type specific markers, CXCR7 expression was mainly found in neurons, astrocytes and endothelial cells. 
 
-#### Experiment 1 - Immunohistochemical expression of CX3CL1 and CX3CR1 in the rat amygdala
+### Cellular distribution of CX3CL1 and CX3CR1 in the rat BLA 
 
-We first asked how BLA circuits are organized to generate SWs. To address this question, we first determined the properties of local synaptic connections between PNs, chandelier INs, and other INs.
+#### Co-localization of CX3CR1-MOR
 
-#### Experiment 2 - Electrophysiological effects of CX3CL1 on membrane properties and synaptic transmission in the BLA
+#### Localization of CX3CL1 in the ... 
+
+#### CX3CL1 are present on .....
+
+#### Astrocytes contains.... 
+
+### CX3CL1/CX3CR1 modulation of the electrical properties in BLA neurons
+
+#### Pyramidal-like neurons in the BLA are sensitive to the CX3CL1 activation
+
+#### Pyramidal-like neurons in the BLA inhibits ....
+
+## CX3CL1/CX3CR1 in the CeA
+
+### Cellular distribution of CX3CL1 and CX3CR1 in the rat CeA
+
+### CX3CL1/CX3CR1 modulation of the electrical properties in CeA neurons
+
+## CXCL12/CXCR4 in the BLA
+
+### Cellular distribution of CXCL12 and CXCR4 in the rat BLA
+
+### CXCL12/CXCR4 modulation of the electrical properties in BLA neurons 
+
+## CXCL12/CXCR4 in the CeA
+
+### Cellular distribution of CXCL12 and CXCR4 in the rat CeA
+
+### CXCL12/CXCR4 modulation of the electrical properties in CeA neurons
+
+
+##### inspiration
+
+###### general
+
+We first asked how...
+To address this question, it was first determined the properties of ...
+
+###### electrophysiology
+
+Around 75% of BLA neurons showed responsiveness to MCP-1/CCL2. 
+The effect was not inhibited when GTP was omitted from the patch pipette medium (Fig. 8b, right).
 
 The representative traces of sEPSCs in the absence (referred to as control hereafter) or presence of harmine (10μM) (referred to as harmine) were shown in supplemental Fig. S1(A)
 
-
-###
-
-To elucidate how IFNg affects nociceptive responses in the spinal dorsal horn, we analyzed the effects of IFNg on postsy- naptic action by using whole-cell patch-clamp recordings from SG neurons.
+To elucidate how IFNg affects nociceptive responses in the spinal dorsal horn, we analyzed the effects of IFNg on postsynaptic action by using whole-cell patch-clamp recordings from SG neurons.
 
 To determine the nature of local connections between neurons in the CeL, paired whole-cell recordings were made in acute coronal slices of wild-type mice (Fig. - Hunt2017
-
-## CeA
-
-
 
 To investigate the effect of <!--minocycline on inhibitory transmission-->, whole-cell voltage-clamp recordings from SG neurons were made under control conditions and after bath application of minocycline (100 lM)
 
 Taken together, our findings indicate that minocycline increases the frequency of sIPSCs in a concentration-dependent manner (EC50 of 85 lM) without changing their amplitude, suggesting a presynaptic mechanism that contributes to the effect of minocycline
 
-To further examine whether neuronal activity
-contributes to the increase in sIPSC frequency produced by minocycline, we next tested whether TTX affected the response of minocycline. 
+2.1-fold 2 r 4 in the spontaneous postsynaptic currents was elicited by GRO a 50 nM even in the presence of TTX 3 m M indicating that the action of the chemokine was exerted on neurotransmitter release mechanisms rather than on nerve cell excitability
 
+To further examine whether neuronal activity contributes to the increase in sIPSC frequency produced by minocycline, we next tested whether TTX affected the response of minocycline. 
 
-2.1-fold   2 r 4   in  the  spontaneous  postsynaptic  currents . was  elicited  by  GRO a 50  nM   even  in  the  presence  of . TTX   3 m M   indicating  that  the  action  of  the  chemokine was exerted on neurotransmitter release mechanisms rather than  on  nerve  cell  excitability
+Therefore, we hypothesized that intrathecal administration of CCL2 would enhance spinal nociceptive transmission and cause thermal hyperalgesia by activating the spinal microglia. 
+This hypothesis was tested using intrathecal administration of minocycline, a specific inhibitor of microglial activation [38,39]. 
+Previous studies [40,41] showed that an intrathecal injection of minocycline (100 μg) blocked microglial activation.
 
-Therefore, we hypothesized that intrathecal administration of CCL2 would enhance spinal nociceptive transmission and cause thermal hyperalgesia by activating the spinal microglia. This hypothesis was tested using intrathecal administration of minocycline, a specific inhibitor of microglial activation [38,39]. Previous studies [40,41] showed that an intrathecal injection of minocycline (100 μg) blocked microglial activation.
+AMPA-mediated spontaneous and mEPSC frequency is increased in EAE without change in the probability of release 
+To determine whether the change in frequency between CFA and EAE was caused by alteration of unitary synaptic properties, we recorded mEPSCs after bath applying the sodium channel blocker, TTX. 
 
-
-To analyze <!--the afferent connectivity of fully mature newborn granule neurons-->, we examined the dendritic spines of <!--8-weekold RFP+ cells -->.
-These spines can be classified into various typologies on the basis of morphological criteria (Pallas-Bazarra et al., 2016; Pallas-Bazarra et al., 2017). <!-dać publikacje zespołu Jakuba-->
-
-Fig. 4A and B shows representative images of dendritic fragments of <!--newborn neurons of WT (A) and CX3CR1?/? (B) animals -->. 
-In addition, the classification of dendritic spines into mushroom, thin and stubby types is illustrated. <!-zmienić trochę to zdanie --> 
-Neurons <!--of CX3CR1?/? mice--> showed a reduction in the total number of dendritic spines.
-To further characterize the populations of spines present in these cells, we measured the percentage of each type of spine (D).
-As shown, the percentage of stubby spines was increased in CX3CR1?/? animals, whereas that of mushroom spines was reduced. 
-Thus, these data show that the absence of CX3CR1 leads to a decrease in the number of newborn granule neuron dendritic spines and alterations in their morphology (namely, an enlargement and shortening).
-
-Here, we report rapid modulatory effects of CX3CL1 on neuronal events in hippocampal tissue. Our data does not conclusively support a direct action of CX3CL1 on neurons and we cannot discount the possibility that the effects we see on LTP and calcium influx in neuronal cell types happen as a consequence of CX3CL1-mediated activation of CX3CR1 solely on microglial cell types. If this is true, however, the ability of microglia to rapidly regulate multiple hippocampal memory-associated synaptic plasticity processes may be much more extensive than traditionally thought. The evidence from rats that CX3CR1 is expressed on hippocampal neuron allows the possibility that, as is the case for CX3CL1-mediated regulation of serotonergic neurons of the dorsal Raphe, glutamatergic neuron-derived CX3CL1 may act in an autocrine/paracrine fashion in the hippocampus during periods of synaptic plasticity to regulate glutamate-mediated neurotransmission tone. Sheridan2014
-
-
-AMPA-mediated spontaneous and mEPSC frequency is increased in EAE without change in the probability ofrelease The principal neurons of the BLA were morphologically identified by their large pyramidal-like cell bodies. When recorded with standard internal solution, all the cells displaying this morphological feature showed varying degrees ofspike adaptation. They fired 3–7 times to a depolarizing current step of 500 ms length, which is an electrophysiological characteristic of BLA principal neurons (Sah et al., 2003). Thus, we were confident ofrecording from the pyramidal cells, even in experiments where cesiumbased internal solution was used and we could not verify the spike frequency or waveform to a depolarizing current step. Standard cesium-based internal solution was used for recording AMPARmediated sEPSCs at ⫺70 mV
-
-(CFA ⫽ 2.7 ⫾ 0.45 Hz, n ⫽ 11 cells, N⫽ 7 animals; EAE ⫽ 4.3 ⫾ 0.56 Hz, n ⫽ 10, N⫽ 7; unpaired t test: t⫽ 2.287, df⫽ 19, p⫽ 0.03; 3 cohorts ofanimals), w
-
-To determine whether the change in frequency between CFA and EAE was caused by alteration ofunitary synaptic properties, we recorded mEPSCs after bath applying the sodium channel blocker, TTX. The amplitudes ofmEPSCs reflect the number and conductance ofsubsynaptic AMPARs, whereas the frequency reflects the probability of vesicle release (p) and/or the number of synapses (Kerchner and Nicoll, 2008).
+The amplitudes of mEPSCs reflect the number and conductance of subsynaptic AMPARs, whereas the frequency reflects the probability of vesicle release (p) and/or the number of synapses (Kerchner and Nicoll, 2008).
 
 We found that mEPSC frequency was significantly increased (....) without any change in mEPSC amplitude.
 
-##### AMPA/NMDA ratio
-An increased number of synapses could result from more den- dritic spines and/or unsilencing of silent synapses. In a silent synapse, anEPSC is absent because ofa postsynaptic complement exclusively of NMDA receptors; hence, in the absence of depo- larization, it cannot conduct current in response to presynaptic glutamate release. In response to sufficient depolarization, AMPARs can be inserted in the postsynaptic density, thereby making the synapse active or “unsilenced.” To this end, we mea- sured the maximum amplitude of the eEPSC at ⫺70 mV (AMPAR-mediated) and then at 40 mV, at a 50 ms latency (NMDA-mediated), both in the presence ofpicrotoxin (Fig. 2A).;;
+The results suggest that IFNg enhances NMDA receptor signaling by activating IFNg receptors in the dorsal horn of the spinal cord. 
+Minocycline, an inhibitor of microglial activation, inhibited the IFNg-induced facilitation of NMDA current, but inhibition of the neuronal JAK- STAT signaling did not. 
+Therefore, we conclude that IFNg binds its own receptors in microglia but not SG neurons, and the subsequent microglial activation leads to NMDA receptor activation. - Sonekatsu2016
+
+####### silent synapses
+
+An increased number of synapses could result from more dendritic spines and/or unsilencing of silent synapses.
+In a silent synapse, an EPSC is absent because of a postsynaptic complement exclusively of NMDA receptors; hence, in the absence of depolarization, it cannot conduct current in response to presynaptic glutamate release. 
+In response to sufficient depolarization, AMPARs can be inserted in the postsynaptic density, thereby making the synapse active or “unsilenced.” 
+To this end, we measured the maximum amplitude of the eEPSC at -70 mV (AMPAR-mediated) and then at 40 mV, at a 50 ms latency (NMDA-mediated), both in the presence of picrotoxin (Fig. 2A).
+
+significantly inhibited the amplitude of electrically evoked GABAergic IPSCs elicited from both the LPC and local synapses (Figure 3a). 
+
+The inhibition of GABAergic transmission by 10mM PD128907 did not recover during an extensive washout period.
+Despite this, the pipette resistance did not significantly change during the duration of these recordings.
+
+Since microglia is an upstream partner of astrocytes in response to stimuli (Pascual et al., 2012), we next examined whether astrocyte activation will affect sIPSCs - Peng
 
 
-To confirm whether dendritic spine density was increased,
-
-### Spines
-In addition, **we also examined spine morphology because changes in spine morphology are believed to represent one mechanism by which synaptic activity leaves its imprint on neurons**. This was concurrent with an increase in spines with well-defined heads, which is correlated with spine maturation.
-
-### Minocycline
- However, we acknowledge that minocycline, in addition to impairing microglial proinflammatory and phagocytic activity, has many other unrelated effects; however, our use of ICV injection at least eliminated the peripheral effects of minocycline (Brundula et al., 2002; Giuliani et al., 2005)
- 
- The results suggest that IFNg enhances NMDA receptor sig- naling by activating IFNg receptors in the dorsal horn of the spinal cord. Minocycline, an inhibitor of microglial activation, inhibited the IFNg-induced facilitation of NMDA current, but inhibition of the neuronal JAK- STAT signaling did not. Therefore, we conclude that IFNg binds its own receptors in microglia but not SG neurons, and the subsequent microglial activation leads to NMDA receptor activation. - Sonekatsu2016
- 
- 
-One possibility for our low inci- dence of SOM(⫹) ¡ SOM(⫺) connections is that we are sampling local connections (⬃50–100 ?m apart) in the coronal plane, and SOM(⫹) ¡ SOM(⫺) connections may be more common among “distal” (i.e. ⬎100 ?m) connec- tions. To address this, we injected an AAV-containing DIO-channelrhodopsin-mCherry into the CeL of SOM-Cre mice (Fig. 9A,B) to directly activate SOM(⫹) terminals.
-
-### CeL neurons comprise two major functionally distinct populations 
-
-The amygdala is comprised of several distinct nuclei (  Fig. 1  A ). In acutely prepared mouse amygdala slices, we identified the CeL by the surrounding axon bundles with IR-DIC optics (  Fig. 1  B )as described previously (  Lopez de Armentia and Sah, 2004  ). Neurons in the CeL display heterogeneous intrinsic excitability (  Martina et al., 1999  ;  Lopez de Armentia and Sah, 2004  ;  Chieng et al., 2006  ;  Haubensak et al., 2010  ;  Amano et al., 2012  ;  Chiang et al., 2015  ). We first performed whole-cell patch-clamp recordings on cells and then made post hoc morphological reconstructions of the recorded cells. In agreement with previous results (  Haubensak et al., 2010  ;  Li et al., 2013  ), the majority (  96%, 217 of 225;  Fig. 1  C ) of CeL neurons exhibited either the ES or the LS phenotype in response to depolarizing current steps, whereas only a small subset (3.5%, 8 of 225;  Fig. 1  C ) displayed the lowthreshold-bursting (LTB) phenotype (  Chieng et al., 2006  ). Because the onset of spikes varied in response to different current injections, we determined the spike delay (  Fig. 1  D ) of the first AP upon a just suprathreshold current (i.e., rheobase) injection. Moreover, we determined the first AP properties, including the peak amplitude, voltage threshold, half-width, maximal rising rate, and maximal falling rate (see Materials and Methods). In addition to AP phenotypes, ES and LS cells differed in their subthreshold membrane responses (  Fig. 1  D ). In striking contrast to ES cells, LS cells exhibited a slow ascending ramp in response to subthreshold current injection and displayed a greater ramp ratio (  Table 1  ).
-
-To further test whether ES and LS cells arise from two separate classes of CeL neurons or if they represent a single population of cells spanning a continuum of excitability, we analyzed several other physiological features (  Table 1  ) from all non-LTB neurons. Overall, four features (spike delay, ramp ratio, RMP, and rheobase) showed non-Gaussian distributions (  Fig. 1  E ). To divide these two distinct cell classes unbiasedly, we performed hierarchical cluster analysis from 90 randomly recorded CeL neurons based on these four features (  Cossart et al., 2006  ;  Graves et al., 2012  ; also see Materials and Methods). Strikingly, the cluster dendrogram yielded two distinct neuron populations, LS and ES cells (  Fig. 1  F ). The spike delay of LS and ES neurons was 1776  21 ms (blue, n 	 50) and 834  88 ms (red, n 	 40), respectively ( p 0.0001; Wilcoxon rank-sum test;  Table 1  ). In addition, the LS population exhibited a more hyperpolarized RMP and a larger rheobase (  Table 1  ). Similar to the dendrogram, the scatter-plot of spike delay versus ramp ratio revealed two distinctly nonoverlapping clusters (  Fig. 1  G ). Classification of cells with the arbitrary cutoff value (spike delay of 1.5 s) fell into two categories, which corresponded to the same two populations determined by the unbiased hierarchical cluster analysis. As a result, we classified neurons with a spike delay of 
- 1.5 s at rheobase as the LS cells and the remainders as the ES cells in the subsequent experiments of this study.
- 
-Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
-
+The above observations suggest that minocycline may decrease neuronal excitability in a concentration- and cell-type-dependent manner by decreasing glutamatergic transmission.
 
 Do these synaptic changes affect neuronal firing?
 
-
 To understand the intracellular activity during SWs (SWi), simultaneous whole-cell recordings were obtained from BLA neurons. 
-INs were distinguished from PNs ( Figures S1 B–S1E) by using action potential discharge properties ( Mahanty and Sah, 1998 <!-- perumal_2021 -->
 
 To gain insight into the inhibitory regulation of the local hippocampal circuitry, we examined the functional characteristic of the IPSCs in DG granule cells (Figure 1) and CA3 pyramidal neurons (Figure 2) in the dorsal and ventral hippocampus.
 
 Comparison of neurochemical GABAergic synapse labeling between cell types showed that BLA interneurons receive a significantly higher density of putative GABAergic synapses compared with principal cells (Figs. 7 and 8).
 
 This was also accompanied by significant increases in the frequency of sIPSCs (Fig. 9 and Table 3) compared with principal cells.
+
 Although our neurochemical immunolabeling is limited by antibody penetration (Fogarty et al. 2013)<!--@klenowski_2015-->, and is therefore confined to subsampling of cell bodies and neuronal arbors that lie within 32um of the surface of the slice, we found an association between sIPSC frequency and neurochemical
 
- Of these cells, nine were classed as type 1 and the other nine as type 2
- 
- 
- 
-Next, we measured cellular excitability from EGFP-expressing neurons infected with CTR ( n = 14) or NF1707 ( n = 15) in BLA projection neurons. We injected a series of depolarizing current steps to assess the number of action potentials (Figure 4a – c). Repeated-measure ANOVA revealed that projection neurons fired significantly less after NF knockdown (group × current steps intensity interaction: F(1.973,53.279) = 19.648, [@saha_2016] <!-- repeated measure anova to measure excitability ... -->
-
-## LTP BLA
-
-To address the functional physiological consequences of NF knockdown, we turned to in vivo recordings, and examined properties of vSub-evoked field potentials in the BLA in animals with confirmed viral expression and recording sites (Supplementary Figure S6). Comparing NF1707 ( n = 10) and CTR ( n = 8) groups, no significant effect on basal excitability, as assessed by input – output curves, was found despite a trend   toward   increased   excitability   (Supplementary Figure  S7;  F(1,16) = 2.280, P = 0.151).  Repeated-measure ANOVA  showed  no  group × intensity  interaction  (F (2.080,33.27) = 1.984, P = 0.152, Greenhouse – Geisser correction).
-
-Upon application of HFS, vSub-evoked field potentials in the BLA were effectively potentiated in the control group, but not in the NF knockdown group as revealed by mixed model  repeated-measure  ANOVA  (group  effect:  (F (1,16) = 16.27, P = 0.001; and group × post-HFS time point interaction: F(2.071,33.136) = 9.231, P = 0.001, Greenhouse – Geisser correction; Figure 4f). The comparison of average potentiation across time points after induction also revealed a highly significant difference between the two groups (Figure 4g, t (16) = 4.03, P = 0.001).
-
-NF knockdown with the less effective NF1196 vector also reduced vSub-BLA LTP (Supplementary Figure S8b and c) without altering the input – output curve (Supplementary Figure S8a). Together, this demonstrates a specific impairment of BLA synaptic plasticity to vSub inputs after NF knockdown. 
-
+Of these cells, nine were classed as type 1 and the other nine as type 2
 
 Quantitative analysis of GABAergic synapse markers and measurement of miniature inhibitory postsynaptic currents in BLA projection neurons after neurofascin knockdown ex vivo confirmed the loss of GABAergic input.
 
-# Electrophysiology
+###### immuno
 
-significantly inhibited the amplitude of electrically evoked GABAergic IPSCs elicited from both the LPC and local synapses (Figure 3a). The inhibition of GABAergic transmission  by  10mM  PD128907  did  not  recover  during an extensive washout period.
-Despite this, the pipette resistance did not significantly change during the duration  of  these  recordings.
 
-Since microglia is an upstream partner of astrocytes in response to stimuli (Pascual et al., 2012), we next examined whether astrocyte activation will affect sIPSCs - Peng
+###### dendrites
 
-# Analogous
+To analyze <!--the afferent connectivity of fully mature newborn granule neurons-->, we examined the dendritic spines of <!--8-weekold RFP+ cells -->.
+These spines can be classified into various typologies on the basis of morphological criteria (Pallas-Bazarra et al., 2016; Pallas-Bazarra et al., 2017). <!--dać publikacje zespołu Jakuba-->
 
-The above observations suggest that minocycline may decrease neuronal excitability in a concentration- and cell-type-dependent manner by decreasing glutamatergic transmission.
+Fig. 4A and B shows representative images of dendritic fragments of <!--newborn neurons of WT (A) and CX3CR1?/? (B) animals -->. 
+In addition, the classification of dendritic spines into mushroom, thin and stubby types is illustrated. 
+Neurons <!--of CX3CR1?/? mice--> showed a reduction in the total number of dendritic spines.
+To further characterize the populations of spines present in these cells, we measured the percentage of each type of spine (D).
+As shown, the percentage of stubby spines was increased in CX3CR1?/? animals, whereas that of mushroom spines was reduced. 
+Thus, these data show that the absence of CX3CR1 leads to a decrease in the number of newborn granule neuron dendritic spines and alterations in their morphology (namely, an enlargement and shortening).
+
+To confirm whether dendritic spine density was increased,
+
+In addition, we also examined spine morphology because changes in spine morphology are believed to represent one mechanism by which synaptic activity leaves its imprint on neurons. This was concurrent with an increase in spines with well-defined heads, which is correlated with spine maturation.
+
+
+###### CeL clustering
+
+We first performed whole-cell patch-clamp recordings on cells and then made post hoc morphological reconstructions of the recorded cells. 
+
+Because the onset of spikes varied in response to different current injections, we determined the spike delay ( Fig. 1 D ) of the first AP upon a just suprathreshold current (i.e., rheobase) injection. 
+Moreover, we determined the first AP properties, including the peak amplitude, voltage threshold, half-width, maximal rising rate, and maximal falling rate (see Materials and Methods). 
+In addition to AP phenotypes, ES and LS cells differed in their subthreshold membrane responses ( Fig. 1 D ).
+In striking contrast to ES cells, LS cells exhibited a slow ascending ramp in response to subthreshold current injection and displayed a greater ramp ratio ( Table 1 ).
+
+To further test whether ES and LS cells arise from two separate classes of CeL neurons or if they represent a single population of cells spanning a continuum of excitability, we analyzed several other physiological features ( Table 1 ) from all non-LTB neurons. 
+Overall, four features (spike delay, ramp ratio, RMP, and rheobase) showed non-Gaussian distributions ( Fig. 1 E ). 
+To divide these two distinct cell classes unbiasedly, we performed hierarchical cluster analysis from 90 randomly recorded CeL neurons based on these four features ( Cossart et al., 2006 ; Graves et al., 2012 ; also see Materials and Methods). Strikingly, the cluster dendrogram yielded two distinct neuron populations, LS and ES cells ( Fig. 1 F ). The spike delay of LS and ES neurons was 1776 21 ms (blue, n 	 50) and 834 88 ms (red, n 	 40), respectively ( p 0.0001; Wilcoxon rank-sum test; Table 1 ). In addition, the LS population exhibited a more hyperpolarized RMP and a larger rheobase ( Table 1 ). Similar to the dendrogram, the scatter-plot of spike delay versus ramp ratio revealed two distinctly nonoverlapping clusters ( Fig. 1 G ). Classification of cells with the arbitrary cutoff value (spike delay of 1.5 s) fell into two categories, which corresponded to the same two populations determined by the unbiased hierarchical cluster analysis. As a result, we classified neurons with a spike delay of 
+ 1.5 s at rheobase as the LS cells and the remainders as the ES cells in the subsequent experiments of this study.
+ 
+Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
+
+
+###### LTP BLA
+
+To address the functional physiological consequences of NF knockdown, we turned to extracellular recordings, and examined properties of vSub-evoked field potentials in the BLA in animals with confirmed viral expression and recording sites (Supplementary Figure S6). Comparing NF1707 ( n = 10) and CTR ( n = 8) groups, no significant effect on basal excitability, as assessed by input – output curves, was found despite a trend toward increased excitability (Supplementary Figure S7; F(1,16) = 2.280, P = 0.151). Repeated-measure ANOVA showed no group × intensity interaction (F (2.080,33.27) = 1.984, P = 0.152, Greenhouse – Geisser correction).
+
+Upon application of HFS, vSub-evoked field potentials in the BLA were effectively potentiated in the control group, but not in the NF knockdown group as revealed by mixed model repeated-measure ANOVA (group effect: (F (1,16) = 16.27, P = 0.001; and group × post-HFS time point interaction: F(2.071,33.136) = 9.231, P = 0.001, Greenhouse – Geisser correction; Figure 4f). The comparison of average potentiation across time points after induction also revealed a highly significant difference between the two groups (Figure 4g, t (16) = 4.03, P = 0.001).
+
+NF knockdown with the less effective NF1196 vector also reduced vSub-BLA LTP (Supplementary Figure S8b and c) without altering the input – output curve (Supplementary Figure S8a). Together, this demonstrates a specific impairment of BLA synaptic plasticity to vSub inputs after NF knockdown. 
+
+<!-- 
+The effect of **500 pM CX3CL1** on LTP in the DG was investigated both in the presence and absence of 100 μM of the GABAA receptor/chloride channel inhibitor, picrotoxin (Sigma–Aldrich).-Sheridan2014
+-->

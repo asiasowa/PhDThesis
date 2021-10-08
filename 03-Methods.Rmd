@@ -13,7 +13,6 @@ All efforts were made to minimize suffering and to reduce the number of animals 
 Male Wistar rats (50-180g on arrival) were purchased from Charles River Laboratories (Research Models and Services; Germany).<!-- Po dostawie zwierzęta przechodziły kilkudniową adaptację do warunków pomieszczenia hodowlanego -->
 Four to five animals were housed per polypropylene cage (55x35x20 cm) lined with wooden bedding in controlled environment (22 `r knitr::asis_output("\U00B1")` 1`r knitr::asis_output("\U00B0")`C, 45 `r knitr::asis_output("\U00B1")` 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. 
 Animals were acclimated to the housing environment for at least 4 days before the beginning of the experiments. 
-For the patch-clamp experiments 4-7-week old male Wistar, as well as 6-8- week-old male and female Sprague Dawley rats were used. For the immunohistochemical experiments 8-10-week-old male Wistar, as well as 3-4-month-old male and female Sprague Dawley rats were used.
 For patch-clamp experiments, rats weighing 180-300g (5-10 weeks of age) were used.
 For immunostaining experiments, rats weighing 300-350 g were used.
 <!-- zwierzęta na hodowle? -->
@@ -29,7 +28,7 @@ All reagents used for preparing ACSF and internal solution were purchased from .
 <!-- The time necessary for the solution to flow from the stopcocks to the slice was approximately 15 s. -->
 
 Chemokines were purchased from <!--Peptides used were as follows: RLN3 peptide, Phoenix Pharmaceuticals, Karlsruhe, Germany, Cat No. 035-36A. RXFP3 agonist, RXFP3-A2 {[R3A(11–24,C15→A)B]} was synthesised using solid-phase peptide synthesis and purified using reverse-phase HPLC (The Florey Institute of Neuroscience and Mental Health, Victoria, Australia -->
-All peptides were dissolved in PBS, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C.
+All peptides were dissolved in PBS, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C, unless stated otherwise.
 
 
 
@@ -131,10 +130,10 @@ Neurons with a healthy appearance presented a smooth surface, and the cell body 
 Cells were approached under visual control with a patch pipette using a three-dimensional micromanipulator (uMp micromanipulator system, Sensapex, Finland). 
 Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 M`r knitr::asis_output("\U038F")`; Sutter Instruments, USA) using horizontal puller (Sutter Instruments P–97) and filled with following solutions. 
 
-```{r methodpatch, fig.cap='...', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images/zdjeciedic40x.png")
+```{r methodpatch, fig.cap='**a** A schematic of the brain slice containing the amygdala **b, c** Photographs from the recording microscope under 10x optics showing areas of recordings: BLA and CeA, respectively **d,e** Photographs from the recording microscope under 40x DIC optics showing morphologies from BLA principal cells and CeL neurons', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images//results//methodpatch.png")
 ```
- 
+<!--uzupełnić zdjęcia o CeA--> 
 For experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolarity 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). 
 For experiment measuring inhibitory synaptic transmission, the solution contained 122 Cs-gluconate, 10 CsCl, 10 HEPES, 0.3 EGTA, 10 phosphocreatine-Na~2~, 5 Mg-ATP, 0.4 Na-GTP, pH = 7.35; osmolarity 280-290 mOsmol kg^−1^.
 
@@ -147,7 +146,7 @@ Electrical potential of the inner side of cell membrane was controlled through a
 Signals were low-pass filtered at 3 kHz, digitized at 20kHz and sampled through an analogue-to-digital converter (Digidata 1440, Molecular Devices, USA). 
 Data were stored on a computer disk and analyzed offline using Clampfit 10.2 software (Molecular Devices, USA). 
 All membrane potentials were corrected for the liquid junction potential (estimated as `r knitr::asis_output("\U223C")`12 mV). <!-- Voltages were corrected for liquid junction potential ( $\sim$ 11 mV).-->
-The access resistance was monitored throughout each experiment. 
+The access resistance was monitored throughout each experiment. <!-- Membrane input resistance was monitored based on a voltage or current responses to a hyperpolarizing current or voltage steps (applied every 30 seconds) throughout recordings.-->
 Only recordings with stable access resistance lower than 30 M`r knitr::asis_output("\U038F")` were considered acceptable for analysis. 
 All drugs were delivered *via* a bath perfusion system. <!-- antibodies? -->
 <!--  Neurons firing at less than 0.1 Hz were considered ‘silent neurons’ and excluded from analysis.// The sole criterion for selection of recorded cells was the absence of an apical dendrite.-->
@@ -163,8 +162,17 @@ Neurons were identified by location, shape of cell body, firing properties, and 
 <!-- ewentualnie rozdzielić to na BLA and CeA, ale jedna figura -->
 Principal neurons were identified based on their unique electrophysiological properties.<!-- As previously shown ( Spampanato et al., 2016 ; Woodruff et al., 2006 ), these cells were identified electrophysiologically by using the presence of -->
 
+The principal neurons of the BLA were morphologically identified by their large pyramidal-like cell bodies. When recorded with standard internal solution, all the cells displaying this morphological feature showed varying degrees of spike adaptation. They fired 3–7 times to a depolarizing current step of 500 ms length, which is an electrophysiological characteristic of BLA principal neurons (Sah et al., 2003). Thus, we were confident of recording from the pyramidal cells, even in experiments where cesium-based internal solution was used and we could not verify the spike frequency or waveform to a depolarizing current step. Standard cesium-based internal solution was used for recording AMPAR-mediated sEPSCs at ⫺70 mV
+
+INs were distinguished from PNs ( Figures S1 B–S1E) by using action potential discharge properties ( Mahanty and Sah, 1998 <!-- perumal_2021 -->
+
+Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
+
 #### Electrophysiological identification of neurons in the CeA
 
+The amygdala is comprised of several distinct nuclei ( Fig. 1 A ). In acutely prepared mouse amygdala slices, we identified the CeL by the surrounding axon bundles with IR-DIC optics ( Fig. 1 B ) as described previously ( Lopez de Armentia and Sah, 2004 ). Neurons in the CeL display heterogeneous intrinsic excitability ( Martina et al., 1999 ; Lopez de Armentia and Sah, 2004 ; Chieng et al., 2006 ; Haubensak et al., 2010 ; Amano et al., 2012 ; Chiang et al., 2015 ). 
+
+In agreement with previous results ( Haubensak et al., 2010 ; Li et al., 2013 ), the majority ( ~ 96%, 217 of 225; Fig. 1 C ) of CeL neurons exhibited either the ES or the LS phenotype in response to depolarizing current steps, whereas only a small subset (3.5%, 8 of 225; Fig. 1 C ) displayed the low threshold-bursting (LTB) phenotype ( Chieng et al., 2006 ). 
 <!-- to bardziej do analizy.... 
 Based on their response to somatic current injections, three general types of CeL neurons have previously been described, with the two major types being LF neurons, which show a significant delay before onset of the first AP (`r knitr::asis_output("\U223C")`100–200 ms), and early-spiking (ES) neurons (also described as regular-spiking; AP onset, `r knitr::asis_output("\U223C")`50 ms). 
 A third, smaller population of low-threshold bursting neurons has also been described (Dumont et al., 2002; Lopez de Armentia and Sah, 2004; Haubensak et al., 2010; Li et al., 2013; Hou et al., 2016). 
@@ -191,7 +199,7 @@ Before clustering, we first normalized variables into the range (0, 1) by perfor
 Next, we clustered all the data points by the following iterative procedure. First, assign each data point to a cluster; every cluster therefore contains only one data point. 
 Second, merge the two closest clusters into one cluster; therefore, Hou et al., 2016 -->
 
-```{r method_firingpattern, fig.cap='**Electrophysiological differentiation of neurons in the amygdala.** Different types of neurons in the amygdala are distinguished by their firing response to an incremental depolarising pulses delivered at a hyperpolarised potential (top trace). Type I – putative magnocellular neurons express a delay in the onset to the first action potential (arrow). Type II – putative parvocellular neurons lacks the delay in response to the same current stimuli.', fig.align = 'center', echo = FALSE, message= FALSE }
+```{r methodfiringpattern, fig.cap='**Electrophysiological differentiation of neurons in the amygdala.** Different types of neurons in the amygdala are distinguished by their firing response to an incremental depolarising pulses delivered at a hyperpolarised potential (top trace). Type I – putative magnocellular neurons express a delay in the onset to the first action potential (arrow). Type II – putative parvocellular neurons lacks the delay in response to the same current stimuli.', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/firingpattern.png")
 ```
 <!-- zmienić opis -->
@@ -200,20 +208,20 @@ knitr::include_graphics("images/firingpattern.png")
 
 ### Recording protocols and data analysis
 
-Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration.
-The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model. <!-- dodać że at -65mV /// The input-output relationship was obtained for each neuron using hyper- and depolarizing current pulses (500 ms). 
-The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude.-->
-The gain (slope) and rheobase (minimal current necessary to fire the first action potential) parameters was determined for further analysis.
 
-In order to evaluate cell excitability, the input-output relationship was obtained for each neuron using hyper- and depolarizing current pulses (500 ms, 5pA increments). 
-Then the series of hyperpolarizing and depolarizing current pulses (500ms, from -80 to 100pA in 5pA increments) were injected.
-Action potentials were evoked in current clamp mode from a holding potential of -65 mV by 500 ms depolarizing current pulses.
-For each neuron, several electrophysiological parameters were measured according to the Petilla terminology [@ascoli_2008; @karagiannis_2009].
-To take into account the possible variety of firing patterns, such as bursting, adapting, regular or irregular trains of action potentials, the interspaced intervals were measured for response to the the minimal current injection eliciting more than three action potentials and the following parameters were measured:
-Voltage responses of neurons induced by 500 ms hyperpolarizing and depolarizing current pulses were measured as described previously (Vucurovic et al., 2010; Perrenoud et al., 2012). <!-- nasze cytowania i inaczej--> 
-In order to characterize the behavior of recorded neurons, several electrophysiological parameters were measured, as follows: 
+
+To measure the effects of chemokines (CX3CL1/CXCL12) on intrinsic membrane properties, the experiments were recorded in the whole-cell patch-clamp under current-clamp configuration. <!-- Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration.-->
+
+<!-- najpierw RPM-->
+<!--  The input-output relationship was obtained for each neuron using hyper- and depolarizing current pulses (500 ms). 
+The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude. // Then the series of hyperpolarizing and depolarizing current pulses (500ms, from -80 to 100pA in 5pA increments) were injected.Action potentials were evoked in current clamp mode from a holding potential of -65 mV by 500 ms depolarizing current pulses.-->
+Several membrane parameters were assessed based on neuronal voltage responses from -65 mV holding potential to hyper- and depolarizing current pulses (500 ms, 10 or 5pA increments), and analyzed using custom scripts.
+Cell excitability was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model.
+The gain (slope) and rheobase (minimal current necessary to fire the first action potential) parameters was determined for further analysis.
+<!-- To take into account the possible variety of firing patterns, such as bursting, adapting, regular or irregular trains of action potentials, the interspaced intervals were measured for response to the the minimal current injection eliciting more than three action potentials and the following parameters were measured:--> <!-- [@ascoli_2008; @karagiannis_2009]-->
+<!-- In order to characterize the behavior of recorded neurons, several electrophysiological parameters were measured, as follows:-->
 (1) the resting membrane potential (RMP), <!--was recorded immediately after establishing whole-cell configuration.-->
-(2) Input resistance (R~m~) and 
+(2) Input resistance (R~m~) 
 (3) the membrane time constant `r knitr::asis_output("\U03C4")`~m~ (determined at the beginning of the voltage response of a hyperpolarization current pulse of 10 pA; the time constant was determined by fitting this voltage response to a single exponential), 
 (4) the membrane capacitance (C~m~; calculated according to the equation C~m~= $\frac{\tau~m~}{R~m~}$), 
 (5) action potential threshold (corresponded to the voltage threshold of the first action potential elicited by a current step, defined as the voltage at which the time derivative of V~m~($\frac{\partial V}{\partial t}$) is 20 V s^−1^), 
@@ -232,13 +240,31 @@ In order to characterize the behavior of recorded neurons, several electrophysio
 (14c) amplitude, and 
 (14d) coefficient variance (CV).
 When neurons did not exhibit some of the abovementioned features, they were arbitrarily set to 0.
+
+<!-- Alan
+The voltage response to a 50 pA current pulse (500 ms) was utilised to calculate the following: (1) the membrane time constant, which was determined by fitting a single exponential to the charging phase of the voltage response; (2) the membrane resistance, which was calculated based on the maximum amplitude of the voltage response, assuming an ohmic current-voltage (I-V) relationship; and (3) the membrane capacitance, which was calculated as the quotient of the time constant and resistance. (4) The voltage sag was measured from the voltage response to a -140 pA hyperpolarising current step (500 ms).
+(5) The voltage-current relationship was traced based on steady-state voltage responses to decremental hyperpolarising current pulses from -140 pA to -10 pA (10 pA decrement, pulse duration 500 ms, 5 seconds between steps). (6) Neuronal excitability (input-output relationship) was measured as the number of spikes elicited by incremental depolarising current pulses from +10 pA to +140 pA (10 pA increment, pulse duration 500 ms, 5 seconds between steps). Only current steps triggering APs were used to characterize the input-output relationship.-->
 <!-- Therefore, the amplitude (21–24) and the latency (25–28) of the first (AHPf) and second (AHPs) components of afterhyperpolarization was measured for the first two action potentials as the difference between spike threshold and the negative peak of the AHP (Kawaguchi, 1993). 
 In some cortical neurons (Haj-Dahmane and Andrade, 1997), this complex repolarization is accompanied by a fast afterdepolarization (ADP). 
 Its (29, 30) amplitude and (31, 32) latency were measured as the difference between the negative peak of the AHPf and the positive peak of the ADP and between the spike threshold and the peak of the ADP, respectively. When neurons did not exhibit AHPs or ADP, amplitude and latency were arbitrarily set to 0. @karagiannis_2009-->
 
-### Synaptic transmission 
+<!-- Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration. -->
 
-IHC was performed automated with image analysis software to exclude any bias and to be blinded. 
+Voltage clamp recordings aimed at investigating the influence of either CX3CR1 or CXCR4 receptors activation on spontaneous and miniature synaptic currents were performed in normal ACSF and ACSF containing TTX (0.5 μM), respectively. 
+<!-- The calculated reversal potential for Cl- currents in these patch-clamp recordings equalled -90.51 mV, pominąć raczej -->
+At holding potential of -70mV, inward events represented excitatory postsynaptic currents (EPSCs, <!-- Fig-->). 
+
+
+The nature of postsynaptic currents was verified using glutamate (10 μM CNQX, 50 μM DL-AP5 and GABA (20 μM bicuculline) receptor antagonists (Fig. M2 B, C) <!-- chyba mam tylko bicuculine... może jakaś zamykająca się komórka...? albo któryś z fluorocitrate? albo jakaś tomkowa, ktora nic nie ma? -->
+
+Electrophysiological data were analyzed using Mini Analysis (Synaptosoft Inc., Fort Lee, NJ, USA), and IGOR software.
+However, as these softwares needed manual corrections, which might have led to bias, the problem was solved by using automated analysis software to <!--  exclude any bias and to be blinded,   -->
+The change in membrane potential or whole-cell current in response to the peptide/drug application was considered significant if it differed from the baseline by more than three standard deviations. <!-- jeszcze tego nie mam ale zastosować to... -->
+
+For analysis of postsynaptic currents 4-minutes-long whole-cell recordings, one from baseline before the drug application, another 15 minutes later were analyzed.
+
+Events were manually detected to measure: frequency, mean rise time, mean amplitude and decay time constant of averaged current trace; these parameters were statistically tested (baseline vs peptide application).
+
 
 ### Post-recording immunostaining
 <!--w miarę skończone, ewentualnie jakie przeciwciala...-->
@@ -273,7 +299,6 @@ Stimuli (duration: 0.2 ms) were applied at 0.016 Hz using a constant-current sti
 Signals <!--FPs--> were amplified (Axoprobe 1A, Axon Instruments, USA), filtered (1-500 Hz), A/D converted at 10 kHz, and stored using the Micro1401 interface and SIGAVG software (CED, UK). <!-- FPs were amplified (Axoprobe 1A, Axon Instruments, Burlingame, CA, USA), A/D converted at 10 kHz, and stored using the Micro1401 interface and Signal 4 software (CED, Cambridge, UK). // Hippocampal and cortical responses underwent amplification (EXT 10–2F amplifier, NPI), filtration (1 Hz–1 kHz), A/D conversion (10-kHz sampling rate, Axon Instruments), and then were saved on PC using the Micro1401 interface, and Signal 4 software (CED)./// Rejestrowaną różnice potencjałów, po tysiąckrotnym wzmocnieniu i odfiltrowaniu sygnału w zakresie częstotliwości 1 - 500 Hz (Axoprobe, Axon Instruments USA) rejestrowano na komputerze z zastosowaniem przetwornika analogowo cyfrowego CED 1401 mkII (CED Co. UK) i oprogramowania SIGAVG (CED Co. UK).-->
 A stimulus–response (input–output) curve was obtained for each slice.<!-- Dla każdego badanego skrawka konstruowano krzywą wejście-wyjście, czyli  zależność wielkości odpowiedzi od siły stymulacji. Parametrem określającym wielkość fEPSP był amplituda potencjału polowego. -->
 For that purpose stimulation intensity was progressively elevated step-wise (16 steps; 0–100 `r knitr::asis_output("\U03BC")`A). <!-- The input/output (I/O) response curves were constructed by varying the intensity of single-pulse stimulation (interstimulus interval: 10 s; pulse duration: 100 μ s) and averaging 6 responses for each intensity. The time interval between the consecutive increases in stimulation strength was 20 s. // An input/output response curve was constructed by varying the intensity of the single-pulse stimulation and averaging six responses per intensity. -->
-The stimulus–response curves were fit with the Boltzmann equation: Vi = Vmax/(1 + exp((u .... with Vmax being the maximum FP amplitude; u—stimulation  intensity;  uh—stimulation  intensity  evoking  the  FP  of  half-maximum amplitude; S—factor proportional to the slope of the curve.  <!-- Do tak uzyskanych wartości dopasowano krzywą stanowiącą rozwiązanie równania Boltzmana: y=a/1+exp -((x-xo)/b)  (a – maksymalna wartość amplitudy potencjału polowegi, b  –  parametr charakteryzujący nachylenie  krzywej,  x 0 –  wartość  siły stymulacji, dla której amplituda fEPSP jest równe połowie wartości maksymalnej.-->
 In all experiments baseline responses were established by delivering a stimulation of sufficient intensity <!--(300 e 800mA)--> to elicit a response representing 30% of the maximal amplitude of the evoked field potentials, which was fixed at this level throughout all experiments. <!--In all experiments baseline responses were established by delivering a stimulation of sufficient intensity (300 e 800mA) to elicit a response representing 30% of the maximal amplitude of the evoked field potentials.  /// One response was documented for each stimulation intensity. //  The stimulus was adjusted to elicit a PS at 30% of the maximal response, which was fixed at this level throughout the experiment. --><!-- Baseline responses were collected with a stimulation intensity that yielded 30% of the maximal response.--><!-- The stimulus intensity that evoked a field potential with amplitude equal to 30% of the maximal response was then used for all subsequent stimulations.-->
 
 For the measurement of the short-term plasticity, the paired-pulse stimulation protocol was used (duration—0.2 ms, inter-stimulus interval ISI—50ms). <!-- To evaluate short-term synaptic interactions, paired-pulse stimuli were delivered with interstimulus intervals ranging from 10 to 500 ms and averaging 6 responses for each time interval, altogether lasting 12 min. -->
@@ -306,7 +331,7 @@ After initial stabilization of the responses, input–output curves were constru
 
 ### Tissue preparation for immunohistochemistry
 
-Rats (n = 12) were deeply anaesthetized with sodium pentobarbital (100 mg/kg, i.p) and transcardially perfused with 0.9% NaCl followed by 4% paraformaldehyde in 0.1 M phosphate buffered saline (PBS) as described previously (Máckowiak et al., 2011).<!--sprawdzić i dodać cytowanie-->
+Rats (n = 12) were deeply anaesthetized with sodium pentobarbital (100 mg/kg, i.p) and transcardially perfused with 0.9% NaCl followed by 4% paraformaldehyde in 0.1 M phosphate buffered saline (PBS) as described previously [@makowiak_2011].
 After a post-fixation period of 12 h, 50  `r knitr::asis_output("\U03BC")`m-thick sections of the brain were cut in the coronal plane using a vibrating microtome (Leica VT1000). <!-- After intracardial perfusion with 4% paraformaldehyde in PBS, brains were postfixed overnight and transferred to 30% sucrose in PBS. After the brains sank, coronal slices (50 `r knitr::asis_output("\U03BC")`m) were cut using a Leica VT 1000 vibrating microtome (Leica Instruments, Germany).-->
 
 ### Immunofluorescence staining
@@ -470,6 +495,8 @@ Two-way ANOVA was followed by the Tukey’s posthoc test and p < 0.05 was taken 
 Data are presented as group means ± SEM. 
 Stimulus-response plots were fitted with the Boltzmann equation: Vi= Vmax/(1 + exp ((u-uh)/-S)). The following parameters were compared: the maximum field potential amplitude (Vmax), the stimulation intensity evoking a field potential of half-maximum amplitude (uh) and the factor proportional to the slope of the curve (S). @danielewicz_2017
 
+The stimulus–response curves were fit with the Boltzmann equation: Vi = Vmax/(1 + exp((u .... with Vmax being the maximum FP amplitude; u—stimulation  intensity;  uh—stimulation  intensity  evoking  the  FP  of  half-maximum amplitude; S—factor proportional to the slope of the curve.  <!-- Do tak uzyskanych wartości dopasowano krzywą stanowiącą rozwiązanie równania Boltzmana: y=a/1+exp -((x-xo)/b)  (a – maksymalna wartość amplitudy potencjału polowegi, b  –  parametr charakteryzujący nachylenie  krzywej,  x 0 –  wartość  siły stymulacji, dla której amplituda fEPSP jest równe połowie wartości maksymalnej.-->
+
 
 <!-- ładne zdania
 
@@ -495,3 +522,22 @@ The HFS paradigm was chosen because theta burst stimulation did not produce cons
 Additionally, the slope measure in the lateral amygdala is more sensitive to variability and noise in the signal, making it more difficult to analyze (Doyere et al., 2003). 
 Thus, we also decided to record PS in the CA1 region of the hippocampus, to get a better comparison of results between these two limbic structures. 
 Single or paired stimuli (duration 100 μ s) were presented every 10 s. -->
+
+<!-- , to verify the pre- vs. postsynaptic nature of peptide action.-->
+
+Next, we measured cellular excitability from EGFP-expressing neurons infected with CTR ( n = 14) or NF1707 ( n = 15) in BLA projection neurons. We injected a series of depolarizing current steps to assess the number of action potentials (Figure 4a – c). Repeated-measure ANOVA revealed that projection neurons fired significantly less after NF knockdown (group × current steps intensity interaction: F(1.973,53.279) = 19.648, [@saha_2016] <!-- repeated measure anova to measure excitability ... -->
+
+
+### TO ADD
+
+To record spontaneous inhibitory postsynaptic currents (sIPSCs), neurons were voltage-clamped at 0 mV [@Kusek2015]. 
+After 15 min of the stabilization period, the baseline sIPSCs activity was recorded. The action of lamotrigine (50 $\upmu$M) was assessed by adding a known concentration of a stock solution directly to the bath and taking the measures before (baseline) and during 15 min of lamotrigine superfusion. 
+In a subset of experiments, slices were incubated in ACSF supplemented with  hyperpolarization-activated cation-nonselective (HCN) channels selective antagonists, ZD7288 (10 $\upmu$M) to verify whether the action of lamotrigine was HCN-dependent.
+Spontaneous IPSCs were detected using the TaroTools toolbox for Igor Pro (https://sites.google.com/site/tarotoolsregister).
+
+For sIPSC recordings, amplitude detection thresholds were set to exceed noise values.
+Events were detected automatically, analyzed for double peaks, and then visually inspected to prevent the inclusion of false data. 
+The synaptic activity was analyzed for frequency, amplitude, rise time (calculated from 10–90% of peak amplitude), and decay time calculated by fitting an exponential function form 10-90% of the decay phase. <!--(calculated by averaging 200 randomly selected events and fitting a double exponential function from 10–90% of the decay phase) --><!-- The double exponential function for the decay phase generated an initial fast component and a subsequent slow component of the decay phase. --> 
+All statistical tests and plotting were done using 3.6.1 [@R_base], the dplyr (v0.8.3; @dplyr), and the ggplot2 (v3.2.1; @ggplot2) packages. 
+Group data for inhibitory synaptic transmission are reported as median$\pm$SD.
+Lamotrigine’s impact on sIPSC characteristics was analyzed by comparing pre- and post-lamotrigine values using a paired Student’s t-test or Wilcoxon Signed Rank Test for non-normally distributed data.

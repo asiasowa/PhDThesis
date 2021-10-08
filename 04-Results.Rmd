@@ -2,10 +2,10 @@
 
 ## CX3CL1/CX3CR1 in the BLA
 
-We performed immunohistochemistry on CXCR7-EGFP transgenic mice to further characterize the types of cells expressing CXCR7 in adult mouse brain. 
-Using cell type specific markers, CXCR7 expression was mainly found in neurons, astrocytes and endothelial cells. 
-
 ### Cellular distribution of CX3CL1 and CX3CR1 in the rat BLA 
+
+Immunohistochemistry was performed to further characterize the types of cells expressing CX3CL1 and CX3CR1 in adult rat BLA. <!-- może nie najlepsze zdanie -->
+Using cell type specific markers (<!-- jakie markery-->), CX3CL1 expression was mainly found in neurons, astrocytes and endothelial cells.
 
 #### Co-localization of CX3CR1-MOR
 
@@ -17,6 +17,43 @@ Using cell type specific markers, CXCR7 expression was mainly found in neurons, 
 
 ### CX3CL1/CX3CR1 modulation of the electrical properties in BLA neurons
 
+To explore how CX3CL1 impacts electrophysiological features in the BLA, 
+
+#### CX3CR1 activation reduces excitability of principal neurons in the rat BLA
+
+```{r CX3CL1_BLA_excitability_stats, include = FALSE}
+CX3CL1_2nM_BLA_gain_stat <- formattable(stat_table_exp((BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)')), gain))
+CX3CL1_2nM_BLA_thres_stat <- formattable(stat_table_exp((BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)')), Treshold1_all))
+CX3CL1_5nM_BLA_thres_stat <- formattable(stat_table_exp((BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)')), Treshold1_all))
+
+CX3CL1_azd_BLA_thres_stat <- formattable(stat_table_exp((BLA_df_final %>% filter(Experiment == 'AZD8797')), Treshold1_all))
+```
+
+Given that principal cells' excitability has been consistently reported to influence not only activity within the BLA complex, but also in the CeA, and within ITCs clusters (see Section \@ref(BLAstructure)), this study investigated whether CX3CL1 may regulate excitability of those cells.<!-- First, I was interested in determining whether CX3CL1 affect any membrane properties of principal neurons in the BLA. Considering their efferents , the regulation of firing in those neurons is thought to have critical impact not only on other pyramidal cells within the BLA complex, but also on ITCs clusters and the CeA complex.// As these neurons receive many inputs from broad array of structures *in vivo*, together with their //   -->
+The results presented here show that following CX3CL1 application, the gain remained unchanged (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, CX3CL1(2nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`), whereas the threshold current was significantly decreased, compared to baseline (from `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` to `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, nr of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)) %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, nr of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`,  t = `r round(CX3CL1_2nM_BLA_thres_stat$Statistics[1], digits = 2)`, df = `r CX3CL1_2nM_BLA_thres_stat$Df[1]`,  p = `r round(CX3CL1_2nM_BLA_thres_stat$Paired_Test[1], digits = 3)`, `r CX3CL1_2nM_BLA_thres_stat$Method[1]`).
+This effect was also replicated in higher dose (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)) %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, nr of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`,   t = `r round(CX3CL1_5nM_BLA_thres_stat$Statistics[1], digits = 2)`, df = `r CX3CL1_5nM_BLA_thres_stat$Df[1]`,  p = `r round(CX3CL1_5nM_BLA_thres_stat$Paired_Test[1], digits = 3)`, `r CX3CL1_5nM_BLA_thres_stat$Method[1]`).  
+<!-- ale czy efekt nie większy dla CX3CL1? MIXED / REPEATED MEASURE ANOVA AND INTERACTION? -->
+To validate whether this effect is dependent on CX3CR1, a receptor of CX3CL1, the two approaches were used. 
+First, before recordings, a subset of slices was incubated with antibody against CX3CR1 <!--jakieć cytowanie które też tak robiło? -->.
+The incubation with CX3CR1 antibody seemed to abolished this effect (Fig. \@ref(fig:CX3CL1BLAexcitability)).
+However, as the slices used in this study had were 300 `r knitr::asis_output("\U03BC")`m thin, and the penetration of antibodies are estimated as 50<!-- citation-->, this dependency was additionally confirmed using pharmacological inhibition using CX3CR1 receptor antagonist, AZD8797.
+According to the chemical study, which tested this substance, the K~i~ was ... <!-- poprawić -->.
+Moreover, the dose of AZD8797 used .... was ... <!-- poprawić -->
+Thus, here we used 10 `r knitr::asis_output("\U03BC")`M.
+Of note, this chemical is dissolved in DMSO <!-- rozwinąć skrót --> and thus the recording ACSF was additionally supplemented with proper proportion (no more than 0.001%) of DMSO as a baseline condition. <!-- nie wiem czy to i powyższe zdania nie do metody... -->
+Similar to antibody against CX3CR1, AZD8797 effectively<!--successively?--> blocked the CX3CL1-induced reduction in principal cells' excitability, manifested as increased threshold current (Fig. \@ref(fig:CX3CL1BLAexcitability)).
+As an additional control, sole AZD8797 was bath-applied on BLA-containing slices while recordings were made from a principal cell, and no differences were observed (Fig. \@ref(fig:CX3CL1BLAexcitability); baseline in DMSO = `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "AZD8797") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "AZD8797") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)) %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, nr of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'AZD8797') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`,   t = `r round(CX3CL1_azd_BLA_thres_stat$Statistics[1], digits = 2)`, df = `r CX3CL1_azd_BLA_thres_stat$Df[1]`,  p = `r round(CX3CL1_azd_BLA_thres_stat$Paired_Test[1], digits = 3)`, `r CX3CL1_azd_BLA_thres_stat$Method[1]`).<!-- zdecydowanie poprawić to zdanie-->
+
+Given that the CX3CR1 receptor is mostly expressed on microglia, the protocol to pharmacologically inhibit microglial cells using minocycline on acute brain slices were adapted from other studies. <!-- citations--> 
+As presented on Fig. \@ref(fig:CX3CL1BLAexcitability), the inhibition of microglia also diminished the CX3CL1-induced effect on threshold current ()
+
+
+
+Treatment with GABA~A~ antagonist bicuculline (100 lM) fully and reversibly abolished the neuronal response to GABA.
+
+```{r CX3CL1BLAexcitability, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images/CX3CL1BLAexcitability.png")
+```
 #### Pyramidal-like neurons in the BLA are sensitive to the CX3CL1 activation
 
 #### Pyramidal-like neurons in the BLA inhibits ....
@@ -31,6 +68,9 @@ Using cell type specific markers, CXCR7 expression was mainly found in neurons, 
 
 ### Cellular distribution of CXCL12 and CXCR4 in the rat BLA
 
+To explore how CXCL12 affects local communication between neurons and glia in the BLA, immunohistochemical double staining for CXCR4 in this area was performed with <!--nestin, DCX, NeuN, CD34,  fetal liver kinase (Flk)-1, and CD31-->. 
+
+
 ### CXCL12/CXCR4 modulation of the electrical properties in BLA neurons 
 
 ## CXCL12/CXCR4 in the CeA
@@ -38,6 +78,9 @@ Using cell type specific markers, CXCR7 expression was mainly found in neurons, 
 ### Cellular distribution of CXCL12 and CXCR4 in the rat CeA
 
 ### CXCL12/CXCR4 modulation of the electrical properties in CeA neurons
+
+AMD3100 eliminates the beneficial effects of CXCL12, indicating that the CXCL12/CXCR4 signaling pathway is vitally important in improving the neurobehavioral outcomes of ischemic mice, so studies were performed to detect the expression of CXCR4. 
+
 
 
 ##### inspiration
@@ -113,6 +156,8 @@ Although our neurochemical immunolabeling is limited by antibody penetration (Fo
 Of these cells, nine were classed as type 1 and the other nine as type 2
 
 Quantitative analysis of GABAergic synapse markers and measurement of miniature inhibitory postsynaptic currents in BLA projection neurons after neurofascin knockdown ex vivo confirmed the loss of GABAergic input.
+
+We were next interested in determining if lamotrigine affects GABAergic synaptic transmission in the hippocampus, a brain area critically involved in the coordination of neuronal activity that gives rise to network oscillations by GABAergic interneurons. 
 
 ###### immuno
 

@@ -200,7 +200,7 @@ Next, we clustered all the data points by the following iterative procedure. Fir
 Second, merge the two closest clusters into one cluster; therefore, Hou et al., 2016 -->
 
 ```{r methodfiringpattern, fig.cap='**Electrophysiological differentiation of neurons in the amygdala.** Different types of neurons in the amygdala are distinguished by their firing response to an incremental depolarising pulses delivered at a hyperpolarised potential (top trace). Type I – putative magnocellular neurons express a delay in the onset to the first action potential (arrow). Type II – putative parvocellular neurons lacks the delay in response to the same current stimuli.', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images/firingpattern.png")
+knitr::include_graphics("images//methods//firingpattern.png")
 ```
 <!-- zmienić opis -->
 

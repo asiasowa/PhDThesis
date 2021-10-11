@@ -41,13 +41,31 @@ gt(groupname_col = "Variable") %>%
              gtsave("CX3CL1_membrane_table.html")
 ```
 
-```{r CX3CL1_BLA_excitability_fig_all, fig.cap= '', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 40, fig.width= 20}
+```{r CX3CL1_BLA_excitability_fig_all, fig.cap= '', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 12, fig.width= 12}
+
+# insets 
+inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
+inset_frak2nM <- image_ggplot(inset_frak2nM)
+inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
+inset_frak5nM <- image_ggplot(inset_frak5nM)
+inset_ab <- image_read("images//results//inset_ab.png")
+inset_ab <- image_ggplot(inset_ab)
+inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
+inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
+inset_azda <- image_read("images//results//inset_azd.png")
+inset_azda <- image_ggplot(inset_azda)
+inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
+inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
+inset_minoa <- image_read("images//results//inset_minoa.png")
+inset_minoa <- image_ggplot(inset_minoa)
+inset_gaba <- image_read("images//results//inset_gaba.png")
+inset_gaba <- image_ggplot(inset_gaba)
+
+
 # GAIN
 bp_BLA_gain <- plot_boxplot(BLA_df_final, gain, mtitle= "BLA - principal cells", ylabel = "gain",  dot_size = 2)
-bp_BLA_gain <- bp_BLA_gain + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_BLA_inter_gain <- plot_boxplot(BLA_df_inter, gain, ylabel = "gain", mtitle = "BLA - interneurons", dot_size = 2)
-bp_BLA_inter_gain <- bp_BLA_inter_gain + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels) #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
+bp_BLA_gain <- bp_BLA_gain + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 
 pie_BLA_frak_gain <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val15(gain, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -60,31 +78,10 @@ pie_BLA_mino_gain <- BLA_df_final %>% filter(Experiment == 'minocycline') %>% pl
 pie_BLA_picro_gain <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% plot_pie_val15(gain, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 
-# THRESHOLD CURRENT
-f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
-f_labels_BLA_thres$Experiment <- factor(f_labels_BLA_thres$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
-bp_BLA_thres <- plot_boxplot(BLA_df_final, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "BLA", vary1 = -55, vary2 = -20, dot_size = 2)
-bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres) #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
-
-bp_BLA_inter_thres <- plot_boxplot(BLA_df_inter, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "BLA - interneurons", vary1 = -50, vary2 = -30, dot_size = 2)
-bp_BLA_inter_thres <- bp_BLA_inter_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels) #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
-
-pie_BLA_frak_thres <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_frak5nM_thres <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(Treshold1_all, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_antifrak_thres <- BLA_df_final %>% filter(Experiment == 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_azdfrak_thres <- BLA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_azd_thres <- BLA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(Treshold1_all, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_minofrak_thres <- BLA_df_final %>% filter(Experiment == 'minocycline + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_mino_thres <- BLA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(Treshold1_all, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_picro_thres <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-
-
 # ADAPTATION
 bp_BLA_adap <- plot_boxplot(BLA_df_final, Adaptation_ratio, ylabel = "Adaptation ratio", mtitle = "BLA", vary1 = 0, vary2 = 1.5, dot_size = 2)
-bp_BLA_adap <- bp_BLA_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_BLA_inter_adap <- plot_boxplot(BLA_df_inter, Adaptation_ratio, ylabel = "Adaptation ratio", mtitle = "BLA - interneurons", vary1 = 0, vary2 = 1.5, dot_size = 2)
-bp_BLA_inter_adap <- bp_BLA_inter_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_BLA_adap <- bp_BLA_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 
 pie_BLA_frak_adap <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(Adaptation_ratio, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -101,10 +98,8 @@ pie_BLA_picro_adap <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP5
 f_labels_BLA_rm <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)' ,"AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
 f_labels_BLA_rm$Experiment <- factor(f_labels_BLA_rm$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)' ,"AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
 bp_BLA_rm <- plot_boxplot(BLA_df_final, Rm_20, ylabel = "Input resistance (MOhm)", mtitle = "BLA", vary1 = 0, vary2 = 250, dot_size = 2)
-bp_BLA_rm <- bp_BLA_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') + geom_text(x = 1.5, y = 800, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_rm)
-
-bp_BLA_inter_rm <- plot_boxplot(BLA_df_inter, Rm_20, ylabel = "Input resistance (MOhm)", mtitle = "BLA - interneurons", vary1 = 80, vary2 = 320, dot_size = 2)
-bp_BLA_inter_rm <- bp_BLA_inter_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') + geom_text(x = 1.5, y = 800, aes(label = label, color = NULL, group= NULL), data = f_labels)
+bp_BLA_rm <- bp_BLA_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') + geom_text(x = 1.5, y = 800, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_rm)
 
 pie_BLA_frak_rm <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(Rm_20, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_BLA_frak5nM_rm <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(Rm_20, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -118,10 +113,8 @@ pie_BLA_picro_rm <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP524
 
 # TAU
 bp_BLA_tau <- plot_boxplot(BLA_df_final, tau_20, ylabel = "tau (ms)", mtitle = "BLA", vary1 = 0, vary2 = 40, dot_size = 2)
-bp_BLA_tau <- bp_BLA_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_BLA_inter_tau <- plot_boxplot(BLA_df_inter, tau_20, ylabel = "tau (ms)", mtitle = "BLA - interneurons", vary1 = 0, vary2 = 25, dot_size = 2)
-bp_BLA_inter_tau <- bp_BLA_inter_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_BLA_tau <- bp_BLA_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 
 pie_BLA_frak_tau <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(tau_20, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -135,11 +128,8 @@ pie_BLA_picro_tau <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52
 
 # CAPACITANCE
 bp_BLA_cap <- plot_boxplot(BLA_df_final, C_20, ylabel = "Capacitance (pF)", mtitle = "BLA", vary1 = 90, vary2 = 500, dot_size = 2)
-bp_BLA_cap <- bp_BLA_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_BLA_inter_cap <- plot_boxplot(BLA_df_inter, C_20, ylabel = "Capacitance (pF)", mtitle = "BLA - interneurons", vary1 = 30, vary2 = 300, dot_size = 2)
-bp_BLA_inter_cap <- bp_BLA_inter_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) # + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
+bp_BLA_cap <- bp_BLA_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 pie_BLA_frak_cap <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(C_20, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_BLA_frak5nM_cap <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(C_20, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -153,10 +143,8 @@ pie_BLA_picro_cap <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52
 
 # SAG
 bp_BLA_sag <- plot_boxplot(BLA_df_sag, sag_ratio_140, ylabel = "sag ratio @-140 pA", mtitle = "BLA", dot_size = 2)
-bp_BLA_sag <- bp_BLA_sag + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_BLA_inter_sag <- plot_boxplot(BLA_df_inter_sag, sag_ratio_140, ylabel = "sag ratio @-140 pA", mtitle = "BLA - interneurons", dot_size = 2)
-bp_BLA_inter_sag <- bp_BLA_inter_sag + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_BLA_sag <- bp_BLA_sag + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 pie_BLA_frak_sag <- BLA_df_sag %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_BLA_frak5nM_sag <- BLA_df_sag %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(sag_ratio_140, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -171,10 +159,8 @@ pie_BLA_picro_sag <- BLA_df_sag %>% filter(Experiment == 'picrotoxin + \nCGP5243
 
 # RESTING MEMBRANE POTENTIAL
 bp_BLA_vm <- plot_boxplot(BLA_df_final, RMS, ylabel = "Resting membrane potential (mV)", mtitle = "BLA", vary1 = -90, vary2 = -45, dot_size = 2)
-bp_BLA_vm <- bp_BLA_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_BLA_inter_vm <- plot_boxplot(BLA_df_inter, RMS, ylabel = "Resting membrane potential (mV)", mtitle = "BLA - interneurons", vary1 = -80, vary2 = -40, dot_size = 2)
-bp_BLA_inter_vm <- bp_BLA_inter_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_BLA_vm <- bp_BLA_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), , 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 pie_BLA_frak_vm <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(RMS, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_BLA_frak5nM_vm <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(RMS, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -188,10 +174,8 @@ pie_BLA_picro_vm <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP524
 
 # ACTION POTENTIAL WIDTH
 bp_BLA_apw <- plot_boxplot(BLA_df_final, AP_width1_all, ylabel = "Action potential width (ms)", mtitle = "BLA", vary1 = 0.5, vary2 = 1.5, dot_size = 2)
-bp_BLA_apw  <- bp_BLA_apw  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_BLA_inter_apw  <- plot_boxplot(BLA_df_inter, AP_width1_all, ylabel = "Action potential width (ms)", mtitle = "BLA - interneurons", vary1 = 0.5, vary2 = 1.5, dot_size = 2)
-bp_BLA_inter_apw  <- bp_BLA_inter_apw  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_BLA_apw  <- bp_BLA_apw  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 pie_BLA_frak_apw  <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(AP_width1_all, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_BLA_frak5nM_apw  <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(AP_width1_all, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -205,10 +189,8 @@ pie_BLA_picro_apw  <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP5
 
 # ACTION POTENTIAL AMPLITUDE
 bp_BLA_apa <- plot_boxplot(BLA_df_final, AP_amp1_all, ylabel = "Action potential amplitude (pA)", mtitle = "BLA", vary1 = 50, vary2 = 120, dot_size = 2)
-bp_BLA_apa <- bp_BLA_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_BLA_inter_apa <- plot_boxplot(BLA_df_inter, AP_amp1_all, ylabel = "Action potential amplitude (pA)", mtitle = "BLA - interneurons", vary1 = 40, vary2 = 90, dot_size = 2)
-bp_BLA_inter_apa <- bp_BLA_inter_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_BLA_apa <- bp_BLA_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 pie_BLA_frak_apa <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(AP_amp1_all, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_BLA_frak5nM_apa <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(AP_amp1_all, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -222,10 +204,8 @@ pie_BLA_picro_apa <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52
 
 # FAST AHP
 bp_BLA_fast <- plot_boxplot(BLA_df_final, AHPf1_all, ylabel = "fast AHP (pA)", mtitle = "BLA", vary1 = -25, vary2 = 7, dot_size = 2)
-bp_BLA_fast <- bp_BLA_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_BLA_inter_fast <- plot_boxplot(BLA_df_inter, AHPf1_all, ylabel = "fast AHP (pA)", mtitle = "BLA - interneurons", vary1 = -25, vary2 = -10, dot_size = 2)
-bp_BLA_inter_fast <- bp_BLA_inter_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_BLA_fast <- bp_BLA_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 pie_BLA_frak_fast <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(AHPf1_all, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_BLA_frak5nM_fast <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(AHPf1_all, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -236,46 +216,96 @@ pie_BLA_minofrak_fast <- BLA_df_final %>% filter(Experiment == 'minocycline + \n
 pie_BLA_mino_fast <- BLA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie2(AHPf1_all, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_BLA_picro_fast <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% plot_pie2(AHPf1_all, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
+layout <- '
+ABCDEZGH
+IIIIIIII
+JKLMNOPR'
 
 
+figure1 <- (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_gain + theme(legend.position = "none")) /  ((pie_BLA_frak_gain | pie_BLA_frak5nM_gain |  pie_BLA_antifrak_gain | pie_BLA_azdfrak_gain | pie_BLA_azd_gain | pie_BLA_minofrak_gain | pie_BLA_mino_gain | pie_BLA_picro_gain) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))   # gain
 
-figure1 <- ggarrange(#ggarrange(bp_BLA_gain, nrow =1), #first row - gain
-                     #ggarrange(pie_BLA_frak_gain, pie_BLA_frak5nM_gain, pie_BLA_antifrak_gain, pie_BLA_azdfrak_gain, pie_BLA_azd_gain, pie_BLA_minofrak_gain, pie_BLA_mino_gain, pie_BLA_picro_gain, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - gain
-                    # ggarrange(bp_BLA_inter_gain, NA, nrow =1), # interneurons
-                     ggarrange(bp_BLA_thres, nrow =1), #first row - thres
-                     ggarrange(pie_BLA_frak_thres, pie_BLA_frak5nM_thres, pie_BLA_antifrak_thres, pie_BLA_azdfrak_thres, pie_BLA_azd_thres, pie_BLA_minofrak_thres, pie_BLA_mino_thres, pie_BLA_picro_thres, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - thres
-                   #  ggarrange(bp_BLA_inter_thres, NA, nrow =1), # interneurons
-                   #  ggarrange(bp_BLA_adap, nrow =1), #first row - adap
-                   #  ggarrange(pie_BLA_frak_adap, pie_BLA_frak5nM_adap, pie_BLA_antifrak_adap, pie_BLA_azdfrak_adap, pie_BLA_azd_adap, pie_BLA_minofrak_adap, pie_BLA_mino_adap, pie_BLA_picro_adap, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - adap
-                   #  ggarrange(bp_BLA_inter_adap, NA, nrow =1), # interneurons
-                   #  ggarrange(bp_BLA_rm, nrow =1), #first row - rm
-                   #  ggarrange(pie_BLA_frak_rm, pie_BLA_frak5nM_rm, pie_BLA_antifrak_rm, pie_BLA_azdfrak_rm, pie_BLA_azd_rm, pie_BLA_minofrak_rm, pie_BLA_mino_rm, pie_BLA_picro_rm, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - rm
-                   #  ggarrange(bp_BLA_inter_rm, NA, nrow =1), # interneurons
-                   #  ggarrange(bp_BLA_tau, nrow =1), #first row - tau
-                   #  ggarrange(pie_BLA_frak_tau, pie_BLA_frak5nM_tau, pie_BLA_antifrak_tau, pie_BLA_azdfrak_tau, pie_BLA_azd_tau, pie_BLA_minofrak_tau, pie_BLA_mino_tau, pie_BLA_picro_tau, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - tau
-                   #  ggarrange(bp_BLA_inter_tau, NA, nrow =1), # interneurons
-                  #   ggarrange(bp_BLA_cap, nrow =1), #first row - cap
-                  #   ggarrange(pie_BLA_frak_cap, pie_BLA_frak5nM_cap, pie_BLA_antifrak_cap, pie_BLA_azdfrak_cap, pie_BLA_azd_cap, pie_BLA_minofrak_cap, pie_BLA_mino_cap, pie_BLA_picro_cap, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - cap
-                 #    ggarrange(bp_BLA_inter_cap, NA, nrow =1), # interneurons
-                  #   ggarrange(bp_BLA_vm, nrow =1), #first row - vm
-                  #   ggarrange(pie_BLA_frak_vm, pie_BLA_frak5nM_vm, pie_BLA_antifrak_vm, pie_BLA_azdfrak_vm, pie_BLA_azd_vm, pie_BLA_minofrak_vm, pie_BLA_mino_vm, pie_BLA_picro_vm, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - vm
-                   #  ggarrange(bp_BLA_inter_vm, NA, nrow =1), # interneurons
-                   #  ggarrange(bp_BLA_apw, nrow =1), #first row - apw
-                   #  ggarrange(pie_BLA_frak_apw, pie_BLA_frak5nM_apw, pie_BLA_antifrak_apw, pie_BLA_azdfrak_apw, pie_BLA_azd_apw, pie_BLA_minofrak_apw, pie_BLA_mino_apw, pie_BLA_picro_apw, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - apw
-                   #  ggarrange(bp_BLA_inter_apw, NA, nrow =1), # interneurons
-                   #  ggarrange(bp_BLA_apa, nrow =1), #first row - apa
-                   #  ggarrange(pie_BLA_frak_apa, pie_BLA_frak5nM_apa, pie_BLA_antifrak_apa, pie_BLA_azdfrak_apa, pie_BLA_azd_apa, pie_BLA_minofrak_apa, pie_BLA_mino_apa, pie_BLA_picro_apa, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - apa
-                  #   ggarrange(bp_BLA_inter_apa, NA, nrow =1), # interneurons
-                  #   ggarrange(bp_BLA_fast, nrow =1), #first row - fast
-                   #  ggarrange(pie_BLA_frak_fast, pie_BLA_frak5nM_fast, pie_BLA_antifrak_fast, pie_BLA_azdfrak_fast, pie_BLA_azd_fast, pie_BLA_minofrak_fast, pie_BLA_mino_fast, pie_BLA_picro_fast, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - fast
-                   #  ggarrange(bp_BLA_inter_fast, NA,  nrow =1), # interneurons
-                   #  ggarrange(bp_BLA_sag, nrow =1), #first row - sag
-                   #  ggarrange(pie_BLA_frak_sag, pie_BLA_frak5nM_sag, pie_BLA_antifrak_sag, pie_BLA_azdfrak_sag, pie_BLA_azd_sag, pie_BLA_minofrak_sag, pie_BLA_mino_sag, pie_BLA_picro_sag, nrow = 1, common.legend = TRUE, legend = 'bottom'), # pie charts - sag
-                   #  ggarrange(bp_BLA_inter_sag, NA, nrow =1), # interneurons
-                     nrow = 2, heights = c(1, 0.8)) # , 1, 1, 0.8, 1, 1, 0.8, 1, 1, 0.8, 1, 1, 0.8, 1, 1, 0.8, 1, 1, 0.8, 1, 1, 0.8, 1, 1, 0.8, 1, 1, 0.8, 1
+#figure1 <- figure1 + plot_layout(heights = c(1, 2, 1)) + wrap_plots(A= inset_frak2nM, B= inset_frak5nM, C= inset_ab, D = inset_azdfrak2nM, E= inset_azda, Z= inset_minofrak2nM, G= inset_minoa, H = inset_gaba, I = bp_BLA_gain, J= pie_BLA_frak_gain, K=pie_BLA_frak5nM_gain,  L=pie_BLA_antifrak_gain,  M= pie_BLA_azdfrak_gain, N = pie_BLA_azd_gain, O= pie_BLA_minofrak_gain, P= pie_BLA_mino_gain, R= pie_BLA_picro_gain, design = layout)
+
+figure1 <- figure1 + plot_layout(heights = c(1, 2, 1))
+
 figure1
 
 
+figure2 <-   (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_adap + theme(legend.position = "none")) /  ((pie_BLA_frak_adap | pie_BLA_frak5nM_adap |  pie_BLA_antifrak_adap | pie_BLA_azdfrak_adap | pie_BLA_azd_adap | pie_BLA_minofrak_adap | pie_BLA_mino_adap | pie_BLA_picro_adap) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+
+figure2 <- figure2 + plot_layout(heights = c(1, 2, 1))   
+
+figure2
+
+figure3 <-   (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_rm + theme(legend.position = "none")) /  ((pie_BLA_frak_rm | pie_BLA_frak5nM_rm |  pie_BLA_antifrak_rm | pie_BLA_azdfrak_rm | pie_BLA_azd_rm | pie_BLA_minofrak_rm | pie_BLA_mino_rm | pie_BLA_picro_rm) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+
+figure3 <- figure3 + plot_layout(heights = c(1, 2, 1))   
+
+figure3
+
+figure4 <-   (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_tau + theme(legend.position = "none")) /  ((pie_BLA_frak_tau | pie_BLA_frak5nM_tau |  pie_BLA_antifrak_tau | pie_BLA_azdfrak_tau | pie_BLA_azd_tau | pie_BLA_minofrak_tau | pie_BLA_mino_tau | pie_BLA_picro_tau) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+
+figure4 <- figure4 + plot_layout(heights = c(1, 2, 1))   
+
+figure4
+
+#cap
+
+figure5 <-   (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_cap + theme(legend.position = "none")) /  ((pie_BLA_frak_cap | pie_BLA_frak5nM_cap |  pie_BLA_antifrak_cap | pie_BLA_azdfrak_cap | pie_BLA_azd_cap | pie_BLA_minofrak_cap | pie_BLA_mino_cap | pie_BLA_picro_cap) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+
+figure5 <- figure5 + plot_layout(heights = c(1, 2, 1))   
+
+figure5
+
+#vm
+
+figure6 <-   (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_vm + theme(legend.position = "none")) /  ((pie_BLA_frak_vm | pie_BLA_frak5nM_vm |  pie_BLA_antifrak_vm | pie_BLA_azdfrak_vm | pie_BLA_azd_vm | pie_BLA_minofrak_vm | pie_BLA_mino_vm | pie_BLA_picro_vm) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+
+figure6 <- figure6 + plot_layout(heights = c(1, 2, 1))   
+
+figure6
+
+# apw
+
+figure7 <-   (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_apw + theme(legend.position = "none")) /  ((pie_BLA_frak_apw | pie_BLA_frak5nM_apw |  pie_BLA_antifrak_apw | pie_BLA_azdfrak_apw | pie_BLA_azd_apw | pie_BLA_minofrak_apw | pie_BLA_mino_apw | pie_BLA_picro_apw) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+
+figure7 <- figure7 + plot_layout(heights = c(1, 2, 1))   
+
+figure7
+
+# apa
+
+figure8 <-   (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_apa + theme(legend.position = "none")) /  ((pie_BLA_frak_apa | pie_BLA_frak5nM_apa |  pie_BLA_antifrak_apa | pie_BLA_azdfrak_apa | pie_BLA_azd_apa | pie_BLA_minofrak_apa | pie_BLA_mino_apa | pie_BLA_picro_apa) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+
+figure8 <- figure8 + plot_layout(heights = c(1, 2, 1))   
+
+figure8
+
+# fast
+
+figure9 <-   (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_fast + theme(legend.position = "none")) /  ((pie_BLA_frak_fast | pie_BLA_frak5nM_fast |  pie_BLA_antifrak_fast | pie_BLA_azdfrak_fast | pie_BLA_azd_fast | pie_BLA_minofrak_fast | pie_BLA_mino_fast | pie_BLA_picro_fast) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+
+figure9 <- figure9 + plot_layout(heights = c(1, 2, 1))   
+
+figure9
+
+# sag
+
+figure10 <-   (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_sag + theme(legend.position = "none")) /  ((pie_BLA_frak_sag | pie_BLA_frak5nM_sag |  pie_BLA_antifrak_sag | pie_BLA_azdfrak_sag | pie_BLA_azd_sag | pie_BLA_minofrak_sag | pie_BLA_mino_sag | pie_BLA_picro_sag) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+
+figure10 <- figure10 + plot_layout(heights = c(1, 2, 1))   
+
+figure10
 
 ```
 

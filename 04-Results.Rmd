@@ -22,16 +22,37 @@ To explore how CX3CL1 impacts electrophysiological features in the BLA,
 #### CX3CR1 activation reduces excitability of principal neurons in the rat BLA
 
 ```{r CX3CL1_BLA_excitability_stats, include = FALSE}
-CX3CL1_2nM_BLA_gain_stat <- formattable(stat_table_exp((BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)')), gain))
-CX3CL1_2nM_BLA_thres_stat <- formattable(stat_table_exp((BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)')), Treshold1_all))
-CX3CL1_5nM_BLA_thres_stat <- formattable(stat_table_exp((BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)')), Treshold1_all))
+# getting the table of statistics
+CX3CL1_2nM_BLA_stat_df <- (stat_table_exp_membr_extended((BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)'))))
+# selecting a stat_row so it prints nicely in text
+CX3CL1_2nM_BLA_stat_tres <- as.data.frame(CX3CL1_2nM_BLA_stat_df %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
 
-CX3CL1_azd_BLA_thres_stat <- formattable(stat_table_exp((BLA_df_final %>% filter(Experiment == 'AZD8797')), Treshold1_all))
+CX3CL1_5nM_BLA_stat_df <- (stat_table_exp_membr_extended((BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)'))))
+CX3CL1_5nM_BLA_stat_tres <- as.data.frame(CX3CL1_5nM_BLA_stat_df %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+
+
+CX3CL1_azdfrak2nM_BLA_stat_df <- (stat_table_exp_membr_extended((BLA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)'))))
+CX3CL1_azdfrak2nM_BLA_stat_tres <- as.data.frame(CX3CL1_azdfrak2nM_BLA_stat_df  %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+
+CX3CL1_azda_BLA_stat_df <- (stat_table_exp_membr_extended((BLA_df_final %>% filter(Experiment == 'AZD8797'))))
+CX3CL1_azda_BLA_stat_tres <- as.data.frame(CX3CL1_azda_BLA_stat_df  %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+
+
+CX3CL1_minofrak2nM_BLA_stat_df <- (stat_table_exp_membr_extended((BLA_df_final %>% filter(Experiment == 'minocycline + \nCX3CL1(2nM)'))))
+CX3CL1_minofrak2nM_BLA_stat_tres <- as.data.frame(CX3CL1_minofrak2nM_BLA_stat_df %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+
+CX3CL1_minoa_BLA_stat_df <- (stat_table_exp_membr_extended((BLA_df_final %>% filter(Experiment == 'minocycline'))))
+CX3CL1_minoa_BLA_stat_tres <- as.data.frame(CX3CL1_minoa_BLA_stat_df %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+
+CX3CL1_gabafrak2nM_BLA_stat_df <- (stat_table_exp_membr_extended((BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))))
+CX3CL1_gabafrak2nM_BLA_stat_tres <- as.data.frame(CX3CL1_gabafrak2nM_BLA_stat_df %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+
+
 ```
 
 Given that principal cells' excitability has been consistently reported to influence not only activity within the BLA complex, but also in the CeA, and within ITCs clusters (see Section \@ref(BLAstructure)), this study investigated whether CX3CL1 may regulate excitability of those cells.<!-- First, I was interested in determining whether CX3CL1 affect any membrane properties of principal neurons in the BLA. Considering their efferents , the regulation of firing in those neurons is thought to have critical impact not only on other pyramidal cells within the BLA complex, but also on ITCs clusters and the CeA complex.// As these neurons receive many inputs from broad array of structures *in vivo*, together with their //   -->
-The results presented here show that following CX3CL1 application, the gain remained unchanged (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, CX3CL1(2nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`), whereas the threshold current was significantly decreased, compared to baseline (from `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` to `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, nr of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)) %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, nr of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`,  t = `r round(CX3CL1_2nM_BLA_thres_stat$Statistics[1], digits = 2)`, df = `r CX3CL1_2nM_BLA_thres_stat$Df[1]`,  p = `r round(CX3CL1_2nM_BLA_thres_stat$Paired_Test[1], digits = 3)`, `r CX3CL1_2nM_BLA_thres_stat$Method[1]`).
-This effect was also replicated in higher dose (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)) %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, nr of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`,   t = `r round(CX3CL1_5nM_BLA_thres_stat$Statistics[1], digits = 2)`, df = `r CX3CL1_5nM_BLA_thres_stat$Df[1]`,  p = `r round(CX3CL1_5nM_BLA_thres_stat$Paired_Test[1], digits = 3)`, `r CX3CL1_5nM_BLA_thres_stat$Method[1]`).  
+The results presented here show that following CX3CL1 application, the gain remained unchanged (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, CX3CL1(2nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`), whereas the threshold current was significantly decreased, compared to baseline (from `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` to `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, no. of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, no. of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_2nM_BLA_stat_tres`).
+This effect was also replicated in higher dose (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, no. of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_5nM_BLA_stat_tres`).  
 <!-- ale czy efekt nie większy dla CX3CL1? MIXED / REPEATED MEASURE ANOVA AND INTERACTION? -->
 To validate whether this effect is dependent on CX3CR1, a receptor of CX3CL1, the two approaches were used. 
 First, before recordings, a subset of slices was incubated with antibody against CX3CR1 <!--jakieć cytowanie które też tak robiło? -->.
@@ -41,19 +62,69 @@ According to the chemical study, which tested this substance, the K~i~ was ... <
 Moreover, the dose of AZD8797 used .... was ... <!-- poprawić -->
 Thus, here we used 10 `r knitr::asis_output("\U03BC")`M.
 Of note, this chemical is dissolved in DMSO <!-- rozwinąć skrót --> and thus the recording ACSF was additionally supplemented with proper proportion (no more than 0.001%) of DMSO as a baseline condition. <!-- nie wiem czy to i powyższe zdania nie do metody... -->
-Similar to antibody against CX3CR1, AZD8797 effectively<!--successively?--> blocked the CX3CL1-induced reduction in principal cells' excitability, manifested as increased threshold current (Fig. \@ref(fig:CX3CL1BLAexcitability)).
-As an additional control, sole AZD8797 was bath-applied on BLA-containing slices while recordings were made from a principal cell, and no differences were observed (Fig. \@ref(fig:CX3CL1BLAexcitability); baseline in DMSO = `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "AZD8797") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "AZD8797") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)) %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, nr of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'AZD8797') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`,   t = `r round(CX3CL1_azd_BLA_thres_stat$Statistics[1], digits = 2)`, df = `r CX3CL1_azd_BLA_thres_stat$Df[1]`,  p = `r round(CX3CL1_azd_BLA_thres_stat$Paired_Test[1], digits = 3)`, `r CX3CL1_azd_BLA_thres_stat$Method[1]`).<!-- zdecydowanie poprawić to zdanie-->
+Similar to antibody against CX3CR1, AZD8797 effectively<!--successively?--> blocked the CX3CL1-induced reduction in principal cells' excitability, manifested as increased threshold current (Fig. \@ref(fig:CX3CL1BLAexcitability), `r CX3CL1_azdfrak2nM_BLA_stat_tres`).
+As an additional control, sole AZD8797 was bath-applied on BLA-containing slices while recordings were made from a principal cell, and no differences were observed (Fig. \@ref(fig:CX3CL1BLAexcitability); baseline in DMSO = `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "AZD8797") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "AZD8797") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'AZD8797') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, no. of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'AZD8797') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_azda_BLA_stat_tres`.<!-- zdecydowanie poprawić to zdanie-->
 
-Given that the CX3CR1 receptor is mostly expressed on microglia, the protocol to pharmacologically inhibit microglial cells using minocycline on acute brain slices were adapted from other studies. <!-- citations--> 
-As presented on Fig. \@ref(fig:CX3CL1BLAexcitability), the inhibition of microglia also diminished the CX3CL1-induced effect on threshold current ()
+Since it is well-known that the CX3CR1 receptor is mostly expressed on microglia, the protocol to pharmacologically inhibit microglial cells using minocycline on acute brain slices were adapted from other studies. <!-- citations--> 
+As presented on Fig. \@ref(fig:CX3CL1BLAexcitability), the inhibition of microglia also diminished the CX3CL1-induced effect on threshold current (`r CX3CL1_minofrak2nM_BLA_stat_tres`).
+Interestingly, the minocycline applied solely increased the threshold current of PCs, in contrast to what was observed following CX3CL1 treatment (\@ref(fig:CX3CL1BLAexcitability); baseline = `r round(BLA_df_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` minocycline (100`r knitr::asis_output("U03BC")`M) = `r round(BLA_df_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'minocycline') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, no. of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'minocycline') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_minoa_BLA_stat_tres`). 
 
+Finally, considering that the activity of principal cells in the BLA is well-known to be tightly controlled by heterogeneous group of interneurons, I investigated whether blocking GABA~A~ and GABA~B~  would eliminate the effect of CX3CL1.
+As expected, the CX3CL1 effect was not present when the GABAergic receptors were blocked (Fig. \@ref(fig:CX3CL1BLAexcitability), `r CX3CL1_gabafrak2nM_BLA_stat_tres`).
+Thus, these findings suggest that CX3CL1 reduces principal cells' activity *via* CX3CR1-, microglia-, and interneuron-dependent manner.
 
+```{r CX3CL1BLAexcitability, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE, fig.height= 20, fig.width= 15, echo = FALSE, warning= FALSE, message = FALSE}
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+library(magick)
+library(patchwork)
+inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
+inset_frak2nM <- image_ggplot(inset_frak2nM)
+inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
+inset_frak5nM <- image_ggplot(inset_frak5nM)
+inset_ab <- image_read("images//results//inset_ab.png")
+inset_ab <- image_ggplot(inset_ab)
+inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
+inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
+inset_azda <- image_read("images//results//inset_azd.png")
+inset_azda <- image_ggplot(inset_azda)
+inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
+inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
+inset_minoa <- image_read("images//results//inset_minoa.png")
+inset_minoa <- image_ggplot(inset_minoa)
+inset_gaba <- image_read("images//results//inset_gaba.png")
+inset_gaba <- image_ggplot(inset_gaba)
 
-Treatment with GABA~A~ antagonist bicuculline (100 lM) fully and reversibly abolished the neuronal response to GABA.
+# making labels (as minocycline and azd has different condition than CX3CL1) for then making proper automatic statistics 
+f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
+f_labels_BLA_thres$Experiment <- factor(f_labels_BLA_thres$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
 
-```{r CX3CL1BLAexcitability, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images/CX3CL1BLAexcitability.png")
+# making boxplot
+bp_BLA_thres <- plot_boxplot(BLA_df_final, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "", vary1 = -55, vary2 = -20, dot_size = 2)
+bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres) #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
+
+# making pies chart for every condition
+pie_BLA_frak_thres <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_BLA_frak5nM_thres <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(Treshold1_all, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_BLA_antifrak_thres <- BLA_df_final %>% filter(Experiment == 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_BLA_azdfrak_thres <- BLA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_BLA_azd_thres <- BLA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(Treshold1_all, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_BLA_minofrak_thres <- BLA_df_final %>% filter(Experiment == 'minocycline + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_BLA_mino_thres <- BLA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(Treshold1_all, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_BLA_picro_thres <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+figure1 <- (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
+  (bp_BLA_thres + theme(legend.position = "none")) /  ((pie_BLA_frak_thres | pie_BLA_frak5nM_thres |  pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_azd_thres | pie_BLA_minofrak_thres | pie_BLA_mino_thres | pie_BLA_picro_thres) +  plot_layout(guides = "collect") & theme(legend.position = "bottom"))  
+
+figure1 <- figure1 + plot_layout(heights = c(1, 4, 1))   
+
+figure1
 ```
+
+#### CX3CL1 decreases inhibitory synaptic transmission
+
+Next, 
+
+
 #### Pyramidal-like neurons in the BLA are sensitive to the CX3CL1 activation
 
 #### Pyramidal-like neurons in the BLA inhibits ....

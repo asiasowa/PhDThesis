@@ -24,7 +24,7 @@ To explore how CX3CL1 impacts electrophysiological features in the BLA,
 
 #### CX3CR1 activation reduces excitability of principal neurons in the rat BLA
 
-```{r CX3CL1_BLA_excitability_stats, include = FALSE}
+```{r CX3CL1BLAexcitabilitystats, include = FALSE}
 # getting the table of statistics
 CX3CL1_2nM_BLA_stat_df <- (stat_table_exp_membr_extended((BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)'))))
 # selecting a stat_row so it prints nicely in text
@@ -56,12 +56,11 @@ CX3CL1_gabafrak2nM_BLA_stat_tres <- as.data.frame(CX3CL1_gabafrak2nM_BLA_stat_df
 Considering immunohistochemical findings that CX3CL1 shown higher expression of CX3CL1 in the BLA under basal conditions, it might modulate neuronal activity and excitability in this area. 
 To test this hypothesis, it was investigated whether CX3CL1 could directly affect the excitability of principal cells, the most numerous neurons in the BLA, recorded using a whole-cell patch-clamp approach, in a current-clamp configuration.<!--Given that principal cells' excitability has been consistently reported to influence not only activity within the BLA complex, but also in the CeA, and within ITCs clusters (see Section \@ref(BLAstructure)), this study investigated whether CX3CL1 may regulate excitability of those cells. First, I was interested in determining whether CX3CL1 affect any membrane properties of principal neurons in the BLA. Considering their efferents , the regulation of firing in those neurons is thought to have critical impact not only on other pyramidal cells within the BLA complex, but also on ITCs clusters and the CeA complex.// As these neurons receive many inputs from broad array of structures *in vivo*, together with their // -->
 The results presented here show that following CX3CL1 application, the gain remained unchanged (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, CX3CL1(2nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`), whereas the threshold current was significantly decreased, compared to baseline (from `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` to `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, no. of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, no. of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_2nM_BLA_stat_tres`).
-This effect was also replicated in higher dose (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, no. of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_5nM_BLA_stat_tres`). 
-<!-- ale czy efekt nie większy dla CX3CL1? MIXED / REPEATED MEASURE ANOVA AND INTERACTION? -->
+This effect was also replicated in higher dose (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, no. of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_5nM_BLA_stat_tres`). <!-- ale czy efekt nie większy dla CX3CL1? MIXED / REPEATED MEASURE ANOVA AND INTERACTION? -->
 To validate whether this effect is dependent on CX3CR1, a receptor of CX3CL1, the two approaches were used. 
-First, before recordings, a subset of slices was incubated with antibody against CX3CR1 <!--jakieć cytowanie które też tak robiło? -->.
+First, before recordings, a subset of slices was incubated with antibody against CX3CR1. <!--jakieć cytowanie które też tak robiło? + dawka?-->
 The incubation with CX3CR1 antibody seemed to abolished this effect (Fig. \@ref(fig:CX3CL1BLAexcitability)).
-However, as the slices used in this study had were 300 `r knitr::asis_output("\U03BC")`m thin, and the penetration of antibodies are estimated as 50<!-- citation-->, this dependency was additionally confirmed using pharmacological inhibition using CX3CR1 receptor antagonist, AZD8797.
+However, as the slices used in this study were 300 `r knitr::asis_output("\U03BC")`m thin, and the penetration of antibodies are estimated as 50<!-- citation-->, this dependency was additionally confirmed using pharmacological inhibition using CX3CR1 receptor antagonist, AZD8797.
 According to the chemical study, which tested this substance, the K~i~ was ... <!-- poprawić -->.
 Moreover, the dose of AZD8797 used .... was ... <!-- poprawić -->
 Thus, here we used 10 `r knitr::asis_output("\U03BC")`M.
@@ -69,21 +68,18 @@ Of note, this chemical is dissolved in DMSO <!-- rozwinąć skrót --> and thus 
 Similar to antibody against CX3CR1, AZD8797 effectively<!--successively?--> blocked the CX3CL1-induced reduction in principal cells' excitability, manifested as increased threshold current (Fig. \@ref(fig:CX3CL1BLAexcitability), `r CX3CL1_azdfrak2nM_BLA_stat_tres`).
 As an additional control, sole AZD8797 was bath-applied on BLA-containing slices while recordings were made from a principal cell, and no differences were observed (Fig. \@ref(fig:CX3CL1BLAexcitability); baseline in DMSO = `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "AZD8797") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'AZD8797' & Condition == "AZD8797") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'AZD8797') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, no. of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'AZD8797') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_azda_BLA_stat_tres`.<!-- zdecydowanie poprawić to zdanie-->
 
-Since it is well-known that the CX3CR1 receptor is mostly expressed on microglia, I wanted to investigate the possible involvement of microglia in mediating CX3CL1-induced reduction of PCs excitability. <!-- citations--> <!--wcześniej : the protocol to pharmacologically inhibit microglial cells using minocycline on acute brain slices were adapted from other studies. // Since we found that CXCR6 is functionally expressed on microglia (see Fig. 2), we wanted to investigate the possible involvement of microglia in mediating CXCL16-induced neuroprotective effect. For this reason we pretreated hippocampal neuronal cultures with minocycline, a tetracycline-like antibiotic known to inhibit microglia activation, before Glu insult.
+Since it is well-known that the CX3CR1 receptor is mostly expressed on microglia, I wanted to investigate the possible involvement of microglia in mediating CX3CL1-induced reduction of PCs excitability.<!-- citations--><!--wcześniej : the protocol to pharmacologically inhibit microglial cells using minocycline on acute brain slices were adapted from other studies. // Since we found that CXCR6 is functionally expressed on microglia (see Fig. 2), we wanted to investigate the possible involvement of microglia in mediating CXCL16-induced neuroprotective effect. For this reason we pretreated hippocampal neuronal cultures with minocycline, a tetracycline-like antibiotic known to inhibit microglia activation, before Glu insult.
 -->
-For this reason, the slices were pretreated and recorded in the presence of minocycline, a tetracycline-like antibiotic known to inhibit microglia activation, before and during CX3CL1 application.
-As presented in Fig. \@ref(fig:CX3CL1BLAexcitability), the inhibition of microglia also diminished the CX3CL1-induced effect on threshold current (`r CX3CL1_minofrak2nM_BLA_stat_tres`).
+For this reason, the slices were pretreated in the presence of minocycline, a tetracycline-like antibiotic known to inhibit microglia activation, before and during CX3CL1 application.
+As presented in Fig. \@ref(fig:CX3CL1BLAexcitability), the inhibition of microglia also diminished the CX3CL1-induced effect on threshold current (`r CX3CL1_minofrak2nM_BLA_stat_tres`, \@ref(fig:CX3CL1BLAexcitability)).
 Interestingly, the minocycline applied alone increased the threshold current of PCs, in contrast to what was observed following CX3CL1 treatment (\@ref(fig:CX3CL1BLAexcitability); baseline = `r round(BLA_df_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` minocycline (100`r knitr::asis_output("U03BC")`M) = `r round(BLA_df_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, number of neurons = `r BLA_df_final %>% filter(Experiment == 'minocycline') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, no. of animals = `r BLA_df_final %>% dplyr::filter(Experiment == 'minocycline') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_minoa_BLA_stat_tres`). 
 Thus, this finding highlights the potential importance of microglial functions in regulating the activity of neurons in the BLA. 
 
-Finally, it should be noted that 
-Finally, considering that the activity of principal cells in the BLA is well-known to be tightly controlled by heterogeneous group of interneurons, I investigated whether blocking GABA~A~ and GABA~B~ would eliminate the effect of CX3CL1.
-As expected, the CX3CL1 effect was not present when the GABAergic receptors were blocked (Fig. \@ref(fig:CX3CL1BLAexcitability), `r CX3CL1_gabafrak2nM_BLA_stat_tres`).
-Thus, these findings suggest that CX3CL1 reduces principal cells' activity *via* CX3CR1-, microglia-, and interneuron-dependent manner.
+Finally, considering that the activity of principal cells in the BLA is well-known to be tightly controlled by heterogeneous group of interneurons, I investigated whether blocking GABA~A~ and GABA~B~ receptors would eliminate the effect of CX3CL1, in the presence of picrotoxin (100 M) and CGP... (), respectively. <!-- dawki Treatment with both GABA~A~ and GABA~B~ antagonists (picrotoxin, 100 ... and ) ... fully abolished the neuronal response to CX3CL1.--> 
+As expected, the CX3CL1 effect was abolished when the GABAergic receptors were blocked (Fig. `r CX3CL1_gabafrak2nM_BLA_stat_tres`, \@ref(fig:CX3CL1BLAexcitability)).
+Thus, these data suggest that CX3CL1 reduces principal cells' activity *via* CX3CR1-, microglia-, and interneuron-dependent manner.
 
-Treatment with both GABA~A~ and GABA~B~ antagonists (picrotoxin, 100 ... and ) ... fully abolished the neuronal response to CX3CL1.
-
-```{r CX3CL1BLAexcitability, fig.cap='**Effects of CX3CL1 on threshold current** **a** Schematics of presented conditions **b** Boxplots presenting each cell before and after CX3CL1 application in each condition **c** Pie charts presenting how cells reacted to CX3CL1 **d** plots presenting input-output relationships of representative cells **e** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 100ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE}
+```{r CX3CL1BLAexcitability, fig.cap='**Effects of CX3CL1 on threshold current** **a** Schematics of presented conditions **b** Boxplots presenting each cell before and after CX3CL1 application in each condition **c** Pie charts presenting how cells reacted to CX3CL1 **d** plots presenting input-output relationships of representative cells **e** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE}
 knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 # library(magick)
@@ -171,21 +167,54 @@ knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
 #### CX3CL1 decreases inhibitory synaptic transmission
 
-As the results presented here indicated that CX3CL1 effect is mediated by GABA~A~ and GABA~B~ receptors, the possible influence of CX3CL1 on the inhibitory transmission onto BLA PCs was next explored in *in vitro* slices.<!-- Next, We next explored the possible influence of harmine on the GABAergic transmission onto BA PNs. -->
+```{r CX3CL1BLAsIPSCstats, include = FALSE}
+
+# subsetting needed conditions from dataframe
+BLA_sIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline"))
+BLA_mIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)"))
+
+# getting the table of statistics
+CX3CL1_2nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'CX3CL1(2nM)'))))
+# selecting a stat_row so it prints nicely in text
+CX3CL1_2nM_BLA_stat_sIPSC_freq <- as.data.frame(CX3CL1_2nM_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+
+CX3CL1_5nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'CX3CL1(5nM)'))))
+CX3CL1_5nM_BLA_stat_sIPSC_freq <- as.data.frame(CX3CL1_5nM_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+
+
+CX3CL1_azdfrak5nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'AZD8797 + \nCX3CL1(5nM)'))))
+CX3CL1_azdfrak5nM_BLA_stat_sIPSC_freq <- as.data.frame(CX3CL1_azdfrak5nM_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+
+CX3CL1_azda_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'AZD8797'))))
+CX3CL1_azda_BLA_stat_tres <- as.data.frame(CX3CL1_azda_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+
+
+CX3CL1_minofrak5nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'minocycline + \nCX3CL1(5nM)'))))
+CX3CL1_minofrak5nM_BLA_stat_tres <- as.data.frame(CX3CL1_minofrak5nM_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+
+CX3CL1_minoa_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'minocycline'))))
+CX3CL1_minoa_BLA_stat_tres <- as.data.frame(CX3CL1_minoa_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+
+```
+
+As the results presented above indicated that CX3CL1 effect is mediated by GABA~A~ and GABA~B~ receptors, the possible influence of CX3CL1 on the inhibitory transmission onto BLA PCs was next explored in *in vitro* slices.<!-- Next, We next explored the possible influence of harmine on the GABAergic transmission onto BA PNs. -->
 Cells were clamped at 0 mV to record the spontaneous inhibitory postsynaptic currents (sIPSCs).<!-- Spontaneous inhibitory postsynaptic currents (sIPSCs) were recorded *via* whole-cell patch clamp recordings (held at −70 mV).  -->
-The representative traces of sIPSCs in the absence (referred to as baseline hereafter) or presence of CX3CL1 (2 and 5nM) (referred to as CX3CL1) are shown in Fig. <!--figureS1(A) // The effect of harmine on sIPSCs was shown in supplemental, Fig. S2.-->. 
-Compared to the control, CX3CL1 markedly reduced the GABAergic transmission onto principal cells in the BLA ().
+The representative traces of sIPSCs in the absence (referred to as baseline hereafter) or presence of CX3CL1 (2 and 5nM) (referred to as CX3CL1) are shown in Fig. \@ref(fig:CX3CL1BLAsIPSC).<!-- The effect of harmine on sIPSCs was shown in supplemental, Fig. S2.--> 
+Compared to the control, CX3CL1 markedly reduced the median frequency and amplitude of GABAergic transmission onto principal cells in the BLA (baseline: , CX3CL1(5nM): and baseline: , CX3CL1(5nM):, respectively).
 
-In parallel with this, the cumulative probability curve of sIPSC amplitude was considerably right-shifted (p = 0.0028, Kolmogorov–Smirnov test,supplemental, Fig. S2D). The cumulative probability curve of interevent interval, on the other hand, was left-shifted upon harmine treatment (p < 0.0001, Kolmogorov– Smirnov test, supplemental, Fig.S2E). <!-- zmienić -->
+<!-- nie wiem czy o tym pisać, pewnie by wypadało...
+In parallel with this, the cumulative probability curve of sIPSC amplitude was considerably right-shifted (p = 0.0028, Kolmogorov–Smirnov test,supplemental, Fig. S2D). 
+The cumulative probability curve of interevent interval, on the other hand, was left-shifted upon harmine treatment (p < 0.0001, Kolmogorov– Smirnov test, supplemental, Fig.S2E).  zmienić -->
 
-Further analysis of the IPSC kinetic parameters showed that the median rise times of the sIPSCs and mIPSCs from the two regions were similar whereas the median decay time and the median charge transfer varied (Figures S3 and 1f). <!-- ZMIENIĆ -->
+Further analysis of the IPSC kinetic parameters showed that the median rise times and decay times of the sIPSCs <!--and mIPSCs--> remained unchanged (baseline: , CX3CL1(5nM): and baseline: , CX3CL1(5nM):, respectively). <!-- może lepiej % + SEM? --> 
 
 To determine if the decrease in sIPSC frequency by CX3CL1 was due to a change in the spontaneous action potential firing in the slice, the TTX (500nM) was used to block neuronal firing and the mIPSC amplitude, frequency, and kinetics was measured before and after CX3CL1 application (also clamped at 0 mV).<!-- Alternatively: To determine whether there was a direct effect of CX3CL1 on GABAergic terminals, miniature mIPSC (mIPSCs) were recorded from principal cells. In these experiments TTX was used to block the action potentials. --> 
 
 
-In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which is further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)).
+In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which was further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)). <!-- może dodać o tendency i zrobić jednak nowy podrozdział?-->
 
-```{r CX3CL1BLAsIPSC, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 12, fig.width= 8}
+
+```{r CX3CL1BLAsIPSC, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 18, fig.width= 8}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 library(magick)
@@ -275,27 +304,29 @@ pie_frak2_m_dt_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_DecayTau, "CX3CL1
 pie_frak5_m_dt_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_DecayTau, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 #using patchwork to do layout of the figure
+# 
+# insets <- 
+# pies_frequency <-  
+# pies_amplitude <- 
 
-insets <- (inset_frak2nM | inset_frak5nM | inset_azdfrak5nM | inset_azda | inset_minofrak5nM | inset_minoa)
-pies_frequency <- ((pie_frak2_s_freq_sIPSC  | pie_frak5_s_freq_sIPSC  | pie_azdfrak5nM_s_freq_sIPSC  | pie_azd_s_freq_sIPSC  | pie_minofrak5nM_s_freq_sIPSC  | pie_mino_s_freq_sIPSC) + plot_layout(guides = "collect") & theme(legend.position = "bottom"))
-pies_amplitude <- ((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC) + plot_layout(guides = "collect") & theme(legend.position = "bottom"))
-
-figure1 <-  insets /
- (bp_BLA_s_freq_sIPSC + theme(legend.position = "none")) / 
-  pies_frequency / 
-  (bp_BLA_s_freq_sIPSC + theme(legend.position = "none")) / 
-  pies_frequency / 
+figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_azdfrak5nM | inset_azda | inset_minofrak5nM | inset_minoa)  + plot_layout(tag_level = 'new')) /
+ (bp_BLA_s_freq_sIPSC + theme(legend.position = "none"))  /
+  (((pie_frak2_s_freq_sIPSC  | pie_frak5_s_freq_sIPSC  | pie_azdfrak5nM_s_freq_sIPSC  | pie_azd_s_freq_sIPSC  | pie_minofrak5nM_s_freq_sIPSC  | pie_mino_s_freq_sIPSC)   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
+  (bp_BLA_s_amp_sIPSC + theme(legend.position = "none")) / 
+(((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC)   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
   (bp_BLA_s_rt_sIPSC + theme(legend.position = "none")) /
-  (bp_BLA_s_dt_sIPSC + theme(legend.position = "none")) 
+  (bp_BLA_s_dt_sIPSC + theme(legend.position = "none"))
+ #   / 
+  # 
+  # ((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC) + plot_layout(guides = "collect") & theme(legend.position = "bottom")  + plot_layout(tag_level = 'new')) / 
 
-figure1 <- figure1 +
- plot_annotation(tag_levels = 'a')# + plot_layout(heights = c(1, 2, 1, 1))
+
+figure1 <- figure1 + 
+  plot_annotation(tag_levels = c('a', '1'))# + plot_layout(heights = c(1, 2, 1, 1))
 
 figure1
 
 ```
-
-
 
 #### CX3CL1 inhibits the long-term potentiation in the BLA
 
@@ -318,6 +349,8 @@ To gain greater insights about the cellular localization of CXCL12 and CXCR4, th
 ### CX3CL1/CX3CR1 modulation of the electrical properties in CeA neurons
 
 ## CXCL12/CXCR4 in the BLA
+
+Finally, it should be noted that 
 
 ### Cellular distribution of CXCL12 and CXCR4 in the rat BLA
 

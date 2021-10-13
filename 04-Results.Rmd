@@ -185,269 +185,113 @@ To determine if the decrease in sIPSC frequency by CX3CL1 was due to a change in
 
 In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which is further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)).
 
-```{r CX3CL1BLAsIPSC, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 12, fig.width= 12}
+```{r CX3CL1BLAsIPSC, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 12, fig.width= 8}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 library(magick)
 library(patchwork)
+# loading needed subsets 
 inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
 inset_frak2nM <- image_ggplot(inset_frak2nM)
 inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
 inset_frak5nM <- image_ggplot(inset_frak5nM)
-inset_ab <- image_read("images//results//inset_ab.png")
-inset_ab <- image_ggplot(inset_ab)
-inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
-inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
+inset_azdfrak5nM <- image_read("images//results//inset_azdfrak5nM.png") # AZD5nM zrobić
+inset_azdfrak5nM <- image_ggplot(inset_azdfrak5nM)
 inset_azda <- image_read("images//results//inset_azd.png")
 inset_azda <- image_ggplot(inset_azda)
-inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
-inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
+inset_minofrak5nM <- image_read("images//results//inset_minofrak5nM.png") # minocycline 5Nm ZROBIĆ
+inset_minofrak5nM <- image_ggplot(inset_minofrak5nM)
 inset_minoa <- image_read("images//results//inset_minoa.png")
 inset_minoa <- image_ggplot(inset_minoa)
-inset_gaba <- image_read("images//results//inset_gaba.png")
-inset_gaba <- image_ggplot(inset_gaba)
 
-#
-bp_BLA_s_freq_sIPSC <- plot_boxplot(BLA_sIPSC_final, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 15, dot_size = 2,  mtitle = "sIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
-bp_BLA_s_freq_sIPSC  <- bp_BLA_s_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) 
+# subsetting needed conditions from dataframe
+BLA_sIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline"))
+BLA_mIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)"))
+# making boxplots with facets
+bp_BLA_s_freq_sIPSC <- plot_boxplot(BLA_sIPSC_final_subset, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 15, dot_size = 2,  mtitle = "sIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+bp_BLA_s_freq_sIPSC  <- bp_BLA_s_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) 
 
-bp_BLA_m_freq_sIPSC  <- plot_boxplot(BLA_mIPSC_final, median_Frequency, ylabel = "mIPSC Frequency (Hz)", vary1 = 0, vary2 = 10, dot_size = 2, mtitle = "mIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_m_freq_sIPSC  <- bp_BLA_m_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) 
-
-bpn_BLA_s_freq_sIPSC  <- plot_norm(BLA_sIPSC_final, median_Frequency, ylabel = "normalized \n sIPSC Frequency (%)", mtitle = "sIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bpn_BLA_m_freq_sIPSC  <- plot_norm(BLA_mIPSC_final, median_Frequency, ylabel = "normalized \n mIPSC Frequency (%)", mtitle = "mIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_m_freq_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_Frequency, ylabel = "mIPSC Frequency (Hz)", vary1 = 0, vary2 = 10, dot_size = 2, mtitle = "mIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_m_freq_sIPSC  <- bp_BLA_m_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) 
 
 pie_frak2_s_freq_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_Frequency, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_frak5_s_freq_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_Frequency, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_azdfrak_s_freq_sIPSC  <- BLA_azd_sIPSC %>% plot_pie(median_Frequency, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_azdfrak5nM_s_freq_sIPSC  <- BLA_azdfrak5nM_sIPSC %>% plot_pie(median_Frequency, "AZD8797 + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_azd_s_freq_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_Frequency, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_anti_s_freq_sIPSC  <- BLA_anti_sIPSC %>% plot_pie(median_Frequency, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_minofrak5nM_s_freq_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_Frequency, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_mino_s_freq_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_Frequency, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_picro_s_freq <- BLA_picro_sIPSC %>% plot_pie(median_Frequency, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-
 
 pie_frak2_m_freq_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_Frequency, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_frak5_m_freq_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_Frequency, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#b2 <- BLA_frak5nM_mIPSC %>% plot_pie(median_Frequency)
-#c2 <- BLA_azd_mIPSC %>% plot_pie(median_Frequency)
-#pie_anti_m_freq_sIPSC  <- BLA_anti_mIPSC %>% plot_pie(median_Frequency, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_minofrak_m_freq <- BLA_mino_mIPSC %>% plot_pie(median_Frequency, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#f2 <- BLA_picro_mIPSC %>% plot_pie(median_Frequency)
-
-#CV
-
-# bp_BLA_s_cv <- plot_boxplot(BLA_sIPSC_final, CV_Frequency, ylabel = "sIPSC CV (%)", dot_size = 2,  mtitle = "sIPSC CV") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-# bp_BLA_s_cv <- bp_BLA_s_cv + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
-# bp_BLA_m_cv <- plot_boxplot(BLA_mIPSC_final, CV_Frequency, ylabel = "mIPSC CV (%)", dot_size = 2, mtitle = "mIPSC CV") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-# bp_BLA_m_cv <- bp_BLA_m_cv + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
-# 
-# bpn_BLA_s_cv <- plot_norm(BLA_sIPSC_final, CV_Frequency, ylabel = "normalized \n sIPSC CV (%)", mtitle = "sIPSC CV") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-# bpn_BLA_m_cv <- plot_norm(BLA_mIPSC_final, CV_Frequency, ylabel = "normalized \n mIPSC CV (%)", mtitle = "mIPSC CV") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-# 
-# pie_frak2_s_cv <- BLA_frak2nM_sIPSC %>% plot_pie(CV_Frequency, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_frak5_s_cv <- BLA_frak5nM_sIPSC %>% plot_pie(CV_Frequency, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_azdfrak_s_cv <- BLA_azd_sIPSC %>% plot_pie(CV_Frequency, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_azd_s_cv <- BLA_azda_sIPSC %>% plot_pie(CV_Frequency, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_anti_s_cv <- BLA_anti_sIPSC %>% plot_pie(CV_Frequency, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_minofrak_s_cv <- BLA_mino_sIPSC %>% plot_pie(CV_Frequency, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_mino_s_cv <- BLA_minoa_sIPSC %>% plot_pie(CV_Frequency, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# #pie_picro_s_cv <- BLA_picro_sIPSC %>% plot_pie(CV_Frequency, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# 
-# 
-# pie_frak2_m_cv <- BLA_frak2nM_mIPSC %>% plot_pie(CV_Frequency, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# #b2 <- BLA_frak5nM_mIPSC %>% plot_pie(CV_Frequency)
-# #c2 <- BLA_azd_mIPSC %>% plot_pie(CV_Frequency)
-# pie_anti_m_cv <- BLA_anti_mIPSC %>% plot_pie(CV_Frequency, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# #pie_minofrak_m_cv <- BLA_mino_mIPSC %>% plot_pie(CV_Frequency, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# #f2 <- BLA_picro_mIPSC %>% plot_pie(CV_Frequency)
-# 
-
 
 # amplitude
-bp_BLA_s_amp_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_s_amp_sIPSC  <- bp_BLA_s_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-bp_BLA_m_amp_sIPSC  <- plot_boxplot(BLA_mIPSC_final, median_Amplitude, ylabel = "mIPSC Amplitude (pA)", vary1 = 0, vary2 = 20, dot_size = 2, mtitle = "mIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_m_amp_sIPSC  <- bp_BLA_m_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) 
+bp_BLA_s_amp_sIPSC  <- plot_boxplot(BLA_sIPSC_final_subset, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_s_amp_sIPSC  <- bp_BLA_s_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
-bpn_BLA_s_amp_sIPSC  <- plot_norm(BLA_sIPSC_final, median_Amplitude, ylabel = "normalized \n sIPSC Amplitude (%)", mtitle = "sIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bpn_BLA_m_amp_sIPSC  <- plot_norm(BLA_mIPSC_final, median_Amplitude, ylabel = "normalized \n mIPSC Amplitude (%)", mtitle = "mIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_m_amp_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_Amplitude, ylabel = "mIPSC Amplitude (pA)", vary1 = 0, vary2 = 20, dot_size = 2, mtitle = "mIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_m_amp_sIPSC  <- bp_BLA_m_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) 
 
 pie_frak2_s_amp_sIPSC <- BLA_frak2nM_sIPSC %>% plot_pie(median_Amplitude, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_frak5_s_amp_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_Amplitude, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_azdfrak_s_amp_sIPSC  <- BLA_azd_sIPSC %>% plot_pie(median_Amplitude, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_azdfrak5nM_s_amp_sIPSC  <- BLA_azdfrak5nM_sIPSC %>% plot_pie(median_Amplitude, "AZD8797 + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_azd_s_amp_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_Amplitude, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_anti_s_amp_sIPSC  <- BLA_anti_sIPSC %>% plot_pie(median_Amplitude, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_minofrak5nM_s_amp_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_Amplitude, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_mino_s_amp_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_Amplitude, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_picro_s_amp <- BLA_picro_sIPSC %>% plot_pie(median_Amplitude, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-
 
 pie_frak2_m_amp_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_Amplitude, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_frak5_m_amp_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_Amplitude, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#b2 <- BLA_frak5nM_mIPSC %>% plot_pie(median_Amplitude)
-#c2 <- BLA_azd_mIPSC %>% plot_pie(median_Amplitude)
-#pie_anti_m_amp_sIPSC  <- BLA_anti_mIPSC %>% plot_pie(median_Amplitude, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_minofrak_m_amp <- BLA_mino_mIPSC %>% plot_pie(median_Amplitude, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#f2 <- BLA_picro_mIPSC %>% plot_pie(median_Amplitude)
-
 
 # rise time
-bp_BLA_s_rt_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "sIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_s_rt_sIPSC  <- bp_BLA_s_rt_sIPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
-bp_BLA_m_rt_sIPSC  <- plot_boxplot(BLA_mIPSC_final, median_RiseTime, ylabel = "mIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2, mtitle = "mIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_m_rt_sIPSC  <- bp_BLA_m_rt_sIPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+bp_BLA_s_rt_sIPSC  <- plot_boxplot(BLA_sIPSC_final_subset, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "sIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_s_rt_sIPSC  <- bp_BLA_s_rt_sIPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+bp_BLA_m_rt_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_RiseTime, ylabel = "mIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2, mtitle = "mIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_m_rt_sIPSC  <- bp_BLA_m_rt_sIPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
 
-bpn_BLA_s_rt_sIPSC  <- plot_norm(BLA_sIPSC_final, median_RiseTime, ylabel = "normalized \n sIPSC Rise Time (%)", mtitle = "sIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bpn_BLA_m_rt_sIPSC  <- plot_norm(BLA_mIPSC_final, median_RiseTime, ylabel = "normalized \n mIPSC Rise Time (%)", mtitle = "mIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-
-pie_frak2_s_rt_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_RiseTime, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_frak5_s_rt_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_RiseTime, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_azdfrak_s_rt_sIPSC  <- BLA_azd_sIPSC %>% plot_pie(median_RiseTime, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_azdfrak5nM_s_rt_sIPSC  <- BLA_azdfrak5nM_sIPSC %>% plot_pie(median_RiseTime, "AZD8797 + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_azd_s_rt_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_RiseTime, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_anti_s_rt_sIPSC  <- BLA_anti_sIPSC %>% plot_pie(median_RiseTime, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_minofrak5nM_s_rt_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_RiseTime, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_mino_s_rt_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_RiseTime, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_picro_s_rt <- BLA_picro_sIPSC %>% plot_pie(median_RiseTime, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-
-
-pie_frak2_m_rt_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_RiseTime, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_frak5_m_rt_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_RiseTime, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#b2 <- BLA_frak5nM_mIPSC %>% plot_pie(median_RiseTime)
-#c2 <- BLA_azd_mIPSC %>% plot_pie(median_RiseTime)
-#pie_anti_m_rt_sIPSC  <- BLA_anti_mIPSC %>% plot_pie(median_RiseTime, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_minofrak_m_rt <- BLA_mino_mIPSC %>% plot_pie(median_RiseTime, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#f2 <- BLA_picro_mIPSC %>% plot_pie(median_RiseTime)
+# pie_frak2_s_rt_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_RiseTime, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_frak5_s_rt_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_RiseTime, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_azdfrak5nM_s_rt_sIPSC  <- BLA_azdfrak5nM_sIPSC %>% plot_pie(median_RiseTime, "AZD8797 + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_azd_s_rt_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_RiseTime, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_minofrak5nM_s_rt_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_RiseTime, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_mino_s_rt_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_RiseTime, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# 
+# pie_frak2_m_rt_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_RiseTime, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_frak5_m_rt_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_RiseTime, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 # decay time
 
-bp_BLA_s_dt_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_DecayTau, ylabel = "sIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_s_dt_sIPSC  <- bp_BLA_s_dt_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
-bp_BLA_m_dt_sIPSC  <- plot_boxplot(BLA_mIPSC_final, median_DecayTau, ylabel = "mIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2, mtitle = "mIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_m_dt_sIPSC  <- bp_BLA_m_dt_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
-
-bpn_BLA_s_dt_sIPSC  <- plot_norm(BLA_sIPSC_final, median_DecayTau, ylabel = "normalized \n sIPSC Decay Time (%)", mtitle = "sIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bpn_BLA_m_dt_sIPSC  <- plot_norm(BLA_mIPSC_final, median_DecayTau, ylabel = "normalized \n mIPSC Decay Time (%)", mtitle = "mIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_s_dt_sIPSC  <- plot_boxplot(BLA_sIPSC_final_subset, median_DecayTau, ylabel = "sIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_s_dt_sIPSC  <- bp_BLA_s_dt_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+bp_BLA_m_dt_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_DecayTau, ylabel = "mIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2, mtitle = "mIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_m_dt_sIPSC  <- bp_BLA_m_dt_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
 
 pie_frak2_s_dt_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_DecayTau, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_frak5_s_dt_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_DecayTau, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_azdfrak_s_dt_sIPSC  <- BLA_azd_sIPSC %>% plot_pie(median_DecayTau, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_azdfrak5nM_s_dt_sIPSC  <- BLA_azdfrak5nM_sIPSC %>% plot_pie(median_DecayTau, "AZD8797 + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_azd_s_dt_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_DecayTau, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_anti_s_dt_sIPSC  <- BLA_anti_sIPSC %>% plot_pie(median_DecayTau, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_minofrak5nM_s_dt_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_DecayTau, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_mino_s_dt_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_DecayTau, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_picro_s_dt <- BLA_picro_sIPSC %>% plot_pie(median_DecayTau, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-
 
 pie_frak2_m_dt_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_DecayTau, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_frak5_m_dt_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_DecayTau, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#b2 <- BLA_frak5nM_mIPSC %>% plot_pie(median_DecayTau)
-#c2 <- BLA_azd_mIPSC %>% plot_pie(median_DecayTau)
-#pie_anti_m_dt_sIPSC  <- BLA_anti_mIPSC %>% plot_pie(median_DecayTau, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#pie_minofrak_m_dt <- BLA_mino_mIPSC %>% plot_pie(median_DecayTau, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-#f2 <- BLA_picro_mIPSC %>% plot_pie(median_DecayTau)
 
-# holding
-# bp_BLA_s_hold_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_baseline, ylabel = "sIPSC Holding Current (pA)", dot_size = 2,  mtitle = "sIPSC Holding Current") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-# bp_BLA_s_hold_sIPSC  <- bp_BLA_s_hold_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
-# bp_BLA_m_hold_sIPSC  <- plot_boxplot(BLA_mIPSC_final, median_baseline, ylabel = "mIPSC Holding Current (pA)", dot_size = 2, mtitle = "mIPSC Holding Current") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-# bp_BLA_m_hold_sIPSC  <- bp_BLA_m_hold_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
-# 
-# bpn_BLA_s_hold_sIPSC  <- plot_norm(BLA_sIPSC_final, median_baseline, ylabel = "normalized \n sIPSC Holding Current (%)", mtitle = "sIPSC Holding Current") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-# bpn_BLA_m_hold_sIPSC  <- plot_norm(BLA_mIPSC_final, median_baseline, ylabel = "normalized \n mIPSC Holding Current (%)", mtitle = "mIPSC Holding Current") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-# 
-# pie_frak2_s_hold_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_baseline, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_frak5_s_hold_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_baseline, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_azdfrak_s_hold_sIPSC  <- BLA_azd_sIPSC %>% plot_pie(median_baseline, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_azdfrak5nM_s_hold_sIPSC  <- BLA_azdfrak5nM_sIPSC %>% plot_pie(median_baseline, "AZD8797 + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_azd_s_hold_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_baseline, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_anti_s_hold_sIPSC  <- BLA_anti_sIPSC %>% plot_pie(median_baseline, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_minofrak_s_hold_sIPSC  <- BLA_mino_sIPSC %>% plot_pie(median_baseline, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# pie_mino_s_hold_sIPSC <- BLA_minoa_sIPSC %>% plot_pie(median_baseline, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# #pie_picro_s_hold <- BLA_picro_sIPSC %>% plot_pie(median_baseline, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# 
-# 
-# pie_frak2_m_hold_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_baseline, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# #b2 <- BLA_frak5nM_mIPSC %>% plot_pie(median_baseline)
-# #c2 <- BLA_azd_mIPSC %>% plot_pie(median_baseline)
-# pie_anti_m_hold_sIPSC  <- BLA_anti_mIPSC %>% plot_pie(median_baseline, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# #pie_minofrak_m_hold <- BLA_mino_mIPSC %>% plot_pie(median_baseline, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-# #f2 <- BLA_picro_mIPSC %>% plot_pie(median_baseline)
+#using patchwork to do layout of the figure
 
+insets <- (inset_frak2nM | inset_frak5nM | inset_azdfrak5nM | inset_azda | inset_minofrak5nM | inset_minoa)
+pies_frequency <- ((pie_frak2_s_freq_sIPSC  | pie_frak5_s_freq_sIPSC  | pie_azdfrak5nM_s_freq_sIPSC  | pie_azd_s_freq_sIPSC  | pie_minofrak5nM_s_freq_sIPSC  | pie_mino_s_freq_sIPSC) + plot_layout(guides = "collect") & theme(legend.position = "bottom"))
+pies_amplitude <- ((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC) + plot_layout(guides = "collect") & theme(legend.position = "bottom"))
 
+figure1 <-  insets /
+ (bp_BLA_s_freq_sIPSC + theme(legend.position = "none")) / 
+  pies_frequency / 
+  (bp_BLA_s_freq_sIPSC + theme(legend.position = "none")) / 
+  pies_frequency / 
+  (bp_BLA_s_rt_sIPSC + theme(legend.position = "none")) /
+  (bp_BLA_s_dt_sIPSC + theme(legend.position = "none")) 
 
-figure3 <- ggarrange(ggarrange(bp_BLA_s_freq_sIPSC  , bp_BLA_m_freq_sIPSC , nrow = 1, widths = c(1, 0.5)), # freq normal boxplots
-                     ggarrange(bpn_BLA_s_freq_sIPSC , bpn_BLA_m_freq_sIPSC , nrow = 1, widths = c(1, 0.5)), # freq normalized boxplots
-                     ggarrange(
-                       ggarrange(pie_frak2_s_freq_sIPSC , pie_frak5_s_freq_sIPSC , pie_azdfrak5nM_s_freq_sIPSC, pie_azd_s_freq_sIPSC , pie_minofrak5nM_s_freq_sIPSC , pie_mino_s_freq_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # freq pie charts
-                       ggarrange(pie_frak2_m_freq_sIPSC , pie_frak5_m_freq_sIPSC , nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # freq pie charts part 2
-                 #    ggarrange(bp_BLA_s_cv , bp_BLA_m_cv, nrow = 1, widths = c(1, 0.5)), # cv normal boxplots
-                 #    ggarrange(bpn_BLA_s_cv, bpn_BLA_m_cv, nrow = 1, widths = c(1, 0.5)), # cv normalized boxplots
-                 #    ggarrange(
-                 #      ggarrange(pie_frak2_s_cv, pie_frak5_s_cv, pie_anti_s_cv, pie_azdfrak_s_cv, pie_azd_s_cv, pie_minofrak_s_cv, pie_mino_s_cv, nrow = 1, common.legend = TRUE, legend = 'bottom'), # cv pie charts
-                #       ggarrange(pie_frak2_m_cv, pie_anti_m_cv, nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # cv pie charts part 2
-                     ggarrange(bp_BLA_s_amp_sIPSC  , bp_BLA_m_amp_sIPSC , nrow = 1, widths = c(1, 0.5)), # amp normal boxplots
-                     ggarrange(bpn_BLA_s_amp_sIPSC , bpn_BLA_m_amp_sIPSC , nrow = 1, widths = c(1, 0.5)), # amp normalized boxplots
-                     ggarrange(
-                       ggarrange(pie_frak2_s_amp_sIPSC , pie_frak5_s_amp_sIPSC , pie_azdfrak5nM_s_amp_sIPSC, pie_azd_s_amp_sIPSC , pie_minofrak5nM_s_amp_sIPSC , pie_mino_s_amp_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # amp pie charts
-                       ggarrange(pie_frak2_m_amp_sIPSC , pie_frak5_m_amp_sIPSC , nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # amp pie charts part 2
-                    # ggarrange(bp_BLA_s_rt_sIPSC  , bp_BLA_m_rt_sIPSC , nrow = 1, widths = c(1, 0.5)), # rt normal boxplots
-                    # ggarrange(bpn_BLA_s_rt_sIPSC , bpn_BLA_m_rt_sIPSC , nrow = 1, widths = c(1, 0.5)), # rt normalized boxplots
-                    # ggarrange(
-                    #   ggarrange(pie_frak2_s_rt_sIPSC , pie_frak5_s_rt_sIPSC , pie_anti_s_rt_sIPSC , pie_azdfrak_s_rt_sIPSC , pie_azd_s_rt_sIPSC , pie_minofrak_s_rt_sIPSC , pie_mino_s_rt_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # rt pie charts
-                    #   ggarrange(pie_frak2_m_rt_sIPSC , pie_anti_m_rt_sIPSC , nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # rt pie charts part 2
-                 #    ggarrange(bp_BLA_s_dt_sIPSC  , bp_BLA_m_dt_sIPSC , nrow = 1, widths = c(1, 0.5)), # dt normal boxplots
-                #     ggarrange(bpn_BLA_s_dt_sIPSC , bpn_BLA_m_dt_sIPSC , nrow = 1, widths = c(1, 0.5)), # dt normalized boxplots
-                #     ggarrange(
-                  #     ggarrange(pie_frak2_s_dt_sIPSC , pie_frak5_s_dt_sIPSC , pie_anti_s_dt_sIPSC , pie_azdfrak_s_dt_sIPSC , pie_azdfrak5nM_s_dt_sIPSC, pie_azd_s_dt_sIPSC , pie_minofrak_s_dt_sIPSC , pie_mino_s_dt_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # dt pie charts
-                     #  ggarrange(pie_frak2_m_dt_sIPSC , pie_anti_m_dt_sIPSC ,  nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # dt pie charts part 2
-                 #    ggarrange(bp_BLA_s_hold_sIPSC  , bp_BLA_m_hold_sIPSC , nrow = 1, widths = c(1, 0.5)), # hold normal boxplots
-                #     ggarrange(bpn_BLA_s_hold_sIPSC , bpn_BLA_m_hold_sIPSC , nrow = 1, widths = c(1, 0.5)), # hold normalized boxplots
-                 #    ggarrange(
-                 #      ggarrange(pie_frak2_s_hold_sIPSC , pie_frak5_s_hold_sIPSC , pie_anti_s_hold_sIPSC , pie_azdfrak_s_hold_sIPSC , pie_azdfrak5nM_s_hold_sIPSC, pie_azd_s_hold_sIPSC , pie_minofrak_s_hold_sIPSC , pie_mino_s_hold_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # hold pie charts
-                  #     ggarrange(pie_frak2_m_hold_sIPSC , pie_anti_m_hold_sIPSC , nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # hold pie charts part 2
-                     nrow = 6) # 6 x 3
-figure3
+figure1 <- figure1 +
+ plot_annotation(tag_levels = 'a')# + plot_layout(heights = c(1, 2, 1, 1))
 
-
-#old with old condiitons
-# figure3 <- ggarrange(ggarrange(bp_BLA_s_freq_sIPSC  , bp_BLA_m_freq_sIPSC , nrow = 1, widths = c(1, 0.5)), # freq normal boxplots
-#                      ggarrange(bpn_BLA_s_freq_sIPSC , bpn_BLA_m_freq_sIPSC , nrow = 1, widths = c(1, 0.5)), # freq normalized boxplots
-#                      ggarrange(
-#                        ggarrange(pie_frak2_s_freq_sIPSC , pie_frak5_s_freq_sIPSC , pie_anti_s_freq_sIPSC , pie_azdfrak_s_freq_sIPSC , pie_azdfrak5nM_s_freq_sIPSC, pie_azd_s_freq_sIPSC , pie_minofrak_s_freq_sIPSC , pie_mino_s_freq_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # freq pie charts
-#                        ggarrange(pie_frak2_m_freq_sIPSC , pie_anti_m_freq_sIPSC , nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # freq pie charts part 2
-#                  #    ggarrange(bp_BLA_s_cv , bp_BLA_m_cv, nrow = 1, widths = c(1, 0.5)), # cv normal boxplots
-#                  #    ggarrange(bpn_BLA_s_cv, bpn_BLA_m_cv, nrow = 1, widths = c(1, 0.5)), # cv normalized boxplots
-#                  #    ggarrange(
-#                  #      ggarrange(pie_frak2_s_cv, pie_frak5_s_cv, pie_anti_s_cv, pie_azdfrak_s_cv, pie_azd_s_cv, pie_minofrak_s_cv, pie_mino_s_cv, nrow = 1, common.legend = TRUE, legend = 'bottom'), # cv pie charts
-#                 #       ggarrange(pie_frak2_m_cv, pie_anti_m_cv, nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # cv pie charts part 2
-#                      ggarrange(bp_BLA_s_amp_sIPSC  , bp_BLA_m_amp_sIPSC , nrow = 1, widths = c(1, 0.5)), # amp normal boxplots
-#                      ggarrange(bpn_BLA_s_amp_sIPSC , bpn_BLA_m_amp_sIPSC , nrow = 1, widths = c(1, 0.5)), # amp normalized boxplots
-#                      ggarrange(
-#                        ggarrange(pie_frak2_s_amp_sIPSC , pie_frak5_s_amp_sIPSC , pie_anti_s_amp_sIPSC , pie_azdfrak_s_amp_sIPSC , pie_azdfrak5nM_s_amp_sIPSC, pie_azd_s_amp_sIPSC , pie_minofrak_s_amp_sIPSC , pie_mino_s_amp_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # amp pie charts
-#                        ggarrange(pie_frak2_m_amp_sIPSC , pie_anti_m_amp_sIPSC , nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # amp pie charts part 2
-#                     # ggarrange(bp_BLA_s_rt_sIPSC  , bp_BLA_m_rt_sIPSC , nrow = 1, widths = c(1, 0.5)), # rt normal boxplots
-#                     # ggarrange(bpn_BLA_s_rt_sIPSC , bpn_BLA_m_rt_sIPSC , nrow = 1, widths = c(1, 0.5)), # rt normalized boxplots
-#                     # ggarrange(
-#                     #   ggarrange(pie_frak2_s_rt_sIPSC , pie_frak5_s_rt_sIPSC , pie_anti_s_rt_sIPSC , pie_azdfrak_s_rt_sIPSC , pie_azd_s_rt_sIPSC , pie_minofrak_s_rt_sIPSC , pie_mino_s_rt_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # rt pie charts
-#                     #   ggarrange(pie_frak2_m_rt_sIPSC , pie_anti_m_rt_sIPSC , nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # rt pie charts part 2
-#                  #    ggarrange(bp_BLA_s_dt_sIPSC  , bp_BLA_m_dt_sIPSC , nrow = 1, widths = c(1, 0.5)), # dt normal boxplots
-#                 #     ggarrange(bpn_BLA_s_dt_sIPSC , bpn_BLA_m_dt_sIPSC , nrow = 1, widths = c(1, 0.5)), # dt normalized boxplots
-#                 #     ggarrange(
-#                   #     ggarrange(pie_frak2_s_dt_sIPSC , pie_frak5_s_dt_sIPSC , pie_anti_s_dt_sIPSC , pie_azdfrak_s_dt_sIPSC , pie_azdfrak5nM_s_dt_sIPSC, pie_azd_s_dt_sIPSC , pie_minofrak_s_dt_sIPSC , pie_mino_s_dt_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # dt pie charts
-#                      #  ggarrange(pie_frak2_m_dt_sIPSC , pie_anti_m_dt_sIPSC ,  nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # dt pie charts part 2
-#                  #    ggarrange(bp_BLA_s_hold_sIPSC  , bp_BLA_m_hold_sIPSC , nrow = 1, widths = c(1, 0.5)), # hold normal boxplots
-#                 #     ggarrange(bpn_BLA_s_hold_sIPSC , bpn_BLA_m_hold_sIPSC , nrow = 1, widths = c(1, 0.5)), # hold normalized boxplots
-#                  #    ggarrange(
-#                  #      ggarrange(pie_frak2_s_hold_sIPSC , pie_frak5_s_hold_sIPSC , pie_anti_s_hold_sIPSC , pie_azdfrak_s_hold_sIPSC , pie_azdfrak5nM_s_hold_sIPSC, pie_azd_s_hold_sIPSC , pie_minofrak_s_hold_sIPSC , pie_mino_s_hold_sIPSC , nrow = 1, common.legend = TRUE, legend = 'bottom'), # hold pie charts
-#                   #     ggarrange(pie_frak2_m_hold_sIPSC , pie_anti_m_hold_sIPSC , nrow = 1, common.legend = TRUE, legend = "bottom"), nrow = 1, widths = c(1, 0.5)), # hold pie charts part 2
-#                      nrow = 6) # 6 x 3
-# figure3
-
+figure1
 
 ```
 

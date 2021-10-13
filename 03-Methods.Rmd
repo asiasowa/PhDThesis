@@ -11,12 +11,12 @@ All efforts were made to minimize suffering and to reduce the number of animals 
 ### Animals
 
 Male Wistar rats (50-180g on arrival) were purchased from Charles River Laboratories (Research Models and Services; Germany).<!-- Po dostawie zwierzęta przechodziły kilkudniową adaptację do warunków pomieszczenia hodowlanego -->
-Four to five animals were housed per polypropylene cage (55x35x20 cm) lined with wooden bedding in controlled environment (22 `r knitr::asis_output("\U00B1")` 1`r knitr::asis_output("\U00B0")`C, 45 `r knitr::asis_output("\U00B1")` 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. 
-Animals were acclimated to the housing environment for at least 4 days before the beginning of the experiments. 
+Four to five animals were housed per polypropylene cage (55x35x20 cm) lined with wooden bedding in a controlled environment (22 `r knitr::asis_output("\U00B1")` 1`r knitr::asis_output("\U00B0")`C, 45 `r knitr::asis_output("\U00B1")` 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. 
+Animals were acclimated to the housing environment for at least four days before the beginning of the experiments. 
 For patch-clamp experiments, rats weighing 180-300g (5-10 weeks of age) were used.
 For immunostaining experiments, rats weighing 300-350 g were used.
 <!-- zwierzęta na hodowle? -->
-Animals at this age are considered as young adults. 
+Animals at this age are considered young adults. 
 The age of the animals for each experiment was determined to assure credible and interpretable results.
 
 
@@ -24,33 +24,37 @@ The age of the animals for each experiment was determined to assure credible and
 <!--uzupełniać na bieżąco, nie skończone-->
 <!-- Reagents/buffers needed for electrophysiology -->
 
-All reagents used for preparing ACSF and internal solution were purchased from ...<!--uzupełnić--> and bath-applied by a peristaltic pump, unless stated otherwise. <!-- Details regarding the primary and secondary antibodies used in our immunohistochem istry experiments are provided in Table 2 - 1. --><!-- All reagents for phosphate-buffered saline solution (PBS), artificial cerebrospinal fluid and intrapipette solution (ACSF) were purchased from Sigma-Aldrich (Darmstadt, Germany), apart from single biocytin batches purchased from Tocris Bioscience (Bristol, UK, Cat No. 3349). Pertussis toxin was purchased from Invitrogen, Thermo Fisher (Waltham, Massachusetts, USA, Cat No. PHZ1174). -->
+In electrophysiological experiments, all reagents used for preparing ACSF and internal solution were purchased from Roth (Carl Roth GmbH, Germany)  and bath-applied by a peristaltic pump, unless stated otherwise.<!--All other chemicals were purchased from Sigma–Aldrich (St. Louis, MO).  czy na pewno? --><!-- Details regarding the primary and secondary antibodies used in our immunohistochem istry experiments are provided in Table 2 - 1. --><!-- All reagents for phosphate-buffered saline solution (PBS), artificial cerebrospinal fluid and intrapipette solution (ACSF) were purchased from Sigma-Aldrich (Darmstadt, Germany), apart from single biocytin batches purchased from Tocris Bioscience (Bristol, UK, Cat No. 3349). Pertussis toxin was purchased from Invitrogen, Thermo Fisher (Waltham, Massachusetts, USA, Cat No. PHZ1174). -->
 <!-- The time necessary for the solution to flow from the stopcocks to the slice was approximately 15 s. -->
-
-Chemokines were purchased from <!--Peptides used were as follows: RLN3 peptide, Phoenix Pharmaceuticals, Karlsruhe, Germany, Cat No. 035-36A. RXFP3 agonist, RXFP3-A2 {[R3A(11–24,C15→A)B]} was synthesised using solid-phase peptide synthesis and purified using reverse-phase HPLC (The Florey Institute of Neuroscience and Mental Health, Victoria, Australia -->
-All peptides were dissolved in PBS, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C, unless stated otherwise.
-
-
-
-Electrophysiological reagents suppliers were as follows: minocycline (100 `r knitr::asis_output("\U03BC")`M), <!-- jaki manufacturer? -->
-DL-fluorocitric acid barium salt (a selective astrocyte inhibitor; 100 `r knitr::asis_output("\U03BC")`M), 
-10 lM CNQX (an AMPA/kainate receptor antagonist), <!-- sprawdzić/ zmienić --> 
-biocytin batches purchased from Tocris Bioscience, <!-- sprawdzić/ zmienić --> 
-50 lM APV (an NMDA receptor antagonist), <!-- sprawdzić/ zmienić --> 
-0.5–1 lM tetrodotoxin (TTX, a voltage-gated sodium channel blocker), <!-- sprawdzić/ zmienić --> 
-10–40 lM bicuculline methiodide (a GABAA receptor antagonist), <!-- sprawdzić/ zmienić --> 
-1–2 lM strychnine (a glycine receptor antagonist), <!-- sprawdzić/ zmienić --> 
-100 lM NiCl2 (a low voltage- activated calcium channel blocker), and 100 lM CdCl2 (a high voltage-activated calcium channel blocker). <!-- sprawdzić/ zmienić --> 
+Other electrophysiological reagents suppliers and used doses were as follows: 
+<!--10 lM CNQX (an AMPA/kainate receptor antagonist), sprawdzić/ zmienić --> 
+biocytin batches purchased from Tocris Bioscience (UK),<!-- sprawdzić/ zmienić --> 
+<!--50 lM APV (an NMDA receptor antagonist),  sprawdzić/ zmienić --> 
+500 nM tetrodotoxin (TTX, a voltage-gated sodium channel blocker from Tocris Bioscience, UK), <!-- sprawdzić/ zmienić --> 
+100 uM picrotoxin (a GABA~A~ receptor antagonist from ...), <!-- sprawdzić/ zmienić --> 
+<!--1–2 lM strychnine (a glycine receptor antagonist),  sprawdzić/ zmienić --> 
+<!--100 lM NiCl2 (a low voltage- activated calcium channel blocker), and 100 lM CdCl2 (a high voltage-activated calcium channel blocker).  sprawdzić/ zmienić --> 
+CGP...  (a GABA~B~ receptor antagonist from ...)
 All drugs were dissolved in deionised water, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C, unless stated otherwise.
-Minocycline was freshly dissolved in ACSF at the final concentration before recordings. 
-A stock of fluorocitrate was prepared from DL- fluorocitric acid barium salt as previously described (Wenker et al., 2010). <!-- sprawdzić/ zmienić --> 
-A stock of CNQX was first dissolved in dimethyl sulfoxide, and the other drugs were prepared in distilled water at 1000 times the concentrations to be used and stored at -20 °C as in our previous study (Liu et al., 2015). <!-- sprawdzić/ zmienić --> 
-The drugs were diluted to the final concentration in the recording ACSF just before use. <!-- jakoś zaznaczyć ze ze stocków, i że nie minocycline-->
-<!--Doxycycline, CNQX, APV, and -->TTX were obtained from Tocris Bioscience (Bristol, UK). <!-- sprawdzić/ zmienić --> 
-All other chemicals were purchased from Sigma–Aldrich (St. Louis, MO). <!-- czy na pewno? -->
-The determination of the doses for CX3CL1, CXCL12, minocycline, and fluorocitrate was based on a previous studies [@sheridan_2014]<!--citations--><!--in which 100 $\upmu$M minocycline markedly reduced the frequency and amplitude of spontaneous EPSCs (sEPSCs) in hippocampal neurons (Gonzalez et al., 2007). - Peng2016 // CX3CL1 were purchased from .... and its final concentration were 2 and 5nM, according to studies -->
-A highly selective antagonist for CX3CR1, AZD<!--dokończyć--> (Axon Medchem, Groningen, The Netherlands)<!--zmienić-->, with a K~i~ value of 3.9 nM<!--sprawdzić-->, was dissolved in dimethyl sulfoxide (DMSO), and diluted in saline to a final concentration of 0.1% DMSO.<!-- kawamura_2021, ale ja nie taki antagonista -->
 
+The drugs were diluted to the final concentration in the recording ACSF just before use. <!-- jakoś zaznaczyć ze ze stocków, i że nie minocycline-->
+
+Chemokines (CX3CL1 and CXCL12) were purchased from <!--Peptides used were as follows: RLN3 peptide, Phoenix Pharmaceuticals, Karlsruhe, Germany, Cat No. 035-36A. RXFP3 agonist, RXFP3-A2 {[R3A(11–24,C15→A)B]} was synthesised using solid-phase peptide synthesis and purified using reverse-phase HPLC (The Florey Institute of Neuroscience and Mental Health, Victoria, Australia -->
+All peptides were dissolved in sterile PBS, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C, unless stated otherwise.
+
+For blocking CX3CL1 and CXCL12 receptors, highly selective antagonists (AZD8797 and AMD3100) were used, respectively.
+AZD8797 was obtained from Axon Medchem, The Netherlands, and its stock was first dissolved in dimethyl sulfoxide (DMSO). <!-- and diluted in saline to a final concentration of 0.1% DMSO.-->
+<!--A stock of AZD8797 was first dissolved in dimethyl sulfoxide (DMSO), and the other drugs were prepared in distilled water at 1000 times the concentrations to be used and stored at -20 °C as in our previous study (Liu et al., 2015).  sprawdzić/ zmienić --> 
+AMD3100 ... <!-- dokończyć-->
+
+For microglia and astrocytes inhibition, the minocycline and fluorocitric acid were used, respectively.
+Both reagents were obtained from Sigma Aldrich.
+Minocycline was freshly dissolved in ACSF at the final concentration before recordings. <!-- A stock of fluorocitrate was prepared from DL- fluorocitric acid barium salt as previously described (Wenker et al., 2010). sprawdzić/ zmienić --> 
+The determination of the doses for CX3CL1, CXCL12, AZD8797, AMD3100, minocycline, and fluorocitrate was based on a previous studies [@sheridan_2014]<!--citations--><!--in which 100 $\upmu$M minocycline markedly reduced the frequency and amplitude of spontaneous EPSCs (sEPSCs) in hippocampal neurons (Gonzalez et al., 2007). - Peng2016 // CX3CL1 were purchased from .... and its final concentration were 2 and 5nM, according to studies -->
+
+minocycline (100 `r knitr::asis_output("\U03BC")`M, Sigma–Aldrich, Germany),<!-- upewnić się-->
+DL-fluorocitric acid barium salt (a selective astrocyte inhibitor; 100 `r knitr::asis_output("\U03BC")`M, Sigma–Aldrich, Germany),<!-- upewnić się--> 
+AZD8798 K~i~ value is 3.9 nM<!--sprawdzić-->, was<!-- kawamura_2021, ale ja nie taki antagonista -->
 FC stocks were prepared according to published procedures (28), and acute horizontal brain slices containing the nRT and VB were prepared following established methods (66). 
 
 Immunostaining reagents suppliers were as follows: formaldehyde 36-38% solution, POCH, Gliwice, Poland, Cat No. 432173111; <!-- sprawdzić/ zmienić --> 
@@ -125,15 +129,15 @@ After this recovery period, individual slices were transferred to a recording ch
 <!-- zrobić zdjęcia z DIC i miejscem -->
 Neurons were identified based on their location and somatic morphological characteristics under infrared differential interference contrast (DIC). 
 The image from the microscope was enhanced using a CCD camera and displayed on a computer monitor. 
-The border of the basolateral or central amygdala were identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@paxinos_2006], corresponding to -1.92 mm -3.12 caudal to bregma (see Figure: \@ref(fig:methodpatch)). <!-- lepszy figure --> 
+The border of the basolateral or central amygdala were identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@paxinos_2007], corresponding to -1.92 mm -3.12 caudal to bregma (see Figure: \@ref(fig:methodpatch)). <!-- lepszy figure --> 
 Neurons with a healthy appearance presented a smooth surface, and the cell body and parts of the dendrites could be clearly seen. 
 Cells were approached under visual control with a patch pipette using a three-dimensional micromanipulator (uMp micromanipulator system, Sensapex, Finland). 
 Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 M`r knitr::asis_output("\U038F")`; Sutter Instruments, USA) using horizontal puller (Sutter Instruments P–97) and filled with following solutions. 
 
 ```{r methodpatch, fig.cap='**a** A schematic of the brain slice containing the amygdala **b, c** Photographs from the recording microscope under 10x optics showing areas of recordings: BLA and CeA, respectively **d,e** Photographs from the recording microscope under 40x DIC optics showing morphologies from BLA principal cells and CeL neurons', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images//results//methodpatch.png")
+knitr::include_graphics("images//methods//methodpatchregion.png")
 ```
-<!--uzupełnić zdjęcia o CeA--> 
+<!--uzupełnić zdjęcia o CeA + LTP?--> 
 For experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolarity 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). 
 For experiment measuring inhibitory synaptic transmission, the solution contained 122 Cs-gluconate, 10 CsCl, 10 HEPES, 0.3 EGTA, 10 phosphocreatine-Na~2~, 5 Mg-ATP, 0.4 Na-GTP, pH = 7.35; osmolarity 280-290 mOsmol kg^−1^.
 
@@ -152,13 +156,13 @@ All drugs were delivered *via* a bath perfusion system. <!-- antibodies? -->
 <!--  Neurons firing at less than 0.1 Hz were considered ‘silent neurons’ and excluded from analysis.// The sole criterion for selection of recorded cells was the absence of an apical dendrite.-->
 
 
-### Electrophysiological identification and classification of chosen neurons
+#### Electrophysiological identification and classification of chosen neurons
 <!-- właściwie nie ruszone... -->
 Once the whole-cell recording was obtained, cell characteristics were recorded using current-clamp techniques.
 <!-- In order to characterize the electrophysiological features of SuM and PH neurons, we measured the following parameters in response to hyper- and depolarizing current pulses (5pA steps, 500ms) according to Petilla terminology [@ascoli_2008; @karagiannis_2009; @gouwens_2019]:-->
-Neurons were identified by location, shape of cell body, firing properties, and morphology 
+Neurons were identified by location, shape of cell body, firing properties, and morphology (see Fig. \@ref(fig:methodpatch)).
 
-#### Electrophysiological identification of principal cells in the BLA
+##### Electrophysiological identification of principal cells in the BLA
 <!-- ewentualnie rozdzielić to na BLA and CeA, ale jedna figura -->
 Principal neurons were identified based on their unique electrophysiological properties.<!-- As previously shown ( Spampanato et al., 2016 ; Woodruff et al., 2006 ), these cells were identified electrophysiologically by using the presence of -->
 
@@ -168,7 +172,7 @@ INs were distinguished from PNs ( Figures S1 B–S1E) by using action potential 
 
 Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
 
-#### Electrophysiological identification of neurons in the CeA
+##### Electrophysiological identification of neurons in the CeA
 
 The amygdala is comprised of several distinct nuclei ( Fig. 1 A ). In acutely prepared mouse amygdala slices, we identified the CeL by the surrounding axon bundles with IR-DIC optics ( Fig. 1 B ) as described previously ( Lopez de Armentia and Sah, 2004 ). Neurons in the CeL display heterogeneous intrinsic excitability ( Martina et al., 1999 ; Lopez de Armentia and Sah, 2004 ; Chieng et al., 2006 ; Haubensak et al., 2010 ; Amano et al., 2012 ; Chiang et al., 2015 ). 
 
@@ -199,16 +203,14 @@ Before clustering, we first normalized variables into the range (0, 1) by perfor
 Next, we clustered all the data points by the following iterative procedure. First, assign each data point to a cluster; every cluster therefore contains only one data point. 
 Second, merge the two closest clusters into one cluster; therefore, Hou et al., 2016 -->
 
-```{r methodfiringpattern, fig.cap='**Electrophysiological differentiation of neurons in the amygdala.** Different types of neurons in the amygdala are distinguished by their firing response to an incremental depolarising pulses delivered at a hyperpolarised potential (top trace). Type I – putative magnocellular neurons express a delay in the onset to the first action potential (arrow). Type II – putative parvocellular neurons lacks the delay in response to the same current stimuli.', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images//methods//firingpattern.png")
+```{r methodIV, fig.cap='**Electrophysiological differentiation of neurons in the amygdala.** Different types of neurons in the amygdala are distinguished by their firing response to an incremental depolarising pulses delivered at a hyperpolarised potential (top trace). Type I – putative magnocellular neurons express a delay in the onset to the first action potential (arrow). Type II – putative parvocellular neurons lacks the delay in response to the same current stimuli.', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images//methods//IV_excitability_protocols.png")
 ```
 <!-- zmienić opis -->
 
 <!-- According to this criterion following neurons were included in the study on chemokines signaling in the amygdala (only one neuron per slice was subjected to drug administration experiment): /// nie wiem czy to dodawać bo musiałabym obliczyć ;P patrz: ALAN dla reszty gdybym się jednak zdecydowała-->
 
-### Recording protocols and data analysis
-
-
+#### Recording protocols, data analysis, and statistics
 
 To measure the effects of chemokines (CX3CL1/CXCL12) on intrinsic membrane properties, the experiments were recorded in the whole-cell patch-clamp under current-clamp configuration. <!-- Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration.-->
 
@@ -216,8 +218,8 @@ To measure the effects of chemokines (CX3CL1/CXCL12) on intrinsic membrane prope
 <!--  The input-output relationship was obtained for each neuron using hyper- and depolarizing current pulses (500 ms). 
 The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude. // Then the series of hyperpolarizing and depolarizing current pulses (500ms, from -80 to 100pA in 5pA increments) were injected.Action potentials were evoked in current clamp mode from a holding potential of -65 mV by 500 ms depolarizing current pulses.-->
 Several membrane parameters were assessed based on neuronal voltage responses from -65 mV holding potential to hyper- and depolarizing current pulses (500 ms, 10 or 5pA increments), and analyzed using custom scripts.
-Cell excitability was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model.
-The gain (slope) and rheobase (minimal current necessary to fire the first action potential) parameters was determined for further analysis.
+Cell excitability was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model (see Fig \@ref(fig:methodIV), part a and b).
+The gain (slope, 1) and rheobase (minimal current necessary to fire the first action potential, 2) parameters was determined for further analysis.
 <!-- To take into account the possible variety of firing patterns, such as bursting, adapting, regular or irregular trains of action potentials, the interspaced intervals were measured for response to the the minimal current injection eliciting more than three action potentials and the following parameters were measured:--> <!-- [@ascoli_2008; @karagiannis_2009]-->
 <!-- In order to characterize the behavior of recorded neurons, several electrophysiological parameters were measured, as follows:-->
 (1) the resting membrane potential (RMP), <!--was recorded immediately after establishing whole-cell configuration.-->
@@ -225,7 +227,7 @@ The gain (slope) and rheobase (minimal current necessary to fire the first actio
 (3) the membrane time constant `r knitr::asis_output("\U03C4")`~m~ (determined at the beginning of the voltage response of a hyperpolarization current pulse of 10 pA; the time constant was determined by fitting this voltage response to a single exponential), 
 (4) the membrane capacitance (C~m~; calculated according to the equation C~m~= $\frac{\tau~m~}{R~m~}$), 
 (5) action potential threshold (corresponded to the voltage threshold of the first action potential elicited by a current step, defined as the voltage at which the time derivative of V~m~($\frac{\partial V}{\partial t}$) is 20 V s^−1^), 
-(6) The rheobase (the minimal depolarizing current pulse intensity that elicited an action potential), 
+<!--(6) The rheobase (the minimal depolarizing current pulse intensity that elicited an action potential),--> 
 (7) the first spike latency (measured at rheobase as the time needed to elicit the first action potential),
 (8) amplitudes of the first and (9) second action potential (AP; measured from the threshold to the positive peak of the rheobase), 
 (10) AP width (measured at half-amplitude<!--measured at the threshold of action potentials and spike amplitude from the threshold to the peak.-->), 
@@ -240,6 +242,7 @@ The gain (slope) and rheobase (minimal current necessary to fire the first actio
 (14c) amplitude, and 
 (14d) coefficient variance (CV).
 When neurons did not exhibit some of the abovementioned features, they were arbitrarily set to 0.
+All of these parameteres are illustrated in Figure \@ref(fig:methodIV)).
 
 <!-- Alan
 The voltage response to a 50 pA current pulse (500 ms) was utilised to calculate the following: (1) the membrane time constant, which was determined by fitting a single exponential to the charging phase of the voltage response; (2) the membrane resistance, which was calculated based on the maximum amplitude of the voltage response, assuming an ohmic current-voltage (I-V) relationship; and (3) the membrane capacitance, which was calculated as the quotient of the time constant and resistance. (4) The voltage sag was measured from the voltage response to a -140 pA hyperpolarising current step (500 ms).
@@ -265,8 +268,26 @@ For analysis of postsynaptic currents 4-minutes-long whole-cell recordings, one 
 
 Events were manually detected to measure: frequency, mean rise time, mean amplitude and decay time constant of averaged current trace; these parameters were statistically tested (baseline vs peptide application).
 
+Group data for inhibitory synaptic transmission are reported as median`r knitr::asis_output("\U00B1")`SD. <!-- Data are reported as median `r knitr::asis_output("\U00B1")` SEM. -->
+Following verification of a normal distribution, Student’s paired t-test was used to compare parametric data from two groups. “n” represents the number of neurons used in each group, and is followed by “N” representing the number of rats per group. 
+The details of the statistical analyses are provided in Results. 
 
-### Post-recording immunostaining
+For patch clamp experiments, chemokines impact on sIPSC characteristics<!-- bardziej ogólnie-->, were analyzed by comparing pre- and post-application values using a paired Student’s t-test or Wilcoxon Signed Rank Test for non-normally distributed data.
+
+To record spontaneous inhibitory postsynaptic currents (sIPSCs), neurons were voltage-clamped at 0 mV [@Kusek2015]. 
+After 15 min of the stabilization period, the baseline sIPSCs activity was recorded. The action of lamotrigine (50 $\upmu$M) was assessed by adding a known concentration of a stock solution directly to the bath and taking the measures before (baseline) and during 15 min of lamotrigine superfusion. 
+In a subset of experiments, slices were incubated in ACSF supplemented with  hyperpolarization-activated cation-nonselective (HCN) channels selective antagonists, ZD7288 (10 $\upmu$M) to verify whether the action of lamotrigine was HCN-dependent.
+Spontaneous IPSCs were detected using the TaroTools toolbox for Igor Pro (https://sites.google.com/site/tarotoolsregister).
+
+For sIPSC recordings, amplitude detection thresholds were set to exceed noise values.
+Events were detected automatically, analyzed for double peaks, and then visually inspected to prevent the inclusion of false data. 
+The synaptic activity was analyzed for frequency, amplitude, rise time (calculated from 10–90% of peak amplitude), and decay time calculated by fitting an exponential function form 10-90% of the decay phase. <!--(calculated by averaging 200 randomly selected events and fitting a double exponential function from 10–90% of the decay phase) --><!-- The double exponential function for the decay phase generated an initial fast component and a subsequent slow component of the decay phase. --> 
+All statistical tests and plotting were done using 3.6.1 [@R_base], the dplyr (v0.8.3; @dplyr), and the ggplot2 (v3.2.1; @ggplot2) packages. 
+Group data for inhibitory synaptic transmission are reported as median$\pm$SD.
+Lamotrigine’s impact on sIPSC characteristics was analyzed by comparing pre- and post-lamotrigine values using a paired Student’s t-test or Wilcoxon Signed Rank Test for non-normally distributed data.
+
+
+#### Post-recording immunostaining
 <!--w miarę skończone, ewentualnie jakie przeciwciala...-->
 In order to verify neurochemical content of recorded neurons,  after recording a subset of slices was fixed overnight with a 4% formaldehyde at 4`r knitr::asis_output("\U00B0")`C and stained according to following protocol.  <!-- Then, the electrophysiological properties were determined as described below, and recordings were maintained for at least 15 min before the pipette was carefully removed from the recorded neuron.  --><!-- In order to examine neurochemical content of recorded neurons, after recording a subset of slices was fixed overnight with a 4% formaldehyde at 4`r knitr::asis_output("\U00B0")`C and stained according to following protocol. --> 
 In brief, free-floating sections were blocked and permeabilised (10% normalised goat serum (NGS; Jackson ImuunoResearch), 0.1% Triton X100 in PBS) at 4`r knitr::asis_output("\U00B0")`C overnight and incubated with a primary antibodies solution supplemented with a streptavidine-conjugated Alexa Fluor 647 (Invitrogen; 1:500) overnight at 4`r knitr::asis_output("\U00B0")`C. <!--: mouse anti-OXT (1:1000 or 1:10000), rabbit anti-AVP (1:500 or 1:5000), ExtrAvidin-Cy3 (1:200), 2% NDS, 0.3% Tx100 in PBS, // Next, several rinses with PBS were carried out before incubating slices with  and blocking and permeabilizing with PBS containing 10% normal goat serum (NGS; ) and 0.1% Triton X-100 in PBS (Sigma Aldrich; blocking solution) overnight at 4`r knitr::asis_output("\U00B0")`C.-->
@@ -276,23 +297,23 @@ Finally, slices mounted onto microscope slides using Prolong Glass antifading me
 Each step was followed by a 3x 10 min PBS wash.
 Images were acquired with Zeiss Axio Imager Z2 fluorescence microscope with an Apotome.2 system using Zen Pro 2 software (Zeiss).
 
-#### Sulphoramine staining
+##### Sulphoramine staining
 <!--skończone-->
-To verify the effects of fluorocitrate on brain slices, .... <!-- dokończyć -->
-For sulforhodamine 101 (SR101) staining, the protocol was adapted from previous studies on acute brain slices [@christian_2013; @kafitz_2008].
+To verify the effects of fluorocitrate on brain slices, the sulforhodamine 101 (SR101) staining was utilized. 
+The protocol was adapted from previous studies on acute brain slices [@christian_2013; @kafitz_2008].
 Briefly, a subset of 250`r knitr::asis_output("\U03BC")`m thick slices were prepared as for electrophysiology, with some slices incubated in 100 `r knitr::asis_output("\U03BC")`M fluorocitrate (FC) for 30 min at room temperature as described above. 
 Slices were incubated in 1 `r knitr::asis_output("\U03BC")`M SR101 (Sigma-Aldrich, <!-- kraj-->) in oxygenated ACSF for 20 min at 34 `r knitr::asis_output("\U00B0")`C, then washed in ACSF for at least 10 min at 34 `r knitr::asis_output("\U00B0")`C. <!-- adapted a protocol for application-->
 The slices were fixed in 4% PFA overnight, and processed for immunocytochemistry, as described above. <!--resectioned to 50-μm thickness, and processed for GFAP and NeuN immunoreactivity.Z-stacks of images with an optical distance of 0.5 μm were captured with a laser scanning confocal microscope (Zeiss LSM510) using a 40× oil-immersion objective. Secondary antibodies tagged to fluorescein 488 and Cy3 were excited with 488- and594- nm lasers and observed through 510–530 and 560–615 emission filters, respectively. /// A subset of slices was treated with 100 μ M FC for at least 30 min at room temperature. For SR101 staining, slices were incubated in 1 μ M SR101 in oxygenated artificial cerebrospinal fluid (ACSF) for 20 min, washed in control ACSF for at least 10 min at 34 °C, and then fixed in 4% paraformaldehyde and processed for immunocytochemistry. [@christian_2013; @kafitz_2008] // To overcome this problem, we adapted a protocol for application of the red fluorescent dye SR101, which was reported to stain astrocytes in the intact cortex of rodents ( Nimmerjahn et al., 2004 ), for use in acute slices of the rat hippocampus. SR101 is excited around 575 nm and its emission can be collected above 590 nm, making it suitable for use in combination with many available ion-selective dyes. Initial experiments were carried out employing a post-incubation with SR101-containing ACSF at room temperature for 20 min. Independent from the SR101 concentration used (from 100 M – as suggested by Nimmerjahn et al. (2004) for in vivo experiments – down to 0.5 M), this protocol resulted in an unspecific surface label of SR101. The vast majority of the unspecific SR101 staining most likely represented a nuclear label of superficial neurons whereas cells with typical astrocytic morphology were not stained (not shown). In stark contrast to this, we found that incubation of the slices right after their preparation in ACSF containing 500 nM–1 M SR101 for 20 min at high temperature (34◦C), resulted in a highly specific staining of cells with astrocytic morphology that was maintained for more than 8 h. The staining pattern of SR101 in slices obtained from animals at postnatal day 3 (P3, Fig. 1 A), P7 (not shown), P15 ( Fig. 1 B), as well as P24–27 (not shown) excluded virtually all cells of the stratum pyramidale , clearly indicating that SR101 exclusively labeled glial cells throughout development in this preparation 
 @kafitz_2008-->
 
-### Extracellular recordings 
+### Extracellular recordings, data acquisition and statistics
 <!-- alternatively  Field potential recordings, PPR and LTP-->
 <!-- to results -->
 As the BLA is widely known to be involved in emotional learning and memory, and mounting evidence points to CX3CL1 as a crucial player in these phenomena, additional experiments investigating the role of CX3CL1 in the BLA LTP was performed <!-- poprawić Albo prościej, Additional electrophysiological experiments were performed -->
 Slices containing the BLA were transferred to an interface recording chamber and perfused at 2 ml/min with a recording ACSF (33.5 `r knitr::asis_output("\U00B1")` 0.5`r knitr::asis_output("\U00B0")`C), the same as for patch-clamp recordings. <!-- Slices were transferred to an interface chamber that was continually perfused with ACSF at a rate of 1 to 2 ml/min.-->
 Recordings began approx. 2.5 h after slice preparation.
 
-For FPs recording, a bipolar stimulating electrode and a recording electrode  were visually positioned under a dissecting microscope in the external capsule and the basolateral region of the amygdala, respectively,  as shown.... <!-- FPs were recorded using ACSF-filled glass micropipettes (1–2 M`r knitr::asis_output("\U03A9")`).-->
+For FPs recording, a bipolar stimulating electrode and a recording electrode  were visually positioned under a dissecting microscope in the external capsule and the basolateral region of the amygdala, respectively,  as shown in Fig. \@ref(fig:methodpatch) <!-- FPs were recorded using ACSF-filled glass micropipettes (1–2 M`r knitr::asis_output("\U03A9")`).-->
 For stimulation, a electrode Pt-Ir electrode (CBARC85, FHC) was utilized, whereas recordings were made by using ACSF-filled glass micropipettes (1–2 M`r knitr::asis_output("\U03A9")`), pulled from borosilicate capillaries using a List-Medical L/M 3P-A micropipette puller.
 The recording electrode was introduced 150`r knitr::asis_output("\U03BC")`m into the slice within the BLA.<!-- Elektrodę umieszczono w skrawku na głębokości około 150 m w stosunku do powierzchni, w obrębie AMG-// Glass microelectrodes (Science Products, Hofheim, Germany) were filled with ACSF (tip resistances 1 M Ω ) and placed in the stratum pyramidale of the CA1 region to record population spikes (PS). --> 
 Stimuli (duration: 0.2 ms) were applied at 0.016 Hz using a constant-current stimulus isolation unit (WPI). <!-- Field potentials (FPs) were evoked by stimulation (0.016 Hz, pulse duration: 200 `r knitr::asis_output("\U03BC")`s) employing a constant-current stimulus isolation unit (WPI) and a bipolar Pt-Ir electrode (CBARC85, FHC) placed in the external capsule.-->
@@ -326,6 +347,28 @@ All drugs were bath-applied at the indicated concentrations starting at least 30
 <!--Since the initial slope measure of the FP in the LA is more sensitive to variability and noise in the signal [23] , we analyzed the amplitude of FPs. 
 After initial stabilization of the responses, input–output curves were constructed and then the stimulation intensity was adjusted to evoke FPs of 50% of the maximum amplitude. After 15 min of baseline recording, LTP was induced by the theta burst stimulation (TBS) protocol consisting of three trains of stimuli delivered every 5 min. Each train was composed of six sequences of pulses delivered at frequency of 5 Hz [29] . Each sequence consisted of eight pulses delivered at 100 Hz. TBS stimulation pattern was used since LA projection neurons have an intrinsic propensity to generate voltage-dependent membrane potential oscillations in the theta frequency range [15] and stimulation of the LA at theta frequency induces local activity that resembles that occurring during fear [30] . In a separate set of experiments, after 15 min of baseline recording, LTD was induced by low frequency stimulation (LFS, 900 pulses at 1 Hz) [26] . Both TBS and LFS were repeated every 45 min in order to reach the saturation level of LTP and LTD, respectively [28] . LTP/LTD was considered saturated if the difference between the amplitudes of FPs after consecutive TBS/LFS delivery was not significant. To examine short-term plasticity, paired-pulse stimulation protocols were used. The stimulation intensity was set so that the first stimulus of a pair evoked a response that was 50% of the maximum. Paired stimuli were delivered every 20 s to both inputs to the LA in an interleaved fashion. Inter-stimulus intervals (ISIs) of 25, 50, 100, 200, 600 and 1000 ms were tested in an ascending order and at each interval four successive FPs were recorded. @danielewicz_2014 -->
 
+For extracellular recordings, .... 
+
+The results are expressed as the means +/- SEM. The Student’s t-test, a one-way ANOVA followed by the Tukey’s multiple comparisons test, or a post-hoc Tamhane’s T2 multiple comparisons test following a Welch’s ANOVA test were used to evaluate differences between groups. 
+
+Extracellular data were collected and averaged using the custommade software Signal 2 (Cambridge Electronic Design, UK). 
+We defined the amplitude as the absolute DC voltage of a vertical line running from the minimal point of the field potential to its intersection with a line running tangentially to the field potential onset and offset points. 
+The significance of differences between groups ( n = number of slices) was calculated via two-way ANOVA(GraphPad Prism 5; GraphPad software, San Diego, California). 
+Significance was set at p < .05. 
+To express and compare changes in the amplitudes of the field potentials between the animal groups, we averaged responses from the period of 59 to 60 min and 179 to 180 min, respectively, after HFS/TBS. 
+We averaged responses to LFS from the period of 19 to 20 min. 
+Analysis of PPF was additionally performed by means of Mann – Whitney test.
+
+Data analysis Extracellular data were collected and averaged using the custommade software Signal 2 (Cambridge Electronic Design). We defined thefield potential amplitude as the absolute DC voltage of a verti-cal line running from the minimal point of thefield potential to itsintersection with a line running tangential to thefield potentialonset and offset points. The significance of differences betweengroups (n= number of slices) was calculated with a two-wayANOVA (GraphPad Prism 5; GraphPad software). Significance was set atP< 0.05. To express and compare changes in the ampli-tudes of thefield potentials between the animal groups, we aver-aged responses from the period of 59 to 60 min after HFS or LFS.
+
+Statistical analyses were performed using the SigmaPlot 11.0 software (Systat Software, Inc.). 
+The mean amplitude of responses recorded after the last conditioning stimulation was compared to the initial baseline values and expressed as a percentage of change. 
+Group comparisons employed two-way analysis of variance (ANOVA) with the type of treatment (MS or control) as the first factor and the drug administered (imipramine or saline) as the second factor. 
+Two-way ANOVA was followed by the Tukey’s posthoc test and p < 0.05 was taken as significant. 
+Data are presented as group means ± SEM. 
+Stimulus-response plots were fitted with the Boltzmann equation: Vi= Vmax/(1 + exp ((u-uh)/-S)). The following parameters were compared: the maximum field potential amplitude (Vmax), the stimulation intensity evoking a field potential of half-maximum amplitude (uh) and the factor proportional to the slope of the curve (S). @danielewicz_2017
+
+The stimulus–response curves were fit with the Boltzmann equation: Vi = Vmax/(1 + exp((u .... with Vmax being the maximum FP amplitude; u—stimulation  intensity;  uh—stimulation  intensity  evoking  the  FP  of  half-maximum amplitude; S—factor proportional to the slope of the curve.  <!-- Do tak uzyskanych wartości dopasowano krzywą stanowiącą rozwiązanie równania Boltzmana: y=a/1+exp -((x-xo)/b)  (a – maksymalna wartość amplitudy potencjału polowegi, b  –  parametr charakteryzujący nachylenie  krzywej,  x 0 –  wartość  siły stymulacji, dla której amplituda fEPSP jest równe połowie wartości maksymalnej.-->
 
 ## Immunohistochemistry
 
@@ -458,45 +501,15 @@ Using QuPath, a minimum of four random regions per sample and condition were ann
 <!--For the quantification of the duplex BaseScope, random brightfield images were acquired in the white matter of control donors. -->
 All cells with a positive BaseScope signal were quantified and represent 100% of labelled cells; the percentages of single- or double-positive cells were determined.
 
+For immunohistochemical experiments, results are expressed as percentage of CXCR7/Olig2- positive cells compared to the total number of CXCR7-EGFP cells in the SVZ (n=6). <!-- zmienić jeszcze trochę --> 
+
 ## Morphometric analysis of the dendritic spines of neuronal primary cell cultures
 
 
-## Statistical analysis
+## Statistical analysis - general information
 
 All statistical tests and plotting were done using 3.6.1 [@R_base], with mainly the dplyr (v0.8.3; @dplyr), and the ggplot2 (v3.2.1; @ggplot2) packages. <!-- poprawić --> 
 Statistical significance was set at p = 0.05. 
-Group data for inhibitory synaptic transmission are reported as median`r knitr::asis_output("\U00B1")`SD. <!-- Data are reported as median `r knitr::asis_output("\U00B1")` SEM. -->
-Following verification of a normal distribution, Student’s unpaired t-test was used to compare parametric data from two groups. “n” represents the number of neurons or microglial processes used in each group, and is followed by “N” representing the number of mice per group. 
-The details of the statistical analyses are provided in Results. 
-All relevant data are available from the authors
-
-For immunohistochemical experiments, results are expressed as percentage of CXCR7/Olig2- positive cells compared to the total number of CXCR7-EGFP cells in the SVZ (n=6). <!-- zmienić jeszcze trochę --> 
-
-For patch clamp experiments, chemokines impact on sIPSC characteristics<!-- bardziej ogólnie-->, were analyzed by comparing pre- and post-application values using a paired Student’s t-test or Wilcoxon Signed Rank Test for non-normally distributed data.
-
-For extracellular recordings, .... 
-
-The results are expressed as the means +/- SEM. The Student’s t-test, a one-way ANOVA followed by the Tukey’s multiple comparisons test, or a post-hoc Tamhane’s T2 multiple comparisons test following a Welch’s ANOVA test were used to evaluate differences between groups. 
-
-Extracellular data were collected and averaged using the custommade software Signal 2 (Cambridge Electronic Design, UK). 
-We defined the amplitude as the absolute DC voltage of a vertical line running from the minimal point of the field potential to its intersection with a line running tangentially to the field potential onset and offset points. 
-The significance of differences between groups ( n = number of slices) was calculated via two-way ANOVA(GraphPad Prism 5; GraphPad software, San Diego, California). 
-Significance was set at p < .05. 
-To express and compare changes in the amplitudes of the field potentials between the animal groups, we averaged responses from the period of 59 to 60 min and 179 to 180 min, respectively, after HFS/TBS. 
-We averaged responses to LFS from the period of 19 to 20 min. 
-Analysis of PPF was additionally performed by means of Mann – Whitney test.
-
-Data analysis Extracellular data were collected and averaged using the custommade software Signal 2 (Cambridge Electronic Design). We defined thefield potential amplitude as the absolute DC voltage of a verti-cal line running from the minimal point of thefield potential to itsintersection with a line running tangential to thefield potentialonset and offset points. The significance of differences betweengroups (n= number of slices) was calculated with a two-wayANOVA (GraphPad Prism 5; GraphPad software). Significance was set atP< 0.05. To express and compare changes in the ampli-tudes of thefield potentials between the animal groups, we aver-aged responses from the period of 59 to 60 min after HFS or LFS.
-
-Statistical analyses were performed using the SigmaPlot 11.0 software (Systat Software, Inc.). 
-The mean amplitude of responses recorded after the last conditioning stimulation was compared to the initial baseline values and expressed as a percentage of change. 
-Group comparisons employed two-way analysis of variance (ANOVA) with the type of treatment (MS or control) as the first factor and the drug administered (imipramine or saline) as the second factor. 
-Two-way ANOVA was followed by the Tukey’s posthoc test and p < 0.05 was taken as significant. 
-Data are presented as group means ± SEM. 
-Stimulus-response plots were fitted with the Boltzmann equation: Vi= Vmax/(1 + exp ((u-uh)/-S)). The following parameters were compared: the maximum field potential amplitude (Vmax), the stimulation intensity evoking a field potential of half-maximum amplitude (uh) and the factor proportional to the slope of the curve (S). @danielewicz_2017
-
-The stimulus–response curves were fit with the Boltzmann equation: Vi = Vmax/(1 + exp((u .... with Vmax being the maximum FP amplitude; u—stimulation  intensity;  uh—stimulation  intensity  evoking  the  FP  of  half-maximum amplitude; S—factor proportional to the slope of the curve.  <!-- Do tak uzyskanych wartości dopasowano krzywą stanowiącą rozwiązanie równania Boltzmana: y=a/1+exp -((x-xo)/b)  (a – maksymalna wartość amplitudy potencjału polowegi, b  –  parametr charakteryzujący nachylenie  krzywej,  x 0 –  wartość  siły stymulacji, dla której amplituda fEPSP jest równe połowie wartości maksymalnej.-->
-
 
 <!-- ładne zdania
 
@@ -524,20 +537,3 @@ Thus, we also decided to record PS in the CA1 region of the hippocampus, to get 
 Single or paired stimuli (duration 100 μ s) were presented every 10 s. -->
 
 <!-- , to verify the pre- vs. postsynaptic nature of peptide action.-->
-
-Next, we measured cellular excitability from EGFP-expressing neurons infected with CTR ( n = 14) or NF1707 ( n = 15) in BLA projection neurons. We injected a series of depolarizing current steps to assess the number of action potentials (Figure 4a – c). Repeated-measure ANOVA revealed that projection neurons fired significantly less after NF knockdown (group × current steps intensity interaction: F(1.973,53.279) = 19.648, [@saha_2016] <!-- repeated measure anova to measure excitability ... -->
-
-
-### TO ADD
-
-To record spontaneous inhibitory postsynaptic currents (sIPSCs), neurons were voltage-clamped at 0 mV [@Kusek2015]. 
-After 15 min of the stabilization period, the baseline sIPSCs activity was recorded. The action of lamotrigine (50 $\upmu$M) was assessed by adding a known concentration of a stock solution directly to the bath and taking the measures before (baseline) and during 15 min of lamotrigine superfusion. 
-In a subset of experiments, slices were incubated in ACSF supplemented with  hyperpolarization-activated cation-nonselective (HCN) channels selective antagonists, ZD7288 (10 $\upmu$M) to verify whether the action of lamotrigine was HCN-dependent.
-Spontaneous IPSCs were detected using the TaroTools toolbox for Igor Pro (https://sites.google.com/site/tarotoolsregister).
-
-For sIPSC recordings, amplitude detection thresholds were set to exceed noise values.
-Events were detected automatically, analyzed for double peaks, and then visually inspected to prevent the inclusion of false data. 
-The synaptic activity was analyzed for frequency, amplitude, rise time (calculated from 10–90% of peak amplitude), and decay time calculated by fitting an exponential function form 10-90% of the decay phase. <!--(calculated by averaging 200 randomly selected events and fitting a double exponential function from 10–90% of the decay phase) --><!-- The double exponential function for the decay phase generated an initial fast component and a subsequent slow component of the decay phase. --> 
-All statistical tests and plotting were done using 3.6.1 [@R_base], the dplyr (v0.8.3; @dplyr), and the ggplot2 (v3.2.1; @ggplot2) packages. 
-Group data for inhibitory synaptic transmission are reported as median$\pm$SD.
-Lamotrigine’s impact on sIPSC characteristics was analyzed by comparing pre- and post-lamotrigine values using a paired Student’s t-test or Wilcoxon Signed Rank Test for non-normally distributed data.

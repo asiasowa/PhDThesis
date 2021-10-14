@@ -1,69 +1,60 @@
 ## Amygdala  {#amygdalamain}     
 
-The amygdala, a complex comprised of a heterogeneous collection of nuclei, is located in the medial temporal lobe. 
-Its nuclei can be distinguished based on their different connectivity, immunohistochemical and cytoarchitectural profiles (for a review, see: @duvarci_2014).
-Unfortunately, due to the complexity of this structure, there is no<!--anatomical--> standardization of amygdaloid nuclei terminology. <!-- although there is no standardization in relation to correct term, -->
+The amygdala is a brain structure located in medial temporal lobe associated with surprisingly distinct array of behaviors, such as learning, fear, anxiety, reward, and addiction [@ehrlich_2009; @herry_2010; @ledoux_2000; @roozendaal_2009].
+<!-- adaptation and well-conserved -->
+<!-- learning --> 
+Surprisingly, despite this variety of functions, the amygdala is well-conserved throughout evolution. 
+Even non-mammalian species such as reptiles, birds, and fishes have a counterpart with similar circuits and functions to the amygdala in mammals (for a review: @janak_2015). 
+It is speculated that this may be due to adaptive value of those phenomena. 
+In order to survive when confronted with particular events, animals must discriminate and learn specific environmental stimuli that predict potentially life-threatening or sustaining events so that they can mobilize<!--inne słówko?--> adaptive responses to those stimuli in the future. <!-- lepiej napisać to zdanie -->
+For example, during fear conditioning, a neutral stimulus, such as an acoustic tone (i.e., the conditioned stimulus [CS]), that predicts an aversive outcome, such as a footshock (i.e., the unconditioned stimulus [US]), results in defensive responses, such as freezing behavior [@janak_2015; @ledoux_2000].<!-- Most of amygdala-related processes are linked to associative learning, i.e., fear conditioning (also known as Pavlovian conditioning) and its malfunctions. This form of learning is termed Pavlovian conditioning. -->
+Analogously, reward-induced conditioning responses<!--the acquisition of conditioned responding to both fear and reward cues-->lead to a cue-triggered behavior [@clem_2010; @johansen_2010; @tye_2008].<!-- nowsze cytowania  -->
+Thus, both learning about danger and potential rewards are adaptive and engages the amygdala [@janak_2015].
+
+These distinct behaviors are believed to be reflected by amygdalar widespread connections with an array of other brain regions, from the prefrontal cortex to the brainstem (for reviews: @duvarci_2014; @pape_2010; @sah_2003) as well as is complex inner structure.<!-- Moreover, the amygdala is well-documented to have ....further supporting the notion that this structure could influence other parts of the brain, and thereby, distinct behaviors mediated by those regions. -->
+This limbic region is comprised of a heterogeneous collection of nuclei, which can be distinguished based on their different connectivity, immunohistochemical and cytoarchitectural profiles (for a review, see: @duvarci_2014). 
 Historically, amygdala nuclei are divided into three groups: (1) the deep or basolateral group, which includes the lateral nucleus, the basal nucleus, and accessory basal nucleus; (2) the superficial or cortical-like group, which includes the cortical nuclei and nucleus of the lateral olfactory tract; and (3) the centromedial group composed of the medial and central nuclei, such as the medial nucleus of the amygdala (MeA), the anterior amygdala area (AAA), and the amygdalo-hippocampal area (AHA) [@mcdonald_1998; @sah_2003].
 Here, the following classification will be used: the basolateral complex of the amygdala (BLA), the central amygdala (CeA), and intercalated cell (ITC) masses, based on many excellent papers (@bocchio_2016; @duvarci_2014; @ehrlich_2009; @pape_2010; @spampanato_2011, see Fig. \@ref(fig:amygdalastr)).
 Nuclei that do not fall into any of these categories are beyond the scope of this dissertation and are described elsewhere [@pitknen_1997; @sah_2003]. <!--check citations and more? -->
-
-
 
 ```{r amygdalastr, fig.cap= '**Physiological and morphological properties of amygdalar neurons**', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/amygdalastr.png")
 ```
 
-
-### Functions {#amygdalafunctions}
-
-This limbic region is involved in surprisingly distinct behaviors related to learning, fear, anxiety, reward, and addiction [@ehrlich_2009; @herry_2010; @ledoux_2000; @roozendaal_2009].
-At first glimpse, this variety of functions could be surprising, but most of them are related<!--inne słówko // reduced?--> to associative learning, i.e., fear conditioning and its malfunctions. 
-In order to survive when confronted with particular events, animals must discriminate and learn specific environmental stimuli that predict potentially life-threatening or sustaining events so that they can mobilize<!--inne słówko?--> adaptive responses to those stimuli in the future. <!-- lepiej napisać to zdanie --><!-- plus dodać tutaj o modelu? -->
-This form of learning is termed Pavlovian conditioning. 
-For example, during fear conditioning, a neutral stimulus, such as an acoustic tone (i.e., the conditioned stimulus [CS]), that predicts an aversive outcome, such as a footshock (i.e., the unconditioned stimulus [US]), results in defensive responses, such as freezing behavior [@janak_2015; @ledoux_2000].
-Therefore, the amygdala has been conserved throughout evolution. 
-Even non-mammalian species such as reptiles, birds, and fishes have a counterpart with similar circuits and functions to the amygdala in mammals [@janak_2015]. 
-Amygdala is also an important player in tuning autonomic responses to homeostatic challenges, including those of the peripheral immune system [@pachecolpez_2005]. <!--więcej cytowań / lepiej napisać-->
-Recent technological advances, such as optogenetics and chemogenetics, in conjunction with a battery of behavioral tests and electrophysiology, determine how genetically targeted cellular activity within the amygdala could contribute to each of these distinct processes (for example, @lalumiere_2014). <!-- lepiej to napisać ... with ,-->
-Moreover, the amygdala is well-documented to have<!--inne słówko--> widespread connections with an array of other brain regions, from the prefrontal cortex to the brainstem (for reviews: @duvarci_2014; @pape_2010; @sah_2003), further supporting the notion that this structure could influence other parts of the brain, and thereby, distinct behaviors mediated by those regions. <!-- figure ? illustrating amygdala as a hub?-->
+Recent technological advances, such as optogenetics and chemogenetics, in conjunction with a battery of behavioral tests and electrophysiology, have been dissecting how genetically targeted cellular activity within the amygdala could contribute to each of these distinct processes (for example, @lalumiere_2014). <!-- lepiej to napisać ... with ,-->
 Here, I summarize the current state of knowledge of the amygdala's role, anatomy, and physiology. 
+The physiological and morphological properties of neurons in relation to specific nuclei are shown in Fig. \@ref(fig:amygdalastr), whereas their inputs, outputs and intra-connectivity are depicted in Fig. \@ref(fig: amygdalaconnectivity).
 
-<!-- Anatomy and Physiology? // As a group, amygdala nuclei receive inputs from and project to virtually all levels of the central nervous system. -->
-### The basolateral complex of the amygdala (BLA) {#BLAstructure}
+### The basolateral complex of the amygdala (BLA) {#BLA}
 
 The basolateral complex is anatomically divided into the lateral nucleus (LA), the basal nucleus (B), and the basomedial nucleus (BMA), the latter also known as the accessory basal nucleus (@krettek_1978, see Fig. \@ref(fig:amygdalastr)). <!-- nowsze cytowania? -->
 All these nuclei are often referred to as the basolateral nucleus (BLA), and hereafter this term will be used.
 The BLA is considered to be the main point of the entry for cortical and thalamic sensory inputs into the amygdala, which form axonal bundles and enter *via* external and internal capsule, respectively (for reviews: @duvarci_2014; @lalumiere_2014; @sah_2003a). 
+
+<!-- inputs -->
+
+
 This complex displays cortical-like characteristics based on its developmental origin and structural organization [@waclaw_2010], although BLA neurons do not exhibit a laminar organization [@sah_2003]. 
 Within the BLA, approximately 80% of all neurons are glutamatergic pyramidal-like principal cells, and the remaining 20% belong to a heterogeneous group of interneurons [@duvarci_2014; @mcdonald_1993; @spampanato_2011]. 
+Accordingly, both principal cells (PCs) and interneurons show many morphological and electrophysiological characteristics similar to their cortical and hippocampal counterparts. 
 
-#### Neuronal Composition {#BLAcells}
-<!-- choć może cellular i tutaj też astrocyty? -->
-
-Principal cells (PCs) show many morphological and electrophysiological characteristics similar to their cortical and hippocampal pyramidal counterparts. 
-In the BLA, PCs represent a rather heterogeneous group, forming subpopulations based on both morphological and electrophysiological features [@faber_2001; @funahashi_2000].
 Morphologically, PCs are characterized by a large triangle-shaped soma, spiny complex dendritic trees, and the presence of a thicker apical dendrite (@mcdonald_1982, see Fig. \@ref(fig:amygdalastr)).<!--  see figure? -->
-<!-- Reflecting ..?? Based on their morphological profile, -->However, these cells may vary in soma volume [@klenowski_2015] and/or shape (triangle vs. stellate-like morphology) as well as a structure of dendritic trees [@faber_2001, @par_1995; @klenowski_2015], reflecting the morphological heterogeneity of PCs population. 
 Considering electrophysiological properties, PCs show spike frequency adaptation in response to depolarizing somatic current injections (@faber_2001; @par_1995, see Fig. \@ref(fig:amygdalastr)).
 The degree of this adaptation forms a continuum. <!-- the degree of the spike frequency adaptation of PCs forms a continuum: -->
 At one end, cells fire two to three spikes only and show marked spike frequency accommodation, whereas, at the other end, their firing is repetitive throughout the current injection with little accommodation [@faber_2001; @funahashi_2000]. <!-- może jakiś figure i trochę lepiej napisać? see Fig. in methods?-->
-Moreover, more prominent spike frequency adaptation was associated with more prominent afterhyperpolarization (AHP) and higher expression of calcium-activated potassium channels in those cells [@faber_2001; @faber_2002; @sah_1996]. <!-- HERE: additional electrophysiological features of principal cells /// Additionally, another electrophysiological characteristics of principal neurons in BLA are: relatively wide  action potentials (half-width = 1.2 ms), ....., .....-->
-Additionally, a small subset of PCs displays bursting activity, which is thought to be due to the presence of low-threshold, slowly inactivating potassium current [@par_1995]. 
-However, to what extent these differences in firing patterns reflect distinct principal cells' subpopulations and their functional significance is still unclear. <!-- może zmienić trochę bardziej? -->
-Moreover, morphological and electrophysiological features of PCs are not inter-correlated [@faber_2001; @funahashi_2000]. <!-- nie wiem czy to nie gdzieś indziej albo wywalić -->
 
-BLA interneurons are a highly heterogeneous subpopulation, forming functional classes based on a large array of parameters, which was a subject of many excellent reviews [@hjos_2021; @prager_2016; @spampanato_2011].
+On the other hand, BLA interneurons are a highly heterogeneous subpopulation, forming functional classes based on a large array of parameters, which is a subject of many excellent reviews [@hjos_2021; @prager_2016; @spampanato_2011].
 In contrast to principal cells, interneurons have smaller cell bodies, and their axon collaterals are restricted to the BLA [@mcdonald_2001; @mcdonald_2002; @mcdonald_2004]. 
 Their dendritic trees could be subdivided into multipolar, bitufted, bipolar, and chandelier cells (@mcdonald_1982; @woodruff_2010, see Fig. \@ref(fig:amygdalastr)). 
 Moreover, although most BLA interneurons have aspiny dendrites, those protuberances of some interneurons show a more spine-sparse morphology [@klenowski_2015]. 
 It should also be noted that BLA interneuron axons branch sparingly, forming dense terminals and collaterals with principal neurons, which will be discussed below. 
 
-Analogous to their counterparts in the neocortex and hippocampus, interneurons in the BLA can be characterized by their calcium-binding protein and peptide contents, forming at least four distinct subpopulations: (1) parvalbumin+/calbindin+ (PV+/CB+) neurons (around 40% of BLA interneurons), (2) somatostatin+/calbindin+ (SOM+/CB+) neurons (about 17%), (3) large multipolar cholecystokinin+ (CCK+) neurons that are often calbindin+, constituting 7% of whole BLA interneuronal population, and (4) a family of small bipolar and bitufted interneurons expressing calretinin (CR), CCK, and vasoactive intestinal peptide (VIP), accounting for 35% of BLA interneurons [@kemppainen_2000; @mcdonald_2001; @mcdonald_2001a; @mcdonald_2002; @muller_2003]. <!-- (Mascagni & McDonald, 2003) może zrobić figure? -->
+Analogous to their counterparts in the neocortex and hippocampus, interneurons in the BLA can be characterized by their calcium-binding protein and peptide contents, forming at least four distinct subpopulations: (1) parvalbumin+/calbindin+ (PV+/CB+) neurons (around 40% of BLA interneurons), (2) somatostatin+/calbindin+ (SOM+/CB+) neurons (about 17%), (3) large multipolar cholecystokinin+ (CCK+) neurons that are often calbindin+, constituting 7% of whole BLA interneuronal population, and (4) a family of small bipolar and bitufted interneurons expressing calretinin (CR), CCK, and vasoactive intestinal peptide (VIP), accounting for 35% of BLA interneurons [@kemppainen_2000; @mcdonald_2001; @mcdonald_2001a; @mcdonald_2002; @muller_2003]. <!-- 
 Of note, these subpopulations can be further subdivided. 
-For instance, there is a subpopulation of SOM+ neurons, which expresses neuropeptide Y (NPY), whereas the PV group includes the basket and chandelier cells, also known as axo-axonic neurons (AAC), which will be discussed in the next section (<!--see: \@ref(BLAinside); -->for reviews: @hjos_2021, @prager_2016, @tremblay_2016). <!-- PV+ basket cells (PVBCs) also express CB,  whereas PV+ AACs do not -->
+For instance, there is a subpopulation of SOM+ neurons, which expresses neuropeptide Y (NPY), whereas the PV group includes the basket and chandelier cells, also known as axo-axonic neurons (AAC), which will be discussed in the next section (for reviews: @hjos_2021, @prager_2016, @tremblay_2016). 
 Moreover, the relative ratios of interneuron types may differ between brain regions.
 Within the BLA, they are roughly the same, except for PV-immunopositive interneurons.
-As mentioned above, this subpopulation constitutes around 40% of BLA interneurons, except in the lateral subdivision, where PV-expressing cells represent only 20% of BLA interneurons. <!-- citation? -->
+As mentioned above, this subpopulation constitutes around 40% of BLA interneurons, except in the lateral subdivision, where PV-expressing cells represent only 20% of BLA interneurons. -->
 
 Electrophysiologically, contrary to principal cells, BLA interneurons show no apparent spike frequency adaptation in response to a prolonged depolarizing current injection, their action potentials have a shorter duration (half-width 0.7 ms), and they fire spontaneously *in vivo* at high frequencies (10-15 Hz)  [@spampanato_2011; @par_1995].
 Consistent with the notion that the BLA is a cortical-like structure, these firing properties resemble those found in cortical interneurons [@petillainterneuronnomenclaturegroup_2008] but not those of GABAergic neurons in the CeA [@dumont_2002; @lopezdearmentia_2004]. <!-- see citations for figure -->
@@ -80,7 +71,6 @@ Nevertheless, it is tempting to speculate that neurons with disparate electrophy
 knitr::include_graphics("images/amygdalaconnect.png")
 ```
 
-##### Afferents {#BLAinputs}
 
 Multisensory and highly processed information derived from all modalities (e.g., olfactory, somatosensory, gustatory, visceral, auditory, and visual) converges in the BLA (for a more comprehensive review, see: @pape_2010, @sah_2003). 
 It is carried by inputs from higher-order thalamic nuclei, sensory, associative cortices, and the hippocampus, entering the amygdala *via* the external or internal capsules (for reviews: @hjos_2021; @sah_2003). <!-- figure i cytowanie które nie jest review? // thalamic nuclei and secondary or higher-order sensory cortices besides the associative cortices-->

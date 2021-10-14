@@ -440,8 +440,7 @@ Furthermore, additional tests for secondary antibody specificity were conducted 
 
 ### Image analysis 
 
-In order to address the co-localization between cell type markers and chemokines/CKRs of interest<!-- microglial activation-->, the fluorescent signals<!--expression by immunohistochemistry in cells located in the central and basolateral amygdala-->located in the central and basolateral amygdala were measured under a Zeiss Axio Imager.Z2 fluorescence microscope equipped with the Apotome.2 optical sectioning module (Carl Zeiss) 63x/1.4 oil immersion plan apochromatic objective for all the cell counts. <!--(63x Oil immersion objective for all the cell counts except for PV+ interneurons, which were analyzed under a 25X Oil immersion objective) //  Information about individual neuron morphology and immunohistochemistry was acquired using optical z-stacks taken with the 20x/0.8 air objective and the 63x/1.4 oilimmersion plan apochromatic objective respectively on a Zeiss Axio Imager.Z2 fluorescence microscope equipped with the Apotome.2 op  -  tical sectioning module (Carl Zeiss). // expression by immunohistochemistry in cells located in the central and basolateral amygdala-->  fluorescent images (z-stacks) have been acquired using a confocal microscope (Leica TCS SP8). 
-Image analysis has been performed using open source Fiji<!--citation?--> imaging software. <!-- Image analysis has been performed using open source Fiji32 and QuPath33 imaging software. -->
+In order to address the co-localization between cell type markers and chemokines/CKRs of interest<!-- microglial activation-->,  fluorescent images (z-stacks) have been acquired using a Zeiss Axio Imager.Z2 fluorescence microscope equipped with the Apotome.2 optical sectioning module (Carl Zeiss) 63x/1.4 oil immersion plan apochromatic objective.<!--(63x Oil immersion objective for all the cell counts except for PV+ interneurons, which were analyzed under a 25X Oil immersion objective) //  Information about individual neuron morphology and immunohistochemistry was acquired using optical z-stacks taken with the 20x/0.8 air objective and the 63x/1.4 oilimmersion plan apochromatic objective respectively on a Zeiss Axio Imager.Z2 fluorescence microscope equipped with the Apotome.2 op  -  tical sectioning module (Carl Zeiss). // expression by immunohistochemistry in cells located in the central and basolateral amygdala--> 
 Briefly, <!--confocal--> stacks of 20 images were obtained under a <!--LSM710 Zeiss confocal microscope (63x Oil immersion objective, Z-axis interval: 0.4 mm, XY dimensions: 79.38 mm).-->
 Three-channel images were acquired <!--(DAPI, CD68 and Iba1)-->. 
 <!--For each image, a fixed value threshold was applied to the Iba1 channel, and then the threshold image was converted in a Selection.
@@ -449,28 +448,24 @@ A Mean filter (2 pixels) was applied in order to delete precipitates of the seco
 The selection was then loaded in the CD68 channel. 
 Selections were inverted in both channels, and the exterior of the cells was filled with black paint.  -->
 
-All image analysis, cell counts and fluorescence measurements were performed “off-line” on captured images taken from stained sections.<!-- trochę zmienić -->
+All image analysis, cell counts and fluorescence measurements were performed “off-line” on captured images taken from stained sections using open source Fiji<!--citation?--> imaging software.<!-- Image analysis has been performed using open source Fiji32 and QuPath33 imaging software. -->
+<!-- For fluorescent images, z-stacks were collapsed to a maximum intensity projection and the number of cells was quantified using the Fiji cell counter plugin. -->
 The total numbers of positively identified cells expressing either chosen marker of chemokine/CKR of interest were counted manually in individual brain sections.<!-- from 3 rats in each treatment group. -->
 <!--Resulting images were then processed with the Just Another Colocalization Plugin (JACoP) in ImageJ, as previously described (Llorens-Martin et al., 2016). -->
 The number of cells was counted  separately in the central and basolateral amygdala.<!--PV+ interneurons were counted in the DG. To this end, the area including the GL, ML and the H was contoured on confocal stacks of images, and the number of PV+ cells surrounded by PNNs within that contour were counted in each stack of images. The number of cells was then divided by the drawn area, and cell density (cells/mm3) was represented in the graphs. Bolos2018 --> 
-The percentage of MCH neurons that express CXCR4 in a given nucleus was calculated as the ratio of the number of double labelled CXCR4 ⁄ MCH over that of MCH-positive cells.<!--The percentage of colocalization between the two channels (Iba1+ area that was also CD68+ (Mander’s coefficient M1)) is represented in the graphs.-->
+The percentage of MCH neurons that express CXCR4 in a given nucleus was calculated as the ratio of the number of double labelled CXCR4 ⁄ MCH over that of MCH-positive cells.<!--The percentage of colocalization between the two channels (Iba1+ area that was also CD68+ (Mander’s coefficient M1)) is represented in the graphs.--><!-- All cells with a positive BaseScope signal were quantified and represent 100% of labelled cells; the percentages of single- or double-positive cells were determined.--><!--For immunohistochemical experiments, results are expressed as percentage of CXCR7/Olig2- positive cells compared to the total number of CXCR7-EGFP cells in the SVZ (n=6).  zmienić jeszcze trochę -->
 
 <!--Briefly, six stacks of images per animal were used to determine the density of mature granule neurons in a reference structure of known volume (30 (X) ? 30 (Y) ? 10 (Z) lm). The average density of these cells was then multiplied by either the total volume of the DG (in the case of the number of mature granule neurons) or by the length of the subgranular zone (SGZ) (in the case of the number of DCX+ neuroblasts) in order to calculate the total number of cells per animal (Llorens-Martin et al., 2006). Bolos2018-->
 <!-- Assessment was performed by independent blinded investigators who quantified the total number of activated microglia. The numbers of activated microglia in each treatment group were expressed as a percentage of the total number of cells counted. --><!-- In the other cases, quantification has been validated by two independent people. -->
 <!-- Brightfield images have been acquired using a Widefield Observer (Zeiss) inverted microscope and a Vectra Polaris (Perkin Elmer) slide scanner. -->
-
-For cell quantification of fluorescent images and brightfield images in which no automated quantification was possible, a minimum of eight randomly chosen regions of equal dimensions per rat and region were acquired.
-Total cell numbers per mm2 were calculated based on the image dimensions. 
-For fluorescent images, z-stacks were collapsed to a maximum intensity projection and the number of cells was quantified using the Fiji cell counter plugin. 
+<!--For cell quantification of fluorescent images and brightfield images in which no automated quantification was possible, a minimum of eight randomly chosen regions of equal dimensions per rat and region were acquired.
+Total cell numbers per mm2 were calculated based on the image dimensions. -->
 <!-- For quantification of the single-channel brightfield images and the BaseScope IHC double-positive images, the number of cells was also quantified using the Fiji cell counter plugin. -->
 <!-- The average of these different regions was taken and considered as n = 1. 
 Where possible, brightfield images were quantified automatically. 
 Therefore, whole slides were scanned using a slide scanner. 
 Using QuPath, a minimum of four random regions per sample and condition were annotated, and cells within these regions were quantified using the automated ‘positive cell detection’ plugin.-->
 <!--For the quantification of the duplex BaseScope, random brightfield images were acquired in the white matter of control donors. -->
-All cells with a positive BaseScope signal were quantified and represent 100% of labelled cells; the percentages of single- or double-positive cells were determined.
-
-For immunohistochemical experiments, results are expressed as percentage of CXCR7/Olig2- positive cells compared to the total number of CXCR7-EGFP cells in the SVZ (n=6). <!-- zmienić jeszcze trochę --> 
 
 ## Morphometric analysis of the dendritic spines of neuronal primary cell cultures
 

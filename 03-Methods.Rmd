@@ -496,3 +496,4 @@ Thus, we also decided to record PS in the CA1 region of the hippocampus, to get 
 Single or paired stimuli (duration 100 μ s) were presented every 10 s. -->
 
 <!-- , to verify the pre- vs. postsynaptic nature of peptide action.-->
+\newpage

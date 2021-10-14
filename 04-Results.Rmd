@@ -1,4 +1,4 @@
-# Results
+# Results {#results}
 
 ## CX3CL1/CX3CR1 in the BLA
 
@@ -212,6 +212,7 @@ To determine if the decrease in sIPSC frequency by CX3CL1 was due to a change in
 
 
 In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which was further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)). <!-- może dodać o tendency i zrobić jednak nowy podrozdział?-->
+<!-- podsumowanie o synaptic transmission and excitability..., bo następne zdanie to adress these issues"
 
 
 ```{r CX3CL1BLAsIPSC, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 18, fig.width= 8}
@@ -330,7 +331,8 @@ figure1
 
 #### CX3CL1 inhibits the long-term potentiation in the BLA
 
-As many reports indicated the effect of CX3CL1 on the LTP<!-- citations -->, together with accumulating evidence concerning the relevance of interneurons in this process in the BLA <!-- citations -->, ... <!-- dokończyć-->.
+To address these issues and gain insights into how CX3CL1 modulate network activity, the extracellular recordings were employed. 
+The observed in this study decrease in excitability, together with a decrease in GABAergic drive, was  As many reports indicated the effect of CX3CL1 on the LTP<!-- citations -->, together with accumulating evidence concerning the relevance of interneurons in this process in the BLA <!-- citations -->, ... <!-- dokończyć-->.
 Upon application of HFS<!--High Frequency Stimulation-->, external capsule-evoked field potentials in the BLA were effectively potentiated in the control slices, but not in the slices treated with CX3CL1, as revealed by a significant decreased measured by the comparison of average potentiation across time points after induction (Figure 4g, t (16) = 4.03, P = 0.001). <!-- poprawić mixed model repeated-measure ANOVA (group effect: (F (1,16) = 16.27, P = 0.001; and group × post-HFS time point interaction: F(2.071,33.136) = 9.231, P = 0.001, Greenhouse – Geisser correction; Figure 4f)// The comparison of average potentiation across time points after induction also revealed a highly significant difference between these two groups of slices (Figure 4g, t (16) = 4.03, P = 0.001).-->
 
 #### Pyramidal-like neurons in the BLA are sensitive to the CX3CL1 activation
@@ -411,6 +413,8 @@ We found that mEPSC frequency was significantly increased (....) without any cha
 The results suggest that IFNg enhances NMDA receptor signaling by activating IFNg receptors in the dorsal horn of the spinal cord. 
 Minocycline, an inhibitor of microglial activation, inhibited the IFNg-induced facilitation of NMDA current, but inhibition of the neuronal JAK- STAT signaling did not. 
 Therefore, we conclude that IFNg binds its own receptors in microglia but not SG neurons, and the subsequent microglial activation leads to NMDA receptor activation. - Sonekatsu2016
+
+In a subset of experiments, slices were incubated in ACSF supplemented with  hyperpolarization-activated cation-nonselective (HCN) channels selective antagonists, ZD7288 (10 $\upmu$M) to verify whether the action of lamotrigine was HCN-dependent.
 
 ####### silent synapses
 

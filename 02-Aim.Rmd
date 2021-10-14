@@ -51,374 +51,54 @@ wskazuje miejsca stymulacji dotyczących protokołów z wywołaną transmisją s
 
 \newpage 
 
-```{r cxcl12_data, include=FALSE}
-#library(here)
+<!-- library(elektroasia)
+
+setwd("..")
+setwd("..")
+setwd(".//CXCL12")-->
+```{r setup, include=FALSE}
+# options for printing figures outside this file:
+# in pandoc option:
+# output: 
+#   slidy_presentation:
+#     self_contained: false
+# knitr::opts_chunk$set(echo = FALSE, dev = 'pdf') 
+
+
+# option for having everything in this file in pandoc option
+# output: slidy_presentation
+setwd("..")
+setwd("..")
+setwd(".//CX3CL1")
 library(elektroasia)
-
-setwd("..")
-setwd("..")
-setwd(".//CXCL12")
-
-#########################BLA################################################################################
-############################################################################################################
-############################################################################################################
-###################CXCL12 2nM############################################################
-BLA_df_2nM<-readRDS(".//BLA//2nM//membrane_table_BLA_cxcl12_2nM.rds")
-BLA_df_2nM$Cell <- as.factor(BLA_df_2nM$Cell)
-BLA_df_2nM$Condition <- as.factor(BLA_df_2nM$Condition)
-
-bad_Cells <- c(15,9,10,1) #15 - input restistance > 250, 9,10 - Cm > 300, 1- RMS > -50
-BLA_df_2nM <- BLA_df_2nM %>% filter(!Cell %in% bad_Cells) 
-
-BLA_df_2nM <- BLA_df_2nM %>% mutate(Experiment = "CXCL12(2nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
-BLA_df_2nM_inter <- BLA_df_2nM %>% filter(Type == "interneuron")
-BLA_df_2nM <- BLA_df_2nM %>% filter(Type == "PC")
-
-
-###################5nM############################################################
-BLA_df_5nM<-readRDS(".//BLA//5nM//membrane_table_BLA_cxcl12_5nM.rds")
-BLA_df_5nM$Cell <- as.factor(BLA_df_5nM$Cell)
-BLA_df_5nM$Condition <- as.factor(BLA_df_5nM$Condition)
-BLA_df_5nM <- BLA_df_5nM %>% mutate(Experiment = "CXCL12(5nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
-bad_Cells <- c(4, 10) # Rm - 478 -> 268 ; 10 - 20d14002 - only 1 spike after application
-BLA_df_5nM <- BLA_df_5nM %>% filter(!Cell %in% bad_Cells)
-
-BLA_df_5nM_inter <- BLA_df_5nM %>% filter(Type == "interneuron")
-BLA_df_5nM <- BLA_df_5nM %>% filter(Type == "PC")
-
-################################CeA####################################################
-
-# cxcl12 2nM
-CeA_df_2nM<-readRDS(".//CeA//2nM//membrane_table_CeA_cxcl12_2nM.rds")
-CeA_df_2nM <- CeA_df_2nM %>% mutate(Experiment = 'CXCL12(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
-bad_Cells <- c(17, 4, 8, 11) #  17 sEPSC - RS - przymyka się cały czas, 4 - RS - bardzo późno zaczęła spike'ować, 8 LF - dziwny IV. 11 - RS - dziwny IV i bardzo malo sEPSC, 
-CeA_df_2nM <- CeA_df_2nM %>% filter(!Cell %in% bad_Cells)
-# cxcl12 5nM
-
-CeA_df_5nM<-readRDS(".//CeA//5nM//membrane_table_CeA_cxcl12_5nM.rds")
-CeA_df_5nM <- CeA_df_5nM %>% mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
-bad_Cells <- c(2, 10, 3, 9, 1, 15, 7, 8, 23) # Adaptation ratio - NA :( , 3 - poszarpana po podaniu (sEPSC), 9 - LF- based on IV -sEPSC absent 1, 15, 7 -> RS based on IV. sEPSC, 8 - LF - Rm 600 -> 200, 21325036 - IV po podaniu
-CeA_df_5nM <- CeA_df_5nM %>% filter(!Cell %in% bad_Cells)
-
-
-## AMD 
-CeA_amd5nM_df <-readRDS(".//CeA//AMD//blocking5nM//membrane_table_CeA_AMD_CXCL12_5nM.rds") # 
-CeA_amd5nM_df <- CeA_amd5nM_df %>% mutate(Experiment = 'AMD + CXCL12(5nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
-bad_Cells <- c(8)
-CeA_amd5nM_df <- CeA_amd5nM_df %>% filter(!Cell %in% bad_Cells)
-
-## AMD alone 
-CeA_amda_df <-readRDS(".//CeA//AMD//alone//membrane_table_CeA_AMD_alone.rds") # 
-CeA_amda_df <- CeA_amda_df %>% mutate(Experiment = 'AMD') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type, everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
-CeA_amda_df$Condition <- factor(CeA_amda_df$Condition, levels = c("baseline", "AMD"))
-
-## fluorocitrate
-CeA_df_fluoro <-readRDS(".//CeA//fluorocitrate//membrane_table_CeA_fluoro_cxcl12_5nM.rds") # 
-CeA_df_fluoro <- CeA_df_fluoro %>% mutate(Experiment = "FC + CXCL12(5nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type, everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
-#################################SYNAPTIC TRANSMISSION#####################################################
-###########################################################################################################
-#########################################################################################################
-BLA_cxcl12_2nM_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_2nM.csv"))
-BLA_cxcl12_2nM_sEPSC$Condition <- plyr::revalue(BLA_cxcl12_2nM_sEPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
-
-BLA_cxcl12_2nM_sEPSC<- BLA_cxcl12_2nM_sEPSC %>% dplyr::mutate(Experiment = 'CXCL12(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-BLA_cxcl12_2nM_sEPSC$Filename <- as.character(BLA_cxcl12_2nM_sEPSC$Filename)
-#bad_Cells <- c(4, 6) # Frequency 10 -> 30Hz., 17518039 - w IV wygląda spoko, zanalizować jeszcze raz. #6 - 20123016 po IV, który miał 2 spikei i w sEPSC też mało eventów (100). 
-#BLA_cxcl12_2nM_sEPSC <- BLA_cxcl12_2nM_sEPSC %>% filter(!Cell %in% bad_Cells)
-
-BLA_cxcl12_5nM_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_5nM.csv"))
-BLA_cxcl12_5nM_sEPSC$Condition <- plyr::revalue(BLA_cxcl12_5nM_sEPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
-
-BLA_cxcl12_5nM_sEPSC<- BLA_cxcl12_5nM_sEPSC %>% dplyr::mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-BLA_cxcl12_5nM_sEPSC$Filename <- as.character(BLA_cxcl12_5nM_sEPSC$Filename)
-#bad_Cells <- c(3, 6) # based on Rm - 20930023-26 > 500,  6- 20d14002 - based on IV
-#BLA_cxcl12_5nM_sEPSC <- BLA_cxcl12_5nM_sEPSC %>% filter(!Cell %in% bad_Cells)
-BLA_cxcl12_5nM_sEPSC<- BLA_cxcl12_5nM_sEPSC %>% dplyr::mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-BLA_cxcl12_5nM_sEPSC$Filename <- as.character(BLA_cxcl12_5nM_sEPSC$Filename)
-############BLA sIPSC#######################################################
-
-BLA_cxcl12_2nM_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_cxcl12_2nM.csv"))
-BLA_cxcl12_2nM_sIPSC$Condition <- plyr::revalue(BLA_cxcl12_2nM_sIPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
-BLA_cxcl12_2nM_sIPSC$Filename <- as.character(BLA_cxcl12_2nM_sIPSC$Filename)
-
-BLA_cxcl12_2nM_sIPSC<- BLA_cxcl12_2nM_sIPSC %>% dplyr::mutate(Experiment = 'CXCL12(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-
-BLA_cxcl12_5nM_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_cxcl12_5nM.csv"))
-BLA_cxcl12_5nM_sIPSC$Condition <- plyr::revalue(BLA_cxcl12_5nM_sIPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
-BLA_cxcl12_5nM_sIPSC$Filename <- as.character(BLA_cxcl12_5nM_sIPSC$Filename)
-
-BLA_cxcl12_5nM_sIPSC<- BLA_cxcl12_5nM_sIPSC %>% dplyr::mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-
-#CeA
-CeA_sEPSC_cxcl12_2nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_cxcl12_2nM.csv")) 
-CeA_sEPSC_cxcl12_2nM_RS <- CeA_sEPSC_cxcl12_2nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sEPSC_cxcl12_2nM_RS$Filename <- as.character(CeA_sEPSC_cxcl12_2nM_RS$Filename)
-
-CeA_sEPSC_cxcl12_2nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_cxcl12_2nM.csv")) 
-CeA_sEPSC_cxcl12_2nM_LF <- CeA_sEPSC_cxcl12_2nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sEPSC_cxcl12_2nM_LF$Filename <- as.character(CeA_sEPSC_cxcl12_2nM_LF$Filename)
-
-CeA_sEPSC_cxcl12_2nM <- CeA_sEPSC_cxcl12_2nM_RS %>% bind_rows(CeA_sEPSC_cxcl12_2nM_LF) %>% dplyr::mutate(Experiment = "CXCL12(2nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-#bad_Cells <- c(2) # IV bardzo późno zaczęła. 
-#CeA_sEPSC_cxcl12_2nM <- CeA_sEPSC_cxcl12_2nM %>% filter(!Cell %in% bad_Cells)
-CeA_sEPSC_cxcl12_2nM$Condition <- plyr::revalue(CeA_sEPSC_cxcl12_2nM$Condition, c("b"="baseline", "f" = "CXCL12"))
-
-CeA_sEPSC_cxcl12_5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_cxcl12_5nM.csv")) 
-CeA_sEPSC_cxcl12_5nM_RS <- CeA_sEPSC_cxcl12_5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sEPSC_cxcl12_5nM_RS$Filename <- as.character(CeA_sEPSC_cxcl12_5nM_RS$Filename)
-
-CeA_sEPSC_cxcl12_5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_cxcl12_5nM.csv")) 
-CeA_sEPSC_cxcl12_5nM_LF <- CeA_sEPSC_cxcl12_5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sEPSC_cxcl12_5nM_LF$Filename <- as.character(CeA_sEPSC_cxcl12_5nM_LF$Filename)
-
-CeA_sEPSC_cxcl12_5nM <- CeA_sEPSC_cxcl12_5nM_RS %>% bind_rows(CeA_sEPSC_cxcl12_5nM_LF) %>% mutate(Experiment = "CXCL12(5nM)")  %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-CeA_sEPSC_cxcl12_5nM$Condition <- plyr::revalue(CeA_sEPSC_cxcl12_5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
-#bad_Cells <- c(1,2,4) #20929007, 20d14o26, 20o02022 - RS - based on IV
-#CeA_sEPSC_cxcl12_5nM <- CeA_sEPSC_cxcl12_5nM %>% filter(!Cell %in% bad_Cells)
-######
-CeA_amd5nM_sEPSC_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_amdcxcl12_5nM.csv"))
-CeA_amd5nM_sEPSC_RS <- CeA_amd5nM_sEPSC_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_amd5nM_sEPSC_RS$Filename <- as.character(CeA_amd5nM_sEPSC_RS$Filename)
-CeA_amd5nM_sEPSC_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_amdcxcl12_5nM.csv"))
-CeA_amd5nM_sEPSC_LF <- CeA_amd5nM_sEPSC_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_amd5nM_sEPSC_LF$Filename <- as.character(CeA_amd5nM_sEPSC_LF$Filename)
-#bad_Cells <- c(7) # IV - 20d22029
-#CeA_amd5nM_sEPSC_LF <- CeA_amd5nM_sEPSC_LF %>% filter(!Cell %in% bad_Cells)
-
-CeA_amd5nM_sEPSC<- CeA_amd5nM_sEPSC_RS %>% bind_rows(CeA_amd5nM_sEPSC_LF) %>% dplyr::mutate(Experiment = 'AMD + CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-CeA_amd5nM_sEPSC$Condition <- plyr::revalue(CeA_amd5nM_sEPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
-#############
-#############
-
-#CeA_fluoro_sEPSC_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_fluoro_cxcl12_5nM.csv"))
-#CeA_fluoro_sEPSC_RS <- CeA_fluoro_sEPSC_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-#CeA_fluoro_sEPSC_RS$Filename <- as.character(CeA_fluoro_sEPSC_RS$Filename)
-CeA_fluoro_sEPSC_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_fluoro_cxcl12_5nM.csv"))
-CeA_fluoro_sEPSC_LF <- CeA_fluoro_sEPSC_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-#CeA_fluoro_sEPSC_LF$Filename <- as.character(CeA_fluoro_sEPSC_LF$Filename)
-#bad_Cells <- c(7) # IV - 20d22029
-#CeA_fluoro_sEPSC_LF <- CeA_fluoro_sEPSC_LF %>% filter(!Cell %in% bad_Cells)
-
-CeA_sEPSC_fluoro <-CeA_fluoro_sEPSC_LF %>% dplyr::mutate(Experiment = "FC + CXCL12(5nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-CeA_sEPSC_fluoro$Filename <- as.character(CeA_sEPSC_fluoro$Filename)
-#CeA_fluoro_sEPSC<- CeA_fluoro_sEPSC_RS %>% bind_rows(CeA_fluoro_sEPSC_LF) %>% dplyr::mutate(Experiment = 'AMD + CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-CeA_sEPSC_fluoro$Condition <- plyr::revalue(CeA_sEPSC_fluoro$Condition, c("b"="baseline", "f" = "CXCL12"))
-
-
-########################################
-CeA_amda_sEPSC_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_amda.csv"))
-CeA_amda_sEPSC_RS <- CeA_amda_sEPSC_RS  %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_amda_sEPSC_RS$Filename <- as.character(CeA_amda_sEPSC_RS$Filename)
-
-
-CeA_amda_sEPSC_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_amda.csv"))
-CeA_amda_sEPSC_LF <- CeA_amda_sEPSC_LF  %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_amda_sEPSC_LF$Filename <- as.character(CeA_amda_sEPSC_LF$Filename)
-
-CeA_amda_sEPSC<- CeA_amda_sEPSC_RS %>% bind_rows(CeA_amda_sEPSC_LF) %>% dplyr::mutate(Experiment = 'AMD') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-CeA_amda_sEPSC$Condition <- plyr::revalue(CeA_amda_sEPSC$Condition, c("b"="baseline", "f" = "AMD"))
-CeA_amda_sEPSC$Condition <- factor(CeA_amda_sEPSC$Condition, levels = c("baseline", "AMD"))
-CeA_amda_sEPSC$Cell <- as.numeric(CeA_amda_sEPSC$Cell)
-
-CeA_sIPSC_amda_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_amda.csv"))
-CeA_sIPSC_amda_RS <- CeA_sIPSC_amda_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-
-CeA_sIPSC_amda_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_amda.csv"))
-CeA_sIPSC_amda_LF <- CeA_sIPSC_amda_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-
-CeA_sIPSC_amda<- CeA_sIPSC_amda_RS %>% bind_rows(CeA_sIPSC_amda_LF) %>% dplyr::mutate(Experiment = 'AMD') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-CeA_sIPSC_amda$Condition <- plyr::revalue(CeA_sIPSC_amda$Condition, c("b"="baseline", "f" = "AMD"))
-CeA_sIPSC_amda$Filename <- as.character(CeA_sIPSC_amda$Filename)
-
-#####
-
-CeA_sIPSC_cxcl12_2nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_cxcl12_2nM.csv"))
-CeA_sIPSC_cxcl12_2nM_RS <- CeA_sIPSC_cxcl12_2nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sIPSC_cxcl12_2nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_cxcl12_2nM.csv"))
-CeA_sIPSC_cxcl12_2nM_LF <- CeA_sIPSC_cxcl12_2nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sIPSC_cxcl12_2nM <- CeA_sIPSC_cxcl12_2nM_RS %>% bind_rows(CeA_sIPSC_cxcl12_2nM_LF) %>% mutate(Experiment = "CXCL12(2nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-
-CeA_sIPSC_cxcl12_2nM$Condition <- plyr::revalue(CeA_sIPSC_cxcl12_2nM$Condition, c("b"="baseline", "f" = "CXCL12"))
-CeA_sIPSC_cxcl12_2nM$Filename <- as.character(CeA_sIPSC_cxcl12_2nM$Filename)
-
-CeA_sIPSC_cxcl12_5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_cxcl12_5nM.csv"))
-CeA_sIPSC_cxcl12_5nM_RS <- CeA_sIPSC_cxcl12_5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sIPSC_cxcl12_5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_cxcl12_5nM.csv"))
-CeA_sIPSC_cxcl12_5nM_LF <- CeA_sIPSC_cxcl12_5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sIPSC_cxcl12_5nM <- CeA_sIPSC_cxcl12_5nM_RS %>% bind_rows(CeA_sIPSC_cxcl12_5nM_LF) %>% mutate(Experiment = "CXCL12(5nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-bad_Cells <- c(1, 4, 17, 10) # median_RiseTime big changes
-CeA_sIPSC_cxcl12_5nM <- CeA_sIPSC_cxcl12_5nM %>% filter(!Cell %in% bad_Cells)
-
-CeA_sIPSC_cxcl12_5nM$Condition <- plyr::revalue(CeA_sIPSC_cxcl12_5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
-CeA_sIPSC_cxcl12_5nM$Filename <- as.character(CeA_sIPSC_cxcl12_5nM$Filename)
-
-#####
-
-
-CeA_sIPSC_amd2nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_amdcxcl12_2nM.csv"))
-CeA_sIPSC_amd2nM_RS <- CeA_sIPSC_amd2nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-
-CeA_sIPSC_amd2nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_amdcxcl12_2nM.csv"))
-CeA_sIPSC_amd2nM_LF <- CeA_sIPSC_amd2nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-
-CeA_sIPSC_amd2nM<- CeA_sIPSC_amd2nM_RS %>% bind_rows(CeA_sIPSC_amd2nM_LF) %>% dplyr::mutate(Experiment = 'AMD + CXCL12(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-CeA_sIPSC_amd2nM$Condition <- plyr::revalue(CeA_sIPSC_amd2nM$Condition, c("b"="baseline", "f" = "CXCL12"))
-CeA_sIPSC_amd2nM$Filename <- as.character(CeA_sIPSC_amd2nM$Filename)
-#bad_Cells <- c(2) # median_Frequency 7.5 -> 1.68
-#CeA_sIPSC_amd2nM <- CeA_sIPSC_amd2nM %>% filter(!Cell %in% bad_Cells)
-
-CeA_sIPSC_amd5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_amdcxcl12_5nM.csv"))
-CeA_sIPSC_amd5nM_RS <- CeA_sIPSC_amd5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-
-CeA_sIPSC_amd5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_amdcxcl12_5nM.csv"))
-CeA_sIPSC_amd5nM_LF <- CeA_sIPSC_amd5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-
-CeA_sIPSC_amd5nM<- CeA_sIPSC_amd5nM_RS %>% bind_rows(CeA_sIPSC_amd5nM_LF) %>% dplyr::mutate(Experiment = 'AMD + CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-CeA_sIPSC_amd5nM$Condition <- plyr::revalue(CeA_sIPSC_amd5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
-CeA_sIPSC_amd5nM$Filename <- as.character(CeA_sIPSC_amd5nM$Filename)
-
-############################
-CeA_sIPSC_fluoro_5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_fluoro_cxcl12_5nM.csv"))
-CeA_sIPSC_fluoro_5nM_RS <- CeA_sIPSC_fluoro_5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sIPSC_fluoro_5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_fluoro_cxcl12_5nM.csv"))
-CeA_sIPSC_fluoro_5nM_LF <- CeA_sIPSC_fluoro_5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sIPSC_fluoro_5nM <- CeA_sIPSC_fluoro_5nM_RS %>% bind_rows(CeA_sIPSC_fluoro_5nM_LF) %>% mutate(Experiment = "FC + CXCL12(5nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-
-CeA_sIPSC_fluoro_5nM$Condition <- plyr::revalue(CeA_sIPSC_fluoro_5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
-CeA_sIPSC_fluoro_5nM$Filename <- as.character(CeA_sIPSC_fluoro_5nM$Filename)
-
-#################################
-
-CeA_mIPSC_cxcl12_2nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_CeA_RS_cxcl12_2nM.csv"))
-CeA_mIPSC_cxcl12_2nM_RS <- CeA_mIPSC_cxcl12_2nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-# CeA_mIPSC_cxcl12_2nM_LF <- ".//synaptic_transmission//CeA_mIPSC_LF_12_cxcl12_2nM_igor.xlsx" 
-# st_table(CeA_mIPSC_cxcl12_2nM_LF)
-# CeA_mIPSC_cxcl12_2nM_LF <- read_rds("summary_CeA_mIPSC_cxcl12_2nM_LF.rds") %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_mIPSC_cxcl12_2nM <- CeA_mIPSC_cxcl12_2nM_RS  %>% mutate(Experiment = "CXCL12(2nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) #%>% bind_rows(CeA_mIPSC_cxcl12_2nM_LF) 
-
-CeA_mIPSC_cxcl12_2nM$Condition <- plyr::revalue(CeA_mIPSC_cxcl12_2nM$Condition, c("b"="baseline", "f" = "CXCL12"))
-CeA_mIPSC_cxcl12_2nM$Filename <- as.character(CeA_mIPSC_cxcl12_2nM$Filename)
-
-CeA_mIPSC_cxcl12_5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_CeA_RS_cxcl12_5nM.csv"))
-CeA_mIPSC_cxcl12_5nM_RS <- CeA_mIPSC_cxcl12_5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-
-CeA_mIPSC_cxcl12_5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_CeA_LF_cxcl12_5nM.csv"))
-CeA_mIPSC_cxcl12_5nM_LF <- CeA_mIPSC_cxcl12_5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_mIPSC_cxcl12_5nM <- CeA_mIPSC_cxcl12_5nM_RS %>% dplyr::bind_rows(CeA_mIPSC_cxcl12_5nM_LF) %>% mutate(Experiment = "CXCL12(5nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) #%>% bind_rows(CeA_mIPSC_cxcl12_5nM_LF) 
-
-CeA_mIPSC_cxcl12_5nM$Condition <- plyr::revalue(CeA_mIPSC_cxcl12_5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
-CeA_mIPSC_cxcl12_5nM$Filename <- as.character(CeA_mIPSC_cxcl12_5nM$Filename)
-########################################FINAL TABLE#####################################################
-
-BLA_df_final_12 <- BLA_df_2nM %>% bind_rows(BLA_df_5nM)
-
-temp <- BLA_df_final_12 %>% filter(Condition == 'baseline') %>% filter(sag_ratio >= 102)
-
-sag_Cells <- temp$Cell
-BLA_df_sag <- BLA_df_final_12 %>% filter(Cell %in% sag_Cells)
-
-BLA_sEPSC_final_12 <- BLA_cxcl12_2nM_sEPSC %>% bind_rows(BLA_cxcl12_5nM_sEPSC)
-
-BLA_sIPSC_final_12 <- BLA_cxcl12_2nM_sIPSC %>% bind_rows(BLA_cxcl12_5nM_sIPSC)
-#bad_Cells <- c(3) # CXCL12 5nM 20n03001 - 500-600 pA HOLDING CURRENT
-#BLA_sIPSC_final_12 <- BLA_sIPSC_final_12 %>% filter(!Cell %in% bad_Cells)
-
-CeA_df_final_12 <- CeA_df_2nM %>% bind_rows(CeA_df_5nM) %>% bind_rows(CeA_amd5nM_df) %>% bind_rows(CeA_amda_df) %>% bind_rows(CeA_df_fluoro)
-CeA_df_final_12$Experiment <- factor(CeA_df_final_12$Experiment, levels = c("CXCL12(2nM)", "CXCL12(5nM)", "AMD + CXCL12(5nM)", "AMD", "FC + CXCL12(5nM)"))
-CeA_df_final_12$Condition <- factor(CeA_df_final_12$Condition, levels = c("baseline", "CXCL12", "AMD"))
-
-
-CeA_df_final_12_RS <- CeA_df_final_12 %>% filter(Type == "RS")
-CeA_df_final_12_LF <- CeA_df_final_12 %>% filter(Type == "LF")
-
-temp <- CeA_df_final_12 %>% filter(Condition == 'baseline') %>% filter(sag_ratio >= 102)
-
-sag_Cells <- temp$Cell
-CeA_df_sag <- CeA_df_final_12 %>% filter(Cell %in% sag_Cells)
-CeA_df_sag_RS <- CeA_df_sag %>% filter( Type == 'RS')
-CeA_df_sag_LF <- CeA_df_sag %>% filter( Type == 'LF')
-
-CeA_sEPSC_final_12 <- CeA_sEPSC_cxcl12_2nM %>% bind_rows(CeA_sEPSC_cxcl12_5nM) %>% bind_rows(CeA_amd5nM_sEPSC) %>% bind_rows(CeA_amda_sEPSC) %>% bind_rows(CeA_sEPSC_fluoro)
-CeA_sEPSC_final_12$Condition <- factor(CeA_sEPSC_final_12$Condition, levels = c("baseline", "CXCL12", "AMD"))
-CeA_sEPSC_final_12$Experiment <- factor(CeA_sEPSC_final_12$Experiment, levels = c("CXCL12(2nM)", "CXCL12(5nM)", "AMD + CXCL12(5nM)", "AMD", "FC + CXCL12(5nM)"))
-
-CeA_sEPSC_final_12$Cell <- rep(1:(nrow(CeA_sEPSC_final_12)/2), each = 2)
-CeA_sEPSC_RS_12 <- CeA_sEPSC_final_12 %>% filter(Type == 'RS')
-CeA_sEPSC_LF_12 <- CeA_sEPSC_final_12 %>% filter(Type == 'LF')
-
-CeA_sIPSC_final_12 <- CeA_sIPSC_cxcl12_2nM %>% bind_rows(CeA_sIPSC_cxcl12_5nM) %>% bind_rows(CeA_sIPSC_amd2nM) %>% bind_rows(CeA_sIPSC_amd5nM) %>% bind_rows(CeA_sIPSC_amda) %>% bind_rows(CeA_sIPSC_fluoro_5nM)
-#CeA_sIPSC_final_12$Condition <- plyr::revalue(CeA_sIPSC_final_12$Condition, c("b"="baseline", "c" = "CXCL12"))
-CeA_sIPSC_final_12$Experiment <- factor(CeA_sIPSC_final_12$Experiment, levels = c("CXCL12(2nM)", "CXCL12(5nM)", "AMD + CXCL12(2nM)", "AMD + CXCL12(5nM)", "AMD", "FC + CXCL12(5nM)"))
-CeA_sIPSC_final_12$Condition <- factor(CeA_sIPSC_final_12$Condition, levels = c("baseline", "CXCL12", "AMD"))
-CeA_sIPSC_final_12$Cell <- rep(1:(nrow(CeA_sIPSC_final_12)/2), each = 2)
-#bad_Cells <- c(21) # 20929016 - Rise Time more than 10ms, RS
-#CeA_sIPSC_final_12 <- CeA_sIPSC_final_12 %>% filter(!Cell %in% bad_Cells)
-CeA_sIPSC_RS_12 <- CeA_sIPSC_final_12 %>% filter(Type == 'RS')
-CeA_sIPSC_LF_12 <- CeA_sIPSC_final_12 %>% filter(Type == 'LF')
-
-CeA_mIPSC_final_12 <- CeA_mIPSC_cxcl12_2nM  %>% bind_rows(CeA_mIPSC_cxcl12_5nM) #%>% bind_rows(CeA_mIPSC_amd2nM) %>% bind_rows(CeA_mIPSC_amda)
-#CeA_mIPSC_final_12$Condition <- plyr::revalue(CeA_mIPSC_final_12$Condition, c("b"="baseline", "c" = "CXCL12"))
-CeA_mIPSC_final_12$Experiment <- factor(CeA_mIPSC_final_12$Experiment, levels = c("CXCL12(2nM)", "CXCL12(5nM)")) #, levels = c("CXCL12(2nM)", "CXCL12(5nM)", "AMD + CXCL12(2nM)", "AMD"))
-#CeA_mIPSC_final_12$Condition <- factor(CeA_mIPSC_final_12$Condition, levels = c("baseline", "CXCL12", "AMD"))
-CeA_mIPSC_final_12$Cell <- rep(1:(nrow(CeA_mIPSC_final_12)/2), each = 2)
-CeA_mIPSC_RS_12 <- CeA_mIPSC_final_12 %>% filter(Type == 'RS')
-CeA_mIPSC_LF_12 <- CeA_mIPSC_final_12 %>% filter(Type == 'LF')
-
-###############################INTERNEURONS IN PC###################################################################
-
-BLA_df_inter_12 <- BLA_df_5nM_inter %>% bind_rows(BLA_df_2nM_inter)
-BLA_df_inter_12$Experiment <- factor(BLA_df_inter_12$Experiment)
-BLA_df_inter_12$Cell <- factor(BLA_df_inter_12$Cell)
-
-temp <- BLA_df_inter_12 %>% filter(Condition == 'baseline') %>% filter(sag_ratio >= 102)
-sag_Cells <- temp$Cell
-BLA_df_inter_12_sag <- BLA_df_inter_12 %>% filter(Cell %in% sag_Cells) %>% dplyr::rename(sag_ratio = sag_ratio)
-
-BLA_cxcl12_2nM_sEPSC_inter <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_2nM_inter.csv"))
-BLA_cxcl12_2nM_sEPSC_inter <- BLA_cxcl12_2nM_sEPSC_inter %>% mutate(Experiment = 'CXCL12(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-BLA_cxcl12_2nM_sEPSC_inter$Filename <- as.character(BLA_cxcl12_2nM_sEPSC_inter$Filename)
-
-BLA_cxcl12_5nM_sEPSC_inter <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_5nM_inter.csv"))
-BLA_cxcl12_5nM_sEPSC_inter <- BLA_cxcl12_5nM_sEPSC_inter %>% mutate(Experiment = 'CXCL12(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-BLA_cxcl12_5nM_sEPSC_inter$Filename <- as.character(BLA_cxcl12_5nM_sEPSC_inter$Filename)
-2
-
-BLA_sEPSC_final_12_inter <-  BLA_cxcl12_2nM_sEPSC_inter  %>% bind_rows(BLA_cxcl12_5nM_sEPSC_inter)
-
-#print(getwd())
-
-#knitr::opts_chunk$set(echo = FALSE, dev = 'svg', fig.width = 10, fig.height = 7)
-#library(elektroasia)
 library(xml2)
 library(pzfx)
 
-setwd("..")
-setwd(".//CX3CL1")
-
-# loading files from frak2nM
+#### frak2nM CeA membrane properties####
 CeA_df_frak2nM<-readRDS(".//CeA//frak2nM//membrane_table_CeA.rds")
-CeA_df_frak2nM <- CeA_df_frak2nM %>% mutate(Experiment = 'frak2nM') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
+CeA_df_frak2nM <- CeA_df_frak2nM %>% mutate(Experiment = 'CX3CL1(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
 bad_Cells <- c(11) # 11 - 19o22019, Capacitane in baseline 141, resistance 190. # but 4 has nice sEPSC :(((( # based on lack of sEPSC - 7, 12, 14, 15 ##### 24.11.2020 added again 7,12,14,15 # based on IV - very late - 19405029 (cell nr 4, and sEPSC cell nr 3, but sEPSC is ok)
 CeA_df_frak2nM <- CeA_df_frak2nM %>% filter(!Cell %in% bad_Cells)
 
-# frak5nM
+#### frak5nM CeA membrane properties####
 CeA_df_frak5nM<-readRDS(".//CeA//frak5nM//membrane_table_CeA_frak5nM.rds")
-CeA_df_frak5nM <- CeA_df_frak5nM %>% mutate(Experiment = 'frak5nM') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
+CeA_df_frak5nM <- CeA_df_frak5nM %>% mutate(Experiment = 'CX3CL1(5nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
 bad_Cells <- c(6)  # 21128037 - IV
 CeA_df_frak5nM <- CeA_df_frak5nM %>% filter(!Cell %in% bad_Cells)
-# azd
+
+#### azd + frak2nM CeA membrane properties####
 CeA_azd_df<-readRDS(".//CeA//AZD//membrane_table_CeA_azd.rds") # comment on 26.11.2020 - only 4 cells 20805001 - after fractalkine very excitable, and it is weird bursting; 20814045 - high access..... 
-CeA_azd_df <- CeA_azd_df %>% mutate(Experiment = 'AZD + frak2nM') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
+CeA_azd_df <- CeA_azd_df %>% mutate(Experiment = 'AZD8797 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
 bad_Cells <- c(1, 16) # previously c(6, 8, 5), but very weird group, based on IV 12.08.2021 changes = only one spike after CX3CL1 application//// very high capacitance - 150, but other properties are ok, 5 - sEPSC - holding current
 CeA_azd_df <- CeA_azd_df %>% filter(!Cell %in% bad_Cells)
-# frak2nM + mino 
+
+#### mino + frak2nM CeA membrane properties####
 CeA_mino_df<-readRDS(".//CeA//mino//membrane_table_CeA_mino.rds")
-CeA_mino_df <- CeA_mino_df %>% mutate(Experiment = 'mino + frak2nM') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
+CeA_mino_df <- CeA_mino_df %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
 bad_Cells <- c(9) # Capacitance = 184, much higher than others in baseline
 CeA_mino_df <- CeA_mino_df %>% filter(!Cell %in% bad_Cells)
 
-#### synaptic transmission ################################
-
+#### frak2nM CeA sIPSC####
 CeA_RS_sIPSC <- read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_frak2nM.csv")
 CeA_RS_sIPSC <- as.tibble(CeA_RS_sIPSC) 
 CeA_RS_sIPSC <- CeA_RS_sIPSC %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
@@ -433,46 +113,49 @@ CeA_LF_sIPSC <- CeA_LF_sIPSC %>% mutate(Type ='LF') %>% dplyr::select(Filename, 
 #CeA_LF_sIPSC <- CeA_LF_sIPSC %>% filter(!Cell %in% bad_Cells)
 bad_Cells <- c(1, 13) # amplitude from 17->23; RISETIME > 2
 CeA_LF_sIPSC <- CeA_LF_sIPSC %>% filter(!Cell %in% bad_Cells)
-CeA_sIPSC_frak2nM <- CeA_RS_sIPSC %>% dplyr::bind_rows(CeA_LF_sIPSC) %>% mutate(Experiment = 'frak2nM')
+CeA_sIPSC_frak2nM <- CeA_RS_sIPSC %>% dplyr::bind_rows(CeA_LF_sIPSC) %>% mutate(Experiment = 'CX3CL1(2nM)')
 CeA_sIPSC_frak2nM$Filename <- as.character(CeA_sIPSC_frak2nM$Filename)
 
-
+#### azd + frak2nM CeA sIPSC####
 CeA_azd_RS_sIPSC <- read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_azdfrak2nM.csv")
 CeA_azd_RS_sIPSC<- as.tibble(CeA_azd_RS_sIPSC) %>% mutate(Type = 'RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 
 CeA_azd_LF_sIPSC <- read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_azdfrak2nM.csv")
 CeA_azd_LF_sIPSC<- as.tibble(CeA_azd_LF_sIPSC) %>% mutate(Type = 'LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 
-CeA_sIPSC_azd<- CeA_azd_RS_sIPSC  %>% dplyr::bind_rows(CeA_azd_LF_sIPSC) %>% mutate(Experiment = 'AZD + frak2nM')
+CeA_sIPSC_azd<- CeA_azd_RS_sIPSC  %>% dplyr::bind_rows(CeA_azd_LF_sIPSC) %>% mutate(Experiment = 'AZD8797 + \nCX3CL1(2nM)')
 CeA_sIPSC_azd$Filename <- as.character(CeA_sIPSC_azd$Filename)
 
+#### mino + frak2nM CeA sIPSC ####
 CeA_mino_RS_sIPSC <- read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_minofrak2nM.csv")
 CeA_mino_RS_sIPSC <- as.tibble(CeA_mino_RS_sIPSC) %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 
 CeA_mino_LF_sIPSC <- read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_minofrak2nM.csv")
 CeA_mino_LF_sIPSC <- as.tibble(CeA_mino_LF_sIPSC) %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_sIPSC_mino <- CeA_mino_RS_sIPSC %>% dplyr::bind_rows(CeA_mino_LF_sIPSC) %>% mutate(Experiment = 'mino + frak2nM')
+CeA_sIPSC_mino <- CeA_mino_RS_sIPSC %>% dplyr::bind_rows(CeA_mino_LF_sIPSC) %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)')
 CeA_sIPSC_mino$Filename <- as.character(CeA_sIPSC_mino$Filename)
 
-#frak2nM
+#### frak2nM CeA sEPSC ####
 CeA_RS_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_frak2nM.csv"))
 CeA_RS_sEPSC <- CeA_RS_sEPSC %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 
 CeA_LF_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_frak2nM.csv"))
 CeA_LF_sEPSC <- CeA_LF_sEPSC %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 
-CeA_sEPSC_frak2nM <- CeA_RS_sEPSC %>% dplyr::bind_rows(CeA_LF_sEPSC) %>% mutate(Experiment = 'frak2nM')
+CeA_sEPSC_frak2nM <- CeA_RS_sEPSC %>% dplyr::bind_rows(CeA_LF_sEPSC) %>% mutate(Experiment = 'CX3CL1(2nM)')
 CeA_sEPSC_frak2nM$Filename <- as.character(CeA_sEPSC_frak2nM$Filename)
 
-#frak5nM
+#### frak5nM CeA sEPSC ####
 CeA_RS_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_frak5nM.csv"))
 CeA_RS_sEPSC <- CeA_RS_sEPSC %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 
 CeA_LF_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_frak5nM.csv"))
 CeA_LF_sEPSC <- CeA_LF_sEPSC %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 
-CeA_sEPSC_frak5nM <- CeA_RS_sEPSC %>% dplyr::bind_rows(CeA_LF_sEPSC) %>% mutate(Experiment = 'frak5nM')
+CeA_sEPSC_frak5nM <- CeA_RS_sEPSC %>% dplyr::bind_rows(CeA_LF_sEPSC) %>% mutate(Experiment = 'CX3CL1(5nM)')
 CeA_sEPSC_frak5nM$Filename <- as.character(CeA_sEPSC_frak5nM$Filename)
+
+#### azd + frak2nM CeA sEPSC ####
 
 CeA_azd_RS_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_azdfrak2nM.csv"))
 CeA_azd_RS_sEPSC <- CeA_azd_RS_sEPSC %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
@@ -484,9 +167,9 @@ CeA_azd_LF_sEPSC <- CeA_azd_LF_sEPSC %>% mutate(Type ='LF') %>% dplyr::select(Fi
 CeA_azd_LF_sEPSC$Filename <- as.character(CeA_azd_LF_sEPSC$Filename)
 #bad_Cells <- c(3,5) # 20612007, 20710001 - due to high capacitance
 #CeA_azd_LF_sEPSC <- CeA_azd_LF_sEPSC %>% filter(!Cell %in% bad_Cells)
-CeA_sEPSC_azd<- CeA_azd_RS_sEPSC  %>% dplyr::bind_rows(CeA_azd_LF_sEPSC) %>% mutate(Experiment = 'AZD + frak2nM')
+CeA_sEPSC_azd<- CeA_azd_RS_sEPSC  %>% dplyr::bind_rows(CeA_azd_LF_sEPSC) %>% mutate(Experiment = 'AZD8797 + \nCX3CL1(2nM)')
 
-
+#### mino + frak2nM CeA sEPSC ####
 CeA_mino_RS_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_minofrak2nM.csv"))
 CeA_mino_RS_sEPSC <- CeA_mino_RS_sEPSC %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 CeA_mino_RS_sEPSC$Filename <- as.character(CeA_mino_RS_sEPSC$Filename)
@@ -495,19 +178,18 @@ CeA_mino_LF_sEPSC <- CeA_mino_LF_sEPSC %>% mutate(Type ='LF') %>% dplyr::select(
 CeA_mino_LF_sEPSC$Filename <- as.character(CeA_mino_LF_sEPSC$Filename)
 #bad_Cells <- c(5) # 20703027 Capacitance = 184, much higher than others in baseline
 #CeA_mino_LF_sEPSC <- CeA_mino_LF_sEPSC %>% filter(!Cell %in% bad_Cells)
-CeA_sEPSC_mino<- CeA_mino_RS_sEPSC  %>% dplyr::bind_rows(CeA_mino_LF_sEPSC) %>% mutate(Experiment = 'mino + frak2nM')
+CeA_sEPSC_mino<- CeA_mino_RS_sEPSC  %>% dplyr::bind_rows(CeA_mino_LF_sEPSC) %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)')
 
 
 
-####################loading files from mino alone CeA
-# minocycline alone 
+#### mino alone CeA membrane properties ####
 CeA_df_minoa<-readRDS(".//minocycline_alone//CeA//membrane_table_CeA_mino_alone.rds")
 CeA_df_minoa <- CeA_df_minoa %>% mutate(Experiment = 'minocycline') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
-bad_Cells <- c(9, 8, 10, 12) #poszarpana i brzydka - sEPSC; IV - RS - brzydkie 20d08045, 20813003, 20729032
+bad_Cells <- c(9, 8, 10, 12, 18) #poszarpana i brzydka - sEPSC; IV - RS - brzydkie 20d08045, 20813003, 20729032
 CeA_df_minoa <- CeA_df_minoa %>% filter(!Cell %in% bad_Cells)
 
 
-#######mino alone synaptic transmission#######################################
+#### mino alone CeA sIPSC ####
 CeA_minoa_RS_sIPSC <- read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_minoa.csv") 
 CeA_minoa_RS_sIPSC <- as.tibble(CeA_minoa_RS_sIPSC) %>% mutate(Type ='RS', Experiment = 'minocycline') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 
@@ -517,6 +199,7 @@ CeA_sIPSC_minoa<- CeA_minoa_RS_sIPSC  %>% dplyr::bind_rows(CeA_minoa_LF_sIPSC) %
 CeA_sIPSC_minoa$Condition <- plyr::revalue(CeA_sIPSC_minoa$Condition, c("b"="baseline", "f" = "minocycline"))
 CeA_sIPSC_minoa$Filename <- as.character(CeA_sIPSC_minoa$Filename)
 
+#### mino alone CeA sEPSC ####
 CeA_minoa_RS_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_minoa.csv"))
 CeA_minoa_RS_sEPSC <- CeA_minoa_RS_sEPSC %>% mutate(Type ='RS', Experiment = 'minocycline') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 CeA_minoa_RS_sEPSC$Filename <- as.character(CeA_minoa_RS_sEPSC$Filename)
@@ -534,59 +217,64 @@ CeA_sEPSC_minoa<- CeA_minoa_RS_sEPSC  %>% dplyr::bind_rows(CeA_minoa_LF_sEPSC) %
 CeA_sEPSC_minoa$Condition <- plyr::revalue(CeA_sEPSC_minoa$Condition, c("b"="baseline", "f" = "minocycline"))
 
 
-####################loading files from azd alone CeA
-####################loading files from mino alone
-# azd alone 
+#### azd alone CeA membrane properties ####
 CeA_df_azda<-readRDS(".//AZD_alone//CeA//membrane_table_CeA_azd_alone.rds")
-CeA_df_azda <- CeA_df_azda %>% mutate(Experiment = 'AZD') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
+CeA_df_azda <- CeA_df_azda %>% mutate(Experiment = "AZD8797") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
 CeA_df_azda$RMS <- as.numeric(CeA_df_azda$RMS)
 bad_Cells <- c(10, 15, 12, 13, 17, 5, 9) # Capacitance almost 0, (0.1, 0.15) ## wrong matlab scripts, check it - 3, 9 //// 10 - strasznie poszarpana w sEPSC ;;; 12, 13 - resistance ; 20d11024 - 17 - IV; 20813033 20819008 IV, 
 CeA_df_azda <- CeA_df_azda %>% dplyr::filter(!Cell %in% bad_Cells)
-CeA_df_azda$Condition = factor(CeA_df_azda$Condition, levels=c('baseline', 'AZD'))
+CeA_df_azda$Condition <- plyr::revalue(CeA_df_azda$Condition, c("AZD" = "AZD8797"))
+CeA_df_azda$Condition = factor(CeA_df_azda$Condition, levels=c('baseline', "AZD8797"))
 CeA_df_azda <- CeA_df_azda %>% arrange(Experiment, Filename_all1, Cell, Condition)
 
-#######azd alone synaptic transmission#######################################
+#### azd alone CeA sIPSC####
 
 sIPSC_CeA_RS_azd_alone <- read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_azda.csv")
-CeA_azda_RS_sIPSC <- as.tibble(sIPSC_CeA_RS_azd_alone) %>% mutate(Type ='RS', Experiment = 'AZD') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_azda_RS_sIPSC$Condition <- plyr::revalue(CeA_azda_RS_sIPSC$Condition, c("b"="baseline", "f" = "AZD"))
+CeA_azda_RS_sIPSC <- as.tibble(sIPSC_CeA_RS_azd_alone) %>% mutate(Type ='RS', Experiment = "AZD8797") %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_azda_RS_sIPSC$Condition <- plyr::revalue(CeA_azda_RS_sIPSC$Condition, c("b"="baseline", "f" = "AZD8797"))
 
 sIPSC_CeA_LF_azd_alone <- read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_azda.csv")
-CeA_azda_LF_sIPSC <- as.tibble(sIPSC_CeA_LF_azd_alone) %>% mutate(Type ='LF', Experiment = 'AZD') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-CeA_azda_LF_sIPSC$Condition <- plyr::revalue(CeA_azda_LF_sIPSC$Condition, c("b"="baseline", "f" = "AZD"))
+CeA_azda_LF_sIPSC <- as.tibble(sIPSC_CeA_LF_azd_alone) %>% mutate(Type ='LF', Experiment = "AZD8797") %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_azda_LF_sIPSC$Condition <- plyr::revalue(CeA_azda_LF_sIPSC$Condition, c("b"="baseline", "f" = "AZD8797"))
 bad_Cells <- c("2") # amplitude 13 -> 24
 CeA_azda_LF_sIPSC <- CeA_azda_LF_sIPSC %>% filter(!Cell %in% bad_Cells)
 
 
-CeA_sIPSC_azda<- CeA_azda_RS_sIPSC  %>% dplyr::bind_rows(CeA_azda_LF_sIPSC) %>% mutate(Experiment = 'AZD')
-#CeA_sIPSC_azda$Condition <- plyr::revalue(CeA_sIPSC_azda$Condition, c("b"="baseline", "f" = "AZD"))
-CeA_sIPSC_azda$Condition = factor(CeA_sIPSC_azda$Condition, levels=c('baseline', 'AZD'))
+CeA_sIPSC_azda<- CeA_azda_RS_sIPSC  %>% dplyr::bind_rows(CeA_azda_LF_sIPSC) %>% mutate(Experiment = "AZD8797")
+#CeA_sIPSC_azda$Condition <- plyr::revalue(CeA_sIPSC_azda$Condition, c("b"="baseline", "f" = "AZD8797"))
+CeA_sIPSC_azda$Condition = factor(CeA_sIPSC_azda$Condition, levels=c('baseline', "AZD8797"))
 CeA_sIPSC_azda$Filename <- as.character(CeA_sIPSC_azda$Filename)
 
+#### azd alone CeA sEPSC ####
+
 sEPSC_CeA_azda_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_azda.csv"))
-sEPSC_CeA_azda_RS <- sEPSC_CeA_azda_RS %>% mutate(Type ='RS', Experiment = 'AZD') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-sEPSC_CeA_azda_RS$Condition <- plyr::revalue(sEPSC_CeA_azda_RS$Condition, c("b"="baseline", "f" = "AZD"))
+sEPSC_CeA_azda_RS <- sEPSC_CeA_azda_RS %>% mutate(Type ='RS', Experiment = "AZD8797") %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+sEPSC_CeA_azda_RS$Condition <- plyr::revalue(sEPSC_CeA_azda_RS$Condition, c("b"="baseline", "f" = "AZD8797"))
 sEPSC_CeA_azda_RS$Filename <- as.character(sEPSC_CeA_azda_RS$Filename)
 
 sEPSC_CeA_azda_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_azda.csv"))
-sEPSC_CeA_azda_LF <- sEPSC_CeA_azda_LF %>% mutate(Type ='LF', Experiment = 'AZD') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
-sEPSC_CeA_azda_LF$Condition <- plyr::revalue(sEPSC_CeA_azda_LF$Condition, c("b"="baseline", "f" = "AZD"))
+sEPSC_CeA_azda_LF <- sEPSC_CeA_azda_LF %>% mutate(Type ='LF', Experiment = "AZD8797") %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+sEPSC_CeA_azda_LF$Condition <- plyr::revalue(sEPSC_CeA_azda_LF$Condition, c("b"="baseline", "f" = "AZD8797"))
 sEPSC_CeA_azda_LF$Filename <- as.character(sEPSC_CeA_azda_LF$Filename)
 #bad_Cells <- c(3,4) # 3, 5 - IV 
 #CeA_azda_LF_sEPSC <- CeA_azda_LF_sEPSC %>% filter(!Cell %in% bad_Cells)
-CeA_sEPSC_azda<- sEPSC_CeA_azda_RS  %>% dplyr::bind_rows(sEPSC_CeA_azda_LF) %>% mutate(Experiment = 'AZD')
-CeA_sEPSC_azda$Condition = factor(CeA_sEPSC_azda$Condition, levels=c('baseline', 'AZD'))
+CeA_sEPSC_azda<- sEPSC_CeA_azda_RS  %>% dplyr::bind_rows(sEPSC_CeA_azda_LF) %>% mutate(Experiment = "AZD8797")
+CeA_sEPSC_azda$Condition = factor(CeA_sEPSC_azda$Condition, levels=c('baseline', "AZD8797"))
 
 
-##################CeA big tables with all conditions#############################
+#### CeA big table membrane properties ####
 
 CeA_df_final <- CeA_df_frak2nM  %>% dplyr::bind_rows(CeA_azd_df) %>% dplyr::bind_rows(CeA_mino_df) %>% dplyr::bind_rows(CeA_df_azda) %>% dplyr::bind_rows(CeA_df_minoa) # %>% dplyr::bind_rows(CeA_df_frak5nM)  - too small nr of cells, both in RS and LF condition.
-CeA_df_final$Experiment = factor(CeA_df_final$Experiment, levels=c('frak2nM','frak5nM', 'AZD + frak2nM', 'AZD', 'mino + frak2nM', 'minocycline'))
+
+CeA_df_final$Condition <- plyr::revalue(CeA_df_final$Condition, c("fractalkine" = "CX3CL1"))
+CeA_df_final$Condition <- plyr::revalue(CeA_df_final$Condition, c("AZD" = "AZD8797"))
+
+CeA_df_final$Experiment = factor(CeA_df_final$Experiment, levels=c('CX3CL1(2nM)','CX3CL1(5nM)', 'AZD8797 + \nCX3CL1(2nM)', "AZD8797", 'minocycline + \nCX3CL1(2nM)', 'minocycline'))
 CeA_df_final$Condition <- as.factor(CeA_df_final$Condition)
 CeA_df_final$Type <- as.factor(CeA_df_final$Type)
 CeA_df_final$Cell <- rep(1:(nrow(CeA_df_final)/2), each = 2)
 CeA_df_final <- CeA_df_final %>% dplyr::arrange(Experiment, Filename_all1, Cell, Condition, Type)
-CeA_df_final$Condition <- factor(CeA_df_final$Condition, levels = c("baseline", "fractalkine", "minocycline", "AZD"))
+CeA_df_final$Condition <- factor(CeA_df_final$Condition, levels = c("baseline", "CX3CL1", "minocycline", "AZD8797"))
 CeA_df_final_RS <- CeA_df_final %>% filter( Type == 'RS')
 CeA_df_final_LF <- CeA_df_final %>% filter( Type == 'LF')
 temp <- CeA_df_final %>% filter(Condition == 'baseline') %>% filter(sag_ratio_140 >= 102)
@@ -595,178 +283,173 @@ sag_Cells <- temp$Cell
 CeA_df_sag <- CeA_df_final %>% filter(Cell %in% sag_Cells)
 CeA_df_sag_RS <- CeA_df_sag %>% filter( Type == 'RS')
 CeA_df_sag_LF <- CeA_df_sag %>% filter( Type == 'LF')
-################final synaptic transmission files of CeA######################################################################
+
+#### CeA big table sIPSC ####
+
 CeA_sIPSC_final <- CeA_sIPSC_frak2nM %>% dplyr::bind_rows(CeA_sIPSC_azd) %>% dplyr::bind_rows(CeA_sIPSC_mino) %>% dplyr::bind_rows(CeA_sIPSC_minoa) %>% dplyr::bind_rows(CeA_sIPSC_azda) %>% dplyr::select(Experiment, everything())
 CeA_sIPSC_final <- as.tibble(CeA_sIPSC_final)
 
-CeA_sIPSC_final$Condition <- plyr::revalue(CeA_sIPSC_final$Condition, c("b"="baseline", "f" = "fractalkine"))
-CeA_sIPSC_final$Condition <- factor(CeA_sIPSC_final$Condition, levels = c("baseline", "fractalkine", "AZD", "minocycline"))
+CeA_sIPSC_final$Condition <- plyr::revalue(CeA_sIPSC_final$Condition, c("b"="baseline", "f" = "CX3CL1"))
+CeA_sIPSC_final$Condition <- factor(CeA_sIPSC_final$Condition, levels = c("baseline", "CX3CL1", "AZD8797", "minocycline"))
 CeA_sIPSC_final$Cell <- rep(1:(nrow(CeA_sIPSC_final)/2), each = 2)
 CeA_sIPSC_final$Experiment <- as.factor(CeA_sIPSC_final$Experiment)
-CeA_sIPSC_final$Experiment = factor(CeA_sIPSC_final$Experiment, levels=c('frak2nM','AZD + frak2nM','AZD','mino + frak2nM', 'minocycline'))
+CeA_sIPSC_final$Experiment = factor(CeA_sIPSC_final$Experiment, levels=c('CX3CL1(2nM)','AZD8797 + \nCX3CL1(2nM)',"AZD8797",'minocycline + \nCX3CL1(2nM)', 'minocycline'))
 #CeA_all_sIPSC_sum$Cell <- rep(1:(nrow(CeA_all_sIPSC_sum)/2), each = 2)
 CeA_sIPSC_RS <- CeA_sIPSC_final %>% filter(Type == 'RS')
 CeA_sIPSC_LF <- CeA_sIPSC_final %>% filter(Type == 'LF')
 
-########################CeA mIPSC###########################################################################
+#### frak2nM CeA mIPSC ####
 CeA_frak2nM_mIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_CeA_LF_frak2nM.csv"))
-CeA_frak2nM_mIPSC <- CeA_frak2nM_mIPSC %>% dplyr::mutate(Type = "LF") %>% dplyr::mutate(Experiment = "frak2nM")
+CeA_frak2nM_mIPSC <- CeA_frak2nM_mIPSC %>% dplyr::mutate(Type = "LF") %>% dplyr::mutate(Experiment = "CX3CL1(2nM)")
 CeA_frak2nM_mIPSC <- CeA_frak2nM_mIPSC %>% dplyr::select(Experiment, Filename, Cell, Condition, Type, everything()) %>% as_tibble()
-CeA_frak2nM_mIPSC$Condition <- plyr::revalue(CeA_frak2nM_mIPSC$Condition, c("b"="baseline", "f" = "fractalkine"))
+CeA_frak2nM_mIPSC$Condition <- plyr::revalue(CeA_frak2nM_mIPSC$Condition, c("b"="baseline", "f" = "CX3CL1"))
 
-
-CeA_sEPSC_final <- CeA_sEPSC_frak2nM %>%  dplyr::bind_rows(CeA_sEPSC_azd) %>% dplyr::bind_rows(CeA_sEPSC_mino) %>% dplyr::bind_rows(CeA_sEPSC_minoa) %>% dplyr::bind_rows(CeA_sEPSC_azda) %>%dplyr::select(Experiment, everything()) # dplyr::bind_rows(CeA_sEPSC_frak5nM) %>% 12.08.2021
+#### CeA big table sEPSC ####
+CeA_sEPSC_final <- CeA_sEPSC_frak2nM %>% dplyr::bind_rows(CeA_sEPSC_frak5nM) %>% dplyr::bind_rows(CeA_sEPSC_azd) %>% dplyr::bind_rows(CeA_sEPSC_mino) %>% dplyr::bind_rows(CeA_sEPSC_minoa) %>% dplyr::bind_rows(CeA_sEPSC_azda) %>%dplyr::select(Experiment, everything())
 CeA_sEPSC_final <- as.tibble(CeA_sEPSC_final)
-CeA_sEPSC_final$Condition <- plyr::revalue(CeA_sEPSC_final$Condition, c("b"="baseline", "f" = "fractalkine"))
-CeA_sEPSC_final$Condition <- factor(CeA_sEPSC_final$Condition, levels = c("baseline", "fractalkine", "AZD", "minocycline"))
+CeA_sEPSC_final$Condition <- plyr::revalue(CeA_sEPSC_final$Condition, c("b"="baseline", "f" = "CX3CL1"))
+CeA_sEPSC_final$Condition <- factor(CeA_sEPSC_final$Condition, levels = c("baseline", "CX3CL1", "AZD8797", "minocycline"))
 CeA_sEPSC_final$Cell <- rep(1:(nrow(CeA_sEPSC_final)/2), each = 2)
-CeA_sEPSC_final$Experiment = factor(CeA_sEPSC_final$Experiment, levels=c('frak2nM','frak5nM', 'AZD + frak2nM', 'AZD', 'mino + frak2nM', 'minocycline'))
+CeA_sEPSC_final$Experiment = factor(CeA_sEPSC_final$Experiment, levels=c('CX3CL1(2nM)','CX3CL1(5nM)', 'AZD8797 + \nCX3CL1(2nM)', "AZD8797", 'minocycline + \nCX3CL1(2nM)', 'minocycline'))
 CeA_sEPSC_RS <- CeA_sEPSC_final %>% filter(Type == 'RS')
 CeA_sEPSC_LF <- CeA_sEPSC_final %>% filter(Type == 'LF')
 
-
-###############################################################################################################################################################################################################################################################################################################################################################BLA###################################################################
-
-########################### FRAK2nM #####################################################################
+#### frak2nM BLA membrane properties ####
 
 BLA_frak2nM_df<-readRDS(".//BLA//2nM//fractalkine//membrane_table_frak2nM.rds")
 BLA_frak2nM_df$Cell <- as.factor(BLA_frak2nM_df$Cell)
 BLA_frak2nM_df$Condition <- as.factor(BLA_frak2nM_df$Condition)
 bad_Cells <- c(1, 14, 8)  #filtering 3 and 14 because of capacitance and 2 because of only 2 spikes and very depolarized, 1 - Rm more than 200, duży access, 13 - tau; ealier: 1, 2, 3, 13, 14. WHY 8? 
 BLA_frak2nM_df <- BLA_frak2nM_df %>% filter(!Cell %in% bad_Cells) 
-BLA_frak2nM_df <- BLA_frak2nM_df %>% mutate(Experiment = "frak2nM") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
+BLA_frak2nM_df <- BLA_frak2nM_df %>% mutate(Experiment = "CX3CL1(2nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
 BLA_frak2nM_inter <- BLA_frak2nM_df %>% filter(Type == "interneuron")
 BLA_frak2nM_df <- BLA_frak2nM_df %>% filter(Type == "PC")
 BLA_frak2nM_df_b <- BLA_frak2nM_df %>% filter(Condition == 'baseline')
-BLA_frak2nM_df_c <- BLA_frak2nM_df %>% filter(Condition == 'fractalkine')
+BLA_frak2nM_df_c <- BLA_frak2nM_df %>% filter(Condition == 'CX3CL1')
 
-##################################FRAK5nM#######################################################
+#### frak5nM BLA membrane properties ####
 
 BLA_frak5nM_df<-readRDS(".//BLA//5nM//membrane_table_frak5nM.rds")
 BLA_frak5nM_df$Cell <- as.factor(BLA_frak5nM_df$Cell)
 BLA_frak5nM_df$Condition <- as.factor(BLA_frak5nM_df$Condition)
 bad_Cells <- c(13, 11, 5) # 13- NA adaptation ratio, 11 - Rm more than 250, 1 - DUŻY ACCESS, ####24.11.2020 wycofany 1, 5 - too different Threshold
 BLA_frak5nM_df <- BLA_frak5nM_df %>% filter(!Cell %in% bad_Cells) 
-BLA_frak5nM_df <- BLA_frak5nM_df %>% mutate(Experiment = "frak5nM") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
+BLA_frak5nM_df <- BLA_frak5nM_df %>% mutate(Experiment = "CX3CL1(5nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
 BLA_frak5nM_inter <- BLA_frak5nM_df %>% filter(Type == "interneuron")
 BLA_frak5nM_df <- BLA_frak5nM_df %>% filter(Type == "PC")
 BLA_frak5nM_df_b <- BLA_frak5nM_df %>% filter(Condition == 'baseline')
-BLA_frak5nM_df_c <- BLA_frak5nM_df %>% filter(Condition == 'fractalkine')
+BLA_frak5nM_df_c <- BLA_frak5nM_df %>% filter(Condition == 'CX3CL1')
 
 
-##############################azd#####################################################
+#### azd + frak2nM BLA membrane properties ####
 BLA_azd_df<-readRDS(".//BLA//2nM//AZD//membrane_table_azd.rds")
 BLA_azd_df$Cell <- as.factor(BLA_azd_df$Cell)
 BLA_azd_df$Condition <- as.factor(BLA_azd_df$Condition)
 bad_Cells <- c(1, 2, 4, 9, 12, 13, 6) # 2, 9 ,12, 13 adaptation ratio less than 2 spikes, 1, 11- weird IV and late starting firing , 4- Cm, 5- Rm > 200, ale na razie cofam to, bo jest sEPSC; 6 - 19121023 - weird IV
 BLA_azd_df <- BLA_azd_df %>% filter(!Cell %in% bad_Cells) 
-BLA_azd_df <- BLA_azd_df %>% mutate(Experiment = "AZD + frak2nM")  %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
+BLA_azd_df <- BLA_azd_df %>% mutate(Experiment = "AZD8797 + \nCX3CL1(2nM)")  %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
 BLA_azd_df <- BLA_azd_df %>% filter(Type == "PC")
 BLA_azd_df_b <- BLA_azd_df %>% filter(Condition == 'baseline')
-BLA_azd_df_c <- BLA_azd_df %>% filter(Condition == 'fractalkine')
+BLA_azd_df_c <- BLA_azd_df %>% filter(Condition == 'CX3CL1')
 
-#####################antibody################################################################
+#### anti + frak2nM BLA membrane properties ####
 BLA_anti_df<-readRDS(".//BLA//2nM//przeciwcialo//membrane_table_anti.rds")
 BLA_anti_df$Cell <- as.factor(BLA_anti_df$Cell)
 BLA_anti_df$Condition <- as.factor(BLA_anti_df$Condition)
 bad_Cells <- c(3,8, 2, 4) # adaptation ratio >2   #C > 900, 2, 4 - WEIRD sEPSC
 BLA_anti_df <- BLA_anti_df %>% filter(!Cell %in% bad_Cells)
-BLA_anti_df <- BLA_anti_df %>% mutate(Experiment = "antibody + frak2nM") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything()) #%>% dplyr::rename(sag_ratio_140 = sag_ratio_80)
+BLA_anti_df <- BLA_anti_df %>% mutate(Experiment = 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything()) #%>% dplyr::rename(sag_ratio_140 = sag_ratio_80)
 BLA_anti_df <- BLA_anti_df %>% filter(Type == "PC")
 BLA_anti_df_b <- BLA_anti_df %>% filter(Condition == 'baseline')
-BLA_anti_df_c <- BLA_anti_df %>% filter(Condition == 'fractalkine')
+BLA_anti_df_c <- BLA_anti_df %>% filter(Condition == 'CX3CL1')
 
 
-###################minocycline###############################################################
+#### mino + frak2nM BLA membrane properties ####
 BLA_mino_df<-readRDS(".//BLA//2nM//minocycline//membrane_table_mino.rds")
 BLA_mino_df$Cell <- as.factor(BLA_mino_df$Cell)
 BLA_mino_df$Condition <- as.factor(BLA_mino_df$Condition)
 bad_Cells <- c(6, 18) #6, 18- NA adaptation ratio 
 BLA_mino_df <- BLA_mino_df %>% filter(!Cell %in% bad_Cells)
-BLA_mino_df <- BLA_mino_df %>% mutate(Experiment = "mino + frak2nM")  %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
+BLA_mino_df <- BLA_mino_df %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)')  %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
 BLA_mino_inter <- BLA_mino_df %>% filter(Type == "interneuron")
 BLA_mino_df <- BLA_mino_df %>% filter(Type == "PC")
 BLA_mino_df_b <- BLA_mino_df %>% filter(Condition == 'baseline')
-BLA_mino_df_c <- BLA_mino_df %>% filter(Condition == 'fractalkine')
+BLA_mino_df_c <- BLA_mino_df %>% filter(Condition == 'CX3CL1')
 
-#################################################sEPSC#############################################
+#### picro + frak2nM BLA membrane properties ####
 
 BLA_picro_df<-readRDS(".//BLA//2nM//GABA//membrane_table_picro.rds")
 bad_Cells <- c(1) # 20603002 IV
 BLA_picro_df <- BLA_picro_df %>% filter(!Cell %in% bad_Cells)
 BLA_picro_df$Cell <- as.factor(BLA_picro_df$Cell)
 BLA_picro_df$Condition <- as.factor(BLA_picro_df$Condition) 
-BLA_picro_df <- BLA_picro_df %>% mutate(Experiment = "picro + frak2nM") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything()) #%>% dplyr::rename(sag_ratio_140 = sag_ratio)
+BLA_picro_df <- BLA_picro_df %>% mutate(Experiment = 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything()) #%>% dplyr::rename(sag_ratio_140 = sag_ratio)
 BLA_picro_df <- BLA_picro_df %>% filter(Type == "PC")
 BLA_picro_df_b <- BLA_picro_df %>% filter(Condition == 'baseline')
-BLA_picro_df_c <- BLA_picro_df %>% filter(Condition == 'fractalkine')
+BLA_picro_df_c <- BLA_picro_df %>% filter(Condition == 'CX3CL1')
 
 
-######################################### SYNAPTIC TRANSMISSION ###############################################
-#########################sEPSC #############################################################################
+#### frak2nM BLA sEPSC ####
 BLA_frak2nM_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_frak2nM.csv"))
-BLA_frak2nM_sEPSC <- BLA_frak2nM_sEPSC %>% dplyr::mutate(Experiment = 'frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_frak2nM_sEPSC <- BLA_frak2nM_sEPSC %>% dplyr::mutate(Experiment = 'CX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_frak2nM_sEPSC$Filename <- as.character(BLA_frak2nM_sEPSC$Filename)
 
 BLA_frak5nM_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_frak5nM.csv"))
-BLA_frak5nM_sEPSC <- BLA_frak5nM_sEPSC %>% dplyr::mutate(Experiment = 'frak5nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_frak5nM_sEPSC <- BLA_frak5nM_sEPSC %>% dplyr::mutate(Experiment = 'CX3CL1(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_frak5nM_sEPSC$Filename <- as.character(BLA_frak5nM_sEPSC$Filename)
 
 BLA_azd_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_azdfrak2nM.csv"))
 #bad_Cells <- c(3) # weird IV, 19121023
 #BLA_azd_sEPSC <- BLA_azd_sEPSC %>% filter(!Cell %in% bad_Cells)
-BLA_azd_sEPSC <- BLA_azd_sEPSC %>% mutate(Experiment = 'AZD + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_azd_sEPSC <- BLA_azd_sEPSC %>% mutate(Experiment = 'AZD8797 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_azd_sEPSC$Filename <- as.character(BLA_azd_sEPSC$Filename)
 
 BLA_anti_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_antifrak2nM.csv"))
-BLA_anti_sEPSC <- BLA_anti_sEPSC %>% mutate(Experiment = 'antibody + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_anti_sEPSC <- BLA_anti_sEPSC %>% mutate(Experiment = 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_anti_sEPSC$Filename <- as.character(BLA_anti_sEPSC$Filename)
 
 BLA_mino_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_minofrak2nM.csv"))
-BLA_mino_sEPSC <- BLA_mino_sEPSC %>% mutate(Experiment = 'mino + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_mino_sEPSC <- BLA_mino_sEPSC %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_mino_sEPSC$Filename <- as.character(BLA_mino_sEPSC$Filename)
 
 BLA_picro_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_picrofrak2nM.csv"))
 #bad_Cells <- c(5, 1) # brzydkie sEPSC wg komentarza; 1 - IV
 #BLA_picro_sEPSC <- BLA_picro_sEPSC %>% filter(!Cell %in% bad_Cells)
-BLA_picro_sEPSC <- BLA_picro_sEPSC %>% mutate(Experiment = 'picro + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_picro_sEPSC <- BLA_picro_sEPSC %>% mutate(Experiment = 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_picro_sEPSC$Filename <- as.character(BLA_picro_sEPSC$Filename)
 
-#######################sIPSC###########################################################################
+#### frak2nM BLA sIPSC ####
 BLA_frak2nM_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_frak2nM.csv"))
-BLA_frak2nM_sIPSC <- BLA_frak2nM_sIPSC %>% mutate(Experiment = 'frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_frak2nM_sIPSC <- BLA_frak2nM_sIPSC %>% mutate(Experiment = 'CX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_frak2nM_sIPSC$Filename <- as.character(BLA_frak2nM_sIPSC$Filename)
 
 BLA_frak5nM_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_frak5nM.csv"))
 #bad_Cells <- c(6, 9 ) # holding current > 600 pA; 9 - big inrease
 #BLA_frak5nM_sIPSC <- BLA_frak5nM_sIPSC %>% filter(!Cell %in% bad_Cells)
-BLA_frak5nM_sIPSC <- BLA_frak5nM_sIPSC %>%  mutate(Experiment = 'frak5nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_frak5nM_sIPSC <- BLA_frak5nM_sIPSC %>%  mutate(Experiment = 'CX3CL1(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_frak5nM_sIPSC$Filename <- as.character(BLA_frak5nM_sIPSC$Filename)
 
 BLA_azd_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_azdfrak2nM.csv"))
-BLA_azd_sIPSC <- BLA_azd_sIPSC %>% mutate(Experiment = 'AZD + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-bad_Cells <- c(6) # too high frequency
-BLA_azd_sIPSC <- BLA_azd_sIPSC %>% filter(!Cell %in% bad_Cells)
+BLA_azd_sIPSC <- BLA_azd_sIPSC %>% mutate(Experiment = 'AZD8797 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_azd_sIPSC$Filename <- as.character(BLA_azd_sIPSC$Filename)
 
 BLA_azdfrak5nM_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_azdfrak5nM.csv"))
-BLA_azdfrak5nM_sIPSC <- BLA_azdfrak5nM_sIPSC %>%  mutate(Experiment = 'AZD + frak5nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_azdfrak5nM_sIPSC <- BLA_azdfrak5nM_sIPSC %>%  mutate(Experiment = "AZD8797 + \nCX3CL1(5nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_azdfrak5nM_sIPSC$Filename <- as.character(BLA_azdfrak5nM_sIPSC$Filename)
 
 BLA_anti_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_antifrak2nM.csv"))
-BLA_anti_sIPSC <- BLA_anti_sIPSC %>% mutate(Experiment = 'antibody + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_anti_sIPSC <- BLA_anti_sIPSC %>% mutate(Experiment = 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_anti_sIPSC$Filename <- as.character(BLA_anti_sIPSC$Filename)
 
 BLA_mino_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_minofrak2nM.csv"))
-BLA_mino_sIPSC <- BLA_mino_sIPSC %>% mutate(Experiment = 'mino + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_mino_sIPSC <- BLA_mino_sIPSC %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_mino_sIPSC$Filename <- as.character(BLA_mino_sIPSC$Filename)
 
 BLA_minofrak5nM_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_minofrak5nM.csv"))
-BLA_minofrak5nM_sIPSC <- BLA_minofrak5nM_sIPSC %>% mutate(Experiment = 'mino + frak5nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_minofrak5nM_sIPSC <- BLA_minofrak5nM_sIPSC %>% mutate(Experiment = 'minocycline + \nCX3CL1(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_minofrak5nM_sIPSC$Filename <- as.character(BLA_minofrak5nM_sIPSC$Filename)
 
-######################################################################################################################
-###########minocycline alone ########################################################################################
+#### mino alone BLA membrane properties ####
 # Setting working directory and loading main table
 BLA_df_minoa<-readRDS(".//minocycline_alone//BLA//membrane_table_BLA_mino_alone.rds")
 BLA_df_minoa <- BLA_df_minoa %>% mutate(Experiment = 'minocycline') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything()) #%>% dplyr::rename(sag_ratio_140 = sag_ratio)
@@ -775,7 +458,7 @@ BLA_df_minoa$Condition <- as.factor(BLA_df_minoa$Condition)
 BLA_df_minoa <- BLA_df_minoa %>% filter(Type == "PC")
 
 
-##############loading minocycline BLA transmission files############################
+#### mino alone BLA sEPSC ####
 BLA_minoa_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_minoa.csv"))
 BLA_minoa_sEPSC <- BLA_minoa_sEPSC %>% mutate(Experiment = 'minocycline') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_minoa_sEPSC$Condition <- plyr::revalue(BLA_minoa_sEPSC$Condition, c("b"="baseline", "f" = "minocycline"))
@@ -784,48 +467,56 @@ BLA_minoa_sEPSC$Cell <- as.numeric(BLA_minoa_sEPSC$Cell)
 #bad_Cells <- c(7) # BARDZIEJ INTERNEURON, NIE JEST BRANY W IV, ALE ZNÓW MA MAŁĄ POBUDLIWOŚĆ
 #BLA_minoa_sEPSC <- BLA_minoa_sEPSC %>% filter(!Cell %in% bad_Cells)
 
+#### mino alone BLA sIPSC ####
 BLA_minoa_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_minoa.csv"))
 BLA_minoa_sIPSC <- BLA_minoa_sIPSC %>% mutate(Experiment = 'minocycline') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_minoa_sIPSC$Condition <- plyr::revalue(BLA_minoa_sIPSC$Condition, c("b"="baseline", "f" = "minocycline"))
 BLA_minoa_sIPSC$Filename <- as.character(BLA_minoa_sIPSC$Filename)
 #BLA_minoa_sIPSC$Cell <- as.numeric(BLA_minoa_sIPSC$Cell)
-######################################################################################################################
-###########AZD alone ########################################################################################
 
+#### azd alone BLA membrane properties ####
 # Setting working directory and loading main table
 BLA_df_azda<-readRDS(".//AZD_alone//BLA//membrane_table_BLA_azd_alone.rds")
 
-BLA_df_azda <- BLA_df_azda %>% mutate(Experiment = 'AZD') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything()) #%>% dplyr::rename(sag_ratio_140 = sag_ratio)
+BLA_df_azda <- BLA_df_azda %>% mutate(Experiment = "AZD8797") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything()) #%>% dplyr::rename(sag_ratio_140 = sag_ratio)
 BLA_df_azda$Cell <- as.factor(BLA_df_azda$Cell)
 bad_Cells <- c(5, 3) # weird IV - almost none spikes (2082002) ; IV 20603002
 BLA_df_azda <- BLA_df_azda %>% filter(!Cell %in% bad_Cells)
-BLA_df_azda$Condition <- factor(BLA_df_azda$Condition, levels = c("baseline", "AZD"))
+BLA_df_azda$Condition <- plyr::revalue(BLA_df_azda$Condition, c("AZD" = "AZD8797"))
+BLA_df_azda$Condition <- factor(BLA_df_azda$Condition, levels = c("baseline", "AZD8797"))
 BLA_df_azda <- BLA_df_azda %>% dplyr::arrange(Experiment, Filename_all1, Cell, Condition)
 BLA_df_azda <- BLA_df_azda %>% filter(Type == "PC")
-##############loading AZD BLA transmission files############################
+
+#### azd alone BLA sEPSC ####
 
 BLA_azda_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_azda.csv"))
-BLA_azda_sEPSC <- BLA_azda_sEPSC %>% mutate(Experiment = 'AZD') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_azda_sEPSC <- BLA_azda_sEPSC %>% mutate(Experiment = "AZD8797") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 #bad_Cells <- c(5, 3) #weird IV - 2082002
 #BLA_azda_sEPSC <- BLA_azda_sEPSC %>% filter(!Cell %in% bad_Cells)
-BLA_azda_sEPSC$Condition <- plyr::revalue(BLA_azda_sEPSC$Condition, c("b"="baseline", "f" = "AZD"))
-BLA_azda_sEPSC$Condition <- factor(BLA_azda_sEPSC$Condition, levels = c("baseline", "AZD"))
+BLA_azda_sEPSC$Condition <- plyr::revalue(BLA_azda_sEPSC$Condition, c("b"="baseline", "f" = "AZD8797"))
+BLA_azda_sEPSC$Condition <- factor(BLA_azda_sEPSC$Condition, levels = c("baseline", "AZD8797"))
 BLA_azda_sEPSC$Filename <- as.character(BLA_azda_sEPSC$Filename)
 BLA_azda_sEPSC$Cell <- as.numeric(BLA_azda_sEPSC$Cell)
 
+#### azd alone BLA sIPSC ####
+
 BLA_azda_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_azda.csv"))
-BLA_azda_sIPSC <- BLA_azda_sIPSC %>% mutate(Experiment = 'AZD') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-BLA_azda_sIPSC$Condition <- plyr::revalue(BLA_azda_sIPSC$Condition, c("b"="baseline", "f" = "AZD"))
-BLA_azda_sIPSC$Condition <- factor(BLA_azda_sIPSC$Condition, levels = c("baseline", "AZD"))
+BLA_azda_sIPSC <- BLA_azda_sIPSC %>% mutate(Experiment = "AZD8797") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_azda_sIPSC$Condition <- plyr::revalue(BLA_azda_sIPSC$Condition, c("b"="baseline", "f" = "AZD8797"))
+BLA_azda_sIPSC$Condition <- factor(BLA_azda_sIPSC$Condition, levels = c("baseline", "AZD8797"))
 #BLA_azda_sIPSC$Cell <- as.numeric(BLA_azda_sIPSC$Cell)
 BLA_azda_sIPSC$Filename <- as.character(BLA_azda_sIPSC$Filename)
 
-############# final  files for BLA##########################################################################
+#### BLA final table membrane properties ####
 
 BLA_df_final <- BLA_frak2nM_df %>% dplyr::bind_rows(BLA_frak5nM_df) %>% dplyr::bind_rows(BLA_azd_df) %>% dplyr::bind_rows(BLA_anti_df) %>% dplyr::bind_rows(BLA_mino_df) %>% dplyr::bind_rows(BLA_picro_df)
+
+BLA_df_final$Condition <- plyr::revalue(BLA_df_final$Condition, c("fractalkine" = "CX3CL1"))
+
+
 BLA_df_final <- BLA_df_final %>% dplyr::bind_rows(BLA_df_minoa) %>% dplyr::bind_rows(BLA_df_azda)
 BLA_df_final <- BLA_df_final %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
-BLA_df_final$Experiment = factor(BLA_df_final$Experiment, levels=c('frak2nM', 'frak5nM','antibody + frak2nM','AZD + frak2nM','AZD', 'mino + frak2nM', 'minocycline', 'picro + frak2nM'))
+BLA_df_final$Experiment = factor(BLA_df_final$Experiment, levels=c('CX3CL1(2nM)', 'CX3CL1(5nM)','anti-CX3CR1 + \nCX3CL1(2nM)','AZD8797 + \nCX3CL1(2nM)',"AZD8797", 'minocycline + \nCX3CL1(2nM)', 'minocycline', 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
 BLA_df_final$Condition <- as.factor(BLA_df_final$Condition)
 BLA_df_final$Cell <- rep(1:(nrow(BLA_df_final)/2), each = 2)
 
@@ -836,44 +527,28 @@ sag_Cells <- temp$Cell
 BLA_df_sag <- BLA_df_final %>% filter(Cell %in% sag_Cells) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
 
 
-############# final synaptic transmission ######################################################################
+#### BLA final table sEPSC ####
 
 BLA_sEPSC_final <- BLA_frak2nM_sEPSC %>% dplyr::bind_rows(BLA_frak5nM_sEPSC) %>% dplyr::bind_rows(BLA_azd_sEPSC) %>% dplyr::bind_rows(BLA_anti_sEPSC) %>% dplyr::bind_rows(BLA_mino_sEPSC) %>% dplyr::bind_rows(BLA_picro_sEPSC) %>% dplyr::bind_rows(BLA_minoa_sEPSC) %>% dplyr::bind_rows(BLA_azda_sEPSC)
 BLA_sEPSC_final <- BLA_sEPSC_final %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) %>% as_tibble()
-BLA_sEPSC_final$Condition <- plyr::revalue(BLA_sEPSC_final$Condition, c("b"="baseline", "f" = "fractalkine"))
-BLA_sEPSC_final$Condition <- factor(BLA_sEPSC_final$Condition, levels = c("baseline", "fractalkine", "AZD", "minocycline"))
-BLA_sEPSC_final$Experiment = factor(BLA_sEPSC_final$Experiment, levels=c('frak2nM', 'frak5nM','antibody + frak2nM', 'AZD + frak2nM','AZD', 'mino + frak2nM', 'minocycline', 'picro + frak2nM'))
+BLA_sEPSC_final$Condition <- plyr::revalue(BLA_sEPSC_final$Condition, c("b"="baseline", "f" = "CX3CL1"))
+BLA_sEPSC_final$Condition <- factor(BLA_sEPSC_final$Condition, levels = c("baseline", "CX3CL1", "AZD8797", "minocycline"))
+BLA_sEPSC_final$Experiment = factor(BLA_sEPSC_final$Experiment, levels=c('CX3CL1(2nM)', 'CX3CL1(5nM)','anti-CX3CR1 + \nCX3CL1(2nM)', 'AZD8797 + \nCX3CL1(2nM)',"AZD8797", 'minocycline + \nCX3CL1(2nM)', 'minocycline', 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
 BLA_sEPSC_final$Cell <- rep(1:(nrow(BLA_sEPSC_final)/2), each = 2)
 
+#### BLA final table sIPSC ####
 
-# previous file - all conditions
-# BLA_sIPSC_final <- BLA_frak2nM_sIPSC %>% dplyr::bind_rows(BLA_frak5nM_sIPSC) %>% dplyr::bind_rows(BLA_azd_sIPSC) %>% dplyr::bind_rows(BLA_anti_sIPSC) %>% dplyr::bind_rows(BLA_mino_sIPSC) %>% dplyr::bind_rows(BLA_minofrak5nM_sIPSC) %>% dplyr::bind_rows(BLA_minoa_sIPSC) %>% dplyr::bind_rows(BLA_azda_sIPSC) %>% dplyr::bind_rows(BLA_azdfrak5nM_sIPSC)
-# BLA_sIPSC_final <- BLA_sIPSC_final %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) %>% as_tibble()
-# BLA_sIPSC_final$Condition <- plyr::revalue(BLA_sIPSC_final$Condition, c("b"="baseline", "f" = "fractalkine"))
-# BLA_sIPSC_final$Condition <- factor(BLA_sIPSC_final$Condition, levels = c("baseline", "fractalkine", "AZD", "minocycline"))
-# BLA_sIPSC_final$Experiment = factor(BLA_sIPSC_final$Experiment, levels=c('frak2nM', 'frak5nM','antibody + frak2nM','AZD + frak2nM','AZD + frak5nM', 'AZD','mino + frak2nM', 'mino + frak5nM', 'minocycline'))
-# BLA_sIPSC_final$Cell <- rep(1:(nrow(BLA_sIPSC_final)/2), each = 2)
-
-# for publication and PhD - only important conditions
-BLA_sIPSC_final <- BLA_frak2nM_sIPSC %>% dplyr::bind_rows(BLA_frak5nM_sIPSC) %>%  dplyr::bind_rows(BLA_minofrak5nM_sIPSC) %>% dplyr::bind_rows(BLA_minoa_sIPSC) %>% dplyr::bind_rows(BLA_azda_sIPSC) %>% dplyr::bind_rows(BLA_azdfrak5nM_sIPSC)
+BLA_sIPSC_final <- BLA_frak2nM_sIPSC %>% dplyr::bind_rows(BLA_frak5nM_sIPSC) %>% dplyr::bind_rows(BLA_azd_sIPSC) %>% dplyr::bind_rows(BLA_anti_sIPSC) %>% dplyr::bind_rows(BLA_mino_sIPSC) %>% dplyr::bind_rows(BLA_minofrak5nM_sIPSC) %>% dplyr::bind_rows(BLA_minoa_sIPSC) %>% dplyr::bind_rows(BLA_azda_sIPSC) %>% dplyr::bind_rows(BLA_azdfrak5nM_sIPSC)
 BLA_sIPSC_final <- BLA_sIPSC_final %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) %>% as_tibble()
-BLA_sIPSC_final$Condition <- plyr::revalue(BLA_sIPSC_final$Condition, c("b"="baseline", "f" = "fractalkine"))
-BLA_sIPSC_final$Condition <- factor(BLA_sIPSC_final$Condition, levels = c("baseline", "fractalkine", "AZD", "minocycline"))
-BLA_sIPSC_final$Experiment = factor(BLA_sIPSC_final$Experiment, levels=c('frak2nM', 'frak5nM','AZD + frak5nM', 'AZD', 'mino + frak5nM', 'minocycline'))
+BLA_sIPSC_final$Condition <- plyr::revalue(BLA_sIPSC_final$Condition, c("b"="baseline", "f" = "CX3CL1"))
+BLA_sIPSC_final$Condition <- factor(BLA_sIPSC_final$Condition, levels = c("baseline", "CX3CL1", "AZD8797", "minocycline"))
+BLA_sIPSC_final$Experiment = factor(BLA_sIPSC_final$Experiment, levels=c('CX3CL1(2nM)', 'CX3CL1(5nM)','anti-CX3CR1 + \nCX3CL1(2nM)','AZD8797 + \nCX3CL1(2nM)',"AZD8797 + \nCX3CL1(5nM)", "AZD8797",'minocycline + \nCX3CL1(2nM)', 'minocycline + \nCX3CL1(5nM)', 'minocycline'))
 BLA_sIPSC_final$Cell <- rep(1:(nrow(BLA_sIPSC_final)/2), each = 2)
 
-# for appendix/supplementary material - to do
-# BLA_sIPSC_final <- BLA_frak2nM_sIPSC %>% dplyr::bind_rows(BLA_frak5nM_sIPSC) %>% dplyr::bind_rows(BLA_azd_sIPSC) %>% dplyr::bind_rows(BLA_anti_sIPSC) %>% dplyr::bind_rows(BLA_mino_sIPSC) %>% dplyr::bind_rows(BLA_minofrak5nM_sIPSC) %>% dplyr::bind_rows(BLA_minoa_sIPSC) %>% dplyr::bind_rows(BLA_azda_sIPSC) %>% dplyr::bind_rows(BLA_azdfrak5nM_sIPSC)
-# BLA_sIPSC_final <- BLA_sIPSC_final %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) %>% as_tibble()
-# BLA_sIPSC_final$Condition <- plyr::revalue(BLA_sIPSC_final$Condition, c("b"="baseline", "f" = "fractalkine"))
-# BLA_sIPSC_final$Condition <- factor(BLA_sIPSC_final$Condition, levels = c("baseline", "fractalkine", "AZD", "minocycline"))
-# BLA_sIPSC_final$Experiment = factor(BLA_sIPSC_final$Experiment, levels=c('frak2nM', 'frak5nM','antibody + frak2nM','AZD + frak2nM','AZD + frak5nM', 'AZD','mino + frak2nM', 'mino + frak5nM', 'minocycline'))
-# BLA_sIPSC_final$Cell <- rep(1:(nrow(BLA_sIPSC_final)/2), each = 2)
+#### BLA mEPSC ####
 
-
-############################mEPSC#############################################################################
 BLA_frak2nM_mEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mEPSC_BLA_frak2nM.csv"))
-BLA_frak2nM_mEPSC <- BLA_frak2nM_mEPSC %>% mutate(Experiment = 'frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_frak2nM_mEPSC <- BLA_frak2nM_mEPSC %>% mutate(Experiment = 'CX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_frak2nM_mEPSC$Filename <- as.character(BLA_frak2nM_mEPSC$Filename)
 #bad_Cells <- c(1)
 #BLA_frak2nM_mEPSC <- BLA_frak2nM_mEPSC %>% filter(!Cell %in% bad_Cells)# filtering 1 - holding current < -100
@@ -886,20 +561,20 @@ BLA_frak2nM_mEPSC$Filename <- as.character(BLA_frak2nM_mEPSC$Filename)
 BLA_anti_mEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mEPSC_BLA_antifrak2nM.csv"))
 #bad_Cells <- c(2,3) 2 - holding - 300
 #BLA_anti_mEPSC <- BLA_anti_mEPSC %>% filter(!Cell %in% bad_Cells) # filtering 2,3 - holding current < -100
-BLA_anti_mEPSC <- BLA_anti_mEPSC %>% mutate(Experiment = 'antibody + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_anti_mEPSC <- BLA_anti_mEPSC %>% mutate(Experiment = 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_anti_mEPSC$Filename <- as.character(BLA_anti_mEPSC$Filename)
 
 BLA_mino_mEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mEPSC_BLA_minofrak2nM.csv"))
-BLA_mino_mEPSC <- BLA_mino_mEPSC %>% mutate(Experiment = 'mino + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_mino_mEPSC <- BLA_mino_mEPSC %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_mino_mEPSC$Filename <- as.character(BLA_mino_mEPSC$Filename)
-
 
 BLA_mEPSC_final <- BLA_frak2nM_mEPSC %>%  dplyr::bind_rows(BLA_anti_mEPSC) %>% dplyr::bind_rows(BLA_mino_mEPSC) 
 BLA_mEPSC_final <- BLA_mEPSC_final %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) %>% as_tibble()
-BLA_mEPSC_final$Condition <- plyr::revalue(BLA_mEPSC_final$Condition, c("b"="baseline", "f" = "fractalkine"))
-BLA_mEPSC_final$Experiment = factor(BLA_mEPSC_final$Experiment, levels=c('frak2nM','antibody + frak2nM','mino + frak2nM'))
+BLA_mEPSC_final$Condition <- plyr::revalue(BLA_mEPSC_final$Condition, c("b"="baseline", "f" = "CX3CL1"))
+BLA_mEPSC_final$Experiment = factor(BLA_mEPSC_final$Experiment, levels=c('CX3CL1(2nM)','anti-CX3CR1 + \nCX3CL1(2nM)','minocycline + \nCX3CL1(2nM)'))
 BLA_mEPSC_final$Cell <- rep(1:(nrow(BLA_mEPSC_final)/2), each = 2)
-###########################mIPSC#######################################################################
+
+#### BLA mIPSC ####
 BLA_frak2nM_mIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_BLA_frak2nM.csv"))
 BLA_frak5nM_mIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_BLA_frak5nM.csv"))
 BLA_anti_mIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_BLA_antifrak2nM.csv"))
@@ -908,27 +583,26 @@ BLA_anti_mIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPS
 # st_table(BLA_mino_mIPSC)
 # BLA_mino_mIPSC <- read_rds("summary_BLA_mino_mIPSC.rds") 
 
-BLA_frak2nM_mIPSC <- BLA_frak2nM_mIPSC %>% mutate(Experiment = 'frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_frak2nM_mIPSC <- BLA_frak2nM_mIPSC %>% mutate(Experiment = 'CX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_frak2nM_mIPSC$Filename <- as.character(BLA_frak2nM_mIPSC$Filename)
 #bad_Cells <- c(4,5) # higher median_Frequency than rest > 5Hz
 #BLA_frak2nM_mIPSC <- BLA_frak2nM_mIPSC %>% filter(!Cell %in% bad_Cells)
-BLA_frak5nM_mIPSC <- BLA_frak5nM_mIPSC %>%  mutate(Experiment = 'frak5nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_frak5nM_mIPSC <- BLA_frak5nM_mIPSC %>%  mutate(Experiment = 'CX3CL1(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_frak5nM_mIPSC$Filename <- as.character(BLA_frak5nM_mIPSC$Filename)
 
-#BLA_azd_mIPSC <- BLA_azd_mIPSC %>% mutate(Experiment = 'AZD + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
-BLA_anti_mIPSC <- BLA_anti_mIPSC %>% mutate(Experiment = 'antibody + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+#BLA_azd_mIPSC <- BLA_azd_mIPSC %>% mutate(Experiment = 'AZD8797 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_anti_mIPSC <- BLA_anti_mIPSC %>% mutate(Experiment = 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_anti_mIPSC$Filename <- as.character(BLA_anti_mIPSC$Filename)
-#BLA_mino_mIPSC <- BLA_mino_mIPSC %>% mutate(Experiment = 'mino + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+#BLA_mino_mIPSC <- BLA_mino_mIPSC %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 
 
-
-BLA_mIPSC_final <- BLA_frak2nM_mIPSC %>%  dplyr::bind_rows(BLA_frak5nM_mIPSC) #%>%  dplyr::bind_rows(BLA_anti_mIPSC)
+BLA_mIPSC_final <- BLA_frak2nM_mIPSC %>%  dplyr::bind_rows(BLA_frak5nM_mIPSC) %>%  dplyr::bind_rows(BLA_anti_mIPSC)
 BLA_mIPSC_final <- BLA_mIPSC_final %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) %>% as_tibble()
-BLA_mIPSC_final$Condition <- plyr::revalue(BLA_mIPSC_final$Condition, c("b"="baseline", "f" = "fractalkine"))
-BLA_mIPSC_final$Experiment = factor(BLA_mIPSC_final$Experiment, levels=c('frak2nM', 'frak5nM'))
+BLA_mIPSC_final$Condition <- plyr::revalue(BLA_mIPSC_final$Condition, c("b"="baseline", "f" = "CX3CL1"))
+BLA_mIPSC_final$Experiment = factor(BLA_mIPSC_final$Experiment, levels=c('CX3CL1(2nM)', 'CX3CL1(5nM)','anti-CX3CR1 + \nCX3CL1(2nM)'))
 BLA_mIPSC_final$Cell <- rep(1:(nrow(BLA_mIPSC_final)/2), each = 2)
 
-###############################INTERNEURONS IN PC###################################################################
+#### BLA interneurons ####
 
 BLA_df_inter <- BLA_frak2nM_inter %>% bind_rows(BLA_frak5nM_inter) %>% bind_rows(BLA_mino_inter)
 BLA_df_inter$Experiment <- factor(BLA_df_inter$Experiment)
@@ -940,21 +614,23 @@ BLA_df_inter$AP_width1_all[[7]] <- 0.53 # changing value from 13 ms.... somethin
 BLA_df_inter$AP_width1_all[[8]] <- 0.54 # changing value from 87 ms.... something wrong with matlab script
 
 BLA_frak2nM_sEPSC_inter <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_frak2nM_inter.csv"))
-BLA_frak2nM_sEPSC_inter <- BLA_frak2nM_sEPSC_inter %>% mutate(Experiment = 'frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_frak2nM_sEPSC_inter <- BLA_frak2nM_sEPSC_inter %>% mutate(Experiment = 'CX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_frak2nM_sEPSC_inter$Filename <- as.character(BLA_frak2nM_sEPSC_inter$Filename)
 
 BLA_frak5nM_sEPSC_inter <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_frak5nM_inter.csv"))
-BLA_frak5nM_sEPSC_inter <- BLA_frak5nM_sEPSC_inter %>% mutate(Experiment = 'frak5nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_frak5nM_sEPSC_inter <- BLA_frak5nM_sEPSC_inter %>% mutate(Experiment = 'CX3CL1(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_frak5nM_sEPSC_inter$Filename <- as.character(BLA_frak5nM_sEPSC_inter$Filename)
 
 BLA_mino_sEPSC_inter <-  as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_minofrak2nM_inter.csv"))
-BLA_mino_sEPSC_inter <- BLA_mino_sEPSC_inter  %>% mutate(Experiment = 'mino + frak2nM') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_mino_sEPSC_inter <- BLA_mino_sEPSC_inter  %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_mino_sEPSC_inter$Filename <- as.character(BLA_mino_sEPSC_inter$Filename)
 
 BLA_sEPSC_final_inter <-  BLA_frak2nM_sEPSC_inter  %>% bind_rows(BLA_frak5nM_sEPSC_inter) %>% bind_rows(BLA_mino_sEPSC_inter)
 #BLA_sEPSC_final_inter$Condition <- as.factor(BLA_sEPSC_final_inter$Condition)
-BLA_sEPSC_final_inter$Condition <- plyr::revalue(BLA_sEPSC_final_inter$Condition, c("b"="baseline", "f" = "fractalkine"))
-###############################################################################################################################################################################################################################################################################################################################################################LTP###################################################################
+BLA_sEPSC_final_inter$Condition <- plyr::revalue(BLA_sEPSC_final_inter$Condition, c("b"="baseline", "f" = "CX3CL1"))
+
+#### LTP ####
+
 pzfx_tables("Amygdala_ltp_stst.pzfx")
 bartek_LTP <- read_pzfx("Amygdala_ltp_stst.pzfx", "LTP CTX")
 bartek_LTP <- as_tibble(bartek_LTP)
@@ -969,19 +645,20 @@ bartek_LTP2$Condition <- as.factor(bartek_LTP2$Condition)
 bartek_LTP2$Slice <- as.factor(bartek_LTP2$Slice)
 df_basic <- Rmisc::summarySE(bartek_LTP2 , measurevar="Amplitude", groupvars=c("Condition","Time"))
 df_basic <- as_tibble(df_basic)
-df_basic$Condition <- plyr::revalue(df_basic$Condition, c("FRA 2 ADX 10uM"="AZD + frak2nM", "fra 2nM" = "frak2nM"))
+df_basic$Condition <- plyr::revalue(df_basic$Condition, c("naive" = "baseline","FRA 2 ADX 10uM"="AZD8797 + \nCX3CL1(2nM)", "fra 2nM" = "CX3CL1(2nM)"))
 df_basic$Time <-as.numeric(levels(df_basic$Time))[df_basic$Time]
-df_basic$Condition <- factor(df_basic$Condition, levels = c("naive", "frak2nM", "AZD + frak2nM"))
+df_basic$Condition <- factor(df_basic$Condition, levels = c("baseline", "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)"))
+
 LTP_bartek <- df_basic %>% ggplot(aes(x = Time, y= Amplitude, fill = Condition)) +
   geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
-  geom_point(size = 4, pch = 21, alpha = 0.7) +
+  geom_point(size = 3, pch = 21, alpha = 0.7) +
   #geom_line() +
   ylab("Amplitude (%)") +
   xlab("Time (min") +
   scale_fill_aaas() +
   theme_classic() +
   geom_hline(yintercept = 100, lty = 'dashed') +
-  xlim(-20, 70) +
+  xlim(-15, 70) +
   ylim(60, 160) +
   ggtitle("LTP AMYGDALA") 
 
@@ -998,11 +675,12 @@ bartek_IV2 <- drop_na(bartek_IV2)
 bartek_IV2$Stim <- as.factor(bartek_IV2$Stim)
 bartek_IV2$Condition <- as.factor(bartek_IV2$Condition)
 bartek_IV2$Slice <- as.factor(bartek_IV2$Slice)
-bartek_IV2$Condition <- plyr::revalue(bartek_IV2$Condition, c("ADXcontrol"="control", "fraccontrol" = "control", "ADXFRXcon" = "control", "ADX10uM" = "AZD + frak2nM", "frac2nM" = "frak2nM", "ADX10FRX2" = "AZD + frak2nM"))
+bartek_IV2$Condition <- plyr::revalue(bartek_IV2$Condition, c("ADXcontrol"="baseline", "fraccontrol" = "baseline", "ADXFRXcon" = "baseline", "ADX10uM" = "AZD8797", "frac2nM" = "CX3CL1(2nM)", "ADX10FRX2" = "AZD8797 + \nCX3CL1(2nM)", "control" = "baseline"))
 df_basic <- Rmisc::summarySE(bartek_IV2 , measurevar="Amplitude", groupvars=c("Condition","Stim"))
 df_basic <- as_tibble(df_basic)
 df_basic$Stim <-as.numeric(levels(df_basic$Stim))[df_basic$Stim]
-df_basic$Condition <- factor(df_basic$Condition, levels = c("control",  "frak2nM", "AZD", "AZD + frak2nM"))
+df_basic$Condition <- factor(df_basic$Condition, levels = c("baseline",  "CX3CL1(2nM)", "AZD8797", "AZD8797 + \nCX3CL1(2nM)"))
+
 IV_bartek <- df_basic %>% group_by(Condition) %>% ggplot(aes(x = Stim, y= Amplitude, fill = Condition)) +
   geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
   geom_point(size = 3, pch = 21, alpha = 0.7) +
@@ -1023,8 +701,8 @@ bartek_pp2 <- bartek_pp2 %>% separate(condition, c("Condition", "Ratio"), "_") #
 bartek_pp2 <- drop_na(bartek_pp2)
 bartek_pp2$Condition <- as.factor(bartek_pp2$Condition)
 
-bartek_pp2$Condition <- plyr::revalue(bartek_pp2$Condition, c("naive"="control","ADX 10 FRC 2"="AZD + frak2nM", "adx 10uM" = "AZD + frak2nM", "ADX 10um" = "AZD + frak2nM" ,"fra con" = "control", "adx control" = "control",  "fra 2nM" = "frak2nM", "ADX FRC control" = "control"))
-bartek_pp2$Condition <- factor(bartek_pp2$Condition, levels = c("control", "frak2nM", 'AZD', "AZD + frak2nM"))
+bartek_pp2$Condition <- plyr::revalue(bartek_pp2$Condition, c("naive"="control","ADX 10 FRC 2"="AZD8797 + \nCX3CL1(2nM)", "adx 10uM" = "AZD8797 + \nCX3CL1(2nM)", "ADX 10um" = "AZD8797 + \nCX3CL1(2nM)" ,"fra con" = "control", "adx control" = "control",  "fra 2nM" = "CX3CL1(2nM)", "ADX FRC control" = "control"))
+bartek_pp2$Condition <- factor(bartek_pp2$Condition, levels = c("control", "CX3CL1(2nM)", "AZD8797", "AZD8797 + \nCX3CL1(2nM)"))
 bartek_pp3 <- bartek_pp2 %>% arrange(ID, Condition) %>% mutate(Slice = rep(1:(nrow(bartek_pp2)/2), each = 2)) %>% dplyr::select(-ID)
 bartek_pp3 <- bartek_pp3 %>% dplyr::select(Condition, Slice, everything())
 bartek_pp3$Ratio <- factor(bartek_pp3$Ratio, levels = c("pre", "post"))
@@ -1052,9 +730,8 @@ pp_bartek_2 <- bartek_pp3 %>% ggplot(aes(x = Ratio, y = val, color = Ratio)) +
   ggtitle('Paired-pulses') +
   facet_wrap(~ Condition, ncol = 4)
 
-setwd("..")
-setwd(".//doktorat//PhDThesis")
-print(getwd())
 ```
 
-`r print(getwd())`
+<!-- setwd("..")
+setwd(".//doktorat//PhDThesis")
+print(getwd())-->

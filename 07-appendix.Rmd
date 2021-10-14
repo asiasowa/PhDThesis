@@ -2,11 +2,11 @@
 
 ## Suplementary data {#suppdata}
 
-### CX3CL1 does not affect passive membrane properties of principal cells in the BLA {#CX3CL1_membrane_appendix}
+### CX3CL1 does not affect passive membrane properties of principal cells in the BLA {#CX3CL1membraneappendix}
 
-In Figure (\@ref(fig:CX3CL1_BLA_excitability_fig_all)) and Table (\@ref(tab:CX3CL1_BLA_excitability_appendix)) below are depicted and listed all the passive membrane properties measured in the principal cells in the BLA following CX3CL1 treatment. 
+In Figure (\@ref(fig:CX3CL1BLAexcitabilityfigall)) and Table 7.1<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> below are depicted and listed all the passive membrane properties measured in the principal cells in the BLA following CX3CL1 treatment. 
 
-```{r CX3CL1_BLA_excitability_appendix, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis'}
+```{r CX3CL1BLAexcitabilityappendixfigure, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis'}
 # getting the table of statistics
 CX3CL1_BLA_stat_df <- formattable(stat_table_exp_membr_extended((BLA_df_final)))
 
@@ -41,7 +41,7 @@ gt(groupname_col = "Variable") %>%
              gtsave("CX3CL1_membrane_table.html")
 ```
 
-```{r CX3CL1_BLA_excitability_fig_all, fig.cap= '', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
+```{r CX3CL1BLAexcitabilityfigall, fig.cap= 'CX3CL1 actions on membrane properties of BLA principal cells.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
 
 # insets 
 inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
@@ -244,6 +244,9 @@ figure2
 
 
 ```
+
+### CX3CL1 does not modulate excitatory synaptic transmission {#CX3CL1sEPSCappendix}
+
 
 
 ## PhD thesis founding

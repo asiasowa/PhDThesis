@@ -11,12 +11,27 @@ Our findings of immature synaptic multiplicity, weak functional connectivity, im
 Taken together, these data illustrate that CCR4 is widely expressed in the brain where its activation might control a variety of functions including the regulation of locomotor, exploratory, and social behaviors. Which cell types, brain regions, and pathways are involved in these processes need to be determined in future studies. <!-- analogous -->
 
 
+These results are nicely complemented by findings obtained by studies using mixed neuronal and glial cultures [@ji_2013].
+Specifically, adding microglial cells to the hippocampal neuronal culture results in an upregulation of excitatory synaptic currents, together with a higher density of dendritic spines in neurons.
+In contrast, microglial depletion from hippocampal organotypic cultures led to both reduction in the dendritic spine density and excitatory synaptic transmission. 
+Moreover, pharmacological inhibition of microglial activation in adult mice was associated with preventing dendritic spine loss in obese mice [@cope_2018].
+These findings strongly support the notion that microglia are key regulators of the dendritic spine density in both the developing and the adult brain. 
+
+
+
+
+
+Similarly, recordings from CA3-CA1 synapses in hippocampal slices of CX3CR1^-/-^ transgenic mice displayed an immature AMPA/NMDA ratio with defective AMPA components and decreased release probability compared to wild-type mice [@basilico_2019], further illustrating that neuron–microglia crosstalk profoundly impacts functional maturation of excitatory presynaptic function, and thereby modulating excitatory synaptic transmission.
+
 The concentration used here was shown to be effective in previous studies <!-- citations-->
 
 ## GABA~C~ ? 
 
 
 ## CXCL12
+
+Considering that virtually all types of brain cells express either CXCL12 and/or one of its receptors, this chemokine serves a wide array of functions in both the developing and mature brain.
+Indeed, several lines of evidence illustrate that CXCL12 is involved in neurodevelopment,
 
 ############ CX3CL1 neuronal caution if neuronal
 

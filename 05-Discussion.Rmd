@@ -18,7 +18,11 @@ Moreover, pharmacological inhibition of microglial activation in adult mice was 
 These findings strongly support the notion that microglia are key regulators of the dendritic spine density in both the developing and the adult brain. 
 
 
+<!-- Of note, sole adenosine was demonstrated to decrease the glutamatergic synaptic transmission in the hippocampus, even despite the absence of CX3CL1, suggesting adenosine tonic activity in this structure . -->
+Similar to studies concerning the neuroprotective action of CX3CL1 described above, this CX3CL1-induced adenosine action on the glutamatergic transmission was revealed to be mediated by A~3~R and, to the lesser extent, A~1~R [@lauro_2008; @lauro_2010; @piccinin_2010]. 
+Further evidence indicates that the activation of A~1~R and A~3~R results in a decrease in synaptic transmission, whereas A~2A~R exerts the opposite effect, manifested as CX3CL1-induced increase of evoked EPSC (eEPSC) observed when the A~1~ and A~3~ receptors are blocked [@piccinin_2010]. 
 
+Overall, several lines of evidence described above indicate a predominantly inhibitory role for CX3CL1, possibly as a component of neuroprotective synaptic scaling mechanisms, required for hippocampal memory-associated synaptic plasticity processes [@bertollini_2006; @piccinin_2010]. 
 
 
 Similarly, recordings from CA3-CA1 synapses in hippocampal slices of CX3CR1^-/-^ transgenic mice displayed an immature AMPA/NMDA ratio with defective AMPA components and decreased release probability compared to wild-type mice [@basilico_2019], further illustrating that neuron–microglia crosstalk profoundly impacts functional maturation of excitatory presynaptic function, and thereby modulating excitatory synaptic transmission.

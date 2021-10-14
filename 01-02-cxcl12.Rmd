@@ -1,31 +1,12 @@
 
 
-
-#### CXC12 actions in the brain {#CXCL12inthebrain}
-
 Considering that virtually all types of brain cells express either CXCL12 and/or one of its receptors, this chemokine serves a wide array of functions in both the developing and mature brain.
-Indeed, several lines of evidence illustrate that CXCL12 is involved in neurodevelopment, mainly by controlling cell proliferation, migration, and survival. 
-For instance, CXCL12 is associated with both developmental and adult neurogenesis. 
-Indeed, the expression of CXCL12 and its receptors is relatively high in embryonic and adult neural progenitor cells [@tran_2004].
-Accordingly, CXC12 is found to be a key player in neurogenesis during the development of, among others, the cerebral cortex and hippocampus [@lysko_2011; @pujol_2005].
-On the other hand, the adult brain neurogenesis is restricted to two neurogenic regions, e.i., the subventricular zone (SVZ) lining the lateral ventricles and the subgranular zone (SGZ) near the dentate gyrus of the hippocampus. <!-- better written, citations --> 
-It is well established that CXCL12 is responsible for the generation and positioning of new neurons within these niches, as well as their axonal and dendritic outgrowth and branching [@abe_2015; @abe_2018; @zhu_2017].
-Adult neurogenesis, especially near SGZ, is linked to memory.
-Consistently, after learning, the CXCR4 level was documented to be increased in CA3 [@su_2012]. 
+Indeed, several lines of evidence illustrate that CXCL12 is involved in neurodevelopment,
+/////
 
-CXCL12 was also reported to guide neural progenitors [@bhattacharyya_2008; @casoni_2012; @tran_2003].
-Importantly, as interneurons are guided to the correct destination by CXCL12 gradient, ACKR3, acting as a "sink" to collect excess CXCL12, is also implicated in this phenomenon [@snchezalcaiz_2011].
-Moreover, a recent study further demonstrated that ACKR3-mediated scavenging and endocytosis of CXCL12 was dependent on receptor phosphorylation rather than `r knitr::asis_output("\U03B2")`-arrestin signaling [@saaber_2019]. 
-Thus, certain homeostatic chemokine receptors play critical roles in the homing of various stem cells. 
-In addition, CXCL12 was shown to enhance GABAergic transmission within the DG neurogenic niche, which, in turn, is implicated in the maturation of adult neural stem cells within this structure [@bhattacharyya_2008].
-CXCL12-induced modulation of GABAergic neurotransmission is also present during adulthood and will be described later in this section. <!-- + GABAergic transmission-->
-Importantly, as adult neurogenesis is known to be an important player in memory, CXCL12 was also shown to be upregulated after learning [@su_2012]. <!-- ładniej napisać to zdanie... -->
 
-Another aspect regulated by CXCL12 is its implication in neuroprotective actions, mainly by activating neuroprotective pathways.<!--, such as Akt and ERK`r knitr::asis_output("\U00BD")` [@vauzour_2007].inne, poprawić....--><!-- for example the activation of the Ca^2+^ and cAMP-dependent transcription factor CREB [@meucci_1998] It can also act post-synaptically by activating aG protein activated inward rectifier K+(GIRK), a voltage-gated K channel Kv2.1 associated to neuronal survival, and by increasing high voltage-activated Ca2+currents. [@casoni_2012] ( Casoni et al., 2012 )., JAK/STAT przykłady cytowania // activation of pro-survival and anti-apoptotic pathways through phosphorylation of molecules such as Akt, as well as activation of MAP kinases such as p-38 and Erk1/2 (p44/42; Maciejewski-Lenoir et al., 1999;Meucci et al., 2000;Cambienet al., 2001;Deiva et al., 2004; Klosowska et al., 2009;Lyons et al.,2009). to dotyczy CX3CL1...--> 
-The first evidence was the observation that CXCL12 reduces the apoptotic death of hippocampal neurons induced by gp120 or glia deprivation [@meucci_1998].
-Moreover, this chemokine was shown to inhibit NR2B [@nicolai_2010], an NMDA receptor subunit predominantly located extrasynaptically [@ivanov_2006; @lveill_2008]. 
-Their activation due to excessive glutamate is thought to be neurotoxic.
-Thus, CXCL12 is believed to reduce NMDA-induced calcium responses associated with decreased neuronal death [@nicolai_2010].
+
+
 
 Thus, the abovementioned findings strongly indicate that CXCL12 could modulate glutamatergic and GABAergic synaptic transmission. 
 Consistently, in the cerebellum, CXCR4 activation results in a decrease in NMDAR function, and thus, leads to synaptic depression [@ragozzino_2002].<!-- , probably by CXCL12-induced reduction in NR2B expression subunit of NMDAR [@nicolai_2010]. na ile to prawda? nie bardziej aktywacja NR2B przyczynia się do LTD? sprawdzić -->

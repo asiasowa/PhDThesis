@@ -10,22 +10,6 @@ Thus, it can be speculated that chemokines might orchestrate neuron-glia actions
 Therefore, dissecting mechanisms of neuron-glial communications in the brain is of high importance, as identifying molecular targets may be used to counteract brain damage and preserve brain homeostasis.
 What is especially important and extensively studied is that 
 
-#### Neurodevelopment 
-
-For instance, it is increasingly evident that CX3CL1/CX3CR1 axis is a crucial player during neurodevelopment.
-Accordingly, the CX3CL1/CX3CR1 axis was demonstrated to affect the outgrowth of dopaminergic axons in the forebrain and the laminar positioning of subsets of cortical interneurons [@squarzoni_2014].
-Similarly, CX3CR1^-/-^ deficient microglia during hippocampal development showed impaired migration [@pagani_2015; @paolicelli_2011].
-This observation was associated with their delayed synaptic pruning, reflected as a transient reduction of synaptic density and excitatory synaptic transmission in neurons compared to their wild-type littermates, indicating immature synaptic properties [@paolicelli_2011].
-Precisely, these changes were observed during the early postnatal stage (P8-P28) and then returned to baseline. <!--, highlighting CX3CR1 impact on synaptic pruning during neurodevelopment.-->
-
-Interestingly, these mice were also tested in similar experimental settings in their adulthood (P40) [@zhan_2014]. 
-Although dendritic spine density remained unchanged, neurons from CX3CR1^-/-^ mice still displayed a lower frequency of mEPSCs and sEPSCs than their wild-type littermates. 
-These results illustrate that a transient reduction in microglial synaptic pruning during development is sufficient to induce the long-term deficit in synaptic multiplicity, whereas the number of excitatory synapses remained the same [@zhan_2014].
-These data support the idea of a critical window during which microglia-mediated synaptic pruning is crucial for proper circuit maturation.
-
-
-#### Local communication
-
 In the CX3CR1-GFP knock-in mouse line, the CX3CR1 receptor gene has been replaced by a green fluorescent protein (GFP) reporter [@jung_2000].
 Considering CX3CL1 and CX3CR1 expression, this genetic strain is one of the essential tools for studying the consequences of neuron-microglia communication following CX3CL1-CX3CR1 axis dysregulation [@paolicelli_2014].
 Thus, this model resulted in an extensive body of evidence, highlighting the key role of CX3CL1 signaling in regulating a broad spectrum of aspects of microglia functions, as discussed below. 
@@ -38,6 +22,30 @@ Finally, these glial cells are broadly distributed throughout the CNS, albeit th
 Although microglia have long been recognized as "guardians of the brain", regulating inflammatory responses in the CNS, it is becoming increasingly evident that their functions are much more diverse, particularly in the healthy brain during both development and adulthood.
 Being equipped by numerous cell surface receptors and channels, with<!-- or exhibiting--> highly motile processes, microglia are dynamic and plastic cells that constantly monitor the microenvironment to sense local perturbation. 
 Moreover, their ability to form direct contact and release the soluble factors, such as chemokines, enables bidirectional interaction with other cell types in the CNS. 
+
+#### Astrocytes
+
+Astrocytes, previously considered supporting and nourishing neurons, are now known as the highly heterogeneous group of active players in complex brain functions, such as synaptic transmission, synaptic plasticity, network oscillations, and behavior [@perea_2009; @mederos_2019]. 
+Being organized into microdomains and coupled into multicellular astrocytic networks *via* gap junctions, they are highly specialized cells (for a review: @khakh_2015). 
+Furthermore, astrocytes tightly enwrap neuronal cell bodies, axons, dendrites, and synapses.<!-- citations-->
+For example, it is estimated that a single cortical astrocyte makes contact from 20,000 to 120,000 synapses in rodents and up to 2,000,000 synapses in humans [@oberheim_2009], suggesting bidirectional communication. 
+Indeed, they are endowed with a great variety of ion channels and receptors [@olsen_2015; @seifert_2018; @kofuji_2021] to react to a changing microenvironment, while they can release a substantial set of gliotransmitters [@araque_2014; @savtchouk_2018; @covelo_2018]. 
+Ca^2+^ levels are particularly relevant in astrocyte signaling, as their elevated Ca^2+^ levels are thought to induce gliotransmission and facilitate synaptic transmission. 
+Thus, astrocytic intracellular Ca^2+^ elevations are of specific spatial and temporal properties, and this topic has been extensively discussed in several excellent reviews [@araque_2014; @guerragomes_2017; @bazargani_2016].
+Thus, astrocytes can both react to and release the set of chemokines (for example: @dorf_2000, @mckimmie_2010; @sowa_2017).<!--more citations--> 
+
+#### Neurodevelopment 
+
+For instance, it is increasingly evident that CX3CL1/CX3CR1 axis is a crucial player during neurodevelopment.
+Accordingly, the CX3CL1/CX3CR1 axis was demonstrated to affect the outgrowth of dopaminergic axons in the forebrain and the laminar positioning of subsets of cortical interneurons [@squarzoni_2014].
+Similarly, CX3CR1^-/-^ deficient microglia during hippocampal development showed impaired migration [@pagani_2015; @paolicelli_2011].
+This observation was associated with their delayed synaptic pruning, reflected as a transient reduction of synaptic density and excitatory synaptic transmission in neurons compared to their wild-type littermates, indicating immature synaptic properties [@paolicelli_2011].
+Precisely, these changes were observed during the early postnatal stage (P8-P28) and then returned to baseline. <!--, highlighting CX3CR1 impact on synaptic pruning during neurodevelopment.-->
+
+Interestingly, these mice were also tested in similar experimental settings in their adulthood (P40) [@zhan_2014]. 
+Although dendritic spine density remained unchanged, neurons from CX3CR1^-/-^ mice still displayed a lower frequency of mEPSCs and sEPSCs than their wild-type littermates. 
+These results illustrate that a transient reduction in microglial synaptic pruning during development is sufficient to induce the long-term deficit in synaptic multiplicity, whereas the number of excitatory synapses remained the same [@zhan_2014].
+These data support the idea of a critical window during which microglia-mediated synaptic pruning is crucial for proper circuit maturation.
 
 #### CX3CL1 action in the CNS {#CX3CL1inthebrain}
 

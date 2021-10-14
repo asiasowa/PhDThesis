@@ -1,14 +1,5 @@
 
-#### Astrocytes
 
-Astrocytes, previously considered supporting and nourishing neurons, are now known as the highly heterogeneous group of active players in complex brain functions, such as synaptic transmission, synaptic plasticity, network oscillations, and behavior [@perea_2009; @mederos_2019]. 
-Being organized into microdomains and coupled into multicellular astrocytic networks *via* gap junctions, they are highly specialized cells (for a review: @khakh_2015). 
-Furthermore, astrocytes tightly enwrap neuronal cell bodies, axons, dendrites, and synapses.<!-- citations-->
-For example, it is estimated that a single cortical astrocyte makes contact from 20,000 to 120,000 synapses in rodents and up to 2,000,000 synapses in humans [@oberheim_2009], suggesting bidirectional communication. 
-Indeed, they are endowed with a great variety of ion channels and receptors [@olsen_2015; @seifert_2018; @kofuji_2021] to react to a changing microenvironment, while they can release a substantial set of gliotransmitters [@araque_2014; @savtchouk_2018; @covelo_2018]. 
-Ca^2+^ levels are particularly relevant in astrocyte signaling, as their elevated Ca^2+^ levels are thought to induce gliotransmission and facilitate synaptic transmission. 
-Thus, astrocytic intracellular Ca^2+^ elevations are of specific spatial and temporal properties, and this topic has been extensively discussed in several excellent reviews [@araque_2014; @guerragomes_2017; @bazargani_2016].
-Thus, astrocytes can both react to and release the set of chemokines (for example: @dorf_2000, @mckimmie_2010; @sowa_2017).<!--more citations--> 
 
 #### CXC12 actions in the brain {#CXCL12inthebrain}
 

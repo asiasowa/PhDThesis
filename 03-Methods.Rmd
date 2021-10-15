@@ -257,7 +257,7 @@ On the other hand,<!--, both excitatory and inhibitory synaptic transmission was
 voltage clamp recordings aimed at investigating the influence of either CX3CR1 or CXCR4 receptors activation on spontaneous and miniature inhibitory or excitatory synaptic currents were performed in normal ACSF and ACSF containing TTX (500 nM), respectively. 
 The details of additional experimental conditions are provided in Results (\@ref(results)). 
 <!-- The calculated reversal potential for Cl- currents in these patch-clamp recordings equalled -90.51 mV, pominąć raczej -->
-At holding potential of -70mV, inward events represented excitatory postsynaptic currents (EPSCs, <!-- Fig-->), whereas to record spontaneous inhibitory postsynaptic currents (sIPSCs), neurons were voltage-clamped at 0 mV [@sowa_2018; @skupio_2019].<!--nie wiem czy cytować-->
+At holding potential of -70mV, inward events represented excitatory postsynaptic currents (EPSCs, <!-- Fig-->), whereas to record spontaneous inhibitory postsynaptic currents (sIPSCs), neurons were voltage-clamped at 0 mV [@sowa_2018; @skupio_2020].<!--nie wiem czy cytować-->
 After 10 min of the stabilization period, the baseline postsynaptic current activity was recorded. 
 The action of chosen chemokine was assessed by adding a known concentration of a stock solution directly to the bath and taking the measures before (baseline) and during 15 min of chemokine superfusion. <!-- For analysis of postsynaptic currents 4-minutes-long recordings in the whole-cell configuration were chosen, one from baseline before the drug application, another 15 minutes later. <!-- lepiej to napisać -->
 For analysis, the 4-minute-long recordings from baseline and after 15 minutes of chemokine application was selected.
@@ -268,7 +268,7 @@ At first, postsynaptic currents were detected using Mini Analysis (Synaptosoft I
 However, these software required subjective selection of the amplitude of threshold and visual inspection of the researcher to prevent the inclusion of false data.
 It leads to semi-automatic approach, which might be prone to error and researcher bias. <!-- For sIPSC recordings, amplitude detection thresholds were set to exceed noise values.
 Events were detected automatically, analyzed for double peaks, and then visually inspected to prevent the inclusion of false data.-->
-Thus, a machine learning-based approach was used by using Eventer [@winchester_giles_2020], which allowed to train a model to implement consistent selection criteria across data sets without bias.
+Thus, a machine learning-based approach was used by using Eventer [@winchester_giles_2020], which allowed training a model to implement consistent selection criteria across data sets without bias.
 The same traces were analyzed by using all of these software and selection based on models trained in Eventer was the most rigorous; however the differences between the control and experimental conditions remained unchanged (data not shown). 
 Hence, the detection of postsynaptic currents presented in this dissertation was done using machine-learning approach in Eventer software.
 <!--The change in membrane potential or whole-cell current in response to the peptide/drug application was considered significant if it differed from the baseline by more than three standard deviations.  jeszcze tego nie mam ale zastosować to... -->

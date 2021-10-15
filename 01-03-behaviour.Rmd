@@ -45,7 +45,3 @@ In order to prevent the destabilizing component of Hebbian plasticity in network
 Recent accumulating data also highlight the essential role of glial cells, as they are equipped with, for instance, glutamate transporters to control the concentration of glutamate and other neurotransmitters in the microenvironment. 
 Importantly, stable but flexible neural activity is fundamental for proper brain function and support of animal behavior, depending on a dynamic interface between homeostatic synaptic  plasticity  mechanisms  and  Hebbian  forms  of plasticity [@field_2020; @tremblay_2016].-->
 <!-- neuroactive substances-->
-
-Taken together, as expected from their complex expression of cellular pattern and dynamic chemokine-receptor interactions, both CX3CL1 and CXCL12 with their corresponding receptors modulate intrinsic membrane properties, synaptic transmission, and gliotransmission by implementing diverse cell- and region-specific mechanisms.
-
-\newpage 

@@ -36,6 +36,6 @@ options(gt.html_tag_check = FALSE) #but if <br> in tables in latex then remove t
 ```
 
 
-# Keywords{-}
+# Keywords{- .unlisted .unnumbered}
 
 chemokines, chemokine receptors, central nervous system 

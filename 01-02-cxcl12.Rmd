@@ -1,0 +1,18 @@
+## Chemokines and amygdala
+
+Amygdala is strategically positioned to regulate homeostatic function, and thus, one may speculate that it would be involved in integrating signals from endocrine and immune systems. <!-- jakieś lepsze intro... As being strategically positioned to be a hub, amygdala together with playing homeostatic function, one may speculate that i że several evidence i wymienić od 1 2 3-->
+It is supported by several lines of evidence. <!-- review how immune system sub the brain -->
+First, findings from many animal and human studies indicate that peripheral activation of the immune system engages CeA and, to a lesser extent, the BLA [@engler_2011; @frenois_2007; @harrison_2009]. 
+Peripheral signal of immune activation is thought to be mediated either *via*  activation of vagal afferent fibers projecting by proinflammatory cytokines and/or glucocorticoids to the nucleus of the solitary tract (NTS) and then to the amygdala, predominantly its central part (for a review: @vitkovic_2000; @critchley_2013).
+Alternatively, this signal activates the HPA axis, which is also connected with the amygdala [@diiorio_2017; @green_2007; @herman_2005]. 
+Moreover, activation of the immune system by injection of lipopolysaccharide (LPS) was reported to induce anxiety-like behaviors in rodents, as measured, for example, by elevated plus-maze test (EPM), a test assessing amygdala-mediated functions (for example: @yang_2016). 
+
+Second, mounting evidence illustrated many similarities between dysfunctions of amygdala function and chemokine signaling, pointing to the possibility that their mechanisms may overlap at least in part. 
+These involve anxiety and stress-related neuropsychiatric disorders [@girgenti_2017; @tovote_2015; @yang_2016], epilepsy [@fabene_2010; @roseti_2013; @suleymanova_2021; @tian_2017], obesity [@guillemotlegris_2017; @kawamura_2021], pain [@mlikparsadaniantz_2015; @old_2012; @paretkar_2019; @yuan_2020], drug dependence (mainly alcohol and opioid; @coller_2012, @freeman_2012, @jacobsen_2016; @wang_2012).
+Despite those similarities, still little is known about immune modulation in the amygdala.
+
+Third, many recent studies demonstrating glial involvement in behavior, including the amygdala [@althammer_2020; @martinfernandez_2017]. 
+Considering the crucial role of chemokines in glia signaling, these immunomodulators may, at least, partly contribute to those behaviors. 
+
+Finally, several studies have indicated the relative abundance of CX3CL1 and CXCL12 receptors within the amygdala complex, including the BLA and the CeA [@nishiyori_1998; @tarozzo_2003]<!-- dodać CXCR4, CXCR7 CYTOWANIA-->, strongly suggesting functional roles of these receptors in the amygdala. 
+Surprisingly, despite many similarities between the amygdala network and chemokine system dysfunctions, the electrophysiological role of chemokines in this structure is still unclear.<!--  -->

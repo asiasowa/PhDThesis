@@ -75,6 +75,8 @@ Interestingly, blocking IL-1`r knitr::asis_output("\U03B2")` signaling reversed 
 Chemokines regulation of synaptic plasticity is not restricted to the hippocampus. 
 Briefly, both CX3CL1 and CXCL12 molecules were shown to affect synaptic plasticity in the cerebellum [@giovannelli_1998; @ragozzino_2002], and mice with CX3CR1^-/-^ receptor deletion were characterized by the LTP in the spinal cord [@bian_2015].
 These findings may be associated with CX3CL1-mediated behavioral consequences regarding motor coordination and pain [@rogers_2011; @verge_2004].
+It also shold be noted that another form of synaptic plasticity, e.i., synaptic scaling, is widely accepted to be mediated by TNF`r knitr::asis_output("\U03B1")` [@bezzi_2001], which is mainly expressed by astrocytes, for example, *via* CXCR4 activation [@stellwagen_2006]. 
+Therefore, by modulating TNF`r knitr::asis_output("\U03B1")` levels, CXCL12/CXCR4 axis, by acting on glia, may participate in homeostatic activity-dependent regulation of synaptic plasticity [@stellwagen_2006].
 
 In addition, mounting evidence shows interactions between the chemokine system and "classical" neurotransmitters or neuromodulators. <!-- citation and example -->
 For instance, CXCL12 was shown to increase glutamate and GABA release in the substantia nigra (SN), the cerebellum, the hypothalamus, and the DRN [@guyon_2005; @guyon_2006; @heinisch_2010; @ragozzino_1998].
@@ -83,54 +85,16 @@ By acting on the presynaptic site, CXCL12 affects the activity of serotoninergic
 Moreover, CXCL12 is packed in small dense vesicles in the nerve terminals of these neurons, which are then released from neuronal cell bodies and terminal nerve endings in a calcium-dependent manner (for example: @bhattacharyya_2008).
 However, as CXCL12 and/or CXCR4 are often co-localized with neurons releasing these signaling molecules (e.g., vasopressin, MCH, and DA<!-- dodać inne + cytowania-->), <!--together with ...., -->postsynaptic mechanisms are also suggested to be involved in this phenomenon. 
 For example, in MCH neurons, CXCR4 was described to directly modulate several voltage-dependent channels, including Na^+^ and K^+^ channels of the action potential [@guyon_2005], or tetrodotoxin-sensitive sodium currents [@guyon_2005a].
-
-<!-- duuuużo cytowań // For example, beyond the hippocampus, CX3CL1 was documented to increase the amplitude of sIPSCs and eIPSC without affecting PPR, increasing the sensitivity of serotoninergic neurons to GABA inputs and consequently inhibiting 5-HT neurotransmission [@heinisch_2009; @heinisch_2011]. /// 
-In addition, by using human tissue from epileptic patients, which is usually less responsive to the repeated activation of GABA~A~ receptors than those from healthy tissue [@ragozzino_2005], it was shown that CX3CL1 reduced this desensitization of GABA~A~ currents in cortical pyramidal neurons [@roseti_2013].//// 
-In addition, CXCL12 was shown to enhance GABAergic transmission within the DG neurogenic niche, which, in turn, is implicated in the maturation of adult neural stem cells within this structure [@bhattacharyya_2008].
-Thus, the abovementioned findings strongly indicate that CXCL12 
-Consistently, in the cerebellum, CXCR4 activation results in a decrease in NMDAR function, and thus, leads to synaptic depression [@ragozzino_2002].<!-- , probably by CXCL12-induced reduction in NR2B expression subunit of NMDAR [@nicolai_2010]. na ile to prawda? nie bardziej aktywacja NR2B przyczynia się do LTD? sprawdzić -->
-
-<!--Of note, not only CX3CL1 modulates local communication and networks within a structure, but also some initial evidence implicates this chemokine in coupling between brain regions. 
-Neuronal populations are thought to couple between structures, reflecting information processing, which can be quantified using coherence as a measure (for a review: @schnitzler_2005). 
-In particular, by measuring connections between hippocampus and prefrontal cortex, mice with deletion of CX3CR1 revealed a decrease in the coherence between those two structures, compared to their wild-type littermates [@zhan_2014].
-Thus, this finding suggests that the CX3CR1 knockdown leads to a decrease in hippocampal–prefrontal connectivity, which may have behavioral consequences, such as anxiety or cognitive impairments [@zhan_2014].
-Moreover, knockout mice showed reduced frontal cortex oscillatory driving to the hippocampus than their wild-type littermates at baseline conditions [@zhan_2015]. 
-It is speculative whether it is the consequence of morphological modifications of microglia depleted of CX3CR1 [@piirainen_2021], but scanty evidence is available so far.  tutaj może poprawić tę drugą część zdania...-->
-
-Considering that the hypothalamus, a brain region comprised of different nuclei and several neuronal populations producing neuropeptides, is critically involved in regulating major neuroendocrine functions, including water/food intake, metabolism, and stress, one could speculate that CXCL12 signaling may be involved in these functions.
+These results suggest that CXCL12 signaling may be involved in neuroendocrine functions, including water/food intake, metabolism, and stress.
 In line with this notion, CXCL12/CXCR4/ACKR3 signaling dysfunctions are associated with feeding disorders, such as anorexia.
 Not only a high-fat diet was reported to increase the expression of CXCL12, its receptors, and neuropeptides (e.g., enkephalin, galanin, orexin, and MCH) in the PVN and perifornical lateral hypothalamus, but also an intracerebroventricular injection of CXCL12 was shown to mimic the effects of the high-fat diet in the hypothalamus [@poon_2016]. 
-These findings point to a vital role of the CXCL12/CXCR4/ACKR3 axis in feeding behavior. <!-- Both SDF-1 and GABA have been shown to regulate the rate of GnRH neuronal migration by accelerating and slowing migration, respectively. As such, this system was used to explore the mechanism by which these molecules act to produce coordinated cell movement during development. In the present study, GABA and SDF-1 are shown to exert opposite effects on the speed of cell movement by activating depolarizing or hyperpolarizing signaling pathways, GABA via changes in chloride, and SDF-1 via changes in potassium. GABA and SDF-1 were also found to act synergistically to promote linear rather than random movement. The simultaneous activation of these signaling pathways, therefore, results in tight control of cellular speed and improved directionality along the migratory pathway of GnRH neurons. -->
-Importantly, depending on the concentration, CXCL12 is thought to exert opposite effects on the action potential discharge in MCH neurons [@guyon_2005], which may have functional consequences on the activity of neuroendocrine functions.
-<!-- Precisely, CXCR4 was reported to be tonically active at low physiological concentrations, constantly exerting its action on MCH neurons.
+These findings point to a vital role of the CXCL12/CXCR4/ACKR3 axis in feeding behavior. <!-- Both SDF-1 and GABA have been shown to regulate the rate of GnRH neuronal migration by accelerating and slowing migration, respectively. As such, this system was used to explore the mechanism by which these molecules act to produce coordinated cell movement during development. In the present study, GABA and SDF-1 are shown to exert opposite effects on the speed of cell movement by activating depolarizing or hyperpolarizing signaling pathways, GABA via changes in chloride, and SDF-1 via changes in potassium. GABA and SDF-1 were also found to act synergistically to promote linear rather than random movement. The simultaneous activation of these signaling pathways, therefore, results in tight control of cellular speed and improved directionality along the migratory pathway of GnRH neurons. --><!-- Precisely, CXCR4 was reported to be tonically active at low physiological concentrations, constantly exerting its action on MCH neurons.
 Consistently, under basal conditions, those cells showed more hyperpolarized membrane potential than orexin neurons, which do not express CXCR4 [@eggermann_2003]. -->
 
-The dopaminergic neurons in the SN are also the target of both pre- and post-synaptic actions of CXCL12. 
+Similarly, the dopaminergic neurons in the SN are also the target of both pre- and post-synaptic actions of CXCL12. 
 CXCL12 was reported to enhance the frequency of sIPSCs and mIPSCs in this region, indicating presynaptic mechanisms, which is in line with the documented presence of CXCR4 on the GABAergic neurons [@guyon_2006].
 In addition, it was demonstrated that CXCL12 could act directly as a neuromodulator of dopaminergic neuronal electrical activity through the modulation of HVA currents [@guyon_2008a].
 Consistent with this data, by using unilateral intranigral or intracerebroventricular injections of CXCL12, a further study has illustrated that this chemokine triggered contralateral turns in circling behavior  [@skrzydelski_2007]. 
 Of note, considering that both CXCL12 and CXCR4 are co-expressed in dopamine neurons<!-- citations -->, it is tempting to speculate that this chemokine may act in an autocrine manner [@guyon_2008a].
 Importantly, some CXCL12-induced increase in an inward current is suggested to be induced from glutamate release from astrocytes [@guyon_2006].
 
-Unlike in the SN, astrocytes cultured from the cerebral cortex presented the high expression of CXCR4 [@cal_2008].
-Upon CXCL12-induced stimulation of CXCR4 in astrocytes, (i) the Ca^2+^-dependent release of glutamate, regulated by exocytosis on a millisecond time scale [@cal_2008; @cal_2010], and (ii) the release of prostaglandins and TNF`r knitr::asis_output("\U03B1")` [@bezzi_2001].
-It is widely accepted that TNF`r knitr::asis_output("\U03B1")` mediates synaptic scaling, a form of homeostatic plasticity leading to the adjustment of synaptic strength [@stellwagen_2006], and mainly astrocytes, have been identified as the main source of the TNF`r knitr::asis_output("\U03B1")` in the CNS.
-Therefore, by modulating TNF`r knitr::asis_output("\U03B1")` levels, CXCL12/CXCR4 axis, by acting on glia, may participate in homeostatic activity-dependent regulation of synaptic plasticity [@stellwagen_2006].
-
-Finally, it is also worth noting that the profile of CXCL12-induced actions is similar to “sickness behavior”.
-It is a physiological and psychological state characterized by decreased mood, anorexia, and fatigue, due to immune activation during infection, primarily mediated by peripherally released proinflammatory cytokines [@dantzer_2001; @dantzer_2007]. 
-Considering that CXCL12 was shown to modulate the release of 5-HT in the DRN as well as neuropeptides in the hypothalamus, it could affect mood-related and feeding behavior, observed in depression [@maes_1998].
-Thus, the effect of CXCL12 on serotonergic neurons in the DRN could underlie depressive symptoms, as dysfunction of the serotoninergic systems is implicated in depression.
-<!-- Moreover, amygdala --> 
-
-Thus, given our evolving understanding of how CXCL12/CXCR4 or CXCL12/ACKR3 are involved in the control of intercellular communication between brain cells, as well as in synaptic transmission, plasticity, and behavior, further mechanistic and theoretical understanding of their actions will undoubtedly be of great basic and translational benefit. <!-- napisać lepsze podsumowanie.... Overall, this chemokine system is one of the key players in the neuro-immune interface that shapes CNS responses to changes in the environment. While much effort has been made to investigate the mechanisms underlying CXCL12/CXCR4 or CXCL12/ACKR3-mediated regulation of synaptic transmission and plasticity and their specific properties in certain synapses and brain regions, their impact on network function and animal behavior have only been initially explored. Taken together, the relevance of the actions mentioned above of CXCL12/CXCR4/ACKR3 signaling to mechanisms implicated in many neurobiological disorders is suggestive of -->
-
-Besides mentioned above behavioral phenotypes, CX3CR1^-/-^ knockout mice have been gaining attention in relation to chronic stress. 
-Briefly, in comparison to wild-type littermates, CX3CR1 is essential for controlling social behavior and social dominance [@zhan_2014; @piirainen_2021]. 
-However, there are many inconsistencies. 
-Regarding anxiety, most studies did not show any differences between genotypes [@rogers_2011; @hellwig_2016; @schubert_2018]. 
-Nonetheless, there is one study that suggests anxiolytic effects of CX3CR1 depletion [@bols_2018], whereas the other study indicates the opposite [@schubert_2018].
-A similar situation was described regarding depressive-like behavior: one study indicates knockout is more depressive measured by Forced Swim Test and/or Tail Suspension Test, whereas the other reported the opposite conclusion.
-It seems like the main difference between those experiments was the gender between animals.
-Specifically, CX3CR1^-/-^ females are more depressive and anxiolytic than wild-type littermates, whereas the depletion of the same receptor in males elicits the opposite reaction. 
-However, as this hypothesis is based only on two studies, further investigation is needed.

@@ -79,96 +79,9 @@ Finally, considering that the activity of principal cells in the BLA is well-kno
 As expected, the CX3CL1 effect was abolished when the GABAergic receptors were blocked (Fig. `r CX3CL1_gabafrak2nM_BLA_stat_tres`, \@ref(fig:CX3CL1BLAexcitability)).
 Thus, these data suggest that CX3CL1 reduces principal cells' activity *via* CX3CR1-, microglia-, and interneuron-dependent manner.
 
-```{r CX3CL1BLAexcitabilityfrak, fig.cap='**Effects of CX3CL1 on threshold current** **a** Schematics of presented conditions **b** Boxplots presenting each cell before and after CX3CL1 application in each condition **c** Pie charts presenting how cells reacted to CX3CL1 **d** plots presenting input-output relationships of representative cells **e** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE}
-#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
-#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
-library(magick)
-library(patchwork)
-inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
-inset_frak2nM <- image_ggplot(inset_frak2nM)
-inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
-inset_frak5nM <- image_ggplot(inset_frak5nM)
-inset_ab <- image_read("images//results//inset_ab.png")
-inset_ab <- image_ggplot(inset_ab)
-inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
-inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
-inset_azda <- image_read("images//results//inset_azd.png")
-inset_azda <- image_ggplot(inset_azda)
-inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
-inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
-inset_minoa <- image_read("images//results//inset_minoa.png")
-inset_minoa <- image_ggplot(inset_minoa)
-inset_gaba <- image_read("images//results//inset_gaba.png")
-inset_gaba <- image_ggplot(inset_gaba)
-# 
-# making labels (as minocycline and azd has different condition than CX3CL1) for then making proper automatic statistics
-# f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
-# f_labels_BLA_thres$Experiment <- factor(f_labels_BLA_thres$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
-
-# subseting dataframe - only cx3cl1 conditions
-BLA_df_frak_all <- BLA_df_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", 'minocycline + \nCX3CL1(2nM)', 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
-
-# # making boxplot
-bp_BLA_thres <- plot_boxplot(BLA_df_frak_all, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "", vary1 = -55, vary2 = -20, dot_size = 2)
-bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), #facet_wrap opitions
- plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm") # plot margin
- ) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = BLA_df_frak_all) #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
-# 
-# # making pies chart for every condition
-pie_BLA_frak_thres <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
-pie_BLA_frak5nM_thres <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(Treshold1_all, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
-pie_BLA_antifrak_thres <- BLA_df_final %>% filter(Experiment == 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
-pie_BLA_azdfrak_thres <- BLA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
-pie_BLA_azd_thres <- BLA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(Treshold1_all, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
-pie_BLA_minofrak_thres <- BLA_df_final %>% filter(Experiment == 'minocycline + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
-pie_BLA_mino_thres <- BLA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(Treshold1_all, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
-pie_BLA_picro_thres <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
-
-### making representative plots 
-## frak2nM
-frak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(7)) # subtracting one representative cell from whole dataframe
-frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "18227023"] = "CX3CL1(2nM)" #renaming the name - instead the name of the file - the name of the condition
-representative_frak2nM <- frak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # making a plot
-# ## importing traces
-# 
-# ## azdfrak2nM
-azdfrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(30))
-azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "19d02002"] = "AZD8797 + \nCX3CL1(2nM)"
-representative_azdfrak2nM <- azdfrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(300, 500) + ylim(0, 12)
-# 
-## minofrak2nM
-minofrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(42))
-minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "17d07008"] = "minocycline + \nCX3CL1(2nM)"
-representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) + xlim(260, 500)
-# 
-## gaba
-gabafrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(55))
-gabafrak2nM_IV_subset$Filename_all1[gabafrak2nM_IV_subset$Filename_all1 == "20605006"] = "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)"
-representative_gabafrak2nM <- gabafrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
-
-### general representative IV figure
-figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM
-
-#using patchwork to do layout of the figure
-
-figure1 <- (inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa | inset_gaba) /
- (bp_BLA_thres + theme(legend.position = "none")) / ((pie_BLA_frak_thres | pie_BLA_frak5nM_thres | pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_azd_thres | pie_BLA_minofrak_thres | pie_BLA_mino_thres | pie_BLA_picro_thres) + plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
- figure_IV
-
-figure1 <- figure1 +
- plot_annotation(tag_levels = 'a')# + plot_layout(heights = c(1, 2, 1, 1))
-
-figure1
-
-# pdf(file="figure1_IV.pdf")
-# figure1
-# dev.off()
-```
-
 <!-- poprawić opis-->
 
-```{r CX3CL1BLAexcitabilityadd, fig.cap='**Effects of CX3CL1 on threshold current** **a** Schematics of presented conditions **b** Boxplots presenting each cell before and after CX3CL1 application in each condition **c** Pie charts presenting how cells reacted to CX3CL1 **d** plots presenting input-output relationships of representative cells **e** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 8, fig.height= 12}
+```{r CX3CL1BLAexcitabilityfrak, fig.cap='**Effects of CX3CL1 on threshold current** **a** Schematics of presented conditions **b** Boxplots presenting each cell before and after CX3CL1 application in each condition **c** Pie charts presenting how cells reacted to CX3CL1 **d** plots presenting input-output relationships of representative cells **e** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 8, fig.height= 12}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 library(magick)
@@ -201,11 +114,11 @@ BLA_df_frak_all <- BLA_df_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)
 BLA_df_frak_add <- BLA_df_final %>% dplyr::filter(Experiment %in% c("AZD8797", 'minocycline'))
 
 # # making boxplot
-bp_BLA_thres <- plot_boxplot(BLA_df_final, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "", vary1 = -55, vary2 = -20, dot_size = 2)
+bp_BLA_thres <- plot_boxplot(BLA_df_frak_all, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "", vary1 = -55, vary2 = -20, dot_size = 2)
 bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), #facet_wrap opitions
  plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm") # plot margin
- ) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres) #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
+ ) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
 # 
 # # making pies chart for every condition
 pie_BLA_frak_thres <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
@@ -261,6 +174,74 @@ figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inse
  (bp_BLA_thres + theme(legend.position = "none"))  /
   (((pie_BLA_frak_thres | pie_BLA_frak5nM_thres | pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_minofrak_thres | pie_BLA_picro_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) / 
   ((representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM) + plot_layout(tag_level = 'new'))
+ 
+
+figure1 <- figure1 + 
+  plot_annotation(tag_levels = c('a', '1'))# + plot_layout(heights = c(1, 2, 1, 1))
+
+figure1
+```
+
+```{r CX3CL1BLAexcitabilityadd, fig.cap='**Effects of CX3CL1 on threshold current** **a** Schematics of presented conditions **b** Boxplots presenting each cell before and after CX3CL1 application in each condition **c** Pie charts presenting how cells reacted to CX3CL1 **d** plots presenting input-output relationships of representative cells **e** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 7, fig.height= 11}
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+library(magick)
+library(patchwork)
+inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
+inset_frak2nM <- image_ggplot(inset_frak2nM)
+inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
+inset_frak5nM <- image_ggplot(inset_frak5nM)
+inset_ab <- image_read("images//results//inset_ab.png")
+inset_ab <- image_ggplot(inset_ab)
+inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
+inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
+inset_azda <- image_read("images//results//inset_azd.png")
+inset_azda <- image_ggplot(inset_azda)
+inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
+inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
+inset_minoa <- image_read("images//results//inset_minoa.png")
+inset_minoa <- image_ggplot(inset_minoa)
+inset_gaba <- image_read("images//results//inset_gaba.png")
+inset_gaba <- image_ggplot(inset_gaba)
+# 
+# making labels (as minocycline and azd has different condition than CX3CL1) for then making proper automatic statistics
+f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
+f_labels_BLA_thres$Experiment <- factor(f_labels_BLA_thres$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
+
+# subsetting additional control 
+BLA_df_frak_add <- BLA_df_final %>% dplyr::filter(Experiment %in% c("AZD8797", 'minocycline'))
+
+# # making boxplot
+bp_BLA_thres <- plot_boxplot(BLA_df_frak_add, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "", vary1 = -55, vary2 = -20, dot_size = 2)
+bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), #facet_wrap opitions
+ plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm") # plot margin
+ ) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') #+ geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres) #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
+# 
+# # making pies chart for every condition
+pie_BLA_azd_thres <- BLA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(Treshold1_all, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+
+pie_BLA_mino_thres <- BLA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(Treshold1_all, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+
+
+### making representative individual IV plots 
+
+# ## azda
+azda_IV_subset <- BLA_df_final %>% filter(Experiment == "AZD8797") %>% filter(Cell %in% c(75))
+azda_IV_subset$Filename_all1[azda_IV_subset$Filename_all1 == "21428031"] = "AZD8797"
+representative_azda_IV <- azda_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(300, 500) + ylim(0, 12)
+# 
+## minoa
+minoa_IV_subset <- BLA_df_final %>% filter(Experiment == "minocycline") %>% filter(Cell %in% c(63))
+minoa_IV_subset$Filename_all1[minoa_IV_subset$Filename_all1 == "20730004"] = "minocycline"
+representative_minoa_IV <- minoa_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # + xlim(260, 500)
+
+#using patchwork to do layout of the figure
+
+figure1 <-  (( inset_azda | inset_minoa)  + plot_layout(tag_level = 'new')) / # loading insets with new level e.g. 1a 1b etc
+ (bp_BLA_thres + theme(legend.position = "none"))  / # raw with boxplots
+  (((pie_BLA_azd_thres | pie_BLA_mino_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /  # raw with pie charts with common legends and 3a 3b 3c 
+  ((representative_azda_IV  | representative_minoa_IV ) + plot_layout(tag_level = 'new')) # raw with individual IVs
  
 
 figure1 <- figure1 + 

@@ -5,10 +5,10 @@ I focused on CXCL12 and CX3CL1, as they, together with their receptors, were imp
 Moreover, dysfunctions in their signaling were reported to share similar characteristics as those in the amygdala.
 To better understand chemokines' modulation at the network level of the whole complex of the amygdala, both the main input nucleus (the basolateral complex) and the main output nucleus (the central complex) were investigated.
 
-Briefly, receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala (see Sections: \@ref(CX3CL1signal) and \@ref(CXCL12signal)); however, their specific distribution is not thoroughly examined. 
+Briefly, receptors of CXCL12 and CX3CL1 chemokines are located in the amygdala (see Sections: \@ref(CX3CL1str) and \@ref(CXCL12str)); however, their specific distribution is not thoroughly examined. 
 Thus, the first aim of this dissertation was to investigate the cellular distribution of chosen chemokines and their receptors in the BLA and the CeA. 
 
-Functionally, previous studies have demonstrated complex electrophysiological effects of CXCL12 and CX3CL1, which differ between, among others, brain regions or neuronal populations (see Sections: \@ref(CX3CL1inthebrain) and \@ref(CXCL12inthebrain)).
+Functionally, previous studies have demonstrated complex electrophysiological effects of CXCL12 and CX3CL1, which differ between, among others, brain regions or neuronal populations (see Section: \@ref(chemointheCNS)).
 
 Moreover, at least some of those effects were mediated by glial cells.
 Accordingly, this dissertation further aimed to dissect the complex mechanisms underlying bidirectional crosstalk between neurons and glial cells (e.i., astrocytes and microglia) regarding its regulation of membrane properties and synaptic transmission in the amygdala.<!---na razie ok, może uda się coś lepszego --> 

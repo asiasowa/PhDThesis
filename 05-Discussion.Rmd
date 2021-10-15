@@ -11,12 +11,35 @@ Our findings of immature synaptic multiplicity, weak functional connectivity, im
 Taken together, these data illustrate that CCR4 is widely expressed in the brain where its activation might control a variety of functions including the regulation of locomotor, exploratory, and social behaviors. Which cell types, brain regions, and pathways are involved in these processes need to be determined in future studies. <!-- analogous -->
 
 
+These results are nicely complemented by findings obtained by studies using mixed neuronal and glial cultures [@ji_2013].
+Specifically, adding microglial cells to the hippocampal neuronal culture results in an upregulation of excitatory synaptic currents, together with a higher density of dendritic spines in neurons.
+In contrast, microglial depletion from hippocampal organotypic cultures led to both reduction in the dendritic spine density and excitatory synaptic transmission. 
+Moreover, pharmacological inhibition of microglial activation in adult mice was associated with preventing dendritic spine loss in obese mice [@cope_2018].
+These findings strongly support the notion that microglia are key regulators of the dendritic spine density in both the developing and the adult brain. 
+
+
+<!-- Of note, sole adenosine was demonstrated to decrease the glutamatergic synaptic transmission in the hippocampus, even despite the absence of CX3CL1, suggesting adenosine tonic activity in this structure . -->
+Similar to studies concerning the neuroprotective action of CX3CL1 described above, this CX3CL1-induced adenosine action on the glutamatergic transmission was revealed to be mediated by A~3~R and, to the lesser extent, A~1~R [@lauro_2008; @lauro_2010; @piccinin_2010]. 
+Further evidence indicates that the activation of A~1~R and A~3~R results in a decrease in synaptic transmission, whereas A~2A~R exerts the opposite effect, manifested as CX3CL1-induced increase of evoked EPSC (eEPSC) observed when the A~1~ and A~3~ receptors are blocked [@piccinin_2010]. 
+
+Overall, several lines of evidence described above indicate a predominantly inhibitory role for CX3CL1, possibly as a component of neuroprotective synaptic scaling mechanisms, required for hippocampal memory-associated synaptic plasticity processes [@bertollini_2006; @piccinin_2010]. 
+
+At the cellular level, principal cells in the BLA<!--, especially its lateral part,--> simultaneously receive initially weak afferent carrying sensory information about the CS (e.g., terminals from the auditory thalamus and cortex) and a strong input carrying US information (e.g., footshock).
+Multiple pairings of those experiences lead to the LTP at excitatory synapses onto BLA neurons, enabling CS alone to induce the freezing behavior (for example, @nabavi_2014). 
+Accordingly, by combining several approaches to label only those neurons involved in fear conditioning (CS+), @kim_2017 found that AMPA/NMDA ratios were explicitly increased in CS+ terminals, confirming an input-specific, postsynaptic nature of this phenomenon. 
+
+
+Similarly, recordings from CA3-CA1 synapses in hippocampal slices of CX3CR1^-/-^ transgenic mice displayed an immature AMPA/NMDA ratio with defective AMPA components and decreased release probability compared to wild-type mice [@basilico_2019], further illustrating that neuron–microglia crosstalk profoundly impacts functional maturation of excitatory presynaptic function, and thereby modulating excitatory synaptic transmission.
+
 The concentration used here was shown to be effective in previous studies <!-- citations-->
 
 ## GABA~C~ ? 
 
 
 ## CXCL12
+
+Considering that virtually all types of brain cells express either CXCL12 and/or one of its receptors, this chemokine serves a wide array of functions in both the developing and mature brain.
+Indeed, several lines of evidence illustrate that CXCL12 is involved in neurodevelopment,
 
 ############ CX3CL1 neuronal caution if neuronal
 

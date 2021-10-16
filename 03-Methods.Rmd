@@ -56,7 +56,7 @@ The determination of the doses for CX3CL1, CXCL12, AZD8797, AMD3100, minocycline
 minocycline (100 `r knitr::asis_output("\U03BC")`M, Sigma–Aldrich, Germany),<!-- upewnić się-->
 DL-fluorocitric acid barium salt (a selective astrocyte inhibitor; 100 `r knitr::asis_output("\U03BC")`M, Sigma–Aldrich, Germany),<!-- upewnić się--> 
 AZD8798 K~i~ value is 3.9 nM<!--sprawdzić-->, was<!-- kawamura_2021, ale ja nie taki antagonista -->
-FC stocks were prepared according to published procedures (28), and acute horizontal brain slices containing the nRT and VB were prepared following established methods (66). 
+FC stocks were prepared according to published procedures (28), and acute horizontal brain slices containing the nRT and VB were prepared following established methods (66). <!-- Of note, this chemical is dissolved in DMSO and thus the recording ACSF was additionally supplemented with proper proportion (no more than 0.001%) of DMSO as a baseline condition. <!-- nie wiem czy to i powyższe zdania nie do metody... -->
 
 Immunostaining reagents suppliers were as follows: formaldehyde 36-38% solution, POCH, Gliwice, Poland, Cat No. 432173111; <!-- sprawdzić/ zmienić --> 
 Triton X100, Sigma Aldrich, X100; <!-- sprawdzić/ zmienić --> 

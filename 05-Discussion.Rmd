@@ -6,6 +6,24 @@ In this PhD dissertation, by using a combination of electrophysiological, immuno
 
 Despite relatively high levels of CX3CL1 and CX3CR1 in the amygdala and the involvement of this chemokine in anxiety-related behavior, the precise role of the CX3CL1/CX3CR1 signaling pathway in the amygdala is still unknown. <!-- lepiej napisać --> 
 
+
+
+### CX3CL1 reduces the threshold of the BLA but also the inhibitory synapitic currents and the LTP
+
+Consistent with the literature, as most studies reports the decrease in excitatory synaptic transmission.
+
+The CX3CL1–induced decrease in excitability of BLA principal cells manifested as an increase in threshold current, together with an broadening of action potentials,<!--my chyba tutaj też mamy broadening?--> suggests that MCP-1 might reduce a K+ conductance. <!-- CZY NA PEWNO? -->
+However, the input resistance following CX3CL1 treatment was unchanged, suggesting that these changes rather are presynaptic. <!--see Appendix-->
+
+Decreasing of the LTP also consistent with previous findings - anxiety - beneficial - sth with synaptic scaling 
+
+
+### Minocycline increases excitability of the BLA
+
+Intriguingly, sole minocycline was able to increase the excitability of pyramidal cells.
+This result suggests that microglia alone and without stimulation of CX3CR1 receptor  may be able to  affect excitability of neurons in the BLA.
+However, as this molecule alone was previously reported to affect electrophysiological properties, such as...., these findings warrant further investigation, for example by using opto- or chemogenetical activation of those cells.
+
 ### Electrophysiological results
 
 The MCP-1–induced reduction in rheobase, together with an increase in spike frequency and a broadening of action potentials, suggests that MCP-1 might reduce a K+ conductance. <!-- analogous-->
@@ -97,11 +115,22 @@ The deficiency in microglial CX3CR1 can cause communication defects among neuron
 
 These  recent  findings  are  complementing  one another in supporting a fundamental role for CX3 CL1-CX 3 CR1 interactions  in  mediating   the  development  and  plasticity  of neuronal circuits, at the molecular, cellular and neuronal circuit levels.
 
+..., suggesting that the role of CX3CR1-microglia is not only in cardiovascular regulation but also in improving the ...
+
 
 ## CXCL12
 
 Considering that virtually all types of brain cells express either CXCL12 and/or one of its receptors, this chemokine serves a wide array of functions in both the developing and mature brain.
 Indeed, several lines of evidence illustrate that CXCL12 is involved in neurodevelopment,
+
+The above conclusion is supported by the following observations.
+
+###
+
+Anxiety by yang 2016
+
+Their findings support the rationale for investigating CXCR4’s role in ..... 
+For this reason, we selected AZD8797  to  inhibit  CX3CR1  for  investigating  its pharmacological  role  towards  inflammation  during hypertension. <!-- zdecydowanie inaczej-->
 
 
 

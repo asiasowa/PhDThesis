@@ -44,8 +44,9 @@ All peptides were dissolved in sterile PBS, aliquoted and stored at -20`r knitr:
 
 For blocking CX3CL1 and CXCL12 receptors, highly selective antagonists (AZD8797 and AMD3100) were used, respectively.
 AZD8797 was obtained from Axon Medchem, The Netherlands, and its stock was first dissolved in dimethyl sulfoxide (DMSO). <!-- and diluted in saline to a final concentration of 0.1% DMSO.-->
-<!--A stock of AZD8797 was first dissolved in dimethyl sulfoxide (DMSO), and the other drugs were prepared in distilled water at 1000 times the concentrations to be used and stored at -20 °C as in our previous study (Liu et al., 2015).  sprawdzić/ zmienić --> 
+<!--A stock of AZD8797 was first dissolved in dimethyl sulfoxide (DMSO), and the other drugs were prepared in distilled water at 1000 times the concentrations to be used and stored at -20 °C as in our previous study (Liu et al., 2015).  sprawdzić/ zmienić // AZD8797, Axon Biochemicals, Groningen, The Netherlands)--><!-- Overall, treatment with  CX3CR1 antagonist decreased the frequencies of JEV E-expressing cells and virus titres in a dose-dependent manner. Since 10 μM of CX3CR1 antagonist efficiently inhibited virus transmission and recovery, this dose was employed for further analysis (Supplementary [@lannes_2019]--> 
 AMD3100 ... <!-- dokończyć-->
+<!--DMSO and PBS were respectively used as controls. analogous - DMO was respectively used as baseline -->
 
 For microglia and astrocytes inhibition, the minocycline and fluorocitric acid were used, respectively.
 Both reagents were obtained from Sigma Aldrich.
@@ -137,7 +138,8 @@ Recording micropipettes were fabricated from borosilicate glass capillaries (3�
 ```{r methodpatch, fig.cap='**a** A schematic of the brain slice containing the amygdala **b, c** Photographs from the recording microscope under 10x optics showing areas of recordings: BLA and CeA, respectively **d,e** Photographs from the recording microscope under 40x DIC optics showing morphologies from BLA principal cells and CeL neurons', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images//methods//methodpatchregion.png")
 ```
-<!--uzupełnić zdjęcia o CeA + LTP?--> 
+<!--uzupełnić zdjęcia o CeA + LTP? // (A) Schematic shows the location of the basolateral amygdala (BLA) in an oblique-horizontal brain slice and placement of the recording electrode. The photograph below shows electrode placement to record the local field potential (LFP) in the BLA. L and R mark lateral and rostral directions. Traces on the right sho w the LFP recorded in wide band (0.1–1 kHz, top), following low pass (1–20 Hz) and high band pass (100–300 Hz) filtering. Inset shows averaged SW in the three frequ ency domains at a higher temporal resolution showing sharp wave envelope (middle) and occasionally coupled ripples (bottom).--> 
+<!--  (A) Drawing of a mouse brain sagittal section showing the location of stimulating and recording electrodes for corticostriatal fPSC recordings (adapted from Paxinos Mouse Brain Atlas).-->
 For experiment measuring excitatory synaptic transmission and excitability, the intrapippete solution contained (in mM): 130 potassium gluconate, 5 NaCl, 0.3 CaCl~2~, 2 MgCl~2~, 5 Na~2~ATP, 0.4 Na~3~GTP, 1 EGTA, 10 HEPES, pH 7.2, osmolarity 290-300 mOsmol kg^−1^) and biocytin (0.1%, for subsequent immunofluorescent identification of recorded neurons). 
 For experiment measuring inhibitory synaptic transmission, the solution contained 122 Cs-gluconate, 10 CsCl, 10 HEPES, 0.3 EGTA, 10 phosphocreatine-Na~2~, 5 Mg-ATP, 0.4 Na-GTP, pH = 7.35; osmolarity 280-290 mOsmol kg^−1^.
 
@@ -171,6 +173,8 @@ The principal neurons of the BLA were morphologically identified by their large 
 INs were distinguished from PNs ( Figures S1 B–S1E) by using action potential discharge properties ( Mahanty and Sah, 1998 <!-- perumal_2021 -->
 
 Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
+
+INs were distinguished from PNs ( Figures S1 B–S1E) by using action potential discharge properties ( Mahanty and Sah, 1998 ) 
 
 ##### Electrophysiological identification of neurons in the CeA
 

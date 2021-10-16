@@ -23,7 +23,7 @@ knitr::include_graphics("images/amygdalastr.png")
 
 Recent technological advances, such as optogenetics and chemogenetics, in conjunction with a battery of behavioral tests and electrophysiology, have been dissecting how genetically targeted cellular activity within the amygdala could contribute to each of these distinct processes (for example, @lalumiere_2014). <!-- lepiej to napisać ... with ,-->
 Here, I summarize the current state of knowledge of the amygdala's role, anatomy, and physiology. 
-The physiological and morphological properties of neurons in relation to specific nuclei are shown in Fig. \@ref(fig:amygdalastr), whereas their inputs, outputs, and intra-connectivity are depicted in Fig. \@ref(fig:amygdalaconnect).
+The physiological and morphological properties of neurons in relation to specific nuclei are shown in Fig. \@ref(fig:amygdalastr), whereas simplified illustrations of their main inputs, outputs, and intra-connectivity are depicted in Fig. \@ref(fig:amygdalaconnect).
 
 ### The basolateral complex of the amygdala (BLA) {#BLA}
 
@@ -213,3 +213,4 @@ Finally, as amygdalar circuitry and function are well-conserved across evolution
 The subsequent generation of emotional responses by the  BLA  is largely determined by the balance of excitatory and inhibitory inputs to  BLA principal cells which are tightly controlled by GABAergic interneurons [@bocchio_2016; @capogna_2014; @hjos_2021; @spampanato_2011].
 Thus, here, I briefly discuss our current understanding of the connectivity of this complex neuronal network. //
 Thus, we are beginning to unravel how a single brain region can encode such opposite behaviors, which is of high relevance and warrants further investigation.-->
+<!-- A summary cartoon of these microcircuits is shown in Fig. 5-->

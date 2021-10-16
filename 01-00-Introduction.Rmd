@@ -129,13 +129,15 @@ These molecules are known to regulate a wide range of cellular functions, includ
 ```{r cx3cr1sig, fig.cap='**CX3CL1-CX3CR1 signaling.** CX3CR1, which is G protein-coupled and transduces several well-characterized signaling pathways leading to activation of transcription factors, including NF-\U03BA B and CREB. Gi, heterotrimeric G protein-coupled to Gi protein; PI3K, phosphatidylinositide 3-kinases; Ras/Raf small GTPases; PLC, phospholipase C; PKC, protein kinase C; Akt, serine/threonine-specific protein kinase; MEK, mitogen-activated protein kinase; MEKK, MAP3 kinase; p38, p38 mitogen-activated protein kinase; I\U03BA B, an inhibitor of kappa B; IKK, an inhibitor of \U03BA B kinase; ERK, extracellular signal-regulated kinases; JNK, c-Jun N-terminal kinase; NF\U03BA B, nuclear factor \U03BA B; CREB, cAMP response element-binding protein.', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/cx3cr1sig.png")
 ```
-
+<!-- Some important molecular pathways implicated in microglia–neuron interactions  are summarized on Fig. 1.-->
 <!-- CX3CL1 induces transient phosphorylation of Akt and ERK1/2. Soluble CX3CL1 activates the transcription factor CREB and ERK1/2 and induces the translocation of the NF-κB p65 subunit to the nucleus. NF-κB p65 subunit nuclear translocation is avoided by a specific inhibitor of PI3-K, suggesting that CX3CL1-CX3CR1 activates NF-κB through Akt.// https://www.researchgate.net/publication/322645691_Microglia_and_aging_The_role_of_the_TREM2-DAP12_and_CX3CL1-CX3CR1_Axes/figures?lo=1 -->
 
 In the brain, CX3CL1 and its receptor, CX3CR1, are widely distributed in the CNS, including the hippocampus, amygdala, cerebral cortex, globus pallidus, striatum, and thalamus [@harrison_1998; @tarozzo_2003]. 
 Besides the well-documented neuronal expression of CX3CL1, a handful of studies also revealed its presence in astrocytes, albeit at lower levels (for instance: @sunnemark_2005). 
 However, the expression pattern of CX3CL1 receptor, CX3CR1, in the CNS, remains controversial: some reports confine the localization of CX3CR1 microglia [@tarozzo_2003; @cardona_2006], whereas several lines of biochemical, immunohistochemical, and electrophysiological evidence documented the presence of the functional CX3CR1 receptor also in hippocampal, hypothalamic, cerebral, striatal, and dorsal raphe nucleus (DRN) neurons [@hatori_2002; @heinisch_2009; @hughes_2002; @limatola_2005; @maciejewskilenoir_1999; @meucci_1998; @meucci_2000; @ruchaya_2012; @ruchaya_2014; @tarozzo_2003; @verge_2004; @zhuang_2007].
 Thus, although predominantly expressed by microglia, CX3CR1 is also documented to be present on neuronal membranes, at least in pathological conditions.
+
+<!-- expression outside the brain  found in the leukocytes, brain, spinal cord, and retina [7,8]. [@ho_2020a] // The  fractalkine  is  a  sole  ligand  that  couples  to CX3CR1, existing in either membrane-anchored or soluble form. The membrane-anchored FKN (mFKN), soluble FKN  (sFKN),  and CX3CR1 were  analyzed  by immunoblotting (Fig.2a). After-->
 
 #### CXCL12/CXCR4/ACKR3 trio structure, expression, and signaling {#CXCL12str}
 

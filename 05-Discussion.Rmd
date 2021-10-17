@@ -15,14 +15,41 @@ Consistent with the literature, as most studies reports the decrease in excitato
 The CX3CL1–induced decrease in excitability of BLA principal cells manifested as an increase in threshold current, together with an broadening of action potentials,<!--my chyba tutaj też mamy broadening?--> suggests that MCP-1 might reduce a K+ conductance. <!-- CZY NA PEWNO? -->
 However, the input resistance following CX3CL1 treatment was unchanged, suggesting that these changes rather are presynaptic. <!--see Appendix-->
 
-Decreasing of the LTP also consistent with previous findings - anxiety - beneficial - sth with synaptic scaling 
+why when interneurons abolished there is no effect in threshold current, but sIPSC decreased? but it is consistent, as blocking TTX also abolished this effect :)
+Rossi and GABA~A~ ? 
+
+<!-- GABAergic transmission-->
+... ?
+This notion was further supported by the observed reduction of sIPSC frequency after CX3CL1 treatment.
+Usually, a change in the amplitude of <!--m-->IPSCs reflects alterations in postsynaptic GABA~A~ receptors, while a change in the frequency of <!--m-->IPSCs implicates an altered probability of transmitter release and/or changes in the number of active synapses (De Koninck and Mody, 1994; Otis et al , 1994).
+The reduction in average median frequency after CX3CL1 application may result from a decreased ..., probably due to decreased number of GABAergic synapses onto principal cells, while the number of postsynaptic GABA~A~receptors remained the same.<!-- jakieś cytowanie?-->
+Nevertheless,  our  results  provide  direct  evidence  that  NF knockdown impairs GABAergic transmission within the BLA  by  reducing  functional  GABAAreceptors  at  the postsynaptic site. 
+
+GABAergic synapses - subdomain - Moreover, due to its restriction to the AIS, knockdown of NF and the associated reduction in inhibitory inputs may also affect the properties of evoked action potentials. 
+Following CX3CL1 treatment, the firing rate was significantly reduced and the action potential half-width was increased, whereas the input resistance was unaltered. <!-- trochę zmienić i zobaczyć czy pisać o action potential hal-width...-->
+The reduced firing rate of neurons could be explained by their hyperpolarized resting membrane potential and a depolarized threshold potential, in accordance with Zonta et  al (2011). <!-- zmienić -->
+Indeed, GABAergic inputs were reported to be able to control spiking of pyramidal-like neurons in the BLA, especially when formed at perisomatic ... or AIS.<!--cytations--><!-- Indeed, it has been demonstrated  that  AACs  can  control  action  potential generation at the AIS of projection neurons via their GABAergic  inputs, either through changing the action potential  threshold,  or  by  shifting  the  site  of  origin (Douglas  and  Martin,  1990;  Somogyi et    al ,  1982; Wefelmeyer et  al , 2015; Veres et  al , 2014). Accordingly,-->
+This may happen either *via* changing the action potential threshold or by shifting the site of origin. <!-- zmienić i przeczytać cytowania? -->
+Accordingly, similar differences in action potential properties as seen after NF  knockdown  arise  by  shifting  the  action  potential initiation site to the first node of Ranvier (Clark et  al , 2005).<!-- przeczytać to... --> 
+Moreover, the reduced firing rate of projection neurons could also contribute to the observed LTP impairment (Cohen et al , 1999).  <!-- zmienić... -->
+
+<!-- Decreasing of the LTP also consistent with previous findings - anxiety - beneficial - sth with synaptic scaling -->
+To investigate .... 
+While impaired LTP in the vSub – BLA pathway after NF knockdown in the BLA may result from reduced neural excitability, its relation to reduced GABAergic inhibition by NF knockdown appears counterintuitive on first sight. 
+However, it may be related to the fact that previous studies suggested rather excitatory net effects of AACs onto BLA projection neurons (Woodruff et al , 2010). 
+Monosynaptic cortical – BLA projections exist <!--cytowanie?-->, and can recruit not only princical cells, but also local interneurons *via* feed-forward circuits<!--, but the role of AACs remains unclear (Bazelot et  al , 2015; Hübner et  al , 2014). sprawdzić te cytowania i to przemyśleć...-->
+Given that cortical affarents represent <!-- only a minor part of BLA afferents--> substantial part of BLA inputs<!--citations--> and AACs were reported to form reciprocal connections with PCs, they could also be part of local feedback circuits. <!--However, vSub afferents represent  (for example, Canteras et al , 1992) and AACs are also reciprocally connected to projections neurons, suggesting they could also be part of local feedback circuits (Veres et al , 2014).-->
+Accordingly, this form of synaptic plasticity in the BLA may be also shaped by intra-amygdalar  local  inhibitory  networks. <!--trochę jeszcze poprawić?-->
+Cumulative evidence suggests that different BLA afferents target specific subpopulations of interneurons (Leitermann et  al , 2016; McDonald et  al , 2011; Unal et  al , 2014), thus enabling input-specific modulation of BLA local networks, which in turn may affect induction of LTP in this structure. <!-- ładne zdanie ale trochę zmienić -->
+Notably,  the  input – output  curve  revealed  a  trend  for increased BLA excitability in the CX3CL1-supplemented slices,<!--zobaczyć czy to w ogóle prawda xDDD--> which could reflect local network changes that may affect further potentiation. 
+
 
 
 ### Minocycline increases excitability of the BLA
 
 Intriguingly, sole minocycline was able to increase the excitability of pyramidal cells.
 This result suggests that microglia alone and without stimulation of CX3CR1 receptor  may be able to  affect excitability of neurons in the BLA.
-However, as this molecule alone was previously reported to affect electrophysiological properties, such as...., these findings warrant further investigation, for example by using opto- or chemogenetical activation of those cells.
+However, as this molecule alone was previously reported to affect electrophysiological properties, such as...., these findings warrant further investigation, for example by using opto- or chemogenetic activation of those cells.
 
 ### Electrophysiological results
 
@@ -464,6 +491,8 @@ Overall, the described CXCL1-mediated effects may decrease the seizure threshold
 
 Only behavioral seizures were monitored in the Xu et al. (2017) study, therefore it is unclear if the CXCR2 receptor antagonist reduced the motor component of seizures by limiting seizure generalization, or also decreased EEG seizure activity like in our study. Since we did not monitor motor seizures in our mice, the comparison between the two treatments remains speculative. S
 
+According to our data,
+
 ### Electrophysiology
 
 Generally, the increase in sIPSC or sEPSC frequency enhanced the probability of neurotransmitter release from the presynaptic terminal. Thus, the effect of minocycline on SG neurons is mainly of a presynaptic origin rather than a postsynaptic origin
@@ -488,6 +517,10 @@ Although DA release and electrophysiological experiments were performed in two d
 
 #### General sentences
 
- Based on these observations, we speculate that ... microglia may have begun to intervene in the NTS ...
+Based on these observations, we speculate that ... microglia may have begun to intervene in the NTS ...
  
- This suggests that CX3CR1-microglia in the NTS participates in NO and systemic blood pressure regulation
+This suggests that CX3CR1-microglia in the NTS participates in NO and systemic blood pressure regulation
+
+This notion was further supported by the observed reduction of sIPSC frequency after CX3CL1 treatment.
+Usually, a change in the amplitude of <!--m-->IPSCs reflects alterations in postsynaptic GABA~A~ receptors, while a change in the frequency of <!--m-->IPSCs implicates an altered probability of transmitter release and/or changes in the number of active synapses (De Koninck and Mody, 1994; Otis et al , 1994).
+The reduction in average amplitude after NF knockdown may result from a decreased frequency of larger events, probably due to a reduction of number of postsynaptic GABA~A~receptors (Otis et al , 1994). However, the lack of observed alterations in the frequency could be explained by the fact that relative to the overall GABAergic input, only a very small number of synapses were completely removed at the AIS, while smaller events remained. Nevertheless,  our  results  provide  direct  evidence  that  NF knockdown impairs GABAergic transmission within the BLA  by  reducing  functional  GABAAreceptors  at  the postsynaptic site. 

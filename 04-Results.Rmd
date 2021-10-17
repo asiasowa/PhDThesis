@@ -203,6 +203,9 @@ inset_gaba <- image_ggplot(inset_gaba)
 f_labels_BLA_thres_add <- data.frame(Experiment = c( c(  "AZD8797", "minocycline" )), label = c("", "*"))
 f_labels_BLA_thres_add$Experiment <- factor(f_labels_BLA_thres_add$Experiment, levels = c( "AZD8797",  "minocycline"))
 
+#other option
+my_comparisons <- list(c("baseline","AZD8797"),
+                   c("baseline","minocycline"))
 
 # subsetting additional control 
 BLA_df_frak_add <- BLA_df_final %>% dplyr::filter(Experiment %in% c("AZD8797", 'minocycline'))
@@ -211,8 +214,7 @@ BLA_df_frak_add <- BLA_df_final %>% dplyr::filter(Experiment %in% c("AZD8797", '
 bp_BLA_thres <- plot_boxplot(BLA_df_frak_add, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "", vary1 = -55, vary2 = -20, dot_size = 2)
 bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), #facet_wrap opitions
- plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm") # plot margin
- ) + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres_add, size=12, face = 'bold') #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
+ plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.y = -25, label.x.npc = 'center', size = 10, face = "bold", comparisons =  my_comparisons) + geom_text(x = 1.5, y = -25, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres_add, size= 10, face = 'bold') #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
 #
 # # making pies chart for every condition
 pie_BLA_azd_thres <- BLA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(Treshold1_all, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))

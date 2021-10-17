@@ -29,6 +29,7 @@ GABAergic synapses - subdomain - Moreover, due to its restriction to the AIS, kn
 Following CX3CL1 treatment, the firing rate was significantly reduced and the action potential half-width was increased, whereas the input resistance was unaltered. <!-- trochę zmienić i zobaczyć czy pisać o action potential hal-width...-->
 The reduced firing rate of neurons could be explained by their hyperpolarized resting membrane potential and a depolarized threshold potential, in accordance with Zonta et  al (2011). <!-- zmienić -->
 Indeed, GABAergic inputs were reported to be able to control spiking of pyramidal-like neurons in the BLA, especially when formed at perisomatic ... or AIS.<!--cytations--><!-- Indeed, it has been demonstrated  that  AACs  can  control  action  potential generation at the AIS of projection neurons via their GABAergic  inputs, either through changing the action potential  threshold,  or  by  shifting  the  site  of  origin (Douglas  and  Martin,  1990;  Somogyi et    al ,  1982; Wefelmeyer et  al , 2015; Veres et  al , 2014). Accordingly,-->
+The only interneuron subtype presently described that innervates the AIS are AACs or chandelier cells (Bazelot et  al , 2015). <!-- zmienić trochę -->
 This may happen either *via* changing the action potential threshold or by shifting the site of origin. <!-- zmienić i przeczytać cytowania? -->
 Accordingly, similar differences in action potential properties as seen after NF  knockdown  arise  by  shifting  the  action  potential initiation site to the first node of Ranvier (Clark et  al , 2005).<!-- przeczytać to... --> 
 Moreover, the reduced firing rate of projection neurons could also contribute to the observed LTP impairment (Cohen et al , 1999).  <!-- zmienić... -->
@@ -43,7 +44,9 @@ Accordingly, this form of synaptic plasticity in the BLA may be also shaped by i
 Cumulative evidence suggests that different BLA afferents target specific subpopulations of interneurons (Leitermann et  al , 2016; McDonald et  al , 2011; Unal et  al , 2014), thus enabling input-specific modulation of BLA local networks, which in turn may affect induction of LTP in this structure. <!-- ładne zdanie ale trochę zmienić -->
 Notably,  the  input – output  curve  revealed  a  trend  for increased BLA excitability in the CX3CL1-supplemented slices,<!--zobaczyć czy to w ogóle prawda xDDD--> which could reflect local network changes that may affect further potentiation. 
 
-
+Notably, the high variability of the CX3CL1 application on excitatory synaptic transmission from cell to cell possibly<!--might?--> depend upon the relative contribution of both excitatory inputs from other pyramidal-like cells in the BLA and GABAergic synapses from local interneurons. 
+Given that there are subtypes of interneurons targeting different subcellular domain of principal cells, it is likely that interneurons contacting synapses mainly on distal dendritic parts are ....<!-- dokończyć tutaj i rozpisać jak to jest z tymi interneuronami -->
+Thus, experiments in cesium-based interpippette solution might reduce filtering of excitatory synaptic currents originating from distal parts of dendrites by blocking potassium channels [@acharjee_2018], and thereby might suppress the high variability of CX3CL1 treatment on sEPSC.<!-- Cesium reduces filtering of the synaptic currents arising from distal parts of the dendrite by blocking the potassium current, and changes in EPSC frequency seen only with cesium internal suggested that most of the changes were contributed by inputs to more distal dendrites.-->
 
 ### Minocycline increases excitability of the BLA
 
@@ -75,6 +78,8 @@ Moreover, pharmacological inhibition of microglial activation in adult mice was 
 These findings strongly support the notion that microglia are key regulators of the dendritic spine density in both the developing and the adult brain. 
 
 Similarly, recordings from CA3-CA1 synapses in hippocampal slices of CX3CR1^-/-^ transgenic mice displayed an immature AMPA/NMDA ratio with defective AMPA components and decreased release probability compared to wild-type mice [@basilico_2019], further illustrating that neuron–microglia crosstalk profoundly impacts functional maturation of excitatory presynaptic function, and thereby modulating excitatory synaptic transmission.
+
+We measured mEPSC amplitude and frequency at 	 70 mV after 20–24 h of minocycline treatment. We found that minocycline increased mEPSC frequency (), but not amplitude in EAE mice compared with EAE-vehicle-treated mice (). Thus, the EAE phenotype is even more apparent after additional microglial inactivation. However, we acknowledge that minocycline, in addition to impairing microglial proinflammatory and phagocytic activity, has many other unrelated effects; however, our use of ICV injection at least eliminated the peripheral effects of minocycline (  Brundula et al., 2002  ;  Giuliani et al., 2005  ). [@acharjee_2018]
 
 ### CX3CL1 and adenosine
 <!-- Of note, sole adenosine was demonstrated to decrease the glutamatergic synaptic transmission in the hippocampus, even despite the absence of CX3CL1, suggesting adenosine tonic activity in this structure . -->
@@ -137,12 +142,18 @@ Adenosine exerts two parallel modulatory roles in the CNS, acting as a homeostat
 The deficiency in microglial CX3CR1 can cause communication defects among neurons, microglia  and astrocytes during numerous c NS diseases or even injuries (Sungho_2010).  The deficiency in microglial CX3CR1 can cause communication defects among neurons, microglia  and astrocytes during numerous c NS diseases or even injuries (Sungho_2010). In addition, c X3cL1 activation is correlated with the specific type of neuropathic pain induced by multiple sclerosis  through interaction with cX3cR1 (Zhu_2013). Moreover, the levels of cX3cL1 are potentially regulated by diverse neurotoxic stimuli and its signaling is correlated with several types of  cNS diseases, including HIV infection, epilepsy, and cerebral tumors among other neuropathologies (limatola_2014) [@chen_2020]
 
  Notably, previous studies demonstrated that  in vitro lipopolysaccharide- and interferon γ-induced release of multiple cytokines (i.e., IL-1β, TNFα, and IL-6) in cultured microglia can be effectively suppressed through the activity  of cX3cL1 signaling. This suggests that cX3cL1/cX3cR1  signaling is vital in modulating upstream production and  cytokine release from microglia (limatola_2014), thereby contributing to  the feedback loop as well. By inhibiting the cx3cl1/cX3cR1  pathway, AZd8797 can suppress the role of microglia and astrocytes, thus preventing the development of the inflammatory response (biber_2014, kasama_2010). The present study shows that blocking  the cX3cR1 signaling with AZd8797 results in, not only a more effectively reduced concentration of the inflammatory  cytokine, I L-1β (which is associated with a better recovery after injury), but also lower apoptosis and necrosis levels when  compared to methylprednisolone treatment.
+
+#### CX3CL1 and GABA A and extinction
+
+This idea is in line with the role of NF in GABAergic  transmission.  Several  studies  converge  on showing that extinction training globally increases GABAergic  markers  including  gephyrin  and  GABAAreceptor subunits in the BLA (Chhatwal et  al , 2005; Heldt and Ressler, 2007; Lin et al , 2009), and interfering with GABAA receptor insertion by a TAT-conjugated peptide within BLA synapses impaired fear extinction (Lin et al , 2009). However, the role of specific interneuron subtype inputs remains less well understood. To the best of our knowledge, only one study addressed the role of such specific changes, demonstrating remodeling of perisomatic synapses in contextual fear extinction (Trouche et  al , 2013).<!-- saha 2016? -->
  
 ### analogous
 
 These  recent  findings  are  complementing  one another in supporting a fundamental role for CX3 CL1-CX 3 CR1 interactions  in  mediating   the  development  and  plasticity  of neuronal circuits, at the molecular, cellular and neuronal circuit levels.
 
 ..., suggesting that the role of CX3CR1-microglia is not only in cardiovascular regulation but also in improving the ...
+
+This inhibition of GABAergic transmission is a result of a D3-like receptor-mediated, dynamin-dependent process that presumably reflects endocytosis of postsynaptic GABAAreceptors found on principal BLA neurons.
 
 
 ## CXCL12

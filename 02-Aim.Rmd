@@ -57,22 +57,19 @@ setwd("..")
 setwd("..")
 setwd(".//CXCL12")-->
 ```{r setup, include=FALSE}
-# options for printing figures outside this file:
-# in pandoc option:
-# output: 
-#   slidy_presentation:
-#     self_contained: false
-# knitr::opts_chunk$set(echo = FALSE, dev = 'pdf') 
+setwd("..")
+setwd("..")
+setwd(".//CX3CL1")
 
 
 # option for having everything in this file in pandoc option
 # output: slidy_presentation
-setwd("..")
-setwd("..")
-setwd(".//CX3CL1")
+
 library(elektroasia)
 library(xml2)
 library(pzfx)
+library(patchwork)
+library(magick)
 
 #### frak2nM CeA membrane properties####
 CeA_df_frak2nM<-readRDS(".//CeA//frak2nM//membrane_table_CeA.rds")
@@ -636,7 +633,49 @@ bartek_LTP <- read_pzfx("Amygdala_ltp_stst.pzfx", "LTP CTX")
 bartek_LTP <- as_tibble(bartek_LTP)
 bartek_LTP <- bartek_LTP %>% dplyr::rename("Time" = "Var.1")
 
+# excluding empty column
+bartek_LTP1 <- bartek_LTP %>% dplyr::select(-c('naive_12', 'naive_13', 'naive_14', 'naive_15', 'naive_16', 'naive_17', 'naive_18', 'naive_19', 'naive_20', 
+ 'fra 2nM_11', 'fra 2nM_12', 'fra 2nM_13', 'fra 2nM_14', 'fra 2nM_15', 'fra 2nM_16', 'fra 2nM_17', 'fra 2nM_18', 'fra 2nM_19', 'fra 2nM_20',
+ 'FRA 2 ADX 10uM_9','FRA 2 ADX 10uM_10','FRA 2 ADX 10uM_11', 'FRA 2 ADX 10uM_12', 'FRA 2 ADX 10uM_13', 'FRA 2 ADX 10uM_14', 'FRA 2 ADX 10uM_15', 'FRA 2 ADX 10uM_16', 'FRA 2 ADX 10uM_17', 'FRA 2 ADX 10uM_18', 'FRA 2 ADX 10uM_19', 'FRA 2 ADX 10uM_20'))
+
+#making plot for LTP for each individual cells
+max_col <- 2:ncol(bartek_LTP1) # vector for each cell (-Time)
+bartek_LTP1_long <- gather(bartek_LTP1, condition, Amplitude, 2:ncol(bartek_LTP1),factor_key=TRUE)
+bartek_LTP1_long <- bartek_LTP1_long %>% drop_na()
+LTP_for_each_cell <- bartek_LTP1_long %>% ggplot(aes(x = Time, y = Amplitude)) + geom_line() + facet_wrap(. ~ condition)
+
+#based on plot - excluded naive_3, naive_4, naive_9, frak2nM_3, 
+bartek_LTP1_exc <- bartek_LTP1 %>% dplyr::select(-c('naive_3',  'naive_4', 'naive_9', 'fra 2nM_3', 'FRA 2 ADX 10uM_5' ,'FRA 2 ADX 10uM_7'))
+bartek_LTP1_exc <- gather(bartek_LTP1_exc, condition, Amplitude, 2:ncol(bartek_LTP1_exc),factor_key=TRUE)
+bartek_LTP1_exc <- bartek_LTP1_exc %>% drop_na()
+bartek_LTP3 <- bartek_LTP1_exc %>% dplyr::select(Time, condition, Amplitude) %>% separate(condition, c("Condition", "Slice"), "_") 
+bartek_LTP3$Time <- as.factor(bartek_LTP3$Time)
+bartek_LTP3$Condition <- as.factor(bartek_LTP3$Condition)
+bartek_LTP3$Slice <- as.factor(bartek_LTP3$Slice)
+df_basic <- Rmisc::summarySE(bartek_LTP3 , measurevar="Amplitude", groupvars=c("Condition","Time"))
+df_basic <- as_tibble(df_basic)
+df_basic$Condition <- plyr::revalue(df_basic$Condition, c("naive" = "baseline","FRA 2 ADX 10uM"="AZD8797 + \nCX3CL1(2nM)", "fra 2nM" = "CX3CL1(2nM)"))
+df_basic$Time <-as.numeric(levels(df_basic$Time))[df_basic$Time]
+df_basic$Condition <- factor(df_basic$Condition, levels = c("baseline", "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)"))
+
+LTP_bartek_strict <- df_basic %>% ggplot(aes(x = Time, y= Amplitude, fill = Condition)) +
+  geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
+  geom_point(size = 3, pch = 21, alpha = 0.7) +
+  #geom_line() +
+  ylab("Amplitude (%)") +
+  xlab("Time (min)") +
+  scale_fill_aaas() +
+  theme_classic() +
+  geom_hline(yintercept = 100, lty = 'dashed') +
+  xlim(-15, 70) +
+  ylim(60, 160) +
+  ggtitle("LTP AMYGDALA") 
+
 bartek_LTP$Time <- as.factor(bartek_LTP$Time)
+
+#bartek_LTP1 <- bartek_LTP %>% dplyr::select(-c(naive_12, naive_13, naive_14, naive_15, naive_16, naive_17, naive_18, naive_19, naive_20))
+
+# all slices - LTP plot
 bartek_LTP<- gather(bartek_LTP, condition, Amplitude, naive_1:"FRA 2 ADX 10uM_8",factor_key=TRUE)
 bartek_LTP2 <- bartek_LTP %>% dplyr::select(Time, condition, Amplitude) %>% separate(condition, c("Condition", "Slice"), "_") #str_split_fixed(bartek_LTP2$condition, "_", 2)
 bartek_LTP2 <- drop_na(bartek_LTP2)
@@ -654,32 +693,45 @@ LTP_bartek <- df_basic %>% ggplot(aes(x = Time, y= Amplitude, fill = Condition))
   geom_point(size = 3, pch = 21, alpha = 0.7) +
   #geom_line() +
   ylab("Amplitude (%)") +
-  xlab("Time (min") +
+  xlab("Time (min)") +
   scale_fill_aaas() +
   theme_classic() +
   geom_hline(yintercept = 100, lty = 'dashed') +
   xlim(-15, 70) +
-  ylim(60, 160) +
-  ggtitle("LTP AMYGDALA") 
+  ylim(60, 160)
+#  ggtitle("LTP AMYGDALA") 
 
-LTP_bartek <- LTP_bartek + geom_segment((aes(y = 132, x = 62, yend = 107, xend = 62))) + geom_segment((aes(y = 132, x = 66, yend = 120, xend = 66))) + geom_segment((aes(y = 132, x = 61, yend = 132, xend = 62))) + geom_segment((aes(y = 132, x = 65, yend = 132, xend = 66))) + geom_segment((aes(y = 107, x = 61, yend = 107, xend = 62))) + geom_segment((aes(y = 120, x = 65, yend = 120, xend = 66))) + annotate("text", x = 63, y = 120, label = "*") + annotate("text", x = 67, y = 126, label = "*")
-   
+LTP_bartek <- LTP_bartek + geom_segment((aes(y = 132, x = 62, yend = 107, xend = 62))) + geom_segment((aes(y = 132, x = 66, yend = 120, xend = 66))) + geom_segment((aes(y = 132, x = 61, yend = 132, xend = 62))) + geom_segment((aes(y = 132, x = 65, yend = 132, xend = 66))) + geom_segment((aes(y = 107, x = 61, yend = 107, xend = 62))) + geom_segment((aes(y = 120, x = 65, yend = 120, xend = 66))) + annotate("text", x = 63, y = 120, label = "*") + annotate("text", x = 67, y = 126, label = "*") 
+
+# IV field potential 
 bartek_IV <- read_pzfx("Amygdala_ltp_stst.pzfx", "Iv CTX") 
 bartek_IV <- as_tibble(bartek_IV)
 bartek_IV <- bartek_IV %>% dplyr::rename("Stim" = "Var.1")
 bartek_IV$Stim <- as.factor(bartek_IV$Stim)
 bartek_IV2<- gather(bartek_IV, condition, Amplitude, "control _1":"ADX10 FRX2_20",factor_key=TRUE)
 bartek_IV2$condition <- gsub( " ", "", bartek_IV2$condition)
+
+#making plot for LTP for each individual cells
+bartek_IV1_long <- gather(bartek_IV, condition, Amplitude, 2:ncol(bartek_IV),factor_key=TRUE)
+bartek_IV1_long <- bartek_IV1_long %>% drop_na()
+IV_for_each_cell <- bartek_IV1_long %>% ggplot(aes(x = as.numeric(Stim), y = Amplitude)) + geom_line() + facet_wrap(. ~ condition)
+
 bartek_IV2 <- bartek_IV2 %>% dplyr::select(Stim, condition, Amplitude) %>% separate(condition, c("Condition", "Slice"), "_") #str_split_fixed(bartek_IV2$condition, "_", 2)
 bartek_IV2 <- drop_na(bartek_IV2)
 bartek_IV2$Stim <- as.factor(bartek_IV2$Stim)
 bartek_IV2$Condition <- as.factor(bartek_IV2$Condition)
 bartek_IV2$Slice <- as.factor(bartek_IV2$Slice)
+# bartek_IV2aa<- bartek_IV2 %>% dplyr::filter(Condition == 'control') %>% dplyr::mutate(Experiment = 'control')
+# bartek_IV2a<- bartek_IV2 %>% dplyr::filter(Condition == 'fraccontrol' | Condition =='frac2nM') %>% dplyr::mutate(Experiment = 'CX3CL1')
+# bartek_IV2b<- bartek_IV2 %>% dplyr::filter(Condition == 'ADXFRXcon' | Condition =='ADX10FRX2') %>% dplyr::mutate(Experiment = 'AZD8797 + \nCX3CL1')
+# bartek_IV2c<- bartek_IV2 %>% dplyr::filter(Condition == 'ADX10uM' | Condition =='ADXcontrol') %>% dplyr::mutate(Experiment = 'AZD8797')
+# bartek_IV2 <- bartek_IV2a %>% dplyr::bind_rows(bartek_IV2b) %>% dplyr::bind_rows(bartek_IV2c) %>% dplyr::bind_rows(bartek_IV2aa)
 bartek_IV2$Condition <- plyr::revalue(bartek_IV2$Condition, c("ADXcontrol"="baseline", "fraccontrol" = "baseline", "ADXFRXcon" = "baseline", "ADX10uM" = "AZD8797", "frac2nM" = "CX3CL1(2nM)", "ADX10FRX2" = "AZD8797 + \nCX3CL1(2nM)", "control" = "baseline"))
-df_basic <- Rmisc::summarySE(bartek_IV2 , measurevar="Amplitude", groupvars=c("Condition","Stim"))
+df_basic <- Rmisc::summarySE(bartek_IV2 , measurevar="Amplitude", groupvars=c("Condition","Stim")) # "Experiment"
 df_basic <- as_tibble(df_basic)
 df_basic$Stim <-as.numeric(levels(df_basic$Stim))[df_basic$Stim]
 df_basic$Condition <- factor(df_basic$Condition, levels = c("baseline",  "CX3CL1(2nM)", "AZD8797", "AZD8797 + \nCX3CL1(2nM)"))
+#df_basic$Experiment <- factor(df_basic$Experiment, levels = c("control", "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)",  "AZD8797"))
 
 IV_bartek <- df_basic %>% group_by(Condition) %>% ggplot(aes(x = Stim, y= Amplitude, fill = Condition)) +
   geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
@@ -688,21 +740,28 @@ IV_bartek <- df_basic %>% group_by(Condition) %>% ggplot(aes(x = Stim, y= Amplit
   ylab("Amplitude (mV)") +
   xlab("Stimulus Strength (uA)") +
   scale_fill_aaas() +
-  theme_classic() +
-  ggtitle("IV - field potentials")
+  theme_classic() 
+#  ggtitle("Field potentials - \na stimulus–response curve")
+
 bartek_pp <- read_pzfx("Amygdala_ltp_stst.pzfx", "pp CTX")
 bartek_pp <- as_tibble(bartek_pp)
 bartek_pp <- bartek_pp %>% mutate(ID = 1:nrow(bartek_pp))
 bartek_pp2<- gather(bartek_pp, condition, val, "naive pre":"ADX 10 FRC 2 post",factor_key=TRUE, -ID)
+bartek_pp2 <- drop_na(bartek_pp2)
 bartek_pp2$condition <- gsub(" pre", "_pre", bartek_pp2$condition)
 bartek_pp2$condition <- gsub(" post", "_post", bartek_pp2$condition)
-
 bartek_pp2 <- bartek_pp2 %>% separate(condition, c("Condition", "Ratio"), "_") #str_split_fixed(bartek_pp2$condition, "_", 2)
-bartek_pp2 <- drop_na(bartek_pp2)
 bartek_pp2$Condition <- as.factor(bartek_pp2$Condition)
 
-bartek_pp2$Condition <- plyr::revalue(bartek_pp2$Condition, c("naive"="control","ADX 10 FRC 2"="AZD8797 + \nCX3CL1(2nM)", "adx 10uM" = "AZD8797 + \nCX3CL1(2nM)", "ADX 10um" = "AZD8797 + \nCX3CL1(2nM)" ,"fra con" = "control", "adx control" = "control",  "fra 2nM" = "CX3CL1(2nM)", "ADX FRC control" = "control"))
-bartek_pp2$Condition <- factor(bartek_pp2$Condition, levels = c("control", "CX3CL1(2nM)", "AZD8797", "AZD8797 + \nCX3CL1(2nM)"))
+# bartek_pp2aa<- bartek_pp2 %>% dplyr::filter(Condition == 'naive') %>% dplyr::mutate(Experiment = 'control')
+# bartek_pp2a<- bartek_pp2 %>% dplyr::filter(Condition == 'fra con' | Condition =='fra 2nM') %>% dplyr::mutate(Experiment = 'CX3CL1')
+# bartek_pp2b<- bartek_pp2 %>% dplyr::filter(Condition == 'ADX 10 FRC 2' | Condition =='ADX FRC control') %>% dplyr::mutate(Experiment = 'AZD8797 + \nCX3CL1')
+# bartek_pp2c<- bartek_pp2 %>% dplyr::filter(Condition == 'adx 10uM' | Condition =='ADX 10um' | Condition == 'adx control') %>% dplyr::mutate(Experiment = 'AZD8797')
+# bartek_pp2 <- bartek_pp2a %>% dplyr::bind_rows(bartek_pp2b) %>% dplyr::bind_rows(bartek_pp2c)
+
+bartek_pp2$Condition <- plyr::revalue(bartek_pp2$Condition, c("naive"="baseline","ADX 10 FRC 2"="AZD8797 + \nCX3CL1(2nM)", "adx 10uM" = "AZD8797", "ADX 10um" = "AZD8797" ,"fra con" = "baseline", "adx control" = "baseline",  "fra 2nM" = "CX3CL1(2nM)", "ADX FRC control" = "baseline"))
+bartek_pp2$Condition <- factor(bartek_pp2$Condition, levels = c("baseline", "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)",  "AZD8797"))
+#bartek_pp2$Experiment <- factor(bartek_pp2$Experiment, levels = c("control", "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)",  "AZD8797"))
 bartek_pp3 <- bartek_pp2 %>% arrange(ID, Condition) %>% mutate(Slice = rep(1:(nrow(bartek_pp2)/2), each = 2)) %>% dplyr::select(-ID)
 bartek_pp3 <- bartek_pp3 %>% dplyr::select(Condition, Slice, everything())
 bartek_pp3$Ratio <- factor(bartek_pp3$Ratio, levels = c("pre", "post"))
@@ -716,7 +775,7 @@ pp_bartek_1 <- bartek_pp5 %>% ggplot(aes(x = Condition, y = Ratio, color = Condi
   ylim(90,140) +
   scale_color_aaas() +
   theme_classic() +
-  ggtitle('Paired-pulse ratio') +
+ # ggtitle('Paired-pulse ratio') +
   geom_hline(yintercept = 100, lty = 'dashed') 
 
 
@@ -727,7 +786,7 @@ pp_bartek_2 <- bartek_pp3 %>% ggplot(aes(x = Ratio, y = val, color = Ratio)) +
   ylab("Amplitude (mV)") +
   scale_color_aaas() +
   theme_classic() +
-  ggtitle('Paired-pulses') +
+#  ggtitle('Paired-pulses') +
   facet_wrap(~ Condition, ncol = 4)
 
 ```

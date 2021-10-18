@@ -100,7 +100,15 @@ inset_minoa <- image_read("images//results//inset_minoa.png")
 inset_minoa <- image_ggplot(inset_minoa)
 inset_gaba <- image_read("images//results//inset_gaba.png")
 inset_gaba <- image_ggplot(inset_gaba)
-# 
+
+IV_representative_frak2nM <- image_read("images//results//IV_representative_frak2nM.png")
+IV_representative_frak2nM <- image_ggplot(IV_representative_frak2nM)
+IV_representative_azdfrak2nM <- image_read("images//results//IV_representative_azdfrak2nM.png")
+IV_representative_azdfrak2nM <- image_ggplot(IV_representative_azdfrak2nM)
+IV_representative_gabafrak2nM <- image_read("images//results//IV_representative_gabafrak2nM.png")
+IV_representative_gabafrak2nM <- image_ggplot(IV_representative_gabafrak2nM)
+IV_representative_minofrak2nM <- image_read("images//results//IV_representative_minofrak2nM.png")
+IV_representative_minofrak2nM <- image_ggplot(IV_representative_minofrak2nM)
 # making labels (as minocycline and azd has different condition than CX3CL1) for then making proper automatic statistics
 f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
 f_labels_BLA_thres$Experiment <- factor(f_labels_BLA_thres$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
@@ -440,41 +448,25 @@ We assessed long-term potentiation (LTP) in the ventral external capsule– BLA 
 Indeed, LTP was impaired after CX3CL1 treatment, confirming the... <!--functionality of the manipulation-->.
 
 
-```{r CX3CL1BLALTP, fig.cap='**CX3CL1 reduces the long-term potentiation** **a** **b** Representative fEPSC traces prior to TBS (blue) and after TBS (red) **c** Graph showing the time course and quantification of fEPSC evoked in the BLA and the LTP induced after a TBS (arrow) in presence or absence of 2nM CX3CL1 in the bath or 2nM CX3CL1 with additional AZD8797 (10uM) in the bath. fEPSC amplitudes are represented as a percentage of baseline.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 12, fig.width= 8}
+```{r CX3CL1BLALTP, fig.cap='**CX3CL1 reduces the long-term potentiation** **a** **b** **c** Graph showing the time course and quantification of fEPSC evoked in the BLA and the LTP induced after a TBS (arrow) in presence or absence of 2nM CX3CL1 in the bath or 2nM CX3CL1 with additional AZD8797 (10uM) in the bath. fEPSC amplitudes are represented as a percentage of baseline. Insets - representative fEPSC traces prior to TBS (blue) and after TBS (red)', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 12, fig.width= 10}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
 a <- LTP_bartek
+a <- a +  geom_segment((aes(y = 60, x = 0, yend = 70, xend = 0)), arrow = arrow(length=unit(0.3, "cm"),  type="closed")) # added arrow!!!
 
-test <- a + 
-  annotate("segment", x=1, y=-10, xend=1, yend=0,
-               col="black", arrow=arrow(length=unit(0.3, "cm"),  type="closed")) +
-  annotate("segment", x=-1, y=-10, xend=-1, yend=0,
-               col="black", arrow=arrow(length=unit(0.3, "cm"), type = "closed")) +
-  scale_y_continuous(expand=c(0,0))+ 
- # scale_y_break(c(0.1, 60), scales = c(NULL, 10)) +
-  coord_cartesian(ylim = c(0, 160), clip="off")
-#+
-  #theme(plot.margin = unit(c(1,1,1,0), "lines"))
+b <- IV_bartek + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))#+ facet_wrap(. ~ Experiment)
+c <- pp_bartek_1 + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ facet_wrap(. ~ Experiment)
 
-test <- a +  geom_segment(
-  aes(x = 0, y = 22, xend = 3.5, yend = 15),
-  arrow = arrow(
-    length = unit(0.03, "npc"), 
-                type="closed" # Describes arrow head (open or closed)
-    ))
-
-b <- IV_bartek
-c <- pp_bartek_1
-
-figure1a <- ggarrange(ggarrange(b, c, nrow = 1),
-                    ggarrange(a, nrow = 1), nrow = 2)
+#figure1a <- ggarrange(ggarrange(b, c, nrow = 1),
+#                    ggarrange(a, nrow = 1), nrow = 2)
 
 figure1 <- (b | c ) /
               a
-figure1
+figure1 + plot_annotation(tag_levels = c('a'))
 
-figure1a
+figure1
+#figure1a
 ```
 
 <!-- FIGURE 5 | Microglia are essential for long-term depression and fractalkine restores corticostriatal synaptic plasticity in 12-week-old R6/1 mice. (A) Drawing of a mouse brain sagittal section showing the location of stimulating and recording electrodes for corticostriatal fPSC recordings (adapted from Paxinos Mouse Brain Atlas). (B) Schematic of the TBS paradigm for LTD induction. A single train of stimuli is illustrated in brackets and annotated to show the stimuli number and frequency, as well as the time scale. (C) Representative fPSC traces prior to TBS (pre-TBS, black) and after TBS (post-TBS, blue) in the six conditions of electrophysiological recordings. (D) Histograms show the quantification of fPSC amplitude in the striatum of WT and R6/1 mice relative to WT (n = 10 male mice/group), and in the presence of either 100 mM minocycline (Mino; n = 5 male mice/group) in the bath or 2 nM fractalkine (FKN; n = 5 male mice/group) in the bath, relative to absence in the bath (Ctrl). fPSC amplitude was calculated as the mean of 30 different fPSC evoked every 30 s during 15 min prior to TBS. One-factor ANOVA test; * p < 0.05 different from WT (E,F) Graphs show the time course and quantification of fPSC evoked at corticostriatal synapses and the LTD induced after a TBS (arrow) in presence or absence of either (E) 100 mM Mino in the bath (n = 5 male mice/group) or (F) 2 nM FKN in the bath (n = 5 male mice/group). fPSC amplitudes are represented as a percentage of baseline. Histograms show the mean amplitude of fPSC evoked at 29–30 min after TBS. Bonferroni’s Multiple Comparison post hoc test; * p < 0.05, **p < 0.01, different from WT-Ctrl; # p < 0.05 different from R6/1-Ctrl. -->

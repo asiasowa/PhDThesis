@@ -31,7 +31,7 @@ library(tidyverse)
 # knitr::opts_chunk$set(echo = TRUE)
 
 knitr::opts_chunk$set(fig.pos = 'H')
-options(gt.html_tag_check = FALSE) #but if <br> in tables in latex then remove this output
+options(gt.html_tag_check = FALSE, scipen = 999) #but if <br> in tables in latex then remove this output
 #knitr::opts_chunk$set(echo = params$printcode)
 ```
 

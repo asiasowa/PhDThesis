@@ -461,9 +461,9 @@ c <- pp_bartek_1 + theme(plot.title = element_text(size= 16, face="bold"), axis.
 #figure1a <- ggarrange(ggarrange(b, c, nrow = 1),
 #                    ggarrange(a, nrow = 1), nrow = 2)
 
-figure1 <- (b | c ) /
-              a
-figure1 + plot_annotation(tag_levels = c('a'))
+figure1 <- ((b | c ) / a) +  
+  plot_annotation(tag_levels = 'a')
+
 
 figure1
 #figure1a

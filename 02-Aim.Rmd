@@ -721,17 +721,29 @@ bartek_IV2 <- drop_na(bartek_IV2)
 bartek_IV2$Stim <- as.factor(bartek_IV2$Stim)
 bartek_IV2$Condition <- as.factor(bartek_IV2$Condition)
 bartek_IV2$Slice <- as.factor(bartek_IV2$Slice)
-# bartek_IV2aa<- bartek_IV2 %>% dplyr::filter(Condition == 'control') %>% dplyr::mutate(Experiment = 'control')
-# bartek_IV2a<- bartek_IV2 %>% dplyr::filter(Condition == 'fraccontrol' | Condition =='frac2nM') %>% dplyr::mutate(Experiment = 'CX3CL1')
-# bartek_IV2b<- bartek_IV2 %>% dplyr::filter(Condition == 'ADXFRXcon' | Condition =='ADX10FRX2') %>% dplyr::mutate(Experiment = 'AZD8797 + \nCX3CL1')
-# bartek_IV2c<- bartek_IV2 %>% dplyr::filter(Condition == 'ADX10uM' | Condition =='ADXcontrol') %>% dplyr::mutate(Experiment = 'AZD8797')
-# bartek_IV2 <- bartek_IV2a %>% dplyr::bind_rows(bartek_IV2b) %>% dplyr::bind_rows(bartek_IV2c) %>% dplyr::bind_rows(bartek_IV2aa)
+bartek_IV2aa<- bartek_IV2 %>% dplyr::filter(Condition == 'control') %>% dplyr::mutate(Experiment = 'baseline')
+bartek_IV2a<- bartek_IV2 %>% dplyr::filter(Condition == 'fraccontrol' | Condition =='frac2nM') %>% dplyr::mutate(Experiment = 'CX3CL1')
+bartek_IV2b<- bartek_IV2 %>% dplyr::filter(Condition == 'ADXFRXcon' | Condition =='ADX10FRX2') %>% dplyr::mutate(Experiment = 'AZD8797 + \nCX3CL1')
+bartek_IV2c<- bartek_IV2 %>% dplyr::filter(Condition == 'ADX10uM' | Condition =='ADXcontrol') %>% dplyr::mutate(Experiment = 'AZD8797')
+
 bartek_IV2$Condition <- plyr::revalue(bartek_IV2$Condition, c("ADXcontrol"="baseline", "fraccontrol" = "baseline", "ADXFRXcon" = "baseline", "ADX10uM" = "AZD8797", "frac2nM" = "CX3CL1(2nM)", "ADX10FRX2" = "AZD8797 + \nCX3CL1(2nM)", "control" = "baseline"))
 df_basic <- Rmisc::summarySE(bartek_IV2 , measurevar="Amplitude", groupvars=c("Condition","Stim")) # "Experiment"
 df_basic <- as_tibble(df_basic)
 df_basic$Stim <-as.numeric(levels(df_basic$Stim))[df_basic$Stim]
-df_basic$Condition <- factor(df_basic$Condition, levels = c("baseline",  "CX3CL1(2nM)", "AZD8797", "AZD8797 + \nCX3CL1(2nM)"))
+df_basic$Condition <- factor(df_basic$Condition, levels = c("baseline",  "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "AZD8797"))
 #df_basic$Experiment <- factor(df_basic$Experiment, levels = c("control", "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)",  "AZD8797"))
+
+bartek_IV99 <- bartek_IV2a %>% dplyr::bind_rows(bartek_IV2b) %>% dplyr::bind_rows(bartek_IV2c)
+bartek_IV99$Condition <- plyr::revalue(bartek_IV99$Condition, c("ADXcontrol"="baseline", "fraccontrol" = "baseline", "ADXFRXcon" = "baseline", "ADX10uM" = "AZD8797", "frac2nM" = "CX3CL1(2nM)", "ADX10FRX2" = "AZD8797 + \nCX3CL1(2nM)", "control" = "baseline"))
+df_basic99 <- Rmisc::summarySE(bartek_IV99 , measurevar="Amplitude", groupvars=c("Condition","Stim", "Experiment")) # "Experiment"
+df_basic99 <- df_basic99 %>% dplyr::select(Experiment, Condition, Stim, everything()) %>% arrange(Experiment, Condition, Stim)
+df_basic99 <- df_basic99 %>% drop_na()
+df_basic99 <- as_tibble(df_basic99)
+df_basic99$Stim <-as.numeric(levels(df_basic99$Stim))[df_basic99$Stim]
+df_basic99$Condition <- factor(df_basic99$Condition, levels = c("baseline",  "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "AZD8797"))
+df_basic99$Experiment <- as.factor(df_basic99$Experiment)
+#df_basic99$Experiment <- factor(df_basic99$Experiment, levels = c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "AZD8797"))
+
 
 IV_bartek <- df_basic %>% group_by(Condition) %>% ggplot(aes(x = Stim, y= Amplitude, fill = Condition)) +
   geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
@@ -743,6 +755,17 @@ IV_bartek <- df_basic %>% group_by(Condition) %>% ggplot(aes(x = Stim, y= Amplit
   theme_classic() 
 #  ggtitle("Field potentials - \na stimulus–response curve")
 
+IV_bartek_99 <- df_basic99 %>% group_by(Condition) %>% ggplot(aes(x = Stim, y= Amplitude, fill = Condition)) +
+  geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
+  geom_point(size = 3, pch = 21, alpha = 0.7) +
+  #geom_line() +
+  ylab("Amplitude (mV)") +
+  xlab("Stimulus Strength (uA)") +
+  scale_fill_aaas() +
+  theme_classic()  +
+  facet_wrap(. ~ Experiment)
+
+
 bartek_pp <- read_pzfx("Amygdala_ltp_stst.pzfx", "pp CTX")
 bartek_pp <- as_tibble(bartek_pp)
 bartek_pp <- bartek_pp %>% mutate(ID = 1:nrow(bartek_pp))
@@ -753,11 +776,23 @@ bartek_pp2$condition <- gsub(" post", "_post", bartek_pp2$condition)
 bartek_pp2 <- bartek_pp2 %>% separate(condition, c("Condition", "Ratio"), "_") #str_split_fixed(bartek_pp2$condition, "_", 2)
 bartek_pp2$Condition <- as.factor(bartek_pp2$Condition)
 
-# bartek_pp2aa<- bartek_pp2 %>% dplyr::filter(Condition == 'naive') %>% dplyr::mutate(Experiment = 'control')
-# bartek_pp2a<- bartek_pp2 %>% dplyr::filter(Condition == 'fra con' | Condition =='fra 2nM') %>% dplyr::mutate(Experiment = 'CX3CL1')
-# bartek_pp2b<- bartek_pp2 %>% dplyr::filter(Condition == 'ADX 10 FRC 2' | Condition =='ADX FRC control') %>% dplyr::mutate(Experiment = 'AZD8797 + \nCX3CL1')
-# bartek_pp2c<- bartek_pp2 %>% dplyr::filter(Condition == 'adx 10uM' | Condition =='ADX 10um' | Condition == 'adx control') %>% dplyr::mutate(Experiment = 'AZD8797')
-# bartek_pp2 <- bartek_pp2a %>% dplyr::bind_rows(bartek_pp2b) %>% dplyr::bind_rows(bartek_pp2c)
+bartek_pp2aa<- bartek_pp2 %>% dplyr::filter(Condition == 'naive') %>% dplyr::mutate(Experiment = 'control')
+bartek_pp2a<- bartek_pp2 %>% dplyr::filter(Condition == 'fra con' | Condition =='fra 2nM') %>% dplyr::mutate(Experiment = 'CX3CL1')
+bartek_pp2b<- bartek_pp2 %>% dplyr::filter(Condition == 'ADX 10 FRC 2' | Condition =='ADX FRC control') %>% dplyr::mutate(Experiment = 'AZD8797 + \nCX3CL1')
+bartek_pp2c<- bartek_pp2 %>% dplyr::filter(Condition == 'adx 10uM' | Condition =='ADX 10um' | Condition == 'adx control') %>% dplyr::mutate(Experiment = 'AZD8797')
+bartek_pp99 <- bartek_pp2a %>% dplyr::bind_rows(bartek_pp2b) %>% dplyr::bind_rows(bartek_pp2c)
+
+bartek_pp99$Condition <- plyr::revalue(bartek_pp99$Condition, c("naive"="baseline","ADX 10 FRC 2"="AZD8797 + \nCX3CL1(2nM)", "adx 10uM" = "AZD8797", "ADX 10um" = "AZD8797" ,"fra con" = "baseline", "adx control" = "baseline",  "fra 2nM" = "CX3CL1(2nM)", "ADX FRC control" = "baseline"))
+bartek_pp99$Condition <- factor(bartek_pp99$Condition, levels = c("baseline", "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)",  "AZD8797"))
+#bartek_pp99$Experiment <- factor(bartek_pp99$Experiment, levels = c("control", "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)",  "AZD8797"))
+bartek_pp991 <- bartek_pp99 %>% arrange(ID, Condition) %>% mutate(Slice = rep(1:(nrow(bartek_pp99)/2), each = 2)) %>% dplyr::select(-ID)
+bartek_pp991 <- bartek_pp991 %>% dplyr::select(Condition, Slice, everything())
+bartek_pp991$Ratio <- factor(bartek_pp991$Ratio, levels = c("pre", "post"))
+bartek_pp992 <- bartek_pp991 %>% tidyr::spread(Ratio, val)
+bartek_pp993 <- bartek_pp992 %>% mutate(Ratio = (post/pre)*100)
+bartek_pp993 <- bartek_pp993 %>% dplyr::select(Experiment, Condition, Slice, pre, post, everything()) %>% arrange(Experiment, Condition, Slice)
+bartek_pp993$Experiment <- as.factor(bartek_pp993$Experiment)
+bartek_pp993$Condition <- as.factor(bartek_pp993$Experiment)
 
 bartek_pp2$Condition <- plyr::revalue(bartek_pp2$Condition, c("naive"="baseline","ADX 10 FRC 2"="AZD8797 + \nCX3CL1(2nM)", "adx 10uM" = "AZD8797", "ADX 10um" = "AZD8797" ,"fra con" = "baseline", "adx control" = "baseline",  "fra 2nM" = "CX3CL1(2nM)", "ADX FRC control" = "baseline"))
 bartek_pp2$Condition <- factor(bartek_pp2$Condition, levels = c("baseline", "CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)",  "AZD8797"))
@@ -777,6 +812,17 @@ pp_bartek_1 <- bartek_pp5 %>% ggplot(aes(x = Condition, y = Ratio, color = Condi
   theme_classic() +
  # ggtitle('Paired-pulse ratio') +
   geom_hline(yintercept = 100, lty = 'dashed') 
+
+pp_bartek_99 <- bartek_pp993 %>% ggplot(aes(x = Condition, y = Ratio, color = Condition)) +
+  geom_boxplot(width = 0.5) +
+  geom_jitter(size = 4, alpha = 0.7, width = 0.1, height = 0) +
+  ylab("Paired-pulse ratio (%)") +
+  ylim(90,140) +
+  scale_color_aaas() +
+  theme_classic() +
+ # ggtitle('Paired-pulse ratio') +
+  geom_hline(yintercept = 100, lty = 'dashed') +
+  facet_wrap(. ~ Experiment)
 
 
 pp_bartek_2 <- bartek_pp3 %>% ggplot(aes(x = Ratio, y = val, color = Ratio)) +

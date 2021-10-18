@@ -142,6 +142,16 @@ Adenosine exerts two parallel modulatory roles in the CNS, acting as a homeostat
 The deficiency in microglial CX3CR1 can cause communication defects among neurons, microglia  and astrocytes during numerous c NS diseases or even injuries (Sungho_2010).  The deficiency in microglial CX3CR1 can cause communication defects among neurons, microglia  and astrocytes during numerous c NS diseases or even injuries (Sungho_2010). In addition, c X3cL1 activation is correlated with the specific type of neuropathic pain induced by multiple sclerosis  through interaction with cX3cR1 (Zhu_2013). Moreover, the levels of cX3cL1 are potentially regulated by diverse neurotoxic stimuli and its signaling is correlated with several types of  cNS diseases, including HIV infection, epilepsy, and cerebral tumors among other neuropathologies (limatola_2014) [@chen_2020]
 
  Notably, previous studies demonstrated that  in vitro lipopolysaccharide- and interferon γ-induced release of multiple cytokines (i.e., IL-1β, TNFα, and IL-6) in cultured microglia can be effectively suppressed through the activity  of cX3cL1 signaling. This suggests that cX3cL1/cX3cR1  signaling is vital in modulating upstream production and  cytokine release from microglia (limatola_2014), thereby contributing to  the feedback loop as well. By inhibiting the cx3cl1/cX3cR1  pathway, AZd8797 can suppress the role of microglia and astrocytes, thus preventing the development of the inflammatory response (biber_2014, kasama_2010). The present study shows that blocking  the cX3cR1 signaling with AZd8797 results in, not only a more effectively reduced concentration of the inflammatory  cytokine, I L-1β (which is associated with a better recovery after injury), but also lower apoptosis and necrosis levels when  compared to methylprednisolone treatment.
+ 
+#### LTP in the amygdala
+
+Since the LA does not have a clear architecture like the hippocampus and TBS only induces a weak LA-LTP (Drephal, Schubert, & Albrecht, 2006), we adjusted the stimulus to elicit a field potential at 50% of the maximal response and used high frequency stimulation (HFS, 2 × 100 Hz, duration 1 s, 30 s apart) to induce LA-LTP in most cases. [@]
+
+It should be noted that in this study, to induce the long-term potentiation, the TBS was used. 
+Often, in the amygdala, as it is a non-laminated structure, the high-frequency stimulation is used instead of TBS. <!-- the protocol 2a). In a next step, we investigated whether the insignificant reduction of LA-LTP induced by HFS observed in slices derived from TPH2− / −mice can be also demonstrated as a modulation of the response to a threshold level of stimulation (TBS), in comparison with the more extensive, supra-threshold stimulation induced by HFS usually used in this non-laminated structure. -->
+However, it is more extensive and supra-threshold, thus here the more physiological stimulation was used. 
+However, it was documented that this two approaches can led to different results in the BLA [].
+Since CX3CL1 is hypothetized to be neuroprotective and reduces the NMDA- and Glu-induced neurotoxity, it is possible that HFS would lead ... 
 
 #### CX3CL1 and GABA A and extinction
 

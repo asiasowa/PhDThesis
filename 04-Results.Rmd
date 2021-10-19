@@ -78,12 +78,11 @@ Finally, since the activity of principal cells in the BLA is well-known to be ti
 As expected, the CX3CL1 effect was fully abolished when the GABAergic receptors were blocked (baseline = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)`, CX3CL1 (2nM) = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, n = `r BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_df_final %>% dplyr::filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_gabafrak2nM_BLA_stat_tres`, Fig. \@ref(fig:CX3CL1BLAexcitabilityfrak)).
 Thus, these data suggest that CX3CL1 reduces principal cells' activity *via* CX3CR1-, microglia-, and interneuron-dependent manner.
 
-```{r CX3CL1BLAexcitabilityfrak, fig.cap='**Effects of CX3CL1 on threshold current** **a** Schematics of presented conditions **b** Boxplots presenting each cell before and after CX3CL1 application in each condition **c** Pie charts presenting how cells reacted to CX3CL1 **d** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the five conditions of electrophysiological recordings. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 16}
+```{r CX3CL1BLAexcitabilityfrak, fig.cap='**Effects of CX3CL1 on threshold current** **a** Schematics of presented conditions **b** Boxplots presenting each cell before and after CX3CL1 application in each condition **c** Pie charts presenting how cells reacted to CX3CL1 **d** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the five conditions of electrophysiological recordings. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 18}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
-library(magick)
-library(patchwork)
+
 inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
 inset_frak2nM <- image_ggplot(inset_frak2nM)
 inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
@@ -170,46 +169,35 @@ figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative
 figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_minofrak2nM | inset_gaba)  + plot_layout(tag_level = 'new')) /
  (bp_BLA_thres + theme(legend.position = "none"))  /
   (((pie_BLA_frak_thres | pie_BLA_frak5nM_thres | pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_minofrak_thres | pie_BLA_picro_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) / 
-  ((((representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM) + plot_layout(tag_level = 'new')) +   plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "right"))
- 
+  (((((representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM) + plot_layout(tag_level = 'new')) +   plot_layout(tag_level = 'new')) + plot_layout(guides = "collect") & theme(legend.position = "right")))  +
+    (IV_representative_frak2nM | IV_representative_azdfrak2nM | IV_representative_minofrak2nM | IV_representative_gabafrak2nM)
+
 
 figure1 <- figure1 + 
-  plot_annotation(tag_levels = c('a', '1')) + plot_layout(heights = c(0.5, 1, 1, 1))
-
-# heights = c(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-# png(filename="figure1.png")
-# figure1
-# dev.off()
-  
+  plot_annotation(tag_levels = c('a', '1')) + plot_layout(heights = c(0.3, 0.7, 1, 0.5, 1))
 
 figure1
 
+ 
 ```
 
 <!-- (C) Representative fPSC traces prior to TBS (pre-TBS, black) and after TBS (post-TBS, blue) in the six conditions of electrophysiological recordings.-->
 
 
-```{r CX3CL1BLAexcitabilityadd, fig.cap='**Effects of AZD8797 and minocycline on PCs excitability** **a** Schematics of presented conditions **b** Boxplots presenting group of cells before and after AZD8797 or minocycline treatment **c** Pie charts presenting how cells reacted to those drugs **d** plots presenting input-output relationships of representative cells **e** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 5, fig.height= 9}
+```{r CX3CL1BLAexcitabilityadd, fig.cap='**Effects of AZD8797 and minocycline on PCs excitability** **a** Schematics of presented conditions **b** Boxplots presenting group of cells before and after AZD8797 or minocycline treatment **c** Pie charts presenting how cells reacted to those drugs **d** plots presenting input-output relationships of representative cells **e** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 9}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
-library(magick)
-library(patchwork)
-inset_frak2nM <- image_read("images//results//inset_frak2nM.svg")
-inset_frak2nM <- image_ggplot(inset_frak2nM)
-inset_frak5nM <- image_read("images//results//inset_frak5nM.svg")
-inset_frak5nM <- image_ggplot(inset_frak5nM)
-inset_ab <- image_read("images//results//inset_ab.svg")
-inset_ab <- image_ggplot(inset_ab)
-inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.svg")
-inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
-inset_azda <- image_read("images//results//inset_azd.svg")
+
+inset_azda <- image_read("images//results//inset_azd.png")
 inset_azda <- image_ggplot(inset_azda)
-inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.svg")
-inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
-inset_minoa <- image_read("images//results//inset_minoa.svg")
+inset_minoa <- image_read("images//results//inset_minoa.png")
 inset_minoa <- image_ggplot(inset_minoa)
-inset_gaba <- image_read("images//results//inset_gaba.svg")
-inset_gaba <- image_ggplot(inset_gaba)
+
+# representative traces
+IV_representative_minoa <- image_read("images//results//IV_representative_minoa.png")
+IV_representative_minoa <- image_ggplot(IV_representative_minoa)
+IV_representative_azda <- image_read("images//results//IV_representative_azda.png")
+IV_representative_azda <- image_ggplot(IV_representative_azda)
 
 #image_scale(image, "200"): resize proportionally to width: 200px
 #image_scale(image, "x200"): resize proportionally to height: 200px
@@ -227,7 +215,7 @@ BLA_df_frak_add <- BLA_df_final %>% dplyr::filter(Experiment %in% c("AZD8797", '
 
 # # making boxplot
 bp_BLA_thres <- plot_boxplot(BLA_df_frak_add, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "", vary1 = -55, vary2 = -20, dot_size = 2)
-bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 2, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), #facet_wrap opitions
  plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.y = -25, label.x.npc = 'center', size = 10, face = "bold", comparisons =  my_comparisons) + geom_text(x = 1.5, y = -25, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres_add, size= 10, face = 'bold') #annotate("text", x = 1.5, y = -20, facet = 6, label = "*")
 #
@@ -251,16 +239,32 @@ representative_minoa_IV <- minoa_IV_subset %>% plot_IV_individual(mtitle = "") +
 
 #using patchwork to do layout of the figure
 
-figure1 <-  (( inset_azda | inset_minoa)  + plot_layout(tag_level = 'new')) / # loading insets with new level e.g. 1a 1b etc
- (bp_BLA_thres + theme(legend.position = "none"))  / # raw with boxplots
-  (((pie_BLA_azd_thres | pie_BLA_mino_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /  # raw with pie charts with common legends and 3a 3b 3c 
-  ((representative_azda_IV  | representative_minoa_IV ) + plot_layout(tag_level = 'new')) # raw with individual IVs
- 
+# wersja z pie chart jako kolumna
+# figure1 <- bp_BLA_thres | ((pie_BLA_azd_thres / pie_BLA_mino_thres) + plot_layout(guides = 'collect')) | (representative_azda_IV / representative_minoa_IV) | (IV_representative_azda / IV_representative_minoa)
+
+# wersja z pie chart jako inset
+figure1 <- bp_BLA_thres + inset_element((pie_BLA_azd_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.7, right = 1, top = 1, ignore_tag = TRUE, align_to = 'full') + inset_element((pie_BLA_mino_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.2, right = 1, top = 0.5, ignore_tag = TRUE, align_to = 'full')  |  (((representative_azda_IV / representative_minoa_IV))+ plot_layout(tag_level = 'new')) | ((IV_representative_azda / IV_representative_minoa) + plot_layout(tag_level = 'new')) 
 
 figure1 <- figure1 + 
-  plot_annotation(tag_levels = c('a', '1'))# + plot_layout(heights = c(1, 2, 1, 1))
+  plot_annotation(tag_levels = c('a', '1'))
 
 figure1
+# nie wiem co z insetami inset_azda | inset_minoa
+# plot levels + plot_layout(tag_level = 'new')
+# pie plots jako insety
+
+# wersja z pie chart jako inset2 
+figure1 <- (bp_BLA_thres + inset_element((pie_BLA_azd_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.7, right = 1, top = 1, align_to = 'full') + inset_element((pie_BLA_mino_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.2, right = 1, top = 0.5, align_to = 'full')) | 
+(representative_azda_IV | IV_representative_azda) / 
+(representative_minoa_IV | IV_representative_minoa) 
+
+
+figure1 + plot_annotation(tag_levels = c('a'))
+
+figure1
+
+  
+# wrap_plots(A = inset_azda, B = inset_minoa, C = bp_BLA_thres, D= representative_azda_IV, E= IV_representative_azda, F= pie_BLA_azd_thres, G= pie_BLA_mino_thres, H= IV_representative_minoa, I= representative_minoa_IV, design = layout)  #+ plot_layout(tag_level = 'new')) +  # raw with individual IVs
 ```
 
 #### CX3CL1 decreases inhibitory synaptic transmission
@@ -442,7 +446,7 @@ Notably, upon application of TBS<!--Theta Burst Stimulation-->, external capsule
 Together, these findings demonstrate an <!--specific--> impairment of BLA synaptic plasticity to external capsule inputs after CX3CL1 treatment.<!-- of external capsule inputs to LA/BLA.-->
 Considering that dendritic spines are <!--involved in late phase LTP in the LA (Huang & Kandel, 2007)--> , our next goal was to examine whether CX3CL1 affects dendrites morphology in the amygdala.
 
-//////
+//////////
 The observed in this study reduced PCs' excitability, together with a decrease in GABAergic drive, was ...
 As many reports indicated the effect of CX3CL1 on the LTP<!-- citations -->, together with accumulating evidence concerning the relevance of interneurons in this process in the BLA <!-- citations -->, ... <!-- dokończyć-->.
 
@@ -472,8 +476,8 @@ figure1
 
 ### figures of PPF and basal activity based on conditions
 
-IV_bartek_99
-pp_bartek_99
+#IV_bartek_99
+#pp_bartek_99
 
 ```
 
@@ -486,6 +490,12 @@ Nevertheless, considering overall data, we  can speculate that on microglial cel
 Together, these findings illustrate not only the increasing evidence for a role for BLA glutamatergic inputs to the NA in regulating reinforcement and reward but also that, depending on the part of the NA targeted, other glutamatergic inputs do not necessarily produce identical results <!-- analogous-->
 
 Accompanying this delay in maturation of spine density was a defect in functional maturation of hippocampal synapses as measured by the ratio of spontaneous and miniature excitatory postsynaptic current amplitude (sEPSC/mEPSC amplitude ratio), long-term depression induction, and seizure susceptibil- ity.
+
+```{r spines, echo = FALSE, warning = FALSE, message= FALSE}
+knitr::include_graphics("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\CX3CL1\\HODOWLE_AMYGDALA_WARSZAWA\\hodowle_aftersorting.png")
+
+#![]("D://OneDrive//elektrodata//PRELUDIUM//phd//CX3CL1//HODOWLE_AMYGDALA_WARSZAWA//hodowle_aftersorting.png")
+```
 
 ## CX3CL1/CX3CR1 in the CeA
 

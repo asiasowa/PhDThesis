@@ -254,14 +254,13 @@ figure1
 # pie plots jako insety
 
 # wersja z pie chart jako inset2 
-figure1 <- (bp_BLA_thres + inset_element((pie_BLA_azd_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.7, right = 1, top = 1, align_to = 'full') + inset_element((pie_BLA_mino_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.2, right = 1, top = 0.5, align_to = 'full')) | 
-(representative_azda_IV | IV_representative_azda) / 
-(representative_minoa_IV | IV_representative_minoa) 
+figure1 <- (bp_BLA_thres + inset_element((pie_BLA_azd_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.7, right = 1, top = 1, align_to = 'full') + inset_element((pie_BLA_mino_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.2, right = 1, top = 0.5, align_to = 'full') + plot_layout(tag_level = 'new'))| 
+((representative_azda_IV | IV_representative_azda)  + plot_layout(tag_level = 'new')) / ((representative_minoa_IV | IV_representative_minoa) + plot_layout(tag_level = 'new')) 
 
-
-figure1 + plot_annotation(tag_levels = c('a'))
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
 
 figure1
+
 
   
 # wrap_plots(A = inset_azda, B = inset_minoa, C = bp_BLA_thres, D= representative_azda_IV, E= IV_representative_azda, F= pie_BLA_azd_thres, G= pie_BLA_mino_thres, H= IV_representative_minoa, I= representative_minoa_IV, design = layout)  #+ plot_layout(tag_level = 'new')) +  # raw with individual IVs

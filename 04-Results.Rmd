@@ -243,15 +243,13 @@ representative_minoa_IV <- minoa_IV_subset %>% plot_IV_individual(mtitle = "") +
 # figure1 <- bp_BLA_thres | ((pie_BLA_azd_thres / pie_BLA_mino_thres) + plot_layout(guides = 'collect')) | (representative_azda_IV / representative_minoa_IV) | (IV_representative_azda / IV_representative_minoa)
 
 # wersja z pie chart jako inset
-figure1 <- bp_BLA_thres + inset_element((pie_BLA_azd_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.7, right = 1, top = 1, ignore_tag = TRUE, align_to = 'full') + inset_element((pie_BLA_mino_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.2, right = 1, top = 0.5, ignore_tag = TRUE, align_to = 'full')  |  (((representative_azda_IV / representative_minoa_IV))+ plot_layout(tag_level = 'new')) | ((IV_representative_azda / IV_representative_minoa) + plot_layout(tag_level = 'new')) 
+# figure1 <- bp_BLA_thres + inset_element((pie_BLA_azd_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.7, right = 1, top = 1, ignore_tag = TRUE, align_to = 'full') + inset_element((pie_BLA_mino_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.2, right = 1, top = 0.5, ignore_tag = TRUE, align_to = 'full')  |  (((representative_azda_IV / representative_minoa_IV))+ plot_layout(tag_level = 'new')) | ((IV_representative_azda / IV_representative_minoa) + plot_layout(tag_level = 'new')) 
+# 
+# figure1 <- figure1 + 
+#   plot_annotation(tag_levels = c('a', '1'))
+# 
+# figure1
 
-figure1 <- figure1 + 
-  plot_annotation(tag_levels = c('a', '1'))
-
-figure1
-# nie wiem co z insetami inset_azda | inset_minoa
-# plot levels + plot_layout(tag_level = 'new')
-# pie plots jako insety
 
 # wersja z pie chart jako inset2 
 figure1 <- (bp_BLA_thres + inset_element((pie_BLA_azd_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.7, right = 1, top = 1, align_to = 'full') + inset_element((pie_BLA_mino_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.2, right = 1, top = 0.5, align_to = 'full') + plot_layout(tag_level = 'new'))| 
@@ -265,6 +263,25 @@ figure1
   
 # wrap_plots(A = inset_azda, B = inset_minoa, C = bp_BLA_thres, D= representative_azda_IV, E= IV_representative_azda, F= pie_BLA_azd_thres, G= pie_BLA_mino_thres, H= IV_representative_minoa, I= representative_minoa_IV, design = layout)  #+ plot_layout(tag_level = 'new')) +  # raw with individual IVs
 ```
+
+#### Excitatory synaptic transmission is not significantly changed after CX3CL1 application
+
+Having established a significant suppression of CX3CL1 on firing of main excitatory neurons, the effects of this protein on the glutamatergic transmission onto BLA PCs in *in vitro* slices was measured.
+Spontaneous excitatory postsynaptic currents (sEPSCs) were recorded *via* whole-cell patch clamp recordings (held at −70 mV). 
+<!--The representative traces of sEPSCs in the absence (referred to as control hereafter) or presence of harmine (10μM) (referred to as harmine) were shown in supplemental Fig. S1(A). -->
+Compared to the control, CX3CL1 in two doses (2nM and 5nM) had negligible effect on the median value of amplitude, frequency, and kinetics of sEPSC.
+All measured parameters of excitatory synaptic transmission before and after application of CX3CL1, AZD8797 and minocycline are shown in details in Fig. \@ref(fig:CX3CL1BLAsEPSCfigall) and summarized in Table 7.2<!--!--> in the Appendix \@ref(CX3CL1sEPSCappendix).
+However, although statistically not sifginicant, a proportion of neurons reacted with decrease frequency of excitatory synaptic currents.
+The amplitude and kinetics of sEPSC was uchanged after CX3CL1. 
+CX3CL1 was shown to have negligible effect on the frequency of excitatory synaptic currents. <!-- In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which was further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)).-->
+
+ found that although a partial reduction between NMDA and NMDA/CX3CL1 treated cells was observed, it was not statistical significant
+
+ 
+
+ <!-- może dodać o tendency i zrobić jednak nowy podrozdział?-->
+<!-- podsumowanie o synaptic transmission and excitability..., bo następne zdanie to adress these issues-->
+<!-- Our findings overall highlight microglia and its receptor CX3CR1 as key contributors in regulation of social behavioral adaptation to chronic stress.-->
 
 #### CX3CL1 decreases inhibitory synaptic transmission
 
@@ -312,41 +329,37 @@ Further analysis of the IPSC kinetic parameters showed that the median rise time
 
 To determine if the decrease in sIPSC frequency by CX3CL1 was due to a change in the spontaneous action potential firing in the slice, the TTX (500nM) was used to block neuronal firing and the mIPSC amplitude, frequency, and kinetics was measured before and after CX3CL1 application (also clamped at 0 mV).<!-- Alternatively: To determine whether there was a direct effect of CX3CL1 on GABAergic terminals, miniature mIPSC (mIPSCs) were recorded from principal cells. In these experiments TTX was used to block the action potentials. --> 
 
-#### Complex effects of CX3CL1 on excitatory synaptic transmission
-
-In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which was further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)). <!-- może dodać o tendency i zrobić jednak nowy podrozdział?-->
-<!-- podsumowanie o synaptic transmission and excitability..., bo następne zdanie to adress these issues-->
-<!-- Our findings overall highlight microglia and its receptor CX3CR1 as key contributors in regulation of social behavioral adaptation to chronic stress.-->
-
 ```{r CX3CL1BLAsIPSC, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 18, fig.width= 8}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
-library(magick)
-library(patchwork)
+
 # loading needed subsets 
-inset_frak2nM <- image_read("images//results//inset_frak2nM.svg")
+inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
 inset_frak2nM <- image_ggplot(inset_frak2nM)
-inset_frak5nM <- image_read("images//results//inset_frak5nM.svg")
+inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
 inset_frak5nM <- image_ggplot(inset_frak5nM)
-inset_azdfrak5nM <- image_read("images//results//inset_azdfrak5nM.svg") # AZD5nM zrobić
+inset_azdfrak5nM <- image_read("images//results//inset_azdfrak5nM.png") # AZD5nM zrobić
 inset_azdfrak5nM <- image_ggplot(inset_azdfrak5nM)
-inset_azda <- image_read("images//results//inset_azd.svg")
+inset_azda <- image_read("images//results//inset_azd.png")
 inset_azda <- image_ggplot(inset_azda)
-inset_minofrak5nM <- image_read("images//results//inset_minofrak5nM.svg") # minocycline 5Nm ZROBIĆ
+inset_minofrak5nM <- image_read("images//results//inset_minofrak5nM.png") # minocycline 5Nm ZROBIĆ
 inset_minofrak5nM <- image_ggplot(inset_minofrak5nM)
-inset_minoa <- image_read("images//results//inset_minoa.svg")
+inset_minoa <- image_read("images//results//inset_minoa.png")
 inset_minoa <- image_ggplot(inset_minoa)
 
 # subsetting needed conditions from dataframe
 BLA_sIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline"))
 BLA_mIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)"))
+
 # making boxplots with facets
-bp_BLA_s_freq_sIPSC <- plot_boxplot(BLA_sIPSC_final_subset, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 15, dot_size = 2,  mtitle = "sIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
-bp_BLA_s_freq_sIPSC  <- bp_BLA_s_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 16, label.y = 0.7) 
+bp_BLA_s_freq_sIPSC <- plot_boxplot(BLA_sIPSC_final_subset, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 15, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_BLA_s_freq_sIPSC  <- bp_BLA_s_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 10, label.y = 10) 
 
 bp_BLA_m_freq_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_Frequency, ylabel = "mIPSC Frequency (Hz)", vary1 = 0, vary2 = 10, dot_size = 2, mtitle = "mIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
 bp_BLA_m_freq_sIPSC  <- bp_BLA_m_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 16, label.y = 0.7) 
 
+# making pie charts for conditions 
 pie_frak2_s_freq_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_Frequency, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_frak5_s_freq_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_Frequency, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_azdfrak5nM_s_freq_sIPSC  <- BLA_azdfrak5nM_sIPSC %>% plot_pie(median_Frequency, "AZD8797 + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -357,9 +370,9 @@ pie_mino_s_freq_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_Frequency, "minocy
 pie_frak2_m_freq_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_Frequency, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_frak5_m_freq_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_Frequency, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
-# amplitude
+# making boxplots for amplitude
 bp_BLA_s_amp_sIPSC  <- plot_boxplot(BLA_sIPSC_final_subset, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_s_amp_sIPSC  <- bp_BLA_s_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 16, label.y = 0.7)
+bp_BLA_s_amp_sIPSC  <- bp_BLA_s_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 10, label.y = 40)
 
 bp_BLA_m_amp_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_Amplitude, ylabel = "mIPSC Amplitude (pA)", vary1 = 0, vary2 = 20, dot_size = 2, mtitle = "mIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
 bp_BLA_m_amp_sIPSC  <- bp_BLA_m_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 16, label.y = 0.7) 

@@ -269,18 +269,13 @@ figure1
 Having established a significant suppression of CX3CL1 on firing of main excitatory neurons, the effects of this protein on the glutamatergic transmission onto BLA PCs in *in vitro* slices was measured.
 Spontaneous excitatory postsynaptic currents (sEPSCs) were recorded *via* whole-cell patch clamp recordings (held at −70 mV). 
 <!--The representative traces of sEPSCs in the absence (referred to as control hereafter) or presence of harmine (10μM) (referred to as harmine) were shown in supplemental Fig. S1(A). -->
-Compared to the control, CX3CL1 in two doses (2nM and 5nM) had negligible effect on the median value of amplitude, frequency, and kinetics of sEPSC.
 All measured parameters of excitatory synaptic transmission before and after application of CX3CL1, AZD8797 and minocycline are shown in details in Fig. \@ref(fig:CX3CL1BLAsEPSCfigall) and summarized in Table 7.2<!--!--> in the Appendix \@ref(CX3CL1sEPSCappendix).
-However, although statistically not sifginicant, a proportion of neurons reacted with decrease frequency of excitatory synaptic currents.
-The amplitude and kinetics of sEPSC was uchanged after CX3CL1. 
-CX3CL1 was shown to have negligible effect on the frequency of excitatory synaptic currents. <!-- In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which was further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)).-->
+Compared to the control, CX3CL1 in two doses (2nM and 5nM) had negligible effect on the median value of amplitude, frequency, and kinetics of sEPSC.
+However, although statistically not sifginicant, a proportion of neurons (`r knitr::asis_output("\U223C")` 50%) reacted with decreased frequency of excitatory synaptic currents. <!-- CX3CL1 was shown to have negligible effect on the frequency of excitatory synaptic currents./// In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which was further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)).-->
 
  found that although a partial reduction between NMDA and NMDA/CX3CL1 treated cells was observed, it was not statistical significant
 
- 
 
- <!-- może dodać o tendency i zrobić jednak nowy podrozdział?-->
-<!-- podsumowanie o synaptic transmission and excitability..., bo następne zdanie to adress these issues-->
 <!-- Our findings overall highlight microglia and its receptor CX3CR1 as key contributors in regulation of social behavioral adaptation to chronic stress.-->
 
 #### CX3CL1 decreases inhibitory synaptic transmission

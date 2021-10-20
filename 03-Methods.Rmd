@@ -72,6 +72,8 @@ DAB Peroxidase Substrate Kit, Vector Laboratories, Cat No. MP-4100; <!-- sprawdz
 Fluoroshield with DAPI, Sigma Aldrich, Cat No. F6057; <!-- sprawdzić/ zmienić --> 
 Vectashield® with DAPI, Vector Laboratories, Cat No. H1200.<!-- sprawdzić/ zmienić --> 
 
+<!-- The drugs used in all electrophysiological experiments were made up in stocksolution and diluted 1000 times into the perfusion ACSF on the day of recording. NBQX, and the selective NMDA GluN2B antagonist (þ/)-(R*,S*)-alpha-(4-hydroxyphenyl)-beta-methyl-4-(phenylmethyl)-1-piperidine   propanol   (Ro256981) were obtained form Tocris Biosciences (Ellisville, Missouri). The selective GluN2A antagonist NVP-AAM007 (NVP) was obtained from Novartis Pharma AG, Base (Switzerland). All other chemicals were obtained from Sigma (St. Louis, MO). -->
+
 ```{r reagentstable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE}
 library(gt)
 library(tidyverse)
@@ -207,11 +209,6 @@ Before clustering, we first normalized variables into the range (0, 1) by perfor
 Next, we clustered all the data points by the following iterative procedure. First, assign each data point to a cluster; every cluster therefore contains only one data point. 
 Second, merge the two closest clusters into one cluster; therefore, Hou et al., 2016 -->
 
-```{r methodIV, fig.cap='**Electrophysiological differentiation of neurons in the amygdala.** Different types of neurons in the amygdala are distinguished by their firing response to an incremental depolarising pulses delivered at a hyperpolarised potential (top trace). Type I – putative magnocellular neurons express a delay in the onset to the first action potential (arrow). Type II – putative parvocellular neurons lacks the delay in response to the same current stimuli.', fig.align = 'center', echo = FALSE, message= FALSE }
-knitr::include_graphics("images//methods//IV_excitability_protocols.png")
-```
-<!-- zmienić opis -->
-
 <!-- According to this criterion following neurons were included in the study on chemokines signaling in the amygdala (only one neuron per slice was subjected to drug administration experiment): /// nie wiem czy to dodawać bo musiałabym obliczyć ;P patrz: ALAN dla reszty gdybym się jednak zdecydowała-->
 
 #### Recording protocols, data analysis, and statistics
@@ -223,7 +220,7 @@ Hence, to measure the effects of chemokines (CX3CL1/CXCL12) on intrinsic membran
 <!--  The input-output relationship was obtained for each neuron using hyper- and depolarizing current pulses (500 ms). 
 The frequency-current (F/I) relationship was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude. // Then the series of hyperpolarizing and depolarizing current pulses (500ms, from -80 to 100pA in 5pA increments) were injected.Action potentials were evoked in current clamp mode from a holding potential of -65 mV by 500 ms depolarizing current pulses.-->
 Several membrane parameters were assessed based on neuronal voltage responses from -65 mV holding potential to hyper- and depolarizing current pulses (500 ms, 10 or 5pA increments), and analyzed using custom scripts.
-Cell excitability was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model (see Fig \@ref(fig:methodIV), parts a and b).
+Cell excitability was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model (see Fig. \@ref(fig:methodIV), parts a and b).
 The gain (slope, 1) and rheobase (minimal current necessary to fire the first action potential, 2) parameters were determined for further analysis.
 <!-- To take into account the possible variety of firing patterns, such as bursting, adapting, regular or irregular trains of action potentials, the interspaced intervals were measured for response to the the minimal current injection eliciting more than three action potentials and the following parameters were measured:--> <!-- [@ascoli_2008; @karagiannis_2009]-->
 <!-- In order to characterize the behavior of recorded neurons, several electrophysiological parameters were measured, as follows:-->
@@ -256,30 +253,39 @@ The voltage response to a 50 pA current pulse (500 ms) was utilised to calculate
 In some cortical neurons (Haj-Dahmane and Andrade, 1997), this complex repolarization is accompanied by a fast afterdepolarization (ADP). 
 Its (29, 30) amplitude and (31, 32) latency were measured as the difference between the negative peak of the AHPf and the positive peak of the ADP and between the spike threshold and the peak of the ADP, respectively. When neurons did not exhibit AHPs or ADP, amplitude and latency were arbitrarily set to 0. @karagiannis_2009-->
 
+```{r methodIV, fig.cap='**Electrophysiological analysis of action potential properties of neurons in the amygdala**. **a** The frequency-current (F/I) relationship of a representative neuron determined by analyzing the number of action potentials (APs) evoked by current steps of increasing amplitude. **b** Exemplary traces of evoked action potentials. APs were elicited from membrane potential of -65 mV with 500 ms current injections. **c** Exemplary waveform of a single, evoked action potential illustrating measured properties.', fig.align = 'center', echo = FALSE, message= FALSE }
+knitr::include_graphics("images//methods//IV_excitability_protocols.png")
+```
+<!-- Electrophysiological and molecular analysis of glutamatergic neurons. A , Current-clamp recordings of an adapting cell obtained in response to application of current pulses (bottom traces) of  100,  80,  60,  40,  20,  40 and,  210 pA. In response to just-above-threshold current pulse (40 pA), this adapting neuron fired action potentials with little frequency adaptation (middle trace). Top inset, IR videomicroscopy picture of the same neuron that presented a small and round soma, pial surface is upward (scale bar, 10m). Bottom inset, Details of the repolarization phase of the first spike (calibration: 5 mV, 50 ms) disclosing a biphasic AHP (dotted line) consisting of a first and second component. Injection of a large depolarizing current (210 pA; top trace) induced a pronounced frequency adaptation and a transient reduction of action potential amplitude (accommodation amplitude, asterisk). B , Agarose gel analysis of the RT-mPCR products of the same regular spiking neuron expressing vGluT1. The band migrating above 600 bp corresponds to unspecific amplification. C , Voltage response of a bursting neuron evoked by currentpulses(bottomtraces)of  100,  80,  60,  40,  20,  40,and  100pA.Notethepronouncedvoltagesagafterthe initial peak response to hyperpolarizing current pulses (middle traces, arrow). In response to just-above-threshold current pulse (40 pA; top middle trace), this bursting cell discharged a burst of two action potentials on a depolarizing hump. Top inset, IR videomicroscopy picture of the same neuron that presented a small and round soma, pial surface is upward (scale bar, 10m). Bottom inset, Details of the repolarization phase of the two first spikes showing a simple and a biphasic AHP (dotted line) for the first and the second spike, respectively (calibration: 5 mV, 50 ms). Application of a larger depolarizing current (100 pA) induced an initial burst followed by single spikes (top trace). Note the pronounced transient reduction of spikes amplitude (asterisk). D , RT-mPCR analysis showing expression of vGluT1 in the neuron presented in C .  -->
+
 <!-- jakiś  -->
 On the other hand,<!--, both excitatory and inhibitory synaptic transmission was recorded in the voltage-clamp configuration.-->
-voltage clamp recordings aimed at investigating the influence of either CX3CR1 or CXCR4 receptors activation on spontaneous and miniature inhibitory or excitatory synaptic currents were performed in normal ACSF and ACSF containing TTX (500 nM), respectively. 
-The details of additional experimental conditions are provided in Results (\@ref(results)). 
+voltage clamp recordings aimed at investigating the influence of either CX3CR1 or CXCR4 receptors activation on spontaneous/miniature inhibitory/excitatory synaptic currents were performed in normal ACSF and ACSF containing TTX (500 nM), respectively (see Fig. \@ref(fig:methodsEPSCsIPSC)). 
+The details of additional experimental conditions are provided in Results (\@ref(results)). <!-- wytlumaczyć skróty podobnie jak chemokiny (sEPSC/mEPSC/sIPSC/mIPSC)-->
 <!-- The calculated reversal potential for Cl- currents in these patch-clamp recordings equalled -90.51 mV, pominąć raczej -->
-At holding potential of -70mV, inward events represented excitatory postsynaptic currents (EPSCs, <!-- Fig-->), whereas to record spontaneous inhibitory postsynaptic currents (sIPSCs), neurons were voltage-clamped at 0 mV [@sowa_2018; @skupio_2020].<!--nie wiem czy cytować-->
+At holding potential of -70mV, inward events represented excitatory postsynaptic currents (Fig. \@ref(fig:methodsEPSCsIPSC)a), whereas to record inhibitory postsynaptic currents, neurons were voltage-clamped at 0 mV (Fig. \@ref(fig:methodsEPSCsIPSC)b).<!--nie wiem czy cytować-->
 After 10 min of the stabilization period, the baseline postsynaptic current activity was recorded. 
-The action of chosen chemokine was assessed by adding a known concentration of a stock solution directly to the bath and taking the measures before (baseline) and during 15 min of chemokine superfusion. <!-- For analysis of postsynaptic currents 4-minutes-long recordings in the whole-cell configuration were chosen, one from baseline before the drug application, another 15 minutes later. <!-- lepiej to napisać -->
-For analysis, the 4-minute-long recordings from baseline and after 15 minutes of chemokine application was selected.
-
-<!--The nature of postsynaptic currents was verified using glutamate (10 μM CNQX, 50 μM DL-AP5 and GABA (20 μM bicuculline) receptor antagonists (Fig. M2 B, C)  chyba mam tylko bicuculine... może jakaś zamykająca się komórka...? albo któryś z fluorocitrate? albo jakaś tomkowa, ktora nic nie ma? -->
-
-At first, postsynaptic currents were detected using Mini Analysis (Synaptosoft Inc., USA) or TaroTools toolbox for Igor Pro (https://sites.google.com/site/tarotoolsregister).<!--uzupełnić-->
-However, these software required subjective selection of the amplitude of threshold and visual inspection of the researcher to prevent the inclusion of false data.
-It leads to semi-automatic approach, which might be prone to error and researcher bias. <!-- For sIPSC recordings, amplitude detection thresholds were set to exceed noise values.
-Events were detected automatically, analyzed for double peaks, and then visually inspected to prevent the inclusion of false data.-->
-Thus, a machine learning-based approach was used by using Eventer [@winchester_giles_2020], which allowed training a model to implement consistent selection criteria across data sets without bias.
-The same traces were analyzed by using all of these software and selection based on models trained in Eventer was the most rigorous; however the differences between the control and experimental conditions remained unchanged (data not shown). 
-Hence, the detection of postsynaptic currents presented in this dissertation was done using machine-learning approach in Eventer software.
-<!--The change in membrane potential or whole-cell current in response to the peptide/drug application was considered significant if it differed from the baseline by more than three standard deviations.  jeszcze tego nie mam ale zastosować to... -->
-
-From detected events, their median frequency, amplitude, rise time (calculated from 10–90% of peak amplitude), and decay time (calculated by fitting an exponential function form 10-90% of the decay phase) were measured.<!-- Events were detected to measure: frequency, mean rise time, mean amplitude and decay time constant of averaged current trace; these parameters were statistically tested (baseline versus peptide application).--><!--(calculated by averaging 200 randomly selected events and fitting a double exponential function from 10–90% of the decay phase) --><!-- The synaptic activity was analyzed for frequency, amplitude, rise time (calculated from 10–90% of peak amplitude), and decay time calculated by fitting an exponential function form 10-90% of the decay phase.// The double exponential function for the decay phase generated an initial fast component and a subsequent slow component of the decay phase. --> 
+The action of chosen chemokine was assessed by adding a known concentration of a stock solution directly to the bath and taking the measures before (baseline) and during 15 min of chemokine superfusion.<!-- For analysis of postsynaptic currents 4-minutes-long recordings in the whole-cell configuration were chosen, one from baseline before the drug application, another 15 minutes later. <!-- lepiej to napisać -->
+For analysis, the 4-minute-long recordings from baseline and after 15 minutes of chemokine application was selected.<!--The nature of postsynaptic currents was verified using glutamate (10 μM CNQX, 50 μM DL-AP5 and GABA (20 μM bicuculline) receptor antagonists (Fig. M2 B, C)  chyba mam tylko bicuculine... może jakaś zamykająca się komórka...? albo któryś z fluorocitrate? albo jakaś tomkowa, ktora nic nie ma? -->
+From detected events, their median frequency, amplitude, rise time, and decay time were measured (see Fig. \@ref(fig:methodsEPSCsIPSC)).<!-- Events were detected to measure: frequency, mean rise time, mean amplitude and decay time constant of averaged current trace; these parameters were statistically tested (baseline versus peptide application).--><!--(calculated by averaging 200 randomly selected events and fitting a double exponential function from 10–90% of the decay phase) --><!-- The synaptic activity was analyzed for frequency, amplitude, rise time (calculated from 10–90% of peak amplitude), and decay time calculated by fitting an exponential function to the amplitude  a double exponential curve to// The double exponential function for the decay phase generated an initial fast component and a subsequent slow component of the decay phase. // Analysed parameters were obtained from single (frequency, amplitude, rise time) or averaged events (decay time constant).-->
 These parameters were statistically tested (baseline versus chemokine application). 
 Group data for excitatory or inhibitory synaptic transmission are reported as median`r knitr::asis_output("\U00B1")`SD. <!-- Data are reported as median `r knitr::asis_output("\U00B1")` SEM. -->
+
+At first, postsynaptic currents were detected using Mini Analysis (Synaptosoft Inc., USA) or TaroTools toolbox for Igor Pro (https://sites.google.com/site/tarotoolsregister, v8.0.4, USA).
+However, these software required subjective selection of the threshold amplitude of events and visual inspection of the researcher to prevent the inclusion of false data.
+It leads to semi-automatic approach, which might be prone to error and researcher bias.<!-- For sIPSC recordings, amplitude detection thresholds were set to exceed noise values.
+Events were detected automatically, analyzed for double peaks, and then visually inspected to prevent the inclusion of false data.-->
+Thus, a machine learning-based approach was used by using Eventer [@winchester_giles_2020], which allowed training a model to implement consistent selection criteria across data sets without bias.
+The same traces were analyzed by using all of these software and selection based on models trained in Eventer was the most rigorous, thereby the occurrence of false positive events is less likely.
+Importantly, the differences between the control and experimental conditions remained unchanged (data not shown). 
+Hence, the synaptic transmission data presented in this dissertation was done using machine-learning approach in Eventer software.
+<!--The change in membrane potential or whole-cell current in response to the peptide/drug application was considered significant if it differed from the baseline by more than three standard deviations.  jeszcze tego nie mam ale zastosować to... -->
+
+
+```{r methodsEPSCsIPSC, fig.cap='**Analysis of postsynaptic currents from neurons in the amygdala** **a** An exemplary trace of spontaneous excitatory synaptic currents (sEPSCs, red arrows) recorded from representative cell from the amygdala in voltage clamp at -70 mV holding potential (left). **b** An exemplary trace of spontaneous inhibitory synaptic currents (sIPSCs, red arrow) recorded from representative cell from the amygdala in voltage clamp at 0 mV holding potential (left). Analyzed parameters were obtained from single (frequency, amplitude, rise time) or averaged events (decay time constant).', fig.align = 'center', echo = FALSE, message= FALSE }
+
+knitr::include_graphics("images//methods//representativePSC.png")
+```
 
 #### Post-recording immunostaining
 <!--w miarę skończone, ewentualnie jakie przeciwciala...-->

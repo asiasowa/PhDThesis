@@ -245,6 +245,10 @@ figure2
 
 ```
 
+### CX3CL1 does not modulate excitatory synaptic transmission {#CX3CL1sEPSCappendix}
+
+Figure (\@ref(fig:CX3CL1BLAexcitabilityfigall)) and Table 7.2<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> reports on sEPSC parameters measured in principal cells in the BLA before and after CX3CL1, AZD8797, and minocycline treatment. 
+
 ```{r CX3CL1BLAsEPSCappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis'}
 
 # slicing one mEPSC condition from the table and adding it to the main table
@@ -391,7 +395,7 @@ figure1
 
 ```
 
-### CX3CL1 does not modulate excitatory synaptic transmission {#CX3CL1sEPSCappendix}
+
 
 
 

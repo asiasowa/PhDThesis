@@ -11,7 +11,7 @@ Thus, the first aim of this dissertation was to investigate the cellular distrib
 Functionally, previous studies have demonstrated complex electrophysiological effects of CXCL12 and CX3CL1, which differ between, among others, brain regions or neuronal populations (see Section: \@ref(chemointheCNS)).
 
 Moreover, at least some of those effects were mediated by glial cells.
-Accordingly, this dissertation further aimed to dissect the complex mechanisms underlying bidirectional crosstalk between neurons and glial cells (e.i., astrocytes and microglia) regarding its regulation of membrane properties and synaptic transmission in the amygdala.<!---na razie ok, może uda się coś lepszego --> 
+Accordingly, this dissertation further aimed to dissect the complex mechanisms underlying bidirectional crosstalk between neurons and glial cells (i.e., astrocytes and microglia) regarding its regulation of membrane properties and synaptic transmission in the amygdala.<!---na razie ok, może uda się coś lepszego --> 
 
 The central hypotheses of the research presented here are: 
 
@@ -36,7 +36,7 @@ Fluorescent microscopy was utilized to investigate and quantify co-localization 
 
 Next, to examine the membrane properties and synaptic transmission of BLA and CeA neurons in brain slices and their sensitivity to chosen chemokine application, *in vitro*  whole-cell patch-clamp recordings were performed in rat brain slices containing the amygdala. 
 BLA or CeA neuron membrane properties, spontaneous and miniature excitatory and inhibitory synaptic transmission (sEPSCs/mEPSCs/sIPSCs/mIPSCs) were collected before and after bath application of chosen chemokines. 
-Notably, to verify whether astrocytes or microglia are involved in observed effects, in subsets of experiments, recordings were made in the presence of either astrocytic toxin (e.i., fluorocitrate) or the inhibitor of microglial activity (e.i., minocycline).<!-- were additionally pre-applied.-->
+Notably, to verify whether astrocytes or microglia are involved in observed effects, in subsets of experiments, recordings were made in the presence of either astrocytic toxin (i.e., fluorocitrate) or the inhibitor of microglial activity (i.e., minocycline).<!-- were additionally pre-applied.-->
 
 <!--```{r design, fig.cap='**A schematic illustrating experimental designs of presented PhD dissertation** ', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/design.png")

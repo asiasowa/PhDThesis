@@ -336,15 +336,15 @@ pie_frak5_s_freq_sEPSC  <- BLA_frak5nM_sEPSC %>% plot_pie(median_Frequency, "") 
 
 
 # rise time
-bp_BLA_s_rt_sEPSC  <- plot_boxplot(BLA_sEPSC_final_subset_mino, median_RiseTime, ylabel = "sEPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "sEPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_s_rt_sEPSC  <- bp_BLA_s_rt_sEPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+bp_BLA_s_rt_sEPSC  <- plot_boxplot(BLA_sEPSC_final_subset_mino, median_RiseTime, ylabel = "sEPSC Rise Time (ms)", vary1 = 0, vary2 = 2, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_s_rt_sEPSC  <- bp_BLA_s_rt_sEPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.y = 1.5, label.x.npc = 'center', size = 10, face = "bold")  #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
 
 pie_mino_s_dt_sEPSC  <- BLA_minoa_sEPSC %>% plot_pie(median_RiseTime, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 # decay time
 
-bp_BLA_s_dt_sEPSC  <- plot_boxplot(BLA_sEPSC_final_subset_mino, median_DecayTau, ylabel = "sEPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sEPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_s_dt_sEPSC  <- bp_BLA_s_dt_sEPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+bp_BLA_s_dt_sEPSC  <- plot_boxplot(BLA_sEPSC_final_subset_mino, median_DecayTau, ylabel = "sEPSC Decay Time (Hz)", vary1 = 0, vary2 = 20, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_s_dt_sEPSC  <- bp_BLA_s_dt_sEPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.y = 15, label.x.npc = 'center', size = 10, face = "bold")  #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
 
 pie_mino_s_dt_sEPSC  <- BLA_minoa_sEPSC %>% plot_pie(median_DecayTau, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
@@ -376,35 +376,47 @@ figure1
 
 ```{r CX3CL1BLAsIPSCstats, include = FALSE}
 
+# slicing one mEPSC condition from the table and adding it to the main table
+mIPSC_sliced <- BLA_mIPSC_final %>% dplyr::filter(Experiment %in% c( 'CX3CL1(2nM)', 'CX3CL1(5nM)'))
+mIPSC_sliced$Experiment <- plyr::revalue(mIPSC_sliced$Experiment, c("CX3CL1(2nM)"="TTX + \nCX3CL1(2nM)", "CX3CL1(5nM)"="TTX + \nCX3CL1(5nM)" ))
+BLA_sIPSC_final <- BLA_sIPSC_final %>% bind_rows(mIPSC_sliced)
+#levels(BLA_sIPSC_final$Experiment)
+#futher selecting conditions to show
+
 # subsetting needed conditions from dataframe
-BLA_sIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline"))
-BLA_mIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)"))
+BLA_sIPSC_final <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline", 'TTX + \nCX3CL1(2nM)', 'TTX + \nCX3CL1(5nM)'))
+
+BLA_sIPSC_final$Experiment <- factor(BLA_sIPSC_final$Experiment, levels = c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline", 'TTX + \nCX3CL1(2nM)', 'TTX + \nCX3CL1(5nM)'))
+
+BLA_sIPSC_final$Cell <- rep(1:(nrow(BLA_sIPSC_final)/2), each = 2)
+
+BLA_sIPSC_final$Condition <- factor(BLA_sIPSC_final$Condition, levels = c("baseline", "CX3CL1", "AZD8797", "minocycline"))
 
 # getting the table of statistics
-CX3CL1_2nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'CX3CL1(2nM)'))))
+CX3CL1_2nM_sIPSC_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(2nM)'))))
 # selecting a stat_row so it prints nicely in text
-CX3CL1_2nM_BLA_stat_sIPSC_freq <- as.data.frame(CX3CL1_2nM_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+CX3CL1_BLA_stat_sIPSC_freq <- as.data.frame(CX3CL1_2nM_sIPSC_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
 
-CX3CL1_5nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'CX3CL1(5nM)'))))
+CX3CL1_5nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)'))))
 CX3CL1_5nM_BLA_stat_sIPSC_freq <- as.data.frame(CX3CL1_5nM_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
 
 
-CX3CL1_azdfrak5nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'AZD8797 + \nCX3CL1(5nM)'))))
+CX3CL1_azdfrak5nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(5nM)'))))
 CX3CL1_azdfrak5nM_BLA_stat_sIPSC_freq <- as.data.frame(CX3CL1_azdfrak5nM_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
 
-CX3CL1_azda_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'AZD8797'))))
+CX3CL1_azda_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final %>% filter(Experiment == 'AZD8797'))))
 CX3CL1_azda_BLA_stat_tres <- as.data.frame(CX3CL1_azda_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
 
 
-CX3CL1_minofrak5nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'minocycline + \nCX3CL1(5nM)'))))
+CX3CL1_minofrak5nM_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final %>% filter(Experiment == 'minocycline + \nCX3CL1(5nM)'))))
 CX3CL1_minofrak5nM_BLA_stat_tres <- as.data.frame(CX3CL1_minofrak5nM_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
 
-CX3CL1_minoa_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final_subset %>% filter(Experiment == 'minocycline'))))
+CX3CL1_minoa_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final %>% filter(Experiment == 'minocycline'))))
 CX3CL1_minoa_BLA_stat_tres <- as.data.frame(CX3CL1_minoa_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
 
 ```
 
-As the results presented above indicated that CX3CL1 effect is mediated by GABA~A~ and GABA~B~ receptors, the possible influence of CX3CL1 on the inhibitory transmission onto BLA PCs was next explored in *in vitro* slices.<!-- Next, We next explored the possible influence of harmine on the GABAergic transmission onto BA PNs. -->
+As results regarding principal cells' reduction in excitability indicated, among others, that CX3CL1 effect is mediated by GABA~A~ and GABA~B~ receptors, the possible influence of CX3CL1 on the inhibitory transmission onto BLA PCs was next explored in *in vitro* slices.<!-- Next, We next explored the possible influence of harmine on the GABAergic transmission onto BA PNs. -->
 Cells were clamped at 0 mV to record the spontaneous inhibitory postsynaptic currents (sIPSCs).<!-- Spontaneous inhibitory postsynaptic currents (sIPSCs) were recorded *via* whole-cell patch clamp recordings (held at −70 mV).  -->
 The representative traces of sIPSCs in the absence (referred to as baseline hereafter) or presence of CX3CL1 (2 and 5nM) (referred to as CX3CL1) are shown in Fig. \@ref(fig:CX3CL1BLAsIPSC).<!-- The effect of harmine on sIPSCs was shown in supplemental, Fig. S2.--> 
 While the dose 2nM did not elicit 
@@ -418,8 +430,18 @@ Further analysis of the IPSC kinetic parameters showed that the median rise time
 
 To determine if the decrease in sIPSC frequency by CX3CL1 was due to a change in the spontaneous action potential firing in the slice, the TTX (500nM) was used to block neuronal firing and the mIPSC amplitude, frequency, and kinetics was measured before and after CX3CL1 application (also clamped at 0 mV).<!-- Alternatively: To determine whether there was a direct effect of CX3CL1 on GABAergic terminals, miniature mIPSC (mIPSCs) were recorded from principal cells. In these experiments TTX was used to block the action potentials. --> 
 
+Our findings reveal 
 
-```{r CX3CL1BLAsIPSC, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 18, fig.width= 8}
+Accompanying this delay in maturation of spine density was
+
+On average, ... the autaptic IPSP (aIPSP) in ES cells was 8.0 2.5 mV ( n 	 8),
+
+we observed that MCP1/CCL2 potently (EC50in the nanomolar range) and robustly inhibited GABA-induced neuronal currents, suggesting a functional involvement of CCR2 in the modulation of spinal GABAergic transmission.
+
+Data reported in Figure 1A confirms that CX3CL1 has similar protective effects both against NMDA (200 m M, 30 min) and Glu (100 m m, 30 min) (n = 6–13; p  0.05).
+
+
+```{r CX3CL1BLAsIPSC, fig.cap='**CAPTION**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 18, fig.width= 12}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
@@ -436,18 +458,18 @@ inset_minofrak5nM <- image_read("images//results//inset_minofrak5nM.png") # mino
 inset_minofrak5nM <- image_ggplot(inset_minofrak5nM)
 inset_minoa <- image_read("images//results//inset_minoa.png")
 inset_minoa <- image_ggplot(inset_minoa)
+inset_ttx <- image_read("images//results//inset_ttx.png")
+inset_ttx <- image_ggplot(inset_ttx)
+inset_ttx_5nM <- image_read("images//results//inset_ttx_5nM.png")
+inset_ttx_5nM <- image_ggplot(inset_ttx_5nM)
 
 # subsetting needed conditions from dataframe
-BLA_sIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline"))
-BLA_mIPSC_final_subset <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)"))
+#zrobione wyżej
 
 # making boxplots with facets
-bp_BLA_s_freq_sIPSC <- plot_boxplot(BLA_sIPSC_final_subset, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 15, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+bp_BLA_s_freq_sIPSC <- plot_boxplot(BLA_sIPSC_final, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 15, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
 
-bp_BLA_s_freq_sIPSC  <- bp_BLA_s_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 10, label.y = 10) 
-
-bp_BLA_m_freq_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_Frequency, ylabel = "mIPSC Frequency (Hz)", vary1 = 0, vary2 = 10, dot_size = 2, mtitle = "mIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_m_freq_sIPSC  <- bp_BLA_m_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 16, label.y = 0.7) 
+bp_BLA_s_freq_sIPSC  <- bp_BLA_s_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 10) 
 
 # making pie charts for conditions 
 pie_frak2_s_freq_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_Frequency, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -457,15 +479,12 @@ pie_azd_s_freq_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_Frequency, "AZD8797"
 pie_minofrak5nM_s_freq_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_Frequency, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_mino_s_freq_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_Frequency, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
-pie_frak2_m_freq_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_Frequency, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_frak5_m_freq_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_Frequency, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_frak2_m_freq_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_Frequency, "TTX + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_frak5_m_freq_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_Frequency, "TTX + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 # making boxplots for amplitude
-bp_BLA_s_amp_sIPSC  <- plot_boxplot(BLA_sIPSC_final_subset, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_s_amp_sIPSC  <- bp_BLA_s_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 10, label.y = 40)
-
-bp_BLA_m_amp_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_Amplitude, ylabel = "mIPSC Amplitude (pA)", vary1 = 0, vary2 = 20, dot_size = 2, mtitle = "mIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_m_amp_sIPSC  <- bp_BLA_m_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 16, label.y = 0.7) 
+bp_BLA_s_amp_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_s_amp_sIPSC  <- bp_BLA_s_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
 
 pie_frak2_s_amp_sIPSC <- BLA_frak2nM_sIPSC %>% plot_pie(median_Amplitude, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_frak5_s_amp_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_Amplitude, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -474,14 +493,14 @@ pie_azd_s_amp_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_Amplitude, "AZD8797")
 pie_minofrak5nM_s_amp_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_Amplitude, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_mino_s_amp_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_Amplitude, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
-pie_frak2_m_amp_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_Amplitude, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_frak5_m_amp_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_Amplitude, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_frak2_m_amp_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_Amplitude, "TTX + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_frak5_m_amp_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_Amplitude, "TTX + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 # rise time
-bp_BLA_s_rt_sIPSC  <- plot_boxplot(BLA_sIPSC_final_subset, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "sIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_s_rt_sIPSC  <- bp_BLA_s_rt_sIPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
-bp_BLA_m_rt_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_RiseTime, ylabel = "mIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2, mtitle = "mIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_m_rt_sIPSC  <- bp_BLA_m_rt_sIPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+# bp_BLA_s_rt_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "sIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+# bp_BLA_s_rt_sIPSC  <- bp_BLA_s_rt_sIPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+# bp_BLA_m_rt_sIPSC  <- plot_boxplot(BLA_mIPSC_final, median_RiseTime, ylabel = "mIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2, mtitle = "mIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+# bp_BLA_m_rt_sIPSC  <- bp_BLA_m_rt_sIPSC + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
 
 # pie_frak2_s_rt_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_RiseTime, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 # pie_frak5_s_rt_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_RiseTime, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -495,37 +514,34 @@ bp_BLA_m_rt_sIPSC  <- bp_BLA_m_rt_sIPSC + facet_wrap(~ Experiment, nrow = 1, sca
 
 # decay time
 
-bp_BLA_s_dt_sIPSC  <- plot_boxplot(BLA_sIPSC_final_subset, median_DecayTau, ylabel = "sIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_s_dt_sIPSC  <- bp_BLA_s_dt_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
-bp_BLA_m_dt_sIPSC  <- plot_boxplot(BLA_mIPSC_final_subset, median_DecayTau, ylabel = "mIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2, mtitle = "mIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-bp_BLA_m_dt_sIPSC  <- bp_BLA_m_dt_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+# bp_BLA_s_dt_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_DecayTau, ylabel = "sIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+# bp_BLA_s_dt_sIPSC  <- bp_BLA_s_dt_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+# bp_BLA_m_dt_sIPSC  <- plot_boxplot(BLA_mIPSC_final, median_DecayTau, ylabel = "mIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2, mtitle = "mIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+# bp_BLA_m_dt_sIPSC  <- bp_BLA_m_dt_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
 
-pie_frak2_s_dt_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_DecayTau, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_frak5_s_dt_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_DecayTau, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_azdfrak5nM_s_dt_sIPSC  <- BLA_azdfrak5nM_sIPSC %>% plot_pie(median_DecayTau, "AZD8797 + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_azd_s_dt_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_DecayTau, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_minofrak5nM_s_dt_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_DecayTau, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_mino_s_dt_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_DecayTau, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-
-pie_frak2_m_dt_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_DecayTau, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_frak5_m_dt_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_DecayTau, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_frak2_s_dt_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_DecayTau, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_frak5_s_dt_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_DecayTau, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_azdfrak5nM_s_dt_sIPSC  <- BLA_azdfrak5nM_sIPSC %>% plot_pie(median_DecayTau, "AZD8797 + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_azd_s_dt_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_DecayTau, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_minofrak5nM_s_dt_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_DecayTau, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_mino_s_dt_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_DecayTau, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# 
+# pie_frak2_m_dt_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_DecayTau, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_frak5_m_dt_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_DecayTau, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 #using patchwork to do layout of the figure
-# 
-# insets <- 
-# pies_frequency <-  
-# pies_amplitude <- 
 
-figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_azdfrak5nM | inset_azda | inset_minofrak5nM | inset_minoa)  + plot_layout(tag_level = 'new')) /
+
+figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_azdfrak5nM | inset_azda | inset_minofrak5nM | inset_minoa | inset_ttx | inset_ttx_5nM)  + plot_layout(tag_level = 'new')) /
  (bp_BLA_s_freq_sIPSC + theme(legend.position = "none"))  /
-  (((pie_frak2_s_freq_sIPSC  | pie_frak5_s_freq_sIPSC  | pie_azdfrak5nM_s_freq_sIPSC  | pie_azd_s_freq_sIPSC  | pie_minofrak5nM_s_freq_sIPSC  | pie_mino_s_freq_sIPSC)   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
+  (((pie_frak2_s_freq_sIPSC  | pie_frak5_s_freq_sIPSC  | pie_azdfrak5nM_s_freq_sIPSC  | pie_azd_s_freq_sIPSC  | pie_minofrak5nM_s_freq_sIPSC  | pie_mino_s_freq_sIPSC| pie_frak2_m_freq_sIPSC | pie_frak5_m_freq_sIPSC)   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
   (bp_BLA_s_amp_sIPSC + theme(legend.position = "none")) / 
-(((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC)   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
-  (bp_BLA_s_rt_sIPSC + theme(legend.position = "none")) /
-  (bp_BLA_s_dt_sIPSC + theme(legend.position = "none"))
- #   / 
-  # 
-  # ((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC) + plot_layout(guides = "collect") & theme(legend.position = "bottom")  + plot_layout(tag_level = 'new')) / 
+(((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC | pie_frak2_m_amp_sIPSC | pie_frak5_m_amp_sIPSC )   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) 
+
+# plus representatives!!!! cumulatives???
+
+#/(bp_BLA_s_rt_sIPSC + theme(legend.position = "none")) /
+#  (bp_BLA_s_dt_sIPSC + theme(legend.position = "none"))
 
 
 figure1 <- figure1 + 

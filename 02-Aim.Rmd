@@ -660,7 +660,7 @@ df_basic$Condition <- factor(df_basic$Condition, levels = c("baseline", "CX3CL1(
 
 LTP_bartek_strict <- df_basic %>% ggplot(aes(x = Time, y= Amplitude, fill = Condition)) +
   geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
-  geom_point(size = 3, pch = 21, alpha = 0.7) +
+  geom_point(size = 4, pch = 21, alpha = 0.7) +
   #geom_line() +
   ylab("Amplitude (%)") +
   xlab("Time (min)") +
@@ -690,7 +690,7 @@ df_basic$Condition <- factor(df_basic$Condition, levels = c("baseline", "CX3CL1(
 
 LTP_bartek <- df_basic %>% ggplot(aes(x = Time, y= Amplitude, fill = Condition)) +
   geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
-  geom_point(size = 3, pch = 21, alpha = 0.7) +
+  geom_point(size = 4, pch = 21, alpha = 0.7) +
   #geom_line() +
   ylab("Amplitude (%)") +
   xlab("Time (min)") +
@@ -747,7 +747,7 @@ df_basic99$Experiment <- as.factor(df_basic99$Experiment)
 
 IV_bartek <- df_basic %>% group_by(Condition) %>% ggplot(aes(x = Stim, y= Amplitude, fill = Condition)) +
   geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
-  geom_point(size = 3, pch = 21, alpha = 0.7) +
+  geom_point(size = 4, pch = 21, alpha = 0.7) +
   #geom_line() +
   ylab("Amplitude (mV)") +
   xlab("Stimulus Strength (uA)") +
@@ -757,7 +757,7 @@ IV_bartek <- df_basic %>% group_by(Condition) %>% ggplot(aes(x = Stim, y= Amplit
 
 IV_bartek_99 <- df_basic99 %>% group_by(Condition) %>% ggplot(aes(x = Stim, y= Amplitude, fill = Condition)) +
   geom_errorbar(aes(ymin=Amplitude-se, ymax=Amplitude+se), width=0.5)+
-  geom_point(size = 3, pch = 21, alpha = 0.7) +
+  geom_point(size = 4, pch = 21, alpha = 0.7) +
   #geom_line() +
   ylab("Amplitude (mV)") +
   xlab("Stimulus Strength (uA)") +

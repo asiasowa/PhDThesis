@@ -48,6 +48,18 @@ Notably, the high variability of the CX3CL1 application on excitatory synaptic t
 Given that there are subtypes of interneurons targeting different subcellular domain of principal cells, it is likely that interneurons contacting synapses mainly on distal dendritic parts are ....<!-- dokończyć tutaj i rozpisać jak to jest z tymi interneuronami -->
 Thus, experiments in cesium-based interpippette solution might reduce filtering of excitatory synaptic currents originating from distal parts of dendrites by blocking potassium channels [@acharjee_2018], and thereby might suppress the high variability of CX3CL1 treatment on sEPSC.<!-- Cesium reduces filtering of the synaptic currents arising from distal parts of the dendrite by blocking the potassium current, and changes in EPSC frequency seen only with cesium internal suggested that most of the changes were contributed by inputs to more distal dendrites.-->
 
+Together, these findings illustrate not only the increasing evidence for a role for BLA glutamatergic inputs to the NA in regulating reinforcement and reward but also that, depending on the part of the NA targeted, other glutamatergic inputs do not necessarily produce identical results <!-- analogous-->
+
+ It is worth noting that, in the experiments where activation of A2AR or A1R was prevented (either pharmacologically or genetically), the effects of CX3CL1 were sustained during chemokine washout. A possible explanation is that these receptors, although not essential for the establishment of synaptic depression, are required for recovery. We may speculate about the functional interaction ( Cunha-Reis et al., 2007 ) of the two subtypes or eventually about the presence in hippocampal tissue of AR heteromers ( Rebola et al., 2005; Ciruela et al., 2006 ), whose activation might have an homeostatic function.
+ 
+ This homeostatic balance between synaptic and intrinsic properties is maintained, in part, via regulation of voltage-gated Na+ currents, resulting in a stable neuronal input–output function.  -> (tectal neurons adapt their intrinsic excitability such that a stable relationship between the total level of synaptic input and tectal neuron spike output is conserved)
+ 
+ However, rather than decreasing interneuron excitability, this effect is associated with an increase in spontaneous firing of interneurons, as indicated by increased sIPSC frequency in pyramidal neurons
+ 
+ These cytokines, such as tumor necrosis factor-a and interleukin-1b, not only exert their excitatory effects via upregulating excitatory synaptic transmission [30, 31], but also regulate neuronal functions via interacting with modulatory systems [32]
+ 
+ Both LPS injection and CCL2 perfusion onto hippocampal slices increased total neuronal excitability ( Figures 5 C, 5D, 5G, and 5H), which has contributions from excitatory and inhibitory synaptic inputs, as well as the neuron’s intrinsic electrical properties. Consistent with the observed increase in excitatory synaptic transmission and lack of change in inhibitory synaptic transmission ( Figures 5 E, 5F, S7 C, and S7D), the effects of CCL2 were blocked by the AMPA receptor inhibitor NBQX, but not the GABAAreceptor inhibitor gabazine ( Figures S7 E–S7H). CCL2 did not significantly affect intrinsic excitability ( Figures S7 I and S7J).
+
 ### Minocycline increases excitability of the BLA
 
 Intriguingly, sole minocycline was able to increase the excitability of pyramidal cells.
@@ -60,6 +72,7 @@ The MCP-1–induced reduction in rheobase, together with an increase in spike fr
 
 Yet, our findings do not exclude the neuronal participation in releasing adenosine, thus acting in an autocrine manner, or the adenosine-mediated release of additional neuroprotective factors from glial cells. <!-- analogous-->
 
+Coupled with observed differences in proximal and distal spine density, our results suggest that the ratio of inhibitory to excitatory innervation is increased along the distal to proximal axis of principal cells in the BLA. 
 
 ### Validation of AZD8797
 
@@ -81,6 +94,8 @@ Similarly, recordings from CA3-CA1 synapses in hippocampal slices of CX3CR1^-/-^
 
 We measured mEPSC amplitude and frequency at 	 70 mV after 20–24 h of minocycline treatment. We found that minocycline increased mEPSC frequency (), but not amplitude in EAE mice compared with EAE-vehicle-treated mice (). Thus, the EAE phenotype is even more apparent after additional microglial inactivation. However, we acknowledge that minocycline, in addition to impairing microglial proinflammatory and phagocytic activity, has many other unrelated effects; however, our use of ICV injection at least eliminated the peripheral effects of minocycline (  Brundula et al., 2002  ;  Giuliani et al., 2005  ). [@acharjee_2018]
 
+We found that Mac1Saporin injection increased mEPSC frequency (Saporin: 2.3   0.38 Hz, n  7, N  3; Mac1-Saporin: 3.5   0.21 Hz; n  9, N  4; unpaired two-tailed t test: t  2.412, df  14; p  0.03), but not amplitude (Saporin: 16   0.685 pA, n  7, N  3; Mac1-Saporin: 14.8   0.645 pA; n  9, N  4; unpaired two-tailed t test: t  1.278, df  14; p  0.22) compared  with  Saporin-treated  control mice in the BLA (  Fig. 8  E–G ). These experiments demonstrate that both inhibiting microglial activation and transiently depleting microglia replicate the increased mEPSC frequency seen in the BLA of early EAE animals. 
+
 ### CX3CL1 and adenosine
 <!-- Of note, sole adenosine was demonstrated to decrease the glutamatergic synaptic transmission in the hippocampus, even despite the absence of CX3CL1, suggesting adenosine tonic activity in this structure . -->
 Similar to studies concerning the neuroprotective action of CX3CL1 described above, this CX3CL1-induced adenosine action on the glutamatergic transmission was revealed to be mediated by A~3~R and, to the lesser extent, A~1~R [@lauro_2008; @lauro_2010; @piccinin_2010]. 
@@ -98,6 +113,8 @@ However, we acknowledge that minocycline, in addition to impairing microglial pr
 Minocycline is used commonly to inhibit microglial activation. However, minocycline also has been reported to directly affect neurons.32,49,50 Multiple lines of evidence have shown the role of minocycline in protecting neurons from apoptosis via inhibiting p38 MAPK activity.30–32,51,52 Our observation of increased neuronal p38 MAPK activity in the CeA raises the possibility that minocycline could have inhibited visceral hypersensitivity through an attenuation of neuronal apoptosis via a direct inhibition of p38 MAPK activity. Therefore, we applied apoptosis analysis in WAS and SHAM animals. - Yuan2020
 
 The identification of AR1as downstream element responsible for beneficial effects of CX3CL1 on neuron survival against Glu neurotoxicity may represent an important challenge for management of neurological disorders including acute brain ischemia.
+
+Interestingly, by modulating the expression levels and surface diffusion of glutamate transporters, astrocytes influence synaptic transmission by controlling the glutamate spillover beyond the synapse. Such glutamate spillover can activate extrasynaptic metabotropic glutamate receptors (Huang et al., 2004), which shape the kinetics of excitatory postsynaptic currents (EPSCs; Murphy-Royal et al., 2015). Hence, changes in EPSCs have important effects on the local and temporal integration of synaptic inputs by neuronal networks, and consequently on synaptic plasticity. Therefore, glutamate transporters not only support synaptic homeostasis, but also contribute, at least in part, to plasticity processes at the synaptic levels (reviewed by Rose et al., 2017). <!-- analogous - microglia? -->
 
 ### CX3CL1 and excitatory synaptic transmission
 
@@ -145,17 +162,52 @@ The deficiency in microglial CX3CR1 can cause communication defects among neuron
  
 #### LTP in the amygdala
 
+Long-term potentiation (LTP) and depression (LTD) of synaptic activity are currently the best characterized forms of synaptic plasticity and are suggested as physiological substrates of learning and memory (Bliss and Collingridge, 1993; Bear and Malenka, 1994; Rioult-Pedotti et al., 1998; Whitlock et al., 2006).
+
+We found significant difference in long- and short-term synaptic plasticity, but not in basal synaptic transmission since there was no difference in I/O curves in slices derived from TPH2− / −or TPH2+/+mice.
+
 Since the LA does not have a clear architecture like the hippocampus and TBS only induces a weak LA-LTP (Drephal, Schubert, & Albrecht, 2006), we adjusted the stimulus to elicit a field potential at 50% of the maximal response and used high frequency stimulation (HFS, 2 × 100 Hz, duration 1 s, 30 s apart) to induce LA-LTP in most cases. [@]
 
 It should be noted that in this study, to induce the long-term potentiation, the TBS was used. 
 Often, in the amygdala, as it is a non-laminated structure, the high-frequency stimulation is used instead of TBS. <!-- the protocol 2a). In a next step, we investigated whether the insignificant reduction of LA-LTP induced by HFS observed in slices derived from TPH2− / −mice can be also demonstrated as a modulation of the response to a threshold level of stimulation (TBS), in comparison with the more extensive, supra-threshold stimulation induced by HFS usually used in this non-laminated structure. -->
 However, it is more extensive and supra-threshold, thus here the more physiological stimulation was used. 
 However, it was documented that this two approaches can led to different results in the BLA [].
-Since CX3CL1 is hypothetized to be neuroprotective and reduces the NMDA- and Glu-induced neurotoxity, it is possible that HFS would lead ... 
+Since CX3CL1 is hypothetized to be neuroprotective and reduces the NMDA- and Glu-induced neurotoxity, it is possible that HFS would lead ... <!-- We also found that the induction of LTP in TPH2− / −mice depends on the parameters of the LTP induction protocol. It is known that HFS-induced LTP might be different from LTP induced by learning processes or TBS stimulation (Larson & Lynch, 1989; Larson & Munkacsy, 2015). Such an LTP might be induced differently and is consolidated by different second messenger systems and upregulation of different receptor subtypes. Moreover, because LTP induced by TBS is reportedly more sensitive to changes in GABAAreceptormediated inhibition compared to LTP induced by HFS (Perez, Chapman, Woodhall, Robitaille, & Lacaille, 1999), the magnitude of TBS-induced LA-LTP is usually weaker in a non-laminated structure such as lateral amygdala (Drephal et al., 2006).-->
+
+Unfortunately, there is also possibility that our paired stimuli to measure short-term synaptic plasticity might have induced the long-term depression, as a previous investigation have shown that ... <!--We have shown that paired stimuli with an interstimulus interval of 40 ms applied at external capsule fibers causes LA-LTD, whereas after single pulse low frequency stimulation (900 pulses, 15 min) no LA-LTD can be obtained (Muller et al., 2009).-->
+
+Interestingly, HFS of external capsule fibers reversed LA-LTD to a smaller extent than that observed using HFS of fibers located within the rat LA (Kaschel et al., 2004). The reason might be a stronger activation of GABAergic interneurons by stimulation of external capsule fibers in comparison with intranuclear LA stimulation.
+
+The application of HFS 20 min after completion of paired pulse protocol caused LTP in both brain structures similar to previous findings in horizontal brain slices (Hellner, Walther, Schubert, & Albrecht, 2005; Muller et al., 2009; Stephens et al., 2005; Walther et al., 2009).<!-- horizontal, not coronal slices...-->
+
+Besides differences in release probability differences in PPF in the amygdala and the hippocampus, observed in our study might be also due to differences in the density of serotonergic fibers in the CA1 region and the LA (Maddaloni et al., 2017). 
+
+Analogous : NE - Activation of β -receptors, which seems to be present on both pyramidal cells and interneurons at least in the amygdala (Farb, Chang, & LeDoux, 2010) induces the phosphorylation of AMPAR GluA1 subunit thereby lowering the threshold for synaptic delivery of GluA1 containing AMPARs during LTP expression. (Hu et al., 2007). Additionally, it has been shown that blocking of β -receptors by propranolol reduced surface expression of GluA1 containing AMPARs in the LA (Zhou et al., 2015). Consequently, a reduced supply of NA in TPH2− / −mice might lead to a decreased phosphorylation of AMPAR GluA1 subunits followed by a reduced surface expression of GluA1 containing AMPARs, which might cause an attenuated LTP expression.<!-- from [@gebhardt_2019] -->
+
+It is well-known that α2-receptors primarily serve as presynaptic autoreceptors. Activation of α2-receptors exerts inhibition of spontaneous activity (Buffalari & Grace, 2007) probably via inhibition of voltage-gated Ca2+channels and activation of inward rectifying K+channels and seems to inhibit both LTP and LTD in the basolateral amygdala (DeBock et al., 2003).
+
+Synaptic plasticity mediated by NMDA glutamate receptors is thought to be a primary mechanism underlying the formation of new memories. Activation of GluN2A NMDA receptor subunits may induce long-term potentiation (LTP), whereas low-frequency stimulation of GluN2B receptors induces long-term depression (LTD).
+
+By releasing glutamate, D-serine, GABA, ATP, adenosine, or tumor necrosis factor-alpha, among others, astrocytes control the basal tone of synaptic activity and the threshold for synaptic plasticity
+
+We speculate that the persistent CX  3  CL1-mediated potentiation of NMDA function and the consequent calcium  increase could interfere with the complex mechanisms of  LTP induction that depends not only by the precise amplitude but also by the duration of postsynaptic Ca  2+  increase  and by the recent history of synaptic activity. Indeed, it has  been demonstrated that prior activation of NMDAR either  by synaptic or pharmacological stimulation could effectively  inhibit the subsequent LTP induction [72,73]. 
 
 #### CX3CL1 and GABA A and extinction
 
 This idea is in line with the role of NF in GABAergic  transmission.  Several  studies  converge  on showing that extinction training globally increases GABAergic  markers  including  gephyrin  and  GABAAreceptor subunits in the BLA (Chhatwal et  al , 2005; Heldt and Ressler, 2007; Lin et al , 2009), and interfering with GABAA receptor insertion by a TAT-conjugated peptide within BLA synapses impaired fear extinction (Lin et al , 2009). However, the role of specific interneuron subtype inputs remains less well understood. To the best of our knowledge, only one study addressed the role of such specific changes, demonstrating remodeling of perisomatic synapses in contextual fear extinction (Trouche et  al , 2013).<!-- saha 2016? -->
+
+#### CX3CL1, amygdala, and behavior
+
+subsequent studies by many labs showed a huge impact of CX3CR1-deficiency on various behaviors, such as <!--aggression, anxiety, and maternal behavior, but not on the depression-like phenotype -->(reviewed in @paolicelli_2014).
+
+Although a number of brain areas are involved in neuronal circuits activated in the presence of a thread causing fear and anxiety (Belzung, Turiault, & Griebel, 2014; Giustino & Maren, 2015; Tovote, Fadok, & Luthi, 2015), there is a fundamental agreement that LTP-induced changes in synaptic strength in the LA occur during fear learning (Blair, Schafe, Bauer, Rodrigues, & LeDoux, 2001; Maren, 2005; Sah, Westbrook, & Luthi, 2008).
+ The observed reduction of LTP magnitude in TPH2− / −mice seems thus to be in agreement with the behavioral data: the TPH2− / −mice showed decreased anxiety-like behavior in three different paradigms: elevated plus maze, marble burying and novelty-suppressed feeding tests (Mosienko et al., 2012). The reduction of LTP in TPH2− / −mice suggests that anxiety vulnerable mice may have difficulty in learning about and predicting when aversive events will occur. It has been shown that fear conditioning occludes LTP-induced presynaptic enhancement of synaptic transmission in the cortical pathway to the LA (Mahan & Ressler, 2012). Further investigations are needed to understand the mechanisms of metaplasticity at the molecular level.
+ 
+### CX3CL1 and spines
+
+An increased number of synapses could result from more dendritic spines and/or unsilencing of silent synapses. In a silent synapse, an EPSC is absent because of a postsynaptic complement exclusively of NMDA receptors; hence, in the absence of depolarization, it cannot conduct current in response to presynaptic glutamate release. In response to sufficient depolarization, AMPARs can be inserted in the postsynaptic density, thereby making the synapse active or “unsilenced.” To this end, we measured the maximum amplitude of the eEPSC at - 70 mV (AMPAR-mediated) and then at 40 mV, at a 50 ms latency (NMDA-mediated), both in the presence of picrotoxin (  Fig. 2  A ). We found that ratio of AMPA/NMDA eEPSC amplitude was increased in EAE (CFA  3.3   0.41, n  15, N  7; EAE  6.0   1.15; n  13, N  4; unpaired two-tailed t test: t  2.335, df  26, p  0.02; 2 cohorts of animals;  Fig. 2  B ). This relative increase in AMPARs suggests increased numbers of functional synapses in response to EAE induction.
+
+We characterized the functional properties of CA3 – CA1 synapses in hippocampal slices from these mice and found that they display altered glutamatergic release probability, maintaining immature properties also at late developmental stages.
  
 ### analogous
 
@@ -165,6 +217,71 @@ These  recent  findings  are  complementing  one another in supporting a fundame
 
 This inhibition of GABAergic transmission is a result of a D3-like receptor-mediated, dynamin-dependent process that presumably reflects endocytosis of postsynaptic GABAAreceptors found on principal BLA neurons.
 
+Therefore, because of the apparent prominent role played by GABAergic transmission onto neocortical Cajal-Retzius cells, several studies investigated their presynaptic regulation  and functional impact on postsynaptic cellular excitability. The presynaptic origin of GABAergic inputs to neocortical Cajal-Retzius cells includes both long-range fibers originating from subplate neurons, local neocortical interneurons such as Martinotti cells, and layer I unidentified interneurons (1 connection out of 80 pairedrecordings, see Soda et al., 2003
+
+The impact of CX3CL1 on excitatory synaptic transmission appears complex in the amygdala.<!--Irrespective of its cellular origin, the impact of GABAergic input on the excitability of Cajal-Retzius cells appears complex. -->
+
+In the hippocampus, the role of synaptic GABAergic input was studied by .... Unexpectedly,both GABAA receptor–dependent excitation and inhibition were observed. This result was possibly explained by the existence of Cajal-Retzius cells in functionally different (resting vs. spontaneously-firing) states
+
+Anatomically, PV-INs with this characteristic feedback excitation are chandelier INs ( Woodruff et al., 2006 ; Spampanato et al., 2016 ; Szabadics et al., 2006 ).
+
+Whole-cell recordings from PV-expressing INs in ex vivo slices have shown that in some INs, action potential discharge can evoke a time-locked, feedback excitatory synaptic input ( Spampanato et al., 2016 ; Woodruff et al., 2006 ). This feedback excitatory input is disynaptic with a latency of  4 ms and shows a dual pharmacological sensitivity to AMPA and GABAA receptor antagonists ( Woodruff et al., 2006 ).
+
+This dual pharmacological sensitivity of this feedback current is similar to the synaptic burst seen during SWs ( Figure 1 ). We therefore investigated a role of these INs in the generation of SWs.
+
+
+Dopamine in turn, modulates the excitability of cholinergic interneurons by virtue of presynaptic inhibition via D2- receptors and postsynaptic excitation via D1 receptors (Pisani et al., 2000). 
+
+The observed level of somatic variation, dendritic organization, and spine localization is likely to provide important morphological control over the integration of synaptic inputs, which would be expected to influence cellular output and potentially contribute to differences in BLA principal cell physiology.
+
+In infragranular layers, it has been shown that PV cells with translaminar axons had excitatory inputs exhibiting less depression than locally projecting PV basket cells. This was due to expression of presynaptic NMDA receptors in glutamatergic axons contacting translaminar, but not locally projecting, PV INs ( Buchanan et al., 2012 ), which likely participates in making them more responsive to local pyramidal cell inputs ( Bortone et al., 2014 ). This implies that PCs differentiate these PV basket cells as different subtypes
+
+### CeA
+
+IS might be seen often in Vip cells as a result of their high input resistance, which increases the possibility that noise, an intrinsic subthreshold oscillation, or a small synaptic input will produce sufficient depolarization to reach spike threshold. <!-- but we have decreased input resistance, BUT depolarized...-->
+
+In particular, CXCL1 enhances synaptic transmission (Cui et al., 2012) and can induce intracellular Ca 2+ elevation (Deftu et al., 2018; Qin et al., 2005) and increases Na + currents in neurons (Wang et al., 2008), and these effects were associated with enhanced neuronal excitability.
+
+We recently discovered that fear conditioning induces cell-type-specific plasticity in the CeL, with excitatory synapses onto SOMneurons being strengthened and excitatory synapses onto SOMneurons being weakened (  Li et al., 2013  ).
+
+Notably, preventing the strengthening of excitatory synapses onto SOMneurons is associated with impaired fear memory formation, and activation of SOMneurons is necessary for fear memory recall and sufficient to drive fear responses.
+
+From a microcircuit point of view, this would fit very well with studies indicating that newborn granule cells are primarily innervated by neurogliaform interneurons (Markwardt et al., 2011), which are a GABAergic target of Cajal-Retzius cells (Quattrocolo andMaccaferri, 2014; Anstötz et al., 2018a). Therefore, an interesting hypothesis that will need to be experimentally validated is that increased functional effects of Cajal-Retzius cells on neurogliaform cells may be required to drive enhanced GABAergic release, which is critical for the synaptic integration of newly generated neurons <!-- analogous-->
+
+From microcircuit point of view, such specificity of activation of specific neuronal subpopulation ...
+
+Since an individual cortical neuron receives input from tens of thousands of other cortical neurons, and in turn projects its output activity patterns to thousands of recipient neurons, the influence of one neuron (or group of neurons) upon another depends critically upon the activity state of all of the neurons that are interconnected with the cells or networks under consideration. In other words, although there is a strong anatomical bias to neuronal interactions, exactly which neuronal subpopulations actively communicate at any particular moment in time (i.e., functional connectivity) depends upon the state of activity in the network itself and can change rapidly to meet behavioral demands. <!-- analogous -->
+
+Consistent with this, Pouille and Scanziani (2004) observed in simultaneous recordings from the soma and the dendrite that during a train of excitatory stimuli in the hippocampus, inhibition first targeted the soma of PCs where PV cell synapses are located and progressively shifted distally, where Sst IN synapses are located
+
+ This delayed pathway was found to be frequency dependent and has been observed in multiple neocortical circuits . 
+
+Therefore, Sst neurons will be sensitive to firing rate increases from even a small number of cells, regardless of their fine temporal relationship. 
+
+In fact, it has been found that a high-frequency train from even a single pyramidal cell can be sufficient to recruit Sst INs . 
+
+In contrast, PV neurons are unlikely to respond to the activity of a single or very few cells because the EPSP from a single PC is too small to reach threshold and the FS IN is less capable of summating consecutive EPSPs due to the their fast kinetics ( Box 1 ). 
+
+Instead, PV INs will be more sensitive to spikes distributed among different cells but occurring in a short time window. 
+
+Thus, Sst INs act as burst and rate detectors, following the most active excitatory cells in the local network, while PV INs follow the different pockets of synchrony in the overall population
+
+Interestingly, these different modes of operation are also reflected in the subcellular target of these IN types. 
+
+Due to their perisomatic bias, PV synaptic contacts are well suited to control the timing of individual sodium spikes, while dendritic-biased Sst neuron synapses gate dendritic integration, calcium spikes, and burst generation. 
+
+
+Synchronization of spiking activity in neuronal networks is a fundamental process that enables the precise transmission of information to drive behavioural responses1–3.
+
+Various GABAergic neuron types of the amygdala cooperate to control principal cell firing during fear-related and other behaviors, and understanding their specialized roles is important. 
+
+Because morphological synaptic growth is normal, we conclude that a homeostatic increase in presynaptic release compensates for impaired muscle excitability. These data demonstrate that a monitor of muscle membrane depolarization is sufficient to initiate synaptic homeostatic compensation <!-- analogous-->
+
+<!-- vasopressin and oxitocin in the CeA -dissertation, but should be articles-->
+
+This influence can be assumed to increase reciprocal interactions between CElon and CEloff pathways, thereby boosting the medial CE (CEm) output pathway and contributing to the anxiogenic-like action of SP in the amygdala.
+
+
 
 ## CXCL12
 
@@ -173,6 +290,10 @@ Indeed, several lines of evidence illustrate that CXCL12 is involved in neurodev
 
 The above conclusion is supported by the following observations.
 
+However, increased excitability is documented to results either from increasing amplitude of N-type calcium channel or inducing inward rectifier (GIRK) potassium currents, the action mediated by CXC12/CXCR4 axis
+
+
+
 ###
 
 Anxiety by yang 2016
@@ -180,7 +301,7 @@ Anxiety by yang 2016
 Their findings support the rationale for investigating CXCR4’s role in ..... 
 For this reason, we selected AZD8797  to  inhibit  CX3CR1  for  investigating  its pharmacological  role  towards  inflammation  during hypertension. <!-- zdecydowanie inaczej-->
 
-
+As mentioned previously,  CXCR4 activation by CXCL12 increases pre-synaptic neurotransmitter release and particularly GABA release in several neuronal populations ( Guyon and Nahon, 2007 ; Bhattacharyya et al., 2008 ; Qu et al., 2008 ). If GABA can in turn block the effects of CXCL12, this could represent a negative feedback loop for pre-synaptic chemokine release. Indeed, when applying CXCL12 for several minutes, a transient increase in the frequency of sIPSCs is frequently observed, followed by a reduced activity (see Figure 3 in Guyon et al., 2006 ). This reduction could be due to an antagonistic effect of GABA, although desensitization of CXCR4 itself cannot be excluded. Similarl
 
 ### Analogous
 
@@ -481,6 +602,10 @@ At the cellular level, principal cells in the BLA<!--, especially its lateral pa
 Multiple pairings of those experiences lead to the LTP at excitatory synapses onto BLA neurons, enabling CS alone to induce the freezing behavior (for example, @nabavi_2014). 
 Accordingly, by combining several approaches to label only those neurons involved in fear conditioning (CS+), @kim_2017 found that AMPA/NMDA ratios were explicitly increased in CS+ terminals, confirming an input-specific, postsynaptic nature of this phenomenon. 
 
+In PPF (at multiple synapses), the second pair of stimuli separated by a few tens of milliseconds produces a larger synaptic response than the first, owing to the transient elevation of Ca2+in terminal boutons produced by the second stimulus summing with the residual Ca2+produced by the first stimulus, and increasing the probability of transmitter release. Since probability of transmitter release cannot exceed 1, the PPF ratio tends to decrease as probability of release increases (Bliss & Collingridge, 2013). Therefore, in the LA the glutamate release in response to paired pulse stimulation seems to be reduced in TPH2− / −mice. Besides differences in release probability differences in PPF in the amygdala and the hippocampus,
+
+Thus, in mice lacking brain serotonin we found long-term plasticity changes both in the amygdala and in the hippocampus. Priming of LTP by prior paired pulse stimulation seemed to compensate the deficits of serotonin in the brain at the level of the functional readout.
+
 ### CeA
 The central nucleus of the amygdala (CeA) is a limbic hub involved in autonomic regulation, emotion, and motivated behavior, and has been strongly implicated in opioid dependence (Koob, 2009a; Upadhyay et al., 2010). 
 <!-- summary if increased... -->
@@ -545,3 +670,15 @@ This suggests that CX3CR1-microglia in the NTS participates in NO and systemic b
 This notion was further supported by the observed reduction of sIPSC frequency after CX3CL1 treatment.
 Usually, a change in the amplitude of <!--m-->IPSCs reflects alterations in postsynaptic GABA~A~ receptors, while a change in the frequency of <!--m-->IPSCs implicates an altered probability of transmitter release and/or changes in the number of active synapses (De Koninck and Mody, 1994; Otis et al , 1994).
 The reduction in average amplitude after NF knockdown may result from a decreased frequency of larger events, probably due to a reduction of number of postsynaptic GABA~A~receptors (Otis et al , 1994). However, the lack of observed alterations in the frequency could be explained by the fact that relative to the overall GABAergic input, only a very small number of synapses were completely removed at the AIS, while smaller events remained. Nevertheless,  our  results  provide  direct  evidence  that  NF knockdown impairs GABAergic transmission within the BLA  by  reducing  functional  GABAAreceptors  at  the postsynaptic site. 
+
+Whereas PPF in TPH2− / −mice was significantly increased in the LA with presumably lower probability of transmitter release, no changes were found in the
+
+The behavior of TPH2− / −mice in the sucrose preference test, tail suspension and forced swim tests and their responses to the unpredictable chronic mild stress and learned helplessness paradigms are in general similar to the TPH2+/+mice, although in some studies mild alterations were observed in these paradigms (Angoa-Perez et al., 2014; Gutknecht et al., 2015; Mosienko et al., 2012). These behavioral tests are stress-dependent and correlate with our results.
+
+These results demonstrated that both GluN2A and GluN2B subunit-containing NMDA receptors  are  functionally  expressed  at  thalamo-amygdala synapses, and can be at least partially isolated using these two drugs. 
+
+Therefore, we tested the effects of these NMDA subunit antagonists on the formation of LTP/LTD in LA neurons.
+
+### Amygdala modulates hippocampal memory
+
+Hippocampus-dependent memory is modulated by the amygdala.

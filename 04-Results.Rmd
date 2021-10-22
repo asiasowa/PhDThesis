@@ -55,7 +55,7 @@ Considering presented above immunohistochemical findings that CX3CL1 shown highe
 To test this hypothesis, it was investigated whether CX3CL1 could directly affect the excitability of principal cells, the most numerous neurons in the BLA, using a whole-cell patch-clamp technique, in a current-clamp configuration.<!--Given that principal cells' excitability has been consistently reported to influence not only activity within the BLA complex, but also in the CeA, and within ITCs clusters (see Section \@ref(BLAstructure)), this study investigated whether CX3CL1 may regulate excitability of those cells. First, I was interested in determining whether CX3CL1 affect any membrane properties of principal neurons in the BLA. Considering their efferents , the regulation of firing in those neurons is thought to have critical impact not only on other pyramidal cells within the BLA complex, but also on ITCs clusters and the CeA complex.// As these neurons receive many inputs from broad array of structures *in vivo*, together with their // -->
 
 Repeated-measure ANOVA revealed that principal cells fired significantly less after CX3CL1 application (group × current steps intensity interaction: F(1.973,53.279)=19.648, P<0.001, Greenhouse–Geisser correction) (Figure 4d). 
-Further analysis revealed that while the gain remained unchanged (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, CX3CL1(2nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, see Fig. \@ref(fig:CX3CL1BLAexcitabilityappendixfigure) in the Appendix \@ref(CX3CL1membraneappendix)), <!--figure Appendix-->
+Further analysis revealed that while the gain remained unchanged (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, CX3CL1(2nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, see Fig. \@ref(fig:CX3CL1BLAexcitabilityfigall1) and \@ref(fig:CX3CL1BLAexcitabilityfigall2) in the Appendix \@ref(CX3CL1membraneappendix)), <!--figure Appendix-->
 the action potential threshold was significantly depolarized, compared to baseline (from `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` to `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, n = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_2nM_BLA_stat_tres`, see Fig. \@ref(fig:CX3CL1BLAexcitabilityfrak)<!--WHICH PARTS-->).
 This effect was also replicated in higher dose (baseline = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)`, CX3CL1(5nM) = `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, n = `r BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_df_final %>% dplyr::filter(Experiment == 'CX3CL1(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_5nM_BLA_stat_tres`, see Fig. \@ref(fig:CX3CL1BLAexcitabilityfrak)<!--which parts-->). <!-- ale czy efekt nie większy dla CX3CL1? MIXED / REPEATED MEASURE ANOVA AND INTERACTION? -->
 To validate whether CX3CL1-induced reduction in the excitability is dependent on CX3CL1 receptor, CX3CR1, the two approaches were used. 
@@ -78,7 +78,7 @@ Finally, since the activity of principal cells in the BLA is well-known to be ti
 As expected, the CX3CL1 effect was fully abolished when the GABAergic receptors were blocked (baseline = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)`, CX3CL1 (2nM) = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, n = `r BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_df_final %>% dplyr::filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_gabafrak2nM_BLA_stat_tres`, Fig. \@ref(fig:CX3CL1BLAexcitabilityfrak)).
 Thus, these data suggest that CX3CL1 reduces principal cells' activity *via* CX3CR1-, microglia-, and interneuron-dependent manner.
 
-```{r CX3CL1BLAexcitabilityfrak, fig.cap='**Effects of CX3CL1 on threshold current** **a** Schematics of presented conditions **b** Boxplots presenting each cell before and after CX3CL1 application in each condition **c** Pie charts presenting how cells reacted to CX3CL1 **d** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the five conditions of electrophysiological recordings. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 18}
+```{r CX3CL1BLAexcitabilityfrak, fig.cap='**Effects of CX3CL1 on threshold current** **(a)** Schematics of presented conditions **(b)** Boxplots presenting each cell before and after CX3CL1 application in each condition **(c)** Pie charts presenting how cells reacted to CX3CL1 **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the five conditions of electrophysiological recordings. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 18}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -184,7 +184,7 @@ figure1
 <!-- (C) Representative fPSC traces prior to TBS (pre-TBS, black) and after TBS (post-TBS, blue) in the six conditions of electrophysiological recordings.-->
 
 
-```{r CX3CL1BLAexcitabilityadd, fig.cap='**Effects of AZD8797 and minocycline on PCs excitability** **a** Schematics of presented conditions **b** Boxplots presenting group of cells before and after AZD8797 or minocycline treatment **c** Pie charts presenting how cells reacted to those drugs **d** plots presenting input-output relationships of representative cells **e** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 9}
+```{r CX3CL1BLAexcitabilityadd, fig.cap='**Effects of AZD8797 and minocycline on PCs excitability** **(a1)** Boxplots presenting group of cells before and after AZD8797 or minocycline treatment **(a2-a3)** Pie charts presenting how cells reacted to those drugs  **(b1)** plots presenting input-output relationships of representative cells **(b2)** current traces from representative cells to 300, 360 and 400pA injection currents. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 9}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
@@ -252,10 +252,14 @@ representative_minoa_IV <- minoa_IV_subset %>% plot_IV_individual(mtitle = "") +
 
 
 # wersja z pie chart jako inset2 
-figure1 <- (bp_BLA_thres + inset_element((pie_BLA_azd_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.7, right = 1, top = 1, align_to = 'full') + inset_element((pie_BLA_mino_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.2, right = 1, top = 0.5, align_to = 'full') + plot_layout(tag_level = 'new'))| 
-((representative_azda_IV | IV_representative_azda)  + plot_layout(tag_level = 'new')) / ((representative_minoa_IV | IV_representative_minoa) + plot_layout(tag_level = 'new')) 
+# figure1 <- (bp_BLA_thres + inset_element((pie_BLA_azd_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.7, right = 1, top = 1, align_to = 'full') + inset_element((pie_BLA_mino_thres& theme(legend.position = "none")), left = 0.75, bottom = 0.2, right = 1, top = 0.5, align_to = 'full') + plot_layout(tag_level = 'new'))| 
+# ((representative_azda_IV | IV_representative_azda)  + plot_layout(tag_level = 'new')) / ((representative_minoa_IV | IV_representative_minoa) + plot_layout(tag_level = 'new')) 
 
-figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
+#wersja z pie chart jako kolumna
+figure1 <- (bp_BLA_thres) | (pie_BLA_azd_thres / pie_BLA_mino_thres + plot_layout(tag_level = 'new')) | 
+ ((representative_azda_IV | IV_representative_azda)  + plot_layout(tag_level = 'new')) / ((representative_minoa_IV | IV_representative_minoa) + plot_layout(tag_level = 'new')) 
+
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1')) + plot_layout(widths = c(0.5, 0.5, 1))
 
 figure1
 
@@ -291,13 +295,13 @@ CX3CL1_sEPSC_mino_BLA_stat_sEPSC_freq <- as.data.frame(CX3CL1_sEPSC_mino_BLA_sta
 Having established a significant suppression of principal cells' firing, which are the main group of glutamatergic neurons in the BLA, following CX3CL1 treatment, the effects of this protein on the glutamatergic transmission in this area in *in vitro* slices was measured.
 Spontaneous excitatory postsynaptic currents (sEPSCs) were recorded *via* whole-cell patch clamp recordings (held at −70 mV). 
 <!--The representative traces of sEPSCs in the absence (referred to as control hereafter) or presence of harmine (10μM) (referred to as harmine) were shown in supplemental Fig. S1(A). -->
-All measured parameters of excitatory synaptic transmission before and after application of CX3CL1, AZD8797, and minocycline are shown in details in Figs. \@ref(fig:CX3CL1BLAsEPSCfigall1 \@ref(fig:CX3CL1BLAsEPSCfigall2) and summarized in Table 7.2<!--!--> in the Appendix \@ref(CX3CL1sEPSCappendix).
+All measured parameters of excitatory synaptic transmission before and after application of CX3CL1, AZD8797, and minocycline are shown in details in Figs. \@ref(fig:CX3CL1BLAsEPSCfigall1) \@ref(fig:CX3CL1BLAsEPSCfigall2) and summarized in Table 7.2<!--!--> in the Appendix \@ref(CX3CL1sEPSCappendix).
 Compared to the control, CX3CL1 in two doses (2nM and 5nM) had negligible effect on the median value of amplitude, frequency, and kinetics of sEPSC.
 However, although statistically not significant, a proportion of neurons (`r knitr::asis_output("\U223C")` 50%) reacted with decreased frequency of excitatory synaptic currents. <!-- CX3CL1 was shown to have negligible effect on the frequency of excitatory synaptic currents./// In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which was further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)). // found that although a partial reduction between NMDA and NMDA/CX3CL1 treated cells was observed, it was not statistical significant
 -->
 <!-- figures with decreased sEPSC + minocycline ...evoked and paired pulses? -->
 
-Nevertheless, similar to previous findings, in addition to increased excitability, minocycline alone also altered sEPSC kinetics by increasing both their rise time and decay time \@ref(fig:).
+Nevertheless, similar to previous findings, in addition to increased excitability, minocycline alone also altered sEPSC kinetics by increasing both their rise time and decay time \@ref(fig:CX3CL1BLAsEPSC).
 Thus, this observation further highlight ... <!--microglia...? postsynaptic mechanisms?-->
 
 
@@ -384,13 +388,14 @@ BLA_sIPSC_final <- BLA_sIPSC_final %>% bind_rows(mIPSC_sliced)
 #futher selecting conditions to show
 
 # subsetting needed conditions from dataframe
-BLA_sIPSC_final <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline", 'TTX + \nCX3CL1(2nM)', 'TTX + \nCX3CL1(5nM)'))
+BLA_sIPSC_final <- BLA_sIPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline",  'TTX + \nCX3CL1(5nM)'))
 
-BLA_sIPSC_final$Experiment <- factor(BLA_sIPSC_final$Experiment, levels = c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline", 'TTX + \nCX3CL1(2nM)', 'TTX + \nCX3CL1(5nM)'))
+BLA_sIPSC_final$Experiment <- factor(BLA_sIPSC_final$Experiment, levels = c("CX3CL1(2nM)", "CX3CL1(5nM)", "AZD8797 + \nCX3CL1(5nM)", "AZD8797", "minocycline + \nCX3CL1(5nM)", "minocycline",  'TTX + \nCX3CL1(5nM)'))
 
 BLA_sIPSC_final$Cell <- rep(1:(nrow(BLA_sIPSC_final)/2), each = 2)
 
 BLA_sIPSC_final$Condition <- factor(BLA_sIPSC_final$Condition, levels = c("baseline", "CX3CL1", "AZD8797", "minocycline"))
+
 
 # getting the table of statistics
 CX3CL1_2nM_sIPSC_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(2nM)'))))
@@ -458,18 +463,25 @@ inset_minofrak5nM <- image_read("images//results//inset_minofrak5nM.png") # mino
 inset_minofrak5nM <- image_ggplot(inset_minofrak5nM)
 inset_minoa <- image_read("images//results//inset_minoa.png")
 inset_minoa <- image_ggplot(inset_minoa)
-inset_ttx <- image_read("images//results//inset_ttx.png")
-inset_ttx <- image_ggplot(inset_ttx)
+# inset_ttx <- image_read("images//results//inset_ttx.png")
+# inset_ttx <- image_ggplot(inset_ttx)
 inset_ttx_5nM <- image_read("images//results//inset_ttx_5nM.png")
 inset_ttx_5nM <- image_ggplot(inset_ttx_5nM)
 
-# subsetting needed conditions from dataframe
-#zrobione wyżej
+# loading representatives <- 
+rep_sIPSC_frak5nM <- image_read("images//results//representatives_BLA_sIPSC_frak5nM.png")
+rep_sIPSC_frak5nM <- image_ggplot(rep_sIPSC_frak5nM)
+rep_mIPSC_frak5nM <- image_read("images//results//representatives_BLA_mIPSC_frak5nM.png")
+rep_mIPSC_frak5nM <- image_ggplot(rep_mIPSC_frak5nM)
+rep_sIPSC_azdfrak5nM <- image_read("images//results//representatives_BLA_sIPSC_azdfrak5nM.png")
+rep_sIPSC_azdfrak5nM <- image_ggplot(rep_sIPSC_azdfrak5nM)
+rep_sIPSC_minofrak5nM <- image_read("images//results//representatives_BLA_sIPSC_minofrak5nM.png")
+rep_sIPSC_minofrak5nM <- image_ggplot(rep_sIPSC_minofrak5nM)
 
 # making boxplots with facets
-bp_BLA_s_freq_sIPSC <- plot_boxplot(BLA_sIPSC_final, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 15, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+bp_BLA_s_freq_sIPSC <- plot_boxplot(BLA_sIPSC_final, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 11, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
 
-bp_BLA_s_freq_sIPSC  <- bp_BLA_s_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 10) 
+bp_BLA_s_freq_sIPSC  <- bp_BLA_s_freq_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 9) 
 
 # making pie charts for conditions 
 pie_frak2_s_freq_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_Frequency, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -479,11 +491,11 @@ pie_azd_s_freq_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_Frequency, "AZD8797"
 pie_minofrak5nM_s_freq_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_Frequency, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_mino_s_freq_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_Frequency, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
-pie_frak2_m_freq_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_Frequency, "TTX + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_frak5_m_freq_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_Frequency, "TTX + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_frak2_m_freq_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_Frequency, "TTX + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_frak5_m_freq_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_Frequency, "TTX + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 # making boxplots for amplitude
-bp_BLA_s_amp_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_BLA_s_amp_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
 bp_BLA_s_amp_sIPSC  <- bp_BLA_s_amp_sIPSC  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
 
 pie_frak2_s_amp_sIPSC <- BLA_frak2nM_sIPSC %>% plot_pie(median_Amplitude, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
@@ -493,8 +505,8 @@ pie_azd_s_amp_sIPSC  <- BLA_azda_sIPSC %>% plot_pie(median_Amplitude, "AZD8797")
 pie_minofrak5nM_s_amp_sIPSC  <- BLA_minofrak5nM_sIPSC %>% plot_pie(median_Amplitude, 'minocycline + \nCX3CL1(5nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 pie_mino_s_amp_sIPSC  <- BLA_minoa_sIPSC %>% plot_pie(median_Amplitude, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
-pie_frak2_m_amp_sIPSC  <- BLA_frak2nM_sIPSC %>% plot_pie(median_Amplitude, "TTX + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_frak5_m_amp_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_Amplitude, "TTX + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_frak2_m_amp_sIPSC  <- BLA_frak2nM_mIPSC %>% plot_pie(median_Amplitude, "TTX + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_frak5_m_amp_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_Amplitude, "TTX + \nCX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 # rise time
 # bp_BLA_s_rt_sIPSC  <- plot_boxplot(BLA_sIPSC_final, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "sIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
@@ -532,11 +544,12 @@ pie_frak5_m_amp_sIPSC  <- BLA_frak5nM_sIPSC %>% plot_pie(median_Amplitude, "TTX 
 #using patchwork to do layout of the figure
 
 
-figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_azdfrak5nM | inset_azda | inset_minofrak5nM | inset_minoa | inset_ttx | inset_ttx_5nM)  + plot_layout(tag_level = 'new')) /
+figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_azdfrak5nM | inset_azda | inset_minofrak5nM | inset_minoa |  inset_ttx_5nM)  + plot_layout(tag_level = 'new')) /
  (bp_BLA_s_freq_sIPSC + theme(legend.position = "none"))  /
-  (((pie_frak2_s_freq_sIPSC  | pie_frak5_s_freq_sIPSC  | pie_azdfrak5nM_s_freq_sIPSC  | pie_azd_s_freq_sIPSC  | pie_minofrak5nM_s_freq_sIPSC  | pie_mino_s_freq_sIPSC| pie_frak2_m_freq_sIPSC | pie_frak5_m_freq_sIPSC)   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
+  (((pie_frak2_s_freq_sIPSC  | pie_frak5_s_freq_sIPSC  | pie_azdfrak5nM_s_freq_sIPSC  | pie_azd_s_freq_sIPSC  | pie_minofrak5nM_s_freq_sIPSC  | pie_mino_s_freq_sIPSC|  pie_frak5_m_freq_sIPSC)   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
   (bp_BLA_s_amp_sIPSC + theme(legend.position = "none")) / 
-(((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC | pie_frak2_m_amp_sIPSC | pie_frak5_m_amp_sIPSC )   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) 
+(((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC | pie_frak5_m_amp_sIPSC )   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
+  (((rep_sIPSC_frak5nM) | rep_mIPSC_frak5nM | rep_sIPSC_azdfrak5nM | rep_sIPSC_minofrak5nM ) +  plot_layout(tag_level = 'new'))
 
 # plus representatives!!!! cumulatives???
 
@@ -564,15 +577,12 @@ Notably, upon application of TBS<!--Theta Burst Stimulation-->, external capsule
 Together, these findings demonstrate an <!--specific--> impairment of BLA synaptic plasticity to external capsule inputs after CX3CL1 treatment.<!-- of external capsule inputs to LA/BLA.-->
 Considering that dendritic spines are <!--involved in late phase LTP in the LA (Huang & Kandel, 2007)--> , our next goal was to examine whether CX3CL1 affects dendrites morphology in the amygdala.
 
-//////////
-The observed in this study reduced PCs' excitability, together with a decrease in GABAergic drive, was ...
-As many reports indicated the effect of CX3CL1 on the LTP<!-- citations -->, together with accumulating evidence concerning the relevance of interneurons in this process in the BLA <!-- citations -->, ... <!-- dokończyć-->.
+
+<!--The observed in this study reduced PCs' excitability, together with a decrease in GABAergic drive, was ...
+As many reports indicated the effect of CX3CL1 on the LTP citations , together with accumulating evidence concerning the relevance of interneurons in this process in the BLA  citations , ...  dokończyć--><!--We assessed long-term potentiation (LTP) in the ventral external capsule– BLA pathway, which represents the major connection between cortex and BLA. -->
 
 
-We assessed long-term potentiation (LTP) in the ventral external capsule– BLA pathway, which represents the major connection between cortex and BLA. <!--as part of the fear conditioning and extinction network (Biedenkapp and Rudy, 2009; Hobin et al , 2006; Horovitz and Richter-Levin, 2015; Kim et  al , 2013; Maren et  al , 1995)--><!--sprawdzić czy tak może być, bo tak naprawdę to chodziło o subiculum i cytowania to nie te..."-->
-
-
-```{r CX3CL1BLALTP, fig.cap='** Baseline activity, paired pulse facilitation, and LTP in the BLA** **a** Input/output curves from control and CX3CL1-treated BLA slices. Basal transmission was not significantly different between measured conditions. **b** Paired pulse facilitation (PPF) in the BLA. Boxplots represent averaged ratios (%) of second to first responses to double stimuli at the interval of xxx ms. There is no difference between measured conditions. **c** Graph showing the time course and quantification of fEPSC evoked in the BLA and the LTP induced after a TBS (arrow) in presence or absence of 2nM CX3CL1 or in a coctail of 2nM CX3CL1 and AZD8797 (10uM) in the bath solution. fEPSC amplitudes are represented as a percentage of baseline. Insets - representative fEPSC traces prior to TBS (blue) and after TBS (red)', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 12, fig.width= 10}
+```{r CX3CL1BLALTP, fig.cap='**Baseline activity, paired pulse facilitation, and LTP in the BLA** **(a)** Input/output curves from control and CX3CL1-treated BLA slices. Basal transmission was not significantly different between measured conditions. **(b)** Paired pulse facilitation (PPF) in the BLA. Boxplots represent averaged ratios (%) of second to first responses to double stimuli at the interval of xxx ms. There is no difference between measured conditions. **(c)** Graph showing the time course and quantification of fEPSC evoked in the BLA and the LTP induced after a TBS (arrow) in presence or absence of 2nM CX3CL1 or in a coctail of 2nM CX3CL1 and AZD8797 (10uM) in the bath solution. fEPSC amplitudes are represented as a percentage of baseline. Insets - representative fEPSC traces prior to TBS (blue) and after TBS (red)', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 10, fig.width= 10}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
@@ -599,7 +609,7 @@ figure1
 
 ```
 
-<!-- FIGURE 1 Baseline activity, paired pulse facilitation, and LTP in LA and CA1. (a) Input/output curves from LA and CA1 recorded in horizontal brain slices derived from male TPH2+/+(LA: n = 47 slices; CA1: n = 30 slices) and TPH2− / −(LA: n = 38 slices; CA1: n = 28 slices) mice. Input/ output curves of field potentials in LA as evoked by single stimuli applied at external capsule fibers and population spikes (PS) recorded in CA1 field of the hippocampus as evoked by single stimuli applied at Schaffer collateral fibers. Basal transmission was not significantly different between the genotypes. (b) Paired pulse facilitation (PPF) in LA (left) and CA1 (right) of male TPH2+/+(white bars, LA: n = 13 slices; CA1: n =13 slices) and TPH2− / −(black bars, LA: n = 9 slices; CA1: n = 13 slices) mice. TPH2− / −mice showed significant differences in the LA in PPF in comparison to TPH2+/+mice ( p < .05, Mann – Whitney test), but no differences in PPF in the hippocampus. Bars represent averaged ratios (mean  SEM ) of second to first responses to double stimuli at intervals of 10 – 500 ms. (c) High-frequency stimulation (HFS) of external capsule fibers and theta burst stimulation (TBS) of Schaffer collaterals elicited the same magnitude of LTP in TPH2− / −(LA: n = 11 slices; CA1: n =13 slices) in comparison to TPH2+/+(LA: n = 14 slices; CA1: n = 14 slices) mice. Data points represent averaged amplitudes (mean  SEM ) normalized with respect to baseline values. Representative traces were recorded 5 min prior to tetanus (dashed lines) and 60 min after HFS/TBS stimulation (solid lines)  -->
+<!-- FIGURE 1 Baseline activity, paired pulse facilitation, and LTP in LA and CA1. (a) Input/output curves from LA and CA1 recorded in horizontal brain slices derived from male TPH2+/+(LA: n = 47 slices; CA1: n = 30 slices) and TPH2− / −(LA: n = 38 slices; CA1: n = 28 slices) mice. Input/ output curves of field potentials in LA as evoked by single stimuli applied at external capsule fibers and population spikes (PS) recorded in CA1 field of the hippocampus as evoked by single stimuli applied at Schaffer collateral fibers. Basal transmission was not significantly different between the genotypes. (b) Paired pulse facilitation (PPF) in LA (left) and CA1 (right) of male TPH2+/+(white bars, LA: n = 13 slices; CA1: n =13 slices) and TPH2− / −(black bars, LA: n = 9 slices; CA1: n = 13 slices) mice. TPH2− / −mice showed significant differences in the LA in PPF in comparison to TPH2+/+mice ( p < .05, Mann – Whitney test), but no differences in PPF in the hippocampus. Bars represent averaged ratios (mean  SEM ) of second to first responses to double stimuli at intervals of 10 – 500 ms. (c) High-frequency stimulation (HFS) of external capsule fibers and theta burst stimulation (TBS) of Schaffer collaterals elicited the same magnitude of LTP in TPH2− / −(LA: n = 11 slices; CA1: n =13 slices) in comparison to TPH2+/+(LA: n = 14 slices; CA1: n = 14 slices) mice. Data points represent averaged amplitudes (mean  SEM ) normalized with respect to baseline values. Representative traces were recorded 5 min prior to tetanus (dashed lines) and 60 min after HFS/TBS stimulation (solid lines)  -->
 
 #### CX3CL1 .... dendritic spines
 

@@ -14,206 +14,165 @@ To gain greater insights about the cellular localization of CXCL12 and CXCR4, th
 
 ### CX3CL1/CX3CR1 modulation of the electrical properties in CeA neurons
 
-#### CX3CL1 affects electrophysiological membrane properties of CeL neurons in the cell-type specific manner
+#### Modulation of intrinsic membrane properties of CeL neurons by CX3CL1 in the cell-type specific manner
 
 ```{r CX3CL1CeAexcitabilitystats, include = FALSE}
-# getting the table of statistics for all condition of one experiment
-CX3CL1_CeA_stat_2nM <- (stat_table_exp_membr_extended((CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)'))))
+# getting the table of statistics for all CeA df (LF + RS) condition of one experiment
+CX3CL1_CeA_stat_all <- stat_table_exp_membr_extended((CeA_df_final))
+
 # selecting a stat_row so it prints nicely in text
-CX3CL1_CeA_stat_2nM_gain <- as.data.frame(CX3CL1_CeA_stat_2nM %>% dplyr::filter(Variable == 'gain') %>% dplyr::select(Statistics))
+CX3CL1_CeA_stat_all_gain <- as.data.frame(CX3CL1_CeA_stat_all %>% dplyr::filter(Variable == 'gain') %>% dplyr::select(Statistics))
 
-CX3CL1_CeA_stat_2nM_Rm <- as.data.frame(CX3CL1_CeA_stat_2nM %>% dplyr::filter(Variable == 'Input_resistance') %>% dplyr::select(Statistics)) 
+CX3CL1_CeA_stat_all_Rm <- as.data.frame(CX3CL1_CeA_stat_all %>% dplyr::filter(Variable == 'Input_resistance') %>% dplyr::select(Statistics)) 
 
-CX3CL1_CeA_stat_2nM_tau <- as.data.frame(CX3CL1_CeA_stat_2nM %>% dplyr::filter(Variable == 'tau') %>% dplyr::select(Statistics))
+CX3CL1_CeA_stat_all_tau <- as.data.frame(CX3CL1_CeA_stat_all %>% dplyr::filter(Variable == 'tau') %>% dplyr::select(Statistics))
 
-CX3CL1_CeA_stat_2nM_Vm <- as.data.frame(CX3CL1_CeA_stat_2nM %>% dplyr::filter(Variable == 'Vm') %>% dplyr::select(Statistics))
+CX3CL1_CeA_stat_all_Vm <- as.data.frame(CX3CL1_CeA_stat_all %>% dplyr::filter(Variable == 'Vm') %>% dplyr::select(Statistics))
 
+#### RS
+CX3CL1_CeA_stat_RS <- stat_table_exp_membr_extended((CeA_df_final_RS))
+
+# selecting a stat_row so it prints nicely in text
+CX3CL1_CeA_stat_RS_gain <- as.data.frame(CX3CL1_CeA_stat_RS %>% dplyr::filter(Variable == 'gain') %>% dplyr::select(Statistics))
+
+CX3CL1_CeA_stat_RS_Rm <- as.data.frame(CX3CL1_CeA_stat_RS %>% dplyr::filter(Variable == 'Input_resistance') %>% dplyr::select(Statistics)) 
+
+CX3CL1_CeA_stat_RS_tau <- as.data.frame(CX3CL1_CeA_stat_RS %>% dplyr::filter(Variable == 'tau') %>% dplyr::select(Statistics))
+
+CX3CL1_CeA_stat_RS_Vm <- as.data.frame(CX3CL1_CeA_stat_RS %>% dplyr::filter(Variable == 'Vm') %>% dplyr::select(Statistics))
+
+
+#### LF
+CX3CL1_CeA_stat_LF <- stat_table_exp_membr_extended((CeA_df_final_LF))
+
+# selecting a stat_row so it prints nicely in text
+CX3CL1_CeA_stat_LF_gain <- as.data.frame(CX3CL1_CeA_stat_LF %>% dplyr::filter(Variable == 'gain') %>% dplyr::select(Statistics))
+
+CX3CL1_CeA_stat_LF_Rm <- as.data.frame(CX3CL1_CeA_stat_LF %>% dplyr::filter(Variable == 'Input_resistance') %>% dplyr::select(Statistics)) 
+
+CX3CL1_CeA_stat_LF_tau <- as.data.frame(CX3CL1_CeA_stat_LF %>% dplyr::filter(Variable == 'tau') %>% dplyr::select(Statistics))
+
+CX3CL1_CeA_stat_LF_Vm <- as.data.frame(CX3CL1_CeA_stat_LF %>% dplyr::filter(Variable == 'Vm') %>% dplyr::select(Statistics))
 ```
 
-The next step was to investigate whether reduced excitability of CX3CL1 in the BLA,<!--together with ....,--> would affect the membrane properties of their main target, i.e., GABAergic cells in the CeL.
-To this end, among others, such electrophysiological features as the excitability, input resistance, membrane time constant, resting membrane potential, was measured (see \@ref(electroprotocols)). <!-- analogous to the neurons in the BLA./// recorded using a whole-cell patch-clamp approach, in a current-clamp configuration.-->
+The next step was to investigate whether reduced excitability of CX3CL1 in the BLA<!--,together with ....,--> would affect the membrane properties of their main target, i.e., GABAergic cells in the CeL.
+<!-- razem z tym, że on sam też może mieć udział... --> 
+To this end, among others, such electrophysiological features as the excitability, input resistance, membrane time constant, resting membrane potential, was measured (see: Methods \@ref(electroprotocols)). <!-- analogous to the neurons in the BLA./// recorded using a whole-cell patch-clamp approach, in a current-clamp configuration.-->
+
+In general, this experiment revealed that several membrane properties in the CeL neurons were significantly modified by CX3CL1 (Fig. \@ref(fig:CX3CL1CeAintrinsic)). 
+Specifically, similar what is observed in the BLA, bath application of CX3CL1 (2nM) produced a <!--reversible--> decrease in the number of action potentials evoked by a given current step, manifested as decreased gain (baseline = `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, CX3CL1(2nM) = `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, `r CX3CL1_CeA_stat_all_gain`, see Fig. \@ref(fig:CX3CL1CeAintrinsic)).<!-- który panel?--><!--  We injected a series of depolarizing current steps to assess the number of action potentials (Figure 4a – c). Repeated-measure ANOVA revealed that projection neurons fired significantly less after NF knockdown // Bath application of DA (0.05–30 μm) produced a reversible decrease in the number of action potentials evoked by a given current step-->
+However, contrary to principal cells in the BLA, the input resistance was also decreased after CX3CL1 application, together with membrane time constant.
+Moreover, in response to bath-applied 2nM CX3CL1, resting membrane potentials of CeL neurons become more depolarized. <!-- In response to bath-applied agonists, the depolarization is strong enough that it is capable of producing prolonged spiking ( Beierlein et al., 2000; Fanselow et al., 2008; Kawaguchi, 1997; Xu et al., 2013 ).-->
+
+Given that CeL comprises neurons of two main electrophysiological types<!-- La  ter studies further characterized at least four main physiological types of neurons in the CeA, distinguished based on their responses to intracellular current injections.-->, further analysis was aimed at comparison between Regular-Spiking (RS) and Late-Firing neurons in relation to previously measured parameters.<!-- odnośnik do góry i lepiej napisać// segregated those neurons according to their types.-->
+Intriguingly, this additional analysis revealed that in RS group all of previously mentioned effects remained following CX3CL1 treatment, whereas CX3CL1 did not affect LF cells (see Fig. \@ref(fig:)),  implying that much higher proportion of RS reactive cells was reactive to CX3CL1.
+All parameters and statistics are summarized in Table <!--?-->.
+
+ two major classes of CeL neurons with distinct firing patterns,
+
+```{r CX3CL1CeAintrinsic, fig.cap='**Effects of CX3CL1 on intrinsic properties of CeL neurons** **(a)** Schematics of presented conditions **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions **(c)** Pie charts presenting how cells reacted to CX3CL1 **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the five conditions of electrophysiological recordings. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 18}
+
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+
+inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
+inset_frak2nM <- image_ggplot(inset_frak2nM)
+inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
+inset_frak5nM <- image_ggplot(inset_frak5nM)
+inset_ab <- image_read("images//results//inset_ab.png")
+inset_ab <- image_ggplot(inset_ab)
+inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
+inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
+inset_azda <- image_read("images//results//inset_azd.png")
+inset_azda <- image_ggplot(inset_azda)
+inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
+inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
+inset_minoa <- image_read("images//results//inset_minoa.png")
+inset_minoa <- image_ggplot(inset_minoa)
+inset_gaba <- image_read("images//results//inset_gaba.png")
+inset_gaba <- image_ggplot(inset_gaba)
+
+#powinny być nowe 
+# IV_representative_frak2nM <- image_read("images//results//IV_representative_frak2nM.png")
+# IV_representative_frak2nM <- image_ggplot(IV_representative_frak2nM)
+# IV_representative_azdfrak2nM <- image_read("images//results//IV_representative_azdfrak2nM.png")
+# IV_representative_azdfrak2nM <- image_ggplot(IV_representative_azdfrak2nM)
+# IV_representative_gabafrak2nM <- image_read("images//results//IV_representative_gabafrak2nM.png")
+# IV_representative_gabafrak2nM <- image_ggplot(IV_representative_gabafrak2nM)
+# IV_representative_minofrak2nM <- image_read("images//results//IV_representative_minofrak2nM.png")
+# IV_representative_minofrak2nM <- image_ggplot(IV_representative_minofrak2nM)
+# making labels (as minocycline and azd has different condition than CX3CL1) for then making proper automatic statistics
+f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
+f_labels_BLA_thres$Experiment <- factor(f_labels_BLA_thres$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
+
+# subsetting additional control 
+BLA_df_frak_add <- BLA_df_final %>% dplyr::filter(Experiment %in% c("AZD8797", 'minocycline'))
+
+# # making boxplot
+bp_BLA_thres <- plot_boxplot(BLA_df_frak_all, Treshold1_all, ylabel = "Threshold current (mV)", mtitle = "", vary1 = -55, vary2 = -20, dot_size = 2)
+bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), #facet_wrap opitions
+ plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm") # plot margin
+ ) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.y = -25, label.x.npc = 'center', size = 10, face = "bold") 
+# # making pies chart for every condition
+pie_BLA_frak_thres <- BLA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+pie_BLA_frak5nM_thres <- BLA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(Treshold1_all, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+pie_BLA_antifrak_thres <- BLA_df_final %>% filter(Experiment == 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+pie_BLA_azdfrak_thres <- BLA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+pie_BLA_azd_thres <- BLA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(Treshold1_all, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+pie_BLA_minofrak_thres <- BLA_df_final %>% filter(Experiment == 'minocycline + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+pie_BLA_mino_thres <- BLA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(Treshold1_all, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+pie_BLA_picro_thres <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+
+### making representative plots 
+## frak2nM
+frak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(7)) # subtracting one representative cell from whole dataframe
+frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "18227023"] = "CX3CL1(2nM)" #renaming the name - instead the name of the file - the name of the condition
+representative_frak2nM <- frak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # making a plot
+# ## importing traces
+# 
+# ## azdfrak2nM
+azdfrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(30))
+azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "19d02002"] = "AZD8797 + \nCX3CL1(2nM)"
+representative_azdfrak2nM <- azdfrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(300, 500) + ylim(0, 12)
+# 
+## minofrak2nM
+minofrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(42))
+minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "17d07008"] = "minocycline + \nCX3CL1(2nM)"
+representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) + xlim(260, 500)
+# 
+## gaba
+gabafrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(55))
+gabafrak2nM_IV_subset$Filename_all1[gabafrak2nM_IV_subset$Filename_all1 == "20605006"] = "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)"
+representative_gabafrak2nM <- gabafrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+
+### general representative IV figure
+figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM
+
+#using patchwork to do layout of the figure
+
+# f_labels_BLA_thres_add <- data.frame(Experiment = c( c(  "AZD8797", "minocycline" )), label = c("", "*"))
+# f_labels_BLA_thres_add$Experiment <- factor(f_labels_BLA_thres_add$Experiment, levels = c( "AZD8797",  "minocycline"))
+# 
+#  + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres_add, size=12, face = 'bold') 
+
+figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_minofrak2nM | inset_gaba)  + plot_layout(tag_level = 'new')) /
+ (bp_BLA_thres + theme(legend.position = "none"))  /
+  (((pie_BLA_frak_thres | pie_BLA_frak5nM_thres | pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_minofrak_thres | pie_BLA_picro_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) / 
+  (((((representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM) + plot_layout(tag_level = 'new')) +   plot_layout(tag_level = 'new')) + plot_layout(guides = "collect") & theme(legend.position = "right")))  +
+    (IV_representative_frak2nM | IV_representative_azdfrak2nM | IV_representative_minofrak2nM | IV_representative_gabafrak2nM)
 
-Findings presented in this PhD thesis revealed that, in general, neurons reacted with reduced excitability, manifested as decreased gain.
-In addition, the input resistance was also decreased after CX3CL1 application, together with membrane time constant.
-Moreover, those cells were more depolarized. 
 
-Given that CeL comprises neurons of two main electrophysiological types, further analysis segregated those neurons according to their types.<!-- odnośnik do góry i lepiej napisać-->
-Intriguingly, this additional analysis revealed that those parameters were changed specifically in the Regular-Spiking (RS) neurons, but not in the Late-Firing. 
+figure1 <- figure1 + 
+  plot_annotation(tag_levels = c('a', '1')) + plot_layout(heights = c(0.3, 0.7, 1, 0.5, 1))
 
+figure1
 
-
-## CXCL12/CXCR4 in the BLA
-
-Finally, it should be noted that 
-
-Coupled with observed differences in proximal and distal spine density, our results suggest that the ratio of inhibitory to excitatory innervation is increased along the distal to proximal axis of principal cells in the BLA. <!-- ...-->
-
-### Cellular distribution of CXCL12 and CXCR4 in the rat BLA
-
-To explore how CXCL12 affects local communication between neurons and glia in the BLA, immunohistochemical double staining for CXCR4 in this area was performed with <!--nestin, DCX, NeuN, CD34, fetal liver kinase (Flk)-1, and CD31-->. 
-
-
-### CXCL12/CXCR4 modulation of the electrical properties in BLA neurons 
-
-To understand the <!--intracellular activity during SWs (SWi)-->, whole-cell recordings were obtained from CeA neurons. 
-
-Depletion of astroglia in both BLA and CeA was confirmed by immunofluorescent staining using GFAP antibody in a subset of f...-incubated slices.
-
-## CXCL12/CXCR4 in the CeA
-
-These effects of SDF-1 were mediated *via* CXCR4 as they were abrogated by administration of a selective CXCR4 antagonist.
-
-### Cellular distribution of CXCL12 and CXCR4 in the rat CeA
-
-### CXCL12/CXCR4 modulation of the electrical properties in CeA neurons
-
-AMD3100 eliminates the beneficial effects of CXCL12, indicating that the CXCL12/CXCR4 signaling pathway is vitally important in improving the neurobehavioral outcomes of ischemic mice, so studies were performed to detect the expression of CXCR4. 
-
-
-
-##### inspiration
-
-###### general
-
-We first asked how...
-To address this question, it was first determined the properties of ...
-
-On the basis of our results, we conclude that
-
-our finding of  …, …, …, support the hypothesis that 
-
-More generally, our data significantly extend the understanding of glial functions  by showing that microglia are actively regulating inhibitory synapses
-
-To investigate the effect of AZD8797 on chronic proinflammatory environment in the NTS, we analyzed the levels
-
-###### electrophysiology
-
-Around 75% of BLA neurons showed responsiveness to MCP-1/CCL2. 
-The effect was not inhibited when GTP was omitted from the patch pipette medium (Fig. 8b, right).
-
-The representative traces of sEPSCs in the absence (referred to as control hereafter) or presence of harmine (10μM) (referred to as harmine) were shown in supplemental Fig. S1(A)
-
-To elucidate how IFNg affects nociceptive responses in the spinal dorsal horn, we analyzed the effects of IFNg on postsynaptic action by using whole-cell patch-clamp recordings from SG neurons.
-
-To determine the nature of local connections between neurons in the CeL, paired whole-cell recordings were made in acute coronal slices of wild-type mice (Fig. - Hunt2017
-
-To investigate the effect of <!--minocycline on inhibitory transmission-->, whole-cell voltage-clamp recordings from SG neurons were made under control conditions and after bath application of minocycline (100 lM)
-
-Taken together, our findings indicate that minocycline increases the frequency of sIPSCs in a concentration-dependent manner (EC50 of 85 lM) without changing their amplitude, suggesting a presynaptic mechanism that contributes to the effect of minocycline
-
-2.1-fold 2 r 4 in the spontaneous postsynaptic currents was elicited by GRO a 50 nM even in the presence of TTX 3 m M indicating that the action of the chemokine was exerted on neurotransmitter release mechanisms rather than on nerve cell excitability
-
-To further examine whether neuronal activity contributes to the increase in sIPSC frequency produced by minocycline, we next tested whether TTX affected the response of minocycline. 
-
-Therefore, we hypothesized that intrathecal administration of CCL2 would enhance spinal nociceptive transmission and cause thermal hyperalgesia by activating the spinal microglia. 
-This hypothesis was tested using intrathecal administration of minocycline, a specific inhibitor of microglial activation [38,39]. 
-Previous studies [40,41] showed that an intrathecal injection of minocycline (100 μg) blocked microglial activation.
-
-AMPA-mediated spontaneous and mEPSC frequency is increased in EAE without change in the probability of release 
-To determine whether the change in frequency between CFA and EAE was caused by alteration of unitary synaptic properties, we recorded mEPSCs after bath applying the sodium channel blocker, TTX. 
-
-The amplitudes of mEPSCs reflect the number and conductance of subsynaptic AMPARs, whereas the frequency reflects the probability of vesicle release (p) and/or the number of synapses (Kerchner and Nicoll, 2008).
-
-We found that mEPSC frequency was significantly increased (....) without any change in mEPSC amplitude.
-
-The results suggest that IFNg enhances NMDA receptor signaling by activating IFNg receptors in the dorsal horn of the spinal cord. 
-Minocycline, an inhibitor of microglial activation, inhibited the IFNg-induced facilitation of NMDA current, but inhibition of the neuronal JAK- STAT signaling did not. 
-Therefore, we conclude that IFNg binds its own receptors in microglia but not SG neurons, and the subsequent microglial activation leads to NMDA receptor activation. - Sonekatsu2016
-
-In a subset of experiments, slices were incubated in ACSF supplemented with  hyperpolarization-activated cation-nonselective (HCN) channels selective antagonists, ZD7288 (10 $\upmu$M) to verify whether the action of lamotrigine was HCN-dependent.
-
-####### electro conclusion
-
-These  studies indicate   the   direct   relationship   between   stress   and   GABA modulation in the amygdala.
-
-####### silent synapses
-
-An increased number of synapses could result from more dendritic spines and/or unsilencing of silent synapses.
-In a silent synapse, an EPSC is absent because of a postsynaptic complement exclusively of NMDA receptors; hence, in the absence of depolarization, it cannot conduct current in response to presynaptic glutamate release. 
-In response to sufficient depolarization, AMPARs can be inserted in the postsynaptic density, thereby making the synapse active or “unsilenced.” 
-To this end, we measured the maximum amplitude of the eEPSC at -70 mV (AMPAR-mediated) and then at 40 mV, at a 50 ms latency (NMDA-mediated), both in the presence of picrotoxin (Fig. 2A).
-
-significantly inhibited the amplitude of electrically evoked GABAergic IPSCs elicited from both the LPC and local synapses (Figure 3a). 
-
-The inhibition of GABAergic transmission by 10mM PD128907 did not recover during an extensive washout period.
-Despite this, the pipette resistance did not significantly change during the duration of these recordings.
-
-Since microglia is an upstream partner of astrocytes in response to stimuli (Pascual et al., 2012), we next examined whether astrocyte activation will affect sIPSCs - Peng
-
-
-The above observations suggest that minocycline may decrease neuronal excitability in a concentration- and cell-type-dependent manner by decreasing glutamatergic transmission.
-
-Do these synaptic changes affect neuronal firing?
-
-To understand the intracellular activity during SWs (SWi), simultaneous whole-cell recordings were obtained from BLA neurons. 
-
-To gain insight into the inhibitory regulation of the local hippocampal circuitry, we examined the functional characteristic of the IPSCs in DG granule cells (Figure 1) and CA3 pyramidal neurons (Figure 2) in the dorsal and ventral hippocampus.
-
-Comparison of neurochemical GABAergic synapse labeling between cell types showed that BLA interneurons receive a significantly higher density of putative GABAergic synapses compared with principal cells (Figs. 7 and 8).
-
-This was also accompanied by significant increases in the frequency of sIPSCs (Fig. 9 and Table 3) compared with principal cells.
-
-
-
-Of these cells, nine were classed as type 1 and the other nine as type 2
-
-Quantitative analysis of GABAergic synapse markers and measurement of miniature inhibitory postsynaptic currents in BLA projection neurons after neurofascin knockdown ex vivo confirmed the loss of GABAergic input.
-
-We were next interested in determining if lamotrigine affects GABAergic synaptic transmission in the hippocampus, a brain area critically involved in the coordination of neuronal activity that gives rise to network oscillations by GABAergic interneurons. 
-
-###### immuno
-
-
-###### dendrites
-
-To analyze <!--the afferent connectivity of fully mature newborn granule neurons-->, we examined the dendritic spines of <!--8-weekold RFP+ cells -->.
-These spines can be classified into various typologies on the basis of morphological criteria (Pallas-Bazarra et al., 2016; Pallas-Bazarra et al., 2017). <!--dać publikacje zespołu Jakuba-->
-
-Fig. 4A and B shows representative images of dendritic fragments of <!--newborn neurons of WT (A) and CX3CR1?/? (B) animals -->. 
-In addition, the classification of dendritic spines into mushroom, thin and stubby types is illustrated. 
-Neurons <!--of CX3CR1?/? mice--> showed a reduction in the total number of dendritic spines.
-To further characterize the populations of spines present in these cells, we measured the percentage of each type of spine (D).
-As shown, the percentage of stubby spines was increased in CX3CR1?/? animals, whereas that of mushroom spines was reduced. 
-Thus, these data show that the absence of CX3CR1 leads to a decrease in the number of newborn granule neuron dendritic spines and alterations in their morphology (namely, an enlargement and shortening).
-
-To confirm whether dendritic spine density was increased,
-
-In addition, we also examined spine morphology because changes in spine morphology are believed to represent one mechanism by which synaptic activity leaves its imprint on neurons. This was concurrent with an increase in spines with well-defined heads, which is correlated with spine maturation.
-
-
-###### CeL clustering
-
-We first performed whole-cell patch-clamp recordings on cells and then made post hoc morphological reconstructions of the recorded cells. 
-
-Because the onset of spikes varied in response to different current injections, we determined the spike delay ( Fig. 1 D ) of the first AP upon a just suprathreshold current (i.e., rheobase) injection. 
-Moreover, we determined the first AP properties, including the peak amplitude, voltage threshold, half-width, maximal rising rate, and maximal falling rate (see Materials and Methods). 
-In addition to AP phenotypes, ES and LS cells differed in their subthreshold membrane responses ( Fig. 1 D ).
-In striking contrast to ES cells, LS cells exhibited a slow ascending ramp in response to subthreshold current injection and displayed a greater ramp ratio ( Table 1 ).
-
-To further test whether ES and LS cells arise from two separate classes of CeL neurons or if they represent a single population of cells spanning a continuum of excitability, we analyzed several other physiological features ( Table 1 ) from all non-LTB neurons. 
-Overall, four features (spike delay, ramp ratio, RMP, and rheobase) showed non-Gaussian distributions ( Fig. 1 E ). 
-To divide these two distinct cell classes unbiasedly, we performed hierarchical cluster analysis from 90 randomly recorded CeL neurons based on these four features ( Cossart et al., 2006 ; Graves et al., 2012 ; also see Materials and Methods). Strikingly, the cluster dendrogram yielded two distinct neuron populations, LS and ES cells ( Fig. 1 F ). The spike delay of LS and ES neurons was 1776 21 ms (blue, n 	 50) and 834 88 ms (red, n 	 40), respectively ( p 0.0001; Wilcoxon rank-sum test; Table 1 ). In addition, the LS population exhibited a more hyperpolarized RMP and a larger rheobase ( Table 1 ). Similar to the dendrogram, the scatter-plot of spike delay versus ramp ratio revealed two distinctly nonoverlapping clusters ( Fig. 1 G ). Classification of cells with the arbitrary cutoff value (spike delay of 1.5 s) fell into two categories, which corresponded to the same two populations determined by the unbiased hierarchical cluster analysis. As a result, we classified neurons with a spike delay of 
- 1.5 s at rheobase as the LS cells and the remainders as the ES cells in the subsequent experiments of this study.
  
-Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
-
-
-###### LTP BLA
-
-Upon application of HFS, vSub-evoked field potentials in the BLA were effectively potentiated in the control group, but not in the NF knockdown group as revealed by mixed model repeated-measure ANOVA (group effect: (F (1,16) = 16.27, P = 0.001; and group × post-HFS time point interaction: F(2.071,33.136) = 9.231, P = 0.001, Greenhouse – Geisser correction; Figure 4f). The comparison of average potentiation across time points after induction also revealed a highly significant difference between the two groups (Figure 4g, t (16) = 4.03, P = 0.001).
-
-NF knockdown with the less effective NF1196 vector also reduced vSub-BLA LTP (Supplementary Figure S8b and c) without altering the input – output curve (Supplementary Figure S8a). Together, this demonstrates a specific impairment of BLA synaptic plasticity to vSub inputs after NF knockdown. 
-
-<!-- 
-The effect of **500 pM CX3CL1** on LTP in the DG was investigated both in the presence and absence of 100 μM of the GABAA receptor/chloride channel inhibitor, picrotoxin (Sigma–Aldrich).-Sheridan2014
--->
-
-<!-- We decided to use, in all future experiments, 100 nM of CXCL16 since, at this concentration, neuronal cell death was efficiently prevented 
-At all the tested concentrations, CXCL16 per se was not toxic (data not shown). 
-Hyaluronidase does not significantly affect neuronal 0electrophysiological properties when applied solely,
-
- We chose a dose that does not activate basal HPA axis activity
+```
  
- The dorsal and ventral parts of the local hippocampal neuronal networks participate in different extended circuitries (Papatheodoropoulos, 2018; Strange et al., 2014) and hence, the inhibitory input of the intrinsic primary hippocampal circuitry may vary and differentially regulate the local network. To gain insight into the inhibitory regulation of the local hippocampal circuitry, we examined the functional characteristic of the IPSCs in DG granule cells (Figure 1) and CA3 pyramidal neurons (Figure 2) in the dorsal and ventral hippocampus.
--->
-<!--  As reported in Figure 2,  .... in response to exogenously administrated CXCL16  in a concentration-dependent way, with an effect that is maximal at  0.1 nM-->
+#### Excitatory synaptic transmission in the CeL and its effect by CX3CL12
+
+
+#### Effects of CX3CL1 on the inhibitory synaptic transmission in the CeL
+

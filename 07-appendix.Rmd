@@ -250,7 +250,7 @@ figure1
 figure2
 ```
 
-### CX3CL1 does not modulate excitatory synaptic transmission {#CX3CL1sEPSCappendix}
+### CX3CL1 does not modulate excitatory synaptic transmission in the BLA {#CX3CL1sEPSCappendix}
 
 Figure (\@ref(fig:CX3CL1BLAsEPSCfigall)) and Table 7.2<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> reports on sEPSC parameters measured in principal cells in the BLA before and after CX3CL1, AZD8797, and minocycline treatment. 
 
@@ -402,7 +402,7 @@ figure1
 
 ```
 
-### CX3CL1 does not affect kinetics in inhibitory synaptic transmission {#CX3CL1sIPSCappendix}
+### CX3CL1 does not affect kinetics in inhibitory synaptic transmission in the BLA {#CX3CL1sIPSCappendix}
 
 Effects of CX3CL1 on inhibitory synaptic transmission in summarized in Table <!--?-->.
 In addition, Fig. \@ref(fig:CX3CL1BLAsIPSCappendixfig) presents the data regarding the lack of effects of CX3CL1 on sIPSCs/mIPSCs kinetics. 
@@ -549,6 +549,188 @@ figure1 <- figure1 +
 
 figure1
 
+```
+
+### CX3CL1 does not affect capacitance and .. in the CeL
+
+
+
+```{r CX3CL1CeAintrinsic, fig.cap='**Effects of CX3CL1 on intrinsic properties of CeL neurons** **(a)** Schematics of presented conditions **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions **(c)** Pie charts presenting how cells reacted to CX3CL1 **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the five conditions of electrophysiological recordings. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 18}
+
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+
+inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
+inset_frak2nM <- image_ggplot(inset_frak2nM)
+inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
+inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
+inset_azda <- image_read("images//results//inset_azd.png")
+inset_azda <- image_ggplot(inset_azda)
+inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
+inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
+inset_minoa <- image_read("images//results//inset_minoa.png")
+inset_minoa <- image_ggplot(inset_minoa)
+
+#powinny być nowe 
+# IV_representative_frak2nM <- image_read("images//results//IV_representative_frak2nM.png")
+# IV_representative_frak2nM <- image_ggplot(IV_representative_frak2nM)
+# IV_representative_azdfrak2nM <- image_read("images//results//IV_representative_azdfrak2nM.png")
+# IV_representative_azdfrak2nM <- image_ggplot(IV_representative_azdfrak2nM)
+# IV_representative_gabafrak2nM <- image_read("images//results//IV_representative_gabafrak2nM.png")
+# IV_representative_gabafrak2nM <- image_ggplot(IV_representative_gabafrak2nM)
+# IV_representative_minofrak2nM <- image_read("images//results//IV_representative_minofrak2nM.png")
+# IV_representative_minofrak2nM <- image_ggplot(IV_representative_minofrak2nM)
+# making labels (as minocycline and azd has different condition than CX3CL1) for then making proper automatic statistics
+# f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
+# f_labels_BLA_thres$Experiment <- factor(f_labels_BLA_thres$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
+
+# GAIN
+# bp_CeA_gain <- plot_boxplot(CeA_df_final, gain, mtitle= "CeL - All Neurons", ylabel = "gain",  dot_size = 2)
+# bp_CeA_gain <- bp_CeA_gain + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+# 
+# pie_CeA_frak2nM_gain <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val15(gain, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_gain <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val15(gain, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azdfrak_gain <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val15(gain, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azd_gain <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val15(gain, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_minofrak_gain <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie_val15(gain, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_mino_gain <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie_val15(gain, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# THRESHOLD CURRENT
+
+f_labels_CeA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)",  "AZD8797 + \nCX3CL1(2nM)", "AZD8797", "minocycline + \nCX3CL1(2nM)" , "minocycline" )), label = c("", "", "*", "", ""))
+f_labels_CeA_thres$Experiment <- factor(f_labels_CeA_thres$Experiment, levels = c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "AZD8797", "minocycline + \nCX3CL1(2nM)" , "minocycline"))
+
+bp_CeA_thres <- plot_boxplot(CeA_df_final, Treshold1_all, mtitle= "CeA - All Cells", ylabel = "Threshold current (mV)", vary1 = -60, vary2 = -20, dot_size = 2)
+bp_CeA_thres <- bp_CeA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_CeA_thres)
+
+pie_CeA_frak2nM_thres <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_thres <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(Treshold1_all, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azdfrak_thres <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(Treshold1_all, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azd_thres <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(Treshold1_all, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_minofrak_thres <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie_val3(Treshold1_all, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_mino_thres <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(Treshold1_all, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# ADAPTATION
+# bp_CeA_adap <- plot_boxplot(CeA_df_final, Adaptation_ratio, mtitle= "CeA - All Cells", ylabel = "Adaptation ratio", vary1 = 0, vary2 = 2, dot_size = 2)
+# bp_CeA_adap <- bp_CeA_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+# 
+# pie_CeA_frak2nM_adap <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(Adaptation_ratio, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_adap <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(Adaptation_ratio, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azdfrak_adap <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie2(Adaptation_ratio, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azd_adap <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie2(Adaptation_ratio, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_minofrak_adap <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie2(Adaptation_ratio, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_mino_adap <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie2(Adaptation_ratio, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+# INPUT RESISTANCE
+# bp_CeA_rm <- plot_boxplot(CeA_df_final, Rm_20, mtitle= "CeA - All Cells", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 900, dot_size = 2)
+# bp_CeA_rm <- bp_CeA_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+# 
+# pie_CeA_frak2nM_rm <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(Rm_20, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_rm <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(Rm_20, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azdfrak_rm <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie2(Rm_20, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azd_rm <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie2(Rm_20, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_minofrak_rm <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie2(Rm_20, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_mino_rm <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie2(Rm_20, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+# TAU
+# bp_CeA_tau <- plot_boxplot(CeA_df_final, tau_20, mtitle= "CeA - All Cells", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
+# bp_CeA_tau <- bp_CeA_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+# 
+# pie_CeA_frak2nM_tau <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(tau_20, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_tau <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(tau_20, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azdfrak_tau <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie2(tau_20, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azd_tau <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie2(tau_20, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_minofrak_tau <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie2(tau_20, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_mino_tau <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie2(tau_20, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# CAPACITANCE
+f_labels_CeA_cap <- data.frame(Experiment = c( c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "AZD8797", "minocycline + \nCX3CL1(2nM)" , "minocycline")), label = c("", "", "", "", "*"))
+f_labels_CeA_cap$Experiment <- factor(f_labels_CeA_cap$Experiment, levels = c("CX3CL1(2nM)" ,"AZD8797 + \nCX3CL1(2nM)", "AZD8797", "minocycline + \nCX3CL1(2nM)" , "minocycline"))
+bp_CeA_cap <- plot_boxplot(CeA_df_final, C_20, mtitle= "CeA - All Cells", ylabel = "Capacitance (pF)", vary1 = 30, vary2 = 155, dot_size = 2)
+bp_CeA_cap <- bp_CeA_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) + geom_text(x = 1.5, y = 130, aes(label = label, color = NULL, group= NULL), data = f_labels_CeA_cap)
+
+pie_CeA_frak2nM_cap <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(C_20, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_cap <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(C_20, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azdfrak_cap <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie2(C_20, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azd_cap <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie2(C_20, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_minofrak_cap <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie2(C_20, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_mino_cap <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie2(C_20, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# SAG
+# bp_CeA_sag <- plot_boxplot(CeA_df_sag, sag_ratio_140, mtitle= "CeA - All Cells", ylabel = "sag ratio @-140 pA", dot_size = 2)
+# bp_CeA_sag <- bp_CeA_sag + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+
+#pie_CeA_frak2nM_sag <- CeA_df_sag %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_sag <- CeA_df_sag %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(sag_ratio_140, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_azdfrak_sag <- CeA_df_sag %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azd_sag <- CeA_df_sag %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(sag_ratio_140, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_minofrak_sag <- CeA_df_sag %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie_val3(sag_ratio_140, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_mino_sag <- CeA_df_sag %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(sag_ratio_140, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+# RESTING MEMBRANE POTENTIAL
+# bp_CeA_vm <- plot_boxplot(CeA_df_final, RMS, mtitle= "CeA - All Cells", ylabel = "Resting membrane potential (mV)", vary1 = -80, vary2 = -25, dot_size = 2)
+# bp_CeA_vm <- bp_CeA_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+# 
+# pie_CeA_frak2nM_vm <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(RMS, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_vm <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(RMS, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azdfrak_vm <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(RMS, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_azd_vm <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(RMS, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_minofrak_vm <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie_val3(RMS, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_mino_vm <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(RMS, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+# ACTION POTENTIAL WIDTH
+bp_CeA_apw <- plot_boxplot(CeA_df_final, AP_width1_all, mtitle= "CeA - All Cells", ylabel = "Action potential width (ms)", vary1 = 0.5, vary2 = 2.5, dot_size = 2)
+bp_CeA_apw <- bp_CeA_apw + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) # + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+pie_CeA_frak2nM_apw <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(AP_width1_all, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_apw <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(AP_width1_all, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azdfrak_apw <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(AP_width1_all, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azd_apw <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(AP_width1_all, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_minofrak_apw <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie_val3(AP_width1_all, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_mino_apw <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(AP_width1_all, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+# ACTION POTENTIAL AMPLITUDE
+bp_CeA_apa <- plot_boxplot(CeA_df_final, AP_amp1_all, mtitle= "CeA - All Cells", ylabel = "Action potential amplitude (pA)", vary1 = 50, vary2 = 120, dot_size = 2)
+bp_CeA_apa <- bp_CeA_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+pie_CeA_frak2nM_apa <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(AP_amp1_all, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_apa <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(AP_amp1_all, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azdfrak_apa <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie2(AP_amp1_all, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azd_apa <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie2(AP_amp1_all, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_minofrak_apa <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie2(AP_amp1_all, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_mino_apa <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie2(AP_amp1_all, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+# FAST AHP
+bp_CeA_fast <- plot_boxplot(CeA_df_final, AHPf1_all, mtitle= "CeA - All Cells", ylabel = "fast AHP (pA)", vary1 = -25, vary2 = 7, dot_size = 2)
+bp_CeA_fast <- bp_CeA_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+pie_CeA_frak2nM_fast <- CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie2(AHPf1_all, mtitle = "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_CeA_frak5nM_fast <- CeA_df_final %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie2(AHPf1_all, mtitle = "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azdfrak_fast <- CeA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie2(AHPf1_all, mtitle = "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_azd_fast <- CeA_df_final %>% filter(Experiment == "AZD8797") %>% plot_pie2(AHPf1_all, mtitle = "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_minofrak_fast <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% plot_pie2(AHPf1_all, mtitle = "minocycline + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+pie_CeA_mino_fast <- CeA_df_final %>% filter(Experiment == 'minocycline') %>% plot_pie2(AHPf1_all, mtitle = "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+#using patchwork to do layout of the figure
+
+# f_labels_BLA_thres_add <- data.frame(Experiment = c( c(  "AZD8797", "minocycline" )), label = c("", "*"))
+# f_labels_BLA_thres_add$Experiment <- factor(f_labels_BLA_thres_add$Experiment, levels = c( "AZD8797",  "minocycline"))
+# 
+#  + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres_add, size=12, face = 'bold') 
+
+figure1 <-  ((inset_frak2nM | inset_azdfrak2nM | inset_azda | inset_minofrak2nM | inset_minoa)  + plot_layout(tag_level = 'new')) /
+ (bp_CeA_thres + theme(legend.position = "none"))  /
+  (((pie_CeA_frak2nM_thres | pie_CeA_azdfrak_thres | pie_CeA_azd_thres | pie_CeA_minofrak_thres | pie_CeA_mino_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) / 
+   (bp_CeA_cap + theme(legend.position = "none"))  /
+  (((pie_CeA_frak2nM_cap | pie_CeA_azdfrak_cap | pie_CeA_azd_cap | pie_CeA_minofrak_cap | pie_CeA_mino_cap)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /  (bp_CeA_apw + theme(legend.position = "none"))  /
+  (((pie_CeA_frak2nM_apw | pie_CeA_azdfrak_apw | pie_CeA_azd_apw | pie_CeA_minofrak_apw | pie_CeA_mino_apw)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /  (bp_CeA_apa + theme(legend.position = "none"))  /
+  (((pie_CeA_frak2nM_apa | pie_CeA_azdfrak_apa | pie_CeA_azd_apa | pie_CeA_minofrak_apa | pie_CeA_mino_apa)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /  (bp_CeA_fast + theme(legend.position = "none"))  /
+  (((pie_CeA_frak2nM_fast | pie_CeA_azdfrak_fast | pie_CeA_azd_fast | pie_CeA_minofrak_fast | pie_CeA_mino_fast)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) 
+  
+
+
+figure1 <- figure1 + 
+  plot_annotation(tag_levels = c('a', '1')) #+ plot_layout(heights = c(0.3, 0.7, 1, 0.5, 1))
+
+figure1
+
+ 
 ```
 
 

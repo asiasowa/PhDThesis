@@ -149,59 +149,7 @@ Only recordings with stable access resistance lower than 30 M`r knitr::asis_outp
 All drugs were delivered *via* a bath perfusion system. <!-- antibodies? -->
 <!--  Neurons firing at less than 0.1 Hz were considered ‘silent neurons’ and excluded from analysis.// The sole criterion for selection of recorded cells was the absence of an apical dendrite.-->
 
-
-#### Electrophysiological identification and classification of chosen neurons
-<!-- właściwie nie ruszone... -->
-Once the whole-cell recording was obtained, cell characteristics were recorded using current-clamp techniques.
-<!-- In order to characterize the electrophysiological features of SuM and PH neurons, we measured the following parameters in response to hyper- and depolarizing current pulses (5pA steps, 500ms) according to Petilla terminology [@ascoli_2008; @karagiannis_2009; @gouwens_2019]:-->
-Neurons were identified by location, shape of cell body, firing properties, and morphology (see Fig. \@ref(fig:methodpatch)).
-
-##### Electrophysiological identification of principal cells in the BLA
-<!-- ewentualnie rozdzielić to na BLA and CeA, ale jedna figura -->
-Principal neurons were identified based on their unique electrophysiological properties.<!-- As previously shown ( Spampanato et al., 2016 ; Woodruff et al., 2006 ), these cells were identified electrophysiologically by using the presence of -->
-
-The principal neurons of the BLA were morphologically identified by their large pyramidal-like cell bodies. When recorded with standard internal solution, all the cells displaying this morphological feature showed varying degrees of spike adaptation. They fired 3–7 times to a depolarizing current step of 500 ms length, which is an electrophysiological characteristic of BLA principal neurons (Sah et al., 2003). Thus, we were confident of recording from the pyramidal cells, even in experiments where cesium-based internal solution was used and we could not verify the spike frequency or waveform to a depolarizing current step. Standard cesium-based internal solution was used for recording AMPAR-mediated sEPSCs at ⫺70 mV
-
-INs were distinguished from PNs ( Figures S1 B–S1E) by using action potential discharge properties ( Mahanty and Sah, 1998 <!-- perumal_2021 -->
-
-Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
-
-INs were distinguished from PNs ( Figures S1 B–S1E) by using action potential discharge properties ( Mahanty and Sah, 1998 ) 
-
-##### Electrophysiological identification of neurons in the CeA
-
-The amygdala is comprised of several distinct nuclei ( Fig. 1 A ). In acutely prepared mouse amygdala slices, we identified the CeL by the surrounding axon bundles with IR-DIC optics ( Fig. 1 B ) as described previously ( Lopez de Armentia and Sah, 2004 ). Neurons in the CeL display heterogeneous intrinsic excitability ( Martina et al., 1999 ; Lopez de Armentia and Sah, 2004 ; Chieng et al., 2006 ; Haubensak et al., 2010 ; Amano et al., 2012 ; Chiang et al., 2015 ). 
-
-In agreement with previous results ( Haubensak et al., 2010 ; Li et al., 2013 ), the majority ( ~ 96%, 217 of 225; Fig. 1 C ) of CeL neurons exhibited either the ES or the LS phenotype in response to depolarizing current steps, whereas only a small subset (3.5%, 8 of 225; Fig. 1 C ) displayed the low threshold-bursting (LTB) phenotype ( Chieng et al., 2006 ). 
-<!-- to bardziej do analizy.... 
-Based on their response to somatic current injections, three general types of CeL neurons have previously been described, with the two major types being LF neurons, which show a significant delay before onset of the first AP (`r knitr::asis_output("\U223C")`100–200 ms), and early-spiking (ES) neurons (also described as regular-spiking; AP onset, `r knitr::asis_output("\U223C")`50 ms). 
-A third, smaller population of low-threshold bursting neurons has also been described (Dumont et al., 2002; Lopez de Armentia and Sah, 2004; Haubensak et al., 2010; Li et al., 2013; Hou et al., 2016). 
-We characterized the firing properties of 151 CeL neurons. 
-However, while classifying neurons we found that AP onset varied with changes in holding potential, whereas the presence of spike frequency accommodation was more reliable. 
-Using this measure, neurons were classified either as nonaccommodating (NA), where AP frequency remained relatively consistent (`r knitr::asis_output("\U223C")`17 Hz), or accommodating (Ac), where there was clear spike frequency adaptation (AP1-2, `r knitr::asis_output("\U223C")`2 Hz; AP7-8, 13 Hz; p < 0.001 Wilcoxon matched-pairs test; Fig. 2C). 
-The large majority of our neurons were nonaccommodating (n = 80 neurons; Fig. 2A) or accommodating (n = 59 neurons; Fig. 2B). 
-Nonaccommodating neurons also had a significantly longer mean onset compared with that of accommodating neurons (Table 1), and these neurons generally corresponded to the LF and ES types (Hauben- sak et al., 2010; Amano et al., 2012). 
-Thus, for consistency we have termed these LF-NA and ES-Ac neurons. 
-Apart from resting membrane potential, which was significantly more depolarized in ES-Ac neurons, other membrane properties such as input resistance, threshold potential, AP amplitude, rise time, and half-width did not differ significantly between LF-NA and ES-Ac neurons -Hunt2017 -->
-
-<!--## Clustering
-
-Hierarchical clustering analysis. 
-To classify the cells, an unsupervised clustering analysis ( Cauli et al., 2000 ; Jasnow et al., 2009 ; Sosulina et al., 2010 ) was performed by using squared Euclidean distances and Ward’s method ( Ward, 1963 ).
-Electrophysiological properties of CeL cells were tested for uniformity in their distributions. 
-Each of the quantified 14 variables (listed in Table 1)  was binned and tested by the D’Agostino– Pearson normality test, which is based on the assumption that a variable is normally distributed in a class.  
-Variables with a non-Gaussian distribution were used for subsequent unsupervised clustering. 
-Hierarchical clustering arranges data items into a tree-like dendrogram in which tree leaves represent data items and the length of tree edges between leaves represents the dissimilarity between data items. 
-Tree leaves belonging to a subtree suggest high similarity and therefore form a group. 
-Hierarchical clustering operates as follows. 
-First, each CeL neuron was transformed into a 4D data point with variables of spike delay, ramp ratio, resting membrane potential (RMP), and rheobase. 
-Before clustering, we first normalized variables into the range (0, 1) by performing min–max normalization. The distance between data points represents the dissimilarity between them; closer data points have higher similarity. 
-Next, we clustered all the data points by the following iterative procedure. First, assign each data point to a cluster; every cluster therefore contains only one data point. 
-Second, merge the two closest clusters into one cluster; therefore, Hou et al., 2016 -->
-
-<!-- According to this criterion following neurons were included in the study on chemokines signaling in the amygdala (only one neuron per slice was subjected to drug administration experiment): /// nie wiem czy to dodawać bo musiałabym obliczyć ;P patrz: ALAN dla reszty gdybym się jednak zdecydowała-->
-
-#### Recording protocols, data analysis, and statistics
+#### Recording protocols, data analysis, and statistics {#electroprotocols}
 
 Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration. 
 Hence, to measure the effects of chemokines (CX3CL1/CXCL12) on intrinsic membrane properties, the experiments were recorded in the whole-cell patch-clamp under the current-clamp configuration. 
@@ -235,6 +183,12 @@ Action potential threshold corresponded to the voltage threshold of the first ac
 When neurons did not exhibit some of the abovementioned features, they were arbitrarily set to 0.
 All of these parameters are illustrated in Figure \@ref(fig:methodIV)).
 
+First interspike interval (ISI1, in ms). The time interval between the threshold of the first action potential and the threshold of the second action potential in response to a 750-ms depolarizing current injection. Last interspike interval (ISIlast, in ms). The time interval between the threshold of the penultimate action potential and the threshold of the last action potential in response to a 750-ms depolarizing current injection. Spike adaptation ratio (dimensionless). The ratio of ISI1to ISIlast.
+
+Sag ratio (dimensionless). The difference between the steady-state membrane potential at the end of a 750-ms hyperpolarizing current step and the most negative membrane potential at the beginning of the step, divided by the most negative membrane potential.
+Rectification ratio (dimensionless). The difference between the peak membrane potentials at the beginning of the two smallest hyperpolarizing steps divided by the difference between the peak membrane potentials at the beginning of the two largest hyperpolarizing steps, such that a cell with no observable inward rectification has a rectification ratio equal to 1. 
+Spike threshold (in mV). The point at which the action potential was initiated. The point at which the membrane potential showed a 	 10-fold change in the rate of rise (mV/ms) in response to the smallest depolarizing current step (10 ms) evoking an action potential.
+Spike amplitude (in mV). The difference between the threshold and the voltage at the peak of the action potential. Spike half-width (in ms). Measured at half-height between threshold and peak action potential.
 <!-- Alan
 The voltage response to a 50 pA current pulse (500 ms) was utilised to calculate the following: (1) the membrane time constant, which was determined by fitting a single exponential to the charging phase of the voltage response; (2) the membrane resistance, which was calculated based on the maximum amplitude of the voltage response, assuming an ohmic current-voltage (I-V) relationship; and (3) the membrane capacitance, which was calculated as the quotient of the time constant and resistance. (4) The voltage sag was measured from the voltage response to a -140 pA hyperpolarising current step (500 ms).
 (5) The voltage-current relationship was traced based on steady-state voltage responses to decremental hyperpolarising current pulses from -140 pA to -10 pA (10 pA decrement, pulse duration 500 ms, 5 seconds between steps). (6) Neuronal excitability (input-output relationship) was measured as the number of spikes elicited by incremental depolarising current pulses from +10 pA to +140 pA (10 pA increment, pulse duration 500 ms, 5 seconds between steps). Only current steps triggering APs were used to characterize the input-output relationship.-->
@@ -270,15 +224,80 @@ Hence, the synaptic transmission data presented in this dissertation was done us
 knitr::include_graphics("images//methods//representativePSC2.png")
 ```
 
+#### Electrophysiological identification and classification of chosen neurons
+<!-- właściwie nie ruszone... -->
+Once the whole-cell recording was obtained, cell's characteristics were recorded using current-clamp techniques.
+<!-- In order to characterize the electrophysiological features of SuM and PH neurons, we measured the following parameters in response to hyper- and depolarizing current pulses (5pA steps, 500ms) according to Petilla terminology [@ascoli_2008; @karagiannis_2009; @gouwens_2019]:-->
+Neurons were identified by location, shape of cell body, firing properties, and morphology (see Fig. \@ref(fig:methodpatch)).
+
+##### Electrophysiological identification of principal cells in the BLA
+<!-- ewentualnie rozdzielić to na BLA and CeA, ale jedna figura -->
+Principal neurons were identified based on their unique set of features (see chapter Amygdala \@ref(BLA)).<!-- As previously shown ( Spampanato et al., 2016 ; Woodruff et al., 2006 ), these cells were identified electrophysiologically by using the presence of -->
+
+The classification was made by using criteria derived from other morphological and electrophysiological studies [@faber_2002; @jasnow_2009; @par_1995; @popescu_2011; @washburn_1992a; @woodruff_2007a].<!-- perumal_2021 -->
+In addition to their pyramidal-like soma shape, these cells were distinguished from heterogeneous group of interneurons based on such firing properties:
+(a) their prominent spike adaptation ratio,
+(b) low excitability (around 6-20 Hz),
+(c) absence of spontaneous firing,
+(d) low input resistance (50-100 M`r knitr::asis_output("\U03A9")`), and
+(e) comparatively long duration of action potential (< 0.8 ms at half-amplitude).<!--They fired 3–7 times to a depolarizing current step of 500 ms length, which is an electrophysiological characteristic of BLA principal neurons (Sah et al., 2003). Thus, we were confident of recording from the pyramidal cells, even in experiments where cesium-based internal solution was used and we could not verify the spike frequency or waveform to a depolarizing current step. Standard cesium-based internal solution was used for recording AMPAR-mediated sEPSCs at ⫺70 mV--><!-- such as a low input resistance? low excitability, not sponteneously active,  presence of prominent apical dendrite (McDonald 1982). // In particular, BA neurons were classified as principal cells when they displayed spike frequency adaptation during depolarizing current pulses and generated action potentials of comparatively long duration ( ~ 0.8 ms at half-amplitude). Given the heterogeneous firing patterns of BLA interneurons reported in previous studies, we relied primarily on spike duration to identify these cells ( ~ 0.6 ms at half-amplitude). -->
+Considering heterogeneity of principal cells, especially with regard to adaptation ratio<!-- -->, the more reliable criteria were the action potential duration, the first inter-spike interval and low input.
+Thus, neurons whose action potential were wider than 0.8 ms, first ISI exceeded 20ms, and showing input resistance larger than 150 M`r knitr::asis_output("\U03A9")` were excluded from further analysis. 
+
+Given that principal cells constitute around 90% of whole neuronal population in the BLA, by chance alone, sample of BLA neurons should mainly comprise this class of neurons. 
+Hence, by applying these strict criteria, the probability of including interneurons in further analysis<!--misclassification interneurons as principal cells--> was much lowered.
+<!-- Based on literature, the only ... and even if they occurred they had to be very infrequent, as cholecystokinine-expressing interneurons are the only class of . .  /// However, it was reported that some cholecystokinin-expressing  (CCK + )  interneurons  generate long-duration spikes (Jasnow et al. 2009), raising the possibility that we misclassified some interneurons as principal cells. Although we cannot exclude this possibility, given that CCK + interneurons account for a minute proportion of BLA interneurons, such instances of misclassifications, if they occurred, had to be very infrequent.--><!--In current clamp mode, all neurons sampled using visual guidance also met physiological criteria for BL projection neurons as established by previous studies [38,47,50]./// Using criteria derived from studies that correlated the physiological and morphological properties of BLA neurons (Faber and Sah 2002; Jasnow et al. 2009; Paré et al. 1995a; Rainnie et al. 1993; Sosulina et al. 2006; Washburn and Moises 1992a; Woodfruff and Sah 2007), we classified BA neurons as putative projection cells or interneurons based on their contrasting electroresponsive properties (reviewed in Pape and Paré 2010 and Sah et al. 2003)./// INs were distinguished from PNs ( Figures S1 B–S1E) by using action potential discharge properties ( Mahanty and Sah, 1998 // In response to transient (750 ms) depolarizing current injection of increasing amplitude, neurons initially fired either a single action potential or a spike doublet, after which the inter-spike-interval increased substantially and either spike frequency adaptation (13/24 neurons) or a regular firing pattern (11/24 neurons) was observed ( Fig. 1, 2 A). // Moreover, the resting membrane potential (RMP =  62.1 F 0.1 mV, n = 24), membrane input resistance (RM = 58.9 F 2.3 M V , n = 24), and time constant for membrane charging ( s = 18.5 F 1.5 ms, n = 14) were similar to those previously described [38,47,50] .--><!-- potem dyskusja?
+The validity of our interpretations depends on the reliability of the criteria we used to identify different BLA cell types. Here, we distinguished principal cells from interneurons using action potential duration. Indeed, most types of BLA interneurons generate much briefer action potentials than principal cells (reviewed in Pape and Paré 2010 and Sah et al. 2003). The fast-spiking cells we recorded also had a significantly higher input resistance and more depolarized membrane potential than presumed principal cells. However, it was reported that some cholecystokinin-expressing  (CCK + )  interneurons  generate long-duration spikes (Jasnow et al. 2009), raising the possibility that we misclassified some interneurons as principal cells. Although we cannot exclude this possibility, given that CCK + interneurons account for a minute proportion of BLA interneurons, such instances of misclassifications, if they occurred, had to be very infrequent. Nevertheless, recognizing this limitation, we complemented our electrophysiological criteria with tracing techniques. // Thus, by chance alone, our sample of BLA neurons should mainly comprise projection (principal) neurons. Nevertheless, to further restrict our attention to principal BLA cells, recording pipettes were aimed to neurons with large-diameter cell bodies. Moreover, we only considered cells that displayed the characteristic electroresponsive properties of principal BLA cells, including a lack of spontaneous discharges at rest, generation of spike trains exhibiting frequency adaptation during membrane depolarization, broad action potentials (  0.7 ms at half-amplitude), and various degrees of inward rectification in the hyperpolarizing direction (Washburn and Moises, 1992a; Rainnie et al., 1993; Pare et al., 1995; Pape and Driesang, 1998; Faber et al., 2001). Using these criteria, a total of 156 principal BLA neurons having a resting Vmnegative to  60 mV (average of 75.1  0.2 mV) and generating overshooting action potentials (average of 93.7  0.5 mV) were recorded in the whole-cell configuration. Consistent with previous observations (Faber et al., 2001; Faber and Sah, 2002), these neurons exhibited varying degrees of spikefrequency adaptation (Fig. 1 B ), ranging from neurons that fired only a few spikes at the onset of the depolarizing current pulses (Fig. 1 B1 , B2 ), to cells that fired throughout the depolarizing current injection (Fig. 1 B3 ). To-->
+
+##### Electrophysiological identification of neurons in the CeA
+
+The amygdala is comprised of several distinct nuclei ( Fig. 1 A ). In acutely prepared mouse amygdala slices, we identified the CeL by the surrounding axon bundles with IR-DIC optics ( Fig. 1 B ) as described previously ( Lopez de Armentia and Sah, 2004 ). Neurons in the CeL display heterogeneous intrinsic excitability ( Martina et al., 1999 ; Lopez de Armentia and Sah, 2004 ; Chieng et al., 2006 ; Haubensak et al., 2010 ; Amano et al., 2012 ; Chiang et al., 2015 ). 
+
+In agreement with previous results ( Haubensak et al., 2010 ; Li et al., 2013 ), the majority ( ~ 96%, 217 of 225; Fig. 1 C ) of CeL neurons exhibited either the ES or the LS phenotype in response to depolarizing current steps, whereas only a small subset (3.5%, 8 of 225; Fig. 1 C ) displayed the low threshold-bursting (LTB) phenotype ( Chieng et al., 2006 ). 
+
+
+Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
+<!-- to bardziej do analizy.... 
+Based on their response to somatic current injections, three general types of CeL neurons have previously been described, with the two major types being LF neurons, which show a significant delay before onset of the first AP (`r knitr::asis_output("\U223C")`100–200 ms), and early-spiking (ES) neurons (also described as regular-spiking; AP onset, `r knitr::asis_output("\U223C")`50 ms). 
+A third, smaller population of low-threshold bursting neurons has also been described (Dumont et al., 2002; Lopez de Armentia and Sah, 2004; Haubensak et al., 2010; Li et al., 2013; Hou et al., 2016). 
+We characterized the firing properties of 151 CeL neurons. 
+However, while classifying neurons we found that AP onset varied with changes in holding potential, whereas the presence of spike frequency accommodation was more reliable. 
+Using this measure, neurons were classified either as nonaccommodating (NA), where AP frequency remained relatively consistent (`r knitr::asis_output("\U223C")`17 Hz), or accommodating (Ac), where there was clear spike frequency adaptation (AP1-2, `r knitr::asis_output("\U223C")`2 Hz; AP7-8, 13 Hz; p < 0.001 Wilcoxon matched-pairs test; Fig. 2C). 
+The large majority of our neurons were nonaccommodating (n = 80 neurons; Fig. 2A) or accommodating (n = 59 neurons; Fig. 2B). 
+Nonaccommodating neurons also had a significantly longer mean onset compared with that of accommodating neurons (Table 1), and these neurons generally corresponded to the LF and ES types (Hauben- sak et al., 2010; Amano et al., 2012). 
+Thus, for consistency we have termed these LF-NA and ES-Ac neurons. 
+Apart from resting membrane potential, which was significantly more depolarized in ES-Ac neurons, other membrane properties such as input resistance, threshold potential, AP amplitude, rise time, and half-width did not differ significantly between LF-NA and ES-Ac neurons -Hunt2017 -->
+
+<!--## Clustering
+
+Hierarchical clustering analysis. 
+To classify the cells, an unsupervised clustering analysis ( Cauli et al., 2000 ; Jasnow et al., 2009 ; Sosulina et al., 2010 ) was performed by using squared Euclidean distances and Ward’s method ( Ward, 1963 ).
+Electrophysiological properties of CeL cells were tested for uniformity in their distributions. 
+Each of the quantified 14 variables (listed in Table 1)  was binned and tested by the D’Agostino– Pearson normality test, which is based on the assumption that a variable is normally distributed in a class.  
+Variables with a non-Gaussian distribution were used for subsequent unsupervised clustering. 
+Hierarchical clustering arranges data items into a tree-like dendrogram in which tree leaves represent data items and the length of tree edges between leaves represents the dissimilarity between data items. 
+Tree leaves belonging to a subtree suggest high similarity and therefore form a group. 
+Hierarchical clustering operates as follows. 
+First, each CeL neuron was transformed into a 4D data point with variables of spike delay, ramp ratio, resting membrane potential (RMP), and rheobase. 
+Before clustering, we first normalized variables into the range (0, 1) by performing min–max normalization. The distance between data points represents the dissimilarity between them; closer data points have higher similarity. 
+Next, we clustered all the data points by the following iterative procedure. First, assign each data point to a cluster; every cluster therefore contains only one data point. 
+Second, merge the two closest clusters into one cluster; therefore, Hou et al., 2016 -->
+
+<!-- According to this criterion following neurons were included in the study on chemokines signaling in the amygdala (only one neuron per slice was subjected to drug administration experiment): /// nie wiem czy to dodawać bo musiałabym obliczyć ;P patrz: ALAN dla reszty gdybym się jednak zdecydowała-->
+
+Chicago, IL). An unsupervised, hierarchical cluster analysis using Ward’s method (Ward Jr 1963) and squared Euclidian distance was performed to classify subtypes of CCKcells in the BLA. This method has been used successfully by previous studies to classify somatostatin cells of the sensorimotor cortex and projection neurons and interneurons of the lateral amygdala (Halabisky et al. 2006; Sosulina et al. 2006). Briefly, this clustering method begins by separating each individual neuron into a cluster by itself. At each stage of the analysis, the neurons that are most similar, as measured by our electrophysiological parameters, are grouped together to form another larger cluster. This process continues until all of the neurons are joined into a single cluster. Ward’s method minimizes the error sum of squares of any pair of clusters formed at a given step; this maximizes between-group differences and minimizes within-group differences. Before clustering, each electrophysiological property was logtransformed and converted into standardized z -scores. This achieves a normal distribution and prevents variables with larger ranges from having a greater influence on the cluster solution than variables with small ranges. After the hierarchical cluster analysis was performed, the appropriate number of clusters was determined by examining within-group and between-group squared Euclidian distances. A good cluster solution should have large between-cluster differences and small within-cluster differences. A one-way ANOVA was used to detect statistically significant differences in electrophysiological parameters among the reported clusters. For all analyses, statistical significance was ascribed at P 
+ 0.05. The parameters used in the cluster analysis were chosen based on their lack of linear correlation with each other determined by a correlation analysis among all variables. Membrane time constant () was removed because of its linear correlation with Rin. Likewise, ISI1 and ISIlastwere removed because of their correlation with spike adaptation ratio. Finally, 10–90% rise time and 90–10% decay time were removed from the analysis because they were highly correlated with each other and spike half-width. This left Rin, spike adaptation ratio, rectification ratio, sag ratio, resting membrane potential, spike threshold, spike amplitude, spike half-width, mAHP, and fAHP for the cluster analysis Further analysis was conducted using DFA to determine the electrophysiological properties most strongly contributing to group membership. In addition, DFA builds a predictive model for group membership. Briefly, this analysis attempts to find linear combinations of the variables that best separate the groups of cells by maximizing the between-group variance. Finally, a leave-one-out cross-validation procedure was then used to validate the discriminant functions. [@jasnow_2009]
+
 #### Post-recording immunostaining
 
 In order to verify the neurochemical content of recorded neurons,  after recording a subset of slices was fixed overnight with a 4% formaldehyde at 4`r knitr::asis_output("\U00B0")`C and stained according to the following protocol.  
 In brief, free-floating sections were blocked and permeabilized (10% normalized goat serum (NGS; Jackson ImuunoResearch), 0.1% Triton X100 in PBS) at 4`r knitr::asis_output("\U00B0")`C overnight and incubated with a primary antibodies solution supplemented with a streptavidin-conjugated Alexa Fluor 647 (Invitrogen; 1:500) overnight at 4`r knitr::asis_output("\U00B0")`C. <!--: mouse anti-OXT (1:1000 or 1:10000), rabbit anti-AVP (1:500 or 1:5000), ExtrAvidin-Cy3 (1:200), 2% NDS, 0.3% Tx100 in PBS, // Next, several rinses with PBS were carried out before incubating slices with  and blocking and permeabilizing with PBS containing 10% normal goat serum (NGS; ) and 0.1% Triton X-100 in PBS (Sigma Aldrich; blocking solution) overnight at 4`r knitr::asis_output("\U00B0")`C.-->
-Next, sections were incubated with a secondary antibody mixture for 24 h at 4`r knitr::asis_output("\U00B0")`C <!--(2% NDS in PBS solution containing donkey anti-mouse Alexa Fluor 647-conjugated antibody (1:400) and donkey anti-rabbit Cy3-conjugated antibody (1:400)). -->
+Next, sections were incubated with a secondary antibody mixture for 24 h at 4`r knitr::asis_output("\U00B0")`C. <!--(2% NDS in PBS solution containing donkey anti-mouse Alexa Fluor 647-conjugated antibody (1:400) and donkey anti-rabbit Cy3-conjugated antibody (1:400)). -->
 To stain the cell nuclei, the NucBlue Fixed Cell Stain ReadyProbes Reagent (Invitrogen, Thermo Fisher, Inc.) was used.
-Finally, slices were mounted onto microscope slides using Prolong Glass antifading medium (Thermo Fisher Scientific, Invitrogen). <!-- Stained sections were mounted and coverslipped with -->
+Finally, slices were mounted onto microscope slides using Prolong Glass antifading medium (Thermo Fisher Scientific, Invitrogen).<!-- Stained sections were mounted and coverslipped with -->
 Each step was followed by a 3x 10 min PBS wash.
 Images were acquired with a Zeiss Axio Imager Z2 fluorescence microscope with an Apotome.2 system using Zen Pro 2 software (Zeiss).
+<!--  After fixation in 4% paraformaldehyde (PFA), Alexa 647-coupled streptavidin (1:2000, Invitrogen) was used to visualize the fine details of the neurons in the entire slice. -->
 
 ##### Sulphoramine staining
 

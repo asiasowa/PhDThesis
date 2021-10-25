@@ -295,6 +295,9 @@ CeA_sIPSC_final$Experiment = factor(CeA_sIPSC_final$Experiment, levels=c('CX3CL1
 CeA_sIPSC_RS <- CeA_sIPSC_final %>% filter(Type == 'RS')
 CeA_sIPSC_LF <- CeA_sIPSC_final %>% filter(Type == 'LF')
 
+bad_Cells <- c(66) # strasznie duży spadek ampltiduy
+CeA_sIPSC_RS <- CeA_sIPSC_RS %>% filter(!Cell %in% bad_Cells) # CeA_LF_sIPSC <- CeA_LF_sIPSC %>% filter(!Cell %in% bad_Cells)
+
 #### frak2nM CeA mIPSC ####
 CeA_frak2nM_mIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_CeA_LF_frak2nM.csv"))
 CeA_frak2nM_mIPSC <- CeA_frak2nM_mIPSC %>% dplyr::mutate(Type = "LF") %>% dplyr::mutate(Experiment = "CX3CL1(2nM)")

@@ -136,7 +136,7 @@ Hence, these findings indicate that CeL, especially the PKC`r knitr::asis_output
 
 <!-- We recently discovered that fear conditioning induces cell-type-specific plasticity in the CeL, with excitatory synapses onto SOM neurons being strengthened and excitatory synapses onto SOM neurons being weakened (  Li et al., 2013  ).-->
 
-### Central amygdala {#CeA}
+### The central amygdala {#CeA}
 
 The central amygdala (CeA) is a GABAergic nucleus comprised of capsular (CeC), lateral (CeL), medial (CeM), and intermediate (CeI) divisions [@jolkkonen_1998; @mcdonald_1982a; @sah_2003].
 Importantly, the CeL and CeC are often considered together as CeL [@duvarci_2014].

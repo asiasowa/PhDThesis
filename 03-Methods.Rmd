@@ -271,31 +271,33 @@ The slices were fixed in 4% PFA overnight and processed for immunocytochemistry,
 
 As the BLA is widely known to be involved in emotional learning and memory, and mounting evidence points to CX3CL1 as a crucial player in these phenomena, additional experiments investigating the role of CX3CL1 in the BLA LTP was performed.
 Slices containing the BLA were transferred to an interface recording chamber and perfused at 2 ml/min with a recording ACSF (33.5 `r knitr::asis_output("\U00B1")` 0.5`r knitr::asis_output("\U00B0")`C), the same as for patch-clamp recordings. 
-Recordings began approx. 2.5 h after slice preparation.
+Recordings began approx. 1.5 h after slice preparation.
 
 For field potentials (FPs) recording, a bipolar stimulating electrode and a recording electrode  were visually positioned under a dissecting microscope in the external capsule and the basolateral region of the amygdala, respectively,  as shown in Fig. \@ref(fig:methodpatch) 
-A Pt-Ir electrode (CBARC85, FHC) was utilized for stimulation, whereas recordings were made using ACSF-filled glass micropipettes (1–2 M`r knitr::asis_output("\U03A9")`), pulled from borosilicate capillaries using a List-Medical L/M 3P-A micropipette puller.
-The recording electrode was introduced 150`r knitr::asis_output("\U03BC")`m into the slice within the BLA.
+A Pt-Ir electrode (CBARC85, FHC, USA) was used for stimulation, whereas recordings were made using ACSF-filled glass micropipettes (1–2 M`r knitr::asis_output("\U03A9")`), pulled from borosilicate capillaries using a List-Medical L/M 3P-A micropipette puller.
+The recording electrode was placed in the slice in area corresponding with the BLA.
 Stimuli (duration: 0.2 ms) were applied at 0.016 Hz using a constant-current stimulus isolation unit (WPI).
-Signals<!--FPs--> were amplified (Axoprobe 1A, Axon Instruments, USA), filtered (1-500 Hz), A/D converted at 10 kHz and stored using the Micro1401 interface and SIGAVG software (CED, UK).
+Signals<!--FPs--> were amplified (Axoprobe 1A, Axon Instruments, USA), filtered (1-500 Hz), A/D converted at 10 kHz and stored using the Micro1401 interface and SIGAVG 4 software (CED, UK).
 A stimulus–response (input–output) curve was obtained for each slice.
-For that purpose, stimulation intensity was progressively elevated step-wise (16 steps; 0–100 `r knitr::asis_output("\U03BC")`A). 
+For that purpose, stimulation intensity was progressively elevated step-wise (21 steps; 0–100 `r knitr::asis_output("\U03BC")`A, with 5 `r knitr::asis_output("\U03BC")`A increments). 
 In all experiments, baseline responses were established by delivering a stimulation of sufficient intensity<!--(300 e 800mA)--> to elicit a response representing 30% of the maximal amplitude of the evoked field potentials, which was fixed at this level throughout all experiments.
-Stimulus-response curves were fitted with the Boltzmann equation: V~i~= V~max~ /(1 + exp((u-uh)/-S)), with V~max~ being the maximum FP amplitude; u—stimulation  intensity;  uh—stimulation  intensity  evoking  the  FP  of  half-maximum amplitude; S—factor proportional to the slope of the curve.
+Stimulus-response curves were fitted with the Boltzmann equation: V~i~= V~max~ /(1 + exp((u-uh)/-S)), where V~max~ is the maximum FP amplitude; u—stimulation  intensity;  uh—stimulation  intensity  evoking  the  FP  of  half-maximum amplitude; S—factor proportional to the slope of the curve.
 
 To measure the short-term plasticity, the paired-pulse stimulation protocol was used (duration—0.2 ms, inter-stimulus interval ISI—50ms).
 The paired-pulse ratio (PPR) was expressed as the ratio of the amplitude of the second FP to the amplitude of the first FP.
 
-Once a stable baseline of responses had been obtained for at least 15 min, the LTP was induced applying theta burst stimulation (TBS).
-It consisted of 10 trains of stimuli at 5 Hz, repeated five times every 25 s. 
+After 15 minutes of baseline recording, the LTP was induced using theta burst stimulation (TBS).
+It consisted of 10 trains of stimuli at 5 Hz, repeated five times every 15 s. 
 Each train consisted of five pulses at 100 Hz. 
-During TBS, pulse duration was extended to 0.2 ms. 
+During TBS, pulse duration was extended to 0.3 ms. 
 fEPSPs were recorded at 0.016 Hz for another hour.
-LTP was defined as an increase in the amplitude of the fEPSPs. 
-Averaged fEPSP amplitudes recorded between 45min and 60 min after the last burst were normalized to averaged baseline (the first 15 min of recording) and expressed as a percentage. 
+The amount of LTP was determined as an average increase in the amplitude of FPs recorded between 45 and 60 min after TBS, relative to baseline.
 The health of the slice was monitored by continuously recording extracellular field potentials throughout experiments. 
 Slices displaying unstable baseline recording were discarded. 
-Data are presented as group means `r knitr::asis_output("\U00B1")` SEM. 
+Data are presented as group means `r knitr::asis_output("\U00B1")` SEM.
+Statistical significance was evaluated using Kruskal-Wallis test or ANOVA with post hoc Tukey’s test for multiple comparisons.
+Data were analyzed using GraphPad Prism v9.0.0 (GraphPad Software, USA).
+
 
 ## Immunohistochemistry
 
@@ -408,13 +410,10 @@ Using QuPath, a minimum of four random regions per sample and condition were ann
 
 ## Statistical analysis - general information
 
-All statistical tests and plotting were done using 3.6.1 [@R_base], with mainly the dplyr (v0.8.3; @dplyr), and the ggplot2 (v3.2.1; @ggplot2) packages. <!-- poprawić --> 
+
 Statistical significance was set at p = 0.05.
-Following verification of a normal distribution, Student’s paired t-test was used to compare parametric data from two groups. <!-- może dodać jakim testem?// All statistical tests and plotting were done using 3.6.1 [@R_base], the dplyr (v0.8.3; @dplyr), and the ggplot2 (v3.2.1; @ggplot2) packages. 
-Group data for inhibitory synaptic transmission are reported as median$\pm$SD.
-Lamotrigine’s impact on sIPSC characteristics was analyzed by comparing pre- and post-lamotrigine values using a paired Student’s t-test or Wilcoxon Signed Rank Test for non-normally distributed data. -->
-For non-normally distributed data, the Wilcoxon Signed Rank Test was used.
-“n” represents the number of neurons used in each group, and is followed by “N” representing the number of rats per group. 
+“n” represents the number of neurons/slices used in each group, whereas “N” represents the number of rats per group. 
+
 <!-- were analyzed by comparing pre- and post-application values using a paired Student’s t-test or Wilcoxon Signed Rank Test for non-normally distributed data.-->
 
 <!-- ładne zdania

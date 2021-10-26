@@ -157,9 +157,9 @@ The measured features are illustrated in Fig. \@ref(fig:methodIV).
 First, 5 minutes after breaking into the cell, (1) the resting membrane potential (RMP) was recorded. 
 Then, several membrane parameters were assessed based on neuronal voltage responses from -65 mV holding potential to hyper- and depolarizing current pulses (500 ms, 10 or 5pA increments), and analyzed using custom scripts.<!-- In order to characterize the behavior of recorded neurons, 22 electrophysiological parameters were measured-->
 (2) Input resistance (R~m~), (3) membrane time constant (`r knitr::asis_output("\U03C4")`~m~), and (4) membrane capacitance (C~m~) were determined in response to hyperpolarizing current pulses eliciting voltage shifts whose amplitude was 10–20 mV negative to rest.<!-- (Kawaguchi 1993) // inne cytowanie--> 
-R~m~ was measured following Ohms law (R~m~ = $\frac{\dV~m~}{I}$)<!--(R~m~ = dV~m~/ I)-->, where dV~m~ is the change in membrane potential in response to - 20 pA (500 ms) current injection (I).
+R~m~ was measured following Ohms law (R~m~ = $\frac{dV~m~}{I}$)<!--(R~m~ = dV~m~/ I)-->, where dV~m~ is the change in membrane potential in response to - 20 pA (500 ms) current injection (I).
 `r knitr::asis_output("\U03C4")`~m~ was determined at the beginning of the voltage response and computed by fitting it to a single exponential.
-C~m calculated according to the equation C~m~= $\frac{\tau~m~}{R~m~}$).
+C~m~ calculated according to the equation C~m~= $\frac{\tau~m~}{R~m~}$).
 
 Cell excitability was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model (see Fig. \@ref(fig:methodIV), parts a and b).
 (5) The gain (slope) and (6) rheobase (minimal current necessary to fire the first action potential were determined for further analysis.
@@ -173,7 +173,7 @@ Cell excitability was determined by analyzing the number of action potentials ev
 (14) Spike adaptation ratio - the ratio of ISI~first~ to ISI~last~.
 
 In some cases, especially in the CeL neurons, the sag, post-inhibitory rebound spikes or spontaneous firing were present.
-However, these features were very rare and were not taken into account in further analysis due to the possibiltiy of inconsistent results.
+However, these features were scarce and were not considered in further analysis due to the possibility of inconsistent results.
 
 ```{r methodIV, fig.cap='**Electrophysiological analysis of action potential properties of neurons in the amygdala**. **(a)** Schematic of recorded neuron. **(b)** Exemplary traces of evoked action potentials to hyperpolarizing and depolarizing current injections. APs were elicited from membrane potential of -65 mV. **(c)** The frequency-current (F/I) relationship of a representative neuron determined by analyzing the number of action potentials (APs) evoked by current steps of increasing amplitude. **(d)** Exemplary zoomed trace of voltage waveform to hyperpolarizing current injection, showing measured Rm, Cm, and tau. **e** Exemplary waveform of a single, evoked action potential illustrating several measured properties. Numbers correspond to features described in the text.', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images//methods//IV_excitability_protocols2.png")
@@ -238,10 +238,10 @@ Little or no spike-frequency adaptation was seen in these neurons.
 The Regular-Spiking neurons, also described as early-spiking (ES), exhibit shorter AP onset, `r knitr::asis_output("\U223C")`50 ms and more prominent adaptation ratio.
 
 However, similar to what was observed by @hunt_2017, the AP onset highly varied in recorded cells regardless of their type.
-Given that the classification based on the presence of spike frequency accommodation was reported to be reliable [@hou_2016; @hunt_2017], the classification was based on both the AP onset and the presence of spike frequency adaptation.<
-In addition, as in experiments measuring inhibitory synaptic transmission the cesium-based internal solution was used distorting the firing patterns of the cell, in this case, the classification was based on the presence of the depolarizing ramp seen in the LF cells at subthreshold current step and membrane time constant (`r knitr::asis_output("\U03C4")`~m~). 
+Given that the classification based on the presence of spike frequency accommodation was reported to be reliable [@hou_2016; @hunt_2017], the classification was based on both the AP onset and the presence of spike frequency adaptation.
+In addition, as in experiments measuring inhibitory synaptic transmission, the cesium-based internal solution was used distorting the firing patterns of the cell, in this case, the classification was based on the presence of the depolarizing ramp seen in the LF cells at subthreshold current step and membrane time constant (`r knitr::asis_output("\U03C4")`~m~). 
 
-```{r methodsBLACeAIVrep, fig.cap='**Classification of types of neurons in the amygdala** **(a)** An exemplary traces of firing patterns of BLA neurons. The presented traces were injected with the currents that evoked the first action potential (around ) **(b)** An exemplary traces of firing patterns of CeA neurons. Note the depolarizing voltage at subtreshold current in Late-Firing neurons. Scale bars: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE }
+```{r methodsBLACeAIVrep, fig.cap='**Classification of types of neurons in the amygdala** **(a)** An exemplary traces of firing patterns of BLA neurons. The presented traces were injected with the currents that evoked the first action potential, next one around 300pA, and next being 400pA. **(b)** An exemplary traces of firing patterns of CeA neurons. Note the depolarizing voltage at subtreshold current in Late-Firing neurons. Scale bars: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE }
 
 knitr::include_graphics("images//methods//IV_BLAvsCeA_examples.png")
 ```

@@ -254,36 +254,26 @@ bp_CeA_vm_LF <- bp_CeA_vm_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free
 # bp_CeA_fast <- bp_CeA_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 
-figure1 <- (bp_CeA_gain | bp_CeA_gain_RS | bp_CeA_gain_LF) / 
-           (bp_CeA_rm | bp_CeA_rm_RS | bp_CeA_rm_LF) / 
-           (bp_CeA_tau | bp_CeA_tau_RS | bp_CeA_tau_LF) /
-           (bp_CeA_vm | bp_CeA_vm_RS | bp_CeA_vm_LF)
-           
-
 ### making representative plots 
 ## frak2nM
-frak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(7)) # subtracting one representative cell from whole dataframe
-frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "18227023"] = "CX3CL1(2nM)" #renaming the name - instead the name of the file - the name of the condition
+frak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(22)) # subtracting one representative cell from whole dataframe
+frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "21303018"] = "CX3CL1(2nM)" #renaming the name - instead the name of the file - the name of the condition
 representative_frak2nM <- frak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # making a plot
 # ## importing traces
 # 
 # ## azdfrak2nM
-azdfrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(30))
-azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "19d02002"] = "AZD8797 + \nCX3CL1(2nM)"
+azdfrak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(26))
+azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "20611001"] = "AZD8797 + \nCX3CL1(2nM)"
 representative_azdfrak2nM <- azdfrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(300, 500) + ylim(0, 12)
 # 
 ## minofrak2nM
-minofrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(42))
-minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "17d07008"] = "minocycline + \nCX3CL1(2nM)"
-representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) + xlim(260, 500)
+minofrak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(46))
+minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "20703013"] = "minocycline + \nCX3CL1(2nM)"
+representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(260, 500)
 # 
-## gaba
-gabafrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(55))
-gabafrak2nM_IV_subset$Filename_all1[gabafrak2nM_IV_subset$Filename_all1 == "20605006"] = "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)"
-representative_gabafrak2nM <- gabafrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
 
 ### general representative IV figure
-figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM
+figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM
 
 #using patchwork to do layout of the figure
 
@@ -291,6 +281,12 @@ figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative
 # f_labels_BLA_thres_add$Experiment <- factor(f_labels_BLA_thres_add$Experiment, levels = c( "AZD8797",  "minocycline"))
 # 
 #  + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres_add, size=12, face = 'bold') 
+
+
+figure1 <- (bp_CeA_gain | bp_CeA_gain_RS | bp_CeA_gain_LF) / 
+           (bp_CeA_rm | bp_CeA_rm_RS | bp_CeA_rm_LF) / 
+           (bp_CeA_tau | bp_CeA_tau_RS | bp_CeA_tau_LF) /
+           (bp_CeA_vm | bp_CeA_vm_RS | bp_CeA_vm_LF)
 
 figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_minofrak2nM | inset_gaba)  + plot_layout(tag_level = 'new')) /
  (bp_BLA_thres + theme(legend.position = "none"))  /
@@ -303,6 +299,8 @@ figure1 <- figure1 +
   plot_annotation(tag_levels = c('a', '1')) + plot_layout(heights = c(0.3, 0.7, 1, 0.5, 1))
 
 figure1
+
+figure_IV
 
  
 ```

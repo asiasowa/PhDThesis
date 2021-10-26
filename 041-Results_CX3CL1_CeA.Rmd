@@ -125,15 +125,15 @@ To this end, among others, electrophysiological features such as the excitabilit
 
 In general, these experiments revealed that several membrane properties in the CeL neurons were significantly modified by CX3CL1 (Fig. \@ref(fig:CX3CL1CeAintrinsic)). 
 Specifically, similar to what was observed in the BLA, bath application of CX3CL1 (2nM) produced a <!--reversible--> decrease in the number of action potentials evoked by a given current step, manifested as a decrease in gain (baseline = `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, CX3CL1(2nM) = `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(gain)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(gain), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, `r CX3CL1_CeA_stat_frak2nM_gain`, see Fig. \@ref(fig:CX3CL1CeAintrinsic)<!--jaki?-->).<!-- który panel?--><!--  We injected a series of depolarizing current steps to assess the number of action potentials (Figure 4a – c). Repeated-measure ANOVA revealed that projection neurons fired significantly less after NF knockdown // Bath application of DA (0.05–30 μm) produced a reversible decrease in the number of action potentials evoked by a given current step-->
-This effect was accompanied by decreased input resistance (`r CX3CL1_CeA_stat_frak2nM_Rm`)and membrane time constant (`r CX3CL1_CeA_stat_frak2nM_tau`) after CX3CL1 application (Fig. \@ref(fig:CX3CL1CeAintrinsic)<!--jaki?-->).
+This effect was accompanied by decreased input resistance (`r CX3CL1_CeA_stat_frak2nM_Rm`) and membrane time constant (`r CX3CL1_CeA_stat_frak2nM_tau`; Fig. \@ref(fig:CX3CL1CeAintrinsic)<!--jaki?-->).
 Moreover, resting membrane potentials of CeL neurons become more depolarized in response to bath-applied 2nM CX3CL1 (from `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(RMS)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(RMS), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(RMS)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(RMS), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, `r CX3CL1_CeA_stat_frak2nM_Vm`) (Fig. \@ref(fig:CX3CL1CeAintrinsic)<!--jaki?-->).<!-- In response to bath-applied agonists, the depolarization is strong enough that it is capable of producing prolonged spiking ( Beierlein et al., 2000; Fanselow et al., 2008; Kawaguchi, 1997; Xu et al., 2013 ).-->
 
 Given that CeL neurons demonstrate mainly two types of electrophysiological firing patterns, specifically Regular-Spiking and Late-Firing neurons (see Introduction, CeA subchapter \@ref(CeA) and Fig. \@ref(fig:methodsBLACeAIVrep)b),<!-- which was also confirmed by cluster analysis from recorded CeL cells as a part of this dissertation,comprises neurons of two main electrophysiological types // La  ter studies further characterized at least four main physiological types of neurons in the CeA, distinguished based on their responses to intracellular current injections.-->, previously measured intrinsic parameters were further analyzed<!--divided?--> by these neuronal subtypes.<!-- odnośnik do góry i lepiej napisać// segregated those neurons according to their types.-->
 Intriguingly, majority of RS neurons were revealed to respond to CX3CL1, which was reflected as robust changes in intrinsic properties (Fig. \@ref(fig:CX3CL1CeAintrinsic)<!--part-->).
-In contrast, under presented here experimental conditions, CX3CL1 seems not to affect LF cells' intrinstic membrane properties (see Fig. \@ref(fig:CX3CL1CeAintrinsic)<!--part-->), implying that much higher proportion of RS cells was reactive to CX3CL1.
+In contrast, under presented here experimental conditions, CX3CL1 seems not to affect LF cells' intrinsic membrane properties (see Fig. \@ref(fig:CX3CL1CeAintrinsic)<!--part-->), implying that much higher proportion of RS cells was reactive to CX3CL1.
 All parameters and statistics are summarized in Table <!--?-->.
 
-```{r CX3CL1CeAintrinsic, fig.cap='**Effects of CX3CL1 on intrinsic properties of CeL neurons** **(a)** Schematics of presented conditions **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the ... conditions of electrophysiological recordings. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 18}
+```{r CX3CL1CeAintrinsic, fig.cap='**Effects of CX3CL1 on intrinsic properties of CeL neurons** **(a)** Schematics of presented conditions **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the ... conditions of electrophysiological recordings. Scale bar: 10mV, 10ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -149,15 +149,7 @@ inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
 inset_minoa <- image_read("images//results//inset_minoa.png")
 inset_minoa <- image_ggplot(inset_minoa)
 
-#powinny być nowe 
-# IV_representative_frak2nM <- image_read("images//results//IV_representative_frak2nM.png")
-# IV_representative_frak2nM <- image_ggplot(IV_representative_frak2nM)
-# IV_representative_azdfrak2nM <- image_read("images//results//IV_representative_azdfrak2nM.png")
-# IV_representative_azdfrak2nM <- image_ggplot(IV_representative_azdfrak2nM)
-# IV_representative_gabafrak2nM <- image_read("images//results//IV_representative_gabafrak2nM.png")
-# IV_representative_gabafrak2nM <- image_ggplot(IV_representative_gabafrak2nM)
-# IV_representative_minofrak2nM <- image_read("images//results//IV_representative_minofrak2nM.png")
-# IV_representative_minofrak2nM <- image_ggplot(IV_representative_minofrak2nM)
+
 # making labels (as minocycline and azd has different condition than CX3CL1) for then making proper automatic statistics
 # f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
 # f_labels_BLA_thres$Experiment <- factor(f_labels_BLA_thres$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
@@ -271,9 +263,13 @@ minofrak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "minocycline + \n
 minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "20703013"] = "minocycline + \nCX3CL1(2nM)"
 representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(260, 500)
 # 
+#powinny być nowe IV_representative_minoa <- fig("images//results//IV_representative_minoa.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+traces_frak2nM <- fig("images//results//CX3CL1_CeA_IV_traces_frak2nM.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+traces_azdfrak <- fig("images//results//CX3CL1_CeA_IV_traces_azdfrak.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+traces_minofrak <- fig("images//results//CX3CL1_CeA_IV_traces_minofrak.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
 
 ### general representative IV figure
-figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM
+#figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM
 
 #using patchwork to do layout of the figure
 
@@ -281,28 +277,35 @@ figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative
 # f_labels_BLA_thres_add$Experiment <- factor(f_labels_BLA_thres_add$Experiment, levels = c( "AZD8797",  "minocycline"))
 # 
 #  + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres_add, size=12, face = 'bold') 
+# figure2 <- ((representative_azdfrak2nM | traces_azdfrak) + plot_layout(tag_level = 'new')) | ((representative_minofrak2nM | traces_minofrak)+ plot_layout(tag_level = 'new'))  +  plot_layout(guides = "collect") & theme(legend.position = "bottom")
 
+figure1 <- ((bp_CeA_gain | bp_CeA_gain_RS | bp_CeA_gain_LF) + plot_layout(tag_level = 'new')) / 
+           ((bp_CeA_rm | bp_CeA_rm_RS | bp_CeA_rm_LF) + plot_layout(tag_level = 'new')) / 
+           ((bp_CeA_tau | bp_CeA_tau_RS | bp_CeA_tau_LF) + plot_layout(tag_level = 'new'))/
+           ((bp_CeA_vm | bp_CeA_vm_RS | bp_CeA_vm_LF) + plot_layout(tag_level = 'new')) / 
+           ((representative_frak2nM | traces_frak2nM | representative_azdfrak2nM | traces_azdfrak | representative_minofrak2nM | traces_minofrak) + plot_layout(tag_level = 'new'))
 
-figure1 <- (bp_CeA_gain | bp_CeA_gain_RS | bp_CeA_gain_LF) / 
-           (bp_CeA_rm | bp_CeA_rm_RS | bp_CeA_rm_LF) / 
-           (bp_CeA_tau | bp_CeA_tau_RS | bp_CeA_tau_LF) /
-           (bp_CeA_vm | bp_CeA_vm_RS | bp_CeA_vm_LF)
-
-figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_minofrak2nM | inset_gaba)  + plot_layout(tag_level = 'new')) /
- (bp_BLA_thres + theme(legend.position = "none"))  /
-  (((pie_BLA_frak_thres | pie_BLA_frak5nM_thres | pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_minofrak_thres | pie_BLA_picro_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) / 
-  (((((representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM) + plot_layout(tag_level = 'new')) +   plot_layout(tag_level = 'new')) + plot_layout(guides = "collect") & theme(legend.position = "right")))  +
-    (IV_representative_frak2nM | IV_representative_azdfrak2nM | IV_representative_minofrak2nM | IV_representative_gabafrak2nM)
+# figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_minofrak2nM | inset_gaba)  + plot_layout(tag_level = 'new')) /
+#  (bp_BLA_thres + theme(legend.position = "none"))  /
+#   (((pie_BLA_frak_thres | pie_BLA_frak5nM_thres | pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_minofrak_thres | pie_BLA_picro_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) / 
+#   (((((representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM) + plot_layout(tag_level = 'new')) +   plot_layout(tag_level = 'new')) + plot_layout(guides = "collect") & theme(legend.position = "right")))  +
+#     (IV_representative_frak2nM | IV_representative_azdfrak2nM | IV_representative_minofrak2nM | IV_representative_gabafrak2nM)
 
 
 figure1 <- figure1 + 
-  plot_annotation(tag_levels = c('a', '1')) + plot_layout(heights = c(0.3, 0.7, 1, 0.5, 1))
+   plot_annotation(tag_levels = c('a', '1')) #+ plot_layout(heights = c(0.3, 0.7, 1, 0.5, 1))
 
 figure1
 
-figure_IV
+```
 
- 
+
+```{r CX3CL1CeAintrinsictable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+
+CeA_df_table <- CeA_df_final %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type, RMS, Rm_20, gain)
+
+CeA_df_sum <- CeA_df_table %>% group_by(Experiment) %>% dplyr::summarise(RMS)
+
 ```
 
 #### Excitatory synaptic transmission in the CeL and its effect by CX3CL12

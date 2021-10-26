@@ -198,6 +198,10 @@ The same traces were analyzed by using all of these software and selection based
 Importantly, the differences between the control and experimental conditions remained unchanged (data not shown). 
 Hence, the synaptic transmission data presented in this dissertation was done using machine-learning approach in Eventer software.
 
+All statistical tests and plotting were done using 3.6.1 [@R_base], with mainly the dplyr (v0.8.3; @dplyr), and the ggplot2 (v3.2.1; @ggplot2) packages. 
+To compare membrane properties and synaptic transmission between different groups, they were analyzed using paired t-test.
+For non-normally distributed data, the Wilcoxon Signed Rank Test was used.
+
 ```{r methodsEPSCsIPSC, fig.cap='**Analysis of postsynaptic currents from neurons in the amygdala** **(a)** An exemplary trace of spontaneous inhibitory synaptic currents (sIPSCs, red arrows) recorded from representative cell from the amygdala in voltage clamp at 0 mV holding potential (left) and depictured other analyzed parameters. **(b)** A schematic illustrating recorded neuron with its synaptic contacts. **c** An exemplary trace of spontaneous excitatory synaptic currents (sEPSCs, red arrows) recorded from representative cell from the amygdala in voltage clamp at -70 mV holding potential (left) and depictured other analyzed parameters.', fig.align = 'center', echo = FALSE, message= FALSE }
 
 knitr::include_graphics("images//methods//representativePSC2.png")

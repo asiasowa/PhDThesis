@@ -92,7 +92,7 @@ CeA_azd_df <- CeA_azd_df %>% filter(!Cell %in% bad_Cells)
 #### mino + frak2nM CeA membrane properties####
 CeA_mino_df<-readRDS(".//CeA//mino//membrane_table_CeA_mino.rds")
 CeA_mino_df <- CeA_mino_df %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
-bad_Cells <- c(9) # Capacitance = 184, much higher than others in baseline
+bad_Cells <- c(9, 15) # Capacitance = 184, much higher than others in baseline; 15- 21507018 - Rm = 961
 CeA_mino_df <- CeA_mino_df %>% filter(!Cell %in% bad_Cells)
 
 #### frak2nM CeA sIPSC####

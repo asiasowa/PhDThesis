@@ -661,20 +661,23 @@ bp_CeA_LF_fast <- plot_boxplot(CeA_df_azd_sub_LF, AHPf1_all, ylabel = "fast AHP 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
 
 # making final figure with patchwork
+lay <- "
+AB
+CD
+EF
+"
 
-figure1 <- (((bp_CeA_RS_thres | bp_CeA_LF_thres) + plot_layout(tag_level = 'new')) | ((bp_CeA_RS_adap | bp_CeA_LF_adap) + plot_layout(tag_level = 'new'))) / 
-            (((bp_CeA_RS_cap | bp_CeA_LF_cap) + plot_layout(tag_level = 'new')) | ((bp_CeA_RS_apw | bp_CeA_LF_apw) + plot_layout(tag_level = 'new'))) /
-            (((bp_CeA_RS_apa | bp_CeA_LF_apa) + plot_layout(tag_level = 'new')) |  ((bp_CeA_RS_fast | bp_CeA_LF_fast) + plot_layout(tag_level = 'new'))) 
-  
+A <- (bp_CeA_RS_thres | bp_CeA_LF_thres) + plot_layout(tag_level = 'new')
+B <- (bp_CeA_RS_adap | bp_CeA_LF_adap) + plot_layout(tag_level = 'new')
+C <- (bp_CeA_RS_cap | bp_CeA_LF_cap) + plot_layout(tag_level = 'new')
+D <- (bp_CeA_RS_apw | bp_CeA_LF_apw) + plot_layout(tag_level = 'new')
+E <- (bp_CeA_RS_apa | bp_CeA_LF_apa) + plot_layout(tag_level = 'new')
+F <- (bp_CeA_RS_fast | bp_CeA_LF_fast) + plot_layout(tag_level = 'new')
 
-# figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_minofrak2nM | inset_gaba)  + plot_layout(tag_level = 'new')) /
-#  (bp_BLA_thres + theme(legend.position = "none"))  /
-#   (((pie_BLA_frak_thres | pie_BLA_frak5nM_thres | pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_minofrak_thres | pie_BLA_picro_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) / 
-#   (((((representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM) + plot_layout(tag_level = 'new')) +   plot_layout(tag_level = 'new')) + plot_layout(guides = "collect") & theme(legend.position = "right")))  +
-#     (IV_representative_frak2nM | IV_representative_azdfrak2nM | IV_representative_minofrak2nM | IV_representative_gabafrak2nM)
+figure1 <- wrap_plots(A = A, B = B, C = C, D = D, E = E, F = F, design = lay)
 
-figure1 <- figure1 +
-  plot_annotation(tag_levels = c('a', '1')) #+ plot_layout(heights = c(0.3, 0.7, 1, 0.5, 1))
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
+
 
 figure1
 

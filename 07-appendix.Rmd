@@ -578,18 +578,18 @@ CeA_df_azd_sub_LF <- CeA_df_final_LF %>% dplyr::filter(Experiment %in% c("AZD879
 
 
 # GAIN
-bp_CeA_RS_thres <- plot_boxplot(CeA_df_azd_sub_RS, Treshold1_all, mtitle= "Threshold", ylabel = "Treshold_all1", dot_size = 2)
+bp_CeA_RS_thres <- plot_boxplot(CeA_df_azd_sub_RS, Treshold1_all, mtitle= "Regular-Spiking", ylabel = "Treshold_all1", dot_size = 2)
 # bp_CeA_RS_thres <- bp_CeA_RS_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
-bp_CeA_LF_thres <- plot_boxplot(CeA_df_azd_sub_LF, Treshold1_all, mtitle= "Threshold", ylabel = "Treshold_all1",  dot_size = 2)
+bp_CeA_LF_thres <- plot_boxplot(CeA_df_azd_sub_LF, Treshold1_all, mtitle= "Late-Firing", ylabel = "Treshold_all1",  dot_size = 2)
 # bp_CeA_LF_thres <- bp_CeA_LF_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 # ADAPTATION
-bp_CeA_RS_adap <- plot_boxplot(CeA_df_azd_sub_RS, Adaptation_ratio, ylabel = "Adaptation ratio", mtitle = "Adaptation Ratio", vary1 = 0, vary2 = 1.5, dot_size = 2)
+bp_CeA_RS_adap <- plot_boxplot(CeA_df_azd_sub_RS, Adaptation_ratio, ylabel = "Adaptation ratio", mtitle = "Regular-Spiking", vary1 = 0, vary2 = 1.5, dot_size = 2)
 # bp_CeA_RS_adap <- bp_CeA_RS_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
-bp_CeA_LF_adap <- plot_boxplot(CeA_df_azd_sub_LF, Adaptation_ratio, ylabel = "Adaptation ratio", mtitle = "Adaptation Ratio", vary1 = 0, vary2 = 1.5, dot_size = 2)
+bp_CeA_LF_adap <- plot_boxplot(CeA_df_azd_sub_LF, Adaptation_ratio, ylabel = "Adaptation ratio", mtitle = "Late-Firing", vary1 = 0, vary2 = 1.5, dot_size = 2)
 # bp_CeA_LF_adap <- bp_CeA_LF_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
@@ -613,11 +613,11 @@ bp_CeA_LF_adap <- plot_boxplot(CeA_df_azd_sub_LF, Adaptation_ratio, ylabel = "Ad
 
 
 # CAPACITANCE
-bp_CeA_RS_cap <- plot_boxplot(CeA_df_azd_sub_RS, C_20, ylabel = "Capacitance (pF)", mtitle = "Capacitance", dot_size = 2)
+bp_CeA_RS_cap <- plot_boxplot(CeA_df_azd_sub_RS, C_20, ylabel = "Capacitance (pF)", mtitle = "Regular-Spiking", dot_size = 2)
 # bp_CeA_RS_cap <- bp_CeA_RS_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
-bp_CeA_LF_cap <- plot_boxplot(CeA_df_azd_sub_LF, C_20, ylabel = "Capacitance (pF)", mtitle = "Capacitance", dot_size = 2)
+bp_CeA_LF_cap <- plot_boxplot(CeA_df_azd_sub_LF, C_20, ylabel = "Capacitance (pF)", mtitle = "Late-Firing", dot_size = 2)
 # bp_CeA_LF_cap <- bp_CeA_LF_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
@@ -637,26 +637,26 @@ bp_CeA_LF_cap <- plot_boxplot(CeA_df_azd_sub_LF, C_20, ylabel = "Capacitance (pF
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) 
 
 # ACTION POTENTIAL WIDTH
-bp_CeA_RS_apw <- plot_boxplot(CeA_df_azd_sub_RS, AP_width1_all, ylabel = "Action potential width (ms)", mtitle = "Action potential width", dot_size = 2)
+bp_CeA_RS_apw <- plot_boxplot(CeA_df_azd_sub_RS, AP_width1_all, ylabel = "Action potential width (ms)", mtitle = "Regular-Spiking", dot_size = 2)
 # bp_CeA_RS_apw  <- bp_CeA_RS_apw  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-bp_CeA_LF_apw <- plot_boxplot(CeA_df_azd_sub_LF, AP_width1_all, ylabel = "Action potential width (ms)", mtitle = "Action potential width", dot_size = 2)
+bp_CeA_LF_apw <- plot_boxplot(CeA_df_azd_sub_LF, AP_width1_all, ylabel = "Action potential width (ms)", mtitle = "Late-Firing", dot_size = 2)
 # bp_CeA_LF_apw  <- bp_CeA_LF_apw  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
 
 # ACTION POTENTIAL AMPLITUDE
-bp_CeA_RS_apa <- plot_boxplot(CeA_df_azd_sub_RS, AP_amp1_all, ylabel = "Action potential amplitude (pA)", mtitle = "Action potential amplitude", dot_size = 2)
+bp_CeA_RS_apa <- plot_boxplot(CeA_df_azd_sub_RS, AP_amp1_all, ylabel = "Action potential amplitude (pA)", mtitle = "Regular-Spiking", dot_size = 2)
 # bp_CeA_RS_apa <- bp_CeA_RS_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-bp_CeA_LF_apa <- plot_boxplot(CeA_df_azd_sub_LF, AP_amp1_all, ylabel = "Action potential amplitude (pA)", mtitle = "Action potential amplitude", dot_size = 2)
+bp_CeA_LF_apa <- plot_boxplot(CeA_df_azd_sub_LF, AP_amp1_all, ylabel = "Action potential amplitude (pA)", mtitle = "Late-Firing", dot_size = 2)
 # bp_CeA_LF_apa <- bp_CeA_LF_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) 
 
 # FAST AHP
-bp_CeA_RS_fast <- plot_boxplot(CeA_df_azd_sub_RS, AHPf1_all, ylabel = "fast AHP (pA)", mtitle = "fast AHP", dot_size = 2)
+bp_CeA_RS_fast <- plot_boxplot(CeA_df_azd_sub_RS, AHPf1_all, ylabel = "fast AHP (pA)", mtitle = "Regular-Spiking", dot_size = 2)
 # bp_CeA_RS_fast <- bp_CeA_RS_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-bp_CeA_LF_fast <- plot_boxplot(CeA_df_azd_sub_LF, AHPf1_all, ylabel = "fast AHP (pA)", mtitle = "fast AHP",  dot_size = 2)
+bp_CeA_LF_fast <- plot_boxplot(CeA_df_azd_sub_LF, AHPf1_all, ylabel = "fast AHP (pA)", mtitle = "Late-Firing",  dot_size = 2)
 # bp_CeA_LF_fast <- bp_CeA_LF_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
 

@@ -459,7 +459,7 @@ Moreover, this inhibition of GABAergic transmission by 5nM CX3CL1 was mediated b
 
 <!-- dodać coś bardziej opisowego? On average, ... the autaptic IPSP (aIPSP) in ES cells was 8.0 2.5 mV ( n 	 8), // -->
 
-```{r CX3CL1BLAsIPSC, fig.cap= '**CX3CL1 modulates GABAergic synaptic transmission in the BLA** **(a1,a7)** Schematics illustrating different experimental conditions **(b)** Boxplots presenting each cells sIPSCs median frequencies  before and after CX3CL1 application across different conditions **(c1,c7)** Pie charts representing the proportion of PCs responsive to CX3CL1 manifested as a change in sIPSCs frequency **(d)**  Boxplots presenting each cells sIPSCs median amplitudes  before and after CX3CL1 application across different conditions **(e1,e7)** Pie charts representing the proportion of PCs responsive to CX3CL1 manifested as a change in sIPSCs amplitude **(f1,4)** Representative sIPSCs recorded from BLA principal neurons before (blue) and after (red) application of CX3CL1 (5nM) across different conditions.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 16, fig.width= 9}
+```{r CX3CL1BLAsIPSC, fig.cap= '**CX3CL1 modulates GABAergic synaptic transmission in the BLA** **(a1,a7)** Schematics illustrating different experimental conditions **(b)** Boxplots presenting each cells sIPSCs median frequencies  before and after CX3CL1 application across different conditions **(c1,c7)** Pie charts representing the proportion of PCs responsive to CX3CL1 manifested as a change in sIPSCs frequency **(d)**  Boxplots presenting each cells sIPSCs median amplitudes  before and after CX3CL1 application across different conditions **(e1,e7)** Pie charts representing the proportion of PCs responsive to CX3CL1 manifested as a change in sIPSCs amplitude **(f1,4)** Representative sIPSCs recorded from BLA principal neurons before (blue) and after (red) application of CX3CL1 (5nM) across different conditions.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 16, fig.width= 12}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
@@ -564,10 +564,8 @@ pie_frak5_m_amp_sIPSC  <- BLA_frak5nM_mIPSC %>% plot_pie(median_Amplitude, "TTX 
 
 
 figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_azdfrak5nM | inset_azda | inset_minofrak5nM | inset_minoa |  inset_ttx_5nM)  + plot_layout(tag_level = 'new')) /
- (bp_BLA_s_freq_sIPSC + theme(legend.position = "none"))  /
-  (((pie_frak2_s_freq_sIPSC  | pie_frak5_s_freq_sIPSC  | pie_azdfrak5nM_s_freq_sIPSC  | pie_azd_s_freq_sIPSC  | pie_minofrak5nM_s_freq_sIPSC  | pie_mino_s_freq_sIPSC|  pie_frak5_m_freq_sIPSC)   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
+ (bp_BLA_s_freq_sIPSC + theme(legend.position = "none")) /
   (bp_BLA_s_amp_sIPSC + theme(legend.position = "none")) / 
-(((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC | pie_frak5_m_amp_sIPSC )   + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) /
   (((rep_sIPSC_frak5nM) | rep_mIPSC_frak5nM | rep_sIPSC_azdfrak5nM | rep_sIPSC_minofrak5nM ) +  plot_layout(tag_level = 'new'))
 
 # plus representatives!!!! cumulatives???
@@ -577,7 +575,7 @@ figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_azdfrak5nM | inset_azda | in
 
 
 figure1 <- figure1 + 
-  plot_annotation(tag_levels = c('a', '1')) + plot_layout(heights = c(0.5, 0.8, 0.5, 0.8, 0.5, 1.5)) # , widths = c(1, 1, 1, 1, 1, 1, 1, 0.8, 1, 1, 1, 1, 1, 1, 1, 0.8, 1, 1, 1, 1)
+  plot_annotation(tag_levels = c('a', '1')) + plot_layout(heights = c(0.5, 0.8, 0.8, 1.5)) # , widths = c(1, 1, 1, 1, 1, 1, 1, 0.8, 1, 1, 1, 1, 1, 1, 1, 0.8, 1, 1, 1, 1)
 
 figure1
 

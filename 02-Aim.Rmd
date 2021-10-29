@@ -75,13 +75,13 @@ library(figpatch)
 #### frak2nM CeA membrane properties####
 CeA_df_frak2nM<-readRDS(".//CeA//frak2nM//membrane_table_CeA.rds")
 CeA_df_frak2nM <- CeA_df_frak2nM %>% mutate(Experiment = 'CX3CL1(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
-bad_Cells <- c(11) # 11 - 19o22019, Capacitane in baseline 141, resistance 190. # but 4 has nice sEPSC :(((( # based on lack of sEPSC - 7, 12, 14, 15 ##### 24.11.2020 added again 7,12,14,15 # based on IV - very late - 19405029 (cell nr 4, and sEPSC cell nr 3, but sEPSC is ok)
+bad_Cells <- c(11, 8, 20) # 11 - 19o22019, Capacitane in baseline 141, resistance 190. # based on IV - 19n12009 - IV- 4 and 21225017- 20  
 CeA_df_frak2nM <- CeA_df_frak2nM %>% filter(!Cell %in% bad_Cells)
 
 #### frak5nM CeA membrane properties####
 CeA_df_frak5nM<-readRDS(".//CeA//frak5nM//membrane_table_CeA_frak5nM.rds")
 CeA_df_frak5nM <- CeA_df_frak5nM %>% mutate(Experiment = 'CX3CL1(5nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
-bad_Cells <- c(6)  # 21128037 - IV
+bad_Cells <- c(6)  
 CeA_df_frak5nM <- CeA_df_frak5nM %>% filter(!Cell %in% bad_Cells)
 
 #### azd + frak2nM CeA membrane properties####
@@ -93,7 +93,7 @@ CeA_azd_df <- CeA_azd_df %>% filter(!Cell %in% bad_Cells)
 #### mino + frak2nM CeA membrane properties####
 CeA_mino_df<-readRDS(".//CeA//mino//membrane_table_CeA_mino.rds")
 CeA_mino_df <- CeA_mino_df %>% mutate(Experiment = 'minocycline + \nCX3CL1(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
-bad_Cells <- c(9, 15) # Capacitance = 184, much higher than others in baseline; 15- 21507018 - Rm = 961
+bad_Cells <- c(9, 15, 2, 11) # Capacitance = 184, much higher than others in baseline; 15- 21507018 - Rm = 961 
 CeA_mino_df <- CeA_mino_df %>% filter(!Cell %in% bad_Cells)
 
 #### frak2nM CeA sIPSC####
@@ -183,7 +183,7 @@ CeA_sEPSC_mino<- CeA_mino_RS_sEPSC  %>% dplyr::bind_rows(CeA_mino_LF_sEPSC) %>% 
 #### mino alone CeA membrane properties ####
 CeA_df_minoa<-readRDS(".//minocycline_alone//CeA//membrane_table_CeA_mino_alone.rds")
 CeA_df_minoa <- CeA_df_minoa %>% mutate(Experiment = 'minocycline') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
-bad_Cells <- c(9, 8, 10, 12, 18) #poszarpana i brzydka - sEPSC; IV - RS - brzydkie 20d08045, 20813003, 20729032
+bad_Cells <- c(9, 8, 10, 12, 18, 13) #poszarpana i brzydka - sEPSC; IV - RS - brzydkie 20d08045, 20813003, 20729032
 CeA_df_minoa <- CeA_df_minoa %>% filter(!Cell %in% bad_Cells)
 
 
@@ -219,7 +219,7 @@ CeA_sEPSC_minoa$Condition <- plyr::revalue(CeA_sEPSC_minoa$Condition, c("b"="bas
 CeA_df_azda<-readRDS(".//AZD_alone//CeA//membrane_table_CeA_azd_alone.rds")
 CeA_df_azda <- CeA_df_azda %>% mutate(Experiment = "AZD8797") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
 CeA_df_azda$RMS <- as.numeric(CeA_df_azda$RMS)
-bad_Cells <- c(10, 15, 12, 13, 17, 5, 9) # Capacitance almost 0, (0.1, 0.15) ## wrong matlab scripts, check it - 3, 9 //// 10 - strasznie poszarpana w sEPSC ;;; 12, 13 - resistance ; 20d11024 - 17 - IV; 20813033 20819008 IV, 
+bad_Cells <- c(1, 19, 10, 15, 12, 13, 17, 5, 9, 8) # Capacitance almost 0, (0.1, 0.15) ## wrong matlab scripts, check it - 3, 9 //// 10 - strasznie poszarpana w sEPSC ;;; 12, 13 - resistance ; 20d11024 - 17 - IV; 20813033 20819008 IV, // 1- 20805001 IV , 19 - 21219027 - IV 8 - 20814045
 CeA_df_azda <- CeA_df_azda %>% dplyr::filter(!Cell %in% bad_Cells)
 CeA_df_azda$Condition <- plyr::revalue(CeA_df_azda$Condition, c("AZD" = "AZD8797"))
 CeA_df_azda$Condition = factor(CeA_df_azda$Condition, levels=c('baseline', "AZD8797"))
@@ -320,7 +320,7 @@ CeA_sEPSC_LF <- CeA_sEPSC_final %>% filter(Type == 'LF')
 BLA_frak2nM_df<-readRDS(".//BLA//2nM//fractalkine//membrane_table_frak2nM.rds")
 BLA_frak2nM_df$Cell <- as.factor(BLA_frak2nM_df$Cell)
 BLA_frak2nM_df$Condition <- as.factor(BLA_frak2nM_df$Condition)
-bad_Cells <- c(1, 14, 8)  #filtering 3 and 14 because of capacitance and 2 because of only 2 spikes and very depolarized, 1 - Rm more than 200, duży access, 13 - tau; ealier: 1, 2, 3, 13, 14. WHY 8? 
+bad_Cells <- c(1, 14, 8, 2 , 4, 9)  #filtering 3 and 14 because of capacitance and 2 because of only 2 spikes and very depolarized, 1 - Rm more than 200, duży access, 13 - tau; ealier: 1, 2, 3, 13, 14. WHY 8? 
 BLA_frak2nM_df <- BLA_frak2nM_df %>% filter(!Cell %in% bad_Cells) 
 BLA_frak2nM_df <- BLA_frak2nM_df %>% mutate(Experiment = "CX3CL1(2nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
 BLA_frak2nM_inter <- BLA_frak2nM_df %>% filter(Type == "interneuron")

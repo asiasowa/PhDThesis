@@ -2,7 +2,7 @@
 
 In this PhD dissertation, by using a combination of electrophysiological, immunohistochemical, and pharmacological approaches, the modulation of two chemokines (CX3CL1 and CXCL12) was dissected based on their ... 
 
-## CX3CL1
+## CX3CL1 in the amygdala
 
 Despite relatively high levels of CX3CL1 and CX3CR1 in the amygdala and the involvement of this chemokine in anxiety-related behavior, the precise role of the CX3CL1/CX3CR1 signaling pathway in the amygdala is still unknown. <!-- lepiej napisać --> 
 
@@ -148,6 +148,8 @@ In addition, the administration of the BDNF receptor TrkB antagonist ANA-12 sign
 On the other hand, CX3CR1- deficient mice exhibit impaired LTP in the hippocampus.20 
 These findings suggest that the cognitive impairment observed in DIO mice may be due to decreased fractalkine- CX3CR1 signaling in the hippocampus.
 
+ Tetanic stimulation of inputs to interneurons caused an immediate and sustained increase in the efficacy of these synapses.  -> decreasd Freq and AMpl may be also due to instrinsic plasticity at a cell level - as both glu and gaba transmission is impeded, 
+
 ### adenosine
 
 Adenosine is a metabolite that acts through different receptor subtypes (Jacobson and Gao, 2006); among them A 1 R (Lauro et al., 2008, 2010) and A 3 R (Rosito et al., 2014) are involved in CX3CL1 neuroprotection against Glu-induced toxicity. Moreover we previously demonstrated that CX3CL1 triggers the release of adenosine from neuronal and microglial cells (Lauro et al., 2008, 2010). 
@@ -197,6 +199,10 @@ We speculate that the persistent CX  3  CL1-mediated potentiation of NMDA functi
 #### CX3CL1 and GABA A and extinction
 
 This idea is in line with the role of NF in GABAergic  transmission.  Several  studies  converge  on showing that extinction training globally increases GABAergic  markers  including  gephyrin  and  GABAAreceptor subunits in the BLA (Chhatwal et  al , 2005; Heldt and Ressler, 2007; Lin et al , 2009), and interfering with GABAA receptor insertion by a TAT-conjugated peptide within BLA synapses impaired fear extinction (Lin et al , 2009). However, the role of specific interneuron subtype inputs remains less well understood. To the best of our knowledge, only one study addressed the role of such specific changes, demonstrating remodeling of perisomatic synapses in contextual fear extinction (Trouche et  al , 2013).<!-- saha 2016? -->
+
+#### CX3CL1 and excitability
+
+Most action potentials that neurons emit during their lifetime are produced by a dynamic interplay between the synaptic inputs and the intrinsic biophysical properties of the postsynaptic neuron. Activity-dependent or neuromodulatory changes targeting these intrinsic properties effectively regulate intrinsic excitability of the neurons and how they  integrate synaptic input into firing output.
 
 #### CX3CL1, amygdala, and behavior
 

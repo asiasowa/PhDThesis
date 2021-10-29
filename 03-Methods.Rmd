@@ -200,7 +200,7 @@ Hence, the synaptic transmission data presented in this dissertation was done us
 
 All statistical tests and plotting were done using 3.6.1 [@R_base], with mainly the dplyr (v0.8.3; @dplyr), and the ggplot2 (v3.2.1; @ggplot2) packages. 
 To compare membrane properties and synaptic transmission between different groups, they were analyzed using paired t-test.
-For non-normally distributed data, the Wilcoxon Signed Rank Test was used.
+For non-normally distributed data, the Wilcoxon Signed Rank Test was used. <!-- Statistical comparisons were conducted using Repeat-measure, two-way and one-way ANOVA followed Tukey's HSD test using SPSS 20.0 (SPSS Inc., Chicago, IL, USA). Differences were considered to be statistically significant at p < 0.05.-->
 
 ```{r methodsEPSCsIPSC, fig.cap='**Analysis of postsynaptic currents from neurons in the amygdala** **(a)** An exemplary trace of spontaneous inhibitory synaptic currents (sIPSCs, red arrows) recorded from representative cell from the amygdala in voltage clamp at 0 mV holding potential (left) and depictured other analyzed parameters. **(b)** A schematic illustrating recorded neuron with its synaptic contacts. **c** An exemplary trace of spontaneous excitatory synaptic currents (sEPSCs, red arrows) recorded from representative cell from the amygdala in voltage clamp at -70 mV holding potential (left) and depictured other analyzed parameters.', fig.align = 'center', echo = FALSE, message= FALSE }
 
@@ -242,7 +242,7 @@ Little or no spike-frequency adaptation was seen in these neurons.
 The Regular-Spiking neurons, also described as early-spiking (ES), exhibit shorter AP onset, `r knitr::asis_output("\U223C")`50 ms and more prominent adaptation ratio.
 
 However, similar to what was observed by @hunt_2017, the AP onset highly varied in recorded cells regardless of their type.
-Given that the classification based on the presence of spike frequency accommodation was reported to be reliable [@hou_2016; @hunt_2017], the classification was based on both the AP onset and the presence of spike frequency adaptation.
+Given that the classification based on the presence of spike frequency accommodation was reported to be reliable [@hou_2016; @hunt_2017], the classification was based on both the AP onset and the presence of spike frequency adaptation.<!--okropne zdanie...-->
 In addition, as in experiments measuring inhibitory synaptic transmission, the cesium-based internal solution was used distorting the firing patterns of the cell, in this case, the classification was based on the presence of the depolarizing ramp seen in the LF cells at subthreshold current step and membrane time constant (`r knitr::asis_output("\U03C4")`~m~). 
 
 ```{r methodsBLACeAIVrep, fig.cap='**Classification of types of neurons in the amygdala** **(a)** An exemplary traces of firing patterns of BLA neurons. The presented traces were injected with the currents that evoked the first action potential, next one around 300pA, and next being 400pA. **(b)** An exemplary traces of firing patterns of CeA neurons. Note the depolarizing voltage at subtreshold current in Late-Firing neurons. Scale bars: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE }

@@ -70,6 +70,7 @@ library(xml2)
 library(pzfx)
 library(patchwork)
 library(magick)
+library(figpatch)
 
 #### frak2nM CeA membrane properties####
 CeA_df_frak2nM<-readRDS(".//CeA//frak2nM//membrane_table_CeA.rds")

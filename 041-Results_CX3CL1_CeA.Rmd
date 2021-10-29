@@ -250,18 +250,18 @@ bp_CeA_vm_LF <- bp_CeA_vm_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free
 
 ### making representative plots 
 ## frak2nM
-frak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(22)) # subtracting one representative cell from whole dataframe
+frak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(20)) # subtracting one representative cell from whole dataframe
 frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "21303018"] = "CX3CL1(2nM)" #renaming the name - instead the name of the file - the name of the condition
 representative_frak2nM <- frak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # making a plot
 # ## importing traces
 # 
 # ## azdfrak2nM
-azdfrak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(26))
+azdfrak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(24))
 azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "20611001"] = "AZD8797 + \nCX3CL1(2nM)"
 representative_azdfrak2nM <- azdfrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(300, 500) + ylim(0, 12)
 # 
 ## minofrak2nM
-minofrak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(46))
+minofrak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(43))
 minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "20703013"] = "minocycline + \nCX3CL1(2nM)"
 representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(260, 500)
 # 
@@ -331,7 +331,7 @@ mino_CeA_stat_LF <- stat_table_exp_membr_extended((mino_CeA_subset_LF))
 mino_CeA_stat_RS_tres <- as.data.frame(mino_CeA_stat_RS %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
 mino_CeA_stat_LF_tres <- as.data.frame(mino_CeA_stat_LF %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
 
-mino_CeA_stat_LF_rm <- as.data.frame(mino_CeA_stat_LF %>% dplyr::filter(Variable == 'Input_Resistance') %>% dplyr::select(Statistics))
+mino_CeA_stat_LF_rm <- as.data.frame(mino_CeA_stat_LF %>% dplyr::filter(Variable == 'Input_resistance') %>% dplyr::select(Statistics))
 mino_CeA_stat_LF_cap <- as.data.frame(mino_CeA_stat_LF %>% dplyr::filter(Variable == 'Capacitance') %>% dplyr::select(Statistics))
 
 

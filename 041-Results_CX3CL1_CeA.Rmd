@@ -445,15 +445,145 @@ figure1
 
 #### Effects of CX3CL1 on synaptic transmission in the CeL
 
-Noting the CX3CL1-induced reduction in glutamatergic neurons in the BLA, the main source of excitatory afferents to CeL (see \@ref(CeA)), excitatory synaptic transmission onto RS and LF neurons were examined before and after CX3CL1 application. 
+Noting observed earlier CX3CL1-induced reduction in glutamatergic neurons in the BLA, the main source of excitatory afferents to CeL (see \@ref(CeA)), excitatory synaptic transmission onto RS and LF neurons were examined before and after CX3CL1 application. 
 However, no substantial changes was observed.
-The detailed data is shown in the Appendix <!-- -->.
+The detailed data is shown in the Appendix \@ref(CX3CL1CeAsEPSC).
 
-Nevertheless, CX3CL1 was also modulating neurons within CeL, which is <!--98% -->
-In contrast, 
-Given that 98% of CeL neurons are GABAergic, 
-Neurons in both regions also make extensive local connections (McDonald, 1982; Sun and Cassell, 1993; Jolkkonen and Pitkänen, 1998), with local glutamate excitation of CeL neurons evoking IPSCs in neighboring neurons (Lopez de Armentia and Sah, 2004).
+```{r CX3CL1CeAsIPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
-Considering the observed reduction in RS cells' excitability, 
+CeA_sIPSC_final_subset<- CeA_sIPSC_final %>% dplyr::filter(!Experiment %in% c("CX3CL1(5nM)"))
+CeA_sIPSC_final_subset_RS <- CeA_sIPSC_final_subset %>% dplyr::filter(Type == 'RS')
+CeA_sIPSC_final_subset_LF <- CeA_sIPSC_final_subset %>% dplyr::filter(Type == 'LF')
+
+CeA_frak2nM_mIPSC$Experiment <- plyr::revalue(CeA_frak2nM_mIPSC$Experiment, c("CX3CL1(2nM)" = "TTX + \nCX3CL1(2nM)"))
+CeA_frak2nM_mIPSC$Filename <- as.character(CeA_frak2nM_mIPSC$Filename)
+CeA_sIPSC_final_subset_LF <- CeA_sIPSC_final_subset_LF %>% dplyr::bind_rows(CeA_frak2nM_mIPSC)
+CeA_sIPSC_final_subset_LF$Experiment <- factor(CeA_sIPSC_final_subset_LF$Experiment, levels = c("CX3CL1(2nM)",  "AZD8797 + \nCX3CL1(2nM)", "AZD8797", "minocycline + \nCX3CL1(2nM)", "minocycline",  'TTX + \nCX3CL1(2nM)'))
+CeA_sIPSC_final_subset_LF$Condition <- factor(CeA_sIPSC_final_subset_LF$Condition, levels = c("baseline", "CX3CL1", "AZD8797", "minocycline"))
+CeA_sIPSC_final_subset_LF$Cell <- rep(1:(nrow(CeA_sIPSC_final_subset_LF)/2), each = 2)
+CeA_sIPSC_final_subset_LF$Cell <- as.factor(CeA_sIPSC_final_subset_LF$Cell)
+
+# getting the table of statistics for all CeA df (LF + RS) condition of one experiment
+CeA_CX3CL1_sIPSC_stat_all <- stat_table_exp_syn_extended((CeA_sIPSC_final_subset))
+CeA_CX3CL1_sIPSC_stat_RS <- stat_table_exp_syn_extended((CeA_sIPSC_final_subset_RS))
+CeA_CX3CL1_sIPSC_stat_LF <- stat_table_exp_syn_extended((CeA_sIPSC_final_subset_LF))
+
+CeA_CX3CL1_sIPSC_stat_LF_freq <- as.data.frame(CeA_CX3CL1_sIPSC_stat_LF %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+CeA_CX3CL1_sIPSC_stat_LF_frak2nM_freq <- CeA_CX3CL1_sIPSC_stat_LF_freq$Statistics[1]
+CeA_CX3CL1_sIPSC_stat_LF_azdfrak_freq <- CeA_CX3CL1_sIPSC_stat_LF_freq$Statistics[2]
+CeA_CX3CL1_sIPSC_stat_LF_minofrak_freq <- CeA_CX3CL1_sIPSC_stat_LF_freq$Statistics[3]
+CeA_CX3CL1_mIPSC_stat_LF_frak2nM_freq <- CeA_CX3CL1_sIPSC_stat_LF_freq$Statistics[6]
+
+CeA_CX3CL1_sIPSC_stat_RS_freq <- as.data.frame(CeA_CX3CL1_sIPSC_stat_RS %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+CeA_CX3CL1_sIPSC_stat_RS_frak2nM_freq <- CeA_CX3CL1_sIPSC_stat_RS_freq$Statistics[1]
+CeA_CX3CL1_sIPSC_stat_RS_azdfrak_freq <- CeA_CX3CL1_sIPSC_stat_RS_freq$Statistics[2]
+CeA_CX3CL1_sIPSC_stat_RS_minofrak_freq <- CeA_CX3CL1_sIPSC_stat_RS_freq$Statistics[3]
+
+#CeA_CX3CL1_mIPSC_stat_LF_frak2nM_freq
+
+# CeA_CX3CL1_sIPSC_stat_all <- CeA_CX3CL1_sIPSC_stat_all %>% mutate(Type = "All CeL neurons") %>% dplyr::select(Type, everything())
+# CeA_CX3CL1_sIPSC_stat_RS <- CeA_CX3CL1_sIPSC_stat_RS %>% mutate(Type = "Regular-Spiking neurons") %>% dplyr::select(Type, everything())
+# CeA_CX3CL1_sIPSC_stat_LF <- CeA_CX3CL1_sIPSC_stat_LF %>% mutate(Type = "Late-Firing neurons") %>% dplyr::select(Type, everything())
+
+#CeA_CX3CL1_sEPSC_df <- CeA_CX3CL1_sEPSC_stat_all  %>% dplyr::bind_rows(CeA_CX3CL1_sEPSC_stat_RS) %>% dplyr::bind_rows(CeA_CX3CL1_sEPSC_stat_LF)
+
+```
+
+Nevertheless, GABAergic neurons, constituting 98% of CeL neurons (see Amygdala chapter \@ref(CeA)), were also less excitable after CX3CL1 treatment.
+This was especially true for Regular-Spiking neurons<!-- Fig-->.
+CX3CL1 application led to reduction in sIPSC frequency onto Late-Firing neurons (baseline: `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` CX3CL1(2nM): `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, n = `r CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_CX3CL1_sIPSC_stat_LF_frak2nM_freq`, \@ref(fig:CX3CL1CeAsIPSCfig)A1).
+This effect was abolished when CX3CR1 and microglial activity were blocked by AZD8797 and minocycline, respectively (`r CeA_CX3CL1_sIPSC_stat_LF_azdfrak_freq` and `r CeA_CX3CL1_sIPSC_stat_LF_minofrak_freq`).
+These observations suggest a functional involvement of CX3CR1 and minocycline in the modulation of CX3CL1-induced inhibition of GABAergic transmission onto Late-Firing cells.
+To examine whether this effect was mediated by action potentials, the experiment was performed again, in the presence of TTX.
+Although 60% of Late-Firing cells reacted with reduction in miniature inhibitory synaptic currents, the statistic did not reach level of significance (baseline: `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'TTX + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'TTX + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` TTX + CX3CL1(2nM): `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'TTX + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'TTX + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, n = `r CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'TTX + \nCX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'TTX + \nCX3CL1(2nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_CX3CL1_mIPSC_stat_LF_frak2nM_freq`
+All details about statistics, number of cells, animals, as well as descriptive analysis are summarized in Table <!-- --> in Appendix. 
+
+In contrast, no significant effect on inhibitory synaptic transmission onto CX3CL1-treated Regular-Spiking neurons was found, despite a trend toward increased frequency (baseline: `r round(CeA_sIPSC_final_subset_RS %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_RS %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` CX3CL1(2nM): `r round(CeA_sIPSC_final_subset_RS %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_RS %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, n = `r CeA_sIPSC_final_subset_RS %>% filter(Experiment == 'CX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_final_subset_RS %>% filter(Experiment == 'CX3CL1(2nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_CX3CL1_sIPSC_stat_RS_frak2nM_freq`, \@ref(fig:CX3CL1CeAsIPSCfig)A1).
+
+<!--Neurons in both regions also make extensive local connections (McDonald, 1982; Sun and Cassell, 1993; Jolkkonen and Pitkänen, 1998), with local glutamate excitation of CeL neurons evoking IPSCs in neighboring neurons (Lopez de Armentia and Sah, 2004).-->
+
+```{r CX3CL1CeAsIPSCfig, fig.cap='**CX3CL1 does not affect excitatory synaptic transmission in the CeL** Boxplots representing population data of sEPSCs frequency **(a)**, amplitude **(b)**, rise time **(c)**, and decay time **(d)** before and after CX3CL1 application, respectively.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 15, fig.width= 14}
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+
+# loading needed subsets 
+# inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
+# inset_frak2nM <- image_ggplot(inset_frak2nM)
+# inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
+# inset_frak5nM <- image_ggplot(inset_frak5nM)
+# inset_azdfrak5nM <- image_read("images//results//inset_azdfrak5nM.png") # AZD5nM zrobić
+# inset_azdfrak5nM <- image_ggplot(inset_azdfrak5nM)
+# inset_azda <- image_read("images//results//inset_azd.png")
+# inset_azda <- image_ggplot(inset_azda)
+# inset_minofrak5nM <- image_read("images//results//inset_minofrak5nM.png") # minocycline 5Nm ZROBIĆ
+# inset_minofrak5nM <- image_ggplot(inset_minofrak5nM)
+# inset_minoa <- image_read("images//results//inset_minoa.png")
+# inset_minoa <- image_ggplot(inset_minoa)
+# inset_ttx <- image_read("images//results//inset_ttx.png")
+# inset_ttx <- image_ggplot(inset_ttx)
+# inset_ttx_5nM <- image_read("images//results//inset_ttx_5nM.png")
+# inset_ttx_5nM <- image_ggplot(inset_ttx_5nM)
+
+# making boxplots with facets
+bp_CeA_s_freq_sIPSC_LF <- plot_boxplot(CeA_sIPSC_final_subset_LF, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "sIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_s_freq_sIPSC_LF  <- bp_CeA_s_freq_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 4, label.y = 4) 
+
+bp_CeA_s_freq_sIPSC_RS <- plot_boxplot(CeA_sIPSC_final_subset_RS, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "sIPSC Frequency") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_s_freq_sIPSC_RS  <- bp_CeA_s_freq_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+# making boxplots for amplitude
+bp_CeA_s_amp_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_final_subset_LF, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_amp_sIPSC_LF  <- bp_CeA_s_amp_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
+
+bp_CeA_s_amp_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_final_subset_RS, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Amplitude") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_amp_sIPSC_RS  <- bp_CeA_s_amp_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
+
+# rise time
+bp_CeA_s_rt_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_final_subset_LF, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "sIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_rt_sIPSC_LF  <- bp_CeA_s_rt_sIPSC_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+
+bp_CeA_s_rt_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_final_subset_RS, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "sIPSC Rise Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_rt_sIPSC_RS  <- bp_CeA_s_rt_sIPSC_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+
+# decay time
+
+bp_CeA_s_dt_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_final_subset_LF, median_DecayTau, ylabel = "sIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_dt_sIPSC_LF  <- bp_CeA_s_dt_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+
+bp_CeA_s_dt_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_final_subset_RS, median_DecayTau, ylabel = "sIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "sIPSC Decay Time") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_dt_sIPSC_RS  <- bp_CeA_s_dt_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+
+
+#using patchwork to do layout of the figure
+A <- (bp_CeA_s_freq_sIPSC_LF | bp_CeA_s_freq_sIPSC_RS) + plot_layout(tag_level = "new")
+B <-  (bp_CeA_s_amp_sIPSC_LF | bp_CeA_s_amp_sIPSC_RS) + plot_layout(tag_level = "new")
+C <-  (bp_CeA_s_rt_sIPSC_LF | bp_CeA_s_rt_sIPSC_RS) + plot_layout(tag_level = "new")
+D <-  (bp_CeA_s_dt_sIPSC_LF | bp_CeA_s_dt_sIPSC_RS) + plot_layout(tag_level = "new")
+   
+lay <- "
+AA
+BB
+CC
+DD
+"
+
+figure1 <- wrap_plots(A = A, B = B, C = C, D = D, design = lay)
+
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
+
+
+figure1
+
+# figure1 <-  (bp_CeA_s_freq_sIPSC_LF | bp_CeA_s_freq_sIPSC_RS) / 
+#             (bp_CeA_s_amp_sIPSC_LF | bp_CeA_s_amp_sIPSC_RS) /
+#             (bp_CeA_s_rt_sIPSC_LF | bp_CeA_s_rt_sIPSC_RS) /
+#             (bp_CeA_s_dt_sIPSC_LF | bp_CeA_s_dt_sIPSC_RS)
+ #   / 
+  # 
+  # ((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC) + plot_layout(guides = "collect") & theme(legend.position = "bottom")  + plot_layout(tag_level = 'new')) / 
+
+```
 
 <!-- two major classes of CeL neurons with distinct firing patterns,-->

@@ -119,17 +119,6 @@ CX3CL1_CeA_stat_minofrak_LF_Vm <- CX3CL1_CeA_stat_LF_all_Vm$Statistics[4]
 CX3CL1_CeA_stat_mino_LF_Vm <- CX3CL1_CeA_stat_LF_all_Vm$Statistics[5]
 ```
 
-```{r CX3CL1CeAintrinsictable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
-
-C1 <- CX3CL1_CeA_stat_all %>% mutate(Population = "CeL neurons") %>% dplyr::select(Population)
-C2 <- CX3CL1_CeA_stat_RS %>% mutate(Population = "Regular-Spiking")
-C3 <- CX3CL1_CeA_stat_LF %>% mutate(Population = "Late-Firing")
-
-
-
-CeA_df_sum <- CeA_df_table %>% group_by(Experiment) %>% dplyr::summarise(RMS)
-
-```
 
 The next step was to investigate whether reduced excitability of CX3CL1 in the BLA<!--,together with ....,--> would affect the membrane properties of their main target, i.e., GABAergic cells in the CeL.
 <!-- razem z tym, że on sam też może mieć udział... --> 
@@ -140,10 +129,10 @@ Specifically, similar to what was observed in the BLA, bath application of CX3CL
 This effect was accompanied by decreased input resistance (`r CX3CL1_CeA_stat_frak2nM_Rm`) and membrane time constant (`r CX3CL1_CeA_stat_frak2nM_tau`; Fig. \@ref(fig:CX3CL1CeAintrinsic)<!--jaki?-->).
 Moreover, resting membrane potentials of CeL neurons become more depolarized in response to bath-applied 2nM CX3CL1 (from `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(RMS)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(RMS), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(RMS)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(RMS), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, `r CX3CL1_CeA_stat_frak2nM_Vm`) (Fig. \@ref(fig:CX3CL1CeAintrinsic)<!--jaki?-->).<!-- In response to bath-applied agonists, the depolarization is strong enough that it is capable of producing prolonged spiking ( Beierlein et al., 2000; Fanselow et al., 2008; Kawaguchi, 1997; Xu et al., 2013 ).-->
 
-Given that CeL neurons demonstrate mainly two types of electrophysiological firing patterns, specifically Regular-Spiking and Late-Firing neurons (see Introduction, CeA subchapter \@ref(CeA) and Fig. \@ref(fig:methodsBLACeAIVrep)b),<!-- which was also confirmed by cluster analysis from recorded CeL cells as a part of this dissertation,comprises neurons of two main electrophysiological types // La  ter studies further characterized at least four main physiological types of neurons in the CeA, distinguished based on their responses to intracellular current injections.-->, previously measured intrinsic parameters were further analyzed<!--divided?--> by these neuronal subtypes.<!-- odnośnik do góry i lepiej napisać// segregated those neurons according to their types.-->
-Intriguingly, majority of RS neurons were revealed to respond to CX3CL1, which was reflected as robust changes in intrinsic properties (Fig. \@ref(fig:CX3CL1CeAintrinsic) middle panel).
+Given that CeL neurons demonstrate mainly two types of electrophysiological firing patterns, specifically Regular-Spiking and Late-Firing neurons (see Introduction, CeA subchapter \@ref(CeA) and Fig. \@ref(fig:methodsBLACeAIVrep)b),<!-- which was also confirmed by cluster analysis from recorded CeL cells as a part of this dissertation,comprises neurons of two main electrophysiological types // La  ter studies further characterized at least four main physiological types of neurons in the CeA, distinguished based on their responses to intracellular current injections.--> previously measured intrinsic parameters were further analyzed<!--divided?--> by these neuronal subtypes.<!-- odnośnik do góry i lepiej napisać// segregated those neurons according to their types.-->
+Intriguingly, majority of RS neurons were revealed to respond to CX3CL1, which was reflected as robust changes in intrinsic properties (Fig. \@ref(fig:CX3CL1CeAintrinsic), middle panel).
 In contrast, CX3CL1 seems not to affect LF cells' intrinsic membrane properties (see Fig. \@ref(fig:CX3CL1CeAintrinsic), right panel), implying that much higher proportion of RS cells was reactive to CX3CL1.
-AZD8797 alone did not significantly changed any of those parameters (see Appendix \@ref(CX3CL1CeAmembrappendix) \@ref(fig:AZDCeAmembrappendix)).
+AZD8797 alone did not significantly changed any of those parameters (see Fig. \@ref(fig:AZDCeAmembrappendix) in Appendix \@ref(CX3CL1CeAmembrappendix) ).
 All parameters and statistics are summarized in Table <!--?-->.
 
 ```{r CX3CL1CeAintrinsic, fig.cap='**Effects of CX3CL1 on intrinsic properties of CeL neurons** **(a)** Schematics of presented conditions **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the ... conditions of electrophysiological recordings. Scale bar: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE, warning= FALSE, fig.width= 12, fig.height= 18}
@@ -327,12 +316,35 @@ fig2
 
 ```
 
-Notably, similar to 
+```{r minoCeAexcitabilitystats, include = FALSE}
+# subseting minocycline experiments
 
-Interestingly, AZD8797 alone also modulated the excitability of CeL neurons.
-However, this change is reflected as decreased threshold current (from ... to ..., \@ref(fig:)).
+mino_CeA_subset <- CeA_df_final %>% filter(Experiment == 'minocycline')
+mino_CeA_subset_RS <- mino_CeA_subset %>% filter(Type == 'RS')
+mino_CeA_subset_LF <- mino_CeA_subset %>% filter(Type == 'LF')
+# getting the table of statistics for all CeA df (LF + RS) condition of one experiment
+mino_CeA_stat_all <- stat_table_exp_membr_extended((mino_CeA_subset))
+mino_CeA_stat_RS <- stat_table_exp_membr_extended((mino_CeA_subset_RS))
+mino_CeA_stat_LF <- stat_table_exp_membr_extended((mino_CeA_subset_LF))
 
-```{r CX3CL1CeAintrinsicmino, fig.cap='**Effects of minocycline on threshold current in Regular Spiking Neurons in CeL.** **(a)** Schematics of presented conditions **(b)** Boxplots presenting threshold currents of each cell before and after CX3CL1 application **(c)** plots presenting input-output relationships of representative cell **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the AZD application (red). Scale bar: 10mV, 100ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 10, fig.height= 8}
+# selecting a stat_row so it prints nicely in text
+mino_CeA_stat_RS_tres <- as.data.frame(mino_CeA_stat_RS %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+mino_CeA_stat_LF_tres <- as.data.frame(mino_CeA_stat_LF %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+
+mino_CeA_stat_LF_rm <- as.data.frame(mino_CeA_stat_LF %>% dplyr::filter(Variable == 'Input_Resistance') %>% dplyr::select(Statistics))
+mino_CeA_stat_LF_cap <- as.data.frame(mino_CeA_stat_LF %>% dplyr::filter(Variable == 'Capacitance') %>% dplyr::select(Statistics))
+
+
+```
+
+Notably, similar to what was observed in the BLA, minocycline alone also affected the excitability of CeL neurons, especially the Late-Firing subtype (\@ref(fig:CX3CL1CeAintrinsicmino)).
+Specifically, treatment with 100 `r knitr::asis_output("\U03BC")`M minocycline lowered the threshold needed for inducing action potentials in both types of neurons (from `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, `r mino_CeA_stat_LF_tres` in Late Firing neurons 
+and from `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'RS' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'RS' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'RS' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'RS' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` `r mino_CeA_stat_RS_tres` in Regular Spiking neurons, \@ref(fig:CX3CL1CeAintrinsicmino)a).
+However, minocycline-induced increased input resistance and cell capacitance was observed only in Late-Firing neurons (from  `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Rm_20)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Rm_20), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(Rm_20)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(Rm_20), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, `r mino_CeA_stat_LF_rm` and 
+from `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "baseline") %>% ungroup() %>% summarize(mean(C_20)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(C_20), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(C_20)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(C_20), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, `r mino_CeA_stat_LF_cap`, respectively; \@ref(fig:CX3CL1CeAintrinsicmino) b and c).
+All measured parameters in relation to each cell type are summarized in Table <!-- --> in Appendix \@ref(CX3CL1CeAmembrappendix).
+
+```{r CX3CL1CeAintrinsicmino, fig.cap='**Effects of minocycline on intrinsic neuronal properties in CeL neurons based on their type.** **(a-c)** Boxplots presenting threshold currents, input resistance, and cell capacitance of each neuron before and after minocycline application in relation to neuronal type. **(e)** plots presenting input-output relationships of grouped neurons **(f)** voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the minocycline application (red). Scale bar: 10mV, 100ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 10, fig.height= 8}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -350,7 +362,7 @@ inset_minoa <- image_ggplot(inset_minoa)
 CeA_df_mino_sub <- CeA_df_final %>% dplyr::filter(Experiment %in% c("minocycline"))
 CeA_df_mino_sub <- CeA_df_mino_sub %>% dplyr::filter(!Type %in% c("OTHER"))
 CeA_df_mino_sub <- droplevels(CeA_df_mino_sub)
-CeA_df_mino_sub$Type <- plyr::revalue(CeA_df_mino_sub$Type, c("LF"="Late Firing", "RS" = "Regular Spiking"))
+CeA_df_mino_sub$Type <- plyr::revalue(CeA_df_mino_sub$Type, c("LF"="Late \nFiring", "RS" = "Regular \nSpiking"))
 CeA_df_mino_sub_RS <- CeA_df_final_RS %>% dplyr::filter(Experiment %in% c("minocycline"))
 CeA_df_mino_sub_LF <- CeA_df_final_LF %>% dplyr::filter(Experiment %in% c("minocycline"))
 
@@ -393,18 +405,16 @@ bp_CeA_cap <- bp_CeA_cap + facet_wrap(~ Type, nrow = 1, scales = "free_x") + the
 # making final figure with patchwork
 
 figure1 <- bp_CeA_thres /
-           bp_CeA_gain /
            bp_CeA_rm /
-           bp_CeA_tau /
            bp_CeA_cap
 
 lay <- "
 AB
 C#
 "
-A <- (bp_CeA_thres | bp_CeA_gain) 
-B <- (bp_CeA_rm | bp_CeA_tau) 
-C <- (bp_CeA_cap | plot_spacer()) 
+# A <- (bp_CeA_thres | bp_CeA_gain) 
+# B <- (bp_CeA_rm | bp_CeA_tau) 
+# C <- (bp_CeA_cap | plot_spacer()) 
 # D <- (bp_CeA_RS_tau | bp_CeA_LF_tau) + plot_layout(tag_level = 'new')
 # E <- (bp_CeA_RS_adap | bp_CeA_LF_adap) + plot_layout(tag_level = 'new')
 # F <- (bp_CeA_RS_cap | bp_CeA_LF_cap) + plot_layout(tag_level = 'new')
@@ -413,9 +423,10 @@ C <- (bp_CeA_cap | plot_spacer())
 # I <- (bp_CeA_RS_vm | bp_CeA_LF_vm) + plot_layout(tag_level = 'new')
 # J <- (bp_CeA_RS_fast | bp_CeA_LF_fast) + plot_layout(tag_level = 'new')
 
-figure1 <- wrap_plots(A = A, B = B, C = C, design = lay)
+#figure1 <- wrap_plots(A = A, B = B, C = C, design = lay)
 
-figure1 <- figure1 + plot_annotation(tag_levels = c('a'))
+figure1 <- (bp_CeA_thres | bp_CeA_rm | bp_CeA_cap) /
+           (plot_spacer() | plot_spacer() | plot_spacer())
 
 # figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_minofrak2nM | inset_gaba)  + plot_layout(tag_level = 'new')) /
 #  (bp_BLA_thres + theme(legend.position = "none"))  /

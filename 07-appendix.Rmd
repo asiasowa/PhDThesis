@@ -551,16 +551,48 @@ figure1
 
 ```
 
-### The differences between Regular-Spiking and Late-Firing neurons in reaction to CX3CL1, AZD8797, and minocycline 
+### Effects of CX3CL1, AZD8797, and minocycline in the CeL, focusing on two main cell types {#CX3CL1CeAmembrappendix}
 
-```{r CX3CL1CeAintrinsicAZD, fig.cap='**Effects of AZD on threshold current in Regular Spiking Neurons in CeL.** **(a)** Schematics of presented conditions **(b)** Boxplots presenting threshold currents of each cell before and after CX3CL1 application **(c)** plots presenting input-output relationships of representative cell **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the AZD application (red). Scale bar: 10mV, 100ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 10, fig.height= 12}
+All membrane effects of CX3CL1, AZD8797 or minocycline application are summarized in Table <!-- -->.
 
-#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
-#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+```{r CX3CL1CeAintrinsictable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+
+C1 <- CX3CL1_CeA_stat_all %>% mutate(Population = "CeL neurons") %>% dplyr::select(Population, everything())
+C2 <- CX3CL1_CeA_stat_RS %>% mutate(Population = "Regular-Spiking") %>% dplyr::select(Population, everything())
+C3 <- CX3CL1_CeA_stat_LF %>% mutate(Population = "Late-Firing") %>% dplyr::select(Population, everything())
 
 
-inset_azda <- image_read("images//results//inset_azd.png")
-inset_azda <- image_ggplot(inset_azda)
+
+CeA_df_table <- C1 %>% dplyr::bind_rows(C2) %>% dplyr::bind_rows(C3)
+
+table_CeA_membr <- CeA_df_table %>% 
+gt(groupname_col = "Population") %>%
+   fmt_markdown(columns = c("Experiment")) %>%
+    tab_options(
+      table.font.names = "Calibri",
+      table.font.size = 12
+  ) %>% #table.font.size = 11
+#  tab_options(
+ #   table.width = pct(100)) %>%
+      tab_style(
+    style = list(
+      cell_text(weight = "bold")
+      ),
+    locations = cells_row_groups()
+  ) %>%
+    opt_row_striping() %>%
+      tab_header(
+    title = ("Table 7.4. Summary of all measured membrane parameters in CeL following CX3CL1, minocycline, and AZD8797 treatment"),
+     subtitle = md("")) %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("")) %>%
+   gtsave("CX3CL1_CeA_membr_table.html")
+
+knitr::include_graphics("CX3CL1_CeA_membr_table.html")
+
+```
+
+```{r CX3CL1CeAmembrappendix, fig.cap='**Effects of CX3CL1 on remaining instrinsic neuronal parameters in Regular Spiking and Late Firing Neurons in CeL.**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 10, fig.height= 12}
 
 # making labels (as minocycline and azd has different condition than CX3CL1) for then making proper automatic statistics
 # f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
@@ -575,13 +607,141 @@ CeA_df_azd_sub <- CeA_df_final %>% dplyr::filter(Experiment %in% c("AZD8797"))
 CeA_df_azd_sub_RS <- CeA_df_final_RS %>% dplyr::filter(Experiment %in% c("AZD8797"))
 CeA_df_azd_sub_LF <- CeA_df_final_LF %>% dplyr::filter(Experiment %in% c("AZD8797"))
 
-
+CeA_df_frak2nM_sub <- CeA_df_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)"))
+CeA_df_frak2nM_sub_RS <- CeA_df_final_RS %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)"))
+CeA_df_frak2nM_sub_LF <- CeA_df_final_LF %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)"))
 
 # GAIN
-bp_CeA_RS_thres <- plot_boxplot(CeA_df_azd_sub_RS, Treshold1_all, mtitle= "Regular-Spiking", ylabel = "Treshold_all1", dot_size = 2)
+bp_CeA_RS_thres <- plot_boxplot(CeA_df_frak2nM_sub_RS, Treshold1_all, mtitle= "Regular-Spiking", ylabel = "Treshold_all1", dot_size = 2)
 # bp_CeA_RS_thres <- bp_CeA_RS_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
-bp_CeA_LF_thres <- plot_boxplot(CeA_df_azd_sub_LF, Treshold1_all, mtitle= "Late-Firing", ylabel = "Treshold_all1",  dot_size = 2)
+bp_CeA_LF_thres <- plot_boxplot(CeA_df_frak2nM_sub_LF, Treshold1_all, mtitle= "Late-Firing", ylabel = "Treshold_all1",  dot_size = 2)
+# bp_CeA_LF_thres <- bp_CeA_LF_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# ADAPTATION
+bp_CeA_RS_adap <- plot_boxplot(CeA_df_frak2nM_sub_RS, Adaptation_ratio, ylabel = "Adaptation ratio", mtitle = "Regular-Spiking", vary1 = 0, vary2 = 1.5, dot_size = 2)
+# bp_CeA_RS_adap <- bp_CeA_RS_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_LF_adap <- plot_boxplot(CeA_df_frak2nM_sub_LF, Adaptation_ratio, ylabel = "Adaptation ratio", mtitle = "Late-Firing", vary1 = 0, vary2 = 1.5, dot_size = 2)
+# bp_CeA_LF_adap <- bp_CeA_LF_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# INPUT RESISTANCE
+# bp_CeA_RS_rm <- plot_boxplot(CeA_df_frak2nM_sub_RS, Rm_20, ylabel = "Input resistance (MOhm)", mtitle = "Input resistance", vary1 = 0, vary2 = 250, dot_size = 2)
+# bp_CeA_RS_rm <- bp_CeA_RS_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') 
+# 
+# bp_CeA_LF_rm <- plot_boxplot(CeA_df_frak2nM_sub_LF, Rm_20, ylabel = "Input resistance (MOhm)", mtitle = "Input resistance", vary1 = 0, vary2 = 250, dot_size = 2)
+# bp_CeA_LF_rm <- bp_CeA_LF_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') 
+
+# TAU
+# bp_CeA_RS_tau <- plot_boxplot(CeA_df_frak2nM_sub_RS, tau_20, ylabel = "tau (ms)", mtitle = "tau", vary1 = 0, vary2 = 40, dot_size = 2)
+# bp_CeA_RS_tau <- bp_CeA_RS_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+# 
+# bp_CeA_LF_tau <- plot_boxplot(CeA_df_frak2nM_sub_LF, tau_20, ylabel = "tau (ms)", mtitle = "tau", vary1 = 0, vary2 = 40, dot_size = 2)
+# bp_CeA_LF_tau <- bp_CeA_LF_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+
+# CAPACITANCE
+bp_CeA_RS_cap <- plot_boxplot(CeA_df_frak2nM_sub_RS, C_20, ylabel = "Capacitance (pF)", mtitle = "Regular-Spiking", dot_size = 2)
+# bp_CeA_RS_cap <- bp_CeA_RS_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_LF_cap <- plot_boxplot(CeA_df_frak2nM_sub_LF, C_20, ylabel = "Capacitance (pF)", mtitle = "Late-Firing", dot_size = 2)
+# bp_CeA_LF_cap <- bp_CeA_LF_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# SAG
+# bp_BLA_sag <- plot_boxplot(BLA_df_sag, sag_ratio_140, ylabel = "sag ratio @-140 pA", mtitle = "sag ratio", dot_size = 2)
+# bp_BLA_sag <- bp_BLA_sag + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+
+# RESTING MEMBRANE POTENTIAL
+# bp_CeA_RS_vm <- plot_boxplot(CeA_df_frak2nM_sub_RS, RMS, ylabel = "Resting membrane potential (mV)", mtitle = "Resting membrane potential", vary1 = -90, vary2 = -45, dot_size = 2)
+# bp_CeA_RS_vm <- bp_CeA_RS_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# bp_CeA_LF_vm <- plot_boxplot(CeA_df_frak2nM_sub_LF, RMS, ylabel = "Resting membrane potential (mV)", mtitle = "Resting membrane potential", vary1 = -90, vary2 = -45, dot_size = 2)
+# bp_CeA_LF_vm <- bp_CeA_LF_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) 
+
+# ACTION POTENTIAL WIDTH
+bp_CeA_RS_apw <- plot_boxplot(CeA_df_frak2nM_sub_RS, AP_width1_all, ylabel = "Action potential width (ms)", mtitle = "Regular-Spiking", dot_size = 2)
+# bp_CeA_RS_apw  <- bp_CeA_RS_apw  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_CeA_LF_apw <- plot_boxplot(CeA_df_frak2nM_sub_LF, AP_width1_all, ylabel = "Action potential width (ms)", mtitle = "Late-Firing", dot_size = 2)
+# bp_CeA_LF_apw  <- bp_CeA_LF_apw  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+# ACTION POTENTIAL AMPLITUDE
+bp_CeA_RS_apa <- plot_boxplot(CeA_df_frak2nM_sub_RS, AP_amp1_all, ylabel = "Action potential amplitude (pA)", mtitle = "Regular-Spiking", dot_size = 2)
+# bp_CeA_RS_apa <- bp_CeA_RS_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_CeA_LF_apa <- plot_boxplot(CeA_df_frak2nM_sub_LF, AP_amp1_all, ylabel = "Action potential amplitude (pA)", mtitle = "Late-Firing", dot_size = 2)
+# bp_CeA_LF_apa <- bp_CeA_LF_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) 
+
+# FAST AHP
+bp_CeA_RS_fast <- plot_boxplot(CeA_df_frak2nM_sub_RS, AHPf1_all, ylabel = "fast AHP (pA)", mtitle = "Regular-Spiking", dot_size = 2)
+# bp_CeA_RS_fast <- bp_CeA_RS_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_CeA_LF_fast <- plot_boxplot(CeA_df_frak2nM_sub_LF, AHPf1_all, ylabel = "fast AHP (pA)", mtitle = "Late-Firing",  dot_size = 2)
+# bp_CeA_LF_fast <- bp_CeA_LF_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+# making final figure with patchwork
+lay <- "
+AB
+CD
+EF
+"
+
+A <- (bp_CeA_RS_thres | bp_CeA_LF_thres) + plot_layout(tag_level = 'new')
+B <- (bp_CeA_RS_adap | bp_CeA_LF_adap) + plot_layout(tag_level = 'new')
+C <- (bp_CeA_RS_cap | bp_CeA_LF_cap) + plot_layout(tag_level = 'new')
+D <- (bp_CeA_RS_apw | bp_CeA_LF_apw) + plot_layout(tag_level = 'new')
+E <- (bp_CeA_RS_apa | bp_CeA_LF_apa) + plot_layout(tag_level = 'new')
+F <- (bp_CeA_RS_fast | bp_CeA_LF_fast) + plot_layout(tag_level = 'new')
+
+figure1 <- wrap_plots(A = A, B = B, C = C, D = D, E = E, F = F, design = lay)
+
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
+
+
+figure1
+
+
+```
+
+```{r AZDCeAmembrappendix, fig.cap='**Lack of any effect of AZD8797 on membrane properties in Regular Spiking and Late Firing Neurons in CeL.**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 10, fig.height= 12}
+
+# making labels (as minocycline and azd has different condition than CX3CL1) for then making proper automatic statistics
+# f_labels_BLA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' )), label = c("", "", "", "", "", "", "*", ""))
+# f_labels_BLA_thres$Experiment <- factor(f_labels_BLA_thres$Experiment, levels = c("CX3CL1(2nM)" , "CX3CL1(5nM)", 'anti-CX3CR1 + \nCX3CL1(2nM)', "AZD8797 + \nCX3CL1(2nM)", "AZD8797", 'minocycline + \nCX3CL1(2nM)' , "minocycline" , 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)'))
+
+## subsetting only CX3CL1 conditions
+CeA_df_add_sub <- CeA_df_final %>% dplyr::filter(Experiment %in% c("AZD8797", "minocycline"))
+CeA_df_add_sub_RS <- CeA_df_final_RS %>% dplyr::filter(Experiment %in% c("AZD8797", "minocycline"))
+CeA_df_add_sub_LF <- CeA_df_final_LF %>% dplyr::filter(Experiment %in% c("AZD8797", "minocycline"))
+
+CeA_df_azd_sub <- CeA_df_final %>% dplyr::filter(Experiment %in% c("AZD8797"))
+CeA_df_azd_sub_RS <- CeA_df_final_RS %>% dplyr::filter(Experiment %in% c("AZD8797"))
+CeA_df_azd_sub_LF <- CeA_df_final_LF %>% dplyr::filter(Experiment %in% c("AZD8797"))
+
+# gain 
+bp_CeA_RS_gain <- plot_boxplot(CeA_df_azd_sub_RS, gain, mtitle= "Regular-Spiking", ylabel = "gain", dot_size = 2)
+bp_CeA_LF_gain <- plot_boxplot(CeA_df_azd_sub_LF, gain, mtitle= "Late-Firing", ylabel = "gain",  dot_size = 2)
+
+# Threshold
+bp_CeA_RS_thres <- plot_boxplot(CeA_df_azd_sub_RS, Treshold1_all, mtitle= "Regular-Spiking", ylabel = "Threshold (mV)", dot_size = 2)
+# bp_CeA_RS_thres <- bp_CeA_RS_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_LF_thres <- plot_boxplot(CeA_df_azd_sub_LF, Treshold1_all, mtitle= "Late-Firing", ylabel = "Threshold (mV)",  dot_size = 2)
 # bp_CeA_LF_thres <- bp_CeA_LF_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 # ADAPTATION
@@ -594,20 +754,20 @@ bp_CeA_LF_adap <- plot_boxplot(CeA_df_azd_sub_LF, Adaptation_ratio, ylabel = "Ad
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 # INPUT RESISTANCE
-# bp_CeA_RS_rm <- plot_boxplot(CeA_df_azd_sub_RS, Rm_20, ylabel = "Input resistance (MOhm)", mtitle = "Input resistance", vary1 = 0, vary2 = 250, dot_size = 2)
-# bp_CeA_RS_rm <- bp_CeA_RS_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
-#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') 
-# 
-# bp_CeA_LF_rm <- plot_boxplot(CeA_df_azd_sub_LF, Rm_20, ylabel = "Input resistance (MOhm)", mtitle = "Input resistance", vary1 = 0, vary2 = 250, dot_size = 2)
-# bp_CeA_LF_rm <- bp_CeA_LF_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
-#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center') 
+bp_CeA_RS_rm <- plot_boxplot(CeA_df_azd_sub_RS, Rm_20, ylabel = "Input resistance (MOhm)", mtitle = "Regular Spiking", dot_size = 2)
+# bp_CeA_RS_rm <- bp_CeA_RS_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center')
+
+bp_CeA_LF_rm <- plot_boxplot(CeA_df_azd_sub_LF, Rm_20, ylabel = "Input resistance (MOhm)", mtitle = "Late Firing", dot_size = 2) # , vary1 = 0, vary2 = 250,
+# bp_CeA_LF_rm <- bp_CeA_LF_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+#   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center')
 
 # TAU
-# bp_CeA_RS_tau <- plot_boxplot(CeA_df_azd_sub_RS, tau_20, ylabel = "tau (ms)", mtitle = "tau", vary1 = 0, vary2 = 40, dot_size = 2)
+bp_CeA_RS_tau <- plot_boxplot(CeA_df_azd_sub_RS, tau_20, ylabel = "tau (ms)", mtitle = "Regular Spiking", dot_size = 2)
 # bp_CeA_RS_tau <- bp_CeA_RS_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 # 
-# bp_CeA_LF_tau <- plot_boxplot(CeA_df_azd_sub_LF, tau_20, ylabel = "tau (ms)", mtitle = "tau", vary1 = 0, vary2 = 40, dot_size = 2)
+bp_CeA_LF_tau <- plot_boxplot(CeA_df_azd_sub_LF, tau_20, ylabel = "tau (ms)", mtitle = "Late Firing", dot_size = 2)
 # bp_CeA_LF_tau <- bp_CeA_LF_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
@@ -628,11 +788,11 @@ bp_CeA_LF_cap <- plot_boxplot(CeA_df_azd_sub_LF, C_20, ylabel = "Capacitance (pF
 
 
 # RESTING MEMBRANE POTENTIAL
-# bp_CeA_RS_vm <- plot_boxplot(CeA_df_azd_sub_RS, RMS, ylabel = "Resting membrane potential (mV)", mtitle = "Resting membrane potential", vary1 = -90, vary2 = -45, dot_size = 2)
+bp_CeA_RS_vm <- plot_boxplot(CeA_df_azd_sub_RS, RMS, ylabel = "Resting membrane potential (mV)", mtitle = "Regular Spiking", dot_size = 2)
 # bp_CeA_RS_vm <- bp_CeA_RS_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
-# bp_CeA_LF_vm <- plot_boxplot(CeA_df_azd_sub_LF, RMS, ylabel = "Resting membrane potential (mV)", mtitle = "Resting membrane potential", vary1 = -90, vary2 = -45, dot_size = 2)
+bp_CeA_LF_vm <- plot_boxplot(CeA_df_azd_sub_LF, RMS, ylabel = "Resting membrane potential (mV)", mtitle = "Late Firing", dot_size = 2)
 # bp_CeA_LF_vm <- bp_CeA_LF_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
 #   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) 
 
@@ -665,16 +825,21 @@ lay <- "
 AB
 CD
 EF
+GH
+IJ
 "
+A <- (bp_CeA_RS_gain | bp_CeA_LF_gain) + plot_layout(tag_level = 'new')
+B <- (bp_CeA_RS_thres | bp_CeA_LF_thres) + plot_layout(tag_level = 'new')
+C <- (bp_CeA_RS_rm | bp_CeA_LF_rm) + plot_layout(tag_level = 'new')
+D <- (bp_CeA_RS_tau | bp_CeA_LF_tau) + plot_layout(tag_level = 'new')
+E <- (bp_CeA_RS_adap | bp_CeA_LF_adap) + plot_layout(tag_level = 'new')
+F <- (bp_CeA_RS_cap | bp_CeA_LF_cap) + plot_layout(tag_level = 'new')
+G <- (bp_CeA_RS_apw | bp_CeA_LF_apw) + plot_layout(tag_level = 'new')
+H <- (bp_CeA_RS_apa | bp_CeA_LF_apa) + plot_layout(tag_level = 'new')
+I <- (bp_CeA_RS_vm | bp_CeA_LF_vm) + plot_layout(tag_level = 'new')
+J <- (bp_CeA_RS_fast | bp_CeA_LF_fast) + plot_layout(tag_level = 'new')
 
-A <- (bp_CeA_RS_thres | bp_CeA_LF_thres) + plot_layout(tag_level = 'new')
-B <- (bp_CeA_RS_adap | bp_CeA_LF_adap) + plot_layout(tag_level = 'new')
-C <- (bp_CeA_RS_cap | bp_CeA_LF_cap) + plot_layout(tag_level = 'new')
-D <- (bp_CeA_RS_apw | bp_CeA_LF_apw) + plot_layout(tag_level = 'new')
-E <- (bp_CeA_RS_apa | bp_CeA_LF_apa) + plot_layout(tag_level = 'new')
-F <- (bp_CeA_RS_fast | bp_CeA_LF_fast) + plot_layout(tag_level = 'new')
-
-figure1 <- wrap_plots(A = A, B = B, C = C, D = D, E = E, F = F, design = lay)
+figure1 <- wrap_plots(A = A, B = B, C = C, D = D, E = E, F = F, G=G, H = H, I = I, J = J, design = lay)
 
 figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
 

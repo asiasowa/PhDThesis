@@ -1,5 +1,5 @@
 
-## CXCL12
+## CXCL12 in the amygdala
 
 Considering that virtually all types of brain cells express either CXCL12 and/or one of its receptors, this chemokine serves a wide array of functions in both the developing and mature brain.
 Indeed, several lines of evidence illustrate that CXCL12 is involved in neurodevelopment,

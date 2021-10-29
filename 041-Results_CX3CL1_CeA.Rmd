@@ -445,6 +445,13 @@ figure1
 
 #### Effects of CX3CL1 on synaptic transmission in the CeL
 
+Noting the CX3CL1-induced reduction in glutamatergic neurons in the BLA, the main source of excitatory afferents to CeL (see \@ref(CeA)), excitatory synaptic transmission onto RS and LF neurons were examined before and after CX3CL1 application. 
+However, no substantial changes was observed.
+The detailed data is shown in the Appendix <!-- -->.
+
+Nevertheless, CX3CL1 was also modulating neurons within CeL, which is <!--98% -->
+In contrast, 
+Given that 98% of CeL neurons are GABAergic, 
 Neurons in both regions also make extensive local connections (McDonald, 1982; Sun and Cassell, 1993; Jolkkonen and Pitkänen, 1998), with local glutamate excitation of CeL neurons evoking IPSCs in neighboring neurons (Lopez de Armentia and Sah, 2004).
 
 Considering the observed reduction in RS cells' excitability, 

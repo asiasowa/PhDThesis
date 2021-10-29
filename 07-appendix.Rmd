@@ -2,7 +2,9 @@
 
 ## Suplementary data {#suppdata}
 
-### CX3CL1 does not affect passive membrane properties of principal cells in the BLA {#CX3CL1membraneappendix}
+### CX3CL1's actions
+
+#### CX3CL1 does not affect passive membrane properties of principal cells in the BLA {#CX3CL1membraneappendix}
 
 In Figures (\@ref(fig:CX3CL1BLAexcitabilityfigall1) and \@ref(fig:CX3CL1BLAexcitabilityfigall2)) and Table \@ref(tab:CX3CL1BLAexcitabilityappendixtable) <!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> below are depicted and listed all the passive membrane properties measured in the principal cells in the BLA following CX3CL1 treatment. 
 
@@ -250,7 +252,7 @@ figure1
 figure2
 ```
 
-### CX3CL1 does not modulate excitatory synaptic transmission in the BLA {#CX3CL1sEPSCappendix}
+#### CX3CL1 does not modulate excitatory synaptic transmission in the BLA {#CX3CL1sEPSCappendix}
 
 Figure (\@ref(fig:CX3CL1BLAsEPSCfigall)) and Table 7.2<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> reports on sEPSC parameters measured in principal cells in the BLA before and after CX3CL1, AZD8797, and minocycline treatment. 
 
@@ -402,7 +404,7 @@ figure1
 
 ```
 
-### CX3CL1 does not affect kinetics in inhibitory synaptic transmission in the BLA {#CX3CL1sIPSCappendix}
+#### CX3CL1 does not affect kinetics in inhibitory synaptic transmission in the BLA {#CX3CL1sIPSCappendix}
 
 Effects of CX3CL1 on inhibitory synaptic transmission in summarized in Table <!--?-->.
 In addition, Fig. \@ref(fig:CX3CL1BLAsIPSCappendixfig) presents the data regarding the lack of effects of CX3CL1 on sIPSCs/mIPSCs kinetics. 
@@ -551,7 +553,7 @@ figure1
 
 ```
 
-### Effects of CX3CL1, AZD8797, and minocycline in the CeL, focusing on two main cell types {#CX3CL1CeAmembrappendix}
+#### Effects of CX3CL1, AZD8797, and minocycline in the CeL, focusing on two main cell types {#CX3CL1CeAmembrappendix}
 
 All membrane effects of CX3CL1, AZD8797 or minocycline application are summarized in Table <!-- -->.
 
@@ -612,10 +614,10 @@ CeA_df_frak2nM_sub_RS <- CeA_df_final_RS %>% dplyr::filter(Experiment %in% c("CX
 CeA_df_frak2nM_sub_LF <- CeA_df_final_LF %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)"))
 
 # GAIN
-bp_CeA_RS_thres <- plot_boxplot(CeA_df_frak2nM_sub_RS, Treshold1_all, mtitle= "Regular-Spiking", ylabel = "Treshold_all1", dot_size = 2)
+bp_CeA_RS_thres <- plot_boxplot(CeA_df_frak2nM_sub_RS, Treshold1_all, mtitle= "Regular-Spiking", ylabel = "Threshold", dot_size = 2)
 # bp_CeA_RS_thres <- bp_CeA_RS_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
-bp_CeA_LF_thres <- plot_boxplot(CeA_df_frak2nM_sub_LF, Treshold1_all, mtitle= "Late-Firing", ylabel = "Treshold_all1",  dot_size = 2)
+bp_CeA_LF_thres <- plot_boxplot(CeA_df_frak2nM_sub_LF, Treshold1_all, mtitle= "Late-Firing", ylabel = "Threshold",  dot_size = 2)
 # bp_CeA_LF_thres <- bp_CeA_LF_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
 # ADAPTATION
@@ -848,6 +850,12 @@ figure1
 
 
 ```
+
+#### CX3CL1 does not affect excitatory synaptic transmission in the CeL
+
+Treatment with CX3CL1 does not change any of measured parameters of excitatory synaptic transmission. 
+The data are shown in Table <!-- --> and are illustrated on Fig. <!-- -->
+
 
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   

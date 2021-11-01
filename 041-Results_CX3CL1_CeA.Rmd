@@ -135,7 +135,7 @@ In contrast, CX3CL1 seems not to affect LF cells' intrinsic membrane properties 
 AZD8797 alone did not significantly changed any of those parameters (see Fig. \@ref(fig:AZDCeAmembrappendix) in Appendix \@ref(CX3CL1CeAmembrappendix) ).
 All parameters and statistics are summarized in Table <!--?-->.
 
-```{r CX3CL1CeAintrinsic, fig.cap='**Effects of CX3CL1 on intrinsic properties of CeL neurons** **(a)** Schematics of presented conditions **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the ... conditions of electrophysiological recordings. Scale bar: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE, warning= FALSE, fig.width= 12, fig.height= 18}
+```{r CX3CL1CeAVmexc, fig.cap='**Effects of CX3CL1 on resting membrane potential and excitability of CeL neurons** **(a1-a3)** Boxplots presenting membrane resting potential each cell before and after CX3CL1 application in all CeL neurons (right), Regular-Spiking neurons (middle), and Late-Firing neurons (left). **(b1-b3)** Boxplots showing a gain of each cell before and after CX3CL1 application in all CeL neurons (right), Regular-Spiking neurons (middle), and Late-Firing neurons (left). **(c1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment. **(c2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. **(d1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment in the presence of AZD8797, the blocker of CX3CL1 receptor. **(d2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. **(e1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment in the presence of minocycline, the blocker of microglial activity. **(d2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. Scale bar: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE, warning= FALSE, fig.width= 12, fig.height= 10}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -161,108 +161,48 @@ CeA_df_final_sub <- CeA_df_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM
 CeA_df_final_sub_RS <- CeA_df_final_RS %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "minocycline + \nCX3CL1(2nM)"))
 CeA_df_final_sub_LF <- CeA_df_final_LF %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "minocycline + \nCX3CL1(2nM)"))
 
-# GAIN
-bp_CeA_gain <- plot_boxplot(CeA_df_final_sub, gain, mtitle= "CeL - \nAll Neurons", ylabel = "gain",  dot_size = 2)
-bp_CeA_gain <- bp_CeA_gain + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_CeA_gain_RS <- plot_boxplot(CeA_df_final_sub_RS, gain, mtitle= "CeL - \nRegular Spiking Neurons", ylabel = "gain",  dot_size = 2)
-bp_CeA_gain_RS <- bp_CeA_gain_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_CeA_gain_LF <- plot_boxplot(CeA_df_final_sub_LF, gain, mtitle= "CeL - \nLate Firing Neurons", ylabel = "gain",  dot_size = 2)
-bp_CeA_gain_LF <- bp_CeA_gain_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-# THRESHOLD CURRENT
-
-# f_labels_CeA_thres <- data.frame(Experiment = c( c("CX3CL1(2nM)",  "AZD8797 + \nCX3CL1(2nM)", "AZD8797", "minocycline + \nCX3CL1(2nM)" , "minocycline" )), label = c("", "", "*", "", ""))
-# f_labels_CeA_thres$Experiment <- factor(f_labels_CeA_thres$Experiment, levels = c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "AZD8797", "minocycline + \nCX3CL1(2nM)" , "minocycline"))
-# 
-# bp_CeA_thres <- plot_boxplot(CeA_df_final, Treshold1_all, mtitle= "CeA - All Cells", ylabel = "Threshold current (mV)", vary1 = -60, vary2 = -20, dot_size = 2)
-# bp_CeA_thres <- bp_CeA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_CeA_thres)
-# 
-# ADAPTATION
-# bp_CeA_adap <- plot_boxplot(CeA_df_final, Adaptation_ratio, mtitle= "CeA - All Cells", ylabel = "Adaptation ratio", vary1 = 0, vary2 = 2, dot_size = 2)
-# bp_CeA_adap <- bp_CeA_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-# # INPUT RESISTANCE
-bp_CeA_rm <- plot_boxplot(CeA_df_final_sub, Rm_20, mtitle= "", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 900, dot_size = 2)
-bp_CeA_rm <- bp_CeA_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_CeA_rm_RS <- plot_boxplot(CeA_df_final_sub_RS, Rm_20, mtitle= "", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 900, dot_size = 2)
-bp_CeA_rm_RS <- bp_CeA_rm_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_CeA_rm_LF <- plot_boxplot(CeA_df_final_sub_LF, Rm_20, mtitle= "", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 900, dot_size = 2)
-bp_CeA_rm_LF <- bp_CeA_rm_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-# TAU
-bp_CeA_tau <- plot_boxplot(CeA_df_final_sub, tau_20, mtitle= "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
-bp_CeA_tau <- bp_CeA_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_CeA_tau_RS <- plot_boxplot(CeA_df_final_sub_RS, tau_20, mtitle= "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
-bp_CeA_tau_RS <- bp_CeA_tau_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-bp_CeA_tau_LF <- plot_boxplot(CeA_df_final_sub_LF, tau_20, mtitle= "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
-bp_CeA_tau_LF <- bp_CeA_tau_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
-
-# CAPACITANCE
-# f_labels_CeA_cap <- data.frame(Experiment = c( c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "AZD8797", "minocycline + \nCX3CL1(2nM)" , "minocycline")), label = c("", "", "", "", "*"))
-# f_labels_CeA_cap$Experiment <- factor(f_labels_CeA_cap$Experiment, levels = c("CX3CL1(2nM)" ,"AZD8797 + \nCX3CL1(2nM)", "AZD8797", "minocycline + \nCX3CL1(2nM)" , "minocycline"))
-# bp_CeA_cap <- plot_boxplot(CeA_df_final, C_20, mtitle= "", ylabel = "Capacitance (pF)", vary1 = 30, vary2 = 155, dot_size = 2)
-# bp_CeA_cap <- bp_CeA_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE) + geom_text(x = 1.5, y = 130, aes(label = label, color = NULL, group= NULL), data = f_labels_CeA_cap)
-
-# SAG
-# bp_CeA_sag <- plot_boxplot(CeA_df_sag, sag_ratio_140, mtitle= "", ylabel = "sag ratio @-140 pA", dot_size = 2)
-# bp_CeA_sag <- bp_CeA_sag + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
-
 # RESTING MEMBRANE POTENTIAL
-bp_CeA_vm <- plot_boxplot(CeA_df_final_sub, RMS, mtitle= "", ylabel = "Resting membrane potential (mV)", vary1 = -80, vary2 = -25, dot_size = 2)
+bp_CeA_vm <- plot_boxplot(CeA_df_final_sub, RMS, mtitle= "CeL - \nAll Neurons", ylabel = "Resting membrane potential (mV)", vary1 = -80, vary2 = -25, dot_size = 2)
 bp_CeA_vm <- bp_CeA_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
 
-bp_CeA_vm_RS <- plot_boxplot(CeA_df_final_sub_RS, RMS, mtitle= "", ylabel = "Resting membrane potential (mV)", vary1 = -80, vary2 = -25, dot_size = 2)
+bp_CeA_vm_RS <- plot_boxplot(CeA_df_final_sub_RS, RMS, mtitle= "CeL - \nRegular Spiking Neurons", ylabel = "Resting membrane potential (mV)", vary1 = -80, vary2 = -25, dot_size = 2)
 bp_CeA_vm_RS <- bp_CeA_vm_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
- strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())  + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = -35)
 
-bp_CeA_vm_LF <- plot_boxplot(CeA_df_final_sub_LF, RMS, mtitle= "", ylabel = "Resting membrane potential (mV)", vary1 = -80, vary2 = -25, dot_size = 2)
+bp_CeA_vm_LF <- plot_boxplot(CeA_df_final_sub_LF, RMS, mtitle= "CeL - \nLate Firing Neurons", ylabel = "Resting membrane potential (mV)", vary1 = -80, vary2 = -25, dot_size = 2)
 bp_CeA_vm_LF <- bp_CeA_vm_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
 
-# ACTION POTENTIAL WIDTH
-# bp_CeA_apw <- plot_boxplot(CeA_df_final, AP_width1_all, mtitle= "", ylabel = "Action potential width (ms)", vary1 = 0.5, vary2 = 2.5, dot_size = 2)
-# bp_CeA_apw <- bp_CeA_apw + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) # + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+# GAIN
+bp_CeA_gain <- plot_boxplot(CeA_df_final_sub, gain, mtitle= "", ylabel = "gain",  dot_size = 2)
+bp_CeA_gain <- bp_CeA_gain + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = 0.3)
 
-# ACTION POTENTIAL AMPLITUDE
-# bp_CeA_apa <- plot_boxplot(CeA_df_final, AP_amp1_all, mtitle= "", ylabel = "Action potential amplitude (pA)", vary1 = 50, vary2 = 120, dot_size = 2)
-# bp_CeA_apa <- bp_CeA_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_CeA_gain_RS <- plot_boxplot(CeA_df_final_sub_RS, gain, mtitle= "", ylabel = "gain",  dot_size = 2)
+bp_CeA_gain_RS <- bp_CeA_gain_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = 0.3)
 
-
-# FAST AHP
-# bp_CeA_fast <- plot_boxplot(CeA_df_final, AHPf1_all, mtitle= "", ylabel = "fast AHP (pA)", vary1 = -25, vary2 = 7, dot_size = 2)
-# bp_CeA_fast <- bp_CeA_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+bp_CeA_gain_LF <- plot_boxplot(CeA_df_final_sub_LF, gain, mtitle= "", ylabel = "gain",  dot_size = 2)
+bp_CeA_gain_LF <- bp_CeA_gain_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = 0.3)
 
 
 ### making representative plots 
 ## frak2nM
 frak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(20)) # subtracting one representative cell from whole dataframe
-frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "21303018"] = "CX3CL1(2nM)" #renaming the name - instead the name of the file - the name of the condition
+frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "21303018"] = "" #renaming the name - instead the name of the file - the name of the condition
 representative_frak2nM <- frak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # making a plot
-# ## importing traces
+# ## importing traces  
 # 
 # ## azdfrak2nM
 azdfrak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(24))
-azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "20611001"] = "AZD8797 + \nCX3CL1(2nM)"
+azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "20611001"] = ""
 representative_azdfrak2nM <- azdfrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(300, 500) + ylim(0, 12)
 # 
 ## minofrak2nM
 minofrak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(43))
-minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "20703013"] = "minocycline + \nCX3CL1(2nM)"
+minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "20703013"] = ""
 representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(260, 500)
 # 
 #powinny być nowe IV_representative_minoa <- fig("images//results//IV_representative_minoa.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
@@ -275,41 +215,95 @@ traces_minofrak <- fig("images//results//CX3CL1_CeA_IV_traces_minofrak.png", asp
 
 #using patchwork to do layout of the figure
 
-# f_labels_BLA_thres_add <- data.frame(Experiment = c( c(  "AZD8797", "minocycline" )), label = c("", "*"))
-# f_labels_BLA_thres_add$Experiment <- factor(f_labels_BLA_thres_add$Experiment, levels = c( "AZD8797",  "minocycline"))
-# 
-#  + geom_text(x = 1.5, y = -20, aes(label = label, color = NULL, group= NULL), data = f_labels_BLA_thres_add, size=12, face = 'bold') 
-# figure2 <- ((representative_azdfrak2nM | traces_azdfrak) + plot_layout(tag_level = 'new')) | ((representative_minofrak2nM | traces_minofrak)+ plot_layout(tag_level = 'new'))  +  plot_layout(guides = "collect") & theme(legend.position = "bottom")
+A <- ((bp_CeA_vm | bp_CeA_vm_RS | bp_CeA_vm_LF) + plot_layout(tag_level = "new"))
+B <- ((bp_CeA_gain | bp_CeA_gain_RS | bp_CeA_gain_LF) + plot_layout(tag_level = "new"))
+C <- (((representative_frak2nM +  ggtitle('CX3CL1(2nM)'))| traces_frak2nM) + plot_layout(tag_level = "new", widths = c(0.5,1))) 
+D <- (((representative_azdfrak2nM +  ggtitle('AZD8797 + CX3CL1(2nM)'))| traces_azdfrak) + plot_layout(tag_level = "new", widths = c(0.5,1))) 
+E <- (((representative_minofrak2nM +  ggtitle('minocycline + CX3CL1(2nM)')) | traces_minofrak) + plot_layout(tag_level = "new", widths = c(0.5,1))) 
 
 des <- "
-AAABBBCCC
-DDDEEEFFF
-GGGHHHIII
-JJJKKKLLL
-MOOPRRSTT
+AAA
+BBB
+CDE
 "
 
-# figure1 <- ((bp_CeA_gain | bp_CeA_gain_RS | bp_CeA_gain_LF) + plot_layout(tag_level = 'new')) / 
-#            ((bp_CeA_rm | bp_CeA_rm_RS | bp_CeA_rm_LF) + plot_layout(tag_level = 'new')) / 
-#            ((bp_CeA_tau | bp_CeA_tau_RS | bp_CeA_tau_LF) + plot_layout(tag_level = 'new'))/
-#            ((bp_CeA_vm | bp_CeA_vm_RS | bp_CeA_vm_LF) + plot_layout(tag_level = 'new')) / 
-#            ((((representative_frak2nM | traces_frak2nM) | (representative_azdfrak2nM | traces_azdfrak )| (representative_minofrak2nM | traces_minofrak) + plot_layout(tag_level = 'new') + plot_layout(guides = "collect") & theme(legend.position = "bottom"))))
-
-fig2 <- wrap_plots(A = bp_CeA_gain, B= bp_CeA_gain_RS, C = bp_CeA_gain_LF, D = bp_CeA_rm, E = bp_CeA_rm_RS, F= bp_CeA_rm_LF, G = bp_CeA_tau, H = bp_CeA_tau_RS, I = bp_CeA_tau_LF, J = bp_CeA_vm, K = bp_CeA_vm_RS, L = bp_CeA_vm_LF, M= representative_frak2nM, O= traces_frak2nM, P= representative_azdfrak2nM, R= traces_azdfrak, S = representative_minofrak2nM, T = traces_minofrak, design = des)
-
-# figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_minofrak2nM | inset_gaba)  + plot_layout(tag_level = 'new')) /
-#  (bp_BLA_thres + theme(legend.position = "none"))  /
-#   (((pie_BLA_frak_thres | pie_BLA_frak5nM_thres | pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_minofrak_thres | pie_BLA_picro_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) / 
-#   (((((representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM) + plot_layout(tag_level = 'new')) +   plot_layout(tag_level = 'new')) + plot_layout(guides = "collect") & theme(legend.position = "right")))  +
-#     (IV_representative_frak2nM | IV_representative_azdfrak2nM | IV_representative_minofrak2nM | IV_representative_gabafrak2nM)
+fig2 <- wrap_plots(A = A, B= B, C = C, D = D, E = E, design = des)
 
 
+fig2 <- fig2 + plot_annotation(tag_levels = c('a', '1'))
+fig2
+
+```
+
+```{r CX3CL1CeARmtau, fig.cap='**Effects of CX3CL1 on input resistance and membrane time constant** **(a)** Boxplots presenting each cell before and after CX3CL1 application across different conditions **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the ... conditions of electrophysiological recordings. Scale bar: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE, warning= FALSE, fig.width= 12, fig.height= 8}
+
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+
+inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
+inset_frak2nM <- image_ggplot(inset_frak2nM)
+inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
+inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
+inset_azda <- image_read("images//results//inset_azd.png")
+inset_azda <- image_ggplot(inset_azda)
+inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
+inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
+inset_minoa <- image_read("images//results//inset_minoa.png")
+inset_minoa <- image_ggplot(inset_minoa)
+
+## subsetting only CX3CL1 conditions
+CeA_df_final_sub <- CeA_df_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "minocycline + \nCX3CL1(2nM)"))
+CeA_df_final_sub_RS <- CeA_df_final_RS %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "minocycline + \nCX3CL1(2nM)"))
+CeA_df_final_sub_LF <- CeA_df_final_LF %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "AZD8797 + \nCX3CL1(2nM)", "minocycline + \nCX3CL1(2nM)"))
+
+# # INPUT RESISTANCE
+bp_CeA_rm <- plot_boxplot(CeA_df_final_sub, Rm_20, mtitle= "CeL - \nAll Neurons", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 900, dot_size = 2)
+bp_CeA_rm <- bp_CeA_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 8, face = "bold", label.y = 770)
+
+bp_CeA_rm_RS <- plot_boxplot(CeA_df_final_sub_RS, Rm_20, mtitle= "CeL - \nRegular Spiking Neurons", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 900, dot_size = 2)
+bp_CeA_rm_RS <- bp_CeA_rm_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 8, face = "bold", label.y = 770)
+
+bp_CeA_rm_LF <- plot_boxplot(CeA_df_final_sub_LF, Rm_20, mtitle= "CeL - \nLate Firing Neurons", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 900, dot_size = 2)
+bp_CeA_rm_LF <- bp_CeA_rm_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 8, face = "bold", label.y = 770)
+
+# TAU
+bp_CeA_tau <- plot_boxplot(CeA_df_final_sub, tau_20, mtitle= "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
+bp_CeA_tau <- bp_CeA_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 8, face = "bold", label.y = 40)
+
+bp_CeA_tau_RS <- plot_boxplot(CeA_df_final_sub_RS, tau_20, mtitle= "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
+bp_CeA_tau_RS <- bp_CeA_tau_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 8, face = "bold", label.y = 40)
+
+bp_CeA_tau_LF <- plot_boxplot(CeA_df_final_sub_LF, tau_20, mtitle= "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
+bp_CeA_tau_LF <- bp_CeA_tau_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 8, face = "bold", label.y = 40)
+
+### making representative plots 
+
+traces_frak2nM <- fig("images//results//CX3CL1_CeA_Rm_CX3CL1_traces.png")
+traces_azdfrak <- fig("images//results//CX3CL1_CeA_Rm_AZDCX3CL1_traces.png")
+traces_minofrak <- fig("images//results//CX3CL1_CeA_Rm_MINOCX3CL1_traces.png")
+
+#using patchwork to do layout of the figure
+A <- ((bp_CeA_rm | bp_CeA_rm_RS | bp_CeA_rm_LF) + plot_layout(tag_level = "new"))
+B <- ((bp_CeA_tau | bp_CeA_tau_RS | bp_CeA_tau_LF) + plot_layout(tag_level = "new"))
+C <- (((traces_frak2nM +  ggtitle('CX3CL1(2nM)')) | (traces_azdfrak + ggtitle('AZD8797 + CX3CL1(2nM)')) | (traces_minofrak + ggtitle('minocycline + CX3CL1(2nM)')) + plot_layout(tag_level = "new")))
+# D <- ((representative_azdfrak2nM | traces_azdfrak) + plot_layout(tag_level = "new", widths = c(0.5,1)))
+# E <- ((representative_minofrak2nM | traces_minofrak) + plot_layout(tag_level = "new", widths = c(0.5,1)))
+
+des <- "
+AAA
+BBB
+CCC
+"
 
 
-#figure1 <- figure1 + 
-#   plot_annotation(tag_levels = c('a', '1')) + plot_layout(design = des)#+ plot_layout(heights = c(0.3, 0.7, 1, 0.5, 1))
+fig2 <- wrap_plots(A = A, B= B, C = C, design = des)
 
-#figure1
 
 fig2 <- fig2 + plot_annotation(tag_levels = c('a', '1'))
 fig2
@@ -344,7 +338,7 @@ However, minocycline-induced increased input resistance and cell capacitance was
 from `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "baseline") %>% ungroup() %>% summarize(mean(C_20)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(C_20), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(C_20)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final %>% filter(Experiment == 'minocycline' & Type == 'LF' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(C_20), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, `r mino_CeA_stat_LF_cap`, respectively; \@ref(fig:CX3CL1CeAintrinsicmino) b and c).
 All measured parameters in relation to each cell type are summarized in Table <!-- --> in Appendix \@ref(CX3CL1CeAmembrappendix).
 
-```{r CX3CL1CeAintrinsicmino, fig.cap='**Effects of minocycline on intrinsic neuronal properties in CeL neurons based on their type.** **(a-c)** Boxplots presenting threshold currents, input resistance, and cell capacitance of each neuron before and after minocycline application in relation to neuronal type. **(e)** plots presenting input-output relationships of grouped neurons **(f)** voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the minocycline application (red). Scale bar: 10mV, 100ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 10, fig.height= 8}
+```{r CX3CL1CeAintrinsicmino, fig.cap='**Effects of minocycline on intrinsic neuronal properties in CeL neurons based on their type.** **(a-c)** Boxplots presenting threshold currents, input resistance, and cell capacitance of each neuron before and after minocycline application in relation to neuronal type. **(d)** plots presenting input-output relationships of grouped neurons **(e)** voltage traces from representative cells to xxx pA injection currents prior to (blue) and after the minocycline application (red). **(f)** Alligned voltage traces of representative cell to hyperpolarizing 20pA current step in order to measure an input resistance and time constant before (blue) and after (red) minocycline application. Scale bar: 10mV, 100ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 10, fig.height= 8}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -395,18 +389,17 @@ bp_CeA_cap <- bp_CeA_cap + facet_wrap(~ Type, nrow = 1, scales = "free_x") + the
 
 ### making representative plots 
 ## AZD8797
-#azd_IV_subset <- CeA_df_final %>% filter(Experiment == "AZD8797") #& Cell %in% c(22)) # subtracting one representative cell from whole dataframe
-#azd_IV_subset$Filename_all1[azd_IV_subset$Filename_all1 == "21303018"] = "AZD8797" #renaming the name - instead the name of the file - the name of the condition
-#representative_azd <- azd_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # making a plot
+minoa_CeA_IV_subset <- CeA_df_final %>% filter(Experiment == "minocycline") %>% filter(Cell %in% c(64))
+minoa_CeA_IV_subset$Filename_all1[minoa_CeA_IV_subset$Filename_all1 == "20729027"] = ""
+representative_minoa_CeA_IV <- minoa_CeA_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
 
 # loading image with representative traces
 #traces_azd <- fig("images//results//CX3CL1_CeA_IV_traces_frak2nM.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
 
 # making final figure with patchwork
+representative_minoa_IV <- fig("images//results//CeA_minoa_IV_representative.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+representative_minoa_Rm <- fig("images//results//CeA_minoa_Rm_representative.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
 
-figure1 <- bp_CeA_thres /
-           bp_CeA_rm /
-           bp_CeA_cap
 
 lay <- "
 AB
@@ -426,13 +419,7 @@ C#
 #figure1 <- wrap_plots(A = A, B = B, C = C, design = lay)
 
 figure1 <- (bp_CeA_thres | bp_CeA_rm | bp_CeA_cap) /
-           (plot_spacer() | plot_spacer() | plot_spacer())
-
-# figure1 <-  ((inset_frak2nM | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset_minofrak2nM | inset_gaba)  + plot_layout(tag_level = 'new')) /
-#  (bp_BLA_thres + theme(legend.position = "none"))  /
-#   (((pie_BLA_frak_thres | pie_BLA_frak5nM_thres | pie_BLA_antifrak_thres | pie_BLA_azdfrak_thres | pie_BLA_minofrak_thres | pie_BLA_picro_thres)  + plot_layout(tag_level = 'new')) +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) / 
-#   (((((representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM | representative_gabafrak2nM) + plot_layout(tag_level = 'new')) +   plot_layout(tag_level = 'new')) + plot_layout(guides = "collect") & theme(legend.position = "right")))  +
-#     (IV_representative_frak2nM | IV_representative_azdfrak2nM | IV_representative_minofrak2nM | IV_representative_gabafrak2nM)
+           (representative_minoa_CeA_IV| representative_minoa_IV | representative_minoa_Rm)
 
 figure1 <- figure1 +
    plot_annotation(tag_levels = c('a')) #+ plot_layout(heights = c(0.3, 0.7, 1, 0.5, 1))
@@ -491,7 +478,7 @@ CeA_CX3CL1_sIPSC_stat_RS_minofrak_freq <- CeA_CX3CL1_sIPSC_stat_RS_freq$Statisti
 
 Nevertheless, GABAergic neurons, constituting 98% of CeL neurons (see Amygdala chapter \@ref(CeA)), were also less excitable after CX3CL1 treatment.
 This was especially true for Regular-Spiking neurons<!-- Fig-->.
-CX3CL1 application led to reduction in sIPSC frequency onto Late-Firing neurons (baseline: `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` CX3CL1(2nM): `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, n = `r CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_CX3CL1_sIPSC_stat_LF_frak2nM_freq`, \@ref(fig:CX3CL1CeAsIPSCfig)A1).
+Accordingly, CX3CL1 application led to reduction in sIPSC frequency onto Late-Firing neurons (baseline: `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` CX3CL1(2nM): `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)`, n = `r CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_final_subset_LF %>% filter(Experiment == 'CX3CL1(2nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_CX3CL1_sIPSC_stat_LF_frak2nM_freq`, \@ref(fig:CX3CL1CeAsIPSCfig)A1).
 This effect was abolished when CX3CR1 and microglial activity were blocked by AZD8797 and minocycline, respectively (`r CeA_CX3CL1_sIPSC_stat_LF_azdfrak_freq` and `r CeA_CX3CL1_sIPSC_stat_LF_minofrak_freq`).
 These observations suggest a functional involvement of CX3CR1 and minocycline in the modulation of CX3CL1-induced inhibition of GABAergic transmission onto Late-Firing cells.
 To examine whether this effect was mediated by action potentials, the experiment was performed again, in the presence of TTX.

@@ -895,7 +895,7 @@ gt(groupname_col = "Type") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
     tab_source_note(source_note = md("")) %>%
-    gtsave("CeA_CX3CL1_sEPSC_table")
+    gtsave("CeA_CX3CL1_sEPSC_table.html")
 
 knitr::include_graphics("CeA_CX3CL1_sEPSC_table.html")
 
@@ -1008,11 +1008,71 @@ gt(groupname_col = "Type") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
     tab_source_note(source_note = md("")) %>%
-    gtsave("CeA_CX3CL1_sIPSC_table")
+    gtsave("CeA_CX3CL1_sIPSC_table.html")
 
 knitr::include_graphics("CeA_CX3CL1_sIPSC_table.html")
 
 ```
+
+Fig. \@ref(fig:(CX3CL1CeAsIPSCfigappendix)) shows kinetics of inhibitory postsynaptic currents ....
+
+```{r CX3CL1CeAsIPSCfigappendix, fig.cap='**CX3CL1 does not affect kinetics of inhibitory postsynaptic currents in the CeL** **(a)** Boxplots presenting population data of sIPSCs **(a1-2)** rise time and **(d1-d2)** decay time before and after in different experimental conditions.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 8, fig.width= 15}
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+
+# loading needed subsets 
+# inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
+# inset_frak2nM <- image_ggplot(inset_frak2nM)
+# inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
+# inset_frak5nM <- image_ggplot(inset_frak5nM)
+# inset_azdfrak5nM <- image_read("images//results//inset_azdfrak5nM.png") # AZD5nM zrobić
+# inset_azdfrak5nM <- image_ggplot(inset_azdfrak5nM)
+# inset_azda <- image_read("images//results//inset_azd.png")
+# inset_azda <- image_ggplot(inset_azda)
+# inset_minofrak5nM <- image_read("images//results//inset_minofrak5nM.png") # minocycline 5Nm ZROBIĆ
+# inset_minofrak5nM <- image_ggplot(inset_minofrak5nM)
+# inset_minoa <- image_read("images//results//inset_minoa.png")
+# inset_minoa <- image_ggplot(inset_minoa)
+# inset_ttx <- image_read("images//results//inset_ttx.png")
+# inset_ttx <- image_ggplot(inset_ttx)
+# inset_ttx_5nM <- image_read("images//results//inset_ttx_5nM.png")
+# inset_ttx_5nM <- image_ggplot(inset_ttx_5nM)
+
+
+# rise time
+bp_CeA_s_rt_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_final_subset_LF, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "Late-Firing Neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_rt_sIPSC_LF  <- bp_CeA_s_rt_sIPSC_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+
+bp_CeA_s_rt_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_final_subset_RS, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 3, dot_size = 2,  mtitle = "Regular-Firing Neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_rt_sIPSC_RS  <- bp_CeA_s_rt_sIPSC_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+
+# decay time
+
+bp_CeA_s_dt_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_final_subset_LF, median_DecayTau, ylabel = "sIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_dt_sIPSC_LF  <- bp_CeA_s_dt_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+
+bp_CeA_s_dt_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_final_subset_RS, median_DecayTau, ylabel = "sIPSC Decay Time (Hz)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_s_dt_sIPSC_RS  <- bp_CeA_s_dt_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CX3CL1(2nM)', y = 110, label = "p = 0.047")
+
+
+#using patchwork to do layout of the figure
+C <-  (bp_CeA_s_rt_sIPSC_LF | bp_CeA_s_rt_sIPSC_RS) + plot_layout(tag_level = "new")
+D <-  (bp_CeA_s_dt_sIPSC_LF | bp_CeA_s_dt_sIPSC_RS) + plot_layout(tag_level = "new")
+   
+lay <- "
+CC
+DD
+"
+
+figure1 <- wrap_plots(C = C, D = D, design = lay)
+
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
+
+
+figure1
+
+```
+
 
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   

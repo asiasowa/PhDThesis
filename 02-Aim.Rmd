@@ -53,10 +53,8 @@ wskazuje miejsca stymulacji dotyczących protokołów z wywołaną transmisją s
 
 <!-- library(elektroasia)
 
-setwd("..")
-setwd("..")
-setwd(".//CXCL12")-->
-```{r setup, include=FALSE}
+-->
+```{r setup cx3cl1, include=FALSE}
 setwd("..")
 setwd("..")
 setwd(".//CX3CL1")
@@ -109,7 +107,7 @@ CeA_LF_sIPSC <- as.tibble(CeA_LF_sIPSC)
 CeA_LF_sIPSC <- CeA_LF_sIPSC %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
 #bad_Cells <- c(9) # 2 -> 6 Hz, deleted 11.09.20
 #CeA_LF_sIPSC <- CeA_LF_sIPSC %>% filter(!Cell %in% bad_Cells)
-bad_Cells <- c(1, 13) # amplitude from 17->23; RISETIME > 2
+bad_Cells <- c(1, 13, 9) # amplitude from 17->23; RISETIME > 2
 CeA_LF_sIPSC <- CeA_LF_sIPSC %>% filter(!Cell %in% bad_Cells)
 CeA_sIPSC_frak2nM <- CeA_RS_sIPSC %>% dplyr::bind_rows(CeA_LF_sIPSC) %>% mutate(Experiment = 'CX3CL1(2nM)')
 CeA_sIPSC_frak2nM$Filename <- as.character(CeA_sIPSC_frak2nM$Filename)
@@ -302,6 +300,8 @@ CeA_sIPSC_RS <- CeA_sIPSC_RS %>% filter(!Cell %in% bad_Cells) # CeA_LF_sIPSC <- 
 #### frak2nM CeA mIPSC ####
 CeA_frak2nM_mIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_CeA_LF_frak2nM.csv"))
 CeA_frak2nM_mIPSC <- CeA_frak2nM_mIPSC %>% dplyr::mutate(Type = "LF") %>% dplyr::mutate(Experiment = "CX3CL1(2nM)")
+bad_Cells <- c(7) #reduced amplitude 30-15
+CeA_frak2nM_mIPSC <- CeA_frak2nM_mIPSC %>% filter(!Cell %in% bad_Cells)
 CeA_frak2nM_mIPSC <- CeA_frak2nM_mIPSC %>% dplyr::select(Experiment, Filename, Cell, Condition, Type, everything()) %>% as_tibble()
 CeA_frak2nM_mIPSC$Condition <- plyr::revalue(CeA_frak2nM_mIPSC$Condition, c("b"="baseline", "f" = "CX3CL1"))
 
@@ -841,6 +841,356 @@ pp_bartek_2 <- bartek_pp3 %>% ggplot(aes(x = Ratio, y = val, color = Ratio)) +
 
 ```
 
-<!-- setwd("..")
-setwd(".//doktorat//PhDThesis")
-print(getwd())-->
+
+```{r setup cxcl12, include=FALSE}
+library(here)
+library(elektroasia)
+
+
+setwd("..")
+setwd("..")
+setwd(".//CXCL12")
+
+####BLA CXCL12 2nM############################################################
+BLA_df_cxcl12_2nM<-readRDS(".//BLA//2nM//membrane_table_BLA_cxcl12_2nM.rds")
+BLA_df_cxcl12_2nM$Cell <- as.factor(BLA_df_cxcl12_2nM$Cell)
+BLA_df_cxcl12_2nM$Condition <- as.factor(BLA_df_cxcl12_2nM$Condition)
+
+bad_Cells <- c(15,9,10,1, 7) #15 - input restistance > 250, 9,10 - Cm > 300, 1- RMS > -50; 7- IV
+BLA_df_cxcl12_2nM <- BLA_df_cxcl12_2nM %>% filter(!Cell %in% bad_Cells) 
+
+BLA_df_cxcl12_2nM <- BLA_df_cxcl12_2nM %>% mutate(Experiment = "CXCL12(2nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
+BLA_df_cxcl12_2nM_inter <- BLA_df_cxcl12_2nM %>% filter(Type == "interneuron")
+BLA_df_cxcl12_2nM <- BLA_df_cxcl12_2nM %>% filter(Type == "PC")
+
+
+####BLA CXCL12 5nM############################################################
+BLA_df_cxcl12_5nM<-readRDS(".//BLA//5nM//membrane_table_BLA_cxcl12_5nM.rds")
+BLA_df_cxcl12_5nM$Cell <- as.factor(BLA_df_cxcl12_5nM$Cell)
+BLA_df_cxcl12_5nM$Condition <- as.factor(BLA_df_cxcl12_5nM$Condition)
+BLA_df_cxcl12_5nM <- BLA_df_cxcl12_5nM %>% mutate(Experiment = "CXCL12(5nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
+bad_Cells <- c(4, 10, 14) # Rm - 478 -> 268 ; 10 - 20d14002 - only 1 spike after application; IV- 14
+BLA_df_cxcl12_5nM <- BLA_df_cxcl12_5nM %>% filter(!Cell %in% bad_Cells)
+
+BLA_df_cxcl12_5nM_inter <- BLA_df_cxcl12_5nM %>% filter(Type == "interneuron")
+BLA_df_cxcl12_5nM <- BLA_df_cxcl12_5nM %>% filter(Type == "PC")
+
+##### CeA cxcl12 2nM###############
+CeA_df_cxcl12_2nM<-readRDS(".//CeA//2nM//membrane_table_CeA_cxcl12_2nM.rds")
+CeA_df_cxcl12_2nM <- CeA_df_cxcl12_2nM %>% mutate(Experiment = 'CXCL12(2nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
+bad_Cells <- c(17, 4, 8, 11, 19, 15) #  17 sEPSC - RS - przymyka się cały czas, 4 - RS - bardzo późno zaczęła spike'ować, 8 LF - dziwny IV. 11 - RS - dziwny IV i bardzo malo sEPSC, 19 -iv
+CeA_df_cxcl12_2nM <- CeA_df_cxcl12_2nM %>% filter(!Cell %in% bad_Cells)
+
+##### CeA cxcl12 5nM###############
+CeA_df_cxcl12_5nM<-readRDS(".//CeA//5nM//membrane_table_CeA_cxcl12_5nM.rds")
+CeA_df_cxcl12_5nM <- CeA_df_cxcl12_5nM %>% mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything())
+bad_Cells <- c(2, 10, 3, 9, 1, 15, 7, 8, 23, 17, 18) # Adaptation ratio - NA :( , 3 - poszarpana po podaniu (sEPSC), 9 - LF- based on IV -sEPSC absent 1, 15, 7 -> RS based on IV. sEPSC, 8 - LF - Rm 600 -> 200, 21325036 - IV po podaniu; 21223024 - IV, 21223045 - IV
+CeA_df_cxcl12_5nM <- CeA_df_cxcl12_5nM %>% filter(!Cell %in% bad_Cells)
+
+
+##### CeA AMD + cxcl12 5nM###############
+CeA_amd5nM_df <-readRDS(".//CeA//AMD//blocking5nM//membrane_table_CeA_AMD_CXCL12_5nM.rds") # 
+CeA_amd5nM_df <- CeA_amd5nM_df %>% mutate(Experiment = 'AMD + CXCL12(5nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
+bad_Cells <- c(8)
+CeA_amd5nM_df <- CeA_amd5nM_df %>% filter(!Cell %in% bad_Cells)
+
+##### CeA AMD alone ###############
+CeA_amda_df <-readRDS(".//CeA//AMD//alone//membrane_table_CeA_AMD_alone.rds") # 
+bad_Cells <- c(3)
+CeA_amda_df <- CeA_amda_df %>% dplyr::filter(!Cell %in% bad_Cells)
+CeA_amda_df <- CeA_amda_df %>% mutate(Experiment = 'AMD') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type, everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
+CeA_amda_df$Condition <- factor(CeA_amda_df$Condition, levels = c("baseline", "AMD"))
+
+##### CeA fluoro + cxcl12 5nM###############
+CeA_df_fluoro <-readRDS(".//CeA//fluorocitrate//membrane_table_CeA_fluoro_cxcl12_5nM.rds") # 
+CeA_df_fluoro <- CeA_df_fluoro %>% mutate(Experiment = "FC + CXCL12(5nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type, everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
+bad_Cells <- c(1)
+CeA_df_fluoro <- CeA_df_fluoro  %>% filter(!Cell %in% bad_Cells)
+#####BLA sEPSC cxcl12 2nM###############
+BLA_cxcl12_2nM_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_2nM.csv"))
+BLA_cxcl12_2nM_sEPSC$Condition <- plyr::revalue(BLA_cxcl12_2nM_sEPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
+
+BLA_cxcl12_2nM_sEPSC<- BLA_cxcl12_2nM_sEPSC %>% dplyr::mutate(Experiment = 'CXCL12(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_cxcl12_2nM_sEPSC$Filename <- as.character(BLA_cxcl12_2nM_sEPSC$Filename)
+#bad_Cells <- c(4, 6) # Frequency 10 -> 30Hz., 17518039 - w IV wygląda spoko, zanalizować jeszcze raz. #6 - 20123016 po IV, który miał 2 spikei i w sEPSC też mało eventów (100). 
+#BLA_cxcl12_2nM_sEPSC <- BLA_cxcl12_2nM_sEPSC %>% filter(!Cell %in% bad_Cells)
+
+#####BLA sEPSC cxcl12 5nM###############
+BLA_cxcl12_5nM_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_5nM.csv"))
+BLA_cxcl12_5nM_sEPSC$Condition <- plyr::revalue(BLA_cxcl12_5nM_sEPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
+
+BLA_cxcl12_5nM_sEPSC<- BLA_cxcl12_5nM_sEPSC %>% dplyr::mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_cxcl12_5nM_sEPSC$Filename <- as.character(BLA_cxcl12_5nM_sEPSC$Filename)
+#bad_Cells <- c(3, 6) # based on Rm - 20930023-26 > 500,  6- 20d14002 - based on IV
+#BLA_cxcl12_5nM_sEPSC <- BLA_cxcl12_5nM_sEPSC %>% filter(!Cell %in% bad_Cells)
+BLA_cxcl12_5nM_sEPSC<- BLA_cxcl12_5nM_sEPSC %>% dplyr::mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_cxcl12_5nM_sEPSC$Filename <- as.character(BLA_cxcl12_5nM_sEPSC$Filename)
+
+#####BLA sIPSC cxcl12 2nM###############
+BLA_cxcl12_2nM_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_cxcl12_2nM.csv"))
+BLA_cxcl12_2nM_sIPSC$Condition <- plyr::revalue(BLA_cxcl12_2nM_sIPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
+BLA_cxcl12_2nM_sIPSC$Filename <- as.character(BLA_cxcl12_2nM_sIPSC$Filename)
+
+BLA_cxcl12_2nM_sIPSC<- BLA_cxcl12_2nM_sIPSC %>% dplyr::mutate(Experiment = 'CXCL12(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+
+#####BLA sIPSC cxcl12 5nM###############
+BLA_cxcl12_5nM_sIPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_BLA_cxcl12_5nM.csv"))
+BLA_cxcl12_5nM_sIPSC$Condition <- plyr::revalue(BLA_cxcl12_5nM_sIPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
+BLA_cxcl12_5nM_sIPSC$Filename <- as.character(BLA_cxcl12_5nM_sIPSC$Filename)
+
+BLA_cxcl12_5nM_sIPSC<- BLA_cxcl12_5nM_sIPSC %>% dplyr::mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+
+#####CeA sEPSC cxcl12 2nM###############
+CeA_sEPSC_cxcl12_2nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_cxcl12_2nM.csv")) 
+CeA_sEPSC_cxcl12_2nM_RS <- CeA_sEPSC_cxcl12_2nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_sEPSC_cxcl12_2nM_RS$Filename <- as.character(CeA_sEPSC_cxcl12_2nM_RS$Filename)
+
+CeA_sEPSC_cxcl12_2nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_cxcl12_2nM.csv")) 
+CeA_sEPSC_cxcl12_2nM_LF <- CeA_sEPSC_cxcl12_2nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_sEPSC_cxcl12_2nM_LF$Filename <- as.character(CeA_sEPSC_cxcl12_2nM_LF$Filename)
+
+CeA_sEPSC_cxcl12_2nM <- CeA_sEPSC_cxcl12_2nM_RS %>% bind_rows(CeA_sEPSC_cxcl12_2nM_LF) %>% dplyr::mutate(Experiment = "CXCL12(2nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+#bad_Cells <- c(2) # IV bardzo późno zaczęła. 
+#CeA_sEPSC_cxcl12_2nM <- CeA_sEPSC_cxcl12_2nM %>% filter(!Cell %in% bad_Cells)
+CeA_sEPSC_cxcl12_2nM$Condition <- plyr::revalue(CeA_sEPSC_cxcl12_2nM$Condition, c("b"="baseline", "f" = "CXCL12"))
+
+#####CeA sEPSC cxcl12 5nM###############
+CeA_sEPSC_cxcl12_5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_cxcl12_5nM.csv")) 
+CeA_sEPSC_cxcl12_5nM_RS <- CeA_sEPSC_cxcl12_5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_sEPSC_cxcl12_5nM_RS$Filename <- as.character(CeA_sEPSC_cxcl12_5nM_RS$Filename)
+
+CeA_sEPSC_cxcl12_5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_cxcl12_5nM.csv")) 
+CeA_sEPSC_cxcl12_5nM_LF <- CeA_sEPSC_cxcl12_5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_sEPSC_cxcl12_5nM_LF$Filename <- as.character(CeA_sEPSC_cxcl12_5nM_LF$Filename)
+
+CeA_sEPSC_cxcl12_5nM <- CeA_sEPSC_cxcl12_5nM_RS %>% bind_rows(CeA_sEPSC_cxcl12_5nM_LF) %>% mutate(Experiment = "CXCL12(5nM)")  %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+CeA_sEPSC_cxcl12_5nM$Condition <- plyr::revalue(CeA_sEPSC_cxcl12_5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
+#bad_Cells <- c(1,2,4) #20929007, 20d14o26, 20o02022 - RS - based on IV
+#CeA_sEPSC_cxcl12_5nM <- CeA_sEPSC_cxcl12_5nM %>% filter(!Cell %in% bad_Cells)
+
+#####CeA sEPSC amd + cxcl12 5nM###############
+CeA_amd5nM_sEPSC_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_amdcxcl12_5nM.csv"))
+CeA_amd5nM_sEPSC_RS <- CeA_amd5nM_sEPSC_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_amd5nM_sEPSC_RS$Filename <- as.character(CeA_amd5nM_sEPSC_RS$Filename)
+CeA_amd5nM_sEPSC_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_amdcxcl12_5nM.csv"))
+CeA_amd5nM_sEPSC_LF <- CeA_amd5nM_sEPSC_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_amd5nM_sEPSC_LF$Filename <- as.character(CeA_amd5nM_sEPSC_LF$Filename)
+bad_Cells <- c(5) # IV - 20d22029
+CeA_amd5nM_sEPSC_LF <- CeA_amd5nM_sEPSC_LF %>% filter(!Cell %in% bad_Cells)
+
+CeA_amd5nM_sEPSC<- CeA_amd5nM_sEPSC_RS %>% bind_rows(CeA_amd5nM_sEPSC_LF) %>% dplyr::mutate(Experiment = 'AMD + CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+CeA_amd5nM_sEPSC$Condition <- plyr::revalue(CeA_amd5nM_sEPSC$Condition, c("b"="baseline", "f" = "CXCL12"))
+
+#####CeA sEPSC fluro + cxcl12 5nM###############
+#CeA_fluoro_sEPSC_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_fluoro_cxcl12_5nM.csv"))
+#CeA_fluoro_sEPSC_RS <- CeA_fluoro_sEPSC_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+#CeA_fluoro_sEPSC_RS$Filename <- as.character(CeA_fluoro_sEPSC_RS$Filename)
+CeA_fluoro_sEPSC_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_fluoro_cxcl12_5nM.csv"))
+CeA_fluoro_sEPSC_LF <- CeA_fluoro_sEPSC_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+#CeA_fluoro_sEPSC_LF$Filename <- as.character(CeA_fluoro_sEPSC_LF$Filename)
+#bad_Cells <- c(7) # IV - 20d22029
+#CeA_fluoro_sEPSC_LF <- CeA_fluoro_sEPSC_LF %>% filter(!Cell %in% bad_Cells)
+
+CeA_sEPSC_fluoro <-CeA_fluoro_sEPSC_LF %>% dplyr::mutate(Experiment = "FC + CXCL12(5nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+CeA_sEPSC_fluoro$Filename <- as.character(CeA_sEPSC_fluoro$Filename)
+#CeA_fluoro_sEPSC<- CeA_fluoro_sEPSC_RS %>% bind_rows(CeA_fluoro_sEPSC_LF) %>% dplyr::mutate(Experiment = 'AMD + CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+CeA_sEPSC_fluoro$Condition <- plyr::revalue(CeA_sEPSC_fluoro$Condition, c("b"="baseline", "f" = "CXCL12"))
+
+
+#####CeA sEPSC amda###############
+CeA_amda_sEPSC_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_RS_amda.csv"))
+CeA_amda_sEPSC_RS <- CeA_amda_sEPSC_RS  %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_amda_sEPSC_RS$Filename <- as.character(CeA_amda_sEPSC_RS$Filename)
+
+
+CeA_amda_sEPSC_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_CeA_LF_amda.csv"))
+CeA_amda_sEPSC_LF <- CeA_amda_sEPSC_LF  %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_amda_sEPSC_LF$Filename <- as.character(CeA_amda_sEPSC_LF$Filename)
+bad_Cells <- c(2)
+CeA_amda_sEPSC_LF <- CeA_amda_sEPSC_LF %>% dplyr::filter(!Cell %in% bad_Cells)
+
+CeA_amda_sEPSC<- CeA_amda_sEPSC_RS %>% bind_rows(CeA_amda_sEPSC_LF) %>% dplyr::mutate(Experiment = 'AMD') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+CeA_amda_sEPSC$Condition <- plyr::revalue(CeA_amda_sEPSC$Condition, c("b"="baseline", "f" = "AMD"))
+CeA_amda_sEPSC$Condition <- factor(CeA_amda_sEPSC$Condition, levels = c("baseline", "AMD"))
+CeA_amda_sEPSC$Cell <- as.numeric(CeA_amda_sEPSC$Cell)
+
+#####CeA sIPSC amda###############
+CeA_sIPSC_amda_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_amda.csv"))
+CeA_sIPSC_amda_RS <- CeA_sIPSC_amda_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+bad_Cells <- c(1)
+CeA_sIPSC_amda_RS <- CeA_sIPSC_amda_RS %>% filter(!Cell %in% bad_Cells)
+CeA_sIPSC_amda_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_amda.csv"))
+CeA_sIPSC_amda_LF <- CeA_sIPSC_amda_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+
+CeA_sIPSC_amda<- CeA_sIPSC_amda_RS %>% bind_rows(CeA_sIPSC_amda_LF) %>% dplyr::mutate(Experiment = 'AMD') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+CeA_sIPSC_amda$Condition <- plyr::revalue(CeA_sIPSC_amda$Condition, c("b"="baseline", "f" = "AMD"))
+CeA_sIPSC_amda$Filename <- as.character(CeA_sIPSC_amda$Filename)
+
+#####CeA sIPSC cxcl12 2nM###############
+CeA_sIPSC_cxcl12_2nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_cxcl12_2nM.csv"))
+CeA_sIPSC_cxcl12_2nM_RS <- CeA_sIPSC_cxcl12_2nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_sIPSC_cxcl12_2nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_cxcl12_2nM.csv"))
+CeA_sIPSC_cxcl12_2nM_LF <- CeA_sIPSC_cxcl12_2nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_sIPSC_cxcl12_2nM <- CeA_sIPSC_cxcl12_2nM_RS %>% bind_rows(CeA_sIPSC_cxcl12_2nM_LF) %>% mutate(Experiment = "CXCL12(2nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+
+CeA_sIPSC_cxcl12_2nM$Condition <- plyr::revalue(CeA_sIPSC_cxcl12_2nM$Condition, c("b"="baseline", "f" = "CXCL12"))
+CeA_sIPSC_cxcl12_2nM$Filename <- as.character(CeA_sIPSC_cxcl12_2nM$Filename)
+
+#####CeA sIPSC cxcl12 5nM###############
+CeA_sIPSC_cxcl12_5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_cxcl12_5nM.csv"))
+CeA_sIPSC_cxcl12_5nM_RS <- CeA_sIPSC_cxcl12_5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+bad_Cells <- c(2)
+CeA_sIPSC_cxcl12_5nM_RS <- CeA_sIPSC_cxcl12_5nM_RS %>% filter(!Cell %in% bad_Cells)
+
+CeA_sIPSC_cxcl12_5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_cxcl12_5nM_2.csv"))
+CeA_sIPSC_cxcl12_5nM_LF <- CeA_sIPSC_cxcl12_5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+bad_Cells <- c(6, 12, 15, 16) #6 - dootworzyła się, tylko 8 min; 12 - niestabilny baseline; 15- dziwne
+wrong_Cells <- c(16)
+CeA_sIPSC_lostcell <- CeA_sIPSC_cxcl12_5nM_LF %>% dplyr::filter(Cell %in% wrong_Cells)
+CeA_sIPSC_cxcl12_5nM_LF <- CeA_sIPSC_cxcl12_5nM_LF %>% dplyr::filter(!Cell %in% bad_Cells)
+CeA_sIPSC_cxcl12_5nM <- CeA_sIPSC_cxcl12_5nM_RS %>% bind_rows(CeA_sIPSC_cxcl12_5nM_LF) %>% mutate(Experiment = "CXCL12(5nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+#bad_Cells <- c(1, 4, 17, 10) # median_RiseTime big changes
+CeA_sIPSC_cxcl12_5nM <- CeA_sIPSC_cxcl12_5nM %>% filter(!Cell %in% bad_Cells)
+
+CeA_sIPSC_cxcl12_5nM$Condition <- plyr::revalue(CeA_sIPSC_cxcl12_5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
+CeA_sIPSC_cxcl12_5nM$Filename <- as.character(CeA_sIPSC_cxcl12_5nM$Filename)
+
+#####CeA sIPSC amd + cxcl12 2nM###############
+CeA_sIPSC_amd2nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_amdcxcl12_2nM.csv"))
+CeA_sIPSC_amd2nM_RS <- CeA_sIPSC_amd2nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+bad_Cells <- c(2)
+CeA_sIPSC_amd2nM_RS <- CeA_sIPSC_amd2nM_RS %>% filter(!Cell %in% bad_Cells)
+CeA_sIPSC_amd2nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_amdcxcl12_2nM.csv"))
+CeA_sIPSC_amd2nM_LF <- CeA_sIPSC_amd2nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+
+CeA_sIPSC_amd2nM<- CeA_sIPSC_amd2nM_RS %>% bind_rows(CeA_sIPSC_amd2nM_LF) %>% dplyr::mutate(Experiment = 'AMD + CXCL12(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+CeA_sIPSC_amd2nM$Condition <- plyr::revalue(CeA_sIPSC_amd2nM$Condition, c("b"="baseline", "f" = "CXCL12"))
+CeA_sIPSC_amd2nM$Filename <- as.character(CeA_sIPSC_amd2nM$Filename)
+#bad_Cells <- c(2) # median_Frequency 7.5 -> 1.68
+#CeA_sIPSC_amd2nM <- CeA_sIPSC_amd2nM %>% filter(!Cell %in% bad_Cells)
+
+#####CeA sIPSC amd + cxcl12 5nM###############
+CeA_sIPSC_amd5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_amdcxcl12_5nM.csv"))
+CeA_sIPSC_amd5nM_RS <- CeA_sIPSC_amd5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+
+CeA_sIPSC_amd5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_amdcxcl12_5nM.csv"))
+CeA_sIPSC_amd5nM_LF <- CeA_sIPSC_amd5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_sIPSC_amd5nM_LF$Filename <- as.character(CeA_sIPSC_amd5nM_LF$Filename)
+CeA_sIPSC_amd5nM_RS$Filename <- as.character(CeA_sIPSC_amd5nM_RS$Filename)
+CeA_sIPSC_lostcell$Filename <- as.character(CeA_sIPSC_lostcell$Filename)
+CeA_sIPSC_amd5nM_LF <- CeA_sIPSC_amd5nM_LF %>% bind_rows(CeA_sIPSC_lostcell)
+
+CeA_sIPSC_amd5nM<- CeA_sIPSC_amd5nM_RS %>% bind_rows(CeA_sIPSC_amd5nM_LF) %>% dplyr::mutate(Experiment = 'AMD + CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+CeA_sIPSC_amd5nM$Condition <- plyr::revalue(CeA_sIPSC_amd5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
+CeA_sIPSC_amd5nM$Filename <- as.character(CeA_sIPSC_amd5nM$Filename)
+
+#####CeA sIPSC fluoro + cxcl12 5nM###############
+CeA_sIPSC_fluoro_5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_RS_fluoro_cxcl12_5nM.csv"))
+CeA_sIPSC_fluoro_5nM_RS <- CeA_sIPSC_fluoro_5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_sIPSC_fluoro_5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sIPSC_CeA_LF_fluoro_cxcl12_5nM.csv"))
+CeA_sIPSC_fluoro_5nM_LF <- CeA_sIPSC_fluoro_5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_sIPSC_fluoro_5nM <- CeA_sIPSC_fluoro_5nM_RS %>% bind_rows(CeA_sIPSC_fluoro_5nM_LF) %>% mutate(Experiment = "FC + CXCL12(5nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+
+CeA_sIPSC_fluoro_5nM$Condition <- plyr::revalue(CeA_sIPSC_fluoro_5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
+CeA_sIPSC_fluoro_5nM$Filename <- as.character(CeA_sIPSC_fluoro_5nM$Filename)
+
+#####CeA mIPSC cxcl12 2nM###############
+CeA_mIPSC_cxcl12_2nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_CeA_RS_cxcl12_2nM.csv"))
+CeA_mIPSC_cxcl12_2nM_RS <- CeA_mIPSC_cxcl12_2nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+# CeA_mIPSC_cxcl12_2nM_LF <- ".//synaptic_transmission//CeA_mIPSC_LF_12_cxcl12_2nM_igor.xlsx" 
+# st_table(CeA_mIPSC_cxcl12_2nM_LF)
+# CeA_mIPSC_cxcl12_2nM_LF <- read_rds("summary_CeA_mIPSC_cxcl12_2nM_LF.rds") %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_mIPSC_cxcl12_2nM <- CeA_mIPSC_cxcl12_2nM_RS  %>% mutate(Experiment = "CXCL12(2nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) #%>% bind_rows(CeA_mIPSC_cxcl12_2nM_LF) 
+
+CeA_mIPSC_cxcl12_2nM$Condition <- plyr::revalue(CeA_mIPSC_cxcl12_2nM$Condition, c("b"="baseline", "f" = "CXCL12"))
+CeA_mIPSC_cxcl12_2nM$Filename <- as.character(CeA_mIPSC_cxcl12_2nM$Filename)
+
+#####CeA mIPSC cxcl12 5nM###############
+CeA_mIPSC_cxcl12_5nM_RS <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_CeA_RS_cxcl12_5nM.csv"))
+CeA_mIPSC_cxcl12_5nM_RS <- CeA_mIPSC_cxcl12_5nM_RS %>% mutate(Type ='RS') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+
+CeA_mIPSC_cxcl12_5nM_LF <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_mIPSC_CeA_LF_cxcl12_5nM.csv"))
+CeA_mIPSC_cxcl12_5nM_LF <- CeA_mIPSC_cxcl12_5nM_LF %>% mutate(Type ='LF') %>% dplyr::select(Filename, Cell, Condition, Type, everything())
+CeA_mIPSC_cxcl12_5nM <- CeA_mIPSC_cxcl12_5nM_RS %>% dplyr::bind_rows(CeA_mIPSC_cxcl12_5nM_LF) %>% mutate(Experiment = "CXCL12(5nM)") %>% dplyr::select(Experiment, Filename, Cell, Condition, everything()) #%>% bind_rows(CeA_mIPSC_cxcl12_5nM_LF) 
+
+CeA_mIPSC_cxcl12_5nM$Condition <- plyr::revalue(CeA_mIPSC_cxcl12_5nM$Condition, c("b"="baseline", "f" = "CXCL12"))
+CeA_mIPSC_cxcl12_5nM$Filename <- as.character(CeA_mIPSC_cxcl12_5nM$Filename)
+
+#####BLA final tables###############
+BLA_df_final_12 <- BLA_df_cxcl12_2nM %>% bind_rows(BLA_df_cxcl12_5nM)
+
+temp <- BLA_df_final_12 %>% filter(Condition == 'baseline') %>% filter(sag_ratio >= 102)
+
+sag_Cells <- temp$Cell
+BLA_df_sag <- BLA_df_final_12 %>% filter(Cell %in% sag_Cells)
+
+BLA_sEPSC_final_12 <- BLA_cxcl12_2nM_sEPSC %>% bind_rows(BLA_cxcl12_5nM_sEPSC)
+
+BLA_sIPSC_final_12 <- BLA_cxcl12_2nM_sIPSC %>% bind_rows(BLA_cxcl12_5nM_sIPSC)
+#bad_Cells <- c(3) # CXCL12 5nM 20n03001 - 500-600 pA HOLDING CURRENT
+#BLA_sIPSC_final_12 <- BLA_sIPSC_final_12 %>% filter(!Cell %in% bad_Cells)
+
+#####CeA final tables###############
+CeA_df_final_12 <- CeA_df_cxcl12_2nM %>% bind_rows(CeA_df_cxcl12_5nM) %>% bind_rows(CeA_amd5nM_df) %>% bind_rows(CeA_amda_df) %>% bind_rows(CeA_df_fluoro)
+CeA_df_final_12$Experiment <- factor(CeA_df_final_12$Experiment, levels = c("CXCL12(2nM)", "CXCL12(5nM)", "AMD + CXCL12(5nM)", "AMD", "FC + CXCL12(5nM)"))
+CeA_df_final_12$Condition <- factor(CeA_df_final_12$Condition, levels = c("baseline", "CXCL12", "AMD"))
+
+
+CeA_df_final_12_RS <- CeA_df_final_12 %>% filter(Type == "RS")
+CeA_df_final_12_LF <- CeA_df_final_12 %>% filter(Type == "LF")
+
+temp <- CeA_df_final_12 %>% filter(Condition == 'baseline') %>% filter(sag_ratio >= 102)
+
+sag_Cells <- temp$Cell
+CeA_df_sag <- CeA_df_final_12 %>% filter(Cell %in% sag_Cells)
+CeA_df_sag_RS <- CeA_df_sag %>% filter( Type == 'RS')
+CeA_df_sag_LF <- CeA_df_sag %>% filter( Type == 'LF')
+
+CeA_sEPSC_final_12 <- CeA_sEPSC_cxcl12_2nM %>% bind_rows(CeA_sEPSC_cxcl12_5nM) %>% bind_rows(CeA_amd5nM_sEPSC) %>% bind_rows(CeA_amda_sEPSC) %>% bind_rows(CeA_sEPSC_fluoro)
+CeA_sEPSC_final_12$Condition <- factor(CeA_sEPSC_final_12$Condition, levels = c("baseline", "CXCL12", "AMD"))
+CeA_sEPSC_final_12$Experiment <- factor(CeA_sEPSC_final_12$Experiment, levels = c("CXCL12(2nM)", "CXCL12(5nM)", "AMD + CXCL12(5nM)", "AMD", "FC + CXCL12(5nM)"))
+
+CeA_sEPSC_final_12$Cell <- rep(1:(nrow(CeA_sEPSC_final_12)/2), each = 2)
+CeA_sEPSC_RS_12 <- CeA_sEPSC_final_12 %>% filter(Type == 'RS')
+CeA_sEPSC_LF_12 <- CeA_sEPSC_final_12 %>% filter(Type == 'LF')
+
+CeA_sIPSC_final_12 <- CeA_sIPSC_cxcl12_2nM %>% bind_rows(CeA_sIPSC_cxcl12_5nM) %>% bind_rows(CeA_sIPSC_amd2nM) %>% bind_rows(CeA_sIPSC_amd5nM) %>% bind_rows(CeA_sIPSC_amda) %>% bind_rows(CeA_sIPSC_fluoro_5nM)
+#CeA_sIPSC_final_12$Condition <- plyr::revalue(CeA_sIPSC_final_12$Condition, c("b"="baseline", "c" = "CXCL12"))
+CeA_sIPSC_final_12$Experiment <- factor(CeA_sIPSC_final_12$Experiment, levels = c("CXCL12(2nM)", "CXCL12(5nM)", "AMD + CXCL12(2nM)", "AMD + CXCL12(5nM)", "AMD", "FC + CXCL12(5nM)"))
+CeA_sIPSC_final_12$Condition <- factor(CeA_sIPSC_final_12$Condition, levels = c("baseline", "CXCL12", "AMD"))
+CeA_sIPSC_final_12$Cell <- rep(1:(nrow(CeA_sIPSC_final_12)/2), each = 2)
+#bad_Cells <- c(21) # 20929016 - Rise Time more than 10ms, RS
+#CeA_sIPSC_final_12 <- CeA_sIPSC_final_12 %>% filter(!Cell %in% bad_Cells)
+CeA_sIPSC_RS_12 <- CeA_sIPSC_final_12 %>% filter(Type == 'RS')
+CeA_sIPSC_LF_12 <- CeA_sIPSC_final_12 %>% filter(Type == 'LF')
+
+CeA_mIPSC_final_12 <- CeA_mIPSC_cxcl12_2nM  %>% bind_rows(CeA_mIPSC_cxcl12_5nM) #%>% bind_rows(CeA_mIPSC_amd2nM) %>% bind_rows(CeA_mIPSC_amda)
+#CeA_mIPSC_final_12$Condition <- plyr::revalue(CeA_mIPSC_final_12$Condition, c("b"="baseline", "c" = "CXCL12"))
+CeA_mIPSC_final_12$Experiment <- factor(CeA_mIPSC_final_12$Experiment, levels = c("CXCL12(2nM)", "CXCL12(5nM)")) #, levels = c("CXCL12(2nM)", "CXCL12(5nM)", "AMD + CXCL12(2nM)", "AMD"))
+#CeA_mIPSC_final_12$Condition <- factor(CeA_mIPSC_final_12$Condition, levels = c("baseline", "CXCL12", "AMD"))
+CeA_mIPSC_final_12$Cell <- rep(1:(nrow(CeA_mIPSC_final_12)/2), each = 2)
+CeA_mIPSC_RS_12 <- CeA_mIPSC_final_12 %>% filter(Type == 'RS')
+CeA_mIPSC_LF_12 <- CeA_mIPSC_final_12 %>% filter(Type == 'LF')
+
+###############################INTERNEURONS IN PC###################################################################
+
+BLA_df_inter_12 <- BLA_df_cxcl12_5nM_inter %>% bind_rows(BLA_df_cxcl12_2nM_inter)
+BLA_df_inter_12$Experiment <- factor(BLA_df_inter_12$Experiment)
+BLA_df_inter_12$Cell <- factor(BLA_df_inter_12$Cell)
+
+temp <- BLA_df_inter_12 %>% filter(Condition == 'baseline') %>% filter(sag_ratio >= 102)
+sag_Cells <- temp$Cell
+BLA_df_inter_12_sag <- BLA_df_inter_12 %>% filter(Cell %in% sag_Cells) %>% dplyr::rename(sag_ratio = sag_ratio)
+
+BLA_cxcl12_2nM_sEPSC_inter <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_2nM_inter.csv"))
+BLA_cxcl12_2nM_sEPSC_inter <- BLA_cxcl12_2nM_sEPSC_inter %>% mutate(Experiment = 'CXCL12(2nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_cxcl12_2nM_sEPSC_inter$Filename <- as.character(BLA_cxcl12_2nM_sEPSC_inter$Filename)
+
+BLA_cxcl12_5nM_sEPSC_inter <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_5nM_inter.csv"))
+BLA_cxcl12_5nM_sEPSC_inter <- BLA_cxcl12_5nM_sEPSC_inter %>% mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
+BLA_cxcl12_5nM_sEPSC_inter$Filename <- as.character(BLA_cxcl12_5nM_sEPSC_inter$Filename)
+2
+
+BLA_sEPSC_final_12_inter <-  BLA_cxcl12_2nM_sEPSC_inter  %>% bind_rows(BLA_cxcl12_5nM_sEPSC_inter)
+BLA_sEPSC_final_12_inter$Cell <- rep(1:(nrow(BLA_sEPSC_final_12_inter)/2), each = 2)
+```

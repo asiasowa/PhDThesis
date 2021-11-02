@@ -869,7 +869,7 @@ BLA_df_cxcl12_5nM<-readRDS(".//BLA//5nM//membrane_table_BLA_cxcl12_5nM.rds")
 BLA_df_cxcl12_5nM$Cell <- as.factor(BLA_df_cxcl12_5nM$Cell)
 BLA_df_cxcl12_5nM$Condition <- as.factor(BLA_df_cxcl12_5nM$Condition)
 BLA_df_cxcl12_5nM <- BLA_df_cxcl12_5nM %>% mutate(Experiment = "CXCL12(5nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, everything())
-bad_Cells <- c(4, 10, 14) # Rm - 478 -> 268 ; 10 - 20d14002 - only 1 spike after application; IV- 14
+bad_Cells <- c(4, 10, 14, 12) # Rm - 478 -> 268 ; 10 - 20d14002 - only 1 spike after application; IV- 14
 BLA_df_cxcl12_5nM <- BLA_df_cxcl12_5nM %>% filter(!Cell %in% bad_Cells)
 
 BLA_df_cxcl12_5nM_inter <- BLA_df_cxcl12_5nM %>% filter(Type == "interneuron")
@@ -1189,7 +1189,6 @@ BLA_cxcl12_2nM_sEPSC_inter$Filename <- as.character(BLA_cxcl12_2nM_sEPSC_inter$F
 BLA_cxcl12_5nM_sEPSC_inter <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_5nM_inter.csv"))
 BLA_cxcl12_5nM_sEPSC_inter <- BLA_cxcl12_5nM_sEPSC_inter %>% mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_cxcl12_5nM_sEPSC_inter$Filename <- as.character(BLA_cxcl12_5nM_sEPSC_inter$Filename)
-2
 
 BLA_sEPSC_final_12_inter <-  BLA_cxcl12_2nM_sEPSC_inter  %>% bind_rows(BLA_cxcl12_5nM_sEPSC_inter)
 BLA_sEPSC_final_12_inter$Cell <- rep(1:(nrow(BLA_sEPSC_final_12_inter)/2), each = 2)

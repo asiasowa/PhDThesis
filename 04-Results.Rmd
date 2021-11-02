@@ -81,7 +81,7 @@ Finally, since the activity of principal cells in the BLA is well-known to be ti
 As expected, the CX3CL1 effect was fully abolished when the GABAergic receptors were blocked (baseline = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)`, CX3CL1 (2nM) = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, n = `r BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_df_final %>% dplyr::filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_gabafrak2nM_BLA_stat_tres`, Fig. \@ref(fig:CX3CL1BLAexcitabilityfrak)).
 Thus, these data suggest that CX3CL1 reduces principal cells' activity *via* CX3CR1-, microglia-, and interneuron-dependent manner.
 
-```{r CX3CL1BLAexcitabilityfrak, fig.cap='**Effects of CX3CL1 on threshold current** **(a)** Schematics of presented conditions **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions **(c)** Pie charts presenting how cells reacted to CX3CL1 **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the five conditions of electrophysiological recordings. Scale bar: 10mV, 100ms ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 18}
+```{r CX3CL1BLAexcitabilityfrak, fig.cap= '**Effects of CX3CL1 on threshold current** **(a)** Schematics of presented conditions **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions **(c)** Pie charts presenting how cells reacted to CX3CL1 **(d)** plots presenting input-output relationships of representative cells **e** representative voltage traces from representative cells to 300, 360 and 400pA injection currents prior to (blue) and after the CX3CL1 application (red) in the five conditions of electrophysiological recordings. Scale bar: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 18}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -139,23 +139,23 @@ pie_BLA_picro_thres <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP
 
 ### making representative plots 
 ## frak2nM
-frak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(7)) # subtracting one representative cell from whole dataframe
+frak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(4)) # subtracting one representative cell from whole dataframe
 frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "18227023"] = "CX3CL1(2nM)" #renaming the name - instead the name of the file - the name of the condition
 representative_frak2nM <- frak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # making a plot
 # ## importing traces
 # 
 # ## azdfrak2nM
-azdfrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(30))
-azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "19d02002"] = "AZD8797 + \nCX3CL1(2nM)"
+azdfrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(28))
+azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "19d03005"] = "AZD8797 + \nCX3CL1(2nM)"
 representative_azdfrak2nM <- azdfrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(300, 500) + ylim(0, 12)
 # 
 ## minofrak2nM
-minofrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(42))
+minofrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(39))
 minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "17d07008"] = "minocycline + \nCX3CL1(2nM)"
 representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) + xlim(260, 500)
 # 
 ## gaba
-gabafrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(55))
+gabafrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(52))
 gabafrak2nM_IV_subset$Filename_all1[gabafrak2nM_IV_subset$Filename_all1 == "20605006"] = "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)"
 representative_gabafrak2nM <- gabafrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
 
@@ -236,12 +236,12 @@ pie_BLA_mino_thres <- BLA_df_final %>% filter(Experiment == 'minocycline') %>% p
 ### making representative individual IV plots 
 
 # ## azda
-azda_IV_subset <- BLA_df_final %>% filter(Experiment == "AZD8797") %>% filter(Cell %in% c(75))
+azda_IV_subset <- BLA_df_final %>% filter(Experiment == "AZD8797") %>% filter(Cell %in% c(72))
 azda_IV_subset$Filename_all1[azda_IV_subset$Filename_all1 == "21428031"] = "AZD8797"
 representative_azda_IV <- azda_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(300, 500) + ylim(0, 12)
 # 
 ## minoa
-minoa_IV_subset <- BLA_df_final %>% filter(Experiment == "minocycline") %>% filter(Cell %in% c(63))
+minoa_IV_subset <- BLA_df_final %>% filter(Experiment == "minocycline") %>% filter(Cell %in% c(60))
 minoa_IV_subset$Filename_all1[minoa_IV_subset$Filename_all1 == "20730004"] = "minocycline"
 representative_minoa_IV <- minoa_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # + xlim(260, 500)
 
@@ -296,23 +296,25 @@ CX3CL1_sEPSC_5nM_BLA_stat_sEPSC_freq <- as.data.frame(CX3CL1_sEPSC_5nM_BLA_stat_
 # getting the table of statistics
 CX3CL1_sEPSC_mino_BLA_stat_df <- (stat_table_exp_syn_extended((BLA_sEPSC_final_subset %>% filter(Experiment == 'minocycline'))))
 # selecting a stat_row so it prints nicely in text
-CX3CL1_sEPSC_mino_BLA_stat_sEPSC_freq <- as.data.frame(CX3CL1_sEPSC_mino_BLA_stat_df %>% dplyr::filter(Variable == 'median_Frequency') %>% dplyr::select(Statistics))
+CX3CL1_sEPSC_mino_BLA_stat_sEPSC_rt <- as.data.frame(CX3CL1_sEPSC_mino_BLA_stat_df %>% dplyr::filter(Variable == 'median_RiseTime') %>% dplyr::select(Statistics))
+CX3CL1_sEPSC_mino_BLA_stat_sEPSC_dt <- as.data.frame(CX3CL1_sEPSC_mino_BLA_stat_df %>% dplyr::filter(Variable == 'median_DecayTime') %>% dplyr::select(Statistics))
 ```
 
 Having established a significant suppression of principal cells' firing, which are the main group of glutamatergic neurons in the BLA, following CX3CL1 treatment, the effects of this protein on the glutamatergic transmission in this area in *in vitro* slices was measured.
 Spontaneous excitatory postsynaptic currents (sEPSCs) were recorded *via* whole-cell patch clamp recordings (held at −70 mV). 
 <!--The representative traces of sEPSCs in the absence (referred to as control hereafter) or presence of harmine (10μM) (referred to as harmine) were shown in supplemental Fig. S1(A). -->
-All measured parameters of excitatory synaptic transmission before and after application of CX3CL1, AZD8797, and minocycline are shown in detail in Figs. \@ref(fig:CX3CL1BLAsEPSCfigall1) \@ref(fig:CX3CL1BLAsEPSCfigall2) and summarized in Table 7.2<!--!--> in Appendix \@ref(CX3CL1sEPSCappendix).
+All measured parameters of excitatory synaptic transmission before and after application of CX3CL1, AZD8797, and minocycline are shown in detail in Fig. \@ref(fig:CX3CL1BLAsEPSCfigall) and summarized in Table 7.2<!--!--> in Appendix \@ref(CX3CL1sEPSCappendix).
 Compared to the control, CX3CL1 in two doses (2nM and 5nM) had a negligible effect on the median value of amplitude, frequency, and kinetics of sEPSC.
 However, although statistically not significant, a proportion of neurons (`r knitr::asis_output("\U223C")` 50%) reacted with decreased frequency of excitatory synaptic currents.<!-- CX3CL1 was shown to have negligible effect on the frequency of excitatory synaptic currents./// In contrast to inhibitory synaptic transmission, compared to baseline, CX3CL1 had negligible effect on the mean value of sEPSC amplitude and frequency, which was further described in the Appendix (see: \@ref(CX3CL1sEPSCappendix)). // found that although a partial reduction between NMDA and NMDA/CX3CL1 treated cells was observed, it was not statistical significant
 -->
-<!-- figures with decreased sEPSC + minocycline ...evoked and paired pulses? -->
+<!-- figures with decreased sEPSC + CX3CL1 ...evoked and paired pulses? -->
 
-Nevertheless, similar to previous findings, in addition to increased excitability, minocycline alone also altered sEPSC kinetics by increasing both their rise time and decay time \@ref(fig:CX3CL1BLAsEPSC).
+Nevertheless, similar to previous findings, in addition to increased excitability, minocycline alone also altered sEPSC kinetics by increasing both their rise time (baseline: `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_RiseTime)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_RiseTime), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)`, minocycline = `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(median_RiseTime)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(median_RiseTime), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` ms, n = `r BLA_sEPSC_final %>% filter(Experiment == 'minocycline') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_sEPSC_final %>% dplyr::filter(Experiment == 'minocycline') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_sEPSC_mino_BLA_stat_sEPSC_rt`) and 
+decay time(baseline: `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_DecayTau)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_DecayTau), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)`, minocycline = `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(median_DecayTau)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(median_DecayTau), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` ms, n = `r BLA_sEPSC_final %>% filter(Experiment == 'minocycline') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_sEPSC_final %>% dplyr::filter(Experiment == 'minocycline') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_sEPSC_mino_BLA_stat_sEPSC_dt`)(Fig. \@ref(fig:CX3CL1BLAsEPSC)).
 Thus, these observations indicate that microglia may be a key contributors in the regulation of excitatory drive in the BLA.<!--jakoś inaczej napisać... microglia...? postsynaptic mechanisms?--><!-- Our findings overall highlight microglia and its receptor CX3CR1 as key contributors in regulation of social behavioral adaptation to chronic stress.-->
 
 
-```{r CX3CL1BLAsEPSC, fig.cap='**The effects of CX3CL1 and minocycline on the frequency of spontaneous excitatory synaptic transmission**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 4, fig.width= 8}
+```{r CX3CL1BLAsEPSC, fig.cap='**The effects of CX3CL1 and minocycline on the frequency of spontaneous excitatory synaptic transmission** **(a)** Boxplot showing complex effect of CX3CL1 on excitatory synaptic transmission onto principal cells, where proportion of neurons showed enhanced frequency of sEPSC at concentration of 2nM, whereas at 5nM, the inhibition of the sEPSC frequency is observed in a subset of cells. **(b1-2)** Boxplots illustrating kinetics of sEPSC before and after minocycline application. **(b3)** Overlay of mean sEPSCs from traces recording during baseline (blue) and after minocycline treatment (red). Scale bar: 2pA, 10ms', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 4, fig.width= 8}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
@@ -332,7 +334,7 @@ inset_minoa <- image_ggplot(inset_minoa)
 
 # subsetting needed conditions from dataframe
 BLA_sEPSC_final_subset_freq <- BLA_sEPSC_final %>% dplyr::filter(Experiment %in% c("CX3CL1(2nM)", "CX3CL1(5nM)"))
-
+BLA_sEPSC_final_subset_freq$Experiment <- plyr::revalue(BLA_sEPSC_final_subset_freq$Experiment, c("CX3CL1(2nM)" = "CX3CL1\n(2nM)", "CX3CL1(5nM)" = "CX3CL1\n(5nM)"))
 BLA_sEPSC_final_subset_mino <- BLA_sEPSC_final %>% dplyr::filter(Experiment %in% c("minocycline"))
 
 # making boxplots with facets
@@ -367,15 +369,19 @@ pie_mino_s_dt_sEPSC  <- BLA_minoa_sEPSC %>% plot_pie(median_DecayTau, "minocycli
 # figure1 <- ((bp_BLA_s_freq_sEPSC + inset_element((pie_frak2_s_freq_sEPSC& theme(legend.position = "none")), left = 0.35, bottom = 0.6, right = 0.6, top = 0.9, align_to = 'full', ignore_tag = TRUE) + inset_element((pie_frak5_s_freq_sEPSC& theme(legend.position = "none")), left = 0.9, bottom = 0.6, right = 0.8, top = 0.9, align_to = 'full', ignore_tag = FALSE))) | 
 #   ((bp_BLA_s_rt_sEPSC | bp_BLA_s_dt_sEPSC )) 
 
+# represetantive
+ 
+ 
+representative_mino_sEPSC_kinetics <- fig("images//results//BLA_mino_sEPSC_representative_kinetics.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
 
 #prosty graf z 3 boxplotami na razie...
 figure1 <- ((bp_BLA_s_freq_sEPSC )) | 
-  ((bp_BLA_s_rt_sEPSC | bp_BLA_s_dt_sEPSC ) +  plot_layout(tag_level = 'new')) # /
+  ((bp_BLA_s_rt_sEPSC | bp_BLA_s_dt_sEPSC | representative_mino_sEPSC_kinetics) +  plot_layout(tag_level = 'new', widths = c(0.5, 0.5, 1))) # /
  #((pie_frak2_s_freq_sEPSC | pie_frak5_s_freq_sEPSC) +  plot_layout(tag_level = 'new') +  plot_layout(guides = "collect") & theme(legend.position = "bottom")) 
 
 
 figure1 <- figure1 + 
-  plot_annotation(tag_levels = c('a', '1')) #+ plot_layout(heights = c(1, 2, 1, 1))
+  plot_annotation(tag_levels = c('a', '1')) + plot_layout(widths = c(0.75, 2))
 
 figure1
 

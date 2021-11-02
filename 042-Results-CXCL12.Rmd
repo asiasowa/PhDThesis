@@ -2,18 +2,63 @@
 
 Finally, it should be noted that 
 
-Coupled with observed differences in proximal and distal spine density, our results suggest that the ratio of inhibitory to excitatory innervation is increased along the distal to proximal axis of principal cells in the BLA. <!-- ...-->
+
 
 ### Cellular distribution of CXCL12 and CXCR4 in the rat BLA
 
 To explore how CXCL12 affects local communication between neurons and glia in the BLA, immunohistochemical double staining for CXCR4 in this area was performed with <!--nestin, DCX, NeuN, CD34, fetal liver kinase (Flk)-1, and CD31-->. 
 
-
-### CXCL12/CXCR4 modulation of the electrical properties in BLA neurons 
-
-To understand the <!--intracellular activity during SWs (SWi)-->, whole-cell recordings were obtained from CeA neurons. 
-
 Depletion of astroglia in both BLA and CeA was confirmed by immunofluorescent staining using GFAP antibody in a subset of f...-incubated slices.
+
+
+### CXCL12 does not significantly modulate the electrophysiological actions in the BLA
+
+``` {r CXCL12BLAstats, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+CXCL12_BLA_membr_stat_all <- stat_table_exp_membr_extended((BLA_df_final_12))
+BLA_sEPSC_final_12$Experiment <- as.factor(BLA_sEPSC_final_12$Experiment)
+BLA_sEPSC_final_12$Cell <- as.factor(BLA_sEPSC_final_12$Cell)
+BLA_sEPSC_final_12$Condition <- as.factor(BLA_sEPSC_final_12$Condition)
+CXCL12_BLA_sEPSC_stat_all <- stat_table_exp_syn_extended(BLA_sEPSC_final_12)
+CXCL12_2nM_BLA_sEPSC_stat_all <- CXCL12_BLA_sEPSC_stat_all %>% dplyr::filter(Experiment == 'CXCL12(2nM)')
+CXCL12_2nM_BLA_sEPSC_stat_freq <- CXCL12_2nM_BLA_sEPSC_stat_all$Statistics[1]
+CXCL12_5nM_BLA_sEPSC_stat_all <- CXCL12_BLA_sEPSC_stat_all %>% dplyr::filter(Experiment == 'CXCL12(5nM)')
+CXCL12_5nM_BLA_sEPSC_stat_freq <- CXCL12_5nM_BLA_sEPSC_stat_all$Statistics[1]
+```
+
+To study whether BLA network can be regulated by CXCL12, whole-cell patch-clamp recordings were obtained from principal cells.<!--, measuring their excitability and intrinsic properties, as well as synaptic transmission.-->
+The intrinsic membrane properties and synaptic transmission were measured using analogous protocols as in the CX3CL1 study. 
+Regarding principal cells' excitability, at 2nM, CXCL12 does not affect this parameters (<!--ANOVA?--> \@ref(fig:CXCL12BLAintrinsic)a), whereas 5nM concentration of CXCL12 seems to enhance the excitability although the variation is high (\@ref(fig:(CXCL12BLAintrinsic)b).
+This issue warrants further investigation.
+Moreover, there was no observed difference in any PCs' measured membrane parameters (see: Appendix \@ref()). <!-- ładniej napisać-->
+
+Similarly, to evaluate the potential contribution of the chemokine CXCL12 in the modulation of excitatory synaptic transmission, the frequency, amplitude, and kinetics of sEPSCs were analyzed.
+Although, as shown in Fig.\@ref(fig:CXCL12BLAsEPSCfreq), it is tempting to speculate that while the concentration of 2nM does reduce the sEPSC... a partial reduction between NMDA and NMDA/CX3CL1 treated cells was observed, they were not statistical significant (`r CXCL12_2nM_BLA_sEPSC_stat_freq` and `r CXCL12_5nM_BLA_sEPSC_stat_freq`, respectively). 
+These findings also need further replication and investigation of the potential underlying mechanisms.
+
+
+
+
+```{r CXCL12BLAintrinsic, fig.cap='**2nM and 5nM CXCL12 does not affect BLA excitability** **(a1-a2)** Plots presenting population data of neurons before (blue) and after(red) CXCL12 treatment as a function of the frequency and injected depolarizing current steps', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 8, fig.height= 5}
+# IV grouped and individual
+gr_BLA_c2 <- BLA_df_final_12 %>% filter(Experiment == "CXCL12(2nM)") %>% plot_IV_group_fixed(mtitle = "CXCL12(2nM)", Sweep_min = 0, Sweep_max = 500, Div = 20)
+gr_BLA_c5 <- BLA_df_final_12 %>% filter(Experiment == "CXCL12(5nM)") %>% plot_IV_group_fixed(mtitle = "CXCL12(5nM)", Sweep_min = 0, Sweep_max = 500, Div = 20)
+
+figure1 <- ((gr_BLA_c2 | gr_BLA_c5) + plot_layout(tag_level = 'new'))
+
+figure1
+```
+
+```{r CXCL12BLAsEPSCfreq, fig.cap='**Effects of 2nM and 5nM CXCL12 on the frequency of sEPSCs** **(a1-a2)** Plots presenting population data of neurons before (blue) and after(red) CXCL12 treatment as a function of the frequency and injected depolarizing current steps', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 8, fig.height= 5}
+
+bp_BLA_freq <- plot_boxplot(BLA_sEPSC_final_12, median_Frequency, ylabel = "sEPSC Frequency (Hz)", vary1 = 0, vary2 = 12, dot_size = 2,  mtitle = "") 
+bp_BLA_freq <- bp_BLA_freq + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+figure1 <- bp_BLA_freq /
+           (+ plot_layout(tag_level = 'new'))
+
+figure1
+```
+
 
 ## CXCL12/CXCR4 in the CeA
 

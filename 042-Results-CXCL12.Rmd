@@ -71,7 +71,7 @@ figure1
 Similarly, to evaluate the potential contribution of the chemokine CXCL12 in the modulation of excitatory synaptic transmission, the frequency, amplitude, and kinetics of sEPSCs were analyzed.
 As shown in Fig.\@ref(fig:CXCL12BLAsEPSCfreq), the proportion of principal cell's displayed a change in the frequency of the sEPSCs, although these effects were not statistical significant (`r CXCL12_2nM_BLA_sEPSC_stat_freq` and `r CXCL12_5nM_BLA_sEPSC_stat_freq`, respectively).<!-- ładniej napisać--> 
 Nevertheless, at 2nM, the reduction in the frequency of sEPSCs is observed in `r pie_BLA_c2_freq$data$count[1]` out of `r print(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` cells following exogenous CXCL12 application, whereas this chemokine decreased the excitatory transmission onto `r pie_BLA_c2_freq$data$count[2]` out of `r print(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` neurons (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b1).
-Similarly, when CXCL12 at concentration of 5nM was bath-applied, `r print(pie_BLA_c2_freq$data$count[1]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])))`% of principal cells responded with decreased frequency of sEPSCs, while glutamatergic synaptic transmission was increased onto `r print(pie_BLA_c2_freq$data$count[2]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])))`% of neurons (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b2).
+Similarly, when CXCL12 at concentration of 5nM was bath-applied, `r print(pie_BLA_c2_freq$data$count[1]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3]))`% of principal cells responded with decreased frequency of sEPSCs, while glutamatergic synaptic transmission was increased onto `r print(pie_BLA_c2_freq$data$count[2]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3]))`% of neurons (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b2).
 These findings also need further replication and investigation of the potential underlying mechanisms. <!--  indicating that additional opposite mechanisms were involved (although in three out of the ten neurons tested we still observed a decrease in the AP frequency)-->
 The rest of the data concerning excitatory synaptic transmission are illustrated in Figure \@ref(fig:CXCL12BLAsEPSCfigall) in Appendix (\@ref(BLACXCL12sEPSCappend)).
 
@@ -131,8 +131,8 @@ figure1
 
 Finally, the ability of exogenous CXCL12 to mediate inhibitory synaptic transmission was also assessed.
 Although, similarly to excitatory transmission, none of measured sIPSCs' parameters reached statistical significance when comparing baseline recordings to those following CXCL12 treatment, there is some trend in the frequency.
-As showed in Fig.\@ref(fig:CXCL12BLAsIPSCfreq), 2nM of CXCL12 reduced the GABAergic transmission onto `r print(pie_BLA_c2_freq$data$count[1]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])))` % of principal cells.
-In constrast, the `r (pie_BLA_c5_freq$data$count[2]` out of the `r print(pie_BLA_c5_freq$data$count[1] + pie_BLA_c5_freq$data$count[2] + pie_BLA_c5_freq$data$count[3])` showed increased frequency of sIPSCs. 
+As showed in Fig.\@ref(fig:CXCL12BLAsIPSCfreq), 2nM of CXCL12 reduced the GABAergic transmission onto `r print(pie_BLA_c2_freq$data$count[1]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3]))` % of principal cells.
+In contrast, the `r pie_BLA_c5_freq$data$count[2]` out of the `r print(pie_BLA_c5_freq$data$count[1] + pie_BLA_c5_freq$data$count[2] + pie_BLA_c5_freq$data$count[3])` showed increased frequency of sIPSCs. 
 In addition, sIPSCs' rise time is trendily increased by both doses of CXCL12 (Fig.\@ref(fig:CXCL12BLAsIPSCfreq)b and d).
 However, this multifaceted effect needs further replication and investigation.
 The details and plots of the amplitude and decay time of sIPSCs' can be found in the Appendix \@ref(BLACXCL12sIPSCappend) and in Fig. \@ref(fig:CXCL12BLAsIPSCall).
@@ -145,8 +145,157 @@ These effects of SDF-1 were mediated *via* CXCR4 as they were abrogated by admin
 
 ### CXCL12/CXCR4 modulation of the electrical properties in CeA neurons
 
-AMD3100 eliminates the beneficial effects of CXCL12, indicating that the CXCL12/CXCR4 signaling pathway is vitally important in improving the neurobehavioral outcomes of ischemic mice, so studies were performed to detect the expression of CXCR4. 
+<!--To explore the function of neuronally expressed CXCR4, we tested its ability to modulate the electrical activity of CeL neurons. 
+In contrast to what was observed in the basolateral amygdala, CXCL12 exerts more prominent electrophysiological effects in the central nucleus of the amygdala.-->
 
+#### Enhanced excitability of CeL neurons following CXCL12 treatment
+
+``` {r CXCL12CeAIVstats, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+# getting the table of statistics for all CeA df (LF + RS) condition of one experiment
+CXCL12_CeA_stat_all <- stat_table_exp_membr_extended((CeA_df_final_12))
+CXCL12_CeA_stat_2nM_all <- stat_table_exp_membr_extended(CeA_df_final_12 %>% filter(Experiment == 'CXCL12(2nM)'))
+CXCL12_CeA_stat_5nM_all <- stat_table_exp_membr_extended(CeA_df_final_12 %>% filter(Experiment == 'CXCL12(5nM)'))
+
+# selecting a stat_row so it prints nicely in text
+CXCL12_CeA_stat_all_gain <- as.data.frame(CXCL12_CeA_stat_all %>% dplyr::filter(Variable == 'gain') %>% dplyr::select(Statistics))
+CXCL12_CeA_stat_2nM_gain <- CXCL12_CeA_stat_all_gain$Statistics[1]
+CXCL12_CeA_stat_5nM_gain <- CXCL12_CeA_stat_all_gain$Statistics[2]
+CXCL12_CeA_stat_amd5nM_gain <- CXCL12_CeA_stat_all_gain$Statistics[3]
+CXCL12_CeA_stat_amda_gain <- CXCL12_CeA_stat_all_gain$Statistics[4]
+
+CXCL12_CeA_stat_all_thres <- as.data.frame(CXCL12_CeA_stat_all %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+CXCL12_CeA_stat_2nM_thres <- CXCL12_CeA_stat_all_thres$Statistics[1]
+CXCL12_CeA_stat_5nM_thres <- CXCL12_CeA_stat_all_thres$Statistics[2]
+CXCL12_CeA_stat_amd5nM_thres <- CXCL12_CeA_stat_all_thres$Statistics[3]
+CXCL12_CeA_stat_amda_thres <- CXCL12_CeA_stat_all_thres$Statistics[4]
+
+#### RS
+CXCL12_CeA_stat_RS <- stat_table_exp_membr_extended((CeA_df_final_12_RS))
+
+# selecting a stat_row so it prints nicely in text
+CXCL12_CeA_stat_RS_gain <- as.data.frame(CXCL12_CeA_stat_RS %>% dplyr::filter(Variable == 'gain') %>% dplyr::select(Statistics))
+CXCL12_CeA_stat_2nM_RS_gain <- CXCL12_CeA_stat_RS_gain$Statistics[1]
+CXCL12_CeA_stat_5nM_RS_gain <- CXCL12_CeA_stat_RS_gain$Statistics[2]
+CXCL12_CeA_stat_amd5nM_RS_gain <- CXCL12_CeA_stat_RS_gain$Statistics[3]
+CXCL12_CeA_stat_amda_RS_gain <- CXCL12_CeA_stat_RS_gain$Statistics[4]
+
+CXCL12_CeA_stat_RS_thres <- as.data.frame(CXCL12_CeA_stat_RS %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+CXCL12_CeA_stat_2nM_RS_thres <- CXCL12_CeA_stat_RS_thres$Statistics[1]
+CXCL12_CeA_stat_5nM_RS_thres <- CXCL12_CeA_stat_RS_thres$Statistics[2]
+CXCL12_CeA_stat_amd5nM_RS_thres <- CXCL12_CeA_stat_RS_thres$Statistics[3]
+CXCL12_CeA_stat_amda_RS_thres <- CXCL12_CeA_stat_RS_thres$Statistics[4]
+
+#### LF
+CXCL12_CeA_stat_LF <- stat_table_exp_membr_extended((CeA_df_final_12_LF))
+
+# selecting a stat_row so it prints nicely in text
+CXCL12_CeA_stat_LF_gain <- as.data.frame(CXCL12_CeA_stat_LF %>% dplyr::filter(Variable == 'gain') %>% dplyr::select(Statistics))
+CXCL12_CeA_stat_2nM_LF_gain <- CXCL12_CeA_stat_LF_gain$Statistics[1]
+CXCL12_CeA_stat_5nM_LF_gain <- CXCL12_CeA_stat_LF_gain$Statistics[2]
+CXCL12_CeA_stat_amd5nM_LF_gain <- CXCL12_CeA_stat_LF_gain$Statistics[3]
+CXCL12_CeA_stat_amda_LF_gain <- CXCL12_CeA_stat_LF_gain$Statistics[4]
+
+CXCL12_CeA_stat_LF_thres <- as.data.frame(CXCL12_CeA_stat_LF %>% dplyr::filter(Variable == 'Threshold') %>% dplyr::select(Statistics))
+CXCL12_CeA_stat_2nM_LF_thres <- CXCL12_CeA_stat_LF_thres$Statistics[1]
+CXCL12_CeA_stat_5nM_LF_thres <- CXCL12_CeA_stat_LF_thres$Statistics[2]
+CXCL12_CeA_stat_amd5nM_LF_thres <- CXCL12_CeA_stat_LF_thres$Statistics[3]
+CXCL12_CeA_stat_amda_LF_thres <- CXCL12_CeA_stat_LF_thres$Statistics[4]
+```
+
+First, the modulation of excitability of CeL neurons by CXCL12 was investigated.<!--To evaluate the previously reported anxiety-like induced behavior triggered by CXCL12,--> 
+Data reported in Figure \@ref(fig:) demonstrates that CXCL12, especially at higher dose (5nM), enhanced CeL neurons' excitability, measured as input-output curve <!--statistics, albo gain albo coś...-->.
+As described earlier, two main electrophysiological types of CeL neurons are Regular-Spiking and Late-Firing neurons.
+Thus, further analysis revealed that although this CXCL12-induced increased firing can be observed in both types of cells (\@ref(fig:CXCL12CeAexc)), it is more prominent and statistically significant in Late-Firing neurons (<!-- baseline -->). 
+
+```{r CXCL12CeAexc, fig.cap='**CXCL12 enhanced excitability of CeL neurons** ...**(a1-a3)** Boxplots presenting membrane resting potential each cell before and after CX3CL1 application in all CeL neurons (right), Regular-Spiking neurons (middle), and Late-Firing neurons (left). **(b1-b3)** Boxplots showing a gain of each cell before and after CX3CL1 application in all CeL neurons (right), Regular-Spiking neurons (middle), and Late-Firing neurons (left). **(c1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment. **(c2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. **(d1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment in the presence of AZD8797, the blocker of CX3CL1 receptor. **(d2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. **(e1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment in the presence of minocycline, the blocker of microglial activity. **(d2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. Scale bar: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE, warning= FALSE, fig.width= 12, fig.height= 10}
+
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+
+inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
+inset_frak2nM <- image_ggplot(inset_frak2nM)
+inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
+inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
+inset_azda <- image_read("images//results//inset_azd.png")
+inset_azda <- image_ggplot(inset_azda)
+inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
+inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
+inset_minoa <- image_read("images//results//inset_minoa.png")
+inset_minoa <- image_ggplot(inset_minoa)
+
+## subsetting only CX3CL1 conditions
+CeA_cxcl12_df_final_sub <- CeA_df_final_12 %>% dplyr::filter(Experiment %in% c("CXCL12(2nM)", "CXCL12(5nM)"))
+CeA_cxcl12_df_final_sub_RS <- CeA_df_final_12_RS %>% dplyr::filter(Experiment %in% c("CXCL12(2nM)", "CXCL12(5nM)"))
+CeA_cxcl12_df_final_sub_LF <- CeA_df_final_12_LF %>% dplyr::filter(Experiment %in% c("CXCL12(2nM)", "CXCL12(5nM)", "AMD3100 + \nCXCL12(5nM)", "AMD3100", "fluorocitrate + \nCXCL12(5nM)"))
+
+# GAIN
+bp_CeA_cxcl12_gain <- plot_boxplot(CeA_cxcl12_df_final_sub, gain, mtitle= "CeL neurons", ylabel = "gain", vary1 = 0, vary2 = 0.3, dot_size = 2)
+bp_CeA_cxcl12_gain <- bp_CeA_cxcl12_gain + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = 0.15)
+
+bp_CeA_cxcl12_gain_LF <- plot_boxplot(CeA_cxcl12_df_final_sub_LF, gain, mtitle= "Late-Firing \nneurons", ylabel = "gain", vary1 = 0, vary2 = 0.3, dot_size = 2)
+bp_CeA_cxcl12_gain_LF <- bp_CeA_cxcl12_gain_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = 0.15)
+
+bp_CeA_cxcl12_gain_RS <- plot_boxplot(CeA_cxcl12_df_final_sub_RS, gain, mtitle= "Regular-Spiking \nneurons", ylabel = "gain", vary1 = 0, vary2 = 0.3, dot_size = 2)
+bp_CeA_cxcl12_gain_RS <- bp_CeA_cxcl12_gain_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = 0.15)
+
+# Threshold
+bp_CeA_cxcl12_thres <- plot_boxplot(CeA_cxcl12_df_final_sub, Treshold1_all, mtitle= "", ylabel = "Threshold current (mV)", vary1 = -60, vary2 = -10, dot_size = 2)
+bp_CeA_cxcl12_thres <- bp_CeA_cxcl12_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = -25)
+
+bp_CeA_cxcl12_thres_LF <- plot_boxplot(CeA_cxcl12_df_final_sub_LF, Treshold1_all, mtitle= "", ylabel = "Threshold current (mV)", vary1 = -60, vary2 = -10, dot_size = 2)
+bp_CeA_cxcl12_thres_LF <- bp_CeA_cxcl12_thres_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = -25)
+
+bp_CeA_cxcl12_thres_RS <- plot_boxplot(CeA_cxcl12_df_final_sub_RS, Treshold1_all, mtitle= "", ylabel = "Threshold current (mV)", vary1 = -60, vary2 = -10, dot_size = 2)
+bp_CeA_cxcl12_thres_RS <- bp_CeA_cxcl12_thres_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),
+ strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE,  size = 10, face = "bold", label.y = -25)
+
+### making representative plots 
+## cxcl12
+#frak2nM_IV_subset <- CeA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(20)) # subtracting one representative cell from whole dataframe
+#frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "21303018"] = "" #renaming the name - instead the name of the file - the name of the condition
+#representative_frak2nM <- frak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # making a plot
+# ## importing traces  
+# 
+
+# 
+#powinny być nowe IV_representative_minoa <- fig("images//results//IV_representative_minoa.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+#traces_frak2nM <- fig("images//results//CX3CL1_CeA_IV_traces_frak2nM.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+
+### general representative IV figure
+#figure_IV <- representative_frak2nM | representative_azdfrak2nM | representative_minofrak2nM
+
+#using patchwork to do layout of the figure
+
+A <- ((bp_CeA_cxcl12_gain | bp_CeA_cxcl12_gain_RS | bp_CeA_cxcl12_gain_LF) + plot_layout(tag_level = "new", widths = c(0.6, 0.6, 1)))
+B <- ((bp_CeA_cxcl12_thres | bp_CeA_cxcl12_thres_RS | bp_CeA_cxcl12_thres_LF) + plot_layout(tag_level = "new", widths = c(0.6, 0.6, 1)))
+#C <- (((representative_frak2nM +  ggtitle('CX3CL1(2nM)'))| traces_frak2nM) + plot_layout(tag_level = "new", widths = c(0.5,1))) 
+#D <- (((representative_azdfrak2nM +  ggtitle('AZD8797 + CX3CL1(2nM)'))| traces_azdfrak) + plot_layout(tag_level = "new", widths = c(0.5,1))) 
+#E <- (((representative_minofrak2nM +  ggtitle('minocycline + CX3CL1(2nM)')) | traces_minofrak) + plot_layout(tag_level = "new", widths = c(0.5,1))) 
+
+des <- "
+AAA
+BBB
+"
+
+fig2 <- wrap_plots(A = A, B= B, design = des) #,  C = C, D = D, E = E
+
+
+fig2 <- fig2 + plot_annotation(tag_levels = c('a', '1'))
+fig2
+
+```
+
+
+Interestingly, despite CXCL12-induced enhancement in CeL neurons' excitability, CXCL12 does not modulate any other membrane properties in those neurons. 
+Figures and detailed description are located in Appendix \@ref(CXCL12CeAmembr). 
+
+
+AMD3100 eliminates the beneficial effects of CXCL12, indicating that the CXCL12/CXCR4 signaling pathway is vitally important in improving the neurobehavioral outcomes of ischemic mice, so studies were performed to detect the expression of CXCR4. 
 
 
 ##### inspiration

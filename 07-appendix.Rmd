@@ -1252,6 +1252,85 @@ figure1
 
 ```
 
+#### No roboust effect of CXCL12 action on the GABAergic transmission in the BLA  {#BLACXCL12sIPSCappend}
+
+CXCL12 does not induce any marked change in GABAergic transmission in the BLA (see Table <!-- --> and Fig. \@ref(fig:CXCL12BLAsIPSCall)).
+
+``` {r CXCL12BLAsIPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+ 
+table_BLA_sIPSC <- CXCL12_BLA_sIPSC_stat_all  %>% 
+gt(groupname_col = "Variable") %>%
+   fmt_markdown(columns = c("Experiment")) %>%
+    tab_options(
+      table.font.names = "Calibri",
+      table.font.size = 12
+  ) %>% #table.font.size = 11
+#  tab_options(
+ #   table.width = pct(100)) %>%
+      tab_style(
+    style = list(
+      cell_text(weight = "bold")
+      ),
+    locations = cells_row_groups()
+  ) %>%
+    opt_row_striping() %>%
+      tab_header(
+    title = ("Table 7.x. Statistics of all measured parameters regarding CXCL12 effects on the inhibitory synaptic transmission onto BLA principal cells"),
+     subtitle = md("")) %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("")) %>%
+   gtsave("CXCL12_BLA_sIPSC_table.html")
+
+knitr::include_graphics("CXCL12_BLA_sIPSC_table.html")
+
+```
+
+```{r CXCL12BLAsIPSCall, fig.cap='**CXCL12 does not modulate GABAergic transmission onto principal cells in the BLA**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 8, fig.height= 8}
+
+bp_BLA_freq <- plot_boxplot(BLA_sIPSC_final_12, median_Frequency, ylabel = "sIPSC Frequency (Hz)", vary1 = 0, vary2 = 6, dot_size = 2,  mtitle = "") 
+bp_BLA_freq <- bp_BLA_freq + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bpn_BLA_freq <- plot_norm(BLA_sIPSC_final_12, median_Frequency, ylabel = "normalized \n sIPSC Frequency (%)", mtitle = "sIPSC Frequency - \n BLA") + theme(plot.title = element_text(size=14, face="bold")) #+  annotate("text", x = 'CXCL12(2nM)', y = 110, label = "p = 0.047")
+
+pie_BLA_c2_freq <- BLA_sIPSC_final_12 %>% filter(Experiment == 'CXCL12(2nM)') %>% plot_pie2(median_Frequency, mtitle = "CXCL12(2nM)") + theme(plot.title = element_text(size = 12, hjust = 0.5))
+pie_BLA_c5_freq <- BLA_sIPSC_final_12 %>% filter(Experiment == 'CXCL12(5nM)') %>% plot_pie2(median_Frequency, mtitle = "CXCL12(5nM)") + theme(plot.title = element_text(size = 12, hjust = 0.5))
+
+#Amplitude
+bp_BLA_amp <- plot_boxplot(BLA_sIPSC_final_12, median_Amplitude, ylabel = "sIPSC Amplitude (pA)", vary1 = 0, vary2 = 20, dot_size = 2,  mtitle = "") 
+bp_BLA_amp <- bp_BLA_amp + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bpn_BLA_amp <- plot_norm(BLA_sIPSC_final_12, median_Amplitude, ylabel = "normalized \n sIPSC Amplitude (%)", mtitle = "sIPSC Amplitude - \n BLA") + theme(plot.title = element_text(size=14, face="bold")) #+  annotate("text", x = 'CXCL12(2nM)', y = 110, label = "p = 0.047")
+
+pie_BLA_c2_amp <- BLA_sIPSC_final_12 %>% filter(Experiment == 'CXCL12(2nM)') %>% plot_pie2(median_Amplitude, mtitle = "CXCL12(2nM)") + theme(plot.title = element_text(size = 12, hjust = 0.5))
+pie_BLA_c5_amp <- BLA_sIPSC_final_12 %>% filter(Experiment == 'CXCL12(5nM)') %>% plot_pie2(median_Amplitude, mtitle = "CXCL12(5nM)") + theme(plot.title = element_text(size = 12, hjust = 0.5))
+
+# RiseTime
+
+bp_BLA_rt <- plot_boxplot(BLA_sIPSC_final_12, median_RiseTime, ylabel = "sIPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") 
+bp_BLA_rt <- bp_BLA_rt + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bpn_BLA_rt <- plot_norm(BLA_sIPSC_final_12, median_RiseTime, ylabel = "normalized \n sIPSC Rise Time (%)", mtitle = "sIPSC Rise Time - \n BLA") + theme(plot.title = element_text(size=14, face="bold")) #+  annotate("text", x = 'CXCL12(2nM)', y = 110, label = "p = 0.047")
+
+pie_BLA_c2_rt <- BLA_sIPSC_final_12 %>% filter(Experiment == 'CXCL12(2nM)') %>% plot_pie2(median_RiseTime, mtitle = "CXCL12(2nM)") + theme(plot.title = element_text(size = 12, hjust = 0.5))
+pie_BLA_c5_rt <- BLA_sIPSC_final_12 %>% filter(Experiment == 'CXCL12(5nM)') %>% plot_pie2(median_RiseTime, mtitle = "CXCL12(5nM)") + theme(plot.title = element_text(size = 12, hjust = 0.5))
+
+
+# Decay Time
+bp_BLA_dt <- plot_boxplot(BLA_sIPSC_final_12, median_DecayTau, ylabel = "sIPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") 
+bp_BLA_dt <- bp_BLA_dt + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+  annotate("text", x = 'CXCL12(2nM)', y = 110, label = "p = 0.047")
+bpn_BLA_dt <- plot_norm(BLA_sIPSC_final_12, median_DecayTau, ylabel = "normalized \n sIPSC Decay Time (%)", mtitle = "sIPSC Decay Time - \n BLA") + theme(plot.title = element_text(size=14, face="bold")) #+  annotate("text", x = 'CXCL12(2nM)', y = 110, label = "p = 0.047")
+pie_BLA_c2_dt <- BLA_sIPSC_final_12 %>% filter(Experiment == 'CXCL12(2nM)') %>% plot_pie2(median_DecayTau, mtitle = "CXCL12(2nM)") + theme(plot.title = element_text(size = 12, hjust = 0.5))
+pie_BLA_c5_dt <- BLA_sIPSC_final_12 %>% filter(Experiment == 'CXCL12(5nM)') %>% plot_pie2(median_DecayTau, mtitle = "CXCL12(5nM)") + theme(plot.title = element_text(size = 12, hjust = 0.5))
+
+
+figure1 <- (bp_BLA_freq| bp_BLA_amp) /
+  (bp_BLA_rt| bp_BLA_dt)
+           
+
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1')) #+ plot_layout(heights = c(1,1,0.25)) 
+figure1
+```
+
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   
 

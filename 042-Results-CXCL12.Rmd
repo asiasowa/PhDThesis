@@ -28,17 +28,9 @@ CXCL12_5nM_BLA_sEPSC_stat_freq <- CXCL12_5nM_BLA_sEPSC_stat_all$Statistics[1]
 To study whether BLA network can be regulated by CXCL12, whole-cell patch-clamp recordings were obtained from principal cells.<!--, measuring their excitability and intrinsic properties, as well as synaptic transmission.-->
 The intrinsic membrane properties and synaptic transmission were measured using analogous protocols as in the CX3CL1 study. 
 Regarding principal cells' excitability, no significant effect on basal excitability, as assessed by input-output curves, was found at both CXCL12 concentration (2nM and 5nM) despite a trend toward increased excitability (<!--ANOVA?--> \@ref(fig:CXCL12BLAintrinsic)a).
-This was especially true for 5nM concentration; however, the high level of variation is observed (\@ref(fig:(CXCL12BLAintrinsic)b).
+This was especially true for CXCL12 at 5nM concentration; however, the high level of variation is observed (\@ref(fig:(CXCL12BLAintrinsic)b).
 This issue warrants further investigation.<!--  Comparing NF1707 ( n = 10) and CTR ( n = 8) groups, no significant effect on basal excitability, as assessed by input – output curves, was found despite a trend toward increased excitability (Supplementary Figure S7; F(1,16) = 2.280, P = 0.151). Repeated-measure ANOVA showed no group × intensity interaction (F (2.080,33.27) = 1.984, P = 0.152, Greenhouse – Geisser correction).-->
-Moreover, other measured membrane intrinsic properties of principal cells were also seemed unaffected by CXCL12 treatment, as showed in Fig. \@ref() in Appendix \@ref()).
-
-Similarly, to evaluate the potential contribution of the chemokine CXCL12 in the modulation of excitatory synaptic transmission, the frequency, amplitude, and kinetics of sEPSCs were analyzed.
-As shown in Fig.\@ref(fig:CXCL12BLAsEPSCfreq), it is tempting to speculate that while the concentration of 2nM does reduce the sEPSC... a partial reduction between NMDA and NMDA/CX3CL1 treated cells was observed, they were not statistical significant (`r CXCL12_2nM_BLA_sEPSC_stat_freq` and `r CXCL12_5nM_BLA_sEPSC_stat_freq`, respectively). 
-These findings also need further replication and investigation of the potential underlying mechanisms. <!--  indicating that additional opposite mechanisms were involved (although in three out of the ten neurons tested we still observed a decrease in the AP frequency)-->
-
-The ability of exogenous CXCL12 to mediate inhibitory synaptic transmission was also assessed.
-Indeed, similar to .... as reported in Figure 6 D , administration of CCL2 (100 nM, 30 min) to hippocampal cultures, during Glu insult, prevented neuronal cell death
-
+Moreover, other measured membrane intrinsic properties of principal cells were also seemed unaffected by CXCL12 treatment, as showed in Fig. \@ref(fig:CXCl12BLAexcitabilityfigall) in Appendix \@ref(BLACXCL12membrappend)).
 
 ```{r CXCL12BLAintrinsic, fig.cap='**2nM and 5nM CXCL12 does not affect BLA excitability** **(a1-a2)** Plots presenting population data of neurons before (blue) and after(red) CXCL12 treatment as a function of the frequency and injected depolarizing current steps', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 8, fig.height= 5}
 # IV grouped and individual
@@ -63,8 +55,16 @@ figure1 <- bp_BLA_freq /
 
 figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
 figure1
+
+
 ```
 
+Similarly, to evaluate the potential contribution of the chemokine CXCL12 in the modulation of excitatory synaptic transmission, the frequency, amplitude, and kinetics of sEPSCs were analyzed.
+As shown in Fig.\@ref(fig:CXCL12BLAsEPSCfreq), the proportion of principal cell's displayed a change in the frequency of the sEPSCs, although these effects were not statistical significant (`r CXCL12_2nM_BLA_sEPSC_stat_freq` and `r CXCL12_5nM_BLA_sEPSC_stat_freq`, respectively).<!-- ładniej napisać--> 
+Nevertheless, at 2nM, the reduction in the frequency of sEPSCs is observed in `r pie_BLA_c2_freq$data$count[1]` out of `r print(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` cells following exogenous CXCL12 application, whereas this chemokine decreased the excitatory transmission onto `r pie_BLA_c2_freq$data$count[2]` out of `r print(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` neurons (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b1).
+Similarly, when CXCL12 at concentration of 5nM was bath-applied, `r print(pie_BLA_c2_freq$data$count[1]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])))`% of principal cells responded with decreased frequency of sEPSCs, while glutamatergic synaptic transmission was increased onto `r print(pie_BLA_c2_freq$data$count[2]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])))`% of neurons (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b2).
+These findings also need further replication and investigation of the potential underlying mechanisms. <!--  indicating that additional opposite mechanisms were involved (although in three out of the ten neurons tested we still observed a decrease in the AP frequency)-->
+The rest of the data concerning excitatory synaptic transmission are illustrated in Figure \@ref(fig:CXCL12BLAsEPSCfigall) in Appendix (\@ref(BLACXCL12sEPSCappend)).
 
 ## CXCL12/CXCR4 in the CeA
 

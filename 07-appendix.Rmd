@@ -1075,7 +1075,7 @@ figure1
 
 ### CXCL12's actions
 
-#### CXCL12 does not affect intrinsic membrane properties in pyramidal-like cells in the basolateral rat amygdala
+#### CXCL12 does not affect intrinsic membrane properties in pyramidal-like cells in the basolateral rat amygdala {#BLACXCL12membrappend}
 
 As presented in Table ...<!-- --> and Fig. \@ref(fig:), treatment with CXCL12 had negligable effect on measured membrane parameters.
 
@@ -1166,9 +1166,9 @@ figure1 <- (bp_BLA_gain | bp_BLA_thres | bp_BLA_adap) /
 figure1
 ```
 
-#### No significant effects on excitatory synaptic transmission were observed following application of exogenous CXCL12
+#### No significant effects on excitatory synaptic transmission were observed following application of exogenous CXCL12 {#BLACXCL12sEPSCappend}
 
-Data illustrated in Table <!-- --> and Figure \@ref(fig:) indicate that exogenous CXCL12 did not affect excitatory synaptic transmission. 
+Data illustrated in Table <!-- --> and Figure \@ref(fig:CXCL12BLAsEPSCfigall) indicate that exogenous CXCL12 did not affect excitatory synaptic transmission. 
 
 ``` {r CXCL12BLAsEPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
  

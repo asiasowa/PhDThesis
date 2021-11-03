@@ -151,14 +151,14 @@ bp_BLA_sag <- plot_boxplot(BLA_df_sag, sag_ratio_140, ylabel = "sag ratio @-140 
 bp_BLA_sag <- bp_BLA_sag + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), 
   strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
 
-pie_BLA_frak_sag <- BLA_df_sag %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_frak5nM_sag <- BLA_df_sag %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(sag_ratio_140, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_antifrak_sag <- BLA_df_sag %>% filter(Experiment == 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_azdfrak_sag <- BLA_df_sag %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_azd_sag <- BLA_df_sag %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(sag_ratio_140, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_minofrak_sag <- BLA_df_sag %>% filter(Experiment == 'minocycline + \nCX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_mino_sag <- BLA_df_sag %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(sag_ratio_140, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
-pie_BLA_picro_sag <- BLA_df_sag %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_BLA_frak_sag <- BLA_df_sag %>% filter(Experiment == 'CX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, "CX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_BLA_frak5nM_sag <- BLA_df_sag %>% filter(Experiment == 'CX3CL1(5nM)') %>% plot_pie_val3(sag_ratio_140, "CX3CL1(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_BLA_antifrak_sag <- BLA_df_sag %>% filter(Experiment == 'anti-CX3CR1 + \nCX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, 'anti-CX3CR1 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_BLA_azdfrak_sag <- BLA_df_sag %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, "AZD8797 + \nCX3CL1(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_BLA_azd_sag <- BLA_df_sag %>% filter(Experiment == "AZD8797") %>% plot_pie_val3(sag_ratio_140, "AZD8797") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_BLA_minofrak_sag <- BLA_df_sag %>% filter(Experiment == 'minocycline + \nCX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, 'minocycline + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_BLA_mino_sag <- BLA_df_sag %>% filter(Experiment == 'minocycline') %>% plot_pie_val3(sag_ratio_140, "minocycline") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+#pie_BLA_picro_sag <- BLA_df_sag %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% plot_pie_val3(sag_ratio_140, 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') + theme(plot.title = element_text(size= 10, hjust = 0.5))
 
 
 
@@ -233,7 +233,7 @@ figure1 <- (inset_frak2nM  | inset_frak5nM | inset_ab | inset_azdfrak2nM | inset
   bp_BLA_rm / 
   bp_BLA_cap + plot_layout(heights = c(1, 0.8, 0.8, 0.8, 0.8))
 
-figure2 <- bp_BLA_vm / bp_BLA_apw / bp_BLA_apa / bp_BLA_fast / bp_BLA_sag
+figure2 <- bp_BLA_vm / bp_BLA_apw / bp_BLA_apa / bp_BLA_fast #/ bp_BLA_sag
 
 
  # bp_BLA_rm #/
@@ -958,7 +958,7 @@ figure1
 
 ```
 
-#### CX3CL1 affect inhibitory synaptic transmission in CeL
+#### CX3CL1 affect inhibitory synaptic transmission in CeL {#CeACX3CL1sIPSCappendix}
 
 Table <!----> summarizes the statistics regarding sIPSC characteristics after CX3CL1, AZD8797, and minocycline application. 
 
@@ -1014,7 +1014,7 @@ knitr::include_graphics("CeA_CX3CL1_sIPSC_table.html")
 
 ```
 
-Fig. \@ref(fig:(CX3CL1CeAsIPSCfigappendix)) shows kinetics of inhibitory postsynaptic currents ....
+Fig. \@ref(fig:(CX3CL1CeAsIPSCfigappendix)) shows kinetics of inhibitory postsynaptic currents according to different experimental conditions.
 
 ```{r CX3CL1CeAsIPSCfigappendix, fig.cap='**CX3CL1 does not affect kinetics of inhibitory postsynaptic currents in the CeL** **(a)** Boxplots presenting population data of sIPSCs **(a1-2)** rise time and **(d1-d2)** decay time before and after in different experimental conditions.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 8, fig.width= 15}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -1073,6 +1073,131 @@ figure1
 
 ```
 
+### CXCL12's actions
+
+#### CXCL12 does not affect intrinsic membrane properties in pyramidal-like cells in the basolateral rat amygdala
+
+As presented in Table ...<!-- --> and Fig. \@ref(fig:), treatment with CXCL12 had negligable effect on measured membrane parameters.
+
+``` {r CXCL12BLAmembrtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+
+table <- CXCL12_BLA_membr_stat_all %>% 
+gt(groupname_col = "Variable") %>%
+   fmt_markdown(columns = c("Experiment")) %>%
+    tab_options(
+      table.font.names = "Calibri",
+      table.font.size = 12
+  ) %>% #table.font.size = 11
+#  tab_options(
+ #   table.width = pct(100)) %>%
+      tab_style(
+    style = list(
+      cell_text(weight = "bold")
+      ),
+    locations = cells_row_groups()
+  ) %>%
+    opt_row_striping() %>%
+      tab_header(
+    title = ("Table 7.x. Statistics of all measured parameters in relation to BLA principal cells membrane properties following CXCL12 application"),
+     subtitle = md("")) %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md(""))  %>%
+             gtsave("CXCL12_BLA_membrane_table.html")
+
+knitr::include_graphics("CXCL12_BLA_membrane_table.html")
+```
+
+```{r CXCl12BLAexcitabilityfigall, fig.cap= 'CXCL12 did not significantly change any of measured membrane properties of BLA principal cells.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 12, fig.width= 12}
+
+# GAIN
+bp_BLA_gain <- plot_boxplot(BLA_df_final_12, gain, mtitle = "", ylabel = "gain",  dot_size = 2)
+bp_BLA_gain <- bp_BLA_gain + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+# THRESHOLD CURRENT
+bp_BLA_thres <- plot_boxplot(BLA_df_final_12, Treshold1_all, vary1 = -60, vary2 = -20, mtitle = "", ylabel = "Threshold current (mV)", vary1 = -60, vary2 = -20, dot_size = 2)
+bp_BLA_thres <- bp_BLA_thres + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# ADAPTATION
+bp_BLA_adap <- plot_boxplot(BLA_df_final_12, Adaptation_ratio, mtitle = "", ylabel = "Adaptation ratio", vary1 = 0, vary2 = 1.2, dot_size = 2)
+bp_BLA_adap <- bp_BLA_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+
+# INPUT RESISTANCE
+bp_BLA_rm <- plot_boxplot(BLA_df_final_12, Rm_20, mtitle = "", ylabel = "Input resistance (MOhm)", vary1 = 50, vary2 = 250, dot_size = 2)
+bp_BLA_rm <- bp_BLA_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# TAU
+bp_BLA_tau <- plot_boxplot(BLA_df_final_12, tau_20, mtitle = "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
+bp_BLA_tau <- bp_BLA_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# CAPACITANCE
+bp_BLA_cap <- plot_boxplot(BLA_df_final_12, C_20, mtitle = "", ylabel = "Capacitance (pF)", vary1 = 0, vary2 = 400, dot_size = 2)
+bp_BLA_cap <- bp_BLA_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# SAG
+# bp_BLA_sag <- plot_boxplot(BLA_df_sag, sag_ratio, mtitle = "", ylabel = "sag ratio @-140 pA", dot_size = 2)
+# bp_BLA_sag <- bp_BLA_sag + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+# 
+# pie_BLA_c2_sag <- BLA_df_sag %>% filter(Experiment == 'CXCL12(2nM)') %>% plot_pie_val3(sag_ratio, mtitle = "CXCL12(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_BLA_c5_sag <- BLA_df_sag %>% filter(Experiment == 'CXCL12(5nM)') %>% plot_pie_val3(sag_ratio, mtitle = "CXCL12(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+
+# RESTING MEMBRANE POTENTIAL
+bp_BLA_vm <- plot_boxplot(BLA_df_final_12, RMS, mtitle = "", ylabel = "Resting membrane potential (mV)", vary1 = -80, vary2 = -55, dot_size = 2)
+bp_BLA_vm <- bp_BLA_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+# ACTION POTENTIAL WIDTH
+bp_BLA_apw <- plot_boxplot(BLA_df_final_12, AP_width1_all, mtitle = "", ylabel = "Action potential width (ms)", vary1 = 0, vary2 = 1.5, dot_size = 2)
+bp_BLA_apw <- bp_BLA_apw + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) # + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# ACTION POTENTIAL AMPLITUDE
+bp_BLA_apa <- plot_boxplot(BLA_df_final_12, AP_amp1_all, mtitle = "", ylabel = "Action potential amplitude (pA)", vary1 = 65, vary2 = 105, dot_size = 2)
+bp_BLA_apa <- bp_BLA_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# FAST AHP
+bp_BLA_fast <- plot_boxplot(BLA_df_final_12, AHPf1_all, mtitle = "", ylabel = "fast AHP (pA)", vary1 = -25, vary2 = 0, dot_size = 2)
+bp_BLA_fast <- bp_BLA_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+figure1 <- (bp_BLA_gain | bp_BLA_thres | bp_BLA_adap) / 
+            (bp_BLA_rm | bp_BLA_tau | bp_BLA_cap) / 
+            (bp_BLA_apw | bp_BLA_apa | bp_BLA_fast) / 
+            (bp_BLA_vm | plot_spacer() | plot_spacer() )
+  
+figure1
+```
+
+#### No significant effects on excitatory synaptic transmission were observed following application of exogenous CXCL12
+
+Data illustrated in Table <!-- --> and Figure \@ref(fig:) indicate that exogenous CXCL12 did not affect excitatory synaptic transmission. 
+
+``` {r CXCL12BLAsEPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+ 
+table_BLA_sEPSC <- CXCL12_BLA_sEPSC_stat_all  %>% 
+gt(groupname_col = "Variable") %>%
+   fmt_markdown(columns = c("Experiment")) %>%
+    tab_options(
+      table.font.names = "Calibri",
+      table.font.size = 12
+  ) %>% #table.font.size = 11
+#  tab_options(
+ #   table.width = pct(100)) %>%
+      tab_style(
+    style = list(
+      cell_text(weight = "bold")
+      ),
+    locations = cells_row_groups()
+  ) %>%
+    opt_row_striping() %>%
+      tab_header(
+    title = ("Table 7.x. Statistics of all measured parameters regarding CXCL12 effects on excitatory synaptic transmission onto BLA principal cells"),
+     subtitle = md("")) %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("")) %>%
+   gtsave("CXCL12_BLA_sEPSC_table.html")
+
+knitr::include_graphics("CXCL12_BLA_sEPSC_table.html")
+
+```
 
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   

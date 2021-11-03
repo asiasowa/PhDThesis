@@ -1331,6 +1331,176 @@ figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1')) #+ plot_layout(he
 figure1
 ```
 
+#### Besides enhancing excitability, CXCL12 does not seem to affect any other intrinsic membrane properties {#CXCL12CeAmembr}
+
+Table <!-- --> and Figures \@ref(fig:CXCl12CeAmembrfigall1) and \@ref(fig:CXCl12CeAmembrfigall2) report no prominent difference in membrane properties of CeL neurons.
+
+``` {r CXCL12CeAmembrtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+
+
+
+C1_12 <- CXCL12_CeA_stat_all %>% mutate(Population = "CeL neurons") %>% dplyr::select(Population, everything())
+C2_12 <- CXCL12_CeA_stat_RS %>% mutate(Population = "Regular-Spiking") %>% dplyr::select(Population, everything())
+C3_12 <- CXCL12_CeA_stat_LF %>% mutate(Population = "Late-Firing") %>% dplyr::select(Population, everything())
+
+
+
+CXCL12_CeA_df_table <- C1_12 %>% dplyr::bind_rows(C2_12) %>% dplyr::bind_rows(C3_12)
+
+CXCL12_table_CeA_membr <- CXCL12_CeA_df_table  %>% 
+gt(groupname_col = "Population") %>%
+   fmt_markdown(columns = c("Experiment")) %>%
+    tab_options(
+      table.font.names = "Calibri",
+      table.font.size = 12
+  ) %>% #table.font.size = 11
+#  tab_options(
+ #   table.width = pct(100)) %>%
+      tab_style(
+    style = list(
+      cell_text(weight = "bold")
+      ),
+    locations = cells_row_groups()
+  ) %>%
+    opt_row_striping() %>%
+      tab_header(
+    title = ("Table 7.4. Summary of all measured membrane parameters in CeL neurons following CXCL12 treatment, focusing on their two electrophysiological types"),
+     subtitle = md("")) %>%
+    opt_row_striping() %>%
+   tab_source_note(source_note = md("")) %>%
+   gtsave("CXCL12_CeA_membr_table.html")
+
+knitr::include_graphics("CXCL12_CeA_membr_table.html")
+
+```
+
+```{r CXCl12CeAmembrfigall1, fig.cap= 'No prominent changes in adaptation ratio, input resistance, membrane time constant, and cell capacitance are observed in CeL neurons after CXCL12 application.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 12, fig.width= 15}
+
+CeA_df_final_12_RS <- CeA_df_final_12_RS %>% dplyr::filter(Experiment %in% c("CXCL12(2nM)", "CXCL12(5nM)"))
+# ADAPTATION
+bp_CeA_adap <- plot_boxplot(CeA_df_final_12, Adaptation_ratio, mtitle = "CeL neurons", ylabel = "Adaptation ratio", vary1 = 0, vary2 = 1.3, dot_size = 2)
+bp_CeA_adap <- bp_CeA_adap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+bp_CeA_adap_LF <- plot_boxplot(CeA_df_final_12_LF, Adaptation_ratio, mtitle = "Late-Firing \nneurons", ylabel = "Adaptation ratio", vary1 = 0, vary2 = 1.3, dot_size = 2)
+bp_CeA_adap_LF <- bp_CeA_adap_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+bp_CeA_adap_RS <- plot_boxplot(CeA_df_final_12_RS, Adaptation_ratio, mtitle = "Regular-Firing \nneurons", ylabel = "Adaptation ratio", vary1 = 0, vary2 = 1.3, dot_size = 2)
+bp_CeA_adap_RS <- bp_CeA_adap_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+# INPUT RESISTANCE
+bp_CeA_rm <- plot_boxplot(CeA_df_final_12, Rm_20, mtitle = "", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 910, dot_size = 2)
+bp_CeA_rm <- bp_CeA_rm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_rm_LF <- plot_boxplot(CeA_df_final_12_LF, Rm_20, mtitle = "", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 910, dot_size = 2)
+bp_CeA_rm_LF <- bp_CeA_rm_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_rm_RS <- plot_boxplot(CeA_df_final_12_RS, Rm_20, mtitle = "", ylabel = "Input resistance (MOhm)", vary1 = 100, vary2 = 910, dot_size = 2)
+bp_CeA_rm_RS <- bp_CeA_rm_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# TAU
+bp_CeA_tau <- plot_boxplot(CeA_df_final_12, tau_20, mtitle = "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
+bp_CeA_tau <- bp_CeA_tau + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_tau_LF <- plot_boxplot(CeA_df_final_12_LF, tau_20, mtitle = "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
+bp_CeA_tau_LF <- bp_CeA_tau_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_tau_RS <- plot_boxplot(CeA_df_final_12_RS, tau_20, mtitle = "", ylabel = "tau (ms)", vary1 = 0, vary2 = 40, dot_size = 2)
+bp_CeA_tau_RS <- bp_CeA_tau_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# CAPACITANCE
+bp_CeA_cap <- plot_boxplot(CeA_df_final_12, C_20, mtitle = "", ylabel = "Capacitance (pF)", vary1 = 0, vary2 = 200, dot_size = 2)
+bp_CeA_cap <- bp_CeA_cap + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_cap_LF <- plot_boxplot(CeA_df_final_12_LF, C_20, mtitle = "", ylabel = "Capacitance (pF)", vary1 = 0, vary2 = 200, dot_size = 2)
+bp_CeA_cap_LF <- bp_CeA_cap_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_cap_RS <- plot_boxplot(CeA_df_final_12_RS, C_20, mtitle = "", ylabel = "Capacitance (pF)", vary1 = 0, vary2 = 200, dot_size = 2)
+bp_CeA_cap_RS <- bp_CeA_cap_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# SAG
+# bp_CeA_sag <- plot_boxplot(CeA_df_sag, sag_ratio, mtitle = "", ylabel = "sag ratio @-140 pA", dot_size = 2)
+# bp_CeA_sag <- bp_CeA_sag + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+# 
+# pie_CeA_c2_sag <- CeA_df_sag %>% filter(Experiment == 'CXCL12(2nM)') %>% plot_pie_val3(sag_ratio, mtitle = "CXCL12(2nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+# pie_CeA_c5_sag <- CeA_df_sag %>% filter(Experiment == 'CXCL12(5nM)') %>% plot_pie_val3(sag_ratio, mtitle = "CXCL12(5nM)") + theme(plot.title = element_text(size= 10, hjust = 0.5))
+
+
+# RESTING MEMBRANE POTENTIAL
+bp_CeA_vm <- plot_boxplot(CeA_df_final_12, RMS, mtitle = "", ylabel = "Resting membrane potential (mV)", vary1 = -95, vary2 = -30, dot_size = 2)
+bp_CeA_vm <- bp_CeA_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+bp_CeA_vm_LF <- plot_boxplot(CeA_df_final_12_LF, RMS, mtitle = "", ylabel = "Resting membrane potential (mV)", vary1 = -95, vary2 = -30, dot_size = 2)
+bp_CeA_vm_LF <- bp_CeA_vm_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+bp_CeA_vm_RS <- plot_boxplot(CeA_df_final_12_RS, RMS, mtitle = "", ylabel = "Resting membrane potential (mV)", vary1 = -95, vary2 = -30, dot_size = 2)
+bp_CeA_vm_RS <- bp_CeA_vm_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
+
+# ACTION POTENTIAL WIDTH
+bp_CeA_apw <- plot_boxplot(CeA_df_final_12, AP_width1_all, mtitle = "", ylabel = "Action potential width (ms)", vary1 = 0, vary2 = 2, dot_size = 2)
+bp_CeA_apw <- bp_CeA_apw + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) # + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_apw_LF <- plot_boxplot(CeA_df_final_12_LF, AP_width1_all, mtitle = "", ylabel = "Action potential width (ms)", vary1 = 0, vary2 = 2, dot_size = 2)
+bp_CeA_apw_LF <- bp_CeA_apw_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) # + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_apw_RS <- plot_boxplot(CeA_df_final_12_RS, AP_width1_all, mtitle = "", ylabel = "Action potential width (ms)", vary1 = 0, vary2 = 2, dot_size = 2)
+bp_CeA_apw_RS <- bp_CeA_apw_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) # + stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# ACTION POTENTIAL AMPLITUDE
+bp_CeA_apa <- plot_boxplot(CeA_df_final_12, AP_amp1_all, mtitle = "", ylabel = "Action potential amplitude (pA)", vary1 = 50, vary2 = 105, dot_size = 2)
+bp_CeA_apa <- bp_CeA_apa + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_apa_LF <- plot_boxplot(CeA_df_final_12_LF, AP_amp1_all, mtitle = "", ylabel = "Action potential amplitude (pA)", vary1 = 50, vary2 = 105, dot_size = 2)
+bp_CeA_apa_LF <- bp_CeA_apa_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_apa_RS <- plot_boxplot(CeA_df_final_12_RS, AP_amp1_all, mtitle = "", ylabel = "Action potential amplitude (pA)", vary1 = 50, vary2 = 105, dot_size = 2)
+bp_CeA_apa_RS <- bp_CeA_apa_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+# FAST AHP
+bp_CeA_fast <- plot_boxplot(CeA_df_final_12, AHPf1_all, mtitle = "", ylabel = "fast AHP (pA)", vary1 = -25, vary2 = 0, dot_size = 2)
+bp_CeA_fast <- bp_CeA_fast + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_fast_LF <- plot_boxplot(CeA_df_final_12_LF, AHPf1_all, mtitle = "", ylabel = "fast AHP (pA)", vary1 = -25, vary2 = 0, dot_size = 2)
+bp_CeA_fast_LF <- bp_CeA_fast_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+bp_CeA_fast_RS <- plot_boxplot(CeA_df_final_12_RS, AHPf1_all, mtitle = "", ylabel = "fast AHP (pA)", vary1 = -25, vary2 = 0, dot_size = 2)
+bp_CeA_fast_RS <- bp_CeA_fast_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) #+ stat_compare_means(method = 'wilcox.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE)
+
+A <- (bp_CeA_adap | bp_CeA_adap_LF | bp_CeA_adap_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+B <- (bp_CeA_rm | bp_CeA_rm_LF | bp_CeA_rm_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+C <- (bp_CeA_tau | bp_CeA_tau_LF | bp_CeA_tau_RS)+ plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+D <- (bp_CeA_cap | bp_CeA_cap_LF | bp_CeA_cap_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+E <- (bp_CeA_apw | bp_CeA_apw_LF | bp_CeA_apw_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+F <- (bp_CeA_apa | bp_CeA_apa_LF | bp_CeA_apa_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+G <- (bp_CeA_fast | bp_CeA_fast_LF | bp_CeA_fast_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+H <- (bp_CeA_vm | bp_CeA_vm_LF | bp_CeA_vm_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+
+des <- "
+AAA
+BBB
+CCC
+DDD
+"
+
+des2 <- "
+EEE
+FFF
+GGG
+HHH
+"
+
+figure1 <- wrap_plots(A = A, B = B, C = C, D = D, design = des)
+figure2 <- wrap_plots(E = E, F=F, G=G , H=H, design = des2)
+  
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
+figure2 <- figure2 + plot_annotation(tag_levels = c('a', '1'))
+
+figure1
+```
+
+```{r CXCl12CeAmembrfigall2, fig.cap= 'No prominent changes in action potential width, AP amplitude as well as resting membrane potential are observed in CeL after CXCL12 application.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 12, fig.width= 15}
+figure2
+```
+
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   
 

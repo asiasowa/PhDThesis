@@ -891,7 +891,7 @@ CeA_df_cxcl12_5nM <- CeA_df_cxcl12_5nM %>% filter(!Cell %in% bad_Cells)
 ##### CeA AMD + cxcl12 5nM###############
 CeA_amd5nM_df <-readRDS(".//CeA//AMD//blocking5nM//membrane_table_CeA_AMD_CXCL12_5nM.rds") # 
 CeA_amd5nM_df <- CeA_amd5nM_df %>% mutate(Experiment = 'AMD + CXCL12(5nM)') %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type , everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
-bad_Cells <- c(8)
+bad_Cells <- c(8, 9)
 CeA_amd5nM_df <- CeA_amd5nM_df %>% filter(!Cell %in% bad_Cells)
 
 ##### CeA AMD alone ###############
@@ -1189,6 +1189,7 @@ BLA_cxcl12_2nM_sEPSC_inter$Filename <- as.character(BLA_cxcl12_2nM_sEPSC_inter$F
 BLA_cxcl12_5nM_sEPSC_inter <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_5nM_inter.csv"))
 BLA_cxcl12_5nM_sEPSC_inter <- BLA_cxcl12_5nM_sEPSC_inter %>% mutate(Experiment = 'CXCL12(5nM)') %>% dplyr::select(Experiment, Filename, Cell, Condition, everything())
 BLA_cxcl12_5nM_sEPSC_inter$Filename <- as.character(BLA_cxcl12_5nM_sEPSC_inter$Filename)
+2
 
 BLA_sEPSC_final_12_inter <-  BLA_cxcl12_2nM_sEPSC_inter  %>% bind_rows(BLA_cxcl12_5nM_sEPSC_inter)
 BLA_sEPSC_final_12_inter$Cell <- rep(1:(nrow(BLA_sEPSC_final_12_inter)/2), each = 2)

@@ -1426,13 +1426,13 @@ bp_CeA_cap_RS <- bp_CeA_cap_RS + facet_wrap(~ Experiment, nrow = 1, scales = "fr
 
 
 # RESTING MEMBRANE POTENTIAL
-bp_CeA_vm <- plot_boxplot(CeA_df_final_12, RMS, mtitle = "", ylabel = "Resting membrane potential (mV)", vary1 = -95, vary2 = -30, dot_size = 2)
+bp_CeA_vm <- plot_boxplot(CeA_df_final_12, RMS, mtitle = "CeL neurons", ylabel = "Resting membrane potential (mV)", vary1 = -95, vary2 = -30, dot_size = 2)
 bp_CeA_vm <- bp_CeA_vm + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
 
-bp_CeA_vm_LF <- plot_boxplot(CeA_df_final_12_LF, RMS, mtitle = "", ylabel = "Resting membrane potential (mV)", vary1 = -95, vary2 = -30, dot_size = 2)
+bp_CeA_vm_LF <- plot_boxplot(CeA_df_final_12_LF, RMS, mtitle = "Late-Firing \nneurons", ylabel = "Resting membrane potential (mV)", vary1 = -95, vary2 = -30, dot_size = 2)
 bp_CeA_vm_LF <- bp_CeA_vm_LF + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
 
-bp_CeA_vm_RS <- plot_boxplot(CeA_df_final_12_RS, RMS, mtitle = "", ylabel = "Resting membrane potential (mV)", vary1 = -95, vary2 = -30, dot_size = 2)
+bp_CeA_vm_RS <- plot_boxplot(CeA_df_final_12_RS, RMS, mtitle = "Regular-Spiking \nneurons", ylabel = "Resting membrane potential (mV)", vary1 = -95, vary2 = -30, dot_size = 2)
 bp_CeA_vm_RS <- bp_CeA_vm_RS + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5), strip.text = element_text(size = 11, face="bold"), strip.background = element_blank())
 
 # ACTION POTENTIAL WIDTH
@@ -1469,10 +1469,10 @@ A <- (bp_CeA_adap | bp_CeA_adap_LF | bp_CeA_adap_RS) + plot_layout(tag_level = "
 B <- (bp_CeA_rm | bp_CeA_rm_LF | bp_CeA_rm_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
 C <- (bp_CeA_tau | bp_CeA_tau_LF | bp_CeA_tau_RS)+ plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
 D <- (bp_CeA_cap | bp_CeA_cap_LF | bp_CeA_cap_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
-E <- (bp_CeA_apw | bp_CeA_apw_LF | bp_CeA_apw_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+H <- (bp_CeA_apw | bp_CeA_apw_LF | bp_CeA_apw_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
 F <- (bp_CeA_apa | bp_CeA_apa_LF | bp_CeA_apa_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
 G <- (bp_CeA_fast | bp_CeA_fast_LF | bp_CeA_fast_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
-H <- (bp_CeA_vm | bp_CeA_vm_LF | bp_CeA_vm_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
+E <- (bp_CeA_vm | bp_CeA_vm_LF | bp_CeA_vm_RS) + plot_layout(tag_level = "new", widths = c(1, 1, 0.5))
 
 des <- "
 AAA
@@ -1500,6 +1500,47 @@ figure1
 ```{r CXCl12CeAmembrfigall2, fig.cap= 'No prominent changes in action potential width, AP amplitude as well as resting membrane potential are observed in CeL after CXCL12 application.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 12, fig.width= 15}
 figure2
 ```
+
+#### Effects of CXCL12 on excitatory synaptic transmission in the CeL
+
+The detailed summary regarding CXCL12 actions on excitatory synaptic transmission in the CeL is presented in Table <!-- -->.
+
+```{r CXCL12CeAsEPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+
+CeA_CXCL12_sEPSC_stat_all <- CeA_CXCL12_sEPSC_stat_all %>% mutate(Type = "All CeL neurons") %>% dplyr::select(Type, everything()) 
+CeA_CXCL12_sEPSC_stat_RS  <- CeA_CXCL12_sEPSC_stat_RS %>% mutate(Type = "Regular-Spiking neurons") %>% dplyr::select(Type, everything())
+CeA_CXCL12_sEPSC_stat_LF <- CeA_CXCL12_sEPSC_stat_LF %>% mutate(Type = "Late-Firing neurons") %>% dplyr::select(Type, everything())
+
+CeA_cxcl12_df_tb <- CeA_CXCL12_sEPSC_stat_all  %>% dplyr::bind_rows(CeA_CXCL12_sEPSC_stat_RS) %>% dplyr::bind_rows(CeA_CXCL12_sEPSC_stat_LF)
+
+CeA_sEPSC_cxcl12_table <- CeA_cxcl12_df_tb %>% 
+gt(groupname_col = "Type") %>%
+   fmt_markdown(columns = c("Experiment")) %>%
+    tab_options(
+      table.font.names = "Calibri",
+      table.font.size = 12
+  ) %>% #table.font.size = 11
+#  tab_options(
+ #   table.width = pct(100)) %>%
+      tab_style(
+    style = list(
+      cell_text(weight = "bold")
+      ),
+    locations = cells_row_groups()
+  ) %>%
+    opt_row_striping() %>%
+      tab_header(
+    title = ("Table 7.5. sEPSC characteristics before and after CXCL12 application in CeL neurons"),
+     subtitle = md("")) %>%
+    opt_row_striping() %>%
+    tab_source_note(source_note = md("")) %>%
+    gtsave("CeA_CXCL12_sEPSC_table.html")
+
+knitr::include_graphics("CeA_CXCL12_sEPSC_table.html")
+
+```
+
+
 
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   

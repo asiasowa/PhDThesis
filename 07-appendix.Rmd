@@ -1014,7 +1014,7 @@ knitr::include_graphics("CeA_CX3CL1_sIPSC_table.html")
 
 ```
 
-Fig. \@ref(fig:(CX3CL1CeAsIPSCfigappendix)) shows kinetics of inhibitory postsynaptic currents according to different experimental conditions.
+Fig. \@ref(fig:CX3CL1CeAsIPSCfigappendix) shows kinetics of inhibitory postsynaptic currents according to different experimental conditions.
 
 ```{r CX3CL1CeAsIPSCfigappendix, fig.cap='**CX3CL1 does not affect kinetics of inhibitory postsynaptic currents in the CeL** **(a)** Boxplots presenting population data of sIPSCs **(a1-2)** rise time and **(d1-d2)** decay time before and after in different experimental conditions.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 8, fig.width= 15}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -1501,7 +1501,7 @@ figure1
 figure2
 ```
 
-#### Effects of CXCL12 on excitatory synaptic transmission in the CeL
+#### Effects of CXCL12 on excitatory synaptic transmission in the CeL {#CXCL12CeAsEPSCappend}
 
 The detailed summary regarding CXCL12 actions on excitatory synaptic transmission in the CeL is presented in Table <!-- -->.
 
@@ -1540,7 +1540,116 @@ knitr::include_graphics("CeA_CXCL12_sEPSC_table.html")
 
 ```
 
+#### Effects of CXCL12 on inhibitory synaptic transmission in the CeL {#CXCL12CeAsIPSCappend}
 
+CXCL12 does not modulate kinetics of spontaneous and miniature inhibitory postsynaptic currents in the CeL, as shown in Table <!-- --> and Fig. \@ref(fig:).
+
+```{r CXCL12CeAsIPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
+
+CeA_CXCL12_sIPSC_stat_all <- CeA_sIPSC_all_stats %>% mutate(Type = "All CeL neurons") %>% dplyr::select(Type, everything()) 
+CeA_CXCL12_sIPSC_stat_RS  <- CeA_sIPSC_LF_stats %>% mutate(Type = "Regular-Spiking neurons") %>% dplyr::select(Type, everything())
+CeA_CXCL12_sIPSC_stat_LF <- CeA_sIPSC_RS_stats %>% mutate(Type = "Late-Firing neurons") %>% dplyr::select(Type, everything())
+
+CeA_cxcl12_sIPSC_df_tb <- CeA_CXCL12_sIPSC_stat_all  %>% dplyr::bind_rows(CeA_CXCL12_sIPSC_stat_RS) %>% dplyr::bind_rows(CeA_CXCL12_sIPSC_stat_LF)
+
+CeA_sIPSC_cxcl12_table <- CeA_cxcl12_sIPSC_df_tb %>% 
+gt(groupname_col = "Type") %>%
+   fmt_markdown(columns = c("Experiment")) %>%
+    tab_options(
+      table.font.names = "Calibri",
+      table.font.size = 12
+  ) %>% #table.font.size = 11
+#  tab_options(
+ #   table.width = pct(100)) %>%
+      tab_style(
+    style = list(
+      cell_text(weight = "bold")
+      ),
+    locations = cells_row_groups()
+  ) %>%
+    opt_row_striping() %>%
+      tab_header(
+    title = ("Table 7.X. sIPSCs characteristics before and after CXCL12 application in CeL neurons"),
+     subtitle = md("")) %>%
+    opt_row_striping() %>%
+    tab_source_note(source_note = md("")) %>%
+    gtsave("CeA_CXCL12_sIPSC_table.html")
+
+knitr::include_graphics("CeA_CXCL12_sIPSC_table.html")
+
+```
+
+```{r CXCL12CeAsIPSCfigapp, fig.cap='**Kinetics of inhibitory postsynaptic currents are not modulated by CXCL12 nor AMD3100 in the CeL neurons**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 10, fig.width= 15}
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+
+# loading needed subsets 
+
+# making boxplots with facets
+
+# different subsets
+CeA_sIPSC_all_subset1 <- CeA_sIPSC_final_12 %>% dplyr::bind_rows(CeA_mIPSC_final_12)
+CeA_sIPSC_all_subset1 <- CeA_sIPSC_all_subset1 %>% dplyr::filter(Experiment %in% c("CXCL12(2nM)", "CXCL12(5nM)", "TTX + \nCXCL12(2nM)", "TTX + \nCXCL12(5nM)", "AMD3100"))
+CeA_sIPSC_LF_subset1 <- CeA_sIPSC_LF_subset1 %>% dplyr::filter(Experiment %in% c("CXCL12(2nM)", "CXCL12(5nM)", "TTX + \nCXCL12(2nM)", "TTX + \nCXCL12(5nM)", "AMD3100"))
+CeA_sIPSC_RS_subset1 <- CeA_sIPSC_RS_subset1 %>% dplyr::filter(Experiment %in% c("CXCL12(2nM)", "CXCL12(5nM)", "TTX + \nCXCL12(2nM)", "TTX + \nCXCL12(5nM)", "AMD3100"))
+
+bp_CeA_rt_sIPSC_all <- plot_boxplot(CeA_sIPSC_all_subset1, median_RiseTime, ylabel = "s/mIPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_rt_sIPSC_all <- bp_CeA_rt_sIPSC_all + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 3) 
+
+
+bp_CeA_rt_sIPSC_LF <- plot_boxplot(CeA_sIPSC_LF_subset1, median_RiseTime, ylabel = "s/mIPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_rt_sIPSC_LF  <- bp_CeA_rt_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 3) 
+
+bp_CeA_rt_sIPSC_RS <- plot_boxplot(CeA_sIPSC_RS_subset1, median_RiseTime, ylabel = "s/mIPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_rt_sIPSC_RS  <- bp_CeA_rt_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 3) 
+
+# making boxplots for amplitude
+bp_CeA_dt_sIPSC_all  <- plot_boxplot(CeA_sIPSC_all_subset1, median_DecayTau, ylabel = "s/mIPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_dt_sIPSC_all  <- bp_CeA_dt_sIPSC_all  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
+
+
+bp_CeA_dt_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_LF_subset1, median_DecayTau, ylabel = "s/mIPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_dt_sIPSC_LF  <- bp_CeA_dt_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
+
+bp_CeA_dt_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_RS_subset1, median_DecayTau, ylabel = "s/mIPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_dt_sIPSC_RS  <- bp_CeA_dt_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
+
+#importing representative traces
+# fig("images//results//IV_representative_minoa.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+# representative_frak2nM <-  fig("images//results//CeA_frak2nM_sIPSC_frak2nM.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+# representative_azdfrak2nM <- fig("images//results//CeA_frak2nM_sIPSC_azdfrak.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+# representative_minofrak2nM <- fig("images//results//CeA_frak2nM_sIPSC_minofrak.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+# representative_ttxfrak2nM <- fig("images//results//CeA_frak2nM_mIPSC_frak2nM.png", aspect.ratio = "free", b_pos = "inside", b_size = 0, b_margin =  ggplot2::margin(0, 0, 0, 0))
+
+
+#using patchwork to do layout of the figure
+A <- ((bp_CeA_rt_sIPSC_all + ggtitle('CeL Neurons')) | bp_CeA_dt_sIPSC_all) + plot_layout(tag_level = "new") 
+B <- ((bp_CeA_rt_sIPSC_LF + ggtitle('Late-Firing Neurons')) | bp_CeA_dt_sIPSC_LF) + plot_layout(tag_level = "new") 
+C <- ((bp_CeA_rt_sIPSC_RS + ggtitle('Regular-Spiking Neurons')) | bp_CeA_dt_sIPSC_RS) + plot_layout(tag_level = "new") 
+
+
+lay <- "
+AA
+BB
+CC
+"
+
+figure1 <- wrap_plots(A = A, B = B, C=C, design = lay)
+
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
+
+
+figure1
+
+```
+## Limitations
+
+### CX3CL1
+
+### CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber. 
 
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   

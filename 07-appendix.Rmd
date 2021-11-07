@@ -1503,7 +1503,7 @@ figure2
 
 #### Effects of CXCL12 on excitatory synaptic transmission in the CeL {#CXCL12CeAsEPSCappend}
 
-The detailed summary regarding CXCL12 actions on excitatory synaptic transmission in the CeL is presented in Table <!-- -->.
+The detailed summary regarding CXCL12 actions on excitatory synaptic transmission in the CeL is presented in Table <!-- --> and Fig. \@ref(fig:CXCL12CeAsEPSCappen).
 
 ```{r CXCL12CeAsEPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1537,6 +1537,91 @@ gt(groupname_col = "Type") %>%
     gtsave("CeA_CXCL12_sEPSC_table.html")
 
 knitr::include_graphics("CeA_CXCL12_sEPSC_table.html")
+
+```
+
+```{r CXCL12CeAsEPSCappen, fig.cap='**CXCL12 does not affect amplitude (a1-3) and kinetics (b1-c3) of sEPSCs in the CeL** ', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 8, fig.width= 10}
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+
+# loading needed subsets 
+
+# making boxplots with facets
+bp_CeA_sEPSC_cxcl12_all_freq <- plot_boxplot(CeA_sEPSC_all_subset, median_Frequency, ylabel = "sEPSC Frequency (Hz)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "CeL neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_all_freq  <- bp_CeA_sEPSC_cxcl12_all_freq  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+bp_CeA_sEPSC_cxcl12_LF_freq <- plot_boxplot(CeA_sEPSC_LF_subset, median_Frequency, ylabel = "sEPSC Frequency (Hz)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "Late-Firing \nneurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_LF_freq  <- bp_CeA_sEPSC_cxcl12_LF_freq  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+bp_CeA_sEPSC_cxcl12_RS_freq <- plot_boxplot(CeA_sEPSC_RS_subset, median_Frequency, ylabel = "sEPSC Frequency (Hz)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "Regular-Spiking \nneurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_RS_freq  <- bp_CeA_sEPSC_cxcl12_RS_freq  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+
+# making boxplots for amplitude
+bp_CeA_sEPSC_cxcl12_all_amp <- plot_boxplot(CeA_sEPSC_all_subset, median_Amplitude, ylabel = "sEPSC Amplitude (pA)", vary1 = 0, vary2 = 20, dot_size = 2,  mtitle = "CeL neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_all_amp  <- bp_CeA_sEPSC_cxcl12_all_amp  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+bp_CeA_sEPSC_cxcl12_LF_amp <- plot_boxplot(CeA_sEPSC_LF_subset, median_Amplitude, ylabel = "sEPSC Amplitude (pA)", vary1 = 0, vary2 = 20, dot_size = 2,  mtitle = "Late-Firing \nneurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_LF_amp  <- bp_CeA_sEPSC_cxcl12_LF_amp  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) 
+
+bp_CeA_sEPSC_cxcl12_RS_amp <- plot_boxplot(CeA_sEPSC_RS_subset, median_Amplitude, ylabel = "sEPSC Amplitude (pA)", vary1 = 0, vary2 = 20, dot_size = 2,  mtitle = "Regular-Firing \nneurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_RS_amp  <- bp_CeA_sEPSC_cxcl12_RS_amp  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+
+### rise time
+
+bp_CeA_sEPSC_cxcl12_all_rt <- plot_boxplot(CeA_sEPSC_all_subset, median_RiseTime, ylabel = "sEPSC Rise Time (ms)", vary1 = 0, vary2 = 2, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_all_rt  <- bp_CeA_sEPSC_cxcl12_all_rt  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+bp_CeA_sEPSC_cxcl12_LF_rt <- plot_boxplot(CeA_sEPSC_LF_subset, median_RiseTime, ylabel = "sEPSC Rise Time (ms)", vary1 = 0, vary2 = 2, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_LF_rt  <- bp_CeA_sEPSC_cxcl12_LF_rt  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+bp_CeA_sEPSC_cxcl12_RS_rt <- plot_boxplot(CeA_sEPSC_RS_subset, median_RiseTime, ylabel = "sEPSC Rise Time (ms)", vary1 = 0, vary2 = 2, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_RS_rt  <- bp_CeA_sEPSC_cxcl12_RS_rt  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+# decay tau 
+bp_CeA_sEPSC_cxcl12_all_dt <- plot_boxplot(CeA_sEPSC_all_subset, median_DecayTau, ylabel = "sEPSC Decay Time (ms)", vary1 = 0, vary2 = 11, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_all_dt  <- bp_CeA_sEPSC_cxcl12_all_dt  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+bp_CeA_sEPSC_cxcl12_LF_dt <- plot_boxplot(CeA_sEPSC_LF_subset, median_DecayTau, ylabel = "sEPSC Decay Time (ms)", vary1 = 0, vary2 = 11, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_LF_dt  <- bp_CeA_sEPSC_cxcl12_LF_dt  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4) 
+
+bp_CeA_sEPSC_cxcl12_RS_dt <- plot_boxplot(CeA_sEPSC_RS_subset, median_DecayTau, ylabel = "sEPSC Decay Time (ms)", vary1 = 0, vary2 = 11, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+
+bp_CeA_sEPSC_cxcl12_RS_dt  <- bp_CeA_sEPSC_cxcl12_RS_dt  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 4)
+
+
+#using patchwork to do layout of the figure
+#A <- (bp_CeA_sEPSC_cxcl12_all_freq| bp_CeA_sEPSC_cxcl12_RS_freq | bp_CeA_sEPSC_cxcl12_LF_freq) + plot_layout(tag_level = "new")
+B <-  (bp_CeA_sEPSC_cxcl12_all_amp| bp_CeA_sEPSC_cxcl12_RS_amp | bp_CeA_sEPSC_cxcl12_LF_amp) + plot_layout(tag_level = "new")
+C <- (bp_CeA_sEPSC_cxcl12_all_rt| bp_CeA_sEPSC_cxcl12_RS_rt | bp_CeA_sEPSC_cxcl12_LF_rt) + plot_layout(tag_level = "new")
+D <-  (bp_CeA_sEPSC_cxcl12_all_dt| bp_CeA_sEPSC_cxcl12_RS_dt | bp_CeA_sEPSC_cxcl12_LF_dt) + plot_layout(tag_level = "new")
+
+# C <- (((traces_frak2nM +  ggtitle('CX3CL1(2nM)')) | (traces_azdfrak + ggtitle('AZD8797 + CX3CL1(2nM)')) | (traces_minofrak + ggtitle('minocycline + CX3CL1(2nM)')) + plot_layout(tag_level = "new")))
+
+lay <- "
+BB
+CC
+DD
+"
+
+figure1 <- wrap_plots(B = B, C = C, D = D, design = lay)
+
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
+
+
+figure1
 
 ```
 

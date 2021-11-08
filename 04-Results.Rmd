@@ -633,8 +633,9 @@ Nevertheless, considering overall data, we  can speculate that on microglial cel
 ### CX3CL1 changes the length/head width ratio of dendritic spines in cultured rat amygdala neurons
 
 To confirm whether CX3CL1-induced impairment in the LTP is accompanied by changes in dendritic morphology, the shape of dendritic spines was analyzed.<!--In addition, we also examined spine morphology because changes in spine morphology are believed to represent one mechanism by which synaptic activity leaves its imprint on neurons. // To confirm whether dendritic spine density was increased, // To analyze <the afferent connectivity of fully mature newborn granule neurons, we examined the dendritic spines of 8-weekold RFP+ cells.-->
-To this end, the primary neuronal cultures were prepared from amygdala of rat pups.<!-- To confirm whether dendritic spine density was increased,-->
+To this end, the primary neuronal cultures were prepared from amygdala of rat pups at P0.<!-- To confirm whether dendritic spine density was increased,-->
 It should be noted that the action of CX3CL1 is not mediated by microglia, as used cultures were deprived of those glial cells.
+<!-- arac? -->
 
 Dendritic spines can be classified into into mushroom, thin, or stubby types on the basis of morphological criteria (Pallas-Bazarra et al., 2016; Pallas-Bazarra et al., 2017).<!--dać publikacje zespołu Jakuba--><!-- znaleźć publikacje: These spines can be classified into various typologies on the basis of morphological criteria (Pallas-Bazarra et al., 2016; Pallas-Bazarra et al., 2017).// In addition, the classification of dendritic spines into mushroom, thin and stubby types is illustrated. -->
 Neurons <!--of CX3CR1?/? mice--> showed a reduction in the total number of dendritic spines.
@@ -643,15 +644,18 @@ To further characterize the populations of spines present in these cells, we mea
 Fig. \@ref(fig:spines) shows representative images of dendritic fragments of cultured neurons during baseline (a) and after 20 minutes of CX3CL1 application (b).<!--poprawić??--><!--newborn neurons of WT (A) and CX3CR1?/? (B) animals -->
 Dendrites of these neurons always exhibited a high density of spines ( Fig. 2 A), typical of BL projection neurons [@mcdonald_2005].<!-- Dendrites of these neurons always exhibited a high density of spines ( Fig. 2 A), typical of BL projection neurons [21,35,43,50] MCDONALD 2005, ZMIENIĆ...-->
 
-
-
 As shown, the percentage of stubby spines was increased in CX3CR1?/? animals, whereas that of mushroom spines was reduced. 
 Thus, these data show that the CX3CL1 application led to an alterations in their morphology (namely, an enlargement and shortening of the head).<!-- zmienić // Thus, these data show that the absence of CX3CR1 leads to a decrease in the number of newborn granule neuron dendritic spines and alterations in their morphology (namely, an enlargement and shortening).-->
 <!-- In addition, we also examined spine morphology because changes in spine morphology are believed to represent one mechanism by which synaptic activity leaves its imprint on neurons. This was concurrent with an increase in spines with well-defined heads, which is correlated with spine maturation.-->
 
 Therefore, accompanying these electrophysiological ..... was the immature morphological phenotype of dendritic spines.<!--Accompanying this delay in maturation of spine density was a defect in functional maturation of hippocampal synapses as measured by the ratio of spontaneous and miniature excitatory postsynaptic current amplitude (sEPSC/mEPSC amplitude ratio), long-term depression induction, and seizure susceptibility.-->
 Notably, these alternations are independent of microglia.
-
+<!-- his review discusses spine alterations in animal models of maternal immune activation in the context of neurodevelopmental disorders-->
+<!-- CX3CL1-induced changes in the dendritic spine phenotype // and behavior in offspring.-->
+<!-- For the analysis of spine density, camera lucida tracings were ob tained from 10 dendritic segments per animal of each group and time frame (n =10) at a 1000X magnification.-->
+<!-- Exposure to CRS resulted, relative to the CTRL treatment, in a noticeable decrease in dendritic spine amounts (Fig. 5A) along with a significant reduction in spine density (t(18) =2.964, P =0.008) in terminal dendritic segments of pyramidal CeA neurons (Fig. 5B).-->
+<!--  On the other hand, the analysis of den  -  dritic spine types showed that the treatment factor (i.e. CRS vs CTRL) did have a significant interaction with the spine type factor (F 4,90  =7.521, P <0.001), which was reflected as a significant decrease in the percentage of mushroom spines concomitant with a significant increase in thin spines in CeA neurons from CRS as compared to CTRL conditions (Fig. 5C); no significant changes in the percentage of the other spine types (i.e. stubby, branched and multi-head) were detected between treatments-->
+<!-- Interestingly, whereas no significant difference in the relative percentage of mushroom spines was detected between treatments, thin spines remained significantly elevated, whereas stubby spines decreased in terminal dendritic segments of CeA neurons from CRS-exposed as compared to CTRL ‘recovered’ animals (Fig. 6B).-->
 
 ```{r spines, fig.caption = "**CX3CL1 altered the morphology of dendritic spines in neuronal cultures from the rat amygdala.** **(a)**... " , echo = FALSE, warning = FALSE, message= FALSE}
 knitr::include_graphics("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\CX3CL1\\HODOWLE_AMYGDALA_WARSZAWA\\hodowle_aftersorting.png")

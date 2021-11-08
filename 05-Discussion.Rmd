@@ -1,78 +1,77 @@
 # Discussion
 
-In this PhD dissertation, by using a combination of electrophysiological, immunohistochemical, and pharmacological approaches, the modulation of two chemokines (CX3CL1 and CXCL12) was dissected based on their ... 
+<!--summary and relevance of two chemokines-->
+In this PhD dissertation, by using a combination of electrophysiological, immunohistochemical, and pharmacological approaches, the actions of two chemokines (CX3CL1 and CXCL12) was dissected in two nuclei of the amygdala - basolateral (BLA) and central (CeA). 
+<!-- local regulation of glia important -->
+<!--increasing evidence about chemokine role in psychiatric disorders-->
+<!-- both chemokines crucial in the coordination of neuro-glial local communications-->
+<!-- neurodevelopment?-->
 
-## CX3CL1 in the amygdala
+## CX3CL1 in the basolateral amygdala
 
-Despite relatively high levels of CX3CL1 and CX3CR1 in the amygdala and the involvement of this chemokine in anxiety-related behavior, the precise role of the CX3CL1/CX3CR1 signaling pathway in the amygdala is still unknown. <!-- lepiej napisać --> 
+Despite relatively high levels of CX3CL1 and CX3CR1 in the amygdala and the involvement of this chemokine in anxiety-related behavior<!--citations-->, the precise role of the CX3CL1/CX3CR1 signaling pathway in the amygdala is still unknown.<!-- lepiej napisać --> 
 
+### reduced excitability
 
+<!-- Application of CX3CL1 on acute brain slices led to the following electrophysiological effects: (1) depression of principal cell's excitability, (2) reduction of GABAergic transmission, manifested as a decreased median frequency of spontaneous inhibitory synaptic currents, (3) the impairment in the long-term potentiation.
+<!-- CX3CL1 is well-known to have neuroprotective actions in different brain regions, by Ca2+ and AMPA reductions-->
+<!-- the most data regarding CX3CL1 action on excitatory synaptic transmission // Consistent with the literature, as most studies reports the decrease in excitatory synaptic transmission.-->
+The presented data suggest that although no clear pattern of CX3CL1 on excitatory synaptic transmission was observed, this chemokine suppressed the firing of excitatory principal cells, manifested as an increase in their threshold current.<!-- needed for eliciting action potentials? the same level of excitability? rheobase?--><!--The CX3CL1–induced decrease in excitability of BLA principal cells manifested as an increase in threshold current, together with an broadening of action potentials,tutaj broadining statistically significant in 2nM, but only tendency in 5nM, w miarę blokowane, najsłabiej przez AZD8797... suggests that MCP-1 might reduce a K+ conductance. @sun_2006--><!--One of the main effects induced by CX3CL1 in the BLA is a decreased principal cell's excitability ( Figures \@ref(fig:)--><!--CX3CL1 did not significantly affect intrinsic excitability (Figures \@ref(fig:))--><!-- Both LPS injection and CCL2 perfusion onto hippocampal slices increased total neuronal excitability ( Figures 5 C, 5D, 5G, and 5H), which has contributions from excitatory and inhibitory synaptic inputs, as well as the neuron’s intrinsic electrical properties. Consistent with the observed increase in excitatory synaptic transmission and lack of change in inhibitory synaptic transmission ( Figures 5 E, 5F, S7 C, and S7D), the effects of CCL2 were blocked by the AMPA receptor inhibitor NBQX, but not the GABAAreceptor inhibitor gabazine ( Figures S7 E–S7H). CCL2 did not significantly affect intrinsic excitability ( Figures S7 I and S7J).--><!--An enhancement of neuronal excitability in the absence of membrane depolarization was previously described in dissociated DRG neurons during exposure to PGE2, which suppresses the sustained K^+^ current (Nicol et al. 1997)--><!--The MCP-1–induced reduction in rheobase, together with an increase in spike frequency and a broadening of action potentials, suggests that MCP-1 might reduce a K+ conductance. analogous--> 
+<!-- jakieś inne badania, że zmniejsza pobudliwość?? -->
+<!-- może że to był efekt związany z CX3CR1, also replicated in higher dose-->
+<!-- może coś o microglia? -->
+Notably, this effect was not associated with any significant changes in passive membrane properties, such as input resistance.<!--Fig.--><!-- However, the input resistance and other passive membrane properties remained unchanged following CX3CL1 treatment, suggesting that this effect was rather presynaptic.-->
+However, neuron's excitability is a result of neuron's intrinsic electrical properties as well as their excitatory and inhibitory synaptic inputs.<!--cytowanie jakiegos klasyka? // which may be a results of not only neuron’s intrinsic electrical properties, but also from excitatory and inhibitory synaptic inputs. -->
 
-### CX3CL1 reduces the threshold of the BLA but also the inhibitory synapitic currents and the LTP
+### reduced sIPSC frequency
 
-Consistent with the literature, as most studies reports the decrease in excitatory synaptic transmission.
-
-The CX3CL1–induced decrease in excitability of BLA principal cells manifested as an increase in threshold current, together with an broadening of action potentials,<!--my chyba tutaj też mamy broadening?--> suggests that MCP-1 might reduce a K+ conductance. <!-- CZY NA PEWNO? -->
-However, the input resistance following CX3CL1 treatment was unchanged, suggesting that these changes rather are presynaptic. <!--see Appendix-->
-
-why when interneurons abolished there is no effect in threshold current, but sIPSC decreased? but it is consistent, as blocking TTX also abolished this effect :)
-Rossi and GABA~A~ ? 
-
-<!-- GABAergic transmission-->
-... ?
+As present data reported significant changes neither in passive membrane properties of pyramidal-like BLA neurons nor onto their excitatory synaptic transmission<!--poprawić-->, the main source of this effect may be underlying differences in inhibitory synaptic transmission.
+Consistent with this idea, the CX3CL1-induced depression of principal cells firing was abolished by the GABA~A~ and GABA~B~ receptor blockers, picrotoxin and CGP52432 (Fig. \@ref(fig:)).<!--Consistent with the observed decrease in inhibitory synaptic transmission and lack of change in excitatory synaptic transmission (Figures \@ref(fig:)), the effects of CX3CL1 were abolished by the GABA~A~ and GABA~B~ receptor blockers, picrotoxin and CGP52432 (Fig. \@ref(fig:))-->
 This notion was further supported by the observed reduction of sIPSC frequency after CX3CL1 treatment.
 Usually, a change in the amplitude of <!--m-->IPSCs reflects alterations in postsynaptic GABA~A~ receptors, while a change in the frequency of <!--m-->IPSCs implicates an altered probability of transmitter release and/or changes in the number of active synapses (De Koninck and Mody, 1994; Otis et al , 1994).
-The reduction in average median frequency after CX3CL1 application may result from a decreased ..., probably due to decreased number of GABAergic synapses onto principal cells, while the number of postsynaptic GABA~A~receptors remained the same.<!-- jakieś cytowanie?-->
-Nevertheless,  our  results  provide  direct  evidence  that  NF knockdown impairs GABAergic transmission within the BLA  by  reducing  functional  GABAAreceptors  at  the postsynaptic site. 
+The reduction in average median frequency after CX3CL1 application may result from a<!--decreased inputs onto BLA principal cells, probably due to--> decreased number of GABAergic synapses onto principal cells, while the number of postsynaptic GABA~A~receptors remained the same.<!-- jakieś cytowanie?-->
+Nevertheless,  our  results  provide  direct  evidence  that  NF knockdown impairs GABAergic transmission within the BLA  by  reducing  functional  GABAAreceptors  at  the postsynaptic site.
+
+<!--why when interneurons blocked there is no effect in threshold current, but sIPSC decreased? but it is consistent, as blocking TTX also abolished this effect :) nie wiem o co mi chodziło?-->
+Rossi and GABA~A~ ? 
 
 GABAergic synapses - subdomain - Moreover, due to its restriction to the AIS, knockdown of NF and the associated reduction in inhibitory inputs may also affect the properties of evoked action potentials. 
-Following CX3CL1 treatment, the firing rate was significantly reduced and the action potential half-width was increased, whereas the input resistance was unaltered. <!-- trochę zmienić i zobaczyć czy pisać o action potential hal-width...-->
-The reduced firing rate of neurons could be explained by their hyperpolarized resting membrane potential and a depolarized threshold potential, in accordance with Zonta et  al (2011). <!-- zmienić -->
-Indeed, GABAergic inputs were reported to be able to control spiking of pyramidal-like neurons in the BLA, especially when formed at perisomatic ... or AIS.<!--cytations--><!-- Indeed, it has been demonstrated  that  AACs  can  control  action  potential generation at the AIS of projection neurons via their GABAergic  inputs, either through changing the action potential  threshold,  or  by  shifting  the  site  of  origin (Douglas  and  Martin,  1990;  Somogyi et    al ,  1982; Wefelmeyer et  al , 2015; Veres et  al , 2014). Accordingly,-->
-The only interneuron subtype presently described that innervates the AIS are AACs or chandelier cells (Bazelot et  al , 2015). <!-- zmienić trochę -->
-This may happen either *via* changing the action potential threshold or by shifting the site of origin. <!-- zmienić i przeczytać cytowania? -->
+Following CX3CL1 treatment, the firing rate was significantly reduced and the action potential half-width was increased, whereas the input resistance was unaltered.<!-- trochę zmienić i zobaczyć czy pisać o action potential hal-width...-->
+The reduced firing rate of neurons could be explained by their hyperpolarized resting membrane potential and a depolarized threshold potential, in accordance with Zonta et al (2011).<!-- zmienić i nie rozumiem jak to się ma do całości...-->
+Indeed, GABAergic inputs were reported to be able to control spiking of pyramidal-like neurons in the BLA, especially when formed at the perisomatic region or AIS.<!--cytations--><!-- Indeed, it has been demonstrated  that  AACs  can  control  action  potential generation at the AIS of projection neurons via their GABAergic  inputs, either through changing the action potential  threshold,  or  by  shifting  the  site  of  origin (Douglas  and  Martin,  1990;  Somogyi et    al ,  1982; Wefelmeyer et  al , 2015; Veres et  al , 2014). Accordingly,-->
+The only interneuron subtype presently described that innervates the AIS are AACs or chandelier cells (Bazelot et  al , 2015).<!-- zmienić trochę -->
+This may happen either *via* changing the action potential threshold or by shifting the site of origin.<!-- zmienić i przeczytać cytowania? -->
 Accordingly, similar differences in action potential properties as seen after NF  knockdown  arise  by  shifting  the  action  potential initiation site to the first node of Ranvier (Clark et  al , 2005).<!-- przeczytać to... --> 
-Moreover, the reduced firing rate of projection neurons could also contribute to the observed LTP impairment (Cohen et al , 1999).  <!-- zmienić... -->
+Moreover, the reduced firing rate of projection neurons could also contribute to the observed LTP impairment (Cohen et al , 1999).<!-- zmienić... -->
 
+### LTP impairment 
 <!-- Decreasing of the LTP also consistent with previous findings - anxiety - beneficial - sth with synaptic scaling -->
-To investigate .... 
-While impaired LTP in the vSub – BLA pathway after NF knockdown in the BLA may result from reduced neural excitability, its relation to reduced GABAergic inhibition by NF knockdown appears counterintuitive on first sight. 
+While impaired LTP in the external capsule–BLA pathway after CX3CL1 treatment in the BLA may result from reduced neural excitability, its relation to reduced GABAergic inhibition appears counterintuitive on first sight.<!-- While impaired LTP in the vSub – BLA pathway after NF knockdown in the BLA may result from reduced neural excitability, its relation to reduced GABAergic inhibition by NF knockdown appears counterintuitive on first sight.--> 
 However, it may be related to the fact that previous studies suggested rather excitatory net effects of AACs onto BLA projection neurons (Woodruff et al , 2010). 
-Monosynaptic cortical – BLA projections exist <!--cytowanie?-->, and can recruit not only princical cells, but also local interneurons *via* feed-forward circuits<!--, but the role of AACs remains unclear (Bazelot et  al , 2015; Hübner et  al , 2014). sprawdzić te cytowania i to przemyśleć...-->
-Given that cortical affarents represent <!-- only a minor part of BLA afferents--> substantial part of BLA inputs<!--citations--> and AACs were reported to form reciprocal connections with PCs, they could also be part of local feedback circuits. <!--However, vSub afferents represent  (for example, Canteras et al , 1992) and AACs are also reciprocally connected to projections neurons, suggesting they could also be part of local feedback circuits (Veres et al , 2014).-->
-Accordingly, this form of synaptic plasticity in the BLA may be also shaped by intra-amygdalar  local  inhibitory  networks. <!--trochę jeszcze poprawić?-->
-Cumulative evidence suggests that different BLA afferents target specific subpopulations of interneurons (Leitermann et  al , 2016; McDonald et  al , 2011; Unal et  al , 2014), thus enabling input-specific modulation of BLA local networks, which in turn may affect induction of LTP in this structure. <!-- ładne zdanie ale trochę zmienić -->
+Monosynaptic cortical – BLA projections exist <!--cytowanie?-->, and can recruit not only principal cells, but also local interneurons *via* feed-forward circuits<!--, but the role of AACs remains unclear (Bazelot et  al , 2015; Hübner et  al , 2014). sprawdzić te cytowania i to przemyśleć...-->
+Given that cortical afferents represent <!-- only a minor part of BLA afferents--> substantial part of BLA inputs<!--citations--> and AACs were reported to form reciprocal connections with PCs, they could also be part of local feedback circuits.<!--However, vSub afferents represent  (for example, Canteras et al , 1992) and AACs are also reciprocally connected to projections neurons, suggesting they could also be part of local feedback circuits (Veres et al , 2014).-->
+Accordingly, this form of synaptic plasticity in the BLA may be also shaped by intra-amygdalar  local  inhibitory  networks.<!--trochę jeszcze poprawić?-->
+Cumulative evidence suggests that different BLA afferents target specific subpopulations of interneurons (Leitermann et  al , 2016; McDonald et  al , 2011; Unal et  al , 2014), thus enabling input-specific modulation of BLA local networks, which in turn may affect induction of LTP in this structure.<!-- ładne zdanie ale trochę zmienić -->
 Notably,  the  input – output  curve  revealed  a  trend  for increased BLA excitability in the CX3CL1-supplemented slices,<!--zobaczyć czy to w ogóle prawda xDDD--> which could reflect local network changes that may affect further potentiation. 
 
 Notably, the high variability of the CX3CL1 application on excitatory synaptic transmission from cell to cell possibly<!--might?--> depend upon the relative contribution of both excitatory inputs from other pyramidal-like cells in the BLA and GABAergic synapses from local interneurons. 
 Given that there are subtypes of interneurons targeting different subcellular domain of principal cells, it is likely that interneurons contacting synapses mainly on distal dendritic parts are ....<!-- dokończyć tutaj i rozpisać jak to jest z tymi interneuronami -->
 Thus, experiments in cesium-based interpippette solution might reduce filtering of excitatory synaptic currents originating from distal parts of dendrites by blocking potassium channels [@acharjee_2018], and thereby might suppress the high variability of CX3CL1 treatment on sEPSC.<!-- Cesium reduces filtering of the synaptic currents arising from distal parts of the dendrite by blocking the potassium current, and changes in EPSC frequency seen only with cesium internal suggested that most of the changes were contributed by inputs to more distal dendrites.-->
 
-Together, these findings illustrate not only the increasing evidence for a role for BLA glutamatergic inputs to the NA in regulating reinforcement and reward but also that, depending on the part of the NA targeted, other glutamatergic inputs do not necessarily produce identical results <!-- analogous-->
 
- It is worth noting that, in the experiments where activation of A2AR or A1R was prevented (either pharmacologically or genetically), the effects of CX3CL1 were sustained during chemokine washout. A possible explanation is that these receptors, although not essential for the establishment of synaptic depression, are required for recovery. We may speculate about the functional interaction ( Cunha-Reis et al., 2007 ) of the two subtypes or eventually about the presence in hippocampal tissue of AR heteromers ( Rebola et al., 2005; Ciruela et al., 2006 ), whose activation might have an homeostatic function.
- 
- This homeostatic balance between synaptic and intrinsic properties is maintained, in part, via regulation of voltage-gated Na+ currents, resulting in a stable neuronal input–output function.  -> (tectal neurons adapt their intrinsic excitability such that a stable relationship between the total level of synaptic input and tectal neuron spike output is conserved)
- 
- However, rather than decreasing interneuron excitability, this effect is associated with an increase in spontaneous firing of interneurons, as indicated by increased sIPSC frequency in pyramidal neurons
- 
- These cytokines, such as tumor necrosis factor-a and interleukin-1b, not only exert their excitatory effects via upregulating excitatory synaptic transmission [30, 31], but also regulate neuronal functions via interacting with modulatory systems [32]
- 
- Both LPS injection and CCL2 perfusion onto hippocampal slices increased total neuronal excitability ( Figures 5 C, 5D, 5G, and 5H), which has contributions from excitatory and inhibitory synaptic inputs, as well as the neuron’s intrinsic electrical properties. Consistent with the observed increase in excitatory synaptic transmission and lack of change in inhibitory synaptic transmission ( Figures 5 E, 5F, S7 C, and S7D), the effects of CCL2 were blocked by the AMPA receptor inhibitor NBQX, but not the GABAAreceptor inhibitor gabazine ( Figures S7 E–S7H). CCL2 did not significantly affect intrinsic excitability ( Figures S7 I and S7J).
- 
- An enhancement of neuronal excitability in the absence of membrane depolarization was previously described in dissociated DRG neurons during exposure to PGE2, which suppresses the sustained Kcurrent (Nicol et al. 1997)
+### neuromodulation cross-talk? 
 
-### Minocycline increases excitability of the BLA
+It should be noted also that immune proteins, such as TNFalpha or IL-1b do not only exert their effect by modulating synaptic transmission, but also *via* interacting with modulatory systems.<!-- citations--><!-- These cytokines, such as tumor necrosis factor-a and interleukin-1b, not only exert their excitatory effects via upregulating excitatory synaptic transmission [30, 31], but also regulate neuronal functions via interacting with modulatory systems [32]-->
 
-Intriguingly, sole minocycline was able to increase the excitability of pyramidal cells.
-This result suggests that microglia alone and without stimulation of CX3CR1 receptor  may be able to  affect excitability of neurons in the BLA.
+### microglia and independent CX3CL1 mechanisms of action in the BLA
+
+Intriguingly, sole minocycline was able to increase the excitability of pyramidal cells in the BLA.
+This result suggests that microglia alone and without stimulation of CX3CR1 receptor<!--using CX3CR1 independent mechanisms?--> may be able to affect excitability of neurons in the BLA.
 However, as this molecule alone was previously reported to affect electrophysiological properties, such as...., these findings warrant further investigation, for example by using opto- or chemogenetic activation of those cells.
 
-### Electrophysiological results
+### adenosine? 
 
-The MCP-1–induced reduction in rheobase, together with an increase in spike frequency and a broadening of action potentials, suggests that MCP-1 might reduce a K+ conductance. <!-- analogous-->
-
-Yet, our findings do not exclude the neuronal participation in releasing adenosine, thus acting in an autocrine manner, or the adenosine-mediated release of additional neuroprotective factors from glial cells. <!-- analogous-->
+Yet, our findings do not exclude the neuronal participation in releasing adenosine, thus acting in an autocrine manner, or the adenosine-mediated release of additional neuroprotective factors from glial cells.<!-- analogous-->
 
 Coupled with observed differences in proximal and distal spine density, our results suggest that the ratio of inhibitory to excitatory innervation is increased along the distal to proximal axis of principal cells in the BLA. 
 
@@ -232,6 +231,22 @@ Morphological features of dendritic spines change in response to environmental s
 A large body of evidence supports the critical role of dendritic spines and their morphology and stability in connectivity and neuronal excit  -  ability [42–44] so the changes in dendritic spine types we found here further suggest a significant impact of CRS exposure on CeA physiology. Indeed, thin spines are motile, transient, and form weak or silent syn  -  apses, whereas spines with large heads (i.e. mushroom and stubby) are more stable and form strong synapses with larger postsynaptic densities, more AMPA-type glutamate receptor content, and larger presynaptic contacts [30,44,45]. ]. Thus, an increase in thin spines in parallel with a decrease in mushroom and stubby spines in CeA neurons, as detected in Golgi-stained apical dendrites after CRS exposure and subsequent to a stress-free recovery period, respectively, may be suggestive of a decreased functional connectivity of CeA projections to downstream brainstem targets [3,17]. 
 A closely similar pattern of synaptic remod  -  eling indicative of functional blunting, including decreased dendritic spine density, in parallel with increased numbers of thin spines and decreased amounts of mushroom and stubby spines, has been observed  in pyramidal neurons of the mPFC subsequent to chronic restraint stress in rodents [46,47], whereas increased and decreased numbers of thin and stubby spines, respectively, were reported in the CA1 region of the hippocampus as a result of chronic social defeat in adolescent C57BL/6 mice [48].
 In conclusion, the results of the present study using the CRS para  -  digm in rats have provided further evidence that the anxiogenic effects of chronic stress are not apparently associated with remarkable changes of dendritic morphology in pyramidal neurons of the CeA. The data however have revealed more subtle CRS-induced alterations involving structural remodeling of dendritic spines, which are suggestive of a decreased functional connectivity of the CeA. Of particular relevance is the fact that CRS-induced anxiety-like behavior
+
+Dendritic spines, which receive most of the excitatory synaptic input in the cerebral cortex, are heterogeneous with regard to their structure, stability and function. Spines with large heads are stable, express large numbers of AMPA-type glutamate receptors, and contribute to strong synaptic connections. By contrast, spines with small heads are motile and unstable and contribute to weak or silent synaptic connections.
+
+Dendritic spines can take various shapes and have been classified on the basis of their structure as filopodial, thin, stubby,   fenestrated   or   mushroom-like [8] . 
+
+Learning about motivationally important stimuli involves plasticity in the amygdala, a temporal lobe structure. Amygdala-dependent learning involves a growing number of plasticity-related signaling pathways also implicated in brain development, suggesting that learning-related signaling in juveniles may simultaneously influence development. 
+
+Cyclic AMP-response element binding protein may contribute to memory allocation in the mouse amygdala by promoting dendritic spine growth (Sargin et al. 2013).
+
+Rodent research has identified maturation of amygdala neurons throughout infancy and into adolescence (Fig. 3). The amygdala emerges during gestation in rats (Berdel et al. 1997a) and undergoes volumetric changes soon after birth (Berdel et al. 1997b; Chareyron et al. 2012). As the region grows individual amygdala neurons mature, exhibiting pronounced dendritic expansion and emergence of dendritic spines between birth and adolescence (Ryan et al. 2014). Concomitant with structural maturation are pronounced electrophysiological changes in the amygdala. During infancy, amygdala neurons become an order of magnitude less excitable and lose their propensity to fire bursts of action potentials (Ehrlich et al. 2012). Synaptic transmission in the amygdala is also refined during this period (Bosch & Ehrlich 2015; Ehrlich et al. 2013), and adult-like LTP of amygdala afferents emerges during infancy when the amygdala begins to contribute to fear learning (Thompson et al. 2008).
+
+Brain-derived neurotrophic factor, ERK and CREB also regulate neuron morphogenesis, shaping dendrite patterning and the growth of dendritic spines. For instance, BDNF application to developing neurons in culture promotes spinogenesis in a neural activity- and TrkB-dependent manner (Shimada et al. 1998; Tyler & Pozzo-Miller 2003). Brain-derived neurotrophic factor acts via TrkB to enable structural plasticity, destabilizing dendrites and dendritic spines of cortical neurons (Horch et al. 1999) and elevating spine density of dendrites (Sanchez et al. 2006). Consistent with its role in signal transduction, BDNF promotes robust dendritic outgrowth from developing cortical neurons in a neural activity-dependent manner (McAllister et al. 1996), and BDNF is required for dendritic spine enlargement following paired pre- and post-synaptic stimulation at individual synapses (Tanaka et al. 2008). Such BDNF-mediated increases in dendritic spine density also require ERK signaling (Alonso et al. 2004).
+
+Brain-derived neurotrophic factor, ERK and CREB promote dendrite expansion and spinogenesis (Alonso et al. 2004; Herold et al. 2011; McAllister et al. 1995), and excessive activation of this pathway may alter amygdala neuron morphology. Dendrite growth and spine emergence proceed into early adolescence in the amygdala (Ryan et al. 2014). In juveniles, amygdala-dependent learning and BDNF–ERK–CREB signaling may cause enlarged or more spine-dense dendrites later in life. As dendrites constitute the major site for synaptic input onto amygdala neurons, dendritic expansion may result in greater synaptic input to amygdala neurons and more capacity for learning related to motivationally relevant stimuli. Interestingly, stress exposure during adolescence causes enlargement of amygdala neuron dendritic arbors (Eiland et al. 2012), which has been suggested to mediate some adverse behavioral effects of chronic stress (McEwen & Chattarji 2004).
+
+The size and geometry of the spine head and neck are believed to be main determinants in synaptic signal compartmentalization, strength and specificity [1], [18].
  
 ### analogous
 

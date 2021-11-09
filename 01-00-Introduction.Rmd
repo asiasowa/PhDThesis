@@ -89,7 +89,7 @@ Considering GAGs cell-, tissue- and developmental-specific expression [@lortatja
 
 Biased signaling, also known as functional selectivity, is another feature specific for GPCR receptors (@zweemer_2014, @kleist_2016, see: Fig 2D).
 Three types of biased signaling can be distinguished.
-Ligand bias occurs when specific chemokines, although binding to the same receptor, could preferentially activate one of the intracellular pathways, either G-protein or `r knitr::asis_output("\U03B2")`-arrestin, and their downstream elements, accordingly to cell-specific differences. 
+Ligand bias occurs when specific chemokines, although binding to the same receptor, could preferentially activate one of the intracellular pathways, either G-protein or `r knitr::asis_output("\U03B2")`-arrestin, and their downstream elements, according to cell-specific differences. 
 Another type of bias signaling, receptor bias, occurs when a specific receptor, which typically binds multiple chemokine ligands, preferentially couples to a particular chemokine.
 Finally, cellular or tissue bias occurs when the same chemokine–receptor pair leads to activation of distinct signaling cascades or cellular responses in different spatial contexts.
 This type of bias is a consequence of differential expression or function of receptor and transducer elements, including every element of the signal transduction cascade, from proximal effectors (e.g., G proteins and `r knitr::asis_output("\U03B2")`-arrestins), to all of the downstream signal transduction machinery (e.g., ERK`r knitr::asis_output("\U00BD")` or MAPK) in different cells and tissue during different developmental stages.

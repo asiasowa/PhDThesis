@@ -252,7 +252,7 @@ knitr::include_graphics("images//methods//IV_BLAvsCeA_examples.png")
  
 <!-- According to this criterion following neurons were included in the study on chemokines signaling in the amygdala (only one neuron per slice was subjected to drug administration experiment): /// nie wiem czy to dodawać bo musiałabym obliczyć ;P patrz: ALAN dla reszty gdybym się jednak zdecydowała-->
 
-#### Post-recording immunostaining
+#### Post-recording immunostaining {#postimmuno}
 
 In order to verify the neurochemical content of recorded neurons,  after recording a subset of slices was fixed overnight with a 4% formaldehyde at 4`r knitr::asis_output("\U00B0")`C and stained according to the following protocol.  
 In brief, free-floating sections were blocked and permeabilized (10% normalized goat serum (NGS; Jackson ImuunoResearch), 0.1% Triton X100 in PBS) at 4`r knitr::asis_output("\U00B0")`C overnight and incubated with a primary antibodies solution supplemented with a streptavidin-conjugated Alexa Fluor 647 (Invitrogen; 1:500) overnight at 4`r knitr::asis_output("\U00B0")`C. <!--: mouse anti-OXT (1:1000 or 1:10000), rabbit anti-AVP (1:500 or 1:5000), ExtrAvidin-Cy3 (1:200), 2% NDS, 0.3% Tx100 in PBS, // Next, several rinses with PBS were carried out before incubating slices with  and blocking and permeabilizing with PBS containing 10% normal goat serum (NGS; ) and 0.1% Triton X-100 in PBS (Sigma Aldrich; blocking solution) overnight at 4`r knitr::asis_output("\U00B0")`C.-->

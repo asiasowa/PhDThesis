@@ -68,6 +68,8 @@ library(pzfx)
 library(patchwork)
 library(magick)
 library(figpatch)
+library(afex)
+library(lsmeans)
 
 #### frak2nM CeA membrane properties####
 CeA_df_frak2nM<-readRDS(".//CeA//frak2nM//membrane_table_CeA.rds")
@@ -905,8 +907,8 @@ CeA_amda_df <- CeA_amda_df %>% dplyr::arrange(Experiment, Cell, Condition)
 ##### CeA fluoro + cxcl12 5nM###############
 CeA_df_fluoro <-readRDS(".//CeA//fluorocitrate//membrane_table_CeA_fluoro_cxcl12_5nM.rds") # 
 CeA_df_fluoro <- CeA_df_fluoro %>% mutate(Experiment = "fluorocitrate + \nCXCL12(5nM)") %>% dplyr::select(Experiment, Filename_all1, Cell, Condition, Type, everything()) %>% dplyr::rename(sag_ratio_140 = sag_ratio)
-bad_Cells <- c(1)
-CeA_df_fluoro <- CeA_df_fluoro  %>% filter(!Cell %in% bad_Cells)
+#bad_Cells <- c(1)
+#CeA_df_fluoro <- CeA_df_fluoro  %>% filter(!Cell %in% bad_Cells)
 #####BLA sEPSC cxcl12 2nM###############
 BLA_cxcl12_2nM_sEPSC <- as.tibble(read.csv(".//synaptic_transmission//eventer//st_sEPSC_BLA_cxcl12_2nM.csv"))
 BLA_cxcl12_2nM_sEPSC$Condition <- plyr::revalue(BLA_cxcl12_2nM_sEPSC$Condition, c("b"="baseline", "f" = "CXCL12"))

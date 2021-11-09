@@ -25,9 +25,9 @@ CXCL12_5nM_BLA_sIPSC_stat_freq <- CXCL12_5nM_BLA_sIPSC_stat_all$Statistics[1]
 
 To study whether BLA network can be regulated by CXCL12, whole-cell patch-clamp recordings were obtained from principal cells.<!--, measuring their excitability and intrinsic properties, as well as synaptic transmission.-->
 The intrinsic membrane properties and synaptic transmission were measured using analogous protocols as in the CX3CL1 study. 
-No significant changes in basal excitability, as assessed by input-output curves, was found at both CXCL12 concentrations (2nM and 5nM) despite a trend toward increased excitability (<!--ANOVA?-->Fig. \@ref(fig:CXCL12BLAintrinsic)a).
+No significant changes in basal excitability, as assessed by gain and threshold current, was found at both CXCL12 concentrations (2nM and 5nM) despite a trend toward increased excitability (Fig. \@ref(fig:CXCL12BLAintrinsic)a).
 This was especially true for CXCL12 at 5nM concentration; however, a high level of variation is observed (Fig. \@ref(fig:CXCL12BLAintrinsic)b).
-This issue warrants further investigation.<!--  Comparing NF1707 ( n = 10) and CTR ( n = 8) groups, no significant effect on basal excitability, as assessed by input – output curves, was found despite a trend toward increased excitability (Supplementary Figure S7; F(1,16) = 2.280, P = 0.151). Repeated-measure ANOVA showed no group × intensity interaction (F (2.080,33.27) = 1.984, P = 0.152, Greenhouse – Geisser correction).-->
+Further research will be required to  independently replicate these findings and further investigate the mechanisms of this effect.
 Moreover, other measured membrane intrinsic properties of principal cells were also unaffected by CXCL12 treatment, as showed in Fig. \@ref(fig:CXCl12BLAexcitabilityfigall) in Appendix \@ref(BLACXCL12membrappend)).
 
 ```{r CXCL12BLAintrinsic, fig.cap='**2nM and 5nM CXCL12 does not affect BLA excitability** **(a1-a2)** Plots presenting population data of neurons before (blue) and after(red) CXCL12 treatment as a function of the frequency and injected depolarizing current steps', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 8, fig.height= 5}
@@ -64,6 +64,13 @@ Similarly, when CXCL12 at a concentration of 5nM was bath-applied, `r ((pie_BLA_
 These findings also need further replication and investigation of the potential mechanisms underlying opposite effects of CXCL12 on sEPSCs frequency. <!--  indicating that additional opposite mechanisms were involved (although in three out of the ten neurons tested we still observed a decrease in the AP frequency)-->
 The remaining data concerning excitatory synaptic transmission are illustrated in Figure \@ref(fig:CXCL12BLAsEPSCfigall) in Appendix (\@ref(BLACXCL12sEPSCappend)).
 
+Finally, the ability of exogenous CXCL12 to mediate inhibitory synaptic transmission was also assessed.
+Although <!--similarly to excitatory transmission,--> none of the measured sIPSCs' parameters reached statistical significance, there is trend in the frequency.
+As shown in Fig.\@ref(fig:CXCL12BLAsIPSCfreq), at the concentration of 2nM, CXCL12 reduced the GABAergic transmission onto `r (pie_BLA_c2_freq$data$count[1]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3]))` % of principal cells.
+In contrast, at 5nM, the `r pie_BLA_c5_freq$data$count[2]` out of the `r (pie_BLA_c5_freq$data$count[1] + pie_BLA_c5_freq$data$count[2] + pie_BLA_c5_freq$data$count[3])` neurons showed increased frequency of sIPSCs. 
+In addition, sIPSCs' rise time is trendily increased by both doses of CXCL12 (Fig.\@ref(fig:CXCL12BLAsIPSCfreq)b and d).
+However, this multifaceted effect needs further replication and exploration.<!--The intriguing possibility that CXCL12 could modulate these functions should also be more largely explored.-->
+The details and plots of the amplitude and decay time of sIPSCs' following CXCL12 treatment can be found in Appendix \@ref(BLACXCL12sIPSCappend) and in Fig. \@ref(fig:CXCL12BLAsIPSCall).
 
 ```{r CXCL12BLAsIPSCfreq, fig.cap='**Effects of 2nM and 5nM CXCL12 on the frequency and decay time of sIPSCs**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 8, fig.height= 8}
 
@@ -118,14 +125,6 @@ figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1')) #+ plot_layout(he
 figure1
 ```
 
-Finally, the ability of exogenous CXCL12 to mediate inhibitory synaptic transmission was also assessed.
-Although <!--similarly to excitatory transmission,--> none of the measured sIPSCs' parameters reached statistical significance, there is trend in the frequency.
-As shown in Fig.\@ref(fig:CXCL12BLAsIPSCfreq), at the concentration of 2nM, CXCL12 reduced the GABAergic transmission onto `r (pie_BLA_c2_freq$data$count[1]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3]))` % of principal cells.
-In contrast, at 5nM, the `r pie_BLA_c5_freq$data$count[2]` out of the `r (pie_BLA_c5_freq$data$count[1] + pie_BLA_c5_freq$data$count[2] + pie_BLA_c5_freq$data$count[3])` neurons showed increased frequency of sIPSCs. 
-In addition, sIPSCs' rise time is trendily increased by both doses of CXCL12 (Fig.\@ref(fig:CXCL12BLAsIPSCfreq)b and d).
-However, this multifaceted effect needs further replication and investigation.
-The details and plots of the amplitude and decay time of sIPSCs' following CXCL12 treatment can be found in Appendix \@ref(BLACXCL12sIPSCappend) and in Fig. \@ref(fig:CXCL12BLAsIPSCall).
-
 ### Cellular distribution of CXCL12 and CXCR4 in the rat basolateral amygdala
 
 To gain better understating of complex, sometimes opposite, electrophysiological effects after CXCL12 application, immunohistochemical stainings of CXCL12 and CXCR4 were performed.<!--better written?--><!--explore how CXCL12 affects local communication between neurons and glia in the BLA, immunohistochemical double staining for CXCR4 in this area was performed with nestin, DCX, NeuN, CD34, fetal liver kinase (Flk)-1, and CD31--> 
@@ -134,8 +133,9 @@ To gain better understating of complex, sometimes opposite, electrophysiological
 
 ## CXCL12/CXCR4 signaling in the central amygdala
 
-<!--To explore the function of neuronally expressed CXCR4, we tested its ability to modulate the electrical activity of CeL neurons. 
+<!-- As previous studies suggest the anxiogenic action of CXCL12, its function in the CeL, critical region in relation to anxiety, was explored.
 In contrast to what was observed in the basolateral amygdala, CXCL12 exerts more prominent electrophysiological effects in the central nucleus of the amygdala.-->
+<!--To explore the function of neuronally expressed CXCR4, we tested its ability to modulate the electrical activity of CeL neurons.-->
 
 ### Enhanced excitability of CeL neurons following CXCL12 treatment
 
@@ -210,7 +210,7 @@ Figures and detailed descriptions can be found in Appendix \@ref(CXCL12CeAmembr)
 Together, these findings illustrate that CXCL12 upregulated LF neurons' excitability in the CeL in a CXCR4-dependent and probably astrocytic-independent manner.
 
 
-```{r CXCL12CeAexc, fig.cap='**CXCL12 enhanced excitability of CeL neurons** **(a1)** Boxplots presenting gain of each neuron in CeL before and after CXCL12 application regardless of its electrophysiological type. **(a2)** Boxplots showing a gain of each cell before and after CXCL12 application in Regular-Spiking neurons. **(a3)** Boxplots showing a gain of each cell before and after CXCL12 application in Late-Firing neurons across different conditions. **(b1)** Boxplots presenting threshold current of each neuron in CeL before and after CXCL12 application regardless of its electrophysiological type. **(b2)** Boxplots showing threshold current of each cell before and after CXCL12 application in Regular-Spiking neurons. **(b3)** Boxplots showing threshold current of each cell before and after CXCL12 application in Late-Firing neurons across different conditions./// **(c1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment. **(c2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. **(d1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment in the presence of AZD8797, the blocker of CX3CL1 receptor. **(d2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. **(e1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment in the presence of minocycline, the blocker of microglial activity. **(d2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. Scale bar: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE, warning= FALSE, fig.width= 12, fig.height= 10}
+```{r CXCL12CeAexc, fig.cap='**CXCL12 enhanced excitability of CeL neurons** **(a1)** Boxplots showing a gain of each cell before and after CXCL12 application in Regular-Spiking neurons. **(a2)** Boxplots showing a gain of each cell before and after CXCL12 application in Late-Firing neurons across different conditions. **(b1)** Boxplots showing threshold current of each cell before and after CXCL12 application in Regular-Spiking neurons. **(b2)** Boxplots showing threshold current of each cell before and after CXCL12 application in Late-Firing neurons across different conditions./// **(c1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment. **(c2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. **(d1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment in the presence of AZD8797, the blocker of CX3CL1 receptor. **(d2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. **(e1)** Input-Output relationship of a representative neuron illustrating its excitability before (baseline) and after CX3CL1 treatment in the presence of minocycline, the blocker of microglial activity. **(d2)** Voltage traces from the same representative cells. They represent the highlighted by orange dots from previous plot. Scale bar: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE, warning= FALSE, fig.width= 12, fig.height= 10}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -274,8 +274,8 @@ bp_CeA_cxcl12_thres_RS <- bp_CeA_cxcl12_thres_RS + facet_wrap(~ Experiment, nrow
 
 #using patchwork to do layout of the figure
 
-A <- ((bp_CeA_cxcl12_gain | bp_CeA_cxcl12_gain_RS | bp_CeA_cxcl12_gain_LF) + plot_layout(tag_level = "new", widths = c(0.4, 0.4, 1.5)))
-B <- ((bp_CeA_cxcl12_thres | bp_CeA_cxcl12_thres_RS | bp_CeA_cxcl12_thres_LF) + plot_layout(tag_level = "new", widths = c(0.4, 0.4, 1.5)))
+A <- ((bp_CeA_cxcl12_gain_RS | bp_CeA_cxcl12_gain_LF) + plot_layout(tag_level = "new", widths = c(0.5, 1.5)))
+B <- ((bp_CeA_cxcl12_thres_RS | bp_CeA_cxcl12_thres_LF) + plot_layout(tag_level = "new", widths = c(0.5,  1.5)))
 #C <- (((representative_frak2nM +  ggtitle('CX3CL1(2nM)'))| traces_frak2nM) + plot_layout(tag_level = "new", widths = c(0.5,1))) 
 #D <- (((representative_azdfrak2nM +  ggtitle('AZD8797 + CX3CL1(2nM)'))| traces_azdfrak) + plot_layout(tag_level = "new", widths = c(0.5,1))) 
 #E <- (((representative_minofrak2nM +  ggtitle('minocycline + CX3CL1(2nM)')) | traces_minofrak) + plot_layout(tag_level = "new", widths = c(0.5,1))) 
@@ -604,13 +604,8 @@ figure1
 
 Having established that CXCL12 application led to complex, often opposite electrophysiological actions, the next step was to further explore how CXCL12 affects local communication between neurons and astrocytes in the CeA by using immunohistochemical staining for CXCR4 and neuronal markers (such as SOM+, PKC`r knitr::asis_output("\U03B4")`) or astrocytic GFAP.<!--AMD3100 eliminates the beneficial effects of CXCL12, indicating that the CXCL12/CXCR4 signaling pathway is vitally important in improving the neurobehavioral outcomes of ischemic mice, so studies were performed to detect the expression of CXCR4.--> 
 
-### tu skonczyłam
 
-More generally, our data significantly extend the understanding of glial functions  by showing that microglia are actively regulating inhibitory synapses
-
-We further subdivided the DG data and compared the sIPSCs from the two blades but the results were comparable to those for the combined data-set (Figure S2).
-
-Acute application of DAMGO reduced the frequency of spontaneous excitatory and inhibitory postsynaptic currents, but the effect was greater in the VMS,
+<!--More generally, our data significantly extend the understanding of glial functions  by showing that microglia are actively regulating inhibitory synapses
 
 ###### electrophysiology
 
@@ -671,33 +666,11 @@ Comparison of neurochemical GABAergic synapse labeling between cell types showed
 
 This was also accompanied by significant increases in the frequency of sIPSCs (Fig. 9 and Table 3) compared with principal cells.
 
-
-
 Of these cells, nine were classed as type 1 and the other nine as type 2
 
 Quantitative analysis of GABAergic synapse markers and measurement of miniature inhibitory postsynaptic currents in BLA projection neurons after neurofascin knockdown ex vivo confirmed the loss of GABAergic input.
 
 We were next interested in determining if lamotrigine affects GABAergic synaptic transmission in the hippocampus, a brain area critically involved in the coordination of neuronal activity that gives rise to network oscillations by GABAergic interneurons. 
-
-###### immuno
-
-
-###### dendrites
-
-To analyze <!--the afferent connectivity of fully mature newborn granule neurons-->, we examined the dendritic spines of <!--8-weekold RFP+ cells -->.
-These spines can be classified into various typologies on the basis of morphological criteria (Pallas-Bazarra et al., 2016; Pallas-Bazarra et al., 2017). <!--dać publikacje zespołu Jakuba-->
-
-Fig. 4A and B shows representative images of dendritic fragments of <!--newborn neurons of WT (A) and CX3CR1?/? (B) animals -->. 
-In addition, the classification of dendritic spines into mushroom, thin and stubby types is illustrated. 
-Neurons <!--of CX3CR1?/? mice--> showed a reduction in the total number of dendritic spines.
-To further characterize the populations of spines present in these cells, we measured the percentage of each type of spine (D).
-As shown, the percentage of stubby spines was increased in CX3CR1?/? animals, whereas that of mushroom spines was reduced. 
-Thus, these data show that the absence of CX3CR1 leads to a decrease in the number of newborn granule neuron dendritic spines and alterations in their morphology (namely, an enlargement and shortening).
-
-To confirm whether dendritic spine density was increased,
-
-In addition, we also examined spine morphology because changes in spine morphology are believed to represent one mechanism by which synaptic activity leaves its imprint on neurons. This was concurrent with an increase in spines with well-defined heads, which is correlated with spine maturation.
-
 
 ###### CeL clustering
 
@@ -716,30 +689,6 @@ To divide these two distinct cell classes unbiasedly, we performed hierarchical 
 Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
 
 
-###### LTP BLA
-
-Upon application of HFS, vSub-evoked field potentials in the BLA were effectively potentiated in the control group, but not in the NF knockdown group as revealed by mixed model repeated-measure ANOVA (group effect: (F (1,16) = 16.27, P = 0.001; and group × post-HFS time point interaction: F(2.071,33.136) = 9.231, P = 0.001, Greenhouse – Geisser correction; Figure 4f). The comparison of average potentiation across time points after induction also revealed a highly significant difference between the two groups (Figure 4g, t (16) = 4.03, P = 0.001).
-
-NF knockdown with the less effective NF1196 vector also reduced vSub-BLA LTP (Supplementary Figure S8b and c) without altering the input – output curve (Supplementary Figure S8a). Together, this demonstrates a specific impairment of BLA synaptic plasticity to vSub inputs after NF knockdown. 
-
-<!-- 
-The effect of **500 pM CX3CL1** on LTP in the DG was investigated both in the presence and absence of 100 μM of the GABAA receptor/chloride channel inhibitor, picrotoxin (Sigma–Aldrich).-Sheridan2014
--->
-
-<!-- We decided to use, in all future experiments, 100 nM of CXCL16 since, at this concentration, neuronal cell death was efficiently prevented 
-At all the tested concentrations, CXCL16 per se was not toxic (data not shown). 
-Hyaluronidase does not significantly affect neuronal 0electrophysiological properties when applied solely,
-
- We chose a dose that does not activate basal HPA axis activity
- 
- The dorsal and ventral parts of the local hippocampal neuronal networks participate in different extended circuitries (Papatheodoropoulos, 2018; Strange et al., 2014) and hence, the inhibitory input of the intrinsic primary hippocampal circuitry may vary and differentially regulate the local network. To gain insight into the inhibitory regulation of the local hippocampal circuitry, we examined the functional characteristic of the IPSCs in DG granule cells (Figure 1) and CA3 pyramidal neurons (Figure 2) in the dorsal and ventral hippocampus.
--->
-<!--  As reported in Figure 2,  .... in response to exogenously administrated CXCL16  in a concentration-dependent way, with an effect that is maximal at  0.1 nM-->
 
 
-
-In order to maintain stable functionality in the face of continually changing input, neurones in  the CNS must dynamically modulate their electrical characteristics. It
-
-To gain greater insights about the cellular localization of CXCL12 and CXCR4, their expression was studied in rat brain slices by immunohistochemistry and fluorescence microscopy.
-
-Molecular identification and characterization of fear controlling circuitries is a promising path towards developing targeted treatments of fear-related disorders.
+\newpage

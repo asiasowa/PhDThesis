@@ -448,7 +448,7 @@ Under these conditions, the modulation of GABAergic transmission by CXCL12 was p
 Altogether, these results suggest that the CXCL12-triggered increase in the frequency of GABAergic transmission was mediated through the stimulation of CXCR4 and probably associated with the increase in spontaneous firing of interneurons, as this effect is eliminated by TTX.<!--, as indicated by increased sIPSC frequency in pyramidal neurons-->
 However, astrocytes were also shown to be active players in GABAergic transmission onto Regular-Spiking neurons.
 
-```{r CXCL12CeAsIPSCRS, fig.cap='**CXCL12 modulates GABAergic transmission onto Regular-Spiking neurons** Boxplots presenting population data of sIPSCs frequency**(a1)** and amplitude **(a2)** under different conditions. **(b1)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12(5nM) application in Regular-Spiking neuron. **(b2)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of TTX, blocking action-potentials. **(b3)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of AMD3100, the CXCR4 blocker. **(b4)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of fluorocitrate, an astrocytic toxin. Scale bar: 10pA, 1s', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 6, fig.width= 15}
+```{r CXCL12CeAsIPSCRS, fig.cap="**CXCL12 modulates GABAergic transmission onto Regular-Spiking neurons** Boxplots presenting population data of sIPSCs frequency**(a1)** and amplitude **(a2)** under different conditions. **(b1)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12(5nM) application in Regular-Spiking neuron. **(b2)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of TTX, blocking action-potentials. **(b3)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of AMD3100, the CXCR4 blocker. **(b4)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of fluorocitrate, an astrocytic toxin. Scale bar: 10pA, 1s", fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 6, fig.width= 15}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
@@ -506,14 +506,6 @@ figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
 
 
 figure1
-
-# figure1 <-  (bp_CeA_s_freq_sIPSC_LF | bp_CeA_s_freq_sIPSC_RS) / 
-#             (bp_CeA_s_amp_sIPSC_LF | bp_CeA_s_amp_sIPSC_RS) /
-#             (bp_CeA_s_rt_sIPSC_LF | bp_CeA_s_rt_sIPSC_RS) /
-#             (bp_CeA_s_dt_sIPSC_LF | bp_CeA_s_dt_sIPSC_RS)
- #   / 
-  # 
-  # ((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC) + plot_layout(guides = "collect") & theme(legend.position = "bottom")  + plot_layout(tag_level = 'new')) / 
 
 ```
 
@@ -686,7 +678,7 @@ Overall, four features (spike delay, ramp ratio, RMP, and rheobase) showed non-G
 To divide these two distinct cell classes unbiasedly, we performed hierarchical cluster analysis from 90 randomly recorded CeL neurons based on these four features ( Cossart et al., 2006 ; Graves et al., 2012 ; also see Materials and Methods). Strikingly, the cluster dendrogram yielded two distinct neuron populations, LS and ES cells ( Fig. 1 F ). The spike delay of LS and ES neurons was 1776 21 ms (blue, n 	 50) and 834 88 ms (red, n 	 40), respectively ( p 0.0001; Wilcoxon rank-sum test; Table 1 ). In addition, the LS population exhibited a more hyperpolarized RMP and a larger rheobase ( Table 1 ). Similar to the dendrogram, the scatter-plot of spike delay versus ramp ratio revealed two distinctly nonoverlapping clusters ( Fig. 1 G ). Classification of cells with the arbitrary cutoff value (spike delay of 1.5 s) fell into two categories, which corresponded to the same two populations determined by the unbiased hierarchical cluster analysis. As a result, we classified neurons with a spike delay of 
  1.5 s at rheobase as the LS cells and the remainders as the ES cells in the subsequent experiments of this study.
  
-Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], 
+Based on literature, we included following criteria: (1) adaptation ratio [@hunt_2017], (2) rheobase and RMS [@hou_2016], -->
 
 
 

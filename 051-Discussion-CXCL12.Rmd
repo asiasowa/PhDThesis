@@ -108,7 +108,7 @@ Finally, in comparison to other reasonably well-understood brain regions such as
 
 * BLA - pyramidal cells were selected based on 
 
- 
+* CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber. 
 
 
 

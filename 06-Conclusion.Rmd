@@ -1,5 +1,10 @@
 # Conclusions
 
+The effects of chemokines in the brain may be due to their ability to activate chemokine receptors localized on neurons and/or glia, thus leading to changes in neuronal membrane properties and/or synaptic transmission. 
+Specifically, chemokines may alter synaptic transmitter release [@limatola_2000, @ragozzino_2002], modulate the functional properties of ionic channels [@lax_2002, @oh_2002] and promote the release of glutamate from astrocytes [@lax_2002]. 
+In addition, the chemokine system can alter the actions of neuronally active pharmacological agents such as opioids and the cannabinoid system [@heinisch_2011]. 
+Moreover, chemokine receptor knockout mice (CCR6, CCR7, CXCR5) have recently been shown to exhibit behavioral and neurobiological phenotypes of relevance to psychiatric disorders, which suggests their essential role in physiological conditions [@harrison_2014, @jaehne_2014, @stuart_2014].
+
 Nevertheless, our data support the notion that an adequate cross-talk between microglia and neurons is required for the correct functional maturation of newborn granule neurons and for the proper regulation of emotional behavior. These data contribute to increasing our understanding of AHN under both physiological and pathological conditions. - Bolos2018
 
 In summary, our data demonstrate that baseline inhibitory synaptic transmission in SG neurons is markedly enhanced by minocycline. This may function to decrease the excitability of SG neurons, thus leading to a modulation of nociceptive transmission.- Peng2016
@@ -11,3 +16,11 @@ In summary, our data demonstrate that baseline inhibitory synaptic transmission 
  
  
 Another important aspect of neuropeptide signalling in the central amygdala that we illustrated is that neuropeptides can antagonise each other’s action (CRF vs nociception and NPY;vasopressin vs oxytocin), or at least have opposing effects (PACAP and CGRP vs galanin), work synergistically (oxytocin and angiotensin IV), or have at least similar effects  (PACAP and CGRP, CRF and angiotensin-II). This makes neuropeptide signalling in the central amygdala highly dynamic, which is further amplified by their ability to interfere with synaptic plasticity as seen for CGRP in threat learning (Han et al.2010). Taken together, the rich diversity of neuro-peptides and their receptors in the central amygdala, second only to the hypothalamus, makes it possible to fine-tune amygdala activity and resulting output to maintain emotional homeostasis.  <!-- zerżnięte z van der bourg review o peptides in CeA - analogicznie dla chemokin -->
+
+The identification of AR1as downstream element responsible for beneficial effects of CX3CL1 on neuron survival against Glu neurotoxicity may represent an important challenge for management of neurological disorders including acute brain ischemia.
+
+However, considering that dendritic spines reflect the structural level of synaptic plasticity along with extensive evidence of chemokine actions on excitatory synaptic transmission and synaptic plasticity, it is tempting to speculate that chemokines actions on dendritic spines are still unexplored. 
+
+Thus, further experiments identifying the properties and functions of each of neuronal, microglial, astrocytic and, oligodendrocytic compartments remain to be addressed. 
+
+\newpage

@@ -27,6 +27,10 @@ csl: common/european-journal-of-neuroscience.csl
 # ), 'packages.bib')
 library(knitr)
 library(tidyverse)
+library(magick)
+library(patchwork)
+library(figpatch)
+library(gt)
 # options(gt.html_tag_check = FALSE)
 # knitr::opts_chunk$set(echo = TRUE)
 

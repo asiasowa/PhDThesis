@@ -657,6 +657,7 @@ Notably, these alternations are independent of microglia.
 <!-- Interestingly, whereas no significant difference in the relative percentage of mushroom spines was detected between treatments, thin spines remained significantly elevated, whereas stubby spines decreased in terminal dendritic segments of CeA neurons from CRS-exposed as compared to CTRL ‘recovered’ animals (Fig. 6B).-->
 
 ```{r spines, fig.caption = "**CX3CL1 altered the morphology of dendritic spines in neuronal cultures from the rat amygdala.** **(a)**... " , echo = FALSE, warning = FALSE, message= FALSE}
+
 knitr::include_graphics("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\CX3CL1\\HODOWLE_AMYGDALA_WARSZAWA\\hodowle_aftersorting.png")
 
 #![]("D://OneDrive//elektrodata//PRELUDIUM//phd//CX3CL1//HODOWLE_AMYGDALA_WARSZAWA//hodowle_aftersorting.png")
@@ -667,11 +668,12 @@ knitr::include_graphics("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\CX3CL1\\HODO
 Calcium/calmodulin-dependent protein kinase II (CaMK) has been shown to play a critical role in long-term potentiation (LTP) and emotional learning mediated by the basolateral amygdala.<!--citation?-->
 This is also a critical marker of principal cells in the BLA [@mcdonald_2002a].
 As results presented in this dissertation show that CX3CL1 induced a depression of principal cell's excitability and the impairment in LTP in the BLA, the immunohistochemistry used to examine the level of the expression of CX3CL1 and CX3CR1 in CAMK-II-`r knitr::asis_output("\U03B1")`-positive cells in the BLA.<!--little is known about its cellular localization in this region. We have utilized immunohistochemical methods to study the neuronal localization of CaMK, and its relationship to -aminobutyric acid (GABA)-ergic structures, in the rat basolateral amygdala (ABL). Light microscopic observations revealed dense CaMK staining in the ABL. analogous --><!--To define what types of cells in the brain express CX3CL1 and its receptor, CX3CR1, in the BLA, immunohistochemical staining was performed for NeuN, GFAP, and CD31-->
-As illustrated in Figure \@ref(fig:BLA_CX3CL1_immuno), around <!---->% of CAMK-II-positive cells also expressed CX3CL1, while CX3CR1 receptors were present in <!----->% of pyramidal-like neurons in the BLA.
+As illustrated in Figure \@ref(fig:BLACX3CL1immuno), around <!---->% of CAMK-II-positive cells also expressed CX3CL1, while CX3CR1 receptors were present in <!----->% of pyramidal-like neurons in the BLA.
 The results regarding CX3CR1 expression in neurons, especially principal cells, were also confirmed in neuronal cultures of amygdala.
 Hence, although all of the electrophysiological effects of the CX3CL1 were prevented by minocycline, the direct action of this chemokine on neurons is also plausible.
 
-```{r BLA_CX3CL1_immuno, fig.cap = "", echo = FALSE, warning = FALSE, message= FALSE}
+```{r BLACX3CL1immuno, fig.cap = "", echo = FALSE, warning = FALSE, message= FALSE}
+
 knitr::include_graphics("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\CX3CL1\\HODOWLE_AMYGDALA_WARSZAWA\\hodowle_aftersorting.png")
 
 

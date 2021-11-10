@@ -45,7 +45,7 @@ AMD3100 ... <!-- dokończyć-->
 For microglia and astrocytes inhibition, the minocycline and fluorocitric acid were used, respectively.
 Both reagents were obtained from Sigma Aldrich. <!-- minocycline (100 `r knitr::asis_output("\U03BC")`M, Sigma–Aldrich, Germany),// DL-fluorocitric acid barium salt (a selective astrocyte inhibitor; 100 `r knitr::asis_output("\U03BC")`M, Sigma–Aldrich, Germany), // FC stocks were prepared according to published procedures (28), and acute horizontal brain slices containing the nRT and VB were prepared following established methods (66).-->
 Minocycline was freshly dissolved in ACSF at the final concentration before recordings. 
-The determination of the doses for CX3CL1, CXCL12, AZD8797, AMD3100, minocycline, and fluorocitrate was based on a previous studies [@sheridan_2014; @baxter_2020]<!--citations--><!--in which 100 $\upmu$M minocycline markedly reduced the frequency and amplitude of spontaneous EPSCs (sEPSCs) in hippocampal neurons (Gonzalez et al., 2007). - Peng2016 // CX3CL1 were purchased from .... and its final concentration were 2 and 5nM, according to studies -->
+The determination of the doses for CX3CL1, CXCL12, AZD8797, AMD3100, minocycline, and fluorocitrate was based on previous studies [@sheridan_2014; @baxter_2020]<!--citations--><!--in which 100 $\upmu$M minocycline markedly reduced the frequency and amplitude of spontaneous EPSCs (sEPSCs) in hippocampal neurons (Gonzalez et al., 2007). - Peng2016 // CX3CL1 were purchased from .... and its final concentration were 2 and 5nM, according to studies -->
 <!-- Of note, this chemical is dissolved in DMSO and thus the recording ACSF was additionally supplemented with proper proportion (no more than 0.001%) of DMSO as a baseline condition. <!-- nie wiem czy to i powyższe zdania nie do metody... -->
 
 Immunostaining reagents suppliers were as follows: formaldehyde 36-38% solution, POCH, Gliwice, Poland, Cat No. 432173111; <!-- sprawdzić/ zmienić --> 
@@ -122,7 +122,7 @@ After this recovery period, individual slices were transferred to a recording ch
 <!-- zrobić zdjęcia z DIC i miejscem -->
 Neurons were identified based on their location and somatic morphological characteristics under infrared differential interference contrast (DIC). 
 The image from the microscope was enhanced using a CCD camera and displayed on a computer monitor. 
-The border of the basolateral and central amygdala were identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@paxinos_2007], corresponding to -1.92 mm -3.12 caudal to bregma (see Figure: \@ref(fig:methodpatch)). <!-- lepszy figure --> 
+The border of the basolateral and central amygdala was identified based on visual control by low magnification objective (2.5 x) and referenced to the Paxinos Atlas [@paxinos_2007], corresponding to -1.92 mm -3.12 caudal to bregma (see Figure: \@ref(fig:methodpatch)). <!-- lepszy figure --> 
 Neurons with a healthy appearance presented a smooth surface, and the cell body and parts of the dendrites could be clearly seen. 
 Cells were approached under visual control with a patch pipette using a three-dimensional micromanipulator (uMp micromanipulator system, Sensapex, Finland). 
 Recording micropipettes were fabricated from borosilicate glass capillaries (3–6 M`r knitr::asis_output("\U038F")`; Sutter Instruments, USA) using a horizontal puller (Sutter Instruments P–97) and filled with the following solutions. 
@@ -151,20 +151,20 @@ All drugs were delivered *via* a bath perfusion system. <!-- antibodies? -->
 
 #### Recording protocols, data analysis, and statistics {#electroprotocols}
 
-Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration, or measuring membrane voltages under current-clamp configuration. 
+Whole-cell patch-clamp is capable of detecting transmembrane currents under voltage-clamp configuration or measuring membrane voltages under current-clamp configuration. 
 Hence, to measure the effects of chemokines (CX3CL1/CXCL12) on intrinsic membrane properties, the experiments were recorded in the whole-cell patch-clamp under the current-clamp configuration. 
 The measured features are illustrated in Fig. \@ref(fig:methodIV).
 First, 5 minutes after breaking into the cell, (1) the resting membrane potential (RMP) was recorded. 
 Then, several membrane parameters were assessed based on neuronal voltage responses from -65 mV holding potential to hyper- and depolarizing current pulses (500 ms, 10 or 5pA increments), and analyzed using custom scripts.<!-- In order to characterize the behavior of recorded neurons, 22 electrophysiological parameters were measured-->
 (2) Input resistance (R~m~), (3) membrane time constant (`r knitr::asis_output("\U03C4")`~m~), and (4) membrane capacitance (C~m~) were determined in response to hyperpolarizing current pulses eliciting voltage shifts whose amplitude was 10–20 mV negative to rest.<!-- (Kawaguchi 1993) // inne cytowanie--> 
-R~m~ was measured following Ohms law (R~m~ = $\frac{dV~m~}{I}$)<!--(R~m~ = dV~m~/ I)-->, where dV~m~ is the change in membrane potential in response to - 20 pA (500 ms) current injection (I).
+R~m~ was measured following Ohm's law (R~m~ = $\frac{dV~m~}{I}$)<!--(R~m~ = dV~m~/ I)-->, where dV~m~ is the change in membrane potential in response to - 20 pA (500 ms) current injection (I).
 `r knitr::asis_output("\U03C4")`~m~ was determined at the beginning of the voltage response and computed by fitting it to a single exponential.
 C~m~ calculated according to the equation C~m~= $\frac{\tau~m~}{R~m~}$).
 
 Cell excitability was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model (see Fig. \@ref(fig:methodIV), parts a and b).
 (5) The gain (slope) and (6) rheobase (minimal current necessary to fire the first action potential were determined for further analysis.
 (7) Action potential threshold corresponded to the voltage threshold of the first action potential elicited by a current step, defined as the voltage at which the time derivative of V~m~($\frac{\partial V}{\partial t}$) is 20 V s^−1^.
-(8) The spike latency (often referred as onset or delay), measured from the start of square depolarizing current pulse injection to the peak of the first action potential evoked by the rheobase.
+(8) The spike latency (often referred to as onset or delay), measured from the start of square depolarizing current pulse injection to the peak of the first action potential evoked by the rheobase.
 (9) The amplitudes of the first action potential (AP; measured from the threshold to the positive peak of the rheobase).
 (10) AP width (measured at half-amplitude).
 (11) Maximal firing rate (F~max~, defined as the trace with the largest number of action potentials).
@@ -172,20 +172,20 @@ Cell excitability was determined by analyzing the number of action potentials ev
 (13) Last interspike interval (ISI~last~, in ms)- the time interval between the threshold of the penultimate action potential and the threshold of the last action potential in response to a 500-ms depolarizing current injection. 
 (14) Spike adaptation ratio - the ratio of ISI~first~ to ISI~last~.
 
-In some cases, especially in the CeL neurons, the sag, post-inhibitory rebound spikes or spontaneous firing were present.
+In some cases, especially in the CeL neurons, the sag, post-inhibitory rebound spikes, or spontaneous firing were present.
 However, these features were scarce and were not considered in further analysis due to the possibility of inconsistent results.
 
-```{r methodIV, fig.cap='**Electrophysiological analysis of action potential properties of neurons in the amygdala**. **(a)** Schematic of recorded neuron. **(b)** Exemplary traces of evoked action potentials to hyperpolarizing and depolarizing current injections. APs were elicited from membrane potential of -65 mV. **(c)** The frequency-current (F/I) relationship of a representative neuron determined by analyzing the number of action potentials (APs) evoked by current steps of increasing amplitude. **(d)** Exemplary zoomed trace of voltage waveform to hyperpolarizing current injection, showing measured Rm, Cm, and tau. **e** Exemplary waveform of a single, evoked action potential illustrating several measured properties. Numbers correspond to features described in the text.', fig.align = 'center', echo = FALSE, message= FALSE }
+```{r methodIV, fig.cap='**Electrophysiological analysis of action potential properties of neurons in the amygdala**. **(a)** Schematic of the recorded neuron. **(b)** Exemplary traces of evoked action potentials to hyperpolarizing and depolarizing current injections. APs were elicited from a membrane potential of -65 mV. **(c)** The frequency-current (F/I) relationship of a representative neuron determined by analyzing the number of action potentials (APs) evoked by current steps of increasing amplitude. **(d)** Exemplary zoomed trace of voltage waveform to hyperpolarizing current injection, showing measured Rm, Cm, and tau. **e** Exemplary waveform of a single, evoked action potential illustrating several measured properties. Numbers correspond to features described in the text.', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images//methods//IV_excitability_protocols2.png")
 ```
 
-In another sets of experiments, in the voltage-clamp configuration were aimed at investigating the influence of either CX3CR1 or CXCR4 receptors activation on spontaneous/miniature inhibitory/excitatory synaptic currents were performed in normal ACSF and ACSF containing TTX (500 nM), respectively (see Fig. \@ref(fig:methodsEPSCsIPSC)). 
+In another set of experiments, the aim was to investigate the influence of either CX3CR1 or CXCR4 receptors activation on spontaneous/miniature inhibitory/excitatory synaptic currents, performed in normal ACSF and ACSF containing TTX (500 nM), respectively  in the voltage-clamp configuration (see Fig. \@ref(fig:methodsEPSCsIPSC)). 
 The details of additional experimental conditions are provided in Results (\@ref(results)). <!-- wytlumaczyć skróty podobnie jak chemokiny (sEPSC/mEPSC/sIPSC/mIPSC)-->
 <!-- The calculated reversal potential for Cl- currents in these patch-clamp recordings equalled -90.51 mV, pominąć raczej -->
 At holding potential of -70mV, inward events represented excitatory postsynaptic currents (Fig. \@ref(fig:methodsEPSCsIPSC)a), whereas to record inhibitory postsynaptic currents, neurons were voltage-clamped at 0 mV (Fig. \@ref(fig:methodsEPSCsIPSC)b).
 After 10 min of the stabilization period, the baseline postsynaptic current activity was recorded. 
 The action of chosen chemokine was assessed by adding a known concentration of a stock solution directly to the bath and taking the measures before (baseline) and during 15 min of chemokine superfusion.
-For analysis, the 4-minute-long recordings from baseline and after 15 minutes of chemokine application was selected.<!--The nature of postsynaptic currents was verified using glutamate (10 μM CNQX, 50 μM DL-AP5 and GABA (20 μM bicuculline) receptor antagonists (Fig. M2 B, C)  chyba mam tylko bicuculine... może jakaś zamykająca się komórka...? albo któryś z fluorocitrate? albo jakaś tomkowa, ktora nic nie ma? -->
+For analysis, the 4-minute-long recordings from baseline and after 15 minutes of chemokine application were selected.<!--The nature of postsynaptic currents was verified using glutamate (10 μM CNQX, 50 μM DL-AP5 and GABA (20 μM bicuculline) receptor antagonists (Fig. M2 B, C)  chyba mam tylko bicuculine... może jakaś zamykająca się komórka...? albo któryś z fluorocitrate? albo jakaś tomkowa, ktora nic nie ma? -->
 From detected events, their median frequency, amplitude, rise time, and decay time were measured (see Fig. \@ref(fig:methodsEPSCsIPSC)).
 These parameters were statistically tested (baseline versus chemokine application). 
 Group data for excitatory or inhibitory synaptic transmission are reported as median`r knitr::asis_output("\U00B1")`SD. 
@@ -194,58 +194,58 @@ At first, postsynaptic currents were detected using Mini Analysis (Synaptosoft I
 However, these software required subjective selection of the threshold amplitude of events and visual inspection of the researcher to prevent the inclusion of false data.
 It leads to semi-automatic approach, which might be prone to error and researcher bias.
 Thus, a machine learning-based approach was used by using Eventer [@winchester_giles_2020], which allowed training a model to implement consistent selection criteria across data sets without bias.
-The same traces were analyzed by using all of these software and selection based on models trained in Eventer was the most rigorous, thereby the occurrence of false positive events is less likely.
+The same traces were analyzed using all of these software and selection based on models trained in Eventer was the most rigorous, thereby the occurrence of false positive events is less likely.
 Importantly, the differences between the control and experimental conditions remained unchanged (data not shown). 
-Hence, the synaptic transmission data presented in this dissertation was done using machine-learning approach in Eventer software.
+Hence, the synaptic transmission data presented in this dissertation was done using a machine-learning approach in Eventer software.
 
 All statistical tests and plotting were done using 3.6.1 [@R_base], with mainly the dplyr (v0.8.3; @dplyr), and the ggplot2 (v3.2.1; @ggplot2) packages. 
 To compare membrane properties and synaptic transmission between different groups, they were analyzed using paired t-test.
 For non-normally distributed data, the Wilcoxon Signed Rank Test was used. <!-- Statistical comparisons were conducted using Repeat-measure, two-way and one-way ANOVA followed Tukey's HSD test using SPSS 20.0 (SPSS Inc., Chicago, IL, USA). Differences were considered to be statistically significant at p < 0.05.-->
 
-```{r methodsEPSCsIPSC, fig.cap='**Analysis of postsynaptic currents from neurons in the amygdala** **(a)** An exemplary trace of spontaneous inhibitory synaptic currents (sIPSCs, red arrows) recorded from representative cell from the amygdala in voltage clamp at 0 mV holding potential (left) and depictured other analyzed parameters. **(b)** A schematic illustrating recorded neuron with its synaptic contacts. **c** An exemplary trace of spontaneous excitatory synaptic currents (sEPSCs, red arrows) recorded from representative cell from the amygdala in voltage clamp at -70 mV holding potential (left) and depictured other analyzed parameters.', fig.align = 'center', echo = FALSE, message= FALSE }
+```{r methodsEPSCsIPSC, fig.cap='**Analysis of postsynaptic currents from neurons in the amygdala** **(a)** An exemplary trace of spontaneous inhibitory synaptic currents (sIPSCs, red arrows) recorded from a representative cell from the amygdala in voltage-clamp at 0 mV holding potential (left) and depictured other analyzed parameters. **(b)** A schematic illustrating a recorded neuron with its synaptic contacts. **c** An exemplary trace of spontaneous excitatory synaptic currents (sEPSCs, red arrows) recorded from representative cell from the amygdala in voltage clamp at -70 mV holding potential (left) and depictured other analyzed parameters.', fig.align = 'center', echo = FALSE, message= FALSE }
 
 knitr::include_graphics("images//methods//representativePSC2.png")
 ```
 
 #### Electrophysiological identification and classification of neurons in the BLA and CeA
 
-Once the whole-cell recording was obtained, cell's characteristics were recorded using current-clamp techniques.
-Neurons were identified by location, shape of cell body, and morphology, but mainly by specific firing properties (see Fig. \@ref(fig:methodpatch)).
+Once the whole-cell recording was obtained, the cell's characteristics were recorded using current-clamp techniques.
+Neurons were identified by location, the shape of a cell body, and morphology, but mainly by specific firing properties (see Fig. \@ref(fig:methodpatch)).
 
 ##### Electrophysiological identification of principal cells in the BLA
 
 Principal neurons were identified based on their unique set of features (see chapter Amygdala \@ref(BLA)).
 
-The classification was made by using criteria derived from other morphological and electrophysiological studies [@faber_2002; @jasnow_2009; @par_1995; @popescu_2011; @sosulina_2006; @washburn_1992a].<!-- perumal_2021 -->
-In addition to their pyramidal-like soma shape, these cells were distinguished from heterogeneous group of interneurons based on such firing properties:
+The classification was made using criteria derived from other morphological and electrophysiological studies [@faber_2002; @jasnow_2009; @par_1995; @popescu_2011; @sosulina_2006; @washburn_1992a].<!-- perumal_2021 -->
+In addition to their pyramidal-like soma shape, these cells were distinguished from a heterogeneous group of interneurons based on such firing properties:
 (a) their prominent spike adaptation ratio,
 (b) low excitability (around 6-20 Hz),
 (c) absence of spontaneous firing,
 (d) low input resistance (50-100 M`r knitr::asis_output("\U03A9")`), and
 (e) comparatively long duration of action potential (< 0.8 ms at half-amplitude).
-Considering heterogeneity of principal cells, especially with regard to adaptation ratio, the more reliable criteria were the action potential duration, the first inter-spike interval and low input.
-Thus, neurons whose action potential were wider than 0.8 ms, first ISI exceeded 20ms, and showing input resistance larger than 150 M`r knitr::asis_output("\U03A9")` were excluded from further analysis. 
+Considering the heterogeneity of principal cells, especially with regard to adaptation ratio, the more reliable criteria were the action potential duration, the first inter-spike interval, and low input.
+Thus, neurons whose action potential was wider than 0.8 ms, first ISI exceeded 20ms and showing input resistance larger than 150 M`r knitr::asis_output("\U03A9")` were excluded from further analysis. 
 
-Given that principal cells constitute around 90% of whole neuronal population in the BLA, by chance alone, sample of BLA neurons should mainly comprise this class of neurons. 
-Hence, by applying these strict criteria, the probability of including interneurons in further analysis<!--misclassification interneurons as principal cells--> was much lowered.
+Given that principal cells constitute around 90% of the whole neuronal population in the BLA, by chance alone, a sample of BLA neurons should mainly comprise this class of neurons. 
+Hence, by applying these strict criteria, the probability of including interneurons in the further analysis<!--misclassification interneurons as principal cells--> was much lowered.
 
 ##### Electrophysiological identification of neurons in the CeA
 
 Neurons in the CeL display heterogeneous intrinsic excitability (@amano_2012; @haubensak_2010; @hou_2016; @hunt_2017; @lopezdearmentia_2004; @martina_1999; @sah_2003a; see chapter Amygdala \@ref(CeA)).<!--Chieng et al., 2006 ; Chiang et al., 2015,-->
 Based on their response to somatic current injections, the majority  of them (~96%) exhibit either the Regular-Spiking or the Late-Firing phenotype in response to depolarizing current steps.
-The remaining 4% comprise of other types of CeL neurons (often designated as fast-spiking and low-firing); however, they were encountered too infrequently (3.5 and 1.5%, respectively) to allow reliable quantitative analyses.
+The remaining 4% comprise other types of CeL neurons (often designated as fast-spiking and low-firing); however, they were encountered too infrequently (3.5 and 1.5%, respectively) to allow reliable quantitative analyses.
 Thus, they were excluded from further analysis.
 
-The Late-Firing neurons show a significant delay before onset of the first action potential (`r knitr::asis_output("\U223C")`100–200 ms).
-During  this  delay,  the  membrane potential depolarized slowly in such way there is a depolarizing ramp (see Fig. \@ref(fig:methodsBLACeAIVrep)b, upper trace).
+The Late-Firing neurons show a significant delay before the onset of the first action potential (`r knitr::asis_output("\U223C")`100–200 ms).
+During  this  delay,  the  membrane potential depolarized slowly in such a way there is a depolarizing ramp (see Fig. \@ref(fig:methodsBLACeAIVrep)b, upper trace).
 Little or no spike-frequency adaptation was seen in these neurons.
-The Regular-Spiking neurons, also described as early-spiking (ES), exhibit shorter AP onset, `r knitr::asis_output("\U223C")`50 ms and more prominent adaptation ratio.
+The Regular-Spiking neurons, also described as early-spiking (ES), exhibit shorter AP onset, `r knitr::asis_output("\U223C")`50 ms, and a more prominent adaptation ratio.
 
 However, similar to what was observed by @hunt_2017, the AP onset highly varied in recorded cells regardless of their type.
 Given that the classification based on the presence of spike frequency accommodation was reported to be reliable [@hou_2016; @hunt_2017], the classification was based on both the AP onset and the presence of spike frequency adaptation.<!--okropne zdanie...-->
 In addition, as in experiments measuring inhibitory synaptic transmission, the cesium-based internal solution was used distorting the firing patterns of the cell, in this case, the classification was based on the presence of the depolarizing ramp seen in the LF cells at subthreshold current step and membrane time constant (`r knitr::asis_output("\U03C4")`~m~). 
 
-```{r methodsBLACeAIVrep, fig.cap='**Classification of types of neurons in the amygdala** **(a)** An exemplary traces of firing patterns of BLA neurons. The presented traces were injected with the currents that evoked the first action potential, next one around 300pA, and next being 400pA. **(b)** An exemplary traces of firing patterns of CeA neurons. Note the depolarizing voltage at subtreshold current in Late-Firing neurons. Scale bars: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE }
+```{r methodsBLACeAIVrep, fig.cap='**Classification of types of neurons in the amygdala** **(a)** An exemplary traces of firing patterns of BLA neurons. The presented traces were injected with the currents that evoked the first action potential, the next one around 300pA, and the next being 400pA. **(b)** An exemplary traces of firing patterns of CeA neurons. Note the depolarizing voltage at subthreshold current in Late-Firing neurons. Scale bars: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE }
 
 knitr::include_graphics("images//methods//IV_BLAvsCeA_examples.png")
 ```
@@ -271,7 +271,7 @@ Briefly, a subset of 250`r knitr::asis_output("\U03BC")`m thick slices was prepa
 Slices were incubated in 1 `r knitr::asis_output("\U03BC")`M SR101 (Sigma-Aldrich, <!-- kraj-->) in oxygenated ACSF for 20 min at 34 `r knitr::asis_output("\U00B0")`C, then washed in ACSF for at least 10 min at 34 `r knitr::asis_output("\U00B0")`C. <!-- adapted a protocol for application-->
 The slices were fixed in 4% PFA overnight and processed for immunocytochemistry, as described above. 
 
-### Extracellular recordings, data acquisition and statistics
+### Extracellular recordings, data acquisition, and statistics
 
 As the BLA is widely known to be involved in emotional learning and memory, and mounting evidence points to CX3CL1 as a crucial player in these phenomena, additional experiments investigating the role of CX3CL1 in the BLA LTP was performed.
 Slices containing the BLA were transferred to an interface recording chamber and perfused at 2 ml/min with a recording ACSF (33.5 `r knitr::asis_output("\U00B1")` 0.5`r knitr::asis_output("\U00B0")`C), the same as for patch-clamp recordings. 
@@ -279,7 +279,7 @@ Recordings began approx. 1.5 h after slice preparation.
 
 For field potentials (FPs) recording, a bipolar stimulating electrode and a recording electrode  were visually positioned under a dissecting microscope in the external capsule and the basolateral region of the amygdala, respectively,  as shown in Fig. \@ref(fig:methodpatch) 
 A Pt-Ir electrode (CBARC85, FHC, USA) was used for stimulation, whereas recordings were made using ACSF-filled glass micropipettes (1–2 M`r knitr::asis_output("\U03A9")`), pulled from borosilicate capillaries using a List-Medical L/M 3P-A micropipette puller.
-The recording electrode was placed in the slice in area corresponding with the BLA.
+The recording electrode was placed in the slice in the area corresponding with the BLA.
 Stimuli (duration: 0.2 ms) were applied at 0.016 Hz using a constant-current stimulus isolation unit (WPI).
 Signals<!--FPs--> were amplified (Axoprobe 1A, Axon Instruments, USA), filtered (1-500 Hz), A/D converted at 10 kHz and stored using the Micro1401 interface and SIGAVG 4 software (CED, UK).
 A stimulus–response (input–output) curve was obtained for each slice.
@@ -299,7 +299,7 @@ The amount of LTP was determined as an average increase in the amplitude of FPs 
 The health of the slice was monitored by continuously recording extracellular field potentials throughout experiments. 
 Slices displaying unstable baseline recording were discarded. 
 Data are presented as group means `r knitr::asis_output("\U00B1")` SEM.
-Statistical significance was evaluated using Kruskal-Wallis test or ANOVA with post hoc Tukey’s test for multiple comparisons.
+Statistical significance was evaluated using the Kruskal-Wallis test or ANOVA with post hoc Tukey’s test for multiple comparisons.
 Data were analyzed using GraphPad Prism v9.0.0 (GraphPad Software, USA).
 
 
@@ -390,12 +390,12 @@ A Mean filter (2 pixels) was applied in order to delete precipitates of the seco
 The selection was then loaded in the CD68 channel. 
 Selections were inverted in both channels, and the exterior of the cells was filled with black paint.  -->
 
-All image analysis, cell counts and fluorescence measurements were performed “off-line” on captured images taken from stained sections using open source Fiji<!--citation?--> imaging software.<!-- Image analysis has been performed using open source Fiji32 and QuPath33 imaging software. -->
+All image analysis, cell counts, and fluorescence measurements were performed “off-line” on captured images taken from stained sections using open-source Fiji<!--citation?--> imaging software.<!-- Image analysis has been performed using open source Fiji32 and QuPath33 imaging software. -->
 <!-- For fluorescent images, z-stacks were collapsed to a maximum intensity projection and the number of cells was quantified using the Fiji cell counter plugin. -->
 The total numbers of positively identified cells expressing either chosen marker of chemokine/CKR of interest were counted manually in individual brain sections.<!-- from 3 rats in each treatment group. -->
 <!--Resulting images were then processed with the Just Another Colocalization Plugin (JACoP) in ImageJ, as previously described (Llorens-Martin et al., 2016). -->
 The number of cells was counted  separately in the central and basolateral amygdala.<!--PV+ interneurons were counted in the DG. To this end, the area including the GL, ML and the H was contoured on confocal stacks of images, and the number of PV+ cells surrounded by PNNs within that contour were counted in each stack of images. The number of cells was then divided by the drawn area, and cell density (cells/mm3) was represented in the graphs. Bolos2018 --> 
-The percentage of MCH neurons that express CXCR4 in a given nucleus was calculated as the ratio of the number of double labelled CXCR4 ⁄ MCH over that of MCH-positive cells.<!--The percentage of colocalization between the two channels (Iba1+ area that was also CD68+ (Mander’s coefficient M1)) is represented in the graphs.--><!-- All cells with a positive BaseScope signal were quantified and represent 100% of labelled cells; the percentages of single- or double-positive cells were determined.--><!--For immunohistochemical experiments, results are expressed as percentage of CXCR7/Olig2- positive cells compared to the total number of CXCR7-EGFP cells in the SVZ (n=6).  zmienić jeszcze trochę -->
+The percentage of MCH neurons that express CXCR4 in a given nucleus was calculated as the ratio of the number of double labeled CXCR4 ⁄ MCH over that of MCH-positive cells.<!--The percentage of colocalization between the two channels (Iba1+ area that was also CD68+ (Mander’s coefficient M1)) is represented in the graphs.--><!-- All cells with a positive BaseScope signal were quantified and represent 100% of labelled cells; the percentages of single- or double-positive cells were determined.--><!--For immunohistochemical experiments, results are expressed as percentage of CXCR7/Olig2- positive cells compared to the total number of CXCR7-EGFP cells in the SVZ (n=6).  zmienić jeszcze trochę -->
 <!--Images are representative of at least three biological replicates.-->
 <!--Briefly, six stacks of images per animal were used to determine the density of mature granule neurons in a reference structure of known volume (30 (X) ? 30 (Y) ? 10 (Z) lm). The average density of these cells was then multiplied by either the total volume of the DG (in the case of the number of mature granule neurons) or by the length of the subgranular zone (SGZ) (in the case of the number of DCX+ neuroblasts) in order to calculate the total number of cells per animal (Llorens-Martin et al., 2006). Bolos2018-->
 <!-- Assessment was performed by independent blinded investigators who quantified the total number of activated microglia. The numbers of activated microglia in each treatment group were expressed as a percentage of the total number of cells counted. --><!-- In the other cases, quantification has been validated by two independent people. -->

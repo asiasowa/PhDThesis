@@ -108,7 +108,7 @@ knitr::include_graphics("images/chem_mol_mechanisms.png")
 
 <!-- nie działa \\$`r knitr::asis_output("\U03B2")`$\\ ani nic innego, chyba spróbować opcji z if loop w zależności od outputu.... -->
 
-The two members of the chemokine family, e.i. CX3CL1 and CXCL12 have attracted much researchers’ attention due to their wide distribution in the CNS under physiological conditions and involvement in an increasing array of functions. 
+The two members of the chemokine family, e.i., CX3CL1 and CXCL12, have attracted much researchers’ attention due to their wide distribution in the CNS under physiological conditions and involvement in an increasing array of functions. 
 In addition to their broad expression in the periphery, which is beyond the scope of this dissertation, chemokines and CKRs are also expressed by healthy neurons, microglia, astrocytes, oligodendrocytes, and endothelial cells (for a comprehensive review, see: @sowa_2021). 
 
 #### CX3CL1/CX3CR1 pair structure, expression, and signaling {#CX3CL1str}
@@ -179,9 +179,9 @@ The modification of this motif is believed to disable the activation of G protei
 Thus, for a long time, as a member of the atypical chemokine receptor family, ACKR3 was thought to share some peculiar characteristics, such as the inability to induce canonical G protein signaling in response to ligand stimulation, which leads to a decrease in the extracellular chemokine concentration [@naumann_2010].
 However, it was later discovered that despite being a decoy receptor, ACKR3 could also signal *via* the `r knitr::asis_output("\U03B2")`-arrestin pathway [@rajagopal_2010a; @wang_2011].
 Moreover, although the same ligand activates CXCR4 and ACKR3, they signal through different pathways (`r knitr::asis_output("\U03B2")`-arrestin vs. G-coupled).
-Thus, relative to CXCR4, ACKR3 acts as a `r knitr::asis_output("\U03B2")`-arrestin biased receptor (see: \@ref(chemokinessignal)).
+Thus, relative to CXCR4, ACKR3 acts as a `r knitr::asis_output("\U03B2")`-arrestin biased receptor (see Section \@ref(chemokinessignal)).
 Nonetheless, more recently, it was shown that ACKR3 has functionality independent of the `r knitr::asis_output("\U03B2")`-arrestins.
-Specifically, @montpas_2018 demonstrated that both siRNA knockdown of `r knitr::asis_output("\U03B2")`-arrestin1 and or `r knitr::asis_output("\U03B2")`-arrestin2 in HEK293 cells do not affect ACKR3-mediated scavenging of either of ACKR3's ligands (i.e., CXC11 and CXCL12). 
+Specifically, @montpas_2018 demonstrated that both siRNA knockdown of `r knitr::asis_output("\U03B2")`-arrestin1 and or `r knitr::asis_output("\U03B2")`-arrestin2 in HEK293 cells do not affect ACKR3-mediated scavenging of either of ACKR3's ligands (i.e., CXCL11 and CXCL12). 
 In addition, the following studies further complicate this issue by illustrating that application of CXCL12 results in elevated astrocytic intracellular Ca^2+^ levels following the activation of PTX-sensitive G~i/o~ proteins, leading to proliferation or differentiation of astrocytes [@odemis_2010]. 
 Although these events were previously reported to be mediated by CXCR4 (for example: @bajetto_2001a), a recent report has challenged this view by demonstrating that these CXCL12-dependent outcomes persist when CXCR4 receptor is blocked or depleted from astrocytes but are prevented in astrocytes with depleted or blocked ACKR3 receptor [@odemis_2012]. 
 These findings suggest that ACKR3 activates classical G-protein signaling pathways in those cells.

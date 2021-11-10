@@ -1,14 +1,14 @@
 # Appendix {#appendix}
 
-## Suplementary data {#suppdata}
+## Supplementary data {#suppdata}
 
 ### CX3CL1's actions
 
 #### CX3CL1 does not affect passive membrane properties of principal cells in the BLA {#CX3CL1membraneappendix}
 
-In Figures (\@ref(fig:CX3CL1BLAexcitabilityfigall1) and \@ref(fig:CX3CL1BLAexcitabilityfigall2)) and Table \@ref(tab:CX3CL1BLAexcitabilityappendixtable) <!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> below are depicted and listed all the passive membrane properties measured in the principal cells in the BLA following CX3CL1 treatment. 
+In Figures (\@ref(fig:CX3CL1BLAexcitabilityfigall1) and \@ref(fig:CX3CL1BLAexcitabilityfigall2)) and Table 7.1<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> below are depicted and listed all the passive membrane properties measured in the principal cells in the BLA following CX3CL1 treatment. 
 
-```{r CX3CL1BLAexcitabilityappendixtable, tab.caption = "blabla", echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis'}
+```{r CX3CL1BLAexcitabilityappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
 
 # getting the table of statistics
 CX3CL1_BLA_stat_df <- formattable(stat_table_exp_membr_extended((BLA_df_final)))
@@ -41,9 +41,9 @@ gt(groupname_col = "Variable") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md(""))  %>%
-             gtsave("CX3CL1_membrane_table.html")
+             gtsave("Table71.html")
 
-knitr::include_graphics("CX3CL1_membrane_table.html")
+knitr::include_graphics("Table71.html")
 ```
 
 ```{r CX3CL1BLAexcitabilityfigall1, fig.cap= 'CX3CL1 actions on membrane properties of BLA principal cells.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
@@ -256,7 +256,7 @@ figure2
 
 Figure (\@ref(fig:CX3CL1BLAsEPSCfigall)) and Table 7.2<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> reports on sEPSC parameters measured in principal cells in the BLA before and after CX3CL1, AZD8797, and minocycline treatment. 
 
-```{r CX3CL1BLAsEPSCappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis'}
+```{r CX3CL1BLAsEPSCappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
 
 # slicing one mEPSC condition from the table and adding it to the main table
 mEPSC_sliced <- BLA_mEPSC_final %>% dplyr::filter(Experiment == 'CX3CL1(2nM)')
@@ -298,9 +298,9 @@ gt(groupname_col = "Variable") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md("")) %>%
-   gtsave("CX3CL1_sEPSC_table.html")
+   gtsave("Table72.html")
 
-knitr::include_graphics("CX3CL1_sEPSC_table.html")
+knitr::include_graphics("Table72.html")
 ```
 
 ```{r CX3CL1BLAsEPSCfigall, fig.cap= 'CX3CL1 actions on membrane properties of BLA principal cells.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
@@ -406,10 +406,10 @@ figure1
 
 #### CX3CL1 does not affect kinetics in inhibitory synaptic transmission in the BLA {#CX3CL1sIPSCappendix}
 
-Effects of CX3CL1 on inhibitory synaptic transmission in summarized in Table <!--?-->.
+Effects of CX3CL1 on inhibitory synaptic transmission in summarized in Table 7.3.
 In addition, Fig. \@ref(fig:CX3CL1BLAsIPSCappendixfig) presents the data regarding the lack of effects of CX3CL1 on sIPSCs/mIPSCs kinetics. 
 
-```{r CX3CL1BLAsIPSCappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis'}
+```{r CX3CL1BLAsIPSCappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
 
 # slicing one mEPSC condition from the table and adding it to the main table
 
@@ -442,9 +442,9 @@ gt(groupname_col = "Variable") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md("")) %>%
-   gtsave("CX3CL1_sIPSC_table.html")
+   gtsave("Table73.html")
 
-knitr::include_graphics("CX3CL1_sIPSC_table.html")
+knitr::include_graphics("Table73.html")
 ```
 
 ```{r CX3CL1BLAsIPSCappendixfig, fig.cap='**CX3CL1 does not affect sIPSC/mIPSC kinetics in principal cells in the BLA** **a** Schematics illustrating recording conditions **b,c** Boxplots representing population data of sIPSCs rise time and decay time before and after CX3CL1 application in each condition, respectively.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 8, fig.width= 12}
@@ -555,7 +555,7 @@ figure1
 
 #### Effects of CX3CL1, AZD8797, and minocycline in the CeL, focusing on two main cell types {#CX3CL1CeAmembrappendix}
 
-All membrane effects of CX3CL1, AZD8797 or minocycline application are summarized in Table <!-- -->.
+All membrane effects of CX3CL1, AZD8797 or minocycline application are summarized in Table 7.4.
 
 ```{r CX3CL1CeAintrinsictable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -588,9 +588,9 @@ gt(groupname_col = "Population") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md("")) %>%
-   gtsave("CX3CL1_CeA_membr_table.html")
+   gtsave("Table74.html")
 
-knitr::include_graphics("CX3CL1_CeA_membr_table.html")
+knitr::include_graphics("Table74.html")
 
 ```
 
@@ -854,7 +854,7 @@ figure1
 #### CX3CL1 does not affect excitatory synaptic transmission in the CeL {#CX3CL1CeAsEPSC}
 
 Treatment with CX3CL1 does not change any of measured parameters of excitatory synaptic transmission. 
-The data are shown in Table <!-- --> and are illustrated on Fig. <!-- -->
+The data are shown in Table 7.5 and are illustrated on Fig.\@ref(fig:CX3CL1CeAsEPSCappendixfig).
 
 ```{r CX3CL1CeAsEPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -895,9 +895,9 @@ gt(groupname_col = "Type") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
     tab_source_note(source_note = md("")) %>%
-    gtsave("CeA_CX3CL1_sEPSC_table.html")
+    gtsave("Table75.html")
 
-knitr::include_graphics("CeA_CX3CL1_sEPSC_table.html")
+knitr::include_graphics("Table75.html")
 
 ```
 
@@ -960,7 +960,7 @@ figure1
 
 #### CX3CL1 affect inhibitory synaptic transmission in CeL {#CeACX3CL1sIPSCappendix}
 
-Table <!----> summarizes the statistics regarding sIPSC characteristics after CX3CL1, AZD8797, and minocycline application. 
+Table 7.6 summarizes the statistics regarding sIPSC characteristics after CX3CL1, AZD8797, and minocycline application. 
 
 ```{r CX3CL1CeAsIPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1008,9 +1008,9 @@ gt(groupname_col = "Type") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
     tab_source_note(source_note = md("")) %>%
-    gtsave("CeA_CX3CL1_sIPSC_table.html")
+    gtsave("Table76.html")
 
-knitr::include_graphics("CeA_CX3CL1_sIPSC_table.html")
+knitr::include_graphics("Table76.html")
 
 ```
 
@@ -1077,7 +1077,7 @@ figure1
 
 #### CXCL12 does not affect intrinsic membrane properties in pyramidal-like cells in the basolateral rat amygdala {#BLACXCL12membrappend}
 
-As presented in Table ...<!-- --> and Fig. \@ref(fig:), treatment with CXCL12 had negligable effect on measured membrane parameters.
+As presented in Table 7.7 and Fig.\@ref(fig:CXCl12BLAexcitabilityfigall), treatment with CXCL12 had negligable effect on measured membrane parameters.
 
 ``` {r CXCL12BLAmembrtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1102,9 +1102,9 @@ gt(groupname_col = "Variable") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md(""))  %>%
-             gtsave("CXCL12_BLA_membrane_table.html")
+             gtsave("Table77.html")
 
-knitr::include_graphics("CXCL12_BLA_membrane_table.html")
+knitr::include_graphics("Table77.html")
 ```
 
 ```{r CXCl12BLAexcitabilityfigall, fig.cap= 'CXCL12 did not significantly change any of measured membrane properties of BLA principal cells.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 12, fig.width= 12}
@@ -1168,7 +1168,7 @@ figure1
 
 #### No significant effects on excitatory synaptic transmission were observed following application of exogenous CXCL12 {#BLACXCL12sEPSCappend}
 
-Data illustrated in Table <!-- --> and Figure \@ref(fig:CXCL12BLAsEPSCfigall) indicate that exogenous CXCL12 did not affect excitatory synaptic transmission. 
+Data illustrated in Table 7.8 and Figure \@ref(fig:CXCL12BLAsEPSCfigall) indicate that exogenous CXCL12 did not affect excitatory synaptic transmission. 
 
 ``` {r CXCL12BLAsEPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
  
@@ -1189,13 +1189,13 @@ gt(groupname_col = "Variable") %>%
   ) %>%
     opt_row_striping() %>%
       tab_header(
-    title = ("Table 7.x. Statistics of all measured parameters regarding CXCL12 effects on excitatory synaptic transmission onto BLA principal cells"),
+    title = ("Table 7.8. Statistics of all measured parameters regarding CXCL12 effects on excitatory synaptic transmission onto BLA principal cells"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md("")) %>%
-   gtsave("CXCL12_BLA_sEPSC_table.html")
+   gtsave("Table78.html")
 
-knitr::include_graphics("CXCL12_BLA_sEPSC_table.html")
+knitr::include_graphics("Table78.html")
 
 ```
 
@@ -1254,7 +1254,7 @@ figure1
 
 #### No roboust effect of CXCL12 action on the GABAergic transmission in the BLA  {#BLACXCL12sIPSCappend}
 
-CXCL12 does not induce any marked change in GABAergic transmission in the BLA (see Table <!-- --> and Fig. \@ref(fig:CXCL12BLAsIPSCall)).
+CXCL12 does not induce any marked change in GABAergic transmission in the BLA (see Table 7.9 and Fig. \@ref(fig:CXCL12BLAsIPSCall)).
 
 ``` {r CXCL12BLAsIPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
  
@@ -1279,9 +1279,9 @@ gt(groupname_col = "Variable") %>%
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md("")) %>%
-   gtsave("CXCL12_BLA_sIPSC_table.html")
+   gtsave("Table79.html")
 
-knitr::include_graphics("CXCL12_BLA_sIPSC_table.html")
+knitr::include_graphics("Table79.html")
 
 ```
 
@@ -1333,7 +1333,7 @@ figure1
 
 #### Besides enhancing excitability, CXCL12 does not seem to affect any other intrinsic membrane properties {#CXCL12CeAmembr}
 
-Table <!-- --> and Figures \@ref(fig:CXCl12CeAmembrfigall1) and \@ref(fig:CXCl12CeAmembrfigall2) report no prominent difference in membrane properties of CeL neurons.
+Table 7.10 and Figures \@ref(fig:CXCl12CeAmembrfigall1) and \@ref(fig:CXCl12CeAmembrfigall2) report no prominent difference in membrane properties of CeL neurons.
 
 ``` {r CXCL12CeAmembrtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1364,13 +1364,13 @@ gt(groupname_col = "Population") %>%
   ) %>%
     opt_row_striping() %>%
       tab_header(
-    title = ("Table 7.4. Summary of all measured membrane parameters in CeL neurons following CXCL12 treatment, focusing on their two electrophysiological types"),
+    title = ("Table 7.10. Summary of all measured membrane parameters in CeL neurons following CXCL12 treatment, focusing on their two electrophysiological types"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md("")) %>%
-   gtsave("CXCL12_CeA_membr_table.html")
+   gtsave("Table710.html")
 
-knitr::include_graphics("CXCL12_CeA_membr_table.html")
+knitr::include_graphics("Table710.html")
 
 ```
 
@@ -1503,7 +1503,7 @@ figure2
 
 #### Effects of CXCL12 on excitatory synaptic transmission in the CeL {#CXCL12CeAsEPSCappend}
 
-The detailed summary regarding CXCL12 actions on excitatory synaptic transmission in the CeL is presented in Table <!-- --> and Fig. \@ref(fig:CXCL12CeAsEPSCappen).
+The detailed summary regarding CXCL12 actions on excitatory synaptic transmission in the CeL is presented in Table 7.11 and Fig. \@ref(fig:CXCL12CeAsEPSCappen).
 
 ```{r CXCL12CeAsEPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1530,13 +1530,13 @@ gt(groupname_col = "Type") %>%
   ) %>%
     opt_row_striping() %>%
       tab_header(
-    title = ("Table 7.5. sEPSC characteristics before and after CXCL12 application in CeL neurons"),
+    title = ("Table 7.11. sEPSC characteristics before and after CXCL12 application in CeL neurons"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
     tab_source_note(source_note = md("")) %>%
-    gtsave("CeA_CXCL12_sEPSC_table.html")
+    gtsave("Table711.html")
 
-knitr::include_graphics("CeA_CXCL12_sEPSC_table.html")
+knitr::include_graphics("Table711.html")
 
 ```
 
@@ -1627,7 +1627,7 @@ figure1
 
 #### Effects of CXCL12 on inhibitory synaptic transmission in the CeL {#CXCL12CeAsIPSCappend}
 
-CXCL12 does not modulate kinetics of spontaneous and miniature inhibitory postsynaptic currents in the CeL, as shown in Table <!-- --> and Fig. \@ref(fig:).
+CXCL12 does not modulate kinetics of spontaneous and miniature inhibitory postsynaptic currents in the CeL, as shown in Table 7.12 and Fig. \@ref(fig:CXCL12CeAsIPSCfigapp).
 
 ```{r CXCL12CeAsIPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1654,13 +1654,13 @@ gt(groupname_col = "Type") %>%
   ) %>%
     opt_row_striping() %>%
       tab_header(
-    title = ("Table 7.X. sIPSCs characteristics before and after CXCL12 application in CeL neurons"),
+    title = ("Table 7.12. sIPSCs characteristics before and after CXCL12 application in CeL neurons"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
     tab_source_note(source_note = md("")) %>%
-    gtsave("CeA_CXCL12_sIPSC_table.html")
+    gtsave("Table712.html")
 
-knitr::include_graphics("CeA_CXCL12_sIPSC_table.html")
+knitr::include_graphics("Table712.html")
 
 ```
 
@@ -1678,28 +1678,28 @@ CeA_sIPSC_all_subset1 <- CeA_sIPSC_all_subset1 %>% dplyr::filter(Experiment %in%
 CeA_sIPSC_LF_subset1 <- CeA_sIPSC_LF_subset1 %>% dplyr::filter(Experiment %in% c("CXCL12(2nM)", "CXCL12(5nM)", "TTX + \nCXCL12(2nM)", "TTX + \nCXCL12(5nM)", "AMD3100"))
 CeA_sIPSC_RS_subset1 <- CeA_sIPSC_RS_subset1 %>% dplyr::filter(Experiment %in% c("CXCL12(2nM)", "CXCL12(5nM)", "TTX + \nCXCL12(2nM)", "TTX + \nCXCL12(5nM)", "AMD3100"))
 
-bp_CeA_rt_sIPSC_all <- plot_boxplot(CeA_sIPSC_all_subset1, median_RiseTime, ylabel = "s/mIPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+bp_CeA_rt_sIPSC_all <- plot_boxplot(CeA_sIPSC_all_subset1, median_RiseTime, ylabel = "IPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
 
 bp_CeA_rt_sIPSC_all <- bp_CeA_rt_sIPSC_all + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 3) 
 
 
-bp_CeA_rt_sIPSC_LF <- plot_boxplot(CeA_sIPSC_LF_subset1, median_RiseTime, ylabel = "s/mIPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+bp_CeA_rt_sIPSC_LF <- plot_boxplot(CeA_sIPSC_LF_subset1, median_RiseTime, ylabel = "IPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
 
 bp_CeA_rt_sIPSC_LF  <- bp_CeA_rt_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 3) 
 
-bp_CeA_rt_sIPSC_RS <- plot_boxplot(CeA_sIPSC_RS_subset1, median_RiseTime, ylabel = "s/mIPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+bp_CeA_rt_sIPSC_RS <- plot_boxplot(CeA_sIPSC_RS_subset1, median_RiseTime, ylabel = "IPSC Rise Time (ms)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
 
 bp_CeA_rt_sIPSC_RS  <- bp_CeA_rt_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 3) 
 
 # making boxplots for amplitude
-bp_CeA_dt_sIPSC_all  <- plot_boxplot(CeA_sIPSC_all_subset1, median_DecayTau, ylabel = "s/mIPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_dt_sIPSC_all  <- plot_boxplot(CeA_sIPSC_all_subset1, median_DecayTau, ylabel = "IPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
 bp_CeA_dt_sIPSC_all  <- bp_CeA_dt_sIPSC_all  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
 
 
-bp_CeA_dt_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_LF_subset1, median_DecayTau, ylabel = "s/mIPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_dt_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_LF_subset1, median_DecayTau, ylabel = "IPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
 bp_CeA_dt_sIPSC_LF  <- bp_CeA_dt_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
 
-bp_CeA_dt_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_RS_subset1, median_DecayTau, ylabel = "s/mIPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_dt_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_RS_subset1, median_DecayTau, ylabel = "IPSC Decay Time (ms)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
 bp_CeA_dt_sIPSC_RS  <- bp_CeA_dt_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
 
 #importing representative traces
@@ -1730,11 +1730,6 @@ figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
 figure1
 
 ```
-## Limitations
-
-### CX3CL1
-
-### CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber. 
 
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   
@@ -1754,3 +1749,4 @@ This PhD thesis and candidate were supported by:
 #### Oral presentations
 #### Posters
 
+\newpage

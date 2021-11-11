@@ -595,7 +595,7 @@ figure1
 ### Cellular distribution of CXCL12 and CXCR4 in the rat CeA
 
 Having established that CXCL12 application led to complex, often opposite electrophysiological actions, the next step was to further explore how CXCL12 affects local communication between neurons and astrocytes in the CeA by using immunohistochemical staining for CXCR4 and neuronal markers (such as SOM+, PKC`r knitr::asis_output("\U03B4")`) or astrocytic GFAP.<!--AMD3100 eliminates the beneficial effects of CXCL12, indicating that the CXCL12/CXCR4 signaling pathway is vitally important in improving the neurobehavioral outcomes of ischemic mice, so studies were performed to detect the expression of CXCR4.--> 
-
+Fluorescent photomicrographs of ... and CXCL12 or ... and CXCR4 containing cells in the BLA are shown in
 
 <!--More generally, our data significantly extend the understanding of glial functions  by showing that microglia are actively regulating inhibitory synapses
 

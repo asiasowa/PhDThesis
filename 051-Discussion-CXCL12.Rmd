@@ -1,14 +1,25 @@
 ## CXCL12 in the basolateral amygdala
 
+
 <!--introduction regarding chemokine-->
 Considering that virtually all types of brain cells express either CXCL12 and/or one of its receptors, this chemokine serves a wide array of functions in both the developing and mature brain.
 <!--electrophysiological action-->
 Indeed, several lines of evidence illustrate that CXCL12 is involved in neurodevelopment,
 
+Moreover, among  the  constitutively expressed  chemokines,  the  role  of CXCL12 in psychiatric diseases has attracted considerable attention [14–18].<!--trochę zmienić i inne cytowania? -->
 Anxiety by yang 2016
 
 In this context, we provide new evidence for the neuromodulatory properties of CXCL12/CXCR4 axis in synaptic transmission and membrane properties in the amygdala. 
 First, we showed that
+
+
+Herein, CXCL12 was shown to be a substantial component of ... <!-- substantial component of the descending pain modulatory network and was upregulated in the model of BCP.-->
+Firstly,
+
+### BLA
+
+The lack of prominent effects in the BLA is consistent with previous reports demonstrating absence of CXCR4 in this nucleus [@banisadr_2002a].
+
 
 ### sIPSC mixed effects based on concentration
 
@@ -79,6 +90,11 @@ Bath administration of serotonin (0.3–100 μM) produced two distinct responses
 
 ### astrocytes
 
+It has been clearly proved that astrocytes in the central nervous system (CNS) play an essential role in several neuronal functioning aspects, including their excitability and synaptic transmission.<!-- cytowania-->
+Astrocytes are identified as sources of immune substances, because large amount of evidences demonstrated that activated astrocytes can release proinflammatory cytokines (such as IL-1β, IL-6, and TNFα) and chemokines (such as MCP1, CXCL1, and CXCL12) in the CNS to enhance and prolong the pain processing [26,43,44].<!-- zmienić--> 
+Shen et al. showed that fluorocitrate, a general glial metabolic inhibitor, exerted an inhibitory effect on the induction of astrocytic marker GFAP and  blockade of CXCL12 induction in bone cancer states [45]. 
+Consistent with this study,
+
 For example, astrocyte TNFa has 
 
 Owing to the focus of the existing literature the majority of the central immune signaling and non-neuronal modfications will be focused on microglia and astrocytes, and their related traditional signaling systems, such as cytokines and chemokines. A complicated issue that faces the glial research field is the use of the phrase “ glial activation ” as it has become apparent within the immunology field that immune activation can be both proinflammatory and anti-inflammatory in nature. As such we have attempted to provide information as to the direction of this response. Moreover, simple quantification of “ proinflammatory markers of glial activation ” such as microglial CD11b or Iba1 and the astrocyte marker GFAP, does not necessarily ensure a proinflammatory phenotype of these populations at the time of tissue analysis ( Watkins et al., 2007a; Ransohoff & Perry, 2009 ).
@@ -95,6 +111,15 @@ Additionally, astrocytes are known to secrete chemokines like CCL5 and CCL3 that
 ### BLA - amygdala - not layered - LTP ?
 
 Finally, in comparison to other reasonably well-understood brain regions such as the cerebral cortex, hippocampus, and cerebellum, the amygdaloid nuclei do not show a rigid organization of its neuronal elements. Cells are not organized into layers nor do they have the striking preferred orientation of their major output neurons as described in these other brain regions. Thus it is not surprising that input-output mechanisms in the LA are regulated by the various ionic conductances in the membranes of their major output neurons rather than through mechanisms that rely on architectonics and differences in cell morphology. [@faber_2001]
+
+### CXCL12/CXCR4
+
+The role of CXCL12 is mostly dependent on its primary receptor CXCR4. <!-- cytowania, szczególnie elektro -->
+However, recent data shows that atypical ACKR3, ...
+
+### CXCL12 and GABA
+
+CX3CL1 activates GABA synaptic ac-tivity at the postsynaptic level, however, we have reportedstimulatory presynaptic actions of CXCL12 on GABA re-lease (Heinisch and Kirby, 2009). Interestingly, CXCL12also produces a membrane depolarization in 5-HT neu-rons, an effect mediated indirectly by glutamate afferents,whereas CX3CL1 does not exhibit any effect on this pa-rameter. Thus, although the chemokine family is com-prised of a large variety of small chemotactic proteins, itappears that two structurally distinct chemokines, CX3CL1and CXCL12, share common colocalization profiles withthe 5-HT system as well as common functional actions onGABA synaptic activity on 5-HT neurons within the RN.
 
 
 
@@ -159,3 +184,10 @@ The study illustrated that depletion of OL GS disrupts neuronal glutamate signal
 Interestingly, OLs survival and myelination were unaffected, thus demonstrating a myelin-independent role for oligodendrocytes in supporting glutamate signaling in the brain [@xin_2019]. -->
 
 
+<!-- The CeA receives processed nociceptive input from the basolateral amygdala (BLA) and direct nociceptive input via the spino-parabrachial-amygdaloid pathway (Missig et al., 2017; Bernard et al., 1989; Braz et al., 2005;McDonald et al., 1999), and consists of mainly inhibitory GABAergic neurons categorized as projection neurons and interneurons. The CeA interneurons are the interface between the neuronal input and output of the nucleus (Sun et al.,1994). Enkephalin (Enk) and dynorphin are endogenous opioid neu-ropeptides with wide distribution through the CNS including CeA (Poulin et al., 2008; Marchant et al., 2007).κ-,δ- andμ-opioid receptorsare found in the CeA (Mansour et al., 1994), supporting functionalimportance of opioid neuropeptides in the CeA (Poulin et al., 2008; Marchant et al., 2007). Dynorphin is expressed mainly in the medialsubdivision of the CeA by a group of projection neurons, which also express CRF (Marchant et al., 2007) while Enk is synthesized andlimited to a subset of interneurons in the centrolateral and centrocentral part of the CeA (Poulin et al., 2008). A high number of Enkneurons are found to overlap with CeA neurons that express PKC-δ (Haubensak et al., 2010). The PKC-δ cells, also called“OFF cells”, are considered to be the master switch of amygdala output (Haubensaket al., 2010; Amano et al., 2012). Thus, many Enk interneurons likelyengage in feed-forward inhibition of CeA interneurons and projection neurons (Bajo et al., 2011) and are a key element for regulation of CeAoutput and pain sensitivity.
+
+The CeA is a complex brain region that regulates a wide variety ofautonomic and non-autonomic functions, including modulation of ongoing pain. The CeA mediates both pro- and anti-analgesic effects through the activation of different cell groups, receptors and neuro-transmitters (Andreoli et al., 2017;Missig et al., 2017;Cai et al., 2018; Werka, 1994).
+
+The CeA is a source of robust amygdala outputs to regions thatmodulate both anxiety and pain sensitivity. Two primary outputs include CeA projections to the vlPAG, which regulate pain via the descending pain inhibitory system (Oliveira and Prado, 2001), and pro-jections to the adjacent DR, which control defensive and anxiety responses to a variety of aversive stimuli (Biagioni et al., 2013;Teissier et al., 2015). This would suggest that activation of CeA inhibitoryprojections would suppress vlPAG and support hyperalgesia, and that any CeA element that regulates CeA inhibitory projections would remove this suppression and permit regulation of pain. However, this is complicated by thefinding that major targets of CeA inhibitory
+
+In addition, CeA projections are not only GA-BAergic, but contain various neuropeptides such as CRF, dynorphin and neurokinin B as co-transmitters (Marchant et al., 2007). It is not sur-prising, then, that the role of CeA in pain perception depends on the circumstances, producing either analgesia or algesia (Carrasquillo andGereau, 2008;Andreoli et al., 2017; Veinante et al., 2013).-->

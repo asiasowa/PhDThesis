@@ -23,4 +23,12 @@ However, considering that dendritic spines reflect the structural level of synap
 
 Thus, further experiments identifying the properties and functions of each of neuronal, microglial, astrocytic and, oligodendrocytic compartments remain to be addressed. 
 
+In summary, our data identify an innate neuronal TLR4 signal that functions in the CeA and VTA to regulate the initiation of excessive alcohol drinking through MCP-1 neurotransmission likely at the level of dopamine (Banisadr et al , 2005; Guyon et al , 2009; Apartis et al , 2010). However, the MCP-1 neurotransmission mechanism, the role of TLR4-regulated   cytokines/chemokines   with   neuron– neuron, and bidirectional neuron–microglia communications (namely, fractalkine (Laing et  al , 2010)) in the transition to alcohol dependence, their relationship to alcohol-induced CRF expression, and the role of the brain site are still unclear. Ongoing studies are designed to address these questions.
+
+We confirmed that TLR4 and MCP-1 are expressed in glial cells (SD, Supplementary Figure S3), and posit that transition involves  bidirectional  neuron-glia  cross-talk  through released soluble factors and glial cell cytokine production (Frank et al , 2010; Hines et al , 2013)
+
+The microglia-dependent CX3CL1-CX3CR1 signaling cascade played a role in microglial-neuron interactions and in descending facilitation of BCP.<!-- analogous-->
+
+Modulation of GABA synaptic activity at 5-HT neuronsby CX3CL1, and by additional members of the chemokine family, such as CXCL12, may be clinically significant in thepathophysiology and treatment of 5-HT related mood disorders, including depression experienced by immunocom-promised individuals. CX3CL1 and other chemokines mayalso represent a new class of CNS neuromodulators, im-pacting brain function via their effects on traditional neuro-transmitter and neuropeptide systems, including the 5-HTsystem (Adler and Rogers, 2005; Adler et al., 2006; Calle-waere et al., 2007; Rostene et al., 2007). Thus, our studyprovides additional support for the general hypothesis thatchemokines, in addition to traditional neurotransmittersand neuropeptides, represent a novel neuromodulatorysystem in the CNS. 
+
 \newpage

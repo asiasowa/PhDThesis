@@ -669,10 +669,14 @@ Calcium/calmodulin-dependent protein kinase II (CaMK) has been shown to play a c
 This is also a critical marker of principal cells in the BLA [@mcdonald_2002a].
 As results presented in this dissertation show that CX3CL1 induced a depression of principal cell's excitability and the impairment in LTP in the BLA, the immunohistochemistry used to examine the level of the expression of CX3CL1 and CX3CR1 in CAMK-II-`r knitr::asis_output("\U03B1")`-positive cells in the BLA.<!--little is known about its cellular localization in this region. We have utilized immunohistochemical methods to study the neuronal localization of CaMK, and its relationship to -aminobutyric acid (GABA)-ergic structures, in the rat basolateral amygdala (ABL). Light microscopic observations revealed dense CaMK staining in the ABL. analogous --><!--To define what types of cells in the brain express CX3CL1 and its receptor, CX3CR1, in the BLA, immunohistochemical staining was performed for NeuN, GFAP, and CD31-->
 As illustrated in Figure \@ref(fig:BLACX3CL1immuno), around <!---->% of CAMK-II-positive cells also expressed CX3CL1, while CX3CR1 receptors were present in <!----->% of pyramidal-like neurons in the BLA.
+
+The individual images inFig. 1C, F are representa-tions of TPH and CX3CL1 or TPH and CX3CR1 local-ization detected in the RN by confocal microscopy.Fig. 1C depicts a magnified image of 5-HT neurons co-ex-pressing CX3CL1 (white arrows). CX3CL1 appears tobe distributed as discrete puncta within the cytoplasm and processes of these neurons.
+In Fig. 1F, the subcellular distribution of CX3CR1 localized to the perinuclearmembrane of 5-HT neurons (white arrows) and other cells (dotted white arrow).
+
 The results regarding CX3CR1 expression in neurons, especially principal cells, were also confirmed in neuronal cultures of the amygdala.
 Hence, although all of the electrophysiological effects of the CX3CL1 were prevented by minocycline, the direct action of this chemokine on neurons is also plausible.
 
-```{r BLACX3CL1immuno, fig.cap = "", echo = FALSE, warning = FALSE, message= FALSE}
+```{r BLACX3CL1immuno, fig.cap = "  C , A representative coronal brain section containing CeL, in which the PAG- and PVT-projecting neurons were labeled with CTB-555 and CTB-488, respect ively. SOM neurons were recognized by an antibody. Bottom, Higher-magnification images of the boxed area in the corresponding top. Arrowheads indicate the col ocalization of CTB-555, CTB-488, and SOM in the same neurons. Arrow indicates the colocalization of CTB555 with SOM, but not with CTB488, in the same neuron. D , Quantification of the percentage of long-range projection CeL neurons that areSOM( n  3miceforeachgroup;mean  SEM). E ,Acoronalbrainsectionfroma SOM-Cre;Ai14 mousethatcontainsCeL,inwhichthePAG-projectingneuronswerelabeledwithCTB-488(left). SOMneurons were recognized by the red fluorescence from tdTomato (middle). Bottom, Higher-magnification images of the boxed area in the corresponding top. Arrowheads indicate the colocalization of CTB-488 and tdTomato in the same neurons. F , Same as E , except that the PVT-projecting CeL neurons were examined", echo = FALSE, warning = FALSE, message= FALSE}
 
 knitr::include_graphics("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\CX3CL1\\HODOWLE_AMYGDALA_WARSZAWA\\hodowle_aftersorting.png")
 
@@ -713,3 +717,6 @@ test <- test %>%  mutate(coloc_pc = round(test$"M1.M2."/test$"all"*100, digits =
 results_immuno <- test %>% group_by(Structure, Objective, Marker1, Marker2) %>% dplyr::summarise(mean_col = mean(coloc_pc, na.rm = T), mean_m1 = mean(M1_pc, na.rm = T), mean_m2 = mean(M2_pc, na.rm = T), mean_nr_cells = mean(all, na.rm = T), min_cells = min(all, na.rm = T),  max_cells = max(all, na.rm = T), nr_slices = n()) 
 
 ```
+
+
+<!-- Greater than 70% of5-HT neurons colocalize with CX3CL1 and CX3CR1 in the RN.CX3CL1 localizes as discrete puncta throughout the cyto-plasm, whereas CX3CR1 concentrates to the perinuclear re-gion of 5-HT neurons and exhibits microglial expression.-->

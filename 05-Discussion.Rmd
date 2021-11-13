@@ -47,7 +47,9 @@ Its beneficial actions were also reported neurodegenerative models, where it was
 Moreover, in the hippocampus, CX3CL1 was demonstrated to reduce spontaneous glutamate release and the postsynaptic glutamate currents with a mechanism that involves an increased intra-cellular calcium and dephosphorylation of the GluR1 AMPA receptor subunit [@lauro_2008; @limatola_2005; @meucci_1998; @ragozzino_2006], a hallmark of the long-term depression (LTD).<!-- For example, CX3CL1 has been shown to reduce spontaneous glutamate release and post-synaptic glutamate currents (Meucci et al., 1998; Limatola et al., 2005).-Sheridan2014 // These effects are probably a result of a PKA-related phosphorylation of GluR1 Ser845 [@ragozzino_2006]. -->
 Thus, this predominantly inhibitory role is suggested<!--może po prostu suggested?--> to be a component of neuroprotective synaptic scaling mechanisms necessary for hippocampal memory-associated synaptic plasticity processes [@bertollini_2006; @piccinin_2010; @sheridan_2014].<!--zmienić bardziej /// Overall, previous studies indicate apredominantly inhibitory role for CX3CL1, perhaps as a compo-nent of neuroprotective synaptic scaling mechanisms necessary for hippocampal memory-associated synaptic plasticity processes (Bertollini et al., 2006;Turrigiano, 2008; Piccinin et al., 2010). -->
 
-Hence, presented here CX3CL1-induced impairment in the LTP in the BLA is not only in line with  reduction of principal cell's firing, but also it is in good agreement with previous results indicating CX3CL1-induced inhibition of LTP or mimicking LTD at the in the hippocampus [@bertollini_2006; @maggi_2009; @ragozzino_2006; @sheridan_2014], without affecting paired-pulse ratio [@bertollini_2006; @ragozzino_2006; @sheridan_2014], suggesting a postsynaptic mechanism of CX3CL1 action.
+Hence, presented here CX3CL1-induced impairment in the LTP in the BLA is not only in line with  reduction of principal cell's firing, but also it is in good agreement with previous results indicating CX3CL1-induced inhibition of LTP or mimicking LTD at the in the hippocampus [@bertollini_2006; @maggi_2009; @ragozzino_2006; @sheridan_2014], without affecting paired-pulse ratio [@bertollini_2006; @ragozzino_2006; @sheridan_2014].<!-- In PPF (at multiple synapses), the second pair of stimuli separated by a few tens of milliseconds produces a larger synaptic response than the first, owing to the transient elevation of Ca2^+^ in terminal boutons produced by the second stimulus summing with the residual Ca2^+^ produced by the first stimulus, and increasing the probability of transmitter release. Since probability of transmitter release cannot exceed 1, the PPF ratio tends to decrease as probability of release increases (Bliss & Collingridge, 2013). Therefore, in the LA the glutamate release in response to paired pulse stimulation seems to be reduced in TPH2− / −mice. Besides differences in release probability differences in PPF in the amygdala and the hippocampus, -->
+This is a measure of short-term synaptic plasticity, which is the ratio of the amplitude of the second response to that of the first, depends on the probability of vesicular release at the synapse, and PPR has been used as an easy measure of the release probability.
+Thus, the unaffected PPR suggests a postsynaptic mechanism of CX3CL1 action.
 <!--Long-term potentiation (LTP) and depression (LTD) of synaptic activity are currently the best characterized forms of synaptic plasticity and are suggested as physiological substrates of learning and memory (Bliss and Collingridge, 1993; Bear and Malenka, 1994; Rioult-Pedotti et al., 1998; Whitlock et al., 2006). --><!--zmienić, cytowania // Synaptic plasticity mediated by NMDA glutamate receptors is thought to be a primary mechanism underlying the formation of new memories. Activation of GluN2A NMDA receptor subunits may induce long-term potentiation (LTP), whereas low-frequency stimulation of GluN2B receptors induces long-term depression (LTD).-->
 <!-- Decreasing of the LTP also consistent with previous findings - anxiety - beneficial - sth with synaptic scaling -->
 In the amygdala, both the PCs excitability and the magnitude of LTP are well-known to be correlated with anxiety.<!-- --> 
@@ -169,9 +171,22 @@ Mounting evidence indicates that different BLA projections target specific subpo
 Of note, during fear conditioning, conditioned stimuli (CS) was reported to activate PV-expressing interneurons, which in turn inhibited SOM-positive interneurons, resulting in a disinhibition of PCs dendrites which facilitate excitatory synaptic plasticity (Wolff et al., 2014).<!-- inaczej napisać Interestingly, it has been shown that conditioned stimuli (CS) activate PV INs during fear conditioning, which in turn inhibit SOM INs, resulting in a disinhibition of PN dendrites which facilitates excitatory synaptic plasticity (Wolff et al., 2014).-->
 Hence, in line with the hypothesis that CX3CL1 specifically acts on chandelier cells, by inhibition of this subpopulation, this immune protein would prevent disinhibition, impairing long-term potentiation, and thereby serving anxiolytic effects.<!--poprawić-->
 <!-- może coś o excitability CX3CR1 i microglia? -->
+Noting that various GABAergic neuron types of the amygdala cooperate to control principal cell firing during fear-related and other behaviors, better understanding of their specialized roles is of high importance. 
+<!-- B/I balance and epilepsy?-->
 
 In addition, considering that the BLA is a region highly innervated by rich cocktail of neuromodulators, together with demonstrated ability of chemokines, including CX3CL1, to impact those systems, their contribution cannot be excluded.
-However, previous studies reported CX3CL1 action on 5-HT neuron in the DRN, which is cut off in coronal 300um slices...<!-- dokończyć-->
+However, previous studies reported CX3CL1 action on 5-HT neuron in the DRN, which is cut off in coronal 300um slices...<!-- dokończyć--><!--Neuromodulation?
+It should be noted that immune proteins, including CX3CL1, exerts their neuromodulatory role not only by directly acting on GABAergic and glutamatergic systems or neuronal properties, but also indirectly by affecting other neurotransmitters/neuromodulators.
+Accordingly, ...
+NE - Activation of β -receptors, which seems to be present on both pyramidal cells and interneurons at least in the amygdala (Farb, Chang, & LeDoux, 2010) induces the phosphorylation of AMPAR GluA1 subunit thereby lowering the threshold for synaptic delivery of GluA1 containing AMPARs during LTP expression. (Hu et al., 2007). 
+Additionally, it has been shown that blocking of β -receptors by propranolol reduced surface expression of GluA1 containing AMPARs in the LA (Zhou et al., 2015). 
+Consequently, a reduced supply of NA in TPH2− / −mice might lead to a decreased phosphorylation of AMPAR GluA1 subunits followed by a reduced surface expression of GluA1 containing AMPARs, which might cause an attenuated LTP expression. from [@gebhardt_2019] 
+
+It is well-known that α2-receptors primarily serve as presynaptic autoreceptors. Activation of α2-receptors exerts inhibition of spontaneous activity (Buffalari & Grace, 2007) probably via inhibition of voltage-gated Ca2+channels and activation of inward rectifying K+channels and seems to inhibit both LTP and LTD in the basolateral amygdala (DeBock et al., 2003).
+
+Thus, in mice lacking brain serotonin we found long-term plasticity changes both in the amygdala and in the hippocampus. 
+Priming of LTP by prior paired pulse stimulation seemed to compensate the deficits of serotonin in the brain at the level of the functional readout.
+--><!--It should be noted also that immune proteins, such as TNFalpha or IL-1b do not only exert their effect by modulating synaptic transmission, but also *via* interacting with modulatory systems. citations--><!-- These cytokines, such as tumor necrosis factor-a and interleukin-1b, not only exert their excitatory effects via upregulating excitatory synaptic transmission [30, 31], but also regulate neuronal functions via interacting with modulatory systems [32]-->
 
 
 ## Microglial action in the BLA independent of exogenous CX3CL1
@@ -179,7 +194,7 @@ However, previous studies reported CX3CL1 action on 5-HT neuron in the DRN, whic
 Considering the exceptional communication between neuronally secreted CX3CL1 and CX3CR1 on microglial cells, together the key role of microglia in sensing neuronal microenvironment ( Davalos et al., 2005 ), it was not surprising to discover that some of the effects of CX3CL1 are also mediated by these glial cells. <!-- Trettel 2020 --><!-- analogous?-->
 
 
-The inhibition of microglia activation selectively prevented CX3CL1-induced reduction of principal cells' firing and GABAergic neurotransmission (Figs. \@ref(fig:CX3CL1BLAexcitabilityfrak) and \@ref(fig:CX3CL1BLAsIPSC)). 
+<!-- The inhibition of microglia activation selectively prevented CX3CL1-induced reduction of principal cells' firing and GABAergic neurotransmission (Figs. \@ref(fig:CX3CL1BLAexcitabilityfrak) and \@ref(fig:CX3CL1BLAsIPSC)). --> 
 
 The deficiency in microglial CX3CR1 can cause communication defects among neurons, microglia  and astrocytes during numerous CNS diseases or even injuries (Sungho_2010).<!--zmienić i zerknąć na cytowanie--> 
 In addition, CX3CL1 activation is correlated with fear-related behaviors, especially elevated-plus maze, which is characteristic ... of amygdalar function. <!--the specific type of neuropathic pain induced by multiple sclerosis  through interaction with cX3cR1 (Zhu_2013).--> Moreover, the levels of CX3CL1 are potentially regulated by diverse neurotoxic stimuli and its signaling is correlated with several types of  cNS diseases, including HIV infection, epilepsy, and cerebral tumors among other neuropathologies (limatola_2014) [@chen_2020]
@@ -208,29 +223,14 @@ Thus, these findings warrant further investigation, for example by using opto- o
 
 
 
-<!--Neuromodulation?
-It should be noted that immune proteins, including CX3CL1, exerts their neuromodulatory role not only by directly acting on GABAergic and glutamatergic systems or neuronal properties, but also indirectly by affecting other neurotransmitters/neuromodulators.
-Accordingly, ...
-NE - Activation of β -receptors, which seems to be present on both pyramidal cells and interneurons at least in the amygdala (Farb, Chang, & LeDoux, 2010) induces the phosphorylation of AMPAR GluA1 subunit thereby lowering the threshold for synaptic delivery of GluA1 containing AMPARs during LTP expression. (Hu et al., 2007). 
-Additionally, it has been shown that blocking of β -receptors by propranolol reduced surface expression of GluA1 containing AMPARs in the LA (Zhou et al., 2015). 
-Consequently, a reduced supply of NA in TPH2− / −mice might lead to a decreased phosphorylation of AMPAR GluA1 subunits followed by a reduced surface expression of GluA1 containing AMPARs, which might cause an attenuated LTP expression. from [@gebhardt_2019] 
 
-It is well-known that α2-receptors primarily serve as presynaptic autoreceptors. Activation of α2-receptors exerts inhibition of spontaneous activity (Buffalari & Grace, 2007) probably via inhibition of voltage-gated Ca2+channels and activation of inward rectifying K+channels and seems to inhibit both LTP and LTD in the basolateral amygdala (DeBock et al., 2003).
-
-Thus, in mice lacking brain serotonin we found long-term plasticity changes both in the amygdala and in the hippocampus. 
-Priming of LTP by prior paired pulse stimulation seemed to compensate the deficits of serotonin in the brain at the level of the functional readout.
--->
 
 <!--glial impact?
 By releasing glutamate, D-serine, GABA, ATP, adenosine, or tumor necrosis factor-alpha, among others, astrocytes control the basal tone of synaptic activity and the threshold for synaptic plasticity
 Astrocytes may also indirectly participate in inducing LTP by microglia by cognition by releasing CCR5 ligands that act on and recruit CCR5-expressing microglia to neighboring neurons, after which the microglia engage in functions related to synaptic remodeling and modulation. 
 Although the exact mechanism of CCR5-regulated microglial pruning remains unknown, microglial CCR5 is well-positioned to contribute to synaptic plasticity and resultant regulation of cognitive function.-->
 
-<!-- PPR
-In PPF (at multiple synapses), the second pair of stimuli separated by a few tens of milliseconds produces a larger synaptic response than the first, owing to the transient elevation of Ca2^+^ in terminal boutons produced by the second stimulus summing with the residual Ca2^+^ produced by the first stimulus, and increasing the probability of transmitter release. 
-Since probability of transmitter release cannot exceed 1, the PPF ratio tends to decrease as probability of release increases (Bliss & Collingridge, 2013). 
-Therefore, in the LA the glutamate release in response to paired pulse stimulation seems to be reduced in TPH2− / −mice. 
-Besides differences in release probability differences in PPF in the amygdala and the hippocampus, -->
+
 
 ### general summary
 
@@ -240,6 +240,8 @@ It can occur *via* a loss of local GABAergic interneurons, an alteration in GABA
 Hence, the GABAergic inhibitory system is the main target of therapeutic treatments to reduce anxiety and maintain homeostasis.<!-- zmienić // the GABAergic inhibitory system is one target of therapeutic treatments to reduce anxiety and maintain homeostasis.-->
 For example, benzodiazepines, which allosterically enhance postsynaptic actions of GABA~A~ receptors, are early treatment for anxiety and seizure disorders [@farb_2014].<!-- which allosterically enhance postsynaptic actions of GABA~A~receptors at the inhibitory type A GABA receptor (GABAAreceptor), are one first-line treatment for anxiety (Farb and Ratner, 2014) and seizure disorders.-->
 This receptor, heteropentameric chloride permeable, GABA-gated member of ligand-gated ion channels, mediates fast inhibitory synaptic transmission within the CNS.<!--Fast inhibitory synaptic transmission within the central nervous system is mediated by the GABA~A~ receptor, a heteropentameric chloride permeable, GABA-gated member of <!--the cys-loop superfamily of ligand-gated ion channels. GABAAreceptors are formed from limited combinations of subunits that have diverse structural and functional properties ( a 1–6, ß1–3, g 1–3, d , E , u , and p ; Olsen and Sieghart, 2009).-->
+
+
 <!-- composition of GABA subunit in the amygdal...
 The composition of GABAAreceptors has been found to be quite diverse because their subunit assembly makes their roles significantly different, depending on the timing of activation and subcellular localization (Pouille and Scanziani, 2001; Marowsky et al., 2004).
  The BLA of mature animals contains a 1 and a 2 subunits of the GABAAreceptor; a 1 subunit-containing GABAAreceptors are expressed primarily at the somal level of PV GABAergic interneurons but also exhibit coimmunoreactivity with the ß2/3 subunits (McDonald and Mascagni, 2004). Alternatively, GABAAreceptors on principal neurons contain primarily the a 2 subunit, which is predominantly responsible for the benzodiazepine allosteric potentiation of inhibitory currents (Marowsky et al., 2004). In addition, principal neurons in the BLA contain g 2 subunits, which likely contribute to the formation of a 2ßx g 2 pentameric GABAAreceptors, which contribute to fast inhibitory synaptic transmission (Esmaeili et al., 2009). Extrasynaptically, the GABAAreceptor in the BLA is made up primarily of the a 3 subunit, which strongly mediates tonic GABAergic currents (Marowsky et al., 2012). However, the a 5 subunit, which is diazepam sensitive and shapes the decay phase of the inhibitory postsynaptic currents (Marowsky et al., 2004), and the d subunit, both of which are hallmark subunits that contribute to tonic inhibition (Farrant and Nusser, 2005), are also expressed in the BLA, though not as strongly as the a 3 subunit (Marowsky et al., 2012).-->
@@ -252,19 +254,19 @@ This increase in hyperpolarization - prager_2016 -->
 <!--Various chemokines and their receptors are increased in both parenchymal brain cells and leukocytes in human and experimental epilepsy (Cerri et al., 2017; de Vries et al., 2016; van Vliet et al., 2018).Chemokines, especially CX3CL1, are endowed with neuromodulatory actions which make them potential candidates for altering neuronal network excitability in epilepsy.zmienić In addition to their role as chemotactic molecules that govern the tissue extravasation of peripheral immune cells, chemokines are endowed with neuromodulatory actions which make them potential candidates for altering neuronal network excitability in epilepsy.--> 
 Thus, it is possible that present data, together with the reported role of GABAergic dysfunctions in the BLA in the pathophysiology of epilepsy, support a potential involvement of CX3CL1/CX3CR1 signaling in the pathophysiology of seizures.<!-- // These data, together with the reported changes in chemokines level in brain and biofluids in epilepsy patients, support a potential involvement of chemokine signaling networks in the pathophysiology of seizures.// zmienić -->
 
-Various GABAergic neuron types of the amygdala cooperate to control principal cell firing during fear-related and other behaviors, and understanding their specialized roles is important. 
+
 
 Yet, our findings do not exclude the neuronal participation in releasing adenosine, thus acting in an autocrine manner, or the adenosine-mediated release of additional neuroprotective factors from glial cells.<!-- analogous-->
-
-It should be noted also that immune proteins, such as TNFalpha or IL-1b do not only exert their effect by modulating synaptic transmission, but also *via* interacting with modulatory systems.<!-- citations--><!-- These cytokines, such as tumor necrosis factor-a and interleukin-1b, not only exert their excitatory effects via upregulating excitatory synaptic transmission [30, 31], but also regulate neuronal functions via interacting with modulatory systems [32]-->
-
 Here, we report rapid modulatory effects of CX3CL1 on neuronal events in hippocampal tissue. <!--Sheridan2014--> 
 Our data does not conclusively support a direct action of CX3CL1 on neurons and we cannot discount the possibility that the effects we see on LTP and calcium influx in neuronal cell types happen as a consequence of CX3CL1-mediated activation of CX3CR1 solely on microglial cell types. <!--Sheridan2014-->
 If this is true, however, the ability of microglia to rapidly regulate multiple hippocampal memory-associated synaptic plasticity processes may be much more extensive than traditionally thought. <!--Sheridan2014-->
 The evidence from rats that CX3CR1 is expressed on hippocampal neuron allows the possibility that, as is the case for CX3CL1-mediated regulation of serotonergic neurons of the dorsal Raphe, glutamatergic neuron-derived CX3CL1 may act in an autocrine/paracrine fashion in the hippocampus during periods of synaptic plasticity to regulate glutamate-mediated neurotransmission tone.<!--Sheridan2014-->
 
 We believe that our technique is well suited to investigate changes in BLA morphology and activity, which have been implicated in a number of disease states, including posttraumatic stress disorder and drug addiction (Koob et al. 2014; Mahan and Ressler 2012; Roozendaal et al. 2009). 
-Posttraumatic stress disorder and other forms of chronic stress are often associated with increases in amygdala activity, resulting in the dysregulation of fear responses and causing sensitization to stressful stimuli (Mahan and Ressler 2012; Roozendaal et al. 2009). Previous studies have shown that emotional responses generated by the BLA may result from increased excitatory input and changes in glutamate receptor ratios (Christian et al. 2012; Hubert et al. 2014; LeDoux 2003) and repeated restraint stress can cause changes in BLA spine localization (Padival et al. 2013). 
+Posttraumatic stress disorder and other forms of chronic stress are often associated with increases in amygdala activity, resulting in the dysregulation of fear responses and causing sensitization to stressful stimuli (Mahan and Ressler 2012; Roozendaal et al. 2009). 
+
+
+Previous studies have shown that emotional responses generated by the BLA may result from increased excitatory input and changes in glutamate receptor ratios (Christian et al. 2012; Hubert et al. 2014; LeDoux 2003) and repeated restraint stress can cause changes in BLA spine localization (Padival et al. 2013). 
 It would be interesting to investigate whether these changes result from altered levels of not only excitatory input but also inhibitory synapses within the BLA and other nuclei within the amygdala. <!-- klenowski_2015-->
 
 Feng et al. found another potential therapy for regulate stress is motilin which can weaken anxiety-like behavior in rats after they have been subjected to forced swimming. Whole-cell recordings from amygdala slices revealed that motilin depolarized the interneurons and promoted GABAergic transmission in the BLA (Feng et al., 2013).
@@ -274,6 +276,8 @@ Feng et al. found another potential therapy for regulate stress is motilin which
  Aroniadou et al. reported a key role of the amygdala’s GABAergic control in epilepsy. The stress-induced damage to the noradrenergic system, promoting GABA release in the BLA, may underlie the stress-induced exacerbation of seizure activity in epileptic patients (Aroniadou-Anderjaska et al., 2007).
  
  A more complete understanding of the intrinsic excitatory/inhibitory circuit balance of the amygdala and how imbalances in inhibitory control contribute to excessive BLA excitability will guide the development of novel therapeutic approaches in neuropsychiatric diseases <!-- ładne conclusion -->
+ 
+
  
  The observed level of somatic variation, dendritic organization, and spine localization is likely to provide important morphological control over the integration of synaptic inputs, which would be expected to influence cellular output and potentially contribute to differences in BLA principal cell physiology.
  

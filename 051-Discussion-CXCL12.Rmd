@@ -10,7 +10,7 @@ The authors further suggested that the latter effect might result in the increas
 Their hypothesis is supported by results presented in this PhD dissertation.
 However, the results regarding excitatory synaptic transmission in the BLA have been less straightforward.
 In particular, the study by @yang_2016 revealed that the application of CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.
-In contrast, results presented here showed that CXCL12(2nM) led to the enhancement of sEPSC frequency in `r pie_BLA_c2_freq$data$count[2]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` neurons , while reduced this parameter in `r pie_BLA_c2_freq$data$count[1]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` cells (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b1).
+In contrast, results presented here showed that CXCL12(2nM) led to the enhancement of sEPSC frequency in `r pie_BLA_c2_freq$data$count[2]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` neurons, while reducing this parameter in `r pie_BLA_c2_freq$data$count[1]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` cells (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b1).
 Thus, grouped data showed no statistically significant change in the frequency of sEPSCs.
 These neuronal proportions were also similar when higher concentration of exogenous CXCL12, i.e., 5nM, was applied (Fig.\@ref(fig:CXCL12BLAsEPSCfreq)a and b2).
 This discrepancy between studies may be explained by different experimental settings.
@@ -18,7 +18,7 @@ Firstly, the whole-cell patch-clamp experiments performed by @yang_2016 in C57BL
 The difference between those animals were reported in many contexts.<!-- lepiej napisać-->
 Moreover, while in the present studies the coronal slices were used, transverse slices containing the amygdala were reported to be used in the study by @yang_2016.
 Accordingly, the terminals from hippocampus and cortex, two sources of excitatory inputs into the BLA, are more intact in transverse slices.<!-- potwierdzenie-->
-This raises possibility that the observed CXCL12-induced enhancement in transverse slices may be, at least in part, due to additional hippocampal and/or cortical inputs, which are absent in coronal slices. 
+This raises the possibility that the observed CXCL12-induced enhancement in transverse slices may be, at least in part, due to additional hippocampal and/or cortical inputs, which are absent in coronal slices. 
 The temperature, which is the critical factor for recording the synaptic transmission, also differs between these two studies.
 Here, brain slices were submerged with the ACSF at the temperature of 31–33`r knitr::asis_output("\U00B0")`C, whereas the excitatory synaptic transmission in experiments by @yang_2016 was recorded at room temperature.<!--potwierdzenie-->
 Finally, while present experiments were performed using normal ACSF, @yang_2016 sEPSC recordings were made in the presence of a blocker of GABA~A~ receptors, picrotoxin.
@@ -78,7 +78,7 @@ Strikingly, the outward current was no longer observed in the presence of 1 l m 
 In conclusion, the SDF-1 a -induced hyperpolarization is likely linked to the activation of a GIRK current via stimulation of CXCR4
 -->
 
-Moreover, the pre-incubation slices with astrocytic toxin, fluorocitrate, did not abolished CXCL12-triggered increase in neuronal excitability, suggesting that astrocytes did not mediate this effect.
+Moreover, the pre-incubation slices with astrocytic toxin, fluorocitrate, did not abolish CXCL12-triggered increase in neuronal excitability, suggesting that astrocytes did not mediate this effect.
 This is in line with our immunofluorescent data demonstrating the absence of CXCR4 in astrocytes.
 Similarly, other studies reported the CXCL12-mediated neuromodulation accompanied by the lack of astrocytic CXCR4 in the BLA and in ....<!--citation-->.
 
@@ -99,7 +99,7 @@ The mechanism of action of CXCL12 on glutamate release thus needs further invest
 
 Since RS and LF cells were reported to be highly interconnected between each other, than within their subpopulations<!--citation-->, these data would suggest that increased frequency of sEPSC onto RS cells, consistent with the decreased threshold current, increased their firing, and in turn, regarding their GABAergic nature, would inhibit LF neurons. 
 On the other hand, the observed trendily inhibition of the frequency of sEPSC is not accompanied by the reduction in their excitability and reduced inputs onto Late-Firing cells.
-Nevertheless, experiments by using dual patch-clamp experiments to record whether CXCL12 acute application led to opposing effects in those two subpopulation in the CeL would be of high importance.
+Nevertheless, experiments by using dual patch-clamp experiments to record whether CXCL12 acute application led to opposing effects in those two subpopulations in the CeL would be of high importance.
 
 In addition - the source of increased inputs onto Regular-Spiking neurons?
 
@@ -110,7 +110,7 @@ While it increases frequency of sIPSC onto Regular-Spiking neurons, Late-Firing 
 WHY cell specific?<!-- astrocytes are cell specific? -->
 Dose?
 All of these effects were mediated by CXCR4 receptor, as they were abolished in the presence of AMD3100.
-The tonic activity of CXCR4 seems to do not affect GABAergic transmission.
+The tonic activity of CXCR4 seems to not affect GABAergic transmission.
 Astrocytes modulates this effect.
 Maybe only neuronal CXCR4 activity is tonic.
 However, it is important to note that if only astrocytes were involved in this effect, thus why it is sensitive to TTX?

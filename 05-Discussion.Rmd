@@ -305,14 +305,8 @@ The central amygdala (CeL) is composed of distinct types of GABA-producing inhib
 ## CX3CL1 in the lateral subdivision of the central amygdala
 
 In the present study, the CX3CL1-mediated neuromodulation with CeL circuit was identified.
-Specifically, acute application of CX3CL1 on brain slices containing the amygdala resulted in cell-specific changes in the excitability of Regular-Spiking neurons.
-This effect was accompanied by affected membrane properties in this subtype of neurons.
-In contrast, 
-and GABAergic transmission.
-
-
-
-The central nucleus of the amygdala (CeA) is a limbic hub involved in autonomic regulation, emotion, and motivated behavior, and has been strongly implicated in opioid dependence (Koob, 2009a; Upadhyay et al., 2010). 
+Specifically, acute application of CX3CL1 on brain slices containing the amygdala resulted in cell-specific changes in the excitability of Regular-Spiking neurons, accompanied by affected membrane properties, and GABAergic transmission.
+Therefore, these findings indicate that CX3CL1 acts also as neuromodulator in the CeA, a limbic hub involved in autonomic regulation, emotion, and motivated behavior, raising the possibility that ...
 
 ### Cell-specific effects on membrane properties
 

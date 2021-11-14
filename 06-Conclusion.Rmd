@@ -1,5 +1,7 @@
 # Conclusions
 
+In the present work we characterized the role of different ARs in the CX3CL1-induced modulation of hi ppocampal glutamatergic transmission using cultured neurons and brain slices. The main fi nding of this study is that CX3CL1 action requires the activation of A1A, A2AR and A3R, by locally released or tonic adenosine. Speci fi cally, CX3CL1 causes glutamatergic depression through A1R and A3R and potentiation through A2AR stimulation. Thus, CX3CL1 might affect glutamatergic synapses in opposite way, depending on the prevailing functional expression of AR subtypes. 
+
 The effects of chemokines in the brain may be due to their ability to activate chemokine receptors localized on neurons and/or glia, thus leading to changes in neuronal membrane properties and/or synaptic transmission. 
 Specifically, chemokines may alter synaptic transmitter release [@limatola_2000, @ragozzino_2002], modulate the functional properties of ionic channels [@lax_2002, @oh_2002] and promote the release of glutamate from astrocytes [@lax_2002]. 
 In addition, the chemokine system can alter the actions of neuronally active pharmacological agents such as opioids and the cannabinoid system [@heinisch_2011]. 
@@ -30,5 +32,31 @@ We confirmed that TLR4 and MCP-1 are expressed in glial cells (SD, Supplementary
 The microglia-dependent CX3CL1-CX3CR1 signaling cascade played a role in microglial-neuron interactions and in descending facilitation of BCP.<!-- analogous-->
 
 Modulation of GABA synaptic activity at 5-HT neuronsby CX3CL1, and by additional members of the chemokine family, such as CXCL12, may be clinically significant in thepathophysiology and treatment of 5-HT related mood disorders, including depression experienced by immunocom-promised individuals. CX3CL1 and other chemokines mayalso represent a new class of CNS neuromodulators, im-pacting brain function via their effects on traditional neuro-transmitter and neuropeptide systems, including the 5-HTsystem (Adler and Rogers, 2005; Adler et al., 2006; Calle-waere et al., 2007; Rostene et al., 2007). Thus, our studyprovides additional support for the general hypothesis thatchemokines, in addition to traditional neurotransmittersand neuropeptides, represent a novel neuromodulatorysystem in the CNS. 
+
+## Limitations
+
+* due to technical/methodological implication of difficulties regarding immunofluorescent stainings of receptors and imperfections of many antibodies, the results concerning co-localization needs to be verified by using more sensitive methods, such as RNA-scope or .... 
+
+* GABA~C~ receptors - not blocked, what is the toxin/substance that blocked it? 
+
+* Pharmacological blocking of microglia and astrocyte - better optogenetic/
+
+* Knockdown mice rather than blockers of receptor
+
+* BLA - pyramidal cells were selected based on 
+
+* CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber.
+
+### CXCL12 and CX3CL1 - SUMMARY
+
+CX3CL1 activates GABA synaptic activity at the postsynaptic level, however, we have reported stimulatory presynaptic actions of CXCL12 on GABA release (Heinisch and Kirby, 2009). Interestingly, CXCL12 also produces a membrane depolarization in 5-HT neurons, an effect mediated indirectly by glutamate afferents, whereas CX3CL1 does not exhibit any effect on this parameter.
+Thus, although the chemokine family is comprised of a large variety of small chemotactic proteins, it appears that two structurally distinct chemokines, CX3CL1 and CXCL12, share common colocalization profiles with the 5-HT system as well as common functional actions on GABA synaptic activity on 5-HT neurons within the RN.
+
+NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology.<!-- chemokines // conclusion?-->
+
+
+
+In amygdala, the activation of this signalling pathway by .... is known to play a crucial role both in synaptic activity and plasticity processes.
+
 
 \newpage

@@ -558,7 +558,7 @@ figure1
 
 ### CX3CR1 receptor expression in the CeA
 
-```{r BLACX3CL1immunostat, echo = FALSE, warning = FALSE, message= FALSE}
+```{r CeACX3CL1immunostat, echo = FALSE, warning = FALSE, message= FALSE}
 
 
 

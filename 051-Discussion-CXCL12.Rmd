@@ -58,6 +58,44 @@ This dissertation hereby provides new evidence for the neuromodulatory propertie
 <!--Herein, the new evidence for the neuromodulatory properties of CXCL12/CXCR4 axis in synaptic transmission and membrane properties in the lateral subdivision of the central complex of the amygdala is provided. previously we provide... pomyśleć o czymś lepszym--> 
 Firstly,
 
+### Excitability
+
+CXCL12 was shown to increase the excitability of CeL neurons.
+While Late-Firing neurons were shown to have both decreased threshold current and gain, only threshold current was decreased in the Regular-Firing neurons.
+<!-- Slightly different mechanism? -->
+These effects were mediated by CXCR4 receptor, as the presence of AMD3100 prevented this enhancement in CeL neuronal excitability.
+Interestingly, AMD3100 alone was shown in an opposite trend.
+Thus, these findings suggest tonic activity of CXCR4.
+<!-- tonic activity -->
+
+Moreover, the pre-incubation slices with astrocytic toxin, fluorocitrate, did not abolished CXCL12-triggered increase in neuronal excitability, suggesting that astrocytes did not mediate this effect.
+This is in line with our immunofluorescent data demonstrating the absence of CXCR4 in astrocytes.
+Similarly, other studies reported the CXCL12-mediated neuromodulation accompanied by the lack of astrocytic CXCR4 in the BLA and in ....<!--citation-->.
+
+
+
+### sEPSC
+The opposing trend was observed.
+RS - 2nM - decreased frequency of sEPSC
+RS - 5nM - increased frequency of sEPSC
+Considering that RS and LF cells were reported to be highly interconnected between each other, than within their subpopulations<!--citation-->, these data would suggest that increased frequency of sEPSC onto RS cells, consistent with the decreased threshold current, increased their firing, and in turn, regarding their GABAergic nature, would inhibit LF neurons. 
+On the other hand, the observed trendily inhibition of the frequency of sEPSC is not accompanied by the reduction in their excitability and reduced inputs onto Late-Firing cells.
+Nevertheless, experiments by using dual patch-clamp experiments to record whether CXCL12 acute application led to opposing effects in those two subpopulation in the CeL would be of high importance.
+
+In addition - the source of increased inputs onto Regular-Spiking neurons?
+
+### sIPSC
+
+The effect of CXCL12 onto GABAergic synaptic transmission is complex.
+While it increases frequency of sIPSC onto Regular-Spiking neurons, Late-Firing neurons were shown to display both reduced frequency and amplitude of sIPSC.
+WHY cell specific? <!-- astrocytes are cell specific? -->
+Dose?
+All of these effects were mediated by CXCR4 receptor, as they were abolished in the presence of AMD3100.
+The tonic activity of CXCR4 seems to do not affect GABAergic transmission.
+Astrocytes modulates this effect.
+Maybe only neuronal CXCR4 activity is tonic.
+However, it is important to note that if only astrocytes were involved in this effect, thus why it is sensitive to TTX?
+
 
 
 However, increased excitability is documented to results either from increasing amplitude of N-type calcium channel or inducing inward rectifier (GIRK) potassium currents, the action mediated by CXC12/CXCR4 axis.<!-- zmienić, citation-->

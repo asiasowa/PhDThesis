@@ -1,12 +1,17 @@
 ## CXCL12 in the basolateral amygdala
 
-This dissertation hereby provides evidence that CXCL12/CXCR4 pair did not significantly affected BLA physiology.<!-- inaczej napisać, bo podobne do wcześniejszego rozdziału-->
-The lack of prominent effects in the BLA is in line with previous reports demonstrating absence of CXCR4 in this nucleus of the amygdala [@banisadr_2002a], at least reaching the levels of detection needed for *in situ* hybridization.<!-- nienajlepsze zdanie-->
-In contrast, neuronal expression of CXCR4 receptor as well as the CXCL12-induced CXCR4-dependent enhancement in the excitatory synaptic transmission were reported by @yang_2016.<!-- However, these results are in contrast with studies conducted by , revealing that CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.-->
-In particular, this study revealed that the application of CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.
+Herein, although  CXCL12/CXCR4 pair did not significantly affected principal cells' excitability, excitatory, or inhibitory synaptic transmission, some interesting tendencies were noted. 
+In particular, results presented here indicated that following CXCL12 treatment (i) there is a trend toward increased excitability of principal cells (especially at higher concentration), (ii) there was a complex pattern of neuronal responses manifested as frequency of sEPSC, and (iii) there were opposing trends of CXCL12 regulation of GABAergic synaptic transmission depending on the chemokine concentration. 
+<!-- The lack of prominent effects in the BLA is in line with a previous report demonstrating absence of CXCR4 in this nucleus of the amygdala [@banisadr_2002a], at least considering sensitivity and the detection level needed for *in situ* hybridization 20 years ago. nienajlepsze zdanie-->
+
+CXCL12/CXCR4 signaling was previously studied in the basolateral nucleus of the amygdala in the context of neuroinflammation [@yang_2016].
+Nevertheless, this report demonstrated neuronal expression of CXCR4 receptor as well as the CXCL12-induced CXCR4-dependent enhancement in the excitatory synaptic transmission in the BLA, further suggesting that the latter effect would result in the increased excitability of pyramidal-like neurons.<!-- However, these results are in contrast with studies conducted by , revealing that CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.-->
+This hypothesis drawn from [@yang_2016] is supported by results presented in this PhD dissertation.
+However, the results regarding excitatory synaptic transmission in the BLA has been less straightforward.
+In particular, the study by [@yang_2016] revealed that the application of CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.
 In contrast, results presented here showed that CXCL12(2nM) led to the enhancement of sEPSC frequency in `r pie_BLA_c2_freq$data$count[2]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` neurons , while reduced this parameter in  `r pie_BLA_c2_freq$data$count[1]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` cells (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b1).
 Thus, grouped data showed no statistically significant change in the frequency of sEPSCs `r CXCL12_2nM_BLA_sEPSC_stat_freq`.
-This neuronal proportions were also similar when higher concentration of exogenous CXCL12, i.e., 5nM, was applied (Fig.\@ref(fig:CXCL12BLAsEPSCfreq)a and b2, `r CXCL12_5nM_BLA_sEPSC_stat_freq`).
+These neuronal proportions were also similar when higher concentration of exogenous CXCL12, i.e., 5nM, was applied (Fig.\@ref(fig:CXCL12BLAsEPSCfreq)a and b2, `r CXCL12_5nM_BLA_sEPSC_stat_freq`).
 This discrepancy between studies may be explained by different experimental settings.
 Firstly, the whole-cell patch-clamp experiments performed by @yang_2016 in C57BL/6 male mice, whereas this study was performed using slices obtained from male Wistar rats.
 The difference between those animals were reported in many contexts.<!-- lepiej napisać-->
@@ -14,13 +19,15 @@ Moreover, while in the present studies the coronal slices were used, transverse 
 Hence, the connections between hippocampus and cortex, two sources of excitatory inputs into the BLA, were more intact in transverse slices.<!-- potwierdzenie-->
 The temperature, which is the critical factor for recording the synaptic transmission, also differs between these two studies.
 Here, brain slices were submerged with the ACSF at the temperature of 31–33`r knitr::asis_output("\U00B0")`C, whereas the excitatory synaptic transmission in experiments by @yang_2016 was recorded at room temperature.<!--potwierdzenie-->
-Finally, while sEPSC measurements were done in normal ACSF, @yang_2016 sEPSC recordings were made in the presence of a blocker of GABA~A~ receptors, picrotoxin.
-Therefore, these findings raises the possibility that the enhancement in excitatory synaptic transmission onto principal cells in the BLA seen in @yang_2016 study was affected by GABAergic heterogeneous group of local interneurons.
-Considering the well-known tight regulation of principal cell's activity by local interneurons<!--citations-->, along with reported CXCL12-mediated modulation of GABAergic transmission<!--citations-->, this explanation is very likely.
+Finally, while present experiments were performed using normal ACSF, @yang_2016 sEPSC recordings were made in the presence of a blocker of GABA~A~ receptors, picrotoxin.
+Therefore, these findings raises the possibility that the enhancement in excitatory synaptic transmission onto principal cells in the BLA seen in @yang_2016 study, here was distorted by the modulation of GABAergic heterogeneous group of local interneurons.
+Considering the well-known tight regulation of principal cell's activity by local interneurons<!--citations-->, along with documented CXCL12 mediation of GABAergic transmission<!--citations-->, this explanation is very likely.
+<!-- jeszcze coś o excitability?-->
+Nevertheless, whether blocking GABA~A~ receptors will result in a significant increase of sEPSC frequency onto principal cells in the BLA and/or clearly in enhancement of their firing in rat coronal acute slices remains to be confirmed.
 
 ### sIPSC/ GABA/ INTERNEURONS
 
-Consistently, although not statistically significant, there is a trend in the CXCL12-triggered changes in the frequency of sIPSC.<!--lepiej napisać-->
+Consistent with this notion, although not statistically significant, there is a trend in the CXCL12-triggered changes in the frequency of sIPSC.<!--lepiej napisać-->
 Specifically, bath administration of CXCL12 produced two distinct responses: while exogenous CXCL12 at the concentration of 2nM was shown to reduce the frequency of sIPSC, the increased number of these evens were observed following treatment with higher concentration of this chemokine (5nM; see Fig. \@ref(fig:CXCL12BLAsIPSCfreq).<!--bath administration of serotonin (0.3–100 μM) produced two distinct responses which could be differentiated physiologically and pharmacologically-->
 
 These observations can be paralleled to what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects depending on the concentration used [@guyon_2005].<!-- nie wiem czy bardziej nie zmienić... This can be paralleled to what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects on the action potential discharge depending on the concentration ( Guyon et al., 2005a ). -->
@@ -32,26 +39,23 @@ Such process, known as ‘hormesis’, relates to adaptative responses to compen
 
 In addition, CXCL12 was shown to be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment, namely CXCL12 a (5–67).
 This metabolite was reported to exert its action through a receptor different than<!--from?--> CXCR4 (Zhang et al ., 2003).<!--Indeed, it has been shown that CXCL12 can be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment, namely CXCL12 a (5–67), that exerts its effect through a G-protein coupled receptor distinct from CXCR4 (Zhang et al ., 2003). sprawdzić skąd to... -->
-Accordingly, the enhancement of sIPSC frequency observed at higher concentrations of CXCL12 could be mediated by a CXCL12 metabolite produced in the acute brain slice. 
-These effects could overcome the CXCR4 effects.<!--zmienić--> 
+Accordingly, the enhancement of sIPSC frequency observed at higher concentrations of CXCL12 could be mediated by a CXCL12 metabolite produced in the acute brain slice.<!--These effects could overcome the CXCR4 effects.zmienić NA SZCZĘŚCIE NIE BLOKOWAŁAM TEGO :D--> 
 Further experiments using specific MPP inhibitors should clarify this point.[@guyon_2005]<!--zmienić-->
 
-Another possibility is that <!-- sheridan - glia vs neurons different concentration -->
+Another possibility is that <!-- sheridan - glia vs neurons different concentration However unlikely as yang_2016 did not detect the CXCR4 expression in the astrocyte. A MY?! Probably OR MAYBE MICROGLIA.-->
+<!-- probably microglia - release of some signaling molecule? analogous to what is seen in adenosine? --><!--In conclusion, our results show that CX3CL1 may affect glutamatergic neurotransmission in the hippocampus by a mechanism involving three different AR subtypes, raising the proposal that opposite regulation might be achieved by chemokine action at single synapses, depending on AR distribution and functional status and, potentially, by the site and mechanism of adenosine release.analogous // Piccinin 2010-->
 
-
-Moreover, <!-- ACKR3 -->
+Moreover, <!-- ACKR3 but also unlikely as not detected in the amygdala.-->
 
 Hence, it is possible that these opposing responses could be differentiated physiologically and pharmacologically.<!--znaleźć ten artykuł ... It is possible that these responses could be differentiated physiologically and pharmacologically.-->
 /////
 Considering complexity resulting from wide variety of chemokine receptors, their complex cellular pattern of expression, different scenario of signaling cascades, ...  differences in postsynaptic cell machinery including different signalling pathways, channels and receptors, and dual/opposite action of the same chemokine, it would not be informative to describe it due to this criteria.
 
-In conclusion, our results show that CX3CL1 may affect glutamatergic neurotransmission in the hippocampus by a mechanism involving three different AR subtypes, raising the proposal that opposite regulation might be achieved by chemokine action at single synapses, depending on AR distribution and functional status and, potentially, by the site and mechanism of adenosine release.<!--analogous // Piccinin 2010-->
-
 
 ## CXCL12 in the lateral subdivision of the central amygdala
 
+This dissertation hereby provides new evidence for the neuromodulatory properties of CXCL12/CXCR4 axis in synaptic transmission and membrane properties in the lateral subdivision of the central complex of the amygdala.<!-- inaczej napisać, bo podobne do wcześniejszego rozdziału-->
 <!--Herein, the new evidence for the neuromodulatory properties of CXCL12/CXCR4 axis in synaptic transmission and membrane properties in the lateral subdivision of the central complex of the amygdala is provided. previously we provide... pomyśleć o czymś lepszym--> 
-Herein, CXCL12 was shown to be a substantial component of the  <!-- substantial component of the descending pain modulatory network and was upregulated in the model of BCP.-->
 Firstly,
 
 

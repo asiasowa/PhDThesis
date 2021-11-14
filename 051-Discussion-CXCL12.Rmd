@@ -1,27 +1,29 @@
-## CXCL12 in the basolateral amygdala
+## CXCL12/CXCR4 signaling in the basolateral amygdala
 
-Herein, although  CXCL12/CXCR4 pair did not significantly affected principal cells' excitability, excitatory, or inhibitory synaptic transmission, some interesting tendencies were noted. 
-In particular, results presented here indicated that following CXCL12 treatment (i) there is a trend toward increased excitability of principal cells (especially at higher concentration), (ii) there was a complex pattern of neuronal responses manifested as frequency of sEPSC, and (iii) there were opposing trends of CXCL12 regulation of GABAergic synaptic transmission depending on the chemokine concentration. 
+Herein, although the CXCL12/CXCR4 pair did not significantly affect principal cells' excitability, excitatory, or inhibitory synaptic transmission, some interesting tendencies were noted. 
+In particular, results presented here indicated that following CXCL12 treatment: (i) there was a trend toward increased excitability of principal cells (especially at higher concentration), (ii) there was a complex pattern of neuronal responses manifested as frequency of sEPSC, and (iii) there were opposing trends of CXCL12-mediated regulation of GABAergic synaptic transmission depending on the chemokine concentration. 
 <!-- The lack of prominent effects in the BLA is in line with a previous report demonstrating absence of CXCR4 in this nucleus of the amygdala [@banisadr_2002a], at least considering sensitivity and the detection level needed for *in situ* hybridization 20 years ago. nienajlepsze zdanie-->
 
 CXCL12/CXCR4 signaling was previously studied in the basolateral nucleus of the amygdala in the context of neuroinflammation [@yang_2016].
-Nevertheless, this report demonstrated neuronal expression of CXCR4 receptor as well as the CXCL12-induced CXCR4-dependent enhancement in the excitatory synaptic transmission in the BLA, further suggesting that the latter effect would result in the increased excitability of pyramidal-like neurons.<!-- However, these results are in contrast with studies conducted by , revealing that CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.-->
-This hypothesis drawn from [@yang_2016] is supported by results presented in this PhD dissertation.
-However, the results regarding excitatory synaptic transmission in the BLA has been less straightforward.
-In particular, the study by [@yang_2016] revealed that the application of CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.
-In contrast, results presented here showed that CXCL12(2nM) led to the enhancement of sEPSC frequency in `r pie_BLA_c2_freq$data$count[2]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` neurons , while reduced this parameter in  `r pie_BLA_c2_freq$data$count[1]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` cells (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b1).
-Thus, grouped data showed no statistically significant change in the frequency of sEPSCs `r CXCL12_2nM_BLA_sEPSC_stat_freq`.
-These neuronal proportions were also similar when higher concentration of exogenous CXCL12, i.e., 5nM, was applied (Fig.\@ref(fig:CXCL12BLAsEPSCfreq)a and b2, `r CXCL12_5nM_BLA_sEPSC_stat_freq`).
+Nevertheless, this report demonstrated neuronal expression of CXCR4 receptor as well as the CXCL12-induced CXCR4-dependent enhancement in the excitatory synaptic transmission in the BLA.
+The authors further suggested that the latter effect might result in the increased excitability of pyramidal-like neurons.<!-- However, these results are in contrast with studies conducted by , revealing that CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.-->
+Their hypothesis is supported by results presented in this PhD dissertation.
+However, the results regarding excitatory synaptic transmission in the BLA have been less straightforward.
+In particular, the study by @yang_2016 revealed that the application of CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.
+In contrast, results presented here showed that CXCL12(2nM) led to the enhancement of sEPSC frequency in `r pie_BLA_c2_freq$data$count[2]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` neurons , while reduced this parameter in `r pie_BLA_c2_freq$data$count[1]` out of `r (pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3])` cells (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b1).
+Thus, grouped data showed no statistically significant change in the frequency of sEPSCs.
+These neuronal proportions were also similar when higher concentration of exogenous CXCL12, i.e., 5nM, was applied (Fig.\@ref(fig:CXCL12BLAsEPSCfreq)a and b2).
 This discrepancy between studies may be explained by different experimental settings.
 Firstly, the whole-cell patch-clamp experiments performed by @yang_2016 in C57BL/6 male mice, whereas this study was performed using slices obtained from male Wistar rats.
 The difference between those animals were reported in many contexts.<!-- lepiej napisać-->
 Moreover, while in the present studies the coronal slices were used, transverse slices containing the amygdala were reported to be used in the study by @yang_2016.
-Hence, the connections between hippocampus and cortex, two sources of excitatory inputs into the BLA, were more intact in transverse slices.<!-- potwierdzenie-->
+Accordingly, the terminals from hippocampus and cortex, two sources of excitatory inputs into the BLA, are more intact in transverse slices.<!-- potwierdzenie-->
+This raises possibility that the observed CXCL12-induced enhancement in transverse slices may be, at least in part, due to additional hippocampal and/or cortical inputs, which are absent in coronal slices. 
 The temperature, which is the critical factor for recording the synaptic transmission, also differs between these two studies.
 Here, brain slices were submerged with the ACSF at the temperature of 31–33`r knitr::asis_output("\U00B0")`C, whereas the excitatory synaptic transmission in experiments by @yang_2016 was recorded at room temperature.<!--potwierdzenie-->
 Finally, while present experiments were performed using normal ACSF, @yang_2016 sEPSC recordings were made in the presence of a blocker of GABA~A~ receptors, picrotoxin.
-Therefore, these findings raises the possibility that the enhancement in excitatory synaptic transmission onto principal cells in the BLA seen in @yang_2016 study, here was distorted by the modulation of GABAergic heterogeneous group of local interneurons.
-Considering the well-known tight regulation of principal cell's activity by local interneurons<!--citations-->, along with documented CXCL12 mediation of GABAergic transmission<!--citations-->, this explanation is very likely.
+Therefore, these findings raise the possibility that the enhancement in excitatory synaptic transmission onto principal cells in the BLA seen in @yang_2016 study, here was distorted by the modulation of GABAergic heterogeneous group of local interneurons.
+Given the well-known tight regulation of principal cell's activity by local interneurons<!--citations-->, along with documented CXCL12 mediation of GABAergic transmission<!--citations-->, this explanation is very likely.
 <!-- jeszcze coś o excitability?-->
 Nevertheless, whether blocking GABA~A~ receptors will result in a significant increase of sEPSC frequency onto principal cells in the BLA and/or clearly in enhancement of their firing in rat coronal acute slices remains to be confirmed.
 
@@ -34,11 +36,11 @@ These observations can be paralleled to what happens in MCH neurons of the LHA, 
 In this area, .............<!--szczegóły-->
 Several putative mechanisms for these opposite effects, which are not mutually exclusive, have been proposed [@guyon_2007].<!-- Several putative mechanisms for these opposite effects, which are not mutually exclusive, are reviewed in Guyon and Nahon (2007) . sprawdzić skąd to... -->
 
-Firstly, the characteristic U-shaped dose-dependent effect curve is commonly displayed in ...., including chemokines.<!-- chemokines usually display a U-shaped dose-dependent  effect  curve,  suggesting  opposing  functions depending on their concentration. // może GPCR receptors?--> 
-Such process, known as ‘hormesis’, relates to adaptative responses to compensate disruption in homeostasis by overshooting homeostatic feedback controls (Mattson 2008).<!-- zmienić inaczej opisać i skąd cytowanie // Such process named ‘hormesis’ relates to adaptative responses to compensate disruption in homeostasis by overshooting homeostatic feedback controls (Mattson 2008).--> 
+Firstly, the characteristic U-shaped dose-dependent effect curve is commonly displayed in ...., including chemokines.<!-- chemokines usually display a U-shaped dose-dependent effect curve, suggesting opposing functions depending on their concentration. // może GPCR receptors?--> 
+Such a process, known as ‘hormesis’, relates to adaptative responses to compensate for a disruption in homeostasis by overshooting homeostatic feedback controls (Mattson 2008).<!-- zmienić inaczej opisać i skąd cytowanie // Such process named ‘hormesis’ relates to adaptative responses to compensate disruption in homeostasis by overshooting homeostatic feedback controls (Mattson 2008).--> 
 
 In addition, CXCL12 was shown to be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment, namely CXCL12 a (5–67).
-This metabolite was reported to exert its action through a receptor different than<!--from?--> CXCR4 (Zhang et al ., 2003).<!--Indeed, it has been shown that CXCL12 can be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment, namely CXCL12 a (5–67), that exerts its effect through a G-protein coupled receptor distinct from CXCR4 (Zhang et al ., 2003). sprawdzić skąd to... -->
+This metabolite was reported to exert its action through a receptor different from CXCR4 (Zhang et al ., 2003).<!--Indeed, it has been shown that CXCL12 can be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment, namely CXCL12 a (5–67), that exerts its effect through a G-protein coupled receptor distinct from CXCR4 (Zhang et al ., 2003). sprawdzić skąd to... -->
 Accordingly, the enhancement of sIPSC frequency observed at higher concentrations of CXCL12 could be mediated by a CXCL12 metabolite produced in the acute brain slice.<!--These effects could overcome the CXCR4 effects.zmienić NA SZCZĘŚCIE NIE BLOKOWAŁAM TEGO :D--> 
 Further experiments using specific MPP inhibitors should clarify this point.[@guyon_2005]<!--zmienić-->
 
@@ -49,14 +51,16 @@ Moreover, <!-- ACKR3 but also unlikely as not detected in the amygdala.-->
 
 Hence, it is possible that these opposing responses could be differentiated physiologically and pharmacologically.<!--znaleźć ten artykuł ... It is possible that these responses could be differentiated physiologically and pharmacologically.-->
 /////
-Considering complexity resulting from wide variety of chemokine receptors, their complex cellular pattern of expression, different scenario of signaling cascades, ...  differences in postsynaptic cell machinery including different signalling pathways, channels and receptors, and dual/opposite action of the same chemokine, it would not be informative to describe it due to this criteria.
+Considering complexity resulting from wide variety of chemokine receptors, their complex cellular pattern of expression, different scenario of signaling cascades, ... differences in postsynaptic cell machinery including different signalling pathways, channels and receptors, and dual/opposite action of the same chemokine, it would not be informative to describe it due to this criteria.
 
 
-## CXCL12 in the lateral subdivision of the central amygdala
+## CXCL12/CXCR4 signaling in the lateral subdivision of the central amygdala
 
 This dissertation hereby provides new evidence for the neuromodulatory properties of CXCL12/CXCR4 axis in synaptic transmission and membrane properties in the lateral subdivision of the central complex of the amygdala.<!-- inaczej napisać, bo podobne do wcześniejszego rozdziału-->
 <!--Herein, the new evidence for the neuromodulatory properties of CXCL12/CXCR4 axis in synaptic transmission and membrane properties in the lateral subdivision of the central complex of the amygdala is provided. previously we provide... pomyśleć o czymś lepszym--> 
-Firstly,
+Firstly, CXCL12 was shown to upregulate the excitability of CeL neurons, which was mediated by the CXCR4 receptor, but probably without astrocytic involvement.
+Next, there was a cell-specific trend illustrating the opposing CXCL12-mediated modulation of glutamatergic synaptic transmission based on the concentration, specifically onto Regular-Spiking neurons.
+Finally, the treatment with CXCL12 also led to opposite regulation of GABAergic transmission, based on the subtype of CeL neurons, which was possibly dependent on astrocytes.
 
 ### Excitability
 
@@ -67,6 +71,12 @@ These effects were mediated by CXCR4 receptor, as the presence of AMD3100 preven
 Interestingly, AMD3100 alone was shown in an opposite trend.
 Thus, these findings suggest tonic activity of CXCR4.
 <!-- tonic activity -->
+<!--However, increased excitability is documented to results either from increasing amplitude of N-type calcium channel or inducing inward rectifier (GIRK) potassium currents, the action mediated by CXC12/CXCR4 axis. zmienić, citation-->
+<!--GIRK or N-type calcium channel in CeA neurons?-->
+<!--The activation of the GIRK current could have been mediated directly through CXCR4 activation or through the activation of metabotropic glutamate and ⁄ or GABAB receptors, as SDF-1 a increases glutamate and GABA release in the slice. GIRK current in the amygdala? GABA B in the amygdala?? 
+Strikingly, the outward current was no longer observed in the presence of 1 l m AMD 3100 (AMD), a potent selective antagonist of CXCR4 (Hatse et al ., 2002) ( n ¼ 3), but AMD could have acted presynaptically.
+In conclusion, the SDF-1 a -induced hyperpolarization is likely linked to the activation of a GIRK current via stimulation of CXCR4
+-->
 
 Moreover, the pre-incubation slices with astrocytic toxin, fluorocitrate, did not abolished CXCL12-triggered increase in neuronal excitability, suggesting that astrocytes did not mediate this effect.
 This is in line with our immunofluorescent data demonstrating the absence of CXCR4 in astrocytes.
@@ -77,8 +87,17 @@ Similarly, other studies reported the CXCL12-mediated neuromodulation accompanie
 ### sEPSC
 The opposing trend was observed.
 RS - 2nM - decreased frequency of sEPSC
-RS - 5nM - increased frequency of sEPSC
-Considering that RS and LF cells were reported to be highly interconnected between each other, than within their subpopulations<!--citation-->, these data would suggest that increased frequency of sEPSC onto RS cells, consistent with the decreased threshold current, increased their firing, and in turn, regarding their GABAergic nature, would inhibit LF neurons. 
+RS - 5nM - increased frequency of sEPSC <!-- Guyon_2006
+CXCL12 increased glutamate release in SN slices, as previously described in other brain structures such as cerebellum (Ragozzino et al . 1998) or hypothalamus (Guyon et al . 2005b). // dawka....
+This current was not blocked by TTX, suggesting that it did not involve action potential-dependent release through the glutamate terminals. ... u nas blokowane
+Glutamatergic terminals on DA neurones arise from the output of the subthalamic nucleus or prefrontal cortex, which are absent from our slices.
+Increased calcium permeability in terminals might raise the probability of spontaneous release of glutamate or uptake of glutamate might be inhibited at the axon terminal exposed to CXCL12. However, sEPSCs recorded in 10 lM bicuculline were unaffected by CXCL12. 
+It is therefore likely that CXCL12 induces glutamate release from glial cells present in the slice.
+It is well established that CXCL12 mobilizes cytosolic calcium following stimulation of CXCR4 in astrocytes and microglia (Tanabe et al . 1997), and that an increased calcium concentration in these cells may cause a massive release of glutamate (Araque et al . 2001). 
+Interestingly, in the SN, the CXCL12 effect was independent of CXCR4 as it was not blocked by AMD (1 lM) (Fig. 6), consistent with the lack of CXCR4 on astrocytes revealed by immunostaining. 
+The mechanism of action of CXCL12 on glutamate release thus needs further investigation.-->
+
+Since RS and LF cells were reported to be highly interconnected between each other, than within their subpopulations<!--citation-->, these data would suggest that increased frequency of sEPSC onto RS cells, consistent with the decreased threshold current, increased their firing, and in turn, regarding their GABAergic nature, would inhibit LF neurons. 
 On the other hand, the observed trendily inhibition of the frequency of sEPSC is not accompanied by the reduction in their excitability and reduced inputs onto Late-Firing cells.
 Nevertheless, experiments by using dual patch-clamp experiments to record whether CXCL12 acute application led to opposing effects in those two subpopulation in the CeL would be of high importance.
 
@@ -88,7 +107,7 @@ In addition - the source of increased inputs onto Regular-Spiking neurons?
 
 The effect of CXCL12 onto GABAergic synaptic transmission is complex.
 While it increases frequency of sIPSC onto Regular-Spiking neurons, Late-Firing neurons were shown to display both reduced frequency and amplitude of sIPSC.
-WHY cell specific? <!-- astrocytes are cell specific? -->
+WHY cell specific?<!-- astrocytes are cell specific? -->
 Dose?
 All of these effects were mediated by CXCR4 receptor, as they were abolished in the presence of AMD3100.
 The tonic activity of CXCR4 seems to do not affect GABAergic transmission.
@@ -96,180 +115,68 @@ Astrocytes modulates this effect.
 Maybe only neuronal CXCR4 activity is tonic.
 However, it is important to note that if only astrocytes were involved in this effect, thus why it is sensitive to TTX?
 
+<!--As mentioned previously, CXCR4 activation by CXCL12 increases pre-synaptic neurotransmitter release and particularly GABA release in several neuronal populations ( Guyon and Nahon, 2007 ; Bhattacharyya et al., 2008 ; Qu et al., 2008 ). 
+If GABA can in turn block the effects of CXCL12, this could represent a negative feedback loop for pre-synaptic chemokine release. 
+Indeed, when applying CXCL12 for several minutes, a transient increase in the frequency of sIPSCs is frequently observed, followed by a reduced activity (see Figure 3 in Guyon et al., 2006 ). This reduction could be due to an antagonistic effect of GABA, although desensitization of CXCR4 itself cannot be excluded.-->
 
 
-However, increased excitability is documented to results either from increasing amplitude of N-type calcium channel or inducing inward rectifier (GIRK) potassium currents, the action mediated by CXC12/CXCR4 axis.<!-- zmienić, citation-->
-<!--GIRK or N-type calcium channel in CeA neurons?-->
 
-The activation of the GIRK current could have been mediated directly through CXCR4 activation or through the activation of metabotropic glutamate and ⁄ or GABAB receptors, as SDF-1 a increases glutamate and GABA release in the slice. <!-- GIRK current in the amygdala? GABA B in the amygdala?? -->
 
-Strikingly, the outward current was no longer observed in the presence of 1 l m AMD 3100 (AMD), a potent selective antagonist of CXCR4 (Hatse et al ., 2002) ( n ¼ 3), but AMD could have acted presynaptically.
 
-In conclusion, the SDF-1 a -induced hyperpolarization is likely linked to the activation of a GIRK current via stimulation of CXCR4
-
-### Glu mixed effects? 
-
-Guyon_2006
-CXCL12 increased glutamate release in SN slices, as previously described in other brain structures such as cerebellum (Ragozzino et al . 1998) or hypothalamus (Guyon et al . 2005b). This current was not blocked by TTX, suggesting that it did not involve action potential-dependent release through the glutamate terminals. Glutamatergic terminals on DA neurones arise from the output of the subthalamic nucleus or prefrontal cortex, which are absent from our slices. Increased calcium permeability in terminals might raise the probability of spontaneous release of glutamate or uptake of glutamate might be inhibited at the axon terminal exposed to CXCL12 a . However, sEPSCs recorded in 10 lM bicuculline were unaffected by CXCL12 a . It is therefore likely that CXCL12 a induces glutamate release from glial cells present in the slice.
-It is well established that CXCL12 a mobilizes cytosolic calcium following stimulation of CXCR4 in astrocytes and microglia (Tanabe et al . 1997), and that an increased calcium concentration in these cells may cause a massive release of glutamate (Araque et al . 2001). Interestingly, in the SN, the CXCL12 a effect was independent of CXCR4 as it was not blocked by AMD (1 lM) (Fig. 6), consistent with the lack of CXCR4 on astrocytes revealed by immunostaining. The mechanism of action of CXCL12 a on glutamate release thus needs further investigation.
 
 ### astrocytes 
-
-Moreover, recent studies have begun to elucidate that connexins, the gap junction forming proteins highly expressed on astrocytes, scale synaptic transmission, and plasticity.
 
 Moreover, astrocytes may regulate synaptic transmission by modulating the expression and protein levels of glutamate transporters in the membrane and thus control glutamate spillover beyond the synapse, which may reflect a change in the kinetics in EPSCs, which translate into synaptic plasticity [@murphyroyal_2015].
 
 In relation to astrocytic regulation of synaptic transmission, evidence illustrated that based on frequency and duration of interneuron firing, astrocytes could tune in to release either glutamate, which enhances excitatory synaptic activity [@perea_2016], or ATP/adenosine, which decreases excitatory synaptic strength [@covelo_2018].
 
+Moreover, recent studies have begun to elucidate that connexins, the gap junction forming proteins highly expressed on astrocytes, scale synaptic transmission, and plasticity.
 For instance, while Cx43, the most abundant astrocytic connexin, does not appear to regulate astrocytic membrane properties, there is increasing evidence that it forms hemichannels and regulates the excitatory synaptic transmission of hippocampal CA1 pyramidal cells *via* ATP signaling [@chever_2014]. 
 Moreover, further experiments demonstrated that Cx43 reduced the amplitude of NMDA-mediated EPSCs in the prefrontal cortex.
 This effect could be rescued with the presence of D-serine in the extracellular medium [@meunier_2017].
+
 It is worth noting that recently ACKR3, an atypical receptor of CXC12, was suggested to internalize Cx43 [@meyrath_2020].
 Therefore it is tempting to speculate that ACKR3-induced Cx43 internalization in the hippocampus or prefrontal cortex would lead to dysfunction in synaptic transmission and, in turn, functional consequences on learning and memory. 
 However, to our knowledge, there are no data that would confirm this hypothesis. <!-- Recent findings cast a new light on the role of astrocytic gap junction networks in neuroendocrine functions [@clasadonte_2017]. In particular, mice with deletion of Cx43 in astrocytes displayed much less excitable orexin neurons located in the lateral hypothalamic area (LHA) due to dysfunction in glucose and lactate trafficking, leading to behavioral dysfunctions manifested as impaired sleep-wake cycle [@clasadonte_2017]. Thus, again, keeping in mind ACKR3-induced Cx43 internalization, it is intriguing to hypothesize that activation of this receptor could exert similar actions. However, this hypothesis needs further investigation.-->
 
 
-As mentioned previously,  CXCR4 activation by CXCL12 increases pre-synaptic neurotransmitter release and particularly GABA release in several neuronal populations ( Guyon and Nahon, 2007 ; Bhattacharyya et al., 2008 ; Qu et al., 2008 ). 
-<!--If GABA can in turn block the effects of CXCL12, this could represent a negative feedback loop for pre-synaptic chemokine release. 
-Indeed, when applying CXCL12 for several minutes, a transient increase in the frequency of sIPSCs is frequently observed, followed by a reduced activity (see Figure 3 in Guyon et al., 2006 ). This reduction could be due to an antagonistic effect of GABA, although desensitization of CXCR4 itself cannot be excluded.-->
+### CXCL12/CXCR4 other
 
-
-
-### cross-talk with neuromodulators?
-
-Bath administration of serotonin (0.3–100 μM) produced two distinct responses which could be differentiated physiologically and pharmacologically
-
-In rats subjected to restraint stress, acute application of corticotropin releasing factor significantly increased inhibitory postsynaptic potentials in the CeA (Ciccocioppo et al., 2014).
-
-
-### BLA - amygdala - not layered - LTP ?
-
-Finally, in comparison to other reasonably well-understood brain regions such as the cerebral cortex, hippocampus, and cerebellum, the amygdaloid nuclei do not show a rigid organization of its neuronal elements. Cells are not organized into layers nor do they have the striking preferred orientation of their major output neurons as described in these other brain regions. Thus it is not surprising that input-output mechanisms in the LA are regulated by the various ionic conductances in the membranes of their major output neurons rather than through mechanisms that rely on architectonics and differences in cell morphology. [@faber_2001]
-
-### CXCL12/CXCR4
+results of the present study add another piece to the growing body of evidence that ....
 
 The role of CXCL12 is mostly dependent on its primary receptor CXCR4. <!-- cytowania, szczególnie elektro -->
 However, recent data shows that atypical ACKR3, ...
 
-### CXCL12 and GABA
-
-CX3CL1 activates GABA synaptic ac-tivity at the postsynaptic level, however, we have reportedstimulatory presynaptic actions of CXCL12 on GABA re-lease (Heinisch and Kirby, 2009). Interestingly, CXCL12also produces a membrane depolarization in 5-HT neu-rons, an effect mediated indirectly by glutamate afferents,whereas CX3CL1 does not exhibit any effect on this pa-rameter. Thus, although the chemokine family is com-prised of a large variety of small chemotactic proteins, itappears that two structurally distinct chemokines, CX3CL1and CXCL12, share common colocalization profiles withthe 5-HT system as well as common functional actions onGABA synaptic activity on 5-HT neurons within the RN.
-
-
-
-
-
-
-
-
-NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology.<!-- chemokines // conclusion?-->
-
-
-#### Negative reinforcement
-
-Negative reinforcement models posit that avoidance of unpleasant physical and emotional withdrawal symptoms motivates substance dependence. Our findings are consistent with this model. Increased activity in the amygdala can lead to negative emotion and autonomic dysregulation—both of which are associated with opioid and alcohol withdrawal and may drive drug-seeking (Tovote et al., 2015).
-
-#### Sickness behavior, peripheral immune activation
-
-Earlier studies in rats have shown that peripheral immune activation using LPS or streptococcal enterotoxin B alters EEG-like activity in central amygdala 125–200 min post-treatment ( Engler et al., 2011; Prager et al., 2013 ) and caudal amygdala at 110 min post-treatment ( Doenlen et al., 2011 ). [@munshi_2018]. We found that peripheral inflammagens rapidly increase the firing of BLA neurons, thereby providing a clue as to how it might trigger changes in behavior.
-
-#### CXCL12 
-
-Multiple mechanisms may terminate CXCR4 signaling: desensitization, internalization, and degradation, each of which act to guard against inappropriately sustained signaling.Desensitization of CXCR4 and other GPCRs can be either acute or sustained: short-term desensitization spans minutes and results from β-arrestin-mediated steric hinderance of G-protein engagement. Longer term desensitization occurs over hours to days and results from persistent internalization, degradation, and transcriptional downregulation. Following ligand binding, CXCR4 phosphorylation, and G protein recruitment, β-arrestin is recruited to sterically hinder G-protein engagement with the receptor (desensitization).
-<!-- raczej nieważne -->
-Control over receptor internalization is exerted at the level of ligand binding. Recent studies demonstrate that inverse agonists (TAK779) of CXCR4 stimulate a higher rate of receptor internalization compared to partial agonists (Met-CCL5), suggesting an actively driven internalization process.39 Following internalization, CXCR4 signaling can continue. For example, CXCL12 mediates human neural progenitor cell survival by binding CXCR4 localized to the endosome.40 CXCR4 also localizes to the endosome for degradation which is controlled at several levels
-Cytoskeletal activity can link CXCR4 internalization to endosomal degradation. Rho and Gα13 mediate the actin polymerization necessary for trafficking CXCR4 into the endosomal compartment.41 Furthermore, adaptor proteins are necessary for endocytosis: a complex interplay between CXCR4, β-arrestin, and adaptor protein, AP2, is necessary to mediate CXCR4 endocytosis—mechanistic insight is lacking.42 Adaptor proteins are also necessary for CXCR4 recycling, for example, IQGAP1 regulates endosome interactions with microtubules during CXCR4 trafficking back to the cell membrane.43 
-Whether a receptor is recycled or degraded is largely a function of the overall number of receptors internalized,42 competing cargo for CXCR4-binding motifs42 and the cytoskeleton.43 A network of CXCR4-binding proteins and cytoskeletal processes control CXCR4 signal termination—finer mechanistic insight will provide potential for therapeutic modulation.
-
-In cerebellum, the activation of this signalling pathway by neurotransmitters is known to play a crucial role both in synaptic activity and plasticity processes Linden, 1994; . Chen and Tonegawa, 1997 . <!-- ANALOGICAL - in amygdala, this pathways .... -->
-
-
-<!-- Complicating these levels of regulation is the fact that overall protein synthesis rates are high in the young brain, decline through adulthood, and fall sharply with old age [13], [56]. Protein turnover in the brain appears to follow a similar pattern [13]; however, little is known about the effects of age on other protein modifications. In addition, proteins such as GFAP show increased metabolic turnover with age, even in the absence of neurodegeneration. Our results are consistent with independent regulation of chemokine expression at the mRNA and post-translational levels.-->
-
-### summary
-
-By employing transgenic mice with chronically elevated expression of CCL2 specifically in astrocytes, it was showed that CCL2 reduced synaptic transmission and neuronal excitability, whereas it enhanced short-term synaptic plasticity [@nelson_2011].
-However, although both acute and chronic CCL2 leads to presynaptic alternations in glutamatergic input to the CA1 area of the hippocampus, the molecular mechanism underlying this discrepancy remains unclear. 
-As those experiments varied regarding: (i) CCL2 application (acute vs. chronic), (ii) source (astrocytic vs. bath-applied during recordings), (iii) method (patch-clamp vs. extracellular recordings), more studies clarifying this issue are needed. <!-- analogous to cxc12 as a summary of astrocytic cxcr4? -->
-
-results of the present study add another piece to the growing body of evidence that ....
-
 Moreover, although several studies did not detect ACKR3 receptor in the amygdala<!--citations?-->, it cannot be excluded that, in certain cell types or cellular contexts, ACKR3 could, at least partially, mediate observed here effects of CXCL12.<!-- analogous // Moreover, although the results of the present study add another piece to the growing body of evidence that ACKR3 is unable to trigger G protein signaling, it cannot be excluded that, in certain cell types or cellular contexts, ACKR3 could induce G protein-dependent or -independent signaling [@heuninck_2019].-->
 
-
-
-### Oligodendrocytes 
-The importance of oligodendrocytes in the regulation of synaptic transmission is just now being appreciated, and only scarce evidence has been reported so far. 
-However, few studies suggested two molecular targets, which may be involved in this phenomenon: BDNF and glutamine synthetase (GS).
-Recently, it was shown that oligodendrocyte-derived BDNF might function *via* presynaptic tropomyosin receptor kinase B (TrkB) to ensure fast, reliable neurotransmitter release in the developing brain [@jang_2019].
-Moreover, this mechanism was recently described to play a role in cognitive impairment [@geraghty_2019].<!-- chyba BDNF derived from microglia 
-Another promising molecule is GS.
-The study illustrated that depletion of OL GS disrupts neuronal glutamate signaling with accompanying changes in behavioral function [@xin_2019].
-Interestingly, OLs survival and myelination were unaffected, thus demonstrating a myelin-independent role for oligodendrocytes in supporting glutamate signaling in the brain [@xin_2019]. -->
-
-
-<!-- The CeA receives processed nociceptive input from the basolateral amygdala (BLA) and direct nociceptive input via the spino-parabrachial-amygdaloid pathway (Missig et al., 2017; Bernard et al., 1989; Braz et al., 2005;McDonald et al., 1999), and consists of mainly inhibitory GABAergic neurons categorized as projection neurons and interneurons. The CeA interneurons are the interface between the neuronal input and output of the nucleus (Sun et al.,1994). Enkephalin (Enk) and dynorphin are endogenous opioid neu-ropeptides with wide distribution through the CNS including CeA (Poulin et al., 2008; Marchant et al., 2007).κ-,δ- andμ-opioid receptorsare found in the CeA (Mansour et al., 1994), supporting functionalimportance of opioid neuropeptides in the CeA (Poulin et al., 2008; Marchant et al., 2007). Dynorphin is expressed mainly in the medialsubdivision of the CeA by a group of projection neurons, which also express CRF (Marchant et al., 2007) while Enk is synthesized andlimited to a subset of interneurons in the centrolateral and centrocentral part of the CeA (Poulin et al., 2008). A high number of Enkneurons are found to overlap with CeA neurons that express PKC-δ (Haubensak et al., 2010). The PKC-δ cells, also called“OFF cells”, are considered to be the master switch of amygdala output (Haubensaket al., 2010; Amano et al., 2012). Thus, many Enk interneurons likelyengage in feed-forward inhibition of CeA interneurons and projection neurons (Bajo et al., 2011) and are a key element for regulation of CeAoutput and pain sensitivity.
-
-The CeA is a complex brain region that regulates a wide variety ofautonomic and non-autonomic functions, including modulation of ongoing pain. The CeA mediates both pro- and anti-analgesic effects through the activation of different cell groups, receptors and neuro-transmitters (Andreoli et al., 2017;Missig et al., 2017;Cai et al., 2018; Werka, 1994).
-
-The CeA is a source of robust amygdala outputs to regions thatmodulate both anxiety and pain sensitivity. Two primary outputs include CeA projections to the vlPAG, which regulate pain via the descending pain inhibitory system (Oliveira and Prado, 2001), and pro-jections to the adjacent DR, which control defensive and anxiety responses to a variety of aversive stimuli (Biagioni et al., 2013;Teissier et al., 2015). This would suggest that activation of CeA inhibitoryprojections would suppress vlPAG and support hyperalgesia, and that any CeA element that regulates CeA inhibitory projections would remove this suppression and permit regulation of pain. However, this is complicated by thefinding that major targets of CeA inhibitory
-
-In addition, CeA projections are not only GA-BAergic, but contain various neuropeptides such as CRF, dynorphin and neurokinin B as co-transmitters (Marchant et al., 2007). It is not sur-prising, then, that the role of CeA in pain perception depends on the circumstances, producing either analgesia or algesia (Carrasquillo andGereau, 2008;Andreoli et al., 2017; Veinante et al., 2013).-->
-
-
-In this study, we found that intraperitoneal (i.p) injection of lipopolysaccharide (LPS) induced anxiety-like behaviors in adult mice as measured by elevated plus-maze test (EPM) and open field test (OFT). Astrocytes were responsible for CXCL12 induction upon LPS challenge in hippocampus and amygdala, and microinjection of CXCL12 into amygdala induced mice anxiety-like behaviors. AMD3100,
+<!--yang_2016
+In this study, we found that intraperitoneal (i.p) injection of lipopolysaccharide (LPS) induced anxiety-like behaviors in adult mice as measured by elevated plus-maze test (EPM) and open field test (OFT). 
+Astrocytes were responsible for CXCL12 induction upon LPS challenge in hippocampus and amygdala, and microinjection of CXCL12 into amygdala induced mice anxiety-like behaviors. AMD3100,
 
 AMD3100, which is an antagonist for CXCL12 receptor CXCR4, prevented the anxiety behaviors induced by microinjection of CXCL12 into amygdala as well as injection i.p of LPS. Knockdown of CXCR4 expression in neurons using short hairpin RNAs (shRNAs) significantly blocked anxiety behaviors mediated by CXCL12 i.c injection.
 
 Whole-cell patch-clamp recordings in the neurons of basolateral amygdala (BLA) revealed that CXCL12 enhanced glutamatergic transmission by increasing sEPSC frequency in the amygdala. AMD3100 inhibited the excitatory glutamatergic neural transmission and involved in the development of anxiety through CXCR4. These findings provide direct evidence that alterations of CXCL12 in BLA play critical roles in the development of anxiety induced by systemic inflammation and that CXCR4 may be a potential therapeutic target for inflammation-induced anxiety.
 
- In this study, we demonstrated that LPS induced mice anxiety behaviors which was mediated through CXCL12/CXCR4 interaction, and this effect was further confirmed using the antagonist AMD3100 and shRNA for CXCR4. Perfusion brain slice containing amygdala with CXCL12 led to a pronounced induction in the sEPSC frequency which resulted in the hyperexcitability of the neurons in amygdala.
- neurons and astrocytes released CXCL12 - after LPS challenge. - CORTICAL CULTURES
+In this study, we demonstrated that LPS induced mice anxiety behaviors which was mediated through CXCL12/CXCR4 interaction, and this effect was further confirmed using the antagonist AMD3100 and shRNA for CXCR4. Perfusion brain slice containing amygdala with CXCL12 led to a pronounced induction in the sEPSC frequency which resulted in the hyperexcitability of the neurons in amygdala.
+neurons and astrocytes released CXCL12 - after LPS challenge. - CORTICAL CULTURES
  
 CXCR4 in neurons, but not in the GFAP in amygdala....
 
 The results showed that pretreatment with AMD3100 prevented anxiety-like behaviors induced by CXCL12 in mice ( Fig. 5 B, C, E). 
-However, the number of total arm entries in the EPM tests ( Fig. 5 D) and the total distance traveled in the OFT ( Fig. 5 F) did not significantly differ in each group. 
+However, the number of total arm entries in the EPM tests ( Fig. 5 D) and the total distance traveled in the OFT ( Fig. 5 F) did not significantly differ in each group. -->
 
 
 It has been previously reported that CXCL12 could induce synaptic depression of evoked parallel fibers inputs onto Purkinje neurons in mouse cerebellum ( Ragozzino et al., 2002 ). 
 
-sEPSCs were elicited in the presence of picrotoxin (100lM) at the holding voltage of  70 mV. There was a significant increase of AMPA receptor-mediated sEPSC frequency in the CXCL12 incubated slice compared with that in the control slice ( Fig. 10 A, B). Pre-bath of AMD3100 could prevented the increased sEPSC frequency induced by CXCL12 ( Fig. 10 A, B).
-
 indicating CXCL12-mediated anxiety is through CXCR4.
-
-### CXCL12 other effest/ relevance
 
 CXCL12 and its receptors CXCR4 and CXCR7 have been associated with pathogenesis of many kinds of inflammatory diseases ( Karin, 2010 ). <!--zmienić-->
 It has drawn more and more attention that CXCL12 has connections with neuroinflammatory disorders of the CNS, such as multiple sclerosis, depression and anxiety. <!-- zmienić-->
 
-<!--introduction regarding chemokine-->
-Considering that virtually all types of brain cells express either CXCL12 and/or one of its receptors, this chemokine serves a wide array of functions in both the developing and mature brain.
-<!--electrophysiological action-->
-Indeed, several lines of evidence illustrate that CXCL12 is involved in neurodevelopment,
-
-Moreover, among  the  constitutively expressed  chemokines,  the  role  of CXCL12 in psychiatric diseases has attracted considerable attention [14–18].<!--trochę zmienić i inne cytowania? -->
+Moreover, among the constitutively expressed chemokines, the role of CXCL12 in psychiatric diseases has attracted considerable attention [14–18].<!--trochę zmienić i inne cytowania? -->
 Anxiety by yang 2016
-
-## Summary
-
-
-
-## Limitations
-
-* due to technical/methodological implication of difficulties regarding immunofluorescent stainings of receptors and imperfections of many antibodies, the results concerning co-localization needs to be verified by using more sensitive methods, such as RNA-scope or .... 
-
-* GABA~C~ receptors - not blocked, what is the toxin/substance that blocked it? 
-
-* Pharmacological blocking of microglia and astrocyte - better optogenetic/
-
-* Knockdown mice rather than blockers of receptor
-
-* BLA - pyramidal cells were selected based on 
-
-* CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber. 
 
 
 <!-- ZDANIA Z DUPY ... 
 
-Further work is required to determine whether these subtypes of BLA principal cells  characterized in this study correspond to some specific subpopulation expressing specific markers, such as MARKERY PCs ... or have different functional consequences.//// coś ala aktywują się na specyficzne bodźce? --> 
+Further work is required to determine whether these subtypes of BLA principal cells characterized in this study correspond to some specific subpopulation expressing specific markers, such as MARKERY PCs ... or have different functional consequences.//// coś ala aktywują się na specyficzne bodźce? --> 

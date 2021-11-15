@@ -243,7 +243,9 @@ The Regular-Spiking neurons, also described as early-spiking (ES), exhibit short
 
 However, similar to what was observed by @hunt_2017, the AP onset highly varied in recorded cells regardless of their type.
 Given that the classification based on the presence of spike frequency accommodation was reported to be reliable [@hou_2016; @hunt_2017], the classification was based on both the AP onset and the presence of spike frequency adaptation.<!--okropne zdanie...-->
-In addition, as in experiments measuring inhibitory synaptic transmission, the cesium-based internal solution was used distorting the firing patterns of the cell, in this case, the classification was based on the presence of the depolarizing ramp seen in the LF cells at subthreshold current step and membrane time constant (`r knitr::asis_output("\U03C4")`~m~). 
+In addition, regarding experiments measuring inhibitory synaptic transmission, the cesium-based internal solution was used, which significantly altered the action potential properties of neurons shortly after the beginning of the recordings [@golding_1999].
+The identification of CeL neurons included in the present study was therefore achieved immediately after rupture of the Gigaseal by evaluating the firing response to the injecting of depolarizing current.
+Additional verification was also the observation that even during long-lasting recordings, Late-Firing neurons exhibited the presence of the depolarizing ramp at subthreshold current step.
 
 ```{r methodsBLACeAIVrep, fig.cap='**Classification of types of neurons in the amygdala** **(a)** An exemplary traces of firing patterns of BLA neurons. The presented traces were injected with the currents that evoked the first action potential, the next one around 300pA, and the next being 400pA. **(b)** An exemplary traces of firing patterns of CeA neurons. Note the depolarizing voltage at subthreshold current in Late-Firing neurons. Scale bars: 10mV, 100ms', fig.align = 'center', echo = FALSE, message= FALSE }
 

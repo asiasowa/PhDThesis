@@ -1739,14 +1739,9 @@ This PhD thesis and candidate were supported by:
 * **National Science Centre Poland Grant, PRELUDIUM**: 	Wpływ wybranych chemokin na aktywność oraz transmisję synaptyczną neuronów w centralnym i podstawnobocznym kompleksie ciała migdałowatego [Effects of chosen chemokines on neuronal activity and synaptic transmission in central and basolateral complex of the amygdala], UMO-2016/21/N/NZ4/03621, grant holder 2016-2020 <!--(grant holder: Joanna Ewa Sowa)-->
 
 ## PhD candidate’s scientific activity
-### Regarding PhD thesis
-#### Publications
-#### Oral presentations
-#### Posters
+### Publications
+### Oral presentations
+### Posters
 
-### Other
-#### Publications
-#### Oral presentations
-#### Posters
 
 \newpage

@@ -176,6 +176,27 @@ It has drawn more and more attention that CXCL12 has connections with neuroinfla
 Moreover, among the constitutively expressed chemokines, the role of CXCL12 in psychiatric diseases has attracted considerable attention [14–18].<!--trochę zmienić i inne cytowania? -->
 Anxiety by yang 2016
 
+## Limitations
+
+## Limitations
+
+A few limitations in presented study should be acknowledged. <!-- This  approach  was  preferred in this instance to more approximate recording conditions.-->
+First, 
+
+* due to technical/methodological implication of difficulties regarding immunofluorescent stainings of receptors and imperfections of many antibodies, the results concerning co-localization needs to be verified by using more sensitive methods, such as RNA-scope or .... 
+
+* GABA~C~ receptors - not blocked, what is the toxin/substance that blocked it? 
+
+* Pharmacological blocking of microglia and astrocyte - better optogenetic/
+
+* Knockdown mice rather than blockers of receptor
+
+* BLA - pyramidal cells were selected based on 
+
+* CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber.
+
+
+
 
 <!-- ZDANIA Z DUPY ... 
 

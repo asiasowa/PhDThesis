@@ -290,7 +290,7 @@ CX3CL1_sEPSC_mino_BLA_stat_sEPSC_rt <- as.data.frame(CX3CL1_sEPSC_mino_BLA_stat_
 CX3CL1_sEPSC_mino_BLA_stat_sEPSC_dt <- as.data.frame(CX3CL1_sEPSC_mino_BLA_stat_df %>% dplyr::filter(Variable == 'median_DecayTime') %>% dplyr::select(Statistics))
 ```
 
-Having established a significant CX3CL1-modulated suppression of principal cells’ firing, the main group of glutamatergic neurons in the BLA, actions of CX3CL1 on the excitatory transmission in this area was measured.<!--lepsze druga część zdania?-->
+Having established a significant CX3CL1-modulated suppression of principal cells’ firing, the main group of glutamatergic neurons in the BLA, potential contribution of CX3CL1 on the modulation of the excitatory transmission in this area was measured.
 Spontaneous excitatory postsynaptic currents (sEPSCs) were recorded *via* whole-cell patch-clamp recordings (held at −70 mV). 
 <!--The representative traces of sEPSCs in the absence (referred to as control hereafter) or presence of harmine (10μM) (referred to as harmine) were shown in supplemental Fig. S1(A). -->
 All measured parameters of excitatory synaptic transmission before and after  the application of CX3CL1, AZD8797, and minocycline are described in detail in Appendix \@ref(CX3CL1sEPSCappendix), summarized in the Table <!-- --> and illustrated in Fig. \@ref(fig:CX3CL1BLAsEPSCfigall).

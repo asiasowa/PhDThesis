@@ -127,7 +127,7 @@ While axonal arborizations of PV- and CCK-expressing interneurons were shown to 
 Since these parts of dendrites are also a destination of extensive excitatory inputs, GABAergic synapses from SOM-expressing neurons influence how EPSPs travel along the dendritic arbor, summating and activating voltage-gated conductances.
 <!--Therefore, inhibitory synapses from SOM-containing interneurons may influence such phenomena as a generation of calcium-dependent dendritic action potentialsdirectly blocks the initiation of dendritic calcium spikes in , dendritic integration, glutamatergic synaptic plasticity, and back-propagation of action potentials from somata to dendrites (for a comprehensive review, see: @tremblay_2016). -->
 As whole-cell patch-clamp recordings in this study was made from soma and potassium-based intrapipette solution was used, excitatory synaptic currents originating from distal parts of dendrites needed to travel more distance and can be decreased by GABAergic synapses and, in turn, might become harder to detect from baseline noise.<!--Given that the the glutamatergic synapses are located on the distal parts of principal cells' dendrites, it is likely that interneurons contacting synapses mainly on distal dendritic parts might decrease the excitatory inputs. -->
-Noting that cesium blocks potassium currents, additional experiments using cesium-based intrapipette solution might resolve whether CX3CL1 mediate changes contributed by inputs to more distal dendrites [@acharjee_2018].<!-- Cesium reduces filtering of the synaptic currents arising from distal parts of the dendrite by blocking the potassium current, and changes in EPSC frequency seen only with cesium internal suggested that most of the changes were contributed by inputs to more distal dendrites.--><!-- the probability of neurotransmitter release was either increased, decreased or remained constant as a consequence of a differential presynaptic activity. In the connectivity context it is rather interesting that a presynaptic neuron responsible of a given synaptic strength forms synaptic connections with different neurons and, conversely that the same postsynaptic neuron was contacted by different types of synaptic connections formed by different presynaptic cells. Furthermore, this functional heterogeneity is further supported by the finding that presynaptic neurons forming synapses having a different synaptic weights display a different axonal pattern. bardziej o ITCs and CeA, ale ładne słownictwo-->
+Noting that cesium blocks potassium currents, additional experiments using cesium-based intrapipette solution might resolve whether CX3CL1 mediate changes contributed by inputs to more distal dendrites [@williams_2008].<!-- Cesium reduces filtering of the synaptic currents arising from distal parts of the dendrite by blocking the potassium current, and changes in EPSC frequency seen only with cesium internal suggested that most of the changes were contributed by inputs to more distal dendrites.--><!-- the probability of neurotransmitter release was either increased, decreased or remained constant as a consequence of a differential presynaptic activity. In the connectivity context it is rather interesting that a presynaptic neuron responsible of a given synaptic strength forms synaptic connections with different neurons and, conversely that the same postsynaptic neuron was contacted by different types of synaptic connections formed by different presynaptic cells. Furthermore, this functional heterogeneity is further supported by the finding that presynaptic neurons forming synapses having a different synaptic weights display a different axonal pattern. bardziej o ITCs and CeA, ale ładne słownictwo-->
 <!--However, this scenario is unlikely, as proportions of neuronal reactions were the same between CX3CL1(2nM) application and CX3CL1(2nM) application with additional inhibition of GABA~A~ and GABA~B~ channels (see Fig \@ref(fig:CX3CL1BLAsEPSCfigall) in Appendix \@ref(CX3CL1sEPSCappendix)).-->
 
 <!--sheridan 500 pM (Ragozzino et al., 2006), the paired-pulse ratio of DG neuronresponses evoked by two successive stimuli (50 ms apart) was unaffected by CX3CL1 treatment either at baseline or followingTBS (Figure 4B). While not ruling out a presynaptic contribution, these data support a post-synaptic action for CX3CL1-mediated inhibition of fEPSP amplitude in the DG following TBS. -->
@@ -199,6 +199,7 @@ However, mounting evidence indicates that different BLA projections target speci
 Similar to cellular level, chandelier PV-expressing interneuronal subpopulation is a good candidate for observed CX3CL1-mediated actions in the BLA.
 For instance, it may be related to the fact that previous studies suggested rather excitatory network effects of chandelier interneurons onto pyramidal-like cells in the BLA [@woodruff_2010].<!--However, it may be related to the fact that previous studies suggested rather excitatory net effects of AACs onto BLA projection neurons (Woodruff et al , 2010)// zmienić bardziej --> 
 Following this idea, CX3CL1 could inhibit those cells, leading to observed reduction in the BLA network. 
+In accordance with this hypothesis, TNFa and IL-1b, another immune proteins having neuromodulatory activity, were demonstrated to impair specifically PV-expressing neurons in striatum, which led to alternation in network homeostasis manifested as reduction in GABAergic transmission with abnormal neuronal firing [@rossi_2011].
 
 Moreover, external capsule contains mainly cortical fibers [@mahanty_1999].<!-- inputs from cortex-->
 Besides targeting principal cells, monosynaptic connections from the cortex recruit local interneurons *via* feed-forward circuits.<!--There are monosynaptic connections from cortex to the BLA, and, in addition to principal cells, they can recruit local interneurons *via* feed-forward circuits. // Monosynaptic cortical – BLA projections exist, and can recruit not only principal cells, but also local interneurons *via* feed-forward circuits, but the role of AACs remains unclear (Bazelot et al , 2015; Hübner et al , 2014). sprawdzić te cytowania i to przemyśleć...-->
@@ -239,64 +240,6 @@ Priming of LTP by prior paired pulse stimulation seemed to compensate the defici
 --><!--It should be noted also that immune proteins, such as TNFalpha or IL-1b do not only exert their effect by modulating synaptic transmission, but also *via* interacting with modulatory systems. citations--><!-- These cytokines, such as tumor necrosis factor-a and interleukin-1b, not only exert their excitatory effects via upregulating excitatory synaptic transmission [30, 31], but also regulate neuronal functions via interacting with modulatory systems [32]-->
 
 
-## Microglial action in the BLA independent of exogenous CX3CL1
-
-
-Results from this study showed that minocycline applied alone facilitated principal cells' firing and affected the kinetics of excitatory synaptic transmission in the BLA, as shown in Figure \@ref(fig:CX3CL1BLAexcitabilityadd).
-These findings suggest not only that minocycline is able to elicit effects are independent from CX3CL1/CX3CR1 signaling, but also raise the possibility that the minocycline-triggered inhibition of microglial activity might regulate principal neurons' firing in the BLA in an opposite manner to CX3CL1.
-
-
-It should be noted that although minocycline is commonly used to inhibit microglial activation<!--citations?-->, there are some studies illustrating its direct neuronal action <!-- Minocycline is used commonly to inhibit microglial activation. However, minocycline also has been reported to directly affect neurons.32,49,50 Multiple lines of evidence have shown the role of minocycline in protecting neurons from apoptosis via inhibiting p38 MAPK activity.30–32,51,52 // Our observation of increased neuronal p38 MAPK activity in the CeA raises the possibility that minocycline could have inhibited visceral hypersensitivity through an attenuation of neuronal apoptosis via a direct inhibition of p38 MAPK activity. Therefore, we applied apoptosis analysis in WAS and SHAM animals. - Yuan2020////It should be noted that minocycline, in addition to inhibiting microglial activity, has many other unrelated effects.-->
-In the experiments presented here, it was acutely applied on brain slices, thus, the peripheral effects of minocycline does not affect presented results.<!-- we acknowledge that minocycline, in addition to impairing microglial proinflammatory and phagocytic activity, has many other unrelated effects; however, our use of ICV injection at least eliminated the peripheral effects of minocycline ( Brundula et al., 2002 ; Giuliani et al., 2005 ). [@acharjee_2018] // We measured mEPSC amplitude and frequency at 	 70 mV after 20–24 h of minocycline treatment. 
-We found that minocycline increased mEPSC frequency (), but not amplitude in EAE mice compared with EAE-vehicle-treated mice (). Thus, the EAE phenotype is even more apparent after additional microglial inactivation.-->
-Nevertheless, minocycline was reported to .....
-Thus, these findings warrant further investigation, for example by using opto- or chemogenetic activation of those cells.<!--lepiej napisać--><!-- Generally, the increase in sIPSC or sEPSC frequency enhanced the probability of neurotransmitter release from the presynaptic terminal. Thus, the effect of minocycline on SG neurons is mainly of a presynaptic origin rather than a postsynaptic origin-->
-
-<!-- zmienić
-Interestingly, by modulating the expression levels and surface diffusion of glutamate transporters, astrocytes influence synaptic transmission by controlling the glutamate spillover beyond the synapse. 
-Such glutamate spillover can activate extrasynaptic metabotropic glutamate receptors (Huang et al., 2004), which shape the kinetics of excitatory postsynaptic currents (EPSCs; Murphy-Royal et al., 2015). 
-Hence, changes in EPSCs have important effects on the local and temporal integration of synaptic inputs by neuronal networks, and consequently on synaptic plasticity. 
-Therefore, glutamate transporters not only support synaptic homeostasis, but also contribute, at least in part, to plasticity processes at the synaptic levels (reviewed by Rose et al., 2017). <!-- analogous - microglia? we have changes in RT and DT after minocycline application-->
-
-<!--glial impact?
-By releasing glutamate, D-serine, GABA, ATP, adenosine, or tumor necrosis factor-alpha, among others, astrocytes control the basal tone of synaptic activity and the threshold for synaptic plasticity
-Astrocytes may also indirectly participate in inducing LTP by microglia by cognition by releasing CCR5 ligands that act on and recruit CCR5-expressing microglia to neighboring neurons, after which the microglia engage in functions related to synaptic remodeling and modulation. 
-Although the exact mechanism of CCR5-regulated microglial pruning remains unknown, microglial CCR5 is well-positioned to contribute to synaptic plasticity and resultant regulation of cognitive function.-->
-
-
-Yet, our findings do not exclude the neuronal participation in releasing adenosine, thus acting in an autocrine manner, or the adenosine-mediated release of additional neuroprotective factors from glial cells.<!-- analogous-->
-Here, we report rapid modulatory effects of CX3CL1 on neuronal events in hippocampal tissue. <!--Sheridan2014--> 
-Our data does not conclusively support a direct action of CX3CL1 on neurons and we cannot discount the possibility that the effects we see on LTP and calcium influx in neuronal cell types happen as a consequence of CX3CL1-mediated activation of CX3CR1 solely on microglial cell types. <!--Sheridan2014-->
-If this is true, however, the ability of microglia to rapidly regulate multiple hippocampal memory-associated synaptic plasticity processes may be much more extensive than traditionally thought. <!--Sheridan2014-->
-The evidence from rats that CX3CR1 is expressed on hippocampal neuron allows the possibility that, as is the case for CX3CL1-mediated regulation of serotonergic neurons of the dorsal Raphe, glutamatergic neuron-derived CX3CL1 may act in an autocrine/paracrine fashion in the hippocampus during periods of synaptic plasticity to regulate glutamate-mediated neurotransmission tone.<!--Sheridan2014-->
-
-We believe that our technique is well suited to investigate changes in BLA morphology and activity, which have been implicated in a number of disease states, including posttraumatic stress disorder and drug addiction (Koob et al. 2014; Mahan and Ressler 2012; Roozendaal et al. 2009). 
-Posttraumatic stress disorder and other forms of chronic stress are often associated with increases in amygdala activity, resulting in the dysregulation of fear responses and causing sensitization to stressful stimuli (Mahan and Ressler 2012; Roozendaal et al. 2009). 
-
-
-Previous studies have shown that emotional responses generated by the BLA may result from increased excitatory input and changes in glutamate receptor ratios (Christian et al. 2012; Hubert et al. 2014; LeDoux 2003) and repeated restraint stress can cause changes in BLA spine localization (Padival et al. 2013). 
-It would be interesting to investigate whether these changes result from altered levels of not only excitatory input but also inhibitory synapses within the BLA and other nuclei within the amygdala. <!-- klenowski_2015-->
-
-Feng et al. found another potential therapy for regulate stress is motilin which can weaken anxiety-like behavior in rats after they have been subjected to forced swimming. Whole-cell recordings from amygdala slices revealed that motilin depolarized the interneurons and promoted GABAergic transmission in the BLA (Feng et al., 2013).
-
- It is worth noting that the HPA axis can mediate the stress response because it is a neuroendocrine system. Some researchers looked at the effects of rapid glucocorticoid-induced acute stress in the rat BLA. Glucocorticoid administrated to amygdala slices produced a rapid, non-reversible suppression of spontaneous GABAergic synaptic currents (Di et al., 2016). The acute administration of glucocorticoid receptor agonist DEX also upregulated GABA release and GABAergic neuronal spiking (Wang et al., 2016).
- 
-
- 
- The observed level of somatic variation, dendritic organization, and spine localization is likely to provide important morphological control over the integration of synaptic inputs, which would be expected to influence cellular output and potentially contribute to differences in BLA principal cell physiology.
- 
-Although a number of brain areas are involved in neuronal circuits activated in the presence of a thread causing fear and anxiety (Belzung, Turiault, & Griebel, 2014; Giustino & Maren, 2015; Tovote, Fadok, & Luthi, 2015), there is a fundamental agreement that LTP-induced changes in synaptic strength in the LA occur during fear learning (Blair, Schafe, Bauer, Rodrigues, & LeDoux, 2001; Maren, 2005; Sah, Westbrook, & Luthi, 2008).
-The observed reduction of LTP magnitude after CX3CL1 application might suggests that anxiety vulnerable mice may have difficulty in learning about and predicting when aversive events will occur. 
-It has been shown that fear conditioning occludes LTP-induced presynaptic enhancement of synaptic transmission in the cortical pathway to the LA (Mahan & Ressler, 2012). 
-Further investigations are needed to understand the mechanisms of metaplasticity at the molecular level.
-
-Learning about motivationally important stimuli involves plasticity in the amygdala, a temporal lobe structure. Amygdala-dependent learning involves a growing number of plasticity-related signaling pathways also implicated in brain development, suggesting that learning-related signaling in juveniles may simultaneously influence development. 
-
-Recent studies indicate that the lateral subdivision of the central amygdala (CeL) is essential for fear learning. Specifically, fear conditioning induces cell-type-specific synaptic plasticity in CeL neurons that is required for the storage of fear memories.<!--peennzoo-->
-
-These long-range projection CeL neurons are predominantly somatostatin-positive (SOM) neurons, which can directly inhibit PAG neurons, and some of which innervate both the PAG and paraventricular nucleus of the thalamus. Notably, fear conditioning potentiates excitatory synaptic transmission onto these long-range projection CeL neurons. Thus, our study identifies a subpopulation of SOMCeL neurons that may contribute to fear learning and regulate fear expression independent of CeM.[@penzo_2014]
-
-The central amygdala (CeL) is composed of distinct types of GABA-producing inhibitory neurons ( Cassell and Gray, 1989 ; Cassell et al., 1999 ; Ehrlich et al., 2009 ; Haubensak et al., 2010 ), among which the somatostatin-positive (SOM) neurons are a major population ( Cassell and Gray, 1989 ; Li et al., 2013 ). These are intermingled with SOMcells that are predominantly protein kinase C--expressing (PKC-) neurons ( Haubensak et al., 2010 ; Li et al., 2013 ). SOMneurons and PKC-neurons collectively constitute  90% of the entire CeL population, and the two cell types are mutually inhibitory ( Haubensak et al., 2010 ; Li et al., 2013 ). We recently discovered that fear conditioning induces cell-type-specific plasticity in the CeL, with excitatory synapses onto SOMneurons being strengthened and excitatory synapses onto SOMneurons being weakened ( Li et al., 2013 ).
 
 ## CX3CL1 in the lateral subdivision of the central amygdala
 
@@ -363,7 +306,98 @@ We also observed the regional heterogeneity of microglia and its potential impor
 
  Interestingly, the subcellularlocalization profile of CX3CL1 and CX3CR1 are distinct.CX3CL1 localizes as cell-filled puncta whereas its receptorlocalizes in a perinuclear pattern within neurons. This fur-ther suggests synthesis, as well as potential storage andrelease, of CX3CL1 in 5-HT neurons. In contrast, CX3CR1may require cellular activation for receptor mobilization tothe cellular membrane in order for CX3CL1-CX3CR1 in-teraction to occur. [@heinisch_2009]
  
-## autocrine
+## Microglial action in the amygdala {#minofuckingglia}
+
+It is not possible to discuss the CX3CL1 neuromodulatory action without noting the controversy regarding the localization of its solely receptor, CX3CR1. 
+Despite convincing evidence .... .
+Moreover, microglia are getting much attention regarding its role beyond inflammation, and transgenic mice with knock down of CX3CR1 replaced with GFP - exclusively in microglia.
+Therefore, to try to dissect the cellular contribution of CX3CL1-mediated neuromodulatory effects in this study, the slices were pre-applied with minocycline, which is commonly used to inhibit microglial activation. 
+However, it was fully acknowledged that minocycline is an antibiotic, which has some other unrelated effects, including direct action on neurons.<!-- It should be noted that although minocycline is commonly used to inhibit microglial activation, there are some studies illustrating its direct neuronal action <Minocycline is used commonly to inhibit microglial activation. However, minocycline also has been reported to directly affect neurons.32,49,50 Multiple lines of evidence have shown the role of minocycline in protecting neurons from apoptosis via inhibiting p38 MAPK activity.30–32,51,52 // Our observation of increased neuronal p38 MAPK activity in the CeA raises the possibility that minocycline could have inhibited visceral hypersensitivity through an attenuation of neuronal apoptosis via a direct inhibition of p38 MAPK activity. Therefore, we applied apoptosis analysis in WAS and SHAM animals. - Yuan2020////It should be noted that minocycline, in addition to inhibiting microglial activity, has many other unrelated effects.-->
+Moreover, the term "microglial activation" in the light of mounting evidence demonstrating the contribution of those cells in complex phenomena under non-inflammatory condition, presenting high level of heterogeneity not only between brain regions, but also within the same structure, is an oversimplification (comprehensive reviews and references therein: ). 
+Thus, considering all these issues, unfortunately, the presented pharmacological approach using non-specific inhibitor is not sufficient to draw any strong conclusion in the context of neuron-microglial cross talk.
+Nevertheless, few observations in this study might be insightful in this regard, when further replicated and explored by using methods allowing for a more precise temporal and cellular manipulation, such as, for example, optogenetic/chemogenetic techniques.
+
+First, the CX3CL1-mediated downregulation of GABAergic transmission as well as elevated threshold current in principal cells in the BLA were not observed when minocycline was pre-applied, raising the possibility that microglia may be involved in this process.
+Interestingly, 
+However, it should be noted that minocycline applied alone facilitated principal cells' firing and affected the kinetics of excitatory synaptic transmission in the BLA, as shown in Figure \@ref(fig:CX3CL1BLAexcitabilityadd).
+Moreover, although not statistically significant, a trend towards increased sIPSC frequency is observed when minocycline was applied alone.
+
+Hence, considering all these issues, the microglial contribution to observed CX3CL1-mediated effect strongly warrants further investigation. 
+
+In line with the hypothesis - homeostasis synaptic scaling - there is possibility that, regardless of the mechanism of minocycline-induced increase in PCs' excitability, the lack of observed effects when CX3CL1 is added to pre-applied minocycline is its "normalizing" action.
+CX3CL1 could decreased the previously elevated PCs' firing as well as kinetics of sEPSC
+These issues findings are hard to interpret, especially when ....<!--inspecific many explanations-->
+
+Changed kinetics of sEPSC - was previously demonstrated in astrocytes when extrasynaptic AMPA receptors, too much glutamate - 
+
+Thus, minocycline could elevate glutamate by activating extrasynaptic AMPA. 
+The increase in glutamate/excitability led to disturbance in E/I balance, and thereby CX3CL1 eliminated these minocycline-induced effect to restore the homeostasis.
+This is in line with what was observed when CX3CL1 was applied alone. 
+It should be noted that CX3CL1 reduced sEPSC frequency mainly in those neurons which received higher number of these events during baseline. 
+
+This is also consistent with the overall fact that 
+
+
+
+These findings suggest not only that minocycline is able to elicit effects are independent from CX3CL1/CX3CR1 signaling, but also raise the possibility that the minocycline-triggered inhibition of microglial activity might regulate principal neurons' firing in the BLA in an opposite manner to CX3CL1.
+
+In the light of issue, it is hard to interpret.
+
+Firstly, as minocycline alone upregulated the excitability of principal cells and 
+
+This current was not blocked by TTX, suggesting that it did not involve action potential-dependent release through the glutamate terminals. Glutamatergic terminals on DA neurones arise from the output of the subthalamic nucleus or prefrontal cortex, which are absent from our slices.
+
+In the experiments presented here, it was acutely applied on brain slices, thus, the peripheral effects of minocycline does not affect presented results.<!-- we acknowledge that minocycline, in addition to impairing microglial proinflammatory and phagocytic activity, has many other unrelated effects; however, our use of ICV injection at least eliminated the peripheral effects of minocycline ( Brundula et al., 2002 ; Giuliani et al., 2005 ). [@acharjee_2018] // We measured mEPSC amplitude and frequency at 	 70 mV after 20–24 h of minocycline treatment. 
+We found that minocycline increased mEPSC frequency (), but not amplitude in EAE mice compared with EAE-vehicle-treated mice (). Thus, the EAE phenotype is even more apparent after additional microglial inactivation.-->
+Nevertheless, minocycline was reported to .....
+Thus, these findings warrant further investigation, for example by using opto- or chemogenetic activation of those cells.<!--lepiej napisać--><!-- Generally, the increase in sIPSC or sEPSC frequency enhanced the probability of neurotransmitter release from the presynaptic terminal. Thus, the effect of minocycline on SG neurons is mainly of a presynaptic origin rather than a postsynaptic origin-->
+
+<!-- zmienić
+Interestingly, by modulating the expression levels and surface diffusion of glutamate transporters, astrocytes influence synaptic transmission by controlling the glutamate spillover beyond the synapse. 
+Such glutamate spillover can activate extrasynaptic metabotropic glutamate receptors (Huang et al., 2004), which shape the kinetics of excitatory postsynaptic currents (EPSCs; Murphy-Royal et al., 2015). 
+Hence, changes in EPSCs have important effects on the local and temporal integration of synaptic inputs by neuronal networks, and consequently on synaptic plasticity. 
+Therefore, glutamate transporters not only support synaptic homeostasis, but also contribute, at least in part, to plasticity processes at the synaptic levels (reviewed by Rose et al., 2017). <!-- analogous - microglia? we have changes in RT and DT after minocycline application-->
+
+<!--glial impact?
+By releasing glutamate, D-serine, GABA, ATP, adenosine, or tumor necrosis factor-alpha, among others, astrocytes control the basal tone of synaptic activity and the threshold for synaptic plasticity
+Astrocytes may also indirectly participate in inducing LTP by microglia by cognition by releasing CCR5 ligands that act on and recruit CCR5-expressing microglia to neighboring neurons, after which the microglia engage in functions related to synaptic remodeling and modulation. 
+Although the exact mechanism of CCR5-regulated microglial pruning remains unknown, microglial CCR5 is well-positioned to contribute to synaptic plasticity and resultant regulation of cognitive function.-->
+
+
+Yet, our findings do not exclude the neuronal participation in releasing adenosine, thus acting in an autocrine manner, or the adenosine-mediated release of additional neuroprotective factors from glial cells.<!-- analogous-->
+Here, we report rapid modulatory effects of CX3CL1 on neuronal events in hippocampal tissue. <!--Sheridan2014--> 
+Our data does not conclusively support a direct action of CX3CL1 on neurons and we cannot discount the possibility that the effects we see on LTP and calcium influx in neuronal cell types happen as a consequence of CX3CL1-mediated activation of CX3CR1 solely on microglial cell types. <!--Sheridan2014-->
+If this is true, however, the ability of microglia to rapidly regulate multiple hippocampal memory-associated synaptic plasticity processes may be much more extensive than traditionally thought. <!--Sheridan2014-->
+The evidence from rats that CX3CR1 is expressed on hippocampal neuron allows the possibility that, as is the case for CX3CL1-mediated regulation of serotonergic neurons of the dorsal Raphe, glutamatergic neuron-derived CX3CL1 may act in an autocrine/paracrine fashion in the hippocampus during periods of synaptic plasticity to regulate glutamate-mediated neurotransmission tone.<!--Sheridan2014-->
+
+We believe that our technique is well suited to investigate changes in BLA morphology and activity, which have been implicated in a number of disease states, including posttraumatic stress disorder and drug addiction (Koob et al. 2014; Mahan and Ressler 2012; Roozendaal et al. 2009). 
+Posttraumatic stress disorder and other forms of chronic stress are often associated with increases in amygdala activity, resulting in the dysregulation of fear responses and causing sensitization to stressful stimuli (Mahan and Ressler 2012; Roozendaal et al. 2009). 
+
+
+Previous studies have shown that emotional responses generated by the BLA may result from increased excitatory input and changes in glutamate receptor ratios (Christian et al. 2012; Hubert et al. 2014; LeDoux 2003) and repeated restraint stress can cause changes in BLA spine localization (Padival et al. 2013). 
+It would be interesting to investigate whether these changes result from altered levels of not only excitatory input but also inhibitory synapses within the BLA and other nuclei within the amygdala. <!-- klenowski_2015-->
+
+Feng et al. found another potential therapy for regulate stress is motilin which can weaken anxiety-like behavior in rats after they have been subjected to forced swimming. Whole-cell recordings from amygdala slices revealed that motilin depolarized the interneurons and promoted GABAergic transmission in the BLA (Feng et al., 2013).
+
+ It is worth noting that the HPA axis can mediate the stress response because it is a neuroendocrine system. Some researchers looked at the effects of rapid glucocorticoid-induced acute stress in the rat BLA. Glucocorticoid administrated to amygdala slices produced a rapid, non-reversible suppression of spontaneous GABAergic synaptic currents (Di et al., 2016). The acute administration of glucocorticoid receptor agonist DEX also upregulated GABA release and GABAergic neuronal spiking (Wang et al., 2016).
+ 
+
+ 
+ The observed level of somatic variation, dendritic organization, and spine localization is likely to provide important morphological control over the integration of synaptic inputs, which would be expected to influence cellular output and potentially contribute to differences in BLA principal cell physiology.
+ 
+Although a number of brain areas are involved in neuronal circuits activated in the presence of a thread causing fear and anxiety (Belzung, Turiault, & Griebel, 2014; Giustino & Maren, 2015; Tovote, Fadok, & Luthi, 2015), there is a fundamental agreement that LTP-induced changes in synaptic strength in the LA occur during fear learning (Blair, Schafe, Bauer, Rodrigues, & LeDoux, 2001; Maren, 2005; Sah, Westbrook, & Luthi, 2008).
+The observed reduction of LTP magnitude after CX3CL1 application might suggests that anxiety vulnerable mice may have difficulty in learning about and predicting when aversive events will occur. 
+It has been shown that fear conditioning occludes LTP-induced presynaptic enhancement of synaptic transmission in the cortical pathway to the LA (Mahan & Ressler, 2012). 
+Further investigations are needed to understand the mechanisms of metaplasticity at the molecular level.
+
+Learning about motivationally important stimuli involves plasticity in the amygdala, a temporal lobe structure. Amygdala-dependent learning involves a growing number of plasticity-related signaling pathways also implicated in brain development, suggesting that learning-related signaling in juveniles may simultaneously influence development. 
+
+Recent studies indicate that the lateral subdivision of the central amygdala (CeL) is essential for fear learning. Specifically, fear conditioning induces cell-type-specific synaptic plasticity in CeL neurons that is required for the storage of fear memories.<!--peennzoo-->
+
+These long-range projection CeL neurons are predominantly somatostatin-positive (SOM) neurons, which can directly inhibit PAG neurons, and some of which innervate both the PAG and paraventricular nucleus of the thalamus. Notably, fear conditioning potentiates excitatory synaptic transmission onto these long-range projection CeL neurons. Thus, our study identifies a subpopulation of SOMCeL neurons that may contribute to fear learning and regulate fear expression independent of CeM.[@penzo_2014]
+
+The central amygdala (CeL) is composed of distinct types of GABA-producing inhibitory neurons ( Cassell and Gray, 1989 ; Cassell et al., 1999 ; Ehrlich et al., 2009 ; Haubensak et al., 2010 ), among which the somatostatin-positive (SOM) neurons are a major population ( Cassell and Gray, 1989 ; Li et al., 2013 ). These are intermingled with SOMcells that are predominantly protein kinase C--expressing (PKC-) neurons ( Haubensak et al., 2010 ; Li et al., 2013 ). SOMneurons and PKC-neurons collectively constitute  90% of the entire CeL population, and the two cell types are mutually inhibitory ( Haubensak et al., 2010 ; Li et al., 2013 ). We recently discovered that fear conditioning induces cell-type-specific plasticity in the CeL, with excitatory synapses onto SOMneurons being strengthened and excitatory synapses onto SOMneurons being weakened ( Li et al., 2013 ).
+
 
 <!-- zdania z dupy 
 
@@ -403,3 +437,39 @@ This attenuation in dentate LTP was lost in the presence of GABA~A~ receptor ant
 CX3CL1 also had opposing actions on glutamate-mediated rise in intracellular calcium in hippocampal organotypic slice cultures in the presence and absence of GABAA receptor/chloride channel blockade -->
 
 <!-- The GABAAreceptor/chloride channel blocker, picrotoxin,used in the current studies would decrease GABAergic inhibitory transmission promoting depolarization in some cells with corresponding increases in intracellular calcium (Antonucci et al.,2012). Thus, the current work suggests GABAAreceptor/chloridechannel activity within the hippocampal neuronal network must be intact for CX3CL1 to attenuate glutamatergic neurotransmission or LTP. This situation is remarkably similar to that described for CX3CL1 inhibition of serotonergic neurons of the Raphe nucleus (Heinisch and Kirby, 2009). While this effect may relate to basal inhibitory tone, CX3CL1 could actually beenhancing GABAAreceptor function. For example, CX3CL1 enhances phosphorylation and activation of Akt in neurons and this serine/threonine kinase has been associated with phosphorylation of the GABAA beta2 receptor subunit, a modification that enhances activity of the receptor (Meucci et al., 2000; Wang et al.,2003). Moreover, several signaling systems can enhance GABA mediated inhibition through promotion of rapid insertion of GABAAreceptors into the post-synaptic plasma membrane (Wan et al., 1997;Nusser et al., 1998; Mizoguchi et al., 2003;Jovanovicet al., 2004).-->
+
+<!-- neuroinflammation and Glu - but GABA?!
+
+Neuroinflammation also alters glutamate metabolism and the function of its transporters ( Müller and Schwarz, 2007; Tilleux and Hermans, 2007; Haroon et al., 2012 ) which mediates cognition and behavior, thus leading to cognitive, behavioral, and psychiatric impairments ( Müller and Schwarz, 2007; Tilleux and Hermans, 2007; Haroon et al., 2012; Sanacora et al., 2012 ). Limited in vitro evidence suggested that inflammation or pro-inflammatory cytokines can increase CNS glutamate levels.  -->
+<!-- TNF CEA 
+
+Importantly, other investigations have provided indirect evidence for cytokine action in the CeA being capable of influencing neural activity. Inagaki et al. (2012) found that increasing cytokines in individuals with an LPS challenge induced an fMRI change in the amygdala. Prager et al. (2013) recently noted changes in electrophysiological measures as well as altered cFos levels in amygdala being induced by systemic LPS. More directly relevant, the proinflammatory cytokine, tumor-necrosis-factor-a(TNFa), applied to CeA neurons was found to increase firing rate and facilitate GABA release ( Knapp et al., 2011 ). 
+
+In support of this increased amplitude of mEPSCs by TNFabeing due to receptor trafficking, Beattie et al. (2002) demonstrated that glial TNFainduced surface expression of AMPA receptors on neurons – a finding supported by Stellwagen et al. (2005) who demonstrated directly that TNFaincreased AMPA-receptor number on hippocampal neurons.
+
+Interestingly, while the CRFR-antagonists blocked the ability of TNFato increase mIPSCs, the CRFR-antagonist had no effect on mIPSCs in the absence of TNFa. This latter finding indicates that under the present conditions ambient levels of CRF were not sufficient to influence GABA release (mIPSCs).
+-->
+
+
+<!-- Another wholecell recording study has found that application of IL-1 b (50 ng/mL) for 12–15 min in brain slices caused dual effects  on  mIPSC  frequency  and amplitude recorded from CeA neurons,  as  evidenced  by  increased mIPSC frequency in 62% neurons with decreased mIPSC frequency in 28% neurons, as well as decreased mIPSC amplitude in 38% of neurons, no effect on mIPSC amplitude in 48% of neurons and both increase in frequency and amplitude of mIPSC in 14% of neurons ( Bajo et al., 2015 ), suggesting the existence of the effect of IL-1 b on the spontaneous action  potential-independent  transmission of GABA via both pre- and post-synaptic mechanisms, with predominance of post-synaptic mechanism, in the CeA neurons. -->
+<!-- MINOCYCLINE CEA mIPSC
+Based upon minocycline being able to attenuate microglial ( Giuliani et al., 2005; Nikodemova et al., 2007; Nutile-McMenemy et al., 2007 ) and astrocytic activity ( McAllister and Miller, 2010 ), minocycline was tested to determine if the TNFa-induced increase in frequency of mIPSCs would be prevented. Fig. 7 shows that the TNFa-induced increase in mIPSC frequency after minocycline (60-lM)  incubation  for  1-h  was  significantly  decreased [( F (2,24) = 4.17); n = 7–13; p < 0.05 with post hoc LSD test]. Minocycline (60lM) incubation alone for 1-h had no effect on the frequency of mIPSCs (i.e., percent change in frequency of mIPSCs was 9.80 ± 8.67%) ( Fig. 7 ) Thus, TNFa-induced release of CRF from glial elements might underlie the apparent involvement of CRF suggested by the CRF-receptor antagonists blocking the TNFa- induced increase in frequency of mIPSCs.-->
+
+<!--  striatum, cytokines, interneurons, network
+Inputs from GABAergic interneurons are another important source of synaptic inhibition of MSNs, giving rise to a feed-forward inhibitory pathway that is independent of striatal output ( Koos and Tepper, 1999; Plenz, 2003; Tepper et al., 2004; Gustafson et al., 2006 ). Our data seem to indicate that the feedback and feed-forward GABAergic control over striatal output is differentially affected in EAE, because sIPSCs of larger amplitude and sensitive to TTX were predominantly reduced in these mice, as expected for a preferential involvement of inhibitory interneuronal activity ( Bennett and Bolam, 1994; Kubota and Kawaguchi, 2000; Koos et al., 2004; Gustafson et al., 2006 ). In line with this hypothesis, the total number of striatal neurons, largely composed of projection MSNs ( Kawaguchi et al., 1995; Wilson and Kawaguchi, 1996; Tepper et al., 2004 ), is not reduced in EAE ( Centonze et al., 2009 ), while we found that GABAergic interneurons are markedly underrepresented in the striatum. It is noticeable, however, that although distinct physiological properties of evoked IPSCs originating from axoncollateralsofprojectionneuronsandfromGABAergicinterneurons have been described by using paired recordings ( Koos et al., 2004 ), our recordings of sIPSCs do not allow to conclusively discriminate between the two input sources, and thus GABAergic dysfunction might also involve inputs from axon collaterals of MSNs, and might be more generalized than postulated in the present study. 
+Thus, the reasons of the selective susceptibility of PV interneurons to degenerate in MS and in EAE has to be further investigated. The evidence, however, that cytokines signaling, per se, is able to alter GABAergic transmission and consequently circuit functioning, as demonstrated by ‘‘ in vitro ’’ experiments, gives additional interest to the possibility that this mechanism is at the base of late stages of MS pathogenesis. The general GABAergic down-regulation induced by cytokines chronic treatment that emerges from this study, is of impulse for the search of drugs able to control this alteration. The ‘‘ in vitro ’’ model of cortical neurons treatment with cytokines and the paradigm for GABAergic alteration study could turn to be helpful for future drug screening studies
+
+-->
+
+<!-- Because the presence of TTX logically eliminates TNFafrom stimulating action-potentials to release CRF from neurons to increase mIPSC-frequency, one possible explanation considered for this present outcome was that the CRFR-antagonists prevent the TNFa– induced increase in frequency of mIPSCs by blocking the action of CRF released from cells other than neurons. Consistent with this latter possibility is the demonstration that astrocytes are reported to contain CRF ( Tian and Bishop, 2003 )as well as CRF-binding protein ( Maciejeski et al., 1996; McClennen and Seasholtz, 1999 ). Further, a number of other peptides and/or their mRNAs have been localized in a variety of glial cell types including astrocytes ( Ubink et al., 2003 ). Based upon the concept that TNFacan enhance the ability of astrocytes to release transmitter ( Santello et al., 2011; Santello and Volterra, 2012 ), it was reasoned that TNFaacting on TNFa-receptors on astrocytes or other glial elements ( Yan et al., 2008 ), which are reported to contain CRF ( Tian and Bishop, 2003 ), might be involved in making CRF available to account for the CRFR-antagonists preventing the TNFa-induced frequency increase in mIPSCs. Whereas this potential influence of TNFaon glia to influence CRF availability could be either direct or indirect ( Santello et al., 2011 ), in either case glia would be involved in this action of TNFa. -->
+
+<!-- IL-1R1 is expressed on glial cells and neurons, and thus, the overall effect of IL-1 on synaptic transmission is a combination of the direct effects of IL-1 binding to neuronal IL-1R1 and the indirect effects mediated by other signaling molecules generated and released by both neurons and glia in response to IL-1/IL-1R1 binding (e.g., cytokines, chemokines, ATP, etc.).-->
+
+<!-- Our observations of an increase in the frequency of sEPSC and mean quantal content strongly indicate that CCL2 acts on pre-synaptic site. However, it is not clear whether CCL2 acts directly on pre-synaptic terminals, via an inhibitory interneuron, or by inhibition of glial cell uptake of glutamate. A hypothetical model of CCL2 enhancement of EPSCs is shown in Fig. 7.-->
+
+
+<!-- SDF-1, as shown here, has various effects on the electrical activity of SON neurons, resulting probably from the heterogeneity of the population recorded or from a variety of actions on the AVP neuronal population (26). -->
+
+<!-- Although the lack of somatostatin antibody which .... precluded the cellular localization of the CX3CR1 receptor in CeL neurons, <!--the clear reversibility and concentration dependency of these effects shown in this study, together with the known presence of CCR2 mRNA in CCD neurons, argue strongly that they are receptor mediated.-->
+
+<!-- Although the cellular mechanisms underlying the induction of hyperalgesia by CXC chemokines IL-1 (Opree et al. 2000) remain unclear, a recent study has shown that IL-1modulates neuronal excitability in the subfornicalorgan through the activation of a nonselective cation channel (Desson et al. 2003) -->

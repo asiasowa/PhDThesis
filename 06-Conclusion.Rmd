@@ -60,5 +60,7 @@ Even though cytokines released by stress in brain have the capability of influen
 
 The fact that chemokines such as SDF-1 a may modulate directly the neuronal activity of a major component of the orexigenic peptide network, such as the MCH neurons, may provide some clues to elucidate the mechanisms of anorexia induction in diseases.
 
+Our fi ndings establish a critical link between the adenosine system, known to be involved in the regulation of anxiety and addiction, and the BLA, a region that is thought to play an integral role in the etiology of both disease states.
+
 
 \newpage

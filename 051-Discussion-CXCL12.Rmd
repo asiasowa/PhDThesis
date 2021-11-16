@@ -30,7 +30,7 @@ Nevertheless, whether blocking GABA~A~ receptors will result in a significant in
 ### sIPSC/ GABA/ INTERNEURONS
 
 Consistent with this notion, although not statistically significant, there is a trend in the CXCL12-triggered changes in the frequency of sIPSC.<!--lepiej napisać-->
-Specifically, bath administration of CXCL12 produced two distinct responses: while exogenous CXCL12 at the concentration of 2nM was shown to reduce the frequency of sIPSC, the increased number of these evens were observed following treatment with higher concentration of this chemokine (5nM; see Fig. \@ref(fig:CXCL12BLAsIPSCfreq).<!--bath administration of serotonin (0.3–100 μM) produced two distinct responses which could be differentiated physiologically and pharmacologically-->
+Specifically, bath administration of CXCL12 produced two distinct responses: while exogenous CXCL12 at the concentration of 2nM was shown to reduce the frequency of sIPSC, the increased number of these events were observed following treatment with higher concentration of this chemokine (5nM; see Fig. \@ref(fig:CXCL12BLAsIPSCfreq).<!--bath administration of serotonin (0.3–100 μM) produced two distinct responses which could be differentiated physiologically and pharmacologically-->
 
 These observations can be paralleled to what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects depending on the concentration used [@guyon_2005].<!-- nie wiem czy bardziej nie zmienić... This can be paralleled to what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects on the action potential discharge depending on the concentration ( Guyon et al., 2005a ). -->
 In this area, .............<!--szczegóły-->
@@ -176,7 +176,6 @@ It has drawn more and more attention that CXCL12 has connections with neuroinfla
 Moreover, among the constitutively expressed chemokines, the role of CXCL12 in psychiatric diseases has attracted considerable attention [14–18].<!--trochę zmienić i inne cytowania? -->
 Anxiety by yang 2016
 
-## Limitations
 
 ## Limitations
 
@@ -194,6 +193,8 @@ First,
 * BLA - pyramidal cells were selected based on 
 
 * CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber.
+
+* To investigate this question we employed the gramicidin perforated patch technique. This method allows for the study of neuronal fi ring while maintaining a relatively intact intracellular milieu, compared to traditional patch techniques that dialyze the intracellular contents ( Akaike and Harata, 1994 ). Gramicidin is a polypeptide antibiotic that forms pores in the neuronal membrane that are selectively permeable to monovalent cations, preserving much of the intracellular signaling machinery ( Akaike, 1996 ). This property is advantageous when studying G protein-coupled receptors that rely on intact intracellular contents for signal transduction.
 
 
 

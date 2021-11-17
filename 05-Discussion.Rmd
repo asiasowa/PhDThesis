@@ -203,23 +203,26 @@ The CeL was considered for the long time to gate fear expression by tonically in
 However, later findings showed its autonomous ability to send long-distance projections, ... 
 
 CeL consists of a diverse set of GABAergic neuronal subpopulations with different functional and molecular features [@cassell_1989; @ciocchi_2010; @haubensak_2010; @hou_2016; @li_2013a; @lopezdearmentia_2004; @martina_1999]. <!--theCeLmicrocircuitconsistsofmostlyGABA-releasing (GABAergic) inhibitory neurons with different functional and molecular features (Cassell et al., 1999;Martina et al., 1999;Lopez de Armentia and Sah, 2004;Ciocchi et al., 2010;Haubensak et al., 2010;Amano et al., 2012;Li et al., 2013). /// The CeL contains diverse GABAergic neuron classes, but the synaptic organization of local inhibitory circuits in this region is largely unknown. -->
-While electrophysiologically the Regular-Spiking and Late-Firing neurons are the two dominating subtypes of neurons, .... <!-- połączyć że dwa typyi jak się do siebie mają populacje --> 
-Two major and mutually exclusive CeL subpopulations express either SOM or PKC`r knitr::asis_output("\U03B4")`, accounting for approximately 90% of whole neuronal population.<!--citations--> .... 
-Not only they express different markers, but also ...<!-- fear on of -->
+Electrophysiologically, the Regular-Spiking and Late-Firing neurons are the two major subtypes of neurons, representing about 90% of all neurons in the CeL.<!-- połączyć że dwa typyi jak się do siebie mają populacje --> 
+Regarding neurochemical markers, also two major and mutually exclusive CeL subpopulations express either SOM or PKC`r knitr::asis_output("\U03B4")`, accounting for approximately 90% of whole neuronal population [@haubensak_2010; @li_2013a].<!--citations--><!--Despite the fact that these physiological and molecular markers did not entirely correspond with each other, there was  they express different markers, but also ... fear on of -->
+While PKC`r knitr::asis_output("\U03B4")`-expressing neurons form relatively homogeneous group and represent mainly of Late-Firing cells (`r knitr::asis_ouput("\U223C")`85% vs. `r knitr::asis_ouput("\U223C")`15% SOM-positive, @haubensak_2010), around 60% of all SOM-immunopositive neurons belong to the Regular-Spiking neurons and the remaining 40% representing PKC`r knitr::asis_output("\U03B4")`-containing neurons [@haubensak_2010; @li_2013a].
 
+In addition, the differences in between those two subpopulations have interesting functional consequences.
+Following fear-conditioning, PKC`r knitr::asis_output("\U03B4")`-containing neurons respond to the CS with a reduction in activity and they are also known as CeL~OFF~ cells [@ciocchi_2010; @haubensak_2010].
+Moreover, these neurons strongly project to and inhibit CeM neurons [@haubensak_2010; @li_2013a].
+In sharp contrast, SOM-containing neurons respond with an increase in their activity, and therefore are also known as CeL~ON~ cells [@ciocchi_2010; @haubensak_2010; @hou_2016].
+Sole activation of those neurons is sufficient to induce freezing in freely moving mice [@li_2013].
+Of note, the selective inhibition of those neurons markedly impairs fear memory [@li_2013].
+Those neurons were shown to extensively inhibit PKC`r knitr::asis_output("\U03B4")`-containing neurons within the CeL, whereas CeM neurons are not their target [@li_2013a].
 
-Those neurons were shown to extensively inhibit PKC`r knitr::asis_output("\U03B4")`-containing neurons within the CeL, they do not 
-Interestingly, although the SOMCeL neurons can inhibit locally within CeL, strongly inhibiting SOMneurons, they neither send noticeable projections to the CeM nor inhibit CeM neurons ( Li et al., 2013 ). 
-In sharp contrast, the PKC-expressing CeL neurons strongly project to and inhibit CeM neurons ( Haubensak et al., 2010 ; Li et al., 2013 ).
-
-These findings suggest that activation of SOMneurons promotes fear expression, at least in part, by inhibiting PKC-(SOM) neurons, thereby disinhibiting CeM. They also suggest that the fear conditioning-induced synaptic modifications in CeL likely underlie the changes in cell firing in CeL and CeM during fear conditioning ( Ciocchi et al., 2010 ; Duvarci et al., 2011 ). 
-
-
-This study indicates that the acute CX3CL1 application reduced CeL neurons' excitability, specifically in Regular-Spiking cells.
-However, unlike in the BLA (see Discussion \@ref(discusscx3cl1bla) above), the reduction of neuronal firing was manifested not by threshold current but changes in the overall number of neurons to injections of increasing depolarizing currents. 
-Importantly, this CX3CL1-mediated firing depression was specific to Regular-Spiking neurons, as it was absent in the Late-Firing cells.
-<!-- This kind of specificity - other chemokines too - and cx3cl1 - serotonin. rozwinąć -->
-In addition to excitability, other membrane properties were altered after CX3CL1 acute treatment. Specifically, Regular-Spiking neurons were more depolarized, while their input resistance and time membrane constant were significantly reduced.
+Hence, the activation of SOM-positive neurons is anxiogenic, as they inhibit  PKC`r knitr::asis_output("\U03B4")`-expressing neurons, and thereby disinhibit CeM [@ciocchi_2010].
+Given that Regular-Spiking neurons corresponds to 60% of SOM-positive cells, the observed CX3CL1-mediated reduced excitability of those cells could prevent CeM disinhibition.
+Hence, it is tempting to speculate that CX3CL1 exerts anxiolytic-like action in the CeL.
+<!-- These findings suggest that activation of SOMneurons promotes fear expression, at least in part, by inhibiting PKC-(SOM) neurons, thereby disinhibiting CeM. They also suggest that the fear conditioning-induced synaptic modifications in CeL likely underlie the changes in cell firing in CeL and CeM during fear conditioning ( Ciocchi et al., 2010 ; Duvarci et al., 2011 ).--> 
+<!-- This study indicates that the acute CX3CL1 application reduced CeL neurons' excitability, specifically in Regular-Spiking cells.-->
+However, unlike what was observed in the BLA, the reduction of neuronal firing was manifested not by threshold current but changes in the overall number of neurons to injections of increasing depolarizing currents. 
+<!-- This kind of specificity - other chemokines too - and cx3cl1 - serotonin. rozwinąć // Importantly, this CX3CL1-mediated firing depression was specific to Regular-Spiking neurons, as it was absent in the Late-Firing cells.-->
+Consistently, in addition to excitability, other membrane properties were altered after CX3CL1 acute treatment. Specifically, Regular-Spiking neurons were more depolarized, while their input resistance and time membrane constant were significantly reduced.
 The observed depolarization of neuronal membrane potential during reduced firing may be seem counterintuitive at first; however, this set of changes resembles hyperpolarization-activated cyclic nucleotide-modulated channel (HCN) activation, a type of peculiar potassium channels, mediating I~h~ current.<!-- lepiej --> 
 Consistent with this speculation, CeA neurons express HCN channels, especially the HCN1 subtype [@chieng_2006; @natomi_2004; @weera_2021].
 Unfortunately, their action in this circuitry is largely unexplored.<!--It is speculative whether microglial ramification may be connected to its polarization and synaptic remodeling function, but scanty evidence is available so far.-->
@@ -246,20 +249,18 @@ This finding is good agreement with the results from this study.
 
 
 
-
-
-
-
+Altogether, this study illustrated that CX3CL1 led to decreased activity in both, pyramidal-like cells in the BLA as well as Regular-Spiking neurons in the CeL.
+However, while principal cells displayed CX3CL1-mediated elevated threshold current, the lower number of evoked spikes in response to increasing depolarizing somatic current injections was present in Regular-Spiking neurons.
+<!-- these effects were  a result of different parameters (decreased threshold current in the BLA vs. decreased number of spikes induced by increasing current injections.-->
+Thus, probably different downstream events were involved. 
+In line with this, altered membrane properties of Regular-Spiking cells were observed following CX3CL1 treatment.
+This <!-- RECEPTOR -->
+<!-- barwwienia -->
+. 
 
 The CeA mediates the behavioral and physiological effects of stress and specific CeA output projections have defined roles in stress-related alterations in physiology and behavior. 
 For example, CeA projections to the paraventricular nucleus of the hypothalamus (PVN) stimulate the hypothalamic-pituitary-adrenal axis (Feldman and Weidenfeld, 1998)and projections to the locus coeruleus drive noradrenergic activity (Bouret et al., 2003) and anxiety-like behavior (McCall et al., 2015).<!-- trochę zmienić ale ważne -->
 
-
-
-
-
-
-<!-- vasopressin and oxitocin in the CeA -dissertation, but should be articles-->
 
 This influence can be assumed to increase reciprocal interactions between CElon and CEloff pathways, thereby boosting the medial CE (CEm) output pathway and contributing to the anxiogenic-like action of SP in the amygdala.
 

@@ -192,8 +192,9 @@ Group data for excitatory or inhibitory synaptic transmission are reported as me
 
 At first, postsynaptic currents were detected using Mini Analysis (Synaptosoft Inc., USA) or TaroTools toolbox for Igor Pro (https://sites.google.com/site/tarotoolsregister, v8.0.4, USA).
 However, these software required subjective selection of the threshold amplitude of events and visual inspection of the researcher to prevent the inclusion of false data.
-It leads to semi-automatic approach, which might be prone to error and researcher bias.
-Thus, a machine learning-based approach was used by using Eventer [@winchester_giles_2020], which allowed training a model to implement consistent selection criteria across data sets without bias.
+It leads to a semi-automatic approach, which might be prone to error and researcher bias.
+Thus, a machine learning-based approach was used.
+To this end, Eventer [@winchester_giles_2020] software allowed training a model to implement consistent selection criteria across data sets without bias.
 The same traces were analyzed using all of these software and selection based on models trained in Eventer was the most rigorous, thereby the occurrence of false positive events is less likely.
 Importantly, the differences between the control and experimental conditions remained unchanged (data not shown). 
 Hence, the synaptic transmission data presented in this dissertation was done using a machine-learning approach in Eventer software.

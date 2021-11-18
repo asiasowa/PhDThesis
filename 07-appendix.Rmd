@@ -6,7 +6,7 @@
 
 #### CX3CL1 does not affect passive membrane properties of principal cells in the BLA {#CX3CL1membraneappendix}
 
-In Figures (\@ref(fig:CX3CL1BLAexcitabilityfigall1) and \@ref(fig:CX3CL1BLAexcitabilityfigall2)) and Table 7.1<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> below are depicted and listed all the passive membrane properties measured in the principal cells in the BLA following CX3CL1 treatment. 
+Figures \@ref(fig:CX3CL1BLAexcitabilityfigall1) and \@ref(fig:CX3CL1BLAexcitabilityfigall2) and Table 7.1<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> below depict and list all the passive membrane properties measured in the principal cells in the BLA following CX3CL1 treatment. 
 
 ```{r CX3CL1BLAexcitabilityappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
 

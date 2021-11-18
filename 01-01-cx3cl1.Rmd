@@ -14,9 +14,9 @@ Thus, astrocytic intracellular Ca^2+^ elevations are of specific spatial and tem
 
 Microglia are the resident immune cells of the CNS, constituting about 5–12% of total CNS cells in the healthy brain and the spinal cord [@szepesi_2018].
 They are derived from the myeloid precursor cells and colonize the immature brain during early embryonic development (for a review, see: @prinz_2011).
-Finally, these glial cells are broadly distributed throughout the CNS, albeit their density and functions may differ based on spices and specific brain regions (for a review, see: @szepesi_2018).
+These glial cells are also broadly distributed throughout the CNS, albeit their density and functions may differ based on spices and specific brain regions (for a review, see: @szepesi_2018).
 Although microglia have long been recognized as "guardians of the brain", regulating inflammatory responses in the CNS, it is becoming increasingly evident that their functions are much more diverse, particularly in the healthy brain during both development and adulthood.
-Being equipped highly motile processes, microglia are dynamic and plastic cells that constantly monitor the microenvironment to sense local perturbation. 
+Being equipped by highly motile processes, microglia are dynamic and plastic cells that constantly monitor the microenvironment to sense local perturbation. 
 Moreover, similar to astrocytes, microglia also express numerous cell surface ion channels and receptors of neurotransmitters and neuromodulators, as well as signaling molecules.
 
 Hence, both astrocytes and microglia are emerging as highly dynamic and heterogeneous cells.
@@ -44,7 +44,7 @@ Thus, these data nicely illustrate the CX3CL1-regulated local communication betw
 
 The next milestone in neuroimmunology was observations that CX3CL1 and CXCL12 with their corresponding receptors exhibit the highest expression during neurodevelopment, indicating their crucial functions during this period. 
 Indeed, it has become increasingly evident that both CX3CL1/CX3CR1 and CXCL12/CXCR4/ACKR3 axes are crucial players in regulating cell proliferation, migration, and survival in this period. <!-- citations?--> 
-For instance, during hippocampal development, CX3CR1-/- deficient microglia showed impaired migration  [@pagani_2015; @paolicelli_2011].
+For instance, during hippocampal development, CX3CR1^-/-^ deficient microglia showed impaired migration  [@pagani_2015; @paolicelli_2011].
 This observation was associated with their delayed synaptic pruning, reflected as a transient reduction of synaptic density and excitatory synaptic transmission in neurons compared to their wild-type littermates, indicating immature synaptic properties [@paolicelli_2011].
 Precisely, these changes were observed during the early postnatal stage (P8-P28) and then returned to baseline.<!--, highlighting CX3CR1 impact on synaptic pruning during neurodevelopment.-->
 Importantly, these mice were also tested in similar experimental settings in their adulthood (P40) [@zhan_2014]. 

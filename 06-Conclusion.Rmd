@@ -1,6 +1,7 @@
 # Conclusions
 
-In the present work we characterized the role of different ARs in the CX3CL1-induced modulation of hi ppocampal glutamatergic transmission using cultured neurons and brain slices. The main fi nding of this study is that CX3CL1 action requires the activation of A1A, A2AR and A3R, by locally released or tonic adenosine. Speci fi cally, CX3CL1 causes glutamatergic depression through A1R and A3R and potentiation through A2AR stimulation. Thus, CX3CL1 might affect glutamatergic synapses in opposite way, depending on the prevailing functional expression of AR subtypes. 
+In the present work we characterized the role of two structurally different chemokines, CX3CL1 and CXCL12, mainly using acute brain slices. 
+The main findings of this study is that CX3CL1 action requires the activation of A1A, A2AR and A3R, by locally released or tonic adenosine. Speci fi cally, CX3CL1 causes glutamatergic depression through A1R and A3R and potentiation through A2AR stimulation. Thus, CX3CL1 might affect glutamatergic synapses in opposite way, depending on the prevailing functional expression of AR subtypes. 
 
 The effects of chemokines in the brain may be due to their ability to activate chemokine receptors localized on neurons and/or glia, thus leading to changes in neuronal membrane properties and/or synaptic transmission. 
 Specifically, chemokines may alter synaptic transmitter release [@limatola_2000, @ragozzino_2002], modulate the functional properties of ionic channels [@lax_2002, @oh_2002] and promote the release of glutamate from astrocytes [@lax_2002]. 

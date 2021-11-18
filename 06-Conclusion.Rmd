@@ -62,5 +62,7 @@ The fact that chemokines such as SDF-1 a may modulate directly the neuronal acti
 
 Our fi ndings establish a critical link between the adenosine system, known to be involved in the regulation of anxiety and addiction, and the BLA, a region that is thought to play an integral role in the etiology of both disease states.
 
+ The understanding of the peculiar pharmacological responses of adenosine receptors in different circuits and cell types of the amygdala is of particular importance, given their potential role in the etiology of emotional disorders and their corresponding usefulness as therapeutic targets to manage emotional disorders.
+
 
 \newpage

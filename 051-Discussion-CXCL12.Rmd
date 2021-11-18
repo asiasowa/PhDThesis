@@ -1,11 +1,11 @@
 ## CXCL12/CXCR4 signaling in the basolateral amygdala
 
 Herein, although the CXCL12/CXCR4 pair did not significantly affect principal cells' excitability, excitatory, or inhibitory synaptic transmission, some interesting tendencies were noted. 
-In particular, results presented here indicated that following CXCL12 treatment: (i) there was a trend toward increased excitability of principal cells (especially at higher concentration), (ii) there was a complex pattern of neuronal responses manifested as frequency of sEPSC, and (iii) there were opposing trends of CXCL12-mediated regulation of GABAergic synaptic transmission depending on the chemokine concentration. 
+In particular, presented results indicated that following CXCL12 treatment: (i) there was a trend toward increased excitability of principal cells (especially at higher concentration), (ii) there was a complex pattern of neuronal responses manifested as the frequency of sEPSC, and (iii) there were opposing trends of CXCL12-mediated regulation of GABAergic synaptic transmission depending on the chemokine concentration. 
 <!-- The lack of prominent effects in the BLA is in line with a previous report demonstrating absence of CXCR4 in this nucleus of the amygdala [@banisadr_2002a], at least considering sensitivity and the detection level needed for *in situ* hybridization 20 years ago. nienajlepsze zdanie-->
 
 CXCL12/CXCR4 signaling was previously studied in the basolateral nucleus of the amygdala in the context of neuroinflammation [@yang_2016].
-Nevertheless, this report demonstrated neuronal expression of CXCR4 receptor as well as the CXCL12-induced CXCR4-dependent enhancement in the excitatory synaptic transmission in the BLA.
+Nevertheless, it demonstrated neuronal expression of CXCR4 receptor as well as the CXCL12-induced CXCR4-dependent enhancement in the excitatory synaptic transmission in the BLA.
 The authors further suggested that the latter effect might result in the increased excitability of pyramidal-like neurons.<!-- However, these results are in contrast with studies conducted by , revealing that CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.-->
 Their hypothesis is supported by results presented in this PhD dissertation.
 However, the results regarding excitatory synaptic transmission in the BLA have been less straightforward.
@@ -29,11 +29,13 @@ Nevertheless, whether blocking GABA~A~ receptors will result in a significant in
 
 ### sIPSC/ GABA/ INTERNEURONS
 
-Consistent with this notion, although not statistically significant, there is a trend in the CXCL12-triggered changes in the frequency of sIPSC.<!--lepiej napisać-->
+Nevertheless, in line with this hypothesis, there is a trend in the CXCL12-triggered changes in the frequency of sIPSC, although not statistically significant.<!--lepiej napisać-->
 Specifically, bath administration of CXCL12 produced two distinct responses: while exogenous CXCL12 at the concentration of 2nM was shown to reduce the frequency of sIPSC, the increased number of these events were observed following treatment with higher concentration of this chemokine (5nM; see Fig. \@ref(fig:CXCL12BLAsIPSCfreq).<!--bath administration of serotonin (0.3–100 μM) produced two distinct responses which could be differentiated physiologically and pharmacologically-->
 
-These observations can be paralleled to what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects depending on the concentration used [@guyon_2005].<!-- nie wiem czy bardziej nie zmienić... This can be paralleled to what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects on the action potential discharge depending on the concentration ( Guyon et al., 2005a ). -->
-In this area, .............<!--szczegóły-->
+
+
+These observations are in good agreement with what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects depending on the concentration used [@guyon_2005].<!-- nie wiem czy bardziej nie zmienić... This can be paralleled to what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects on the action potential discharge depending on the concentration ( Guyon et al., 2005a ). -->
+Specifically, CXCL12 at 0.1-1 nM decreased peak and discharge frequency of action potential evoked by current pulses, while at the concentration of 10nM 
 Several putative mechanisms for these opposite effects, which are not mutually exclusive, have been proposed [@guyon_2007].<!-- Several putative mechanisms for these opposite effects, which are not mutually exclusive, are reviewed in Guyon and Nahon (2007) . sprawdzić skąd to... -->
 
 Firstly, the characteristic U-shaped dose-dependent effect curve is commonly displayed in ...., including chemokines.<!-- chemokines usually display a U-shaped dose-dependent effect curve, suggesting opposing functions depending on their concentration. // może GPCR receptors?--> 

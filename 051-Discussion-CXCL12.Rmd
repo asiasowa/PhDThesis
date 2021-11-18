@@ -27,34 +27,40 @@ Given the well-known tight regulation of principal cell's activity by local inte
 <!-- jeszcze coś o excitability?-->
 Nevertheless, whether blocking GABA~A~ receptors will result in a significant increase of sEPSC frequency onto principal cells in the BLA and/or clearly in enhancement of their firing in rat coronal acute slices remains to be confirmed.
 
-### sIPSC/ GABA/ INTERNEURONS
-
-Nevertheless, in line with this hypothesis, there is a trend in the CXCL12-triggered changes in the frequency of sIPSC, although not statistically significant.<!--lepiej napisać-->
+In line with this hypothesis, there is a trend in the CXCL12-triggered changes in the frequency of sIPSC, although not statistically significant.<!--lepiej napisać-->
 Specifically, bath administration of CXCL12 produced two distinct responses: while exogenous CXCL12 at the concentration of 2nM was shown to reduce the frequency of sIPSC, the increased number of these events were observed following treatment with higher concentration of this chemokine (5nM; see Fig. \@ref(fig:CXCL12BLAsIPSCfreq).<!--bath administration of serotonin (0.3–100 μM) produced two distinct responses which could be differentiated physiologically and pharmacologically-->
 
-
-
-These observations are in good agreement with what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects depending on the concentration used [@guyon_2005].<!-- nie wiem czy bardziej nie zmienić... This can be paralleled to what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects on the action potential discharge depending on the concentration ( Guyon et al., 2005a ). -->
-Specifically, CXCL12 at 0.1-1 nM decreased peak and discharge frequency of action potential evoked by current pulses, while at the concentration of 10nM 
+These observations are in good agreement with what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects depending on the concentration used [@guyon_2005].<!-- nie wiem czy bardziej nie zmienić... This can be paralleled to what happens in MCH neurons of the LHA, where CXCL12 also exerts opposite effects on the action potential discharge depending on the concentration ( Guyon et al., 2005a ).// SDF-1α often appears to have opposite effects on neuronal function depending on the concentration. For example, in DA neurons, at low concentrations, it acts as a neuromodulator by potentiating K+-induced DA secretion and HVA calcium currents, whereas at higher concentration, it decreases DA release and HVA calcium currents. This can be paralleled to what happens in MCH neurons of the lateral hypothalamus, where SDF-1α also exerts opposite effects on the action potential discharge depending on the concentration (Guyon et al. 2005b). Moreover, this can also be observed in other contexts, for example, low levels of SDF-1 (<100 ng/ml) are attractive, whereas higher levels (>1 μg/ml) are repulsive for T cells (Zlatopolskiy & Laurence 2001). Several putative mechanisms for these opposite effects, which are not mutually exclusive, are reviewed in Fig. 3. -->
+Specifically, CXCL12 at 0.1-1 nM decreased peak and discharge frequency of action potential evoked by current pulses, whereas at the concentration of 10nM, CXCL12 induced the opposite actions.
 Several putative mechanisms for these opposite effects, which are not mutually exclusive, have been proposed [@guyon_2007].<!-- Several putative mechanisms for these opposite effects, which are not mutually exclusive, are reviewed in Guyon and Nahon (2007) . sprawdzić skąd to... -->
 
-Firstly, the characteristic U-shaped dose-dependent effect curve is commonly displayed in ...., including chemokines.<!-- chemokines usually display a U-shaped dose-dependent effect curve, suggesting opposing functions depending on their concentration. // może GPCR receptors?--> 
+Firstly, the characteristic U-shaped dose-dependent effect curve is commonly displayed in signaling molecule, including chemokines.<!-- chemokines usually display a U-shaped dose-dependent effect curve, suggesting opposing functions depending on their concentration. // może GPCR receptors?--> 
 Such a process, known as ‘hormesis’, relates to adaptive responses to compensate for a disruption in homeostasis by overshooting homeostatic feedback controls (Mattson 2008).<!-- zmienić inaczej opisać i skąd cytowanie // Such process named ‘hormesis’ relates to adaptative responses to compensate disruption in homeostasis by overshooting homeostatic feedback controls (Mattson 2008).--> 
 
-In addition, CXCL12 was shown to be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment, namely CXCL12 a (5–67).
-This metabolite was reported to exert its action through a receptor different from CXCR4 (Zhang et al ., 2003).<!--Indeed, it has been shown that CXCL12 can be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment, namely CXCL12 a (5–67), that exerts its effect through a G-protein coupled receptor distinct from CXCR4 (Zhang et al ., 2003). sprawdzić skąd to... -->
-Accordingly, the enhancement of sIPSC frequency observed at higher concentrations of CXCL12 could be mediated by a CXCL12 metabolite produced in the acute brain slice.<!--These effects could overcome the CXCR4 effects.zmienić NA SZCZĘŚCIE NIE BLOKOWAŁAM TEGO :D--> 
-Further experiments using specific MPP inhibitors should clarify this point.[@guyon_2005]<!--zmienić-->
+In addition, CXCL12 was shown to be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment.
+This metabolite was reported to exert its action indifferent of CXCR4 receptor (Zhang et al ., 2003).<!--Indeed, it has been shown that CXCL12 can be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment, namely CXCL12 a (5–67), that exerts its effect through a G-protein coupled receptor distinct from CXCR4 (Zhang et al ., 2003). sprawdzić skąd to... -->
+Accordingly, the enhancement of sIPSC frequency observed at higher concentrations of CXCL12 could be mediated by a CXCL12 metabolite produced in the acute brain slice.<!--These effects could overcome the CXCR4 effects.zmienić NA SZCZĘŚCIE NIE BLOKOWAŁAM TEGO :D-->
+<!-- This may be due to concentration reached during inflammatory conditions, /// compensatory mechanism
+Given that a higher concentration, e.i., 5nM, is similar to this reached during inflammatory conditions, the attenuation of GABAergic transmission could be network  -->
+Given that upregulated GABAergic transmission in the BLA is often reported in animal models of ...., The attentuated GABAergic transmission 
+Further experiments using specific MPP inhibitors should clarify this point [@guyon_2005].<!--zmienić-->
 
-Another possibility is that <!-- sheridan - glia vs neurons different concentration However unlikely as yang_2016 did not detect the CXCR4 expression in the astrocyte. A MY?! Probably OR MAYBE MICROGLIA.-->
+Another possibility is that different concentration might act on different cell types. has been suggested is that different cell types displays different sensitivity for CXCR4 activation.  
+This mechanism was previously reported in the context of different chemokine, CX3CL1, in the hippocampus [@sheridan_2014].<!-- sheridan - glia vs neurons different concentration However unlikely as yang_2016 did not detect the CXCR4 expression in the astrocyte. A MY?! Probably OR MAYBE MICROGLIA. /// The dif-ferential responses of CX3CL1 on neurons and non-neurons at thelower concentration (500 pM) may relate to variations in absolute levels of CX3CR1 receptor expression on distinct cell populationsin the hippocampus.-->
+Notably, given that no CXCR4-expressing astrocytes were observed in the BLA [@yang_2016], this hypothesis could more apply for microglia.
+Consistently, CXCR4 is also expressed by microglial cells [@tanabe_1997], raising the possibility that the concentration which is needed to activate CXCR4 on microglial might be different that neuronal CXCR4.
+Thus, this issue warrants further investigation.
 <!-- probably microglia - release of some signaling molecule? analogous to what is seen in adenosine? --><!--In conclusion, our results show that CX3CL1 may affect glutamatergic neurotransmission in the hippocampus by a mechanism involving three different AR subtypes, raising the proposal that opposite regulation might be achieved by chemokine action at single synapses, depending on AR distribution and functional status and, potentially, by the site and mechanism of adenosine release.analogous // Piccinin 2010-->
 
-Moreover, <!-- ACKR3 but also unlikely as not detected in the amygdala.-->
+Moreover, in addition to CXCR4, CXCL12 is known to act through another, atypical receptor, ACKR3 [@levoye_2009].
+There are many reports showing the ACKR3-modulated action of CXCL12 in many brain structures [@fumagalli_2020; @meyrath_2020; @puchert_2017].
+Nevertheless, to date, no ACKR3 was detected in the amygdala [@schnemeier_2008], suggesting that this explanation is rather not plausible.
 
-Hence, it is possible that these opposing responses could be differentiated physiologically and pharmacologically.<!--znaleźć ten artykuł ... It is possible that these responses could be differentiated physiologically and pharmacologically.-->
-/////
-Considering complexity resulting from wide variety of chemokine receptors, their complex cellular pattern of expression, different scenario of signaling cascades, ... differences in postsynaptic cell machinery including different signalling pathways, channels and receptors, and dual/opposite action of the same chemokine, it would not be informative to describe it due to this criteria.
 
+Altogether, the subtle CXCL12-modulated changes on synaptic excitability and GABAergic transmission might be related with (i) heterogenous groups of principal cells and/or interneurons.
+Nevertheless, this study raises the possibility that CXCL12 might modulate the inhibitory synaptic transmission in the BLA in opposing manner depending on the concentration used.
+This is similar to what was observed in other structures, and raises the possibility that based on its concentration, this chemokine might display either neuroprotective or neurotoxic actions .
+<!--, it is possible that these opposing responses could be differentiated physiologically and pharmacologically.znaleźć ten artykuł ... It is possible that these responses could be differentiated physiologically and pharmacologically.-->
 
 ## CXCL12/CXCR4 signaling in the lateral subdivision of the central amygdala
 
@@ -64,14 +70,13 @@ Firstly, CXCL12 was shown to upregulate the excitability of CeL neurons, which w
 Next, there was a cell-specific trend illustrating the opposing CXCL12-mediated modulation of glutamatergic synaptic transmission based on the concentration, specifically onto Regular-Spiking neurons.
 Finally, the treatment with CXCL12 also led to opposite regulation of GABAergic transmission, based on the subtype of CeL neurons, which was possibly dependent on astrocytes.
 
-### Excitability
-
 CXCL12 was shown to increase the excitability of CeL neurons.
 While Late-Firing neurons were shown to have both decreased threshold current and gain, only threshold current was decreased in the Regular-Firing neurons.
 <!-- Slightly different mechanism? -->
 These effects were mediated by CXCR4 receptor, as the presence of AMD3100 prevented this enhancement in CeL neuronal excitability.
-Interestingly, AMD3100 alone was shown in an opposite trend.
-Thus, these findings suggest tonic activity of CXCR4.
+
+Interestingly, AMD3100 alone was shown an opposite trend, suggesting probably tonic activity of CXCR4 in the CeL neurons.
+
 <!-- tonic activity -->
 <!--However, increased excitability is documented to results either from increasing amplitude of N-type calcium channel or inducing inward rectifier (GIRK) potassium currents, the action mediated by CXC12/CXCR4 axis. zmienić, citation-->
 <!--GIRK or N-type calcium channel in CeA neurons?-->
@@ -81,18 +86,15 @@ In conclusion, the SDF-1 a -induced hyperpolarization is likely linked to the ac
 -->
 
 Moreover, the pre-incubation slices with astrocytic toxin, fluorocitrate, did not abolish CXCL12-triggered increase in neuronal excitability, suggesting that astrocytes did not mediate this effect.
-This is in line with our immunofluorescent data demonstrating the absence of CXCR4 in astrocytes.
-Similarly, other studies reported the CXCL12-mediated neuromodulation accompanied by the lack of astrocytic CXCR4 in the BLA and in ....<!--citation-->.
+This is in line with presented immunofluorescence data demonstrating the absence of CXCR4 in astrocytes.<!-- pokazuje? ;/ -->
+Similarly, as mentioned earlier, the same lack of CXCR4 on astrocytes is observed in the BLA [@yang_2016].
 
 
-
-### sEPSC
-The opposing trend was observed.
-RS - 2nM - decreased frequency of sEPSC
-RS - 5nM - increased frequency of sEPSC <!-- Guyon_2006
-CXCL12 increased glutamate release in SN slices, as previously described in other brain structures such as cerebellum (Ragozzino et al . 1998) or hypothalamus (Guyon et al . 2005b). // dawka....
-This current was not blocked by TTX, suggesting that it did not involve action potential-dependent release through the glutamate terminals. ... u nas blokowane
-Glutamatergic terminals on DA neurones arise from the output of the subthalamic nucleus or prefrontal cortex, which are absent from our slices.
+Regarding excitatory synaptic transmission, similar opposing trend based on concentration as in the BLA was observed. 
+At 2nM CXCL12 reduced the frequency of sEPSC, whereas elevated frequency of sEPSC was observed during 5nM CXCL12 treatment..
+This study raises the possibility of cell-specificity, as this effect was more prominent in Regular-Spiking neurons.  
+As documented previously, CXCL12 was revealed to increased glutamate release in cerebellum and hypothalamus [@guyon_2005; @ragozzino_1998].
+<!-- Guyon_2006
 Increased calcium permeability in terminals might raise the probability of spontaneous release of glutamate or uptake of glutamate might be inhibited at the axon terminal exposed to CXCL12. However, sEPSCs recorded in 10 lM bicuculline were unaffected by CXCL12. 
 It is therefore likely that CXCL12 induces glutamate release from glial cells present in the slice.
 It is well established that CXCL12 mobilizes cytosolic calcium following stimulation of CXCR4 in astrocytes and microglia (Tanabe et al . 1997), and that an increased calcium concentration in these cells may cause a massive release of glutamate (Araque et al . 2001). 

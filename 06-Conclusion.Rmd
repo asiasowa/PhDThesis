@@ -1,12 +1,12 @@
 # Conclusions
 
-In the present work we characterized the role of two structurally different chemokines, CX3CL1 and CXCL12, mainly using acute brain slices. 
+In the present work the role of two structurally different chemokines, CX3CL1 and CXCL12, was characterized, mainly using acute brain slices. 
+Both of these chemokines are emerging as crucial players in neuron-glial interactions and neuromodulation.
+Moreover, despite the fact that they were implicated in many  studies has implicated them in anxiety-like behavior [@schubert_2018; @yang_2016].
+
+
 The main findings of this study is that CX3CL1 action requires the activation of A1A, A2AR and A3R, by locally released or tonic adenosine. Speci fi cally, CX3CL1 causes glutamatergic depression through A1R and A3R and potentiation through A2AR stimulation. Thus, CX3CL1 might affect glutamatergic synapses in opposite way, depending on the prevailing functional expression of AR subtypes. 
 
-The effects of chemokines in the brain may be due to their ability to activate chemokine receptors localized on neurons and/or glia, thus leading to changes in neuronal membrane properties and/or synaptic transmission. 
-Specifically, chemokines may alter synaptic transmitter release [@limatola_2000, @ragozzino_2002], modulate the functional properties of ionic channels [@lax_2002, @oh_2002] and promote the release of glutamate from astrocytes [@lax_2002]. 
-In addition, the chemokine system can alter the actions of neuronally active pharmacological agents such as opioids and the cannabinoid system [@heinisch_2011]. 
-Moreover, chemokine receptor knockout mice (CCR6, CCR7, CXCR5) have recently been shown to exhibit behavioral and neurobiological phenotypes of relevance to psychiatric disorders, which suggests their essential role in physiological conditions [@harrison_2014, @jaehne_2014, @stuart_2014].
 
 Nevertheless, our data support the notion that an adequate cross-talk between microglia and neurons is required for the correct functional maturation of newborn granule neurons and for the proper regulation of emotional behavior. These data contribute to increasing our understanding of AHN under both physiological and pathological conditions. - Bolos2018
 

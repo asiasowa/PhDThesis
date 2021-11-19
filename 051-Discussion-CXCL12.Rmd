@@ -16,9 +16,10 @@ These neuronal proportions were also similar when higher concentration of exogen
 This discrepancy between studies may be explained by different experimental settings.
 Firstly, the whole-cell patch-clamp experiments performed by @yang_2016 in C57BL/6 male mice, whereas this study was performed using slices obtained from male Wistar rats.
 The difference between those animals were reported in many contexts.<!-- lepiej napisać-->
-Moreover, while in the present studies the coronal slices were used, transverse slices containing the amygdala were reported to be used in the study by @yang_2016.
-Accordingly, the terminals from hippocampus and cortex, two sources of excitatory inputs into the BLA, are more intact in transverse slices.<!-- potwierdzenie-->
-This raises the possibility that the observed CXCL12-induced enhancement in transverse slices may be, at least in part, due to additional hippocampal and/or cortical inputs, which are absent in coronal slices.<!-- The present study increases our understanding of which hippocampal pathways are best preserved in the three most common brain slice preparations, and will help investigators determine the appropriate slices to use for physiological studies depending on the subregion of interest.--> 
+Moreover, while he present study was performed on the coronal slices, transverse slices containing the amygdala were used in the study by @yang_2016.
+
+Accordingly, the enthorinal, perirhinal cortex, the hippocampus and the amygdala are heavily interconnected and implicated in memory, most of connections known from in vivo studies were preserved in the horizontal slices [@halbach_2002]. 
+Given that those connections are excitatory, it raises the possibility that  the observed CXCL12-induced enhancement in transverse slices may be, at least in part, due to more preserved and dense connections between those crucial structures, which were absent from coronal slices.<!-- The present study increases our understanding of which hippocampal pathways are best preserved in the three most common brain slice preparations, and will help investigators determine the appropriate slices to use for physiological studies depending on the subregion of interest.--> 
 The temperature, which is the critical factor for recording the synaptic transmission, also differs between these two studies.
 Here, brain slices were submerged with the ACSF at the temperature of 31–33`r knitr::asis_output("\U00B0")`C, whereas the excitatory synaptic transmission in experiments by @yang_2016 was recorded at room temperature.<!--potwierdzenie-->
 Finally, while present experiments were performed using normal ACSF, @yang_2016 sEPSC recordings were made in the presence of a blocker of GABA~A~ receptors, picrotoxin.
@@ -59,7 +60,7 @@ Nevertheless, to date, no ACKR3 was detected in the amygdala [@schnemeier_2008],
 
 Altogether, the subtle CXCL12-modulated changes on synaptic excitability and GABAergic transmission might be related with (i) heterogenous groups of principal cells and/or interneurons.
 Nevertheless, this study raises the possibility that CXCL12 might modulate the inhibitory synaptic transmission in the BLA in opposing manner depending on the concentration used.
-This is similar to what was observed in other structures, and raises the possibility that based on its concentration, this chemokine might display either neuroprotective or neurotoxic actions .
+This is similar to what was observed in other structures, and raises the possibility that based on its concentration, this chemokine might exert either neuroprotective or neurotoxic role.
 <!--, it is possible that these opposing responses could be differentiated physiologically and pharmacologically.znaleźć ten artykuł ... It is possible that these responses could be differentiated physiologically and pharmacologically.-->
 
 ## CXCL12/CXCR4 signaling in the lateral subdivision of the central amygdala
@@ -105,14 +106,10 @@ Since RS and LF cells were reported to be highly interconnected between each oth
 On the other hand, the observed trendily inhibition of the frequency of sEPSC is not accompanied by the reduction in their excitability and reduced inputs onto Late-Firing cells.
 Nevertheless, experiments by using dual patch-clamp experiments to record whether CXCL12 acute application led to opposing effects in those two subpopulations in the CeL would be of high importance.
 
-In addition - the source of increased inputs onto Regular-Spiking neurons?
-
-### sIPSC
+<!--In addition - the source of increased inputs onto Regular-Spiking neurons?-->
 
 The effect of CXCL12 onto GABAergic synaptic transmission is complex.
-While it increases frequency of sIPSC onto Regular-Spiking neurons, Late-Firing neurons were shown to display both reduced frequency and amplitude of sIPSC.
-WHY cell specific?<!-- astrocytes are cell specific? -->
-Dose?
+While this chemokine increased the frequency of sIPSC onto Regular-Spiking neurons, Late-Firing neurons were shown to display both reduced frequency and amplitude of sIPSC.
 All of these effects were mediated by CXCR4 receptor, as they were abolished in the presence of AMD3100.
 The tonic activity of CXCR4 seems to not affect GABAergic transmission.
 Astrocytes modulates this effect.
@@ -122,13 +119,6 @@ However, it is important to note that if only astrocytes were involved in this e
 <!--As mentioned previously, CXCR4 activation by CXCL12 increases pre-synaptic neurotransmitter release and particularly GABA release in several neuronal populations ( Guyon and Nahon, 2007 ; Bhattacharyya et al., 2008 ; Qu et al., 2008 ). 
 If GABA can in turn block the effects of CXCL12, this could represent a negative feedback loop for pre-synaptic chemokine release. 
 Indeed, when applying CXCL12 for several minutes, a transient increase in the frequency of sIPSCs is frequently observed, followed by a reduced activity (see Figure 3 in Guyon et al., 2006 ). This reduction could be due to an antagonistic effect of GABA, although desensitization of CXCR4 itself cannot be excluded.-->
-
-
-
-
-
-
-### astrocytes 
 
 Moreover, astrocytes may regulate synaptic transmission by modulating the expression and protein levels of glutamate transporters in the membrane and thus control glutamate spillover beyond the synapse, which may reflect a change in the kinetics in EPSCs, which translate into synaptic plasticity [@murphyroyal_2015].
 
@@ -144,14 +134,11 @@ Therefore it is tempting to speculate that ACKR3-induced Cx43 internalization in
 However, to our knowledge, there are no data that would confirm this hypothesis. <!-- Recent findings cast a new light on the role of astrocytic gap junction networks in neuroendocrine functions [@clasadonte_2017]. In particular, mice with deletion of Cx43 in astrocytes displayed much less excitable orexin neurons located in the lateral hypothalamic area (LHA) due to dysfunction in glucose and lactate trafficking, leading to behavioral dysfunctions manifested as impaired sleep-wake cycle [@clasadonte_2017]. Thus, again, keeping in mind ACKR3-induced Cx43 internalization, it is intriguing to hypothesize that activation of this receptor could exert similar actions. However, this hypothesis needs further investigation.-->
 
 
-### CXCL12/CXCR4 other
-
-results of the present study add another piece to the growing body of evidence that ....
-
+Results of the present study add another piece to the growing body of evidence that CXCL12 mediates action on CeA activity, while in CeA ....
 The role of CXCL12 is mostly dependent on its primary receptor CXCR4. <!-- cytowania, szczególnie elektro -->
 However, recent data shows that atypical ACKR3, ...
 
-Moreover, although several studies did not detect ACKR3 receptor in the amygdala<!--citations?-->, it cannot be excluded that, in certain cell types or cellular contexts, ACKR3 could, at least partially, mediate observed here effects of CXCL12.<!-- analogous // Moreover, although the results of the present study add another piece to the growing body of evidence that ACKR3 is unable to trigger G protein signaling, it cannot be excluded that, in certain cell types or cellular contexts, ACKR3 could induce G protein-dependent or -independent signaling [@heuninck_2019].-->
+<!-- analogous // Moreover, although the results of the present study add another piece to the growing body of evidence that ACKR3 is unable to trigger G protein signaling, it cannot be excluded that, in certain cell types or cellular contexts, ACKR3 could induce G protein-dependent or -independent signaling [@heuninck_2019]. // oreover, although several studies did not detect ACKR3 receptor in the amygdala, it cannot be excluded that, in certain cell types or cellular contexts, ACKR3 could, at least partially, mediate observed here effects of CXCL12.-->
 
 <!--yang_2016
 In this study, we found that intraperitoneal (i.p) injection of lipopolysaccharide (LPS) induced anxiety-like behaviors in adult mice as measured by elevated plus-maze test (EPM) and open field test (OFT). 
@@ -174,34 +161,28 @@ It has been previously reported that CXCL12 could induce synaptic depression of 
 
 indicating CXCL12-mediated anxiety is through CXCR4.
 
-CXCL12 and its receptors CXCR4 and CXCR7 have been associated with pathogenesis of many kinds of inflammatory diseases ( Karin, 2010 ). <!--zmienić-->
-It has drawn more and more attention that CXCL12 has connections with neuroinflammatory disorders of the CNS, such as multiple sclerosis, depression and anxiety. <!-- zmienić-->
-
-Moreover, among the constitutively expressed chemokines, the role of CXCL12 in psychiatric diseases has attracted considerable attention [14–18].<!--trochę zmienić i inne cytowania? -->
-Anxiety by yang 2016
+<!--CXCL12 and its receptors CXCR4 and CXCR7 have been associated with pathogenesis of many kinds of inflammatory diseases ( Karin, 2010 ). zmienić-->
+<!-- It has drawn more and more attention that CXCL12 has connections with neuroinflammatory disorders of the CNS, such as multiple sclerosis, depression and anxiety. zmienić   Moreover, among the constitutively expressed chemokines, the role of CXCL12 in psychiatric diseases has attracted considerable attention [14–18].-->
 
 
 ## Limitations
 
 A few limitations in presented study should be acknowledged. <!-- This  approach  was  preferred in this instance to more approximate recording conditions.-->
-First, 
+First, using fluoroimmunofluorescence to localize receptors is pretty difficult and thus sometimes led to inconclusive data. Therefore, results form these studies should be treated as preliminary results and more sensitive methods should be used, such as RNA-scope [@kharchenko_2021] or RNA-sequencing transcriptome [@zhang_2014].<!-- due to technical/methodological implication of difficulties regarding immunofluorescent stainings of receptors and imperfections of many antibodies, the results concerning co-localization needs to be verified by using more sensitive methods, such as RNA-scope or .... -->
+Moreover, the pharmacological inhibition of either microglia or astrocytes is also a caviet, as it might be not very specific. 
+As optogenetic technique allows for precise temporal(milisecond) and spatial(specific cells types) light activation and thereby modulation of cellular excitability, it highlights cellular specificity and bidirectionally.<!-- Light activation of these proteins modulates cellular excitability with millisecond precision. //  Comparison of electrical and optogenetic stimulation paradigms, highlighting cellular specificity and bidirectionality of optogenetic techniques-->
+Both chemokines mainly modulated the firing of the neurons and/or GABAergic transmission. 
+It should be noted that whole-cell patch-clamp dialyzes the cytoplasm with intrapipette solution. 
+Thus, it might affect intracellular signaling machinery. 
+To avoid this issue, a gramicidin perforated patch technique would be a better option, as it maintains a relatively intact intracellular milieu [@akaike_1994; @akaike_1996]. 
+Finally, GABA~C~ receptor has also been implicated in the regulation of anxiety in the amygdala and should be isolated [@cunha_2010]. 
 
-* due to technical/methodological implication of difficulties regarding immunofluorescent stainings of receptors and imperfections of many antibodies, the results concerning co-localization needs to be verified by using more sensitive methods, such as RNA-scope or .... 
+<!-- To investigate this question we employed the gramicidin perforated patch technique. This method allows for the study of neuronal fi ring while maintaining a relatively intact intracellular milieu, compared to traditional patch techniques that dialyze the intracellular contents ( Akaike and Harata, 1994 ). Gramicidin is a polypeptide antibiotic that forms pores in the neuronal membrane that are selectively permeable to monovalent cations, preserving much of the intracellular signaling machinery ( Akaike, 1996 ). This property is advantageous when studying G protein-coupled receptors that rely on intact intracellular contents for signal transduction. -->
 
 * GABA~C~ receptors - not blocked, what is the toxin/substance that blocked it? 
 
-* Pharmacological blocking of microglia and astrocyte - better optogenetic/
 
-* Knockdown mice rather than blockers of receptor
-
-* BLA - pyramidal cells were selected based on 
-
-* CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber.
-
-* To investigate this question we employed the gramicidin perforated patch technique. This method allows for the study of neuronal fi ring while maintaining a relatively intact intracellular milieu, compared to traditional patch techniques that dialyze the intracellular contents ( Akaike and Harata, 1994 ). Gramicidin is a polypeptide antibiotic that forms pores in the neuronal membrane that are selectively permeable to monovalent cations, preserving much of the intracellular signaling machinery ( Akaike, 1996 ). This property is advantageous when studying G protein-coupled receptors that rely on intact intracellular contents for signal transduction.
-
-
-
+<!-- * CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber. -->
 
 <!-- ZDANIA Z DUPY ... 
 

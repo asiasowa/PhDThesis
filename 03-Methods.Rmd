@@ -255,24 +255,6 @@ knitr::include_graphics("images//methods//IV_BLAvsCeA_examples.png")
  
 <!-- According to this criterion following neurons were included in the study on chemokines signaling in the amygdala (only one neuron per slice was subjected to drug administration experiment): /// nie wiem czy to dodawać bo musiałabym obliczyć ;P patrz: ALAN dla reszty gdybym się jednak zdecydowała-->
 
-#### Post-recording immunostaining {#postimmuno}
-
-In order to verify the neurochemical content of recorded neurons,  after recording a subset of slices was fixed overnight with a 4% formaldehyde at 4`r knitr::asis_output("\U00B0")`C and stained according to the following protocol.  
-In brief, free-floating sections were blocked and permeabilized (10% normalized goat serum (NGS; Jackson ImuunoResearch), 0.1% Triton X100 in PBS) at 4`r knitr::asis_output("\U00B0")`C overnight and incubated with a primary antibodies solution supplemented with a streptavidin-conjugated Alexa Fluor 647 (Invitrogen; 1:500) overnight at 4`r knitr::asis_output("\U00B0")`C. <!--: mouse anti-OXT (1:1000 or 1:10000), rabbit anti-AVP (1:500 or 1:5000), ExtrAvidin-Cy3 (1:200), 2% NDS, 0.3% Tx100 in PBS, // Next, several rinses with PBS were carried out before incubating slices with  and blocking and permeabilizing with PBS containing 10% normal goat serum (NGS; ) and 0.1% Triton X-100 in PBS (Sigma Aldrich; blocking solution) overnight at 4`r knitr::asis_output("\U00B0")`C.-->
-Next, sections were incubated with a secondary antibody mixture for 24 h at 4`r knitr::asis_output("\U00B0")`C. <!--(2% NDS in PBS solution containing donkey anti-mouse Alexa Fluor 647-conjugated antibody (1:400) and donkey anti-rabbit Cy3-conjugated antibody (1:400)). -->
-To stain the cell nuclei, the NucBlue Fixed Cell Stain ReadyProbes Reagent (Invitrogen, Thermo Fisher, Inc.) was used.
-Finally, slices were mounted onto microscope slides using Prolong Glass antifading medium (Thermo Fisher Scientific, Invitrogen).<!-- Stained sections were mounted and coverslipped with -->
-Each step was followed by a 3x 10 min PBS wash.
-Images were acquired with a Zeiss Axio Imager Z2 fluorescence microscope with an Apotome.2 system using Zen Pro 2 software (Zeiss).
-<!--  After fixation in 4% paraformaldehyde (PFA), Alexa 647-coupled streptavidin (1:2000, Invitrogen) was used to visualize the fine details of the neurons in the entire slice. -->
-
-##### Sulphoramine staining
-
-To verify the effects of fluorocitrate on brain slices, the sulforhodamine 101 (SR101) staining was utilized. 
-The protocol was adapted from previous studies on acute brain slices [@christian_2013; @kafitz_2008].
-Briefly, a subset of 250`r knitr::asis_output("\U03BC")`m thick slices was prepared as for electrophysiology, with some slices incubated in 100 `r knitr::asis_output("\U03BC")`M fluorocitrate (FC) for 30 min at room temperature as described above. 
-Slices were incubated in 1 `r knitr::asis_output("\U03BC")`M SR101 (Sigma-Aldrich, <!-- kraj-->) in oxygenated ACSF for 20 min at 34 `r knitr::asis_output("\U00B0")`C, then washed in ACSF for at least 10 min at 34 `r knitr::asis_output("\U00B0")`C. <!-- adapted a protocol for application-->
-The slices were fixed in 4% PFA overnight and processed for immunocytochemistry, as described above. 
 
 ### Extracellular recordings, data acquisition, and statistics
 

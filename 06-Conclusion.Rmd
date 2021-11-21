@@ -1,55 +1,54 @@
 # Conclusions
 
-In the present work the role of two structurally different chemokines, CX3CL1 and CXCL12, was characterized, mainly using acute brain slices. 
+In the present work the role of two structurally different chemokines, CX3CL1 and CXCL12, in the amygdala was characterized, mainly using acute brain slices. 
 Both of these chemokines are emerging as crucial players in neuron-glial interactions and neuromodulation.
-Moreover, despite the fact that they were implicated in many  studies has implicated them in anxiety-like behavior [@schubert_2018; @yang_2016].
+Moreover, studies has implicated them in many behavioral ..., including anxiety-like behavior [@schubert_2018; @yang_2016].
+Indeed, there are several lines of evidence illustrating that BLA hyperexcitability manifests behaviorally as an increase in anxiety, emotional dysregulation, or development of seizure activity.
 
 
-The main findings of this study is that CX3CL1 action requires the activation of A1A, A2AR and A3R, by locally released or tonic adenosine. Speci fi cally, CX3CL1 causes glutamatergic depression through A1R and A3R and potentiation through A2AR stimulation. Thus, CX3CL1 might affect glutamatergic synapses in opposite way, depending on the prevailing functional expression of AR subtypes. 
+The main findings of this study is that CX3CL1 <!--action requires the activation of A1A, A2AR and A3R, by locally released or tonic adenosine.-->
+Specifically, CX3CL1 <!--causes glutamatergic depression through A1R and A3R and potentiation through A2AR stimulation.-->
+Thus, CX3CL1 might affect <!--glutamatergic synapses in opposite way, depending on the prevailing functional expression of AR subtypes. -->
 
-
-Nevertheless, our data support the notion that an adequate cross-talk between microglia and neurons is required for the correct functional maturation of newborn granule neurons and for the proper regulation of emotional behavior. These data contribute to increasing our understanding of AHN under both physiological and pathological conditions. - Bolos2018
-
-In summary, our data demonstrate that baseline inhibitory synaptic transmission in SG neurons is markedly enhanced by minocycline. This may function to decrease the excitability of SG neurons, thus leading to a modulation of nociceptive transmission.- Peng2016
+In summary, our data demonstrate that baseline inhibitory synaptic transmission in BLA neurons is markedly enhanced by minocycline. 
+This may function to decrease the excitability of SG neurons, thus leading to a modulation of nociceptive transmission.- Peng2016
 
  Our data lay the fundamental groundwork to investigate microglia-astrocyte cross talk and juxtavascular microglial function in the healthy and diseased brain.
- 
- In vitro and in vivo studies have reported that both of these chemokines modulate dopamine neurotransmission in the nigrostriatal pathway, modifying the electrophysiological state of the neurons and dopamine release via the corresponding endogenous receptors
- 
- 
- 
-Another important aspect of neuropeptide signalling in the central amygdala that we illustrated is that neuropeptides can antagonise each other’s action (CRF vs nociception and NPY;vasopressin vs oxytocin), or at least have opposing effects (PACAP and CGRP vs galanin), work synergistically (oxytocin and angiotensin IV), or have at least similar effects  (PACAP and CGRP, CRF and angiotensin-II). This makes neuropeptide signalling in the central amygdala highly dynamic, which is further amplified by their ability to interfere with synaptic plasticity as seen for CGRP in threat learning (Han et al.2010). Taken together, the rich diversity of neuro-peptides and their receptors in the central amygdala, second only to the hypothalamus, makes it possible to fine-tune amygdala activity and resulting output to maintain emotional homeostasis.  <!-- zerżnięte z van der bourg review o peptides in CeA - analogicznie dla chemokin -->
-
-The identification of AR1as downstream element responsible for beneficial effects of CX3CL1 on neuron survival against Glu neurotoxicity may represent an important challenge for management of neurological disorders including acute brain ischemia.
 
 However, considering that dendritic spines reflect the structural level of synaptic plasticity along with extensive evidence of chemokine actions on excitatory synaptic transmission and synaptic plasticity, it is tempting to speculate that chemokines actions on dendritic spines are still unexplored. 
+ 
+ 
+ 
+Another important aspect of neuropeptide signalling in the central amygdala that we illustrated is that neuropeptides can antagonise each other’s action (CRF vs nociception and NPY;vasopressin vs oxytocin), or at least have opposing effects (PACAP and CGRP vs galanin), work synergistically (oxytocin and angiotensin IV), or have at least similar effects  (PACAP and CGRP, CRF and angiotensin-II). 
+This makes neuropeptide signalling in the central amygdala highly dynamic, which is further amplified by their ability to interfere with synaptic plasticity as seen for CGRP in threat learning (Han et al.2010). 
+Taken together, the rich diversity of neuro-peptides and their receptors in the central amygdala, second only to the hypothalamus, makes it possible to fine-tune amygdala activity and resulting output to maintain emotional homeostasis.  <!-- zerżnięte z van der bourg review o peptides in CeA - analogicznie dla chemokin -->
+
+
+
+
 
 Thus, further experiments identifying the properties and functions of each of neuronal, microglial, astrocytic and, oligodendrocytic compartments remain to be addressed. 
 
-In summary, our data identify an innate neuronal TLR4 signal that functions in the CeA and VTA to regulate the initiation of excessive alcohol drinking through MCP-1 neurotransmission likely at the level of dopamine (Banisadr et al , 2005; Guyon et al , 2009; Apartis et al , 2010). However, the MCP-1 neurotransmission mechanism, the role of TLR4-regulated   cytokines/chemokines   with   neuron– neuron, and bidirectional neuron–microglia communications (namely, fractalkine (Laing et  al , 2010)) in the transition to alcohol dependence, their relationship to alcohol-induced CRF expression, and the role of the brain site are still unclear. Ongoing studies are designed to address these questions.
+
 
 We confirmed that TLR4 and MCP-1 are expressed in glial cells (SD, Supplementary Figure S3), and posit that transition involves  bidirectional  neuron-glia  cross-talk  through released soluble factors and glial cell cytokine production (Frank et al , 2010; Hines et al , 2013)
 
 The microglia-dependent CX3CL1-CX3CR1 signaling cascade played a role in microglial-neuron interactions and in descending facilitation of BCP.<!-- analogous-->
 
-Modulation of GABA synaptic activity at 5-HT neuronsby CX3CL1, and by additional members of the chemokine family, such as CXCL12, may be clinically significant in thepathophysiology and treatment of 5-HT related mood disorders, including depression experienced by immunocom-promised individuals. CX3CL1 and other chemokines mayalso represent a new class of CNS neuromodulators, im-pacting brain function via their effects on traditional neuro-transmitter and neuropeptide systems, including the 5-HTsystem (Adler and Rogers, 2005; Adler et al., 2006; Calle-waere et al., 2007; Rostene et al., 2007). Thus, our studyprovides additional support for the general hypothesis thatchemokines, in addition to traditional neurotransmittersand neuropeptides, represent a novel neuromodulatorysystem in the CNS. 
+Modulation of GABA synaptic activity at 5-HT neurons by CX3CL1 and CXCL12 may be clinically significant in the pathophysiology and treatment of 5-HT related mood disorders, including depression experienced by immunocompromised individuals. 
+CX3CL1 and other chemokines may also represent a new class of CNS neuromodulators, impacting brain function *via* their effects on traditional neurotransmitter and neuropeptide systems, including the 5-HT system (Adler and Rogers, 2005; Adler et al., 2006; Calle-waere et al., 2007; Rostene et al., 2007). 
+Thus, our study provides additional support for the general hypothesis that chemokines, in addition to traditional neurotransmitters and neuropeptides, represent a neuromodulatory system in the CNS. 
 
-
-
-### CXCL12 and CX3CL1 - SUMMARY
 
 CX3CL1 activates GABA synaptic activity at the postsynaptic level, however, we have reported stimulatory presynaptic actions of CXCL12 on GABA release (Heinisch and Kirby, 2009). Interestingly, CXCL12 also produces a membrane depolarization in 5-HT neurons, an effect mediated indirectly by glutamate afferents, whereas CX3CL1 does not exhibit any effect on this parameter.
 Thus, although the chemokine family is comprised of a large variety of small chemotactic proteins, it appears that two structurally distinct chemokines, CX3CL1 and CXCL12, share common colocalization profiles with the 5-HT system as well as common functional actions on GABA synaptic activity on 5-HT neurons within the RN.
 
-NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology.<!-- chemokines // conclusion?-->
-
-
+<!-- NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology.chemokines // conclusion?-->
 
 In amygdala, the activation of this signalling pathway by .... is known to play a crucial role both in synaptic activity and plasticity processes.
 
-Indeed, there are several lines of evidence illustrating that BLA hyperexcitability manifests behaviorally as an increase in anxiety, emotional dysregulation, or development of seizure activity.
-
-Thus, the present efforts not only will provide further evidence that cytokines affect CeA neural function, but also will explore the means by which CeA-neural function can be associated with TNFa-induction of glutamate and GABA activity. Such extended information concerning actions of cytokines on CeA neurons is expected to further our understanding of the relationship stress-induction of cytokines has to facilitation of anxiety-like behavior that follows stress ( Breese et al., 2004, 2008, 2011; Knapp et al., 2011 ).  
+Thus, the present efforts not only will provide further evidence that cytokines affect CeA neural function, but also will explore the means by which CeA-neural function can be associated with TNFa-induction of glutamate and GABA activity. 
+Such extended information concerning actions of cytokines on CeA neurons is expected to further our understanding of the relationship stress-induction of cytokines has to facilitation of anxiety-like behavior that follows stress ( Breese et al., 2004, 2008, 2011; Knapp et al., 2011 ).  
 
 The current results provide a potential link between hyperactivation of the BLA upon inflammation,       and       amygdala hyperactivation in depression. The goal of our study was to examine the effects of peripheral inflammation  on  BLA  neuronal  firing in vivo . Although we have not tested the effects of peripheral inflammation in behavioral mood assays in this study, it would be important  to  examine  how  the effects of peripheral inflammation on mood might relate to effects on BLA neuronal firing.
 
@@ -65,5 +64,11 @@ Our fi ndings establish a critical link between the adenosine system, known to b
 
  The understanding of the peculiar pharmacological responses of adenosine receptors in different circuits and cell types of the amygdala is of particular importance, given their potential role in the etiology of emotional disorders and their corresponding usefulness as therapeutic targets to manage emotional disorders.
 
-
+Nevertheless, our data support the notion that <!--...an adequate cross-talk between microglia and neurons is required for the correct functional maturation of newborn granule neurons and for the proper regulation of emotional behavior. -->
+These data contribute to increasing our understanding of ...<!--AHN under both physiological and pathological conditions.-->
 \newpage
+
+<!--The identification of AR1as downstream element responsible for beneficial effects of CX3CL1 on neuron survival against Glu neurotoxicity may represent an important challenge for management of neurological disorders including acute brain ischemia. -->
+<!-- In vitro and in vivo studies have reported that both of these chemokines modulate dopamine neurotransmission in the nigrostriatal pathway, modifying the electrophysiological state of the neurons and dopamine release via the corresponding endogenous receptors -->
+
+<!-- has received increasing interest because of its widespread function in mediating innate, as well as learned, adaptive and maladaptive behaviors.-->

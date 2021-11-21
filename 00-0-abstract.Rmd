@@ -2,8 +2,32 @@
 
 
 
+Accumulating evidence highlights chemokines as key mediators of the bidirectional crosstalk between neurons and glial cells aimed at preserving brain functioning.
 
 
+Accumulating evidence highlights chemokines, a class of small immune proteins, as neuromodulators and coordinators of neuron-glial communication.
+Among them, CX3CL1 and CXCL12 are particularly important in this regard, as they are constitutively and widely expressed in the CNS, where they act on cellular, synaptic, network, as well as the behavioral level.
+Despite their emerging implications in psychiatric diseases, including anxiety-related behaviors, along with well-established expression of their receptor in the amygdala, a hallmark structure involved in this behaviors, <!--- As their receptors, CXCR4 and CX3CR1, are relatively densely present in the amygdala [@banisadr_2002a; @harrison_1998; @stumm_2002; @stumm_2003; @tarozzo_2003], the critical region in the development of many neuropsychiatric disorders, the electrophysiological consequences of their activation were explored.-->, their role in this structure is still largely unexplored.
+Hence, the aim of this study was to ....
+Observed results ... 
+
+While-opioid receptor expression has been identified in astrocytes of the nucleus accumbens, the functional consequences on astrocyte–neuron communication remains largely unknown. 
+
+Therefore, the purpose of this review is to summarize the current knowledge about mechanisms underlying chemokines regulation of neuron-glia crosstalk linking molecular, cellular, network, and behavioral levels.
+... cellular patterns of chemokine expression in the CNS, we next delve into the sequence and mechanisms of chemokine-regulated neuron–glia communication in the context of neuroprotection.
+We then define the interactions with other neurotransmitters, neuromodulators, and gliotransmitters.
+Finally, we  describe their fine-tuning on the network level and the behavioral relevance of their modulation.
+We believe that a better understanding of the sequence and nature of events that drive neuro-glial communication holds promise for the development of new treatment strategies that could, in a context- and time-dependent manner, modulate the action of specific chemokines to promote brain repair and reduce the neurological impairment.
+
+
+Chemokines are a class of small immune proteins emerging as neuromodulators and coordinators of neuron-glial communication.
+Among them, CX3CL1 and CXCL12 are particularly important in this regard, as they are constitutively and widely expressed in the CNS, where they were shown to act on cellular, synaptic, network, as well as the behavioral level [@sowa_2021; @trettel_2020].
+Moreover, dysregulation of CXCL12/CXCR4 and CX3CL1/CX3CR1 signaling are implicated in psychiatric diseases, including anxiety-related behaviors [@schubert_2018; @yang_2016].
+As their receptors, CXCR4 and CX3CR1, are relatively densely present in the amygdala [@banisadr_2002a; @harrison_1998; @stumm_2002; @stumm_2003; @tarozzo_2003], the critical region in the development of many neuropsychiatric disorders, the electrophysiological consequences of their activation were explored.
+Moreover, since distinct nuclei of the amygdala play different roles in fear processing<!--lepiej napisać-->, it is of interest to investigate whether CX3CL1 and CXCL12 trigger different electrophysiological responses in those regions.
+To this end, in the presented PhD dissertation, by using a combination of electrophysiological, immunohistochemical, and pharmacological approaches, the actions of two chemokines (CX3CL1 and CXCL12) were determined in two nuclei of the amygdala - basolateral (BLA) and central (CeA).
+Moreover, considering the pivotal role of chemokines in neuro-glial communication, the aim of experiments was also to explore the glial component of observed effects.<!--???-->
+Performing all electrophysiological experiments using acute brain slices with microglial inhibitor and astrocytic toxin also allowed for dissecting local neuro-glial cross-talk in these nuclei of the amygdala.<!-- Since all the experiments presented in here were performed using acute brain slices, it cannot be excluded that observed effects might be also mediated by glial cells. analogous -->
 
 
 \newpage

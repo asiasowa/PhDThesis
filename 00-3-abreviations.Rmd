@@ -34,12 +34,27 @@ x <- tribble(
     "GPCRs", "G-protein-coupled Receptors", # zobaczyć czy dobrze myślniki 
     "CKRs", "Chemokine Receptors",
     "ACKRs", "Atypical Chemokine Receptors",
-    
-    
-    
-    
+    "PKC", "Protein Kinase C",
+    "MAPK", "mitogen-activated protein kinase", 
+    "(ERK)½", "extracellular signal-regulated kinase",
+    "JAKs", "Janus kinases", 
+    "NF-κB", "nuclear factor kappa-light-chain-enhancer",
     "PTMs", "post-translational modifications",
-
+    "GAGs", "Glycosaminoglycans",
+    "CatS", "Cathepsin S",
+    "AKT", "protein kinase B",
+    "SN", "substantia nigra",
+    "VTA", "ventral tegmental area",
+    "PI3K", "phosphatidylinositol-3-OH kinase",
+    "PLC", "phospholipase C", 
+    "PIP2", "phosphatidylinositol 4,5-bisphosphate",
+    "DAG", "diacyl glycerol",
+    "IP3", "inositol 1,4,5-trisphosphate",
+    "cAMP", "cyclic adenosine monophosphate",
+    "GRKs", "G-protein coupled receptor kinases",
+    "GLT-1", "glutamate transporter 1", #29str
+    
+    
     
     "BLA", "basolateral amygdala",
     "LA", "lateral amygdala",
@@ -58,7 +73,6 @@ x <- tribble(
     "AHP", "afterhyperpolarization",
     "sIPSCs", "spontaneous inhibitory postsynaptic current",
     "TTX", "tetrodotoxin",
-    "GPCRs", "G-protein-coupled receptors",
     "SOM", "somatostatin",
     "VIP", "vasoactive intestinal peptide",
     "CCK", "cholecystokinin",
@@ -79,15 +93,12 @@ x <- tribble(
 
     
    
-    "MMPs","matrix metalloproteinases",
-    "PKC", "protein kinase C",
-    "MAPK", "mitogen-activated protein kinase",
     "ERK", "extracellular signal-regulated kinase",
     "JAK", "Janus kinases",
     "STATs", "signal transducers and activators of transcription",
     paste0("NF-", "$\\kappa$", "B"), paste0("nuclear factor-", "$\\kappa$", "B"),
     "ECM", "extracellular matrix",
-    "GAGs", "Glycosaminoglycans",
+
     "HVA", "high voltage-activated calcium",
     "GIRK", "inward rectifier potassium currents",
     "MCH", "melanin-concentrating hormone",
@@ -95,7 +106,7 @@ x <- tribble(
     "AVP", "arginine–vasopressin",
     "DRN", "dorsal raphe nucleus",
    
-    "SN", "substantia nigra",
+ 
     "DRG", "dorsal horn of the spinal cord",
     "SLMVs", "synaptic-like microvesicles",
     "VGLUTs", "vesicular glutamate transporters",
@@ -106,7 +117,6 @@ x <- tribble(
 
     "PVN", "paraventricular nucleus",
     "PFLH", "perifornical lateral hypothalamus",
-    "ACKRs", "atypical chemokine receptors",
     "DG", "dentate gyrus",
     "LPS", "lipopolysaccharide",
     "GDPs", "giant depolarizing potentials",

@@ -580,6 +580,3 @@ Unfortunately, neither Late-Firing nor Regular-Spiking electrophysiological type
 According to the literature, around 15% of Regular-Spiking neurons express PKC`r knitr::asis_output("\U03B4")`, whereas around 60% of all SOM-immunopositive neurons belong to the RS type [@haubensak_2010; @li_2013a].
 Thus, it was hypothesized that observed changes in membrane properties in RS following CX3CL1 application are associated with the presence of CX3CR1 predominantly in SOM-positive neurons.
 Immunohistochemical data presented in Fig.<!-- --> show that CX3CR1 was co-expressed with <!-- --> % of SOM-positive and <!-- -->% of PKC`r knitr::asis_output("\U03B4")`-expressing neurons in the CeL.
-The neuronal expression of CX3CL1 was also assessed, and it was .... in RS neurons and .... in LF neurons.
-
-

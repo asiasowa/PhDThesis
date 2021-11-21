@@ -52,26 +52,63 @@ x <- tribble(
     "IP3", "inositol 1,4,5-trisphosphate",
     "cAMP", "cyclic adenosine monophosphate",
     "GRKs", "G-protein coupled receptor kinases",
-    "GLT-1", "glutamate transporter 1", #29str
-    
-    
-    
-    "BLA", "basolateral amygdala",
+    "GLT-1", "glutamate transporter 1", 
+    "SVZ", "subventricular zone",
+    "SGZ", "subgranular zone",
+    "DG", "dentate gyrus",
+    "DRN", "dorsal raphe nucleus",
+    "MCH", "melanin-concentrating hormone",
+    "DA", "dopamine",
+    "5-HT", "serotonine",
+    "PVN", "paraventricular nucleus",
+    "Cx43", "Connexin-43",
+    paste0("TNF", "$\\alpha$"), paste0("Tumour Necrosis Factor", "$\\alpha$"),
+    "A1R", "adenosine A1 receptor",
+    "A2AR", "adenosine A2A receptor", 
+    "A2CR", "adenosine A2C receptor",
+    "A3R", "adenosine A3 receptor",
+    "mEPSCs", "miniature excitatory postsynaptic currents",
+    "sEPSCs", "spontaneous excitatory postsynaptic currents",
+    "LTP", "long-term potentiation",
+    "mIPSCs", "miniature inhibitory postsynaptic currents",
+    "sIPSCs", "spontaneous inhibitory postsynaptic currents",
+    "LPS", "lipopolysaccharide",
+    "EPM", "elevated-plus maze",
+    "CS", "conditioned stimulus",
+    "US", "unconditioned stimulus",
+    "MeA", "the medial nucleus of the amygdala",
+    "AAA", "the anterior amygdala area",
+    "AHA", "the amygdalo-hippocampal area",
+    "BLA", "basolateral complex of the amygdala",
+    "CeA", "central complex of the amygdala",
+    "ITC", "intercalated cell clusters",
     "LA", "lateral amygdala",
     "B", "basal amygdala",
     "BMA", "basomedial nucleus",
-    "CeA", "central amygdala",
+    "NE", "noradrenergic",
+    "LC", "locus coeruleus",
+    "NTS", "nucleus of the solitary tract",
+    "PCs", "principal cells", 
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+   
+   
     "CeC", "capsular part of the central amygdala",
     "CeL", "lateral part of the central amygdala",
     "CeM", "medial part of the central amygdala",
     "CeI", "intermediate part of the central amygdala",
     "BNST", "the bed nucleus of stra terminalis",
-    "MeA", "the medial nucleus of the amygdala",
-    "AAA", "the anterior amygdala area",
-    "AHA", "the amygdalo-hippocampal area",
-    "ITC", "intercalated cell clusters",
+  
+   
     "AHP", "afterhyperpolarization",
-    "sIPSCs", "spontaneous inhibitory postsynaptic current",
+
     "TTX", "tetrodotoxin",
     "SOM", "somatostatin",
     "VIP", "vasoactive intestinal peptide",
@@ -83,10 +120,7 @@ x <- tribble(
     "ENK", "enkephalin", 
     paste0("PKC", "$\\delta$"), paste0("protein kinase C", "$\\delta$"),
     "LF", "late-firing",
-    "RS", "regular-spiking",
-    "sEPSCs", "spontaneous excitatory postsynaptic current",
-    "CS", "conditioned stimulus",
-    "US", "unconditioned stimulus",
+
     "mPFC", "medial part of prefrontal cortex",
     "MGN", "the medial geniculate nucleus",
     "AC", "the auditory cortex",
@@ -99,29 +133,29 @@ x <- tribble(
     paste0("NF-", "$\\kappa$", "B"), paste0("nuclear factor-", "$\\kappa$", "B"),
     "ECM", "extracellular matrix",
 
-    "HVA", "high voltage-activated calcium",
+
     "GIRK", "inward rectifier potassium currents",
-    "MCH", "melanin-concentrating hormone",
-    "DA", "dopamine",
+
+
     "AVP", "arginine–vasopressin",
-    "DRN", "dorsal raphe nucleus",
+
    
  
     "DRG", "dorsal horn of the spinal cord",
     "SLMVs", "synaptic-like microvesicles",
     "VGLUTs", "vesicular glutamate transporters",
    
-    "LTP", "long-term potentiation",
+
     "LTD", "long-term depression",
     "ENK", "enkephalin",
 
-    "PVN", "paraventricular nucleus",
+
     "PFLH", "perifornical lateral hypothalamus",
-    "DG", "dentate gyrus",
-    "LPS", "lipopolysaccharide",
+
+
     "GDPs", "giant depolarizing potentials",
     "OF", "open field test",
-    "EPM", "elevated-plus maze",
+
     "NOR", "novel object recognition test",
     "TST", "test suspension test",
     "FST", "forced swim test",

@@ -21,91 +21,32 @@ The age of the animals for each experiment was determined to assure credible and
 
 
 ### Reagents {#drugs}
-<!--uzupełniać na bieżąco, nie skończone-->
-<!-- Reagents/buffers needed for electrophysiology -->
 
 In electrophysiological experiments, all reagents used for preparing ACSF and internal solution were purchased from Roth (Carl Roth GmbH, Germany)  and bath-applied by a peristaltic pump, unless stated otherwise.<!--All other chemicals were purchased from Sigma–Aldrich (St. Louis, MO).  czy na pewno? --><!-- Details regarding the primary and secondary antibodies used in our immunohistochem istry experiments are provided in Table 2 - 1. --><!-- All reagents for phosphate-buffered saline solution (PBS), artificial cerebrospinal fluid and intrapipette solution (ACSF) were purchased from Sigma-Aldrich (Darmstadt, Germany), apart from single biocytin batches purchased from Tocris Bioscience (Bristol, UK, Cat No. 3349). Pertussis toxin was purchased from Invitrogen, Thermo Fisher (Waltham, Massachusetts, USA, Cat No. PHZ1174). -->
 <!-- The time necessary for the solution to flow from the stopcocks to the slice was approximately 15 s. -->
 Other electrophysiological reagents suppliers and used doses were as follows: 
-biocytin batches purchased from Tocris Bioscience (UK), 
 500 nM tetrodotoxin (TTX, a voltage-gated sodium channel blocker from Tocris Bioscience, UK), 
-100 uM picrotoxin (a GABA~A~ receptor antagonist from ...),  
-CGP...  (a GABA~B~ receptor antagonist from ...)
+100 `r knitr::asis_output("\U03BC")`M picrotoxin (a GABA~A~ receptor antagonist from Tocris Bioscience, UK),  
+10 `r knitr::asis_output("\U03BC")`M CGP52432  (a GABA~B~ receptor antagonist from Tocris Bioscience, UK).
 All drugs were dissolved in deionised water, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C, unless stated otherwise.
-
-The drugs were diluted to the final concentration in the recording ACSF just before use. <!-- jakoś zaznaczyć ze ze stocków, i że nie minocycline-->
 
 Chemokines (CX3CL1 and CXCL12) were purchased from R&D Systems.
 All peptides were dissolved in sterile PBS, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C, unless stated otherwise.
+Concentrations for both chemokines were 2 and 5nM.
 
 For blocking CX3CL1 and CXCL12 receptors, highly selective antagonists (AZD8797 and AMD3100) were used, respectively.
-AZD8797 was obtained from Axon Medchem, The Netherlands, and its stock was first dissolved in dimethyl sulfoxide (DMSO). 
-AMD3100 ... <!-- dokończyć-->
+AZD8797 was obtained from Axon Medchem, The Netherlands, and its stock was first dissolved in dimethyl sulfoxide (DMSO), aliquoted and stored at . 
+AMD3100 was purchased from Sigma-Aldrich, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C.
+The concentration of both antagonists was 10`r knitr::asis_output("\U03BC")`M. 
 
 For microglia and astrocytes inhibition, the minocycline and fluorocitric acid were used, respectively.
-Both reagents were obtained from Sigma Aldrich. <!-- minocycline (100 `r knitr::asis_output("\U03BC")`M, Sigma–Aldrich, Germany),// DL-fluorocitric acid barium salt (a selective astrocyte inhibitor; 100 `r knitr::asis_output("\U03BC")`M, Sigma–Aldrich, Germany), // FC stocks were prepared according to published procedures (28), and acute horizontal brain slices containing the nRT and VB were prepared following established methods (66).-->
-Minocycline was freshly dissolved in ACSF at the final concentration before recordings. 
-The determination of the doses for CX3CL1, CXCL12, AZD8797, AMD3100, minocycline, and fluorocitrate was based on previous studies [@sheridan_2014; @baxter_2021]<!--citations--><!--in which 100 $\upmu$M minocycline markedly reduced the frequency and amplitude of spontaneous EPSCs (sEPSCs) in hippocampal neurons (Gonzalez et al., 2007). - Peng2016 // CX3CL1 were purchased from .... and its final concentration were 2 and 5nM, according to studies -->
-<!-- Of note, this chemical is dissolved in DMSO and thus the recording ACSF was additionally supplemented with proper proportion (no more than 0.001%) of DMSO as a baseline condition. <!-- nie wiem czy to i powyższe zdania nie do metody... -->
+Both reagents were obtained from Sigma Aldrich.
+Minocycline was freshly dissolved in ACSF at the final concentration before recordings.
+Both minocycline and fluorocitric acid were used at concentration 100`r knitr::asis_output("\U03BC")`M. 
 
-Immunostaining reagents suppliers were as follows: formaldehyde 36-38% solution, POCH, Gliwice, Poland, Cat No. 432173111; <!-- sprawdzić/ zmienić --> 
-Triton X100, Sigma Aldrich, X100; <!-- sprawdzić/ zmienić --> 
-Normal Donkey Serum, abcam, Cambridge, UK, Cat No. ab7475; <!-- sprawdzić/ zmienić --> 
-avidin-fluorescein conjugate, Sigma Aldrich, Cat No. 94091; <!-- sprawdzić/ zmienić --> 
-mouse anti-oxytocin antibody, abcam, Cat No. ab78364 or Merk Milipore, Darmstadt, Germany, Cat No. MAB5296; <!-- sprawdzić/ zmienić --> 
-rabbit anti-vasopressin antibody, abcam, Cat No. ab39363; <!-- sprawdzić/ zmienić --> 
-anti-mouse Alexa Fluor 647-conjugated antibody, West Grove, PA, USA, Cat No. 715-606-150; <!-- sprawdzić/ zmienić --> 
-anti-rabbit Cy3-conjugated antibody, Jackson ImmunoResearch, Cat No. 711-165-152; <!-- sprawdzić/ zmienić --> 
-ImmPRESS® HRP Anti-Mouse IgG Polymer Detection Kit, <!-- sprawdzić/ zmienić --> 
-Vector Laboratories, Burlingame, California USA, Cat No. MP-7402; <!-- sprawdzić/ zmienić --> 
-DAB Peroxidase Substrate Kit, Vector Laboratories, Cat No. MP-4100; <!-- sprawdzić/ zmienić --> 
-Fluoroshield with DAPI, Sigma Aldrich, Cat No. F6057; <!-- sprawdzić/ zmienić --> 
-Vectashield® with DAPI, Vector Laboratories, Cat No. H1200.<!-- sprawdzić/ zmienić --> 
+The determination of the doses for CX3CL1, CXCL12, AZD8797, AMD3100, minocycline, and fluorocitric acid was based on previous studies [@baxter_2021; @heinisch_2009; @heinisch_2010; @scianni_2013; @sheridan_2014; @yang_2016].
 
-<!-- The drugs used in all electrophysiological experiments were made up in stocksolution and diluted 1000 times into the perfusion ACSF on the day of recording. NBQX, and the selective NMDA GluN2B antagonist (þ/)-(R*,S*)-alpha-(4-hydroxyphenyl)-beta-methyl-4-(phenylmethyl)-1-piperidine   propanol   (Ro256981) were obtained form Tocris Biosciences (Ellisville, Missouri). The selective GluN2A antagonist NVP-AAM007 (NVP) was obtained from Novartis Pharma AG, Base (Switzerland). All other chemicals were obtained from Sigma (St. Louis, MO). -->
-
-```{r reagentstable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE}
-library(gt)
-library(tidyverse)
-reagents_table <- read_csv(".//tables//reagents_electrophysiology.csv")
-#cell_table <- cell_table %>% dplyr::rename("not_present" = "NOT PRESENT")
-# cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production","Chemokine Family", "Chemokine Receptor Expression", "not_present")
-# cell_table <- cell_table %>% dplyr::filter(is.na(not_present))
-# cell_table <- cell_table %>% dplyr::select(- "not_present")
-# cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production", "Chemokine Receptor Expression", "Chemokine Family")
-# cell_table <- cell_table %>% tidyr::unite("Ligand", "Chemokine Production":"Chemokine Receptor Expression", na.rm = TRUE, remove = FALSE)
-# cell_table <- cell_table %>% dplyr::select("Cell Type", "Ligand")
-# cell_table <- dplyr::arrange(cell_table, cell_table$`Cell Type`)
-
-
-#cell_table <- cell_table[order(cell_table, "Cell Type"),]
-
-#cell_table$`Cell Type` <- as.factor(cell_table$`Cell Type`)
-
-# Astrocytes <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Astrocyte') %>% dplyr::select('Ligand')
-# Microglia <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Microglia') %>% dplyr::select('Ligand')
-# Oligodendrocytes <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Oligodendrocyte') %>% dplyr::select('Ligand')
-# NSC <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Neural Stem Cells') %>% dplyr::select('Ligand')
-# Neurons <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Neuron') %>% dplyr::select('Ligand')
-
-
-# cell_merged <- cell_table %>%
-# dplyr::group_by(`Cell Type`) %>%
-# dplyr::summarise(Ligand = paste(Ligand, collapse = ", "))
-# 
-# cell_merged %>%
-# gt() %>%
-# tab_header(
-# title = ("Table 1. Summary of chemokine and chemokine receptor expression by different types of brain cells"),
-# subtitle = md("")) %>%
-# opt_row_striping() %>%
-# tab_source_note(source_note = "* depicts inconsistent results") %>%
-# gtsave("cell_table.html")
-
-
-#local_image(filename, height = 30)
-#to-do for later: 1) image instead of neuron/astrocyte etc. 2) renaming column Ligand -> Chemokine/ Chemokine Receptor
-```
+The drugs were diluted to the final concentration in the recording ACSF just before use.
 
 ## Electrophysiological recordings in acute brain slices {#electromethod}
 
@@ -292,72 +233,22 @@ Data were analyzed using GraphPad Prism v9.0.0 (GraphPad Software, USA).
 
 ### Tissue preparation for immunohistochemistry
 
-Rats (n = 12) were deeply anesthetized with sodium pentobarbital (100 mg/kg, i.p) and transcardially perfused with 0.9% NaCl followed by 4% paraformaldehyde in 0.1 M phosphate-buffered saline (PBS) as described previously [@makowiak_2011].
-After a post-fixation period of 12 h, 50  `r knitr::asis_output("\U03BC")`m-thick sections of the brain were cut in the coronal plane using a vibrating microtome (Leica VT1000). 
+Rats (n = 6) were deeply anesthetized with sodium pentobarbital (100 mg/kg, i.p) and transcardially perfused with 0.9% NaCl followed by 4% paraformaldehyde in 0.1 M phosphate-buffered saline (PBS) as described in the study by @makowiak_2011.
+After a post-fixation period of 12 h, 50`r knitr::asis_output("\U03BC")`m-thick sections of the brain were cut in the coronal plane using a vibrating microtome (Leica VT1000). 
 
 ### Immunofluorescence staining
 <!-- zmienić/// dokończyć -->
-To analyze co-localization of chemokines (CX3CL1 or CXCL12) or chemokine receptors (CXCR4 or CX3CR1) with neurons<!--inaczej to ująć bo nie tylko neurons--> in the BLA or CeA, slices containing amygdala were initially washed in PBS (3 × 10 min each) and then blocked for 1 h (10% normal goat serum, 0.1% BSA, 0.05% Triton X-100 in PBS).
-Primary antibodies (rabbit anti-NeuN, diluted 1:1,000; Millipore ABN78)<!-- either goat anti-CXCL12 antibody (1:100; Santa Cruz Biotechnology, Inc, Santa Cruz, CA), goat anti-CXCR4 antibody (1:100; Santa Cruz Biotechnology), goat anti-CX3CL1 antibody (1:100; Santa Cruz Biotechnology), or rabbit anti-CX3CR1 antibody (1:100; Torrey Pines Biolabs, East Orange, NJ)--> were dissolved in carrier solution (1% normal goat serum, 0.1% BSA, 0.05% Triton X-100 in PBS) and applied overnight at 4`r knitr::asis_output("\U00B0")`C.<!-- zmienić ... // Chemokine and chemokine receptor co-localization in the raphe nuclei was examined by incubating brain slices with antibodies directed towards either SDF-1α and CXCR4 or fractalkine and CX3CR1.//Sections were incubated in mouse anti-tryptophan hydroxylase (TPH) antibody (1:500; Sigma-Aldrich) overnight at 4`r knitr::asis_output("\U00B0")`C. --> 
-<!--Subsequently, immunohistochemical labeling was detected with an Alexa 647-conjugated donkey anti-goat or anti-rabbit secondary antibody (1:200; Molecular Probes, Eugene, OR) and an Alexa 488-conjugated donkey anti-mouse secondary antibody (1:200; Molecular Probes) for 1 h at room temperature in the dark.  zmienić ... -->
-<!-- CX3CR1 localization to neurons and glia was determined by a sequential incubation of brain slices with a rabbit anti-CX3CR1 antibody (1:100; Torrey Pines Biolabs), mouse anti-NeuN antibody (1:100; Chemicon, Temecula, CA), and mouse anti- CD11b FITC-conjugated antibody (1:100; Chemicon). 
-Antibody incubations were conducted overnight at 4`r knitr::asis_output("\U00B0")`C, and slices were kept in the dark following the addition of the mouse anti-CD11b FITC-conjugated antibody. 
-Immunohistochemical labeling was visualized with an Alexa 647-conjugated donkey anti-rabbit secondary antibody (1:200; Molecular Probes) and AMCA-conjugated donkey anti-mouse secondary antibody (1:100; Jackson ImmunoResearch, West Grove PA) for 1 h at room temperature in the dark. Antibody incubations were conducted overnight at 4`r knitr::asis_output("\U00B0")`C.  -->
+To analyze co-localization of CX3CR1 with neurons<!--inaczej to ująć bo nie tylko neurons--> in the BLA or CeA, slices containing amygdala were initially washed in PBS (3 × 10 min each) and then blocked for 1 h (10% normal goat serum, 0.1% BSA, 0.05% Triton X-100 in PBS).
+CX3CR1 localization to neurons was determined by a sequential incubation of brain slices with a rabbit anti-CX3CR1 antibody (1:100; Torrey Pines Biolabs, USA) with either mouse anti-NeuN antibody (1:200; Millipore, USA), mouse anti-CAMKII`r knitr::asis_output("\U03B1")` (1:1000; Invitrogen, USA), mouse anti-PKC`r knitr::asis_output("\U03B1")` (1:700; BD Biosciences, USA), or mouse anti-SOM (1:700; GeneTex, USA).
+Antibody incubations were conducted overnight at 4`r knitr::asis_output("\U00B0")`C, and slices were kept in the dark following the addition of the mouse antibodies. 
+Immunohistochemical labeling was visualized with an Alexa 647-conjugated donkey anti-rabbit secondary antibody (1:200; Jackson ImmunoResearch, USA) and an Alexa 555-conjugated donkey anti-mouse secondary antibody (1:200; Jackson ImmunoResearch, USA) for 1 h at room temperature in the dark. 
 
 Next, brain sections were then washed in PBS (3 × 10 min each) and placed in a cocktail of Alexa Fluor 647- conjugated donkey anti-goat secondary antibody (1:200; Molecular Probes) to detect CXCR4 and CX3CL1, and Alexa Fluor 488-conjugated donkey anti-rabbit secondary antibody (1:200; Molecular Probes) to detect CXCL12 and CX3CR1, for 1 h at room temperature in the dark.<!-- zmienić ...// Slices were then washed in PBS (3 × 10 min each) and incubated for 2 h in secondary antibody solution (Alexa Fluor-568 goat anti-rabbit; 1:500 dilution; Invitrogen A-11011). -->
 Sections were washed in PBS three more times before sections were mounted on Superfrost Plus slides (Fisher Scientific, Pittsburgh, PA) and cover slipped with Prolong Gold Antifade.<!-- zmienić // Sections were washed in PBS three more times before the slides were cover slipped with Vectashield with DAPI.--><!-- mounted onto glass slides. -->
 The specificity of the staining or antibodies was tested in previous studies (Verge et al., 2004; Lindia et al., 2005). <!-- zmienić --> 
-Details regarding the primary and secondary antibodies used in our immunohistochemistry experiments are provided in Table .... <!-- zmienić --> 
-
-```{r antibodiestable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis'}
-library(gt)
-library(tidyverse)
-reagents_table <- read_csv(".//tables//reagents_antibodies.csv")
-
-knitr::kable(
- reagents_table, booktabs = TRUE,
- caption = 'The table provides information about the primary antibodies used in our immunolabeling studies including the primary antibody species, clonality, dilution, and catalog number. The secondary antibody used to detect the primary antibody is listed and specifics regarding the secondary antibody species and dilution are provided. SC, Santa Cruz; TP, Torrey Pines; T, Sigma; MAB and CBL, Millipore'
-)#krótszy capture results='asis'
 
 
-#cell_table <- cell_table %>% dplyr::rename("not_present" = "NOT PRESENT")
-# cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production","Chemokine Family", "Chemokine Receptor Expression", "not_present")
-# cell_table <- cell_table %>% dplyr::filter(is.na(not_present))
-# cell_table <- cell_table %>% dplyr::select(- "not_present")
-# cell_table <- cell_table %>% dplyr::select("Cell Type", "Chemokine Production", "Chemokine Receptor Expression", "Chemokine Family")
-# cell_table <- cell_table %>% tidyr::unite("Ligand", "Chemokine Production":"Chemokine Receptor Expression", na.rm = TRUE, remove = FALSE)
-# cell_table <- cell_table %>% dplyr::select("Cell Type", "Ligand")
-# cell_table <- dplyr::arrange(cell_table, cell_table$`Cell Type`)
 
-
-#cell_table <- cell_table[order(cell_table, "Cell Type"),]
-
-#cell_table$`Cell Type` <- as.factor(cell_table$`Cell Type`)
-
-# Astrocytes <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Astrocyte') %>% dplyr::select('Ligand')
-# Microglia <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Microglia') %>% dplyr::select('Ligand')
-# Oligodendrocytes <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Oligodendrocyte') %>% dplyr::select('Ligand')
-# NSC <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Neural Stem Cells') %>% dplyr::select('Ligand')
-# Neurons <- cell_table %>% dplyr::filter(cell_table$`Cell Type` == 'Neuron') %>% dplyr::select('Ligand')
-
-
-# cell_merged <- cell_table %>%
-# dplyr::group_by(`Cell Type`) %>%
-# dplyr::summarise(Ligand = paste(Ligand, collapse = ", "))
-# 
-# cell_merged %>%
-# gt() %>%
-# tab_header(
-# title = ("Table 1. Summary of chemokine and chemokine receptor expression by different types of brain cells"),
-# subtitle = md("")) %>%
-# opt_row_striping() %>%
-# tab_source_note(source_note = "* depicts inconsistent results") %>%
-# gtsave("cell_table.html")
-
-
-#local_image(filename, height = 30)
-#to-do for later: 1) image instead of neuron/astrocyte etc. 2) renaming column Ligand -> Chemokine/ Chemokine Receptor
-```
 <!-- table caption The table provides information about the primary antibodies used in our immunolabeling studies including the primary antibody species, clonality, dilution, and catalog number. The secondary antibody used to detect the primary antibody is listed and specifics regarding the secondary antibody species and dilution are provided. SC, Santa Cruz; TP, Torrey Pines; T, Sigma; MAB and CBL, Millipore -->
 
 <!-- when writing about validation??? CHEMOKINE INTERACTIONS WITH THE SEROTONIN AND OPIOID SYSTEMS: ANATOMICAL AND ELECTROPHYSIOLOGICAL STUDIES IN THE RAT BRAIN
@@ -369,7 +260,7 @@ Furthermore, additional tests for secondary antibody specificity were conducted 
 ### Image analysis 
 
 In order to address the co-localization between cell type markers and chemokines/CKRs of interest,  fluorescent images (z-stacks) have been acquired using a Zeiss Axio Imager.Z2 fluorescence microscope equipped with the Apotome.2 optical sectioning module (Carl Zeiss) 63x/1.4 oil immersion plan apochromatic objective.<!-- dodać, że niektóre 20x? // Briefly,  stacks of 20 images were obtained under a LSM710 Zeiss confocal microscope (63x Oil immersion objective, Z-axis interval: 0.4 mm, XY dimensions: 79.38 mm).-->
-Three-channel images were acquired <!--(DAPI, CD68 and Iba1)-->. 
+Three-channel images were acquired DAPI, CX3CR1 and NeuN/SOM/PKCdelta/CAMKIIalpha. 
 <!--For each image, a fixed value threshold was applied to the Iba1 channel, and then the threshold image was converted in a Selection.
 A Mean filter (2 pixels) was applied in order to delete precipitates of the secondary antibody. 
 The selection was then loaded in the CD68 channel. 
@@ -378,22 +269,9 @@ Selections were inverted in both channels, and the exterior of the cells was fil
 All image analysis, cell counts, and fluorescence measurements were performed “off-line” on captured images taken from stained sections using open-source Fiji<!--citation?--> imaging software.<!-- Image analysis has been performed using open source Fiji32 and QuPath33 imaging software. -->
 <!-- For fluorescent images, z-stacks were collapsed to a maximum intensity projection and the number of cells was quantified using the Fiji cell counter plugin. -->
 The total numbers of positively identified cells expressing either chosen marker of chemokine/CKR of interest were counted manually in individual brain sections.<!-- from 3 rats in each treatment group. -->
-<!--Resulting images were then processed with the Just Another Colocalization Plugin (JACoP) in ImageJ, as previously described (Llorens-Martin et al., 2016). -->
-The number of cells was counted  separately in the central and basolateral amygdala.<!--PV+ interneurons were counted in the DG. To this end, the area including the GL, ML and the H was contoured on confocal stacks of images, and the number of PV+ cells surrounded by PNNs within that contour were counted in each stack of images. The number of cells was then divided by the drawn area, and cell density (cells/mm3) was represented in the graphs. Bolos2018 --> 
-All DAPI-labeled cells expressing markers (CAMKII, SOM, PKC`r knitr::asis_output("\U03B4")`) were counted in the BLA or CeA and subsequently classified as "total CAMK+/SOM/PKC/GFAP/IBA-labeled" cells. 
-The percentage of marker-labeled neurons that express CX3CL1/CXCL12 or CX3CR1/CXCR4 in a given nucleus was calculated as the percentage of the number of double labeled cells over that of specific marker-positive cells.<!--The percentage of colocalization between the two channels (Iba1+ area that was also CD68+ (Mander’s coefficient M1)) is represented in the graphs.--><!-- All cells with a positive BaseScope signal were quantified and represent 100% of labelled cells; the percentages of single- or double-positive cells were determined.--><!--For immunohistochemical experiments, results are expressed as percentage of CXCR7/Olig2- positive cells compared to the total number of CXCR7-EGFP cells in the SVZ (n=6).  zmienić jeszcze trochę -->
-<!--Images are representative of at least three biological replicates.-->
-<!--Briefly, six stacks of images per animal were used to determine the density of mature granule neurons in a reference structure of known volume (30 (X) ? 30 (Y) ? 10 (Z) lm). The average density of these cells was then multiplied by either the total volume of the DG (in the case of the number of mature granule neurons) or by the length of the subgranular zone (SGZ) (in the case of the number of DCX+ neuroblasts) in order to calculate the total number of cells per animal (Llorens-Martin et al., 2006). Bolos2018-->
-<!-- Assessment was performed by independent blinded investigators who quantified the total number of activated microglia. The numbers of activated microglia in each treatment group were expressed as a percentage of the total number of cells counted. --><!-- In the other cases, quantification has been validated by two independent people. -->
-<!-- Brightfield images have been acquired using a Widefield Observer (Zeiss) inverted microscope and a Vectra Polaris (Perkin Elmer) slide scanner. -->
-<!--For cell quantification of fluorescent images and brightfield images in which no automated quantification was possible, a minimum of eight randomly chosen regions of equal dimensions per rat and region were acquired.
-Total cell numbers per mm2 were calculated based on the image dimensions. -->
-<!-- For quantification of the single-channel brightfield images and the BaseScope IHC double-positive images, the number of cells was also quantified using the Fiji cell counter plugin. -->
-<!-- The average of these different regions was taken and considered as n = 1. 
-Where possible, brightfield images were quantified automatically. 
-Therefore, whole slides were scanned using a slide scanner. 
-Using QuPath, a minimum of four random regions per sample and condition were annotated, and cells within these regions were quantified using the automated ‘positive cell detection’ plugin.-->
-<!--For the quantification of the duplex BaseScope, random brightfield images were acquired in the white matter of control donors. -->
+The number of cells was counted  separately in the central and basolateral amygdala.
+All DAPI-labeled cells expressing markers (CAMKII, SOM, PKC`r knitr::asis_output("\U03B4")`) were counted in the BLA or CeA and subsequently classified as "total CAMK+/SOM/PKC/-labeled" cells. 
+The percentage of marker-labeled neurons that express CX3CR1 in a given nucleus was calculated as the percentage of the number of double labeled cells over that of specific marker-positive cells.
 
 ## Morphometric analysis of the dendritic spines of neuronal primary cell cultures
 

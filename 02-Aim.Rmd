@@ -33,9 +33,9 @@ immunohistochemical methods, were used in this project --><!-- several research 
 Precisely, to examine the membrane properties and synaptic transmission of BLA and CeA neurons in brain slices and their sensitivity to chosen chemokine application, *in vitro*  whole-cell patch-clamp recordings were performed in rat brain slices containing the amygdala. 
 BLA or CeA neuron membrane properties, spontaneous and miniature excitatory and inhibitory synaptic transmission (sEPSCs/mEPSCs/sIPSCs/mIPSCs) were collected before and after bath application of chosen chemokines. 
 Notably, to verify whether astrocytes or microglia are involved in observed effects, in subsets of experiments, recordings were made in the presence of either astrocytic toxin (i.e., fluorocitrate) or the inhibitor of microglial activity (i.e., minocycline).<!-- were additionally pre-applied.-->
-To gain additional insights into chemokines' coordination of local communication between neurons, microglia, and astrocytes, the co-localization of chemokine (CXCL12/CX3CL1) or their receptors (CX3CR1/CXCR4) with markers of specific cell types (neurons, microglia, astrocytes) in the chosen amygdalar nuclei (BLA/CeA) was examined.
-Coronal rat brain slices containing the BLA and the CeA were selected and immunohistochemically processed using specific primary antibodies against chosen cell markers and the chemokine or chemokine receptor of interest. <!-- dodać markery-->
-Fluorescent microscopy was utilized to investigate and quantify co-localization within these two nuclei of the amygdala. <!--   (Appendix A)  .     -->
+To gain additional insights into the role of CX3CL1/CX3CR1 signaling in the amygdala, additional experiments were made to measure their potential modulation of the synaptic plasticity, dendritic morphology. 
+The co-localization of CX3CR1 expression with neuronal markers such as NeUN, MAPK, CAMKII`r knitr::asis_output("\U03B1")`, SOM, and PKC`r knitr::asis_output("\U03B4")` was also examined by using immunohistochemistry.
+Fluorescent microscopy was utilized to investigate and quantify co-localization within these two nuclei of the amygdala.<!--   (Appendix A)  .     -->
 
 <!--```{r design, fig.cap='**A schematic illustrating experimental designs of presented PhD dissertation** ', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/design.png")

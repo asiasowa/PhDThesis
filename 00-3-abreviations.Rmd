@@ -89,6 +89,65 @@ x <- tribble(
     "LC", "locus coeruleus",
     "NTS", "nucleus of the solitary tract",
     "PCs", "principal cells", 
+    "SOM", "somatostatin",
+    "CCK", "cholecystokinin",
+    "PV", "parvalbumin",
+    "CR", "calretinin",
+    "CB", "calbindin",
+    "VIP", "vasoactive intestinal peptide",
+    "AIS", "axon initial segment",
+    "NA", "nucleus accumbens",
+    "BNST", "bed nucleus of the stria terminalis ",
+    "D1", "dopamine type-1 receptor",
+    paste0("mGluR1", "$\\alpha$"), paste0("metabotropic glutamate receptors 1", "$\\alpha$"),
+    "CeC", "capsular part of the central amygdala",
+    "CeL", "lateral part of the central amygdala",
+    "CeM", "medial part of the central amygdala",
+    "CeI", "intermediate part of the central amygdala",
+    "PVT", "paraventricular nucleus of the thalamus",
+    "PBN", "parabrachial nucleus",
+    "LF", "Late-Firing",
+    "RS", "Regular-Spiking",#44SKOŃCZONE
+    "CRF", "corticotropin-releasing factor",
+    "OR", "oxytoxin receptors",
+    "ENK", "enkephalin", 
+    paste0("PKC", "$\\delta$"), paste0("protein kinase C", "$\\delta$"),
+    "PAG", "periaqueductal gray",
+    "DVC", "dorsal vagal complex",
+    "LH", "lateral hypothalamus",
+    "PFC", "prefrontal cortex",
+    "TTX", "tetrodotoxin",
+    "DMSO", "dimethyl sulfoxide",
+    "ACSF", "artificial cerebrospinal–fluid",
+    "RT", "room temperature",
+    "DIC", "differential interference contrast",
+    "FPs", "field potentials",
+    "PPR", "The paired-pulse ratio",
+    "TBS", "theta burst stimulation",
+    "PBS","phosphate-buffered saline",
+    "AraC", "cytarabine",
+    "CaMKII", "Calcium/calmodulin-dependent protein kinase II", #dodać we właściwym miejscu
+    "LTD", "long-term depression",
+    "eEPSC", "evoked EPSC",
+    "E/I", "excitatory/inhibitory",
+    "HCN", "hyperpolarization-activated cyclic nucleotide-modulated channel",
+    "GFP", "green fluorescent protein",
+    "MMP", "matrix metalloproteases",
+    "i.c.v", "intracerebroventricularly",
+    "i.p", "intraperitoneally",
+    "EPSPs", "excitatory postsynaptic potentials",
+    "fEPSPs", "field excitatory postsynaptic potentials",
+    "GFP", "green fluorescent protein",
+    "LHA", "lateral hypothalamus area",
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -100,26 +159,16 @@ x <- tribble(
  
    
    
-    "CeC", "capsular part of the central amygdala",
-    "CeL", "lateral part of the central amygdala",
-    "CeM", "medial part of the central amygdala",
-    "CeI", "intermediate part of the central amygdala",
-    "BNST", "the bed nucleus of stra terminalis",
-  
+ 
    
     "AHP", "afterhyperpolarization",
 
-    "TTX", "tetrodotoxin",
-    "SOM", "somatostatin",
-    "VIP", "vasoactive intestinal peptide",
-    "CCK", "cholecystokinin",
-    "PV", "parvalbumin",
-    "PKC", "",
-    "CRF", "corticotropin-releasing factor",
-    "OR", "oxytoxin receptors",
-    "ENK", "enkephalin", 
-    paste0("PKC", "$\\delta$"), paste0("protein kinase C", "$\\delta$"),
-    "LF", "late-firing",
+   
+    
+   
+
+
+
 
     "mPFC", "medial part of prefrontal cortex",
     "MGN", "the medial geniculate nucleus",
@@ -144,23 +193,9 @@ x <- tribble(
     "DRG", "dorsal horn of the spinal cord",
     "SLMVs", "synaptic-like microvesicles",
     "VGLUTs", "vesicular glutamate transporters",
-   
-
-    "LTD", "long-term depression",
+  
     "ENK", "enkephalin",
 
-
-    "PFLH", "perifornical lateral hypothalamus",
-
-
-    "GDPs", "giant depolarizing potentials",
-    "OF", "open field test",
-
-    "NOR", "novel object recognition test",
-    "TST", "test suspension test",
-    "FST", "forced swim test",
-    "EZM", "evevated-zero maze",
-    "LDB", "light/dark box test"
 ) %>%
     arrange(Abbreviation)
 knitr::kable(x)

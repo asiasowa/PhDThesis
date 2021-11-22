@@ -575,7 +575,9 @@ No significant differences were evident between the input–output curves of FPs
 It indicates that CX3CL1 did not modulate the baseline excitatory activity in the BLA under our experimental conditions.
 The paired-pulse ratio, a form of short-term plasticity sensitive mainly to presynaptic changes [@stuart_1991], was also investigated.
 <!-- jedno zdanie że external capsule input stimulation led to PPF in all experiments -->
-This parameter also remained unaffected by CX3CL1 treatment (<!--number of slices = uzupełnić,-->H= 3.930, p = 0.27, Kruskal-Wallis test; see Fig. \@ref(fig:CX3CL1BLALTP)b), suggesting CX3CL1 action in the BLA is rather not presynaptic.
+PPR, a measure of short-term synaptic plasticity, is defined as the ratio of the amplitude of the second response to that of the first, which depends on the probability of vesicular release at the synapse.
+This parameter also remained unaffected by CX3CL1 treatment (<!--number of slices = uzupełnić,-->H= 3.930, p = 0.27, Kruskal-Wallis test; see Fig. \@ref(fig:CX3CL1BLALTP)b). 
+Thus, the unaffected PPR suggests a similar release probability of glutamate and, therefore, a postsynaptic mechanism of CX3CL1 action.
 
 Notably, upon application of Theta Burst Stimulation (TBS), external capsule-evoked field potentials in the BLA were effectively potentiated in the control slices, but not in the slices treated with CX3CL1, as revealed by a significant decrease measured by the comparison of average potentiation before and after LTP induction (F(2, 26) = 156.6, p < 0.001, ANOVA and Tukey's post hoc test<!--jaka?-->; see Fig.\@ref(fig:CX3CL1BLALTP)c).
 However, the additional presence of AZD8797, CX3CR1 antagonist, did not fully abolish this effect (F(2, 26) = 156.6, p < 0.001, ANOVA and Tukey's post hoc test).
@@ -634,14 +636,16 @@ Moreover, given that even a slight reduction in the number of glial cells in alm
 Finally, in accordance with the reported CX3CL1-mediated impairment in the LTP at cortico-BLA synapses, the immature morphology of dendritic spines might be linked to decreased synaptic efficacy and, thereby, decreased magnitude of synaptic potentiation.
 Given that neurons from amygdala primary cultures displayed that immature phenotype when AraC was present in the medium, it raises the possibility of the glial involvement in these effects.
 
-```{r spinesss, fig.caption = "CX3CL1 altered the morphology of dendritic spines in neuronal cultures from the rat amygdala.", echo = FALSE, warning = FALSE, message= FALSE, fig.width= 5, fig.height= 8}
+```{r spinesss, fig.caption = "...", echo = FALSE, warning = FALSE, message= FALSE, fig.width= 5, fig.height= 8}
 
 plot <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\CX3CL1\\HODOWLE_AMYGDALA_WARSZAWA\\hodowle_aftersorting.png")
 
 plot
 
-#![]("D://OneDrive//elektrodata//PRELUDIUM//phd//CX3CL1//HODOWLE_AMYGDALA_WARSZAWA//hodowle_aftersorting.png")
 ```
+
+
+<!-- CX3CL1 altered the morphology of dendritic spines in neuronal cultures from the rat amygdala.-->
 
 ### CX3CL1 and CX3CR1 are expressed in principal cells in the basolateral nucleus of the amygdala
 

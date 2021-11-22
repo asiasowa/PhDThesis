@@ -103,7 +103,7 @@ R~m~ was measured following Ohm's law (R~m~ = $\frac{dV~m~}{I}$)<!--(R~m~ = dV~m
 C~m~ calculated according to the equation C~m~= $\frac{\tau~m~}{R~m~}$).
 
 Cell excitability was determined by analyzing the number of action potentials evoked by current steps of increasing amplitude and fitting a linear regression model (see Fig. \@ref(fig:methodIV), parts a and b).
-(5) The gain (slope) and (6) rheobase (minimal current necessary to fire the first action potential were determined for further analysis.
+(5) The gain (slope) and (6) threshold current/rheobase (minimal current necessary to fire the first action potential were determined for further analysis.
 (7) Action potential threshold corresponded to the voltage threshold of the first action potential elicited by a current step, defined as the voltage at which the time derivative of V~m~($\frac{\partial V}{\partial t}$) is 20 V s^−1^.
 (8) The spike latency (often referred to as onset or delay), measured from the start of square depolarizing current pulse injection to the peak of the first action potential evoked by the rheobase.
 (9) The amplitudes of the first action potential (AP; measured from the threshold to the positive peak of the rheobase).
@@ -181,7 +181,7 @@ Thus, they were excluded from further analysis.
 The Late-Firing neurons show a significant delay before the onset of the first action potential (`r knitr::asis_output("\U223C")`100–200 ms).
 During  this  delay,  the  membrane potential depolarized slowly in such a way there is a depolarizing ramp (see Fig. \@ref(fig:methodsBLACeAIVrep)b, upper trace).
 Little or no spike-frequency adaptation was seen in these neurons.
-The Regular-Spiking neurons, also described as early-spiking (ES), exhibit shorter AP onset, `r knitr::asis_output("\U223C")`50 ms, and a more prominent adaptation ratio.
+The Regular-Spiking neurons, also described as Early-Spiking, exhibit shorter AP onset, `r knitr::asis_output("\U223C")`50 ms, and a more prominent adaptation ratio.
 
 However, similar to what was observed by @hunt_2017, the AP onset highly varied in recorded cells regardless of their type.
 Given that the classification based on the presence of spike frequency accommodation was reported to be reliable [@hou_2016; @hunt_2017], the classification was based on both the AP onset and the presence of spike frequency adaptation.<!--okropne zdanie...-->
@@ -220,7 +220,7 @@ After 15 minutes of baseline recording, the LTP was induced using theta burst st
 It consisted of 10 trains of stimuli at 5 Hz, repeated five times every 15 s. 
 Each train consisted of five pulses at 100 Hz. 
 During TBS, pulse duration was extended to 0.3 ms. 
-fEPSPs were recorded at 0.016 Hz for another hour.
+Field excitatory postsynaptic potentials (fEPSPs) were recorded at 0.016 Hz for another hour.
 The amount of LTP was determined as an average increase in the amplitude of FPs recorded between 45 and 60 min after TBS, relative to baseline.
 The health of the slice was monitored by continuously recording extracellular field potentials throughout experiments. 
 Slices displaying unstable baseline recording were discarded. 
@@ -239,13 +239,13 @@ After a post-fixation period of 12 h, 50`r knitr::asis_output("\U03BC")`m-thick 
 ### Immunofluorescence staining
 <!-- zmienić/// dokończyć -->
 To analyze co-localization of CX3CR1 with neurons<!--inaczej to ująć bo nie tylko neurons--> in the BLA or CeA, slices containing amygdala were initially washed in PBS (3 × 10 min each) and then blocked for 1 h (10% normal goat serum, 0.1% BSA, 0.05% Triton X-100 in PBS).
-CX3CR1 localization to neurons was determined by a sequential incubation of brain slices with a rabbit anti-CX3CR1 antibody (1:100; Torrey Pines Biolabs, USA) with either mouse anti-NeuN antibody (1:200; Millipore, USA), mouse anti-CAMKII`r knitr::asis_output("\U03B1")` (1:1000; Invitrogen, USA), mouse anti-PKC`r knitr::asis_output("\U03B1")` (1:700; BD Biosciences, USA), or mouse anti-SOM (1:700; GeneTex, USA).
+CX3CR1 localization to neurons was determined by a sequential incubation of brain slices with a rabbit anti-CX3CR1 antibody (1:100; Torrey Pines Biolabs, USA) with either mouse anti-NeuN antibody (1:200; Millipore, USA), mouse anti-CAMKII`r knitr::asis_output("\U03B1")` (1:1000; Invitrogen, USA), mouse anti-PKC`r knitr::asis_output("\U03B4")` (1:700; BD Biosciences, USA), or mouse anti-SOM (1:700; GeneTex, USA).
 Antibody incubations were conducted overnight at 4`r knitr::asis_output("\U00B0")`C, and slices were kept in the dark following the addition of the mouse antibodies. 
 Immunohistochemical labeling was visualized with an Alexa 647-conjugated donkey anti-rabbit secondary antibody (1:200; Jackson ImmunoResearch, USA) and an Alexa 555-conjugated donkey anti-mouse secondary antibody (1:200; Jackson ImmunoResearch, USA) for 1 h at room temperature in the dark. 
 
 Next, brain sections were then washed in PBS (3 × 10 min each) and placed in a cocktail of Alexa Fluor 647- conjugated donkey anti-goat secondary antibody (1:200; Molecular Probes) to detect CXCR4 and CX3CL1, and Alexa Fluor 488-conjugated donkey anti-rabbit secondary antibody (1:200; Molecular Probes) to detect CXCL12 and CX3CR1, for 1 h at room temperature in the dark.<!-- zmienić ...// Slices were then washed in PBS (3 × 10 min each) and incubated for 2 h in secondary antibody solution (Alexa Fluor-568 goat anti-rabbit; 1:500 dilution; Invitrogen A-11011). -->
 Sections were washed in PBS three more times before sections were mounted on Superfrost Plus slides (Fisher Scientific, Pittsburgh, PA) and cover slipped with Prolong Gold Antifade.<!-- zmienić // Sections were washed in PBS three more times before the slides were cover slipped with Vectashield with DAPI.--><!-- mounted onto glass slides. -->
-The specificity of the staining or antibodies was tested in previous studies (Verge et al., 2004; Lindia et al., 2005). <!-- zmienić --> 
+The specificity of the staining or antibodies was tested in previous studies [@erondu_1985; @verge_2004].<!--na razie tylko CX3CR1 i CAMKII-->
 
 
 

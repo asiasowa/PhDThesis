@@ -17,7 +17,7 @@ Historically, amygdala nuclei are divided into three groups: (1) the deep or bas
 Here, the following classification will be used: the basolateral complex of the amygdala (BLA), the central amygdala (CeA), and intercalated cell (ITC) masses, based on many excellent papers (@bocchio_2016; @duvarci_2014; @ehrlich_2009; @pape_2010; @spampanato_2011, see Fig. \@ref(fig:amygdalastr)).
 Nuclei that do not fall into any of these categories are beyond the scope of this dissertation and are described elsewhere [@pitknen_1997; @sah_2003]. <!--check citations and more? -->
 
-```{r amygdalastr, fig.cap= '**Physiological and morphological properties of amygdalar neurons**', fig.align = 'center', echo = FALSE, message= FALSE }
+```{r amygdalastr, fig.cap= '**Physiological and morphological properties of amygdalar neurons** BMA, basomedial nucleus; B, basal nucleus; LA, lateral nucleus; CeL, lateral subdivision of the central nucleus; CeM, medial subdivision of the central nucleus; ITC, intercalated cell.', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/amygdalastr.png")
 ```
 
@@ -61,7 +61,7 @@ Their dendritic trees could be subdivided into multipolar, bitufted, bipolar, an
 Moreover, although most BLA interneurons have aspiny dendrites, those protuberances of some interneurons show a more spine-sparse morphology [@klenowski_2015]. 
 It should also be noted that BLA interneuron axons branch sparingly, forming dense terminals and collaterals with principal neurons. 
 
-```{r amygdalaconnect, fig.cap='**A schematic illustrating (a) amygdala inputs, (b) amygdala outputs (c) intracellular connectivity.**', fig.align = 'center', echo = FALSE, message= FALSE }
+```{r amygdalaconnect, fig.cap='**A schematic illustrating (a) amygdala inputs, (b) amygdala outputs (c) intracellular connectivity.** PFC, prefrontal cortex; DRN, dorsal raphe nucleus; PVT, paraventricular nucleus of the thalamus ; SN, substantia nigra; VTA, ventral tegmental area; LC, locus coeruleus; NST, nucleus of the solitary tract; LH, lateral hypothalamus; BNST, bed nucleus of the stria terminalis; PAG, periaqueductal gray, NAc, nucleus accumbens core; vHPC, ventral hippocampus; BMA, basomedial nucleus; B, basal nucleus; LA, lateral nucleus; CeL, lateral subdivision of the central nucleus; CeM, medial subdivision of the central nucleus; ITC, intercalated cell; PV, parvalbumin, CCK; cholecystokinin; CB, calbindin; PKCdelta, protein kinase C, SOM, somatostatin.', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/amygdalaconnect.png")
 ```
 

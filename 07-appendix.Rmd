@@ -1734,14 +1734,70 @@ figure1
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   
 
-* **National Science Centre Poland doctoral scholarship, ETIUDA**: Wpływ wybranych chemokin na właściwości komórek nerwowych i przekaźnictwo synaptyczne w obszarze kompleksu ciała migdałowatego szczura [Effects of chosen chemokines on neuronal properties and synaptic transmission in central and basolateral complex of the rat amygdala], UMO-2019/32/T/NZ4/00592 - grant holder 2019-2020
+* **National Science Centre Poland doctoral scholarship, ETIUDA**: Wpływ wybranych chemokin na właściwości komórek nerwowych i przekaźnictwo synaptyczne w obszarze kompleksu ciała migdałowatego szczura [Effects of chosen chemokines on neuronal properties and synaptic transmission in central and basolateral complex of the rat amygdala], UMO-2019/32/T/NZ4/00592 -  2019-2020
 
-* **National Science Centre Poland Grant, PRELUDIUM**: 	Wpływ wybranych chemokin na aktywność oraz transmisję synaptyczną neuronów w centralnym i podstawnobocznym kompleksie ciała migdałowatego [Effects of chosen chemokines on neuronal activity and synaptic transmission in central and basolateral complex of the amygdala], UMO-2016/21/N/NZ4/03621, grant holder 2016-2020 <!--(grant holder: Joanna Ewa Sowa)-->
+* **National Science Centre Poland Grant, PRELUDIUM**: 	Wpływ wybranych chemokin na aktywność oraz transmisję synaptyczną neuronów w centralnym i podstawnobocznym kompleksie ciała migdałowatego [Effects of chosen chemokines on neuronal activity and synaptic transmission in central and basolateral complex of the amygdala], UMO-2016/21/N/NZ4/03621, 2016-2020 <!--(grant holder: Joanna Ewa Sowa)-->
 
 ## PhD candidate’s scientific activity
+
 ### Publications
+
+1. Kusek M, Siwiec M, Sowa JE, Bobula B, Bilecki W, Ciurej I, Kaczmarczyk M, Kowalczyk T, Maćkowiak M, Hess G, Tokarski K. 5-HT7 receptors enhance inhibitory synaptic input to principal neurons in the mouse basal amygdala. Neuropharmacology. 2021 Oct 15;198:108779. doi: 10.1016/j.neuropharm.2021.108779. Epub 2021 Sep 3. PMID: 34481835.
+
+2. Sowa JE, Tokarski K. Cellular, synaptic, and network effects of chemokines in the central nervous system and their implications to behavior. Pharmacol Rep. 2021 Dec;73(6):1595-1625. doi: 10.1007/s43440-021-00323-2. Epub 2021 Aug 26. PMID: 34498203.
+
+3. Siwiec M, Kusek M, Sowa JE, Tokarski K, Hess G. 5-HT7 receptors increase the excitability of hippocampal CA1 pyramidal neurons by inhibiting the A-type potassium current. Neuropharmacology. 2020 Oct 15;177:108248. doi: 10.1016/j.neuropharm.2020.108248. Epub 2020 Jul 29. PMID: 32736087.
+
+4. Skupio U, Tertil M, Bilecki W, Barut J, Korostynski M, Golda S, Kudla L, Wiktorowska L, Sowa JE, Siwiec M, Bobula B, Pels K, Tokarski K, Hess G, Ruszczycki B, Wilczynski G, Przewlocki R. Astrocytes determine conditioned response to morphine via glucocorticoid receptor-dependent regulation of lactate release. Neuropsychopharmacology. 2020 Jan;45(2):404-415. doi: 10.1038/s41386-019-0450-4. Epub 2019 Jun 29. PMID: 31254970; PMCID: PMC6901448.
+
+5. Pochwat B, Szewczyk B, Kotarska K, Rafało-Ulińska A, Siwiec M, Sowa JE, Tokarski K, Siwek A, Bouron A, Friedland K, Nowak G. Hyperforin Potentiates Antidepressant-Like Activity of Lanicemine in Mice. Front Mol Neurosci. 2018 Dec 12;11:456. doi: 10.3389/fnmol.2018.00456. PMID: 30618608; PMCID: PMC6299069.
+
+6. Sowa J, Kusek M, Siwiec M, Sowa JE, Bobula B, Tokarski K, Hess G. The 5-HT7 receptor antagonist SB 269970 ameliorates corticosterone-induced alterations in 5-HT7 receptor-mediated modulation of GABAergic transmission in the rat dorsal raphe nucleus. Psychopharmacology (Berl). 2018 Dec;235(12):3381-3390. doi: 10.1007/s00213-018-5045-y. Epub 2018 Sep 28. PMID: 30267130; PMCID: PMC6267141.
+
+7. Sowa JE, Ślusarczyk J, Trojan E, Chamera K, Leśkiewicz M, Regulska M, Kotarska K, Basta-Kaim A. Prenatal stress affects viability, activation, and chemokine signaling in astroglial cultures. J Neuroimmunol. 2017 Oct 15;311:79-87. doi: 10.1016/j.jneuroim.2017.08.006. Epub 2017 Aug 19. PMID: 28844502.
+
 ### Oral presentations
+
+1.	Sowa JE, Kusek M., Siwiec M., Hess G., Tokarski K. (2018) 5-HT7 receptor increases GABAergic transmission in mouse basolateral amygdala, Acta Neurobiol Exp supp. 2018, vol 78: XII, 11th Conference on Electrophysiological Techniques in Bioelectricity Research, Warsaw, Poland.
+
+2.	Sowa JE,  Ślusarczyk J, Trojan E, Chamera K, Basta-Kaim A (2017) New approach to chemokines network in the central nervous system. Ból, 18, Special Issue: EFIC School, Krakow, Poland
+
+3.	Sowa JE, Siwiec M., Barut J., Golda S., Przewlocki R., Tokarski K., Hess G. (2017) Modulation of potassium currents in primary astroglia cultures by prenatal stress and dexamethasone. Abstract book of International Astrocyte School 2017, Bertinoro, Italy
+
+4.	Sowa JE, Slusarczyk J., Trojan E., Basta-Kaim A. (2016) The impact of prenatal stress on CX3CL1 and CXCL12 and their receptor expression and protein levels in primary astroglia cultures. Abstract book of 1st Polish Neuroscience Conference “Neuron”
+
 ### Posters
+
+1.	Sowa JE, Solarz A, Chocyk A, G Hess, K Tokarski (2019) Electrophysiological effects of CX3CL1 on rat amygdala neurons. 14th International Congress of the Polish Neuroscience Society, Katowice, Poland
+
+2.	Sowa JE, Hess G., Tokarski K. (2019) „ Neuron-dependent actions of fractalkine in the rat basolateral amygdala. Focus on excitatory synaptic transmission”, FENS Regional Meeting 2019, Belgrade, Serbia
+
+3.	Sowa JE, Hess G., Tokarski K. (2019) „The electrophysiological action of fractalkine in the brain. Focus on the rat basolateral amygdala”, Festival of Neuroscience BNA 2019, Dublin, Ireland.
+
+4.	Sowa JE, Siwiec M, Staszelis A, Bocian R, Tokarski K, Kowalczyk K (2019) “In search of a theta rhythm: Investigating the electrophysiological properties and synaptic transmission of the rat supramammillary nucleus neurons”, 5th International Conference of Cell Biology, Krakow, Poland
+
+5. 	Sowa JE, Kusek M., Siwiec M., Hess G., Tokarski K. (2018) 5-HT7 receptor-mediated modulation of synaptic transmission in the mice basolateral amygdala, European Neuropsychopharmacology 29:S199-S200. doi: 10.1016/j.euroneuro.2018.11.33. 31th  ECNP Congress Barcelona 2018, Barcelona, Spain
+
+6.	Sowa JE, Hess G., Tokarski K. (2018) “Are microglia the only mediators of fractalkine actions in the rat basolateral amygdala? Insights from electrophysiology”, 11th FENS Forum of Neuroscience, Berlin, Germany
+
+
+7.	Sowa JE., Hess G., Tokarski K. (2018) Neuron- and microglia-dependent actions of fractalkine on neurons activity in the rat basolateral amygdala, Abstract book of Neuronus 2018 IBRO Neuroscience Forum, p 118, Kraków, Poland.
+
+8.	Sowa JE., Hess G., Tokarski K. (2018) How does fractalkine modulate synaptic transmission in the rat basolateral amygdala? Insights from electrophysiology. European Neuropsychopharmacology 28:S8-S9. doi: 10.1016/j.euroneuro.2017.12.025, Nice, France.
+
+9.	Sowa JE., Tokarski K., Hess G. (2017) Fractalkine alters synaptic activity of rat principal cells in the basolateral amygdala. European Neuropsychopharmacology 27:S631-S632. doi: 10.1016/S0924-977X(17)31191-4. 30th  ECNP Congress Paris 2017, Paris, France
+
+10.	Sowa JE,  Siwiec M,  Skupio U, Tertil M, Przewlocki R, Tokarski K, Hess G (2017) Silencing astrocytic glucocorticoid receptors alters synaptic activity of mouse nucleus accumbens neurons. British Neuroscience Association 2017 Festival of Neuroscience. Brain and Neuroscience Advances, 251, doi: 10.1177/2398212817705279, Birmingham, United Kingdom
+
+11.	Sowa JE, Hess G., Tokarski K. (2017) Effects of fractalkine on excitatory and inhibitory neurotransmission in the rat basolateral amygdala. Abstract book of 6th  International Conference Aspects of neuroscience, Warsaw, Poland.
+
+12.	Sowa JE, Siwiec M., Tokarski K., Hess G. (2017) Activation of 5-HT7 receptors affects neuronal excitability in rat CA1 hippocampus by inhibiting fast inactivating potassium channels, 13th  International Congress of the Polish Neurosciences Society, Acta Neurobiol Exp suppl.  2017, 77: I–CXLII,  C, Warsaw, Poland
+
+13.	Sowa JE., Skupio U., Siwiec M., Tertil M., Przelowcki R., Tokarski K., Hess G. (2017) Ablation of glucocorticoid receptors in astrocytes alters synaptic activity in mouse medium spiny neurons in the nucleus accumbens, Abstract book of 2nd Nencki Symposium on: Neurons in action, Warsaw, Poland
+
+14.	Sowa JE, Slusarczyk J., Trojan E., Chamera K., Basta-Kaim A. (2016) The impact of prenatal stress on the viability and activation of astrocytes in primary cultures, Abstract book of Neuronus IBRO&IRUN Forum 2016, Krakow, Poland
+
+
 
 
 \newpage

@@ -66,27 +66,27 @@ For this reason, recordings were made with the additional presence of the picrot
 As expected, the CX3CL1 effect was fully abolished when the GABA~A~ and GABA~B~ receptors were blocked (baseline = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)`, CX3CL1 (2nM) = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, n = `r BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_df_final %>% dplyr::filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_gabafrak2nM_BLA_stat_tres`, Fig. \@ref(fig:CX3CL1BLAexcitabilityfrak)b).
 Thus, these data suggest that CX3CL1 reduced principal cells' firing *via* a CX3CR1-, microglia-, and interneuron-dependent manner.<!-- cooperate?-->
 
-```{r CX3CL1BLAexcitabilityfrak, fig.cap= "**Effects of CX3CL1 on the spike threshold current**  **(a)** Schematics of presented conditions. **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions. **(c)** Pie charts presenting the proportion of types of neuronal responses to CX3CL1 application. **(d)** Plots presenting input-output relationships of representative cells. **(e)** Voltage traces from representative cells to 300, 360, and 400pA injection currents before (blue) and after the CX3CL1 application (red) across different conditions. Scale bar: 10mV, 100ms.", fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 18}
+```{r CX3CL1BLAexcitabilityfrak, fig.cap= "**Effects of CX3CL1 on the spike threshold current**  **(a)** Schematics of presented conditions. **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions. **(c)** Pie charts presenting the proportion of types of neuronal responses to CX3CL1 application. **(d)** Plots presenting input-output relationships of representative cells. **(e)** Voltage traces from representative cells to 300, 360, and 400pA injection currents before (blue) and after the CX3CL1 application (red) across different conditions. Scale bar: 10mV, 100ms.", fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 14}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
-inset_frak2nM <- image_read("images//results//inset_frak2nM.png")
-inset_frak2nM <- image_ggplot(inset_frak2nM)
-inset_frak5nM <- image_read("images//results//inset_frak5nM.png")
-inset_frak5nM <- image_ggplot(inset_frak5nM)
-inset_ab <- image_read("images//results//inset_ab.png")
-inset_ab <- image_ggplot(inset_ab)
-inset_azdfrak2nM <- image_read("images//results//inset_azdfrak2nM.png")
-inset_azdfrak2nM <- image_ggplot(inset_azdfrak2nM)
-inset_azda <- image_read("images//results//inset_azd.png")
-inset_azda <- image_ggplot(inset_azda)
-inset_minofrak2nM <- image_read("images//results//inset_minofrak2nM.png")
-inset_minofrak2nM <- image_ggplot(inset_minofrak2nM)
-inset_minoa <- image_read("images//results//inset_minoa.png")
-inset_minoa <- image_ggplot(inset_minoa)
-inset_gaba <- image_read("images//results//inset_gaba.png")
-inset_gaba <- image_ggplot(inset_gaba)
+inset_frak2nM <- fig("images//results//inset_frak2nM.png", link_dim = F, aspect.ratio = 'free')
+
+inset_frak5nM <- fig("images//results//inset_frak5nM.png", link_dim = F, aspect.ratio = 'free')
+
+inset_ab <- fig("images//results//inset_ab.png", link_dim = F, aspect.ratio = 'free')
+
+inset_azdfrak2nM <- fig("images//results//inset_azdfrak2nM.png", link_dim = F, aspect.ratio = 'free')
+
+inset_azda <- fig("images//results//inset_azd.png", link_dim = F, aspect.ratio = 'free')
+
+inset_minofrak2nM <- fig("images//results//inset_minofrak2nM.png", link_dim = F, aspect.ratio = 'free')
+
+inset_minoa <- fig("images//results//inset_minoa.png", link_dim = F, aspect.ratio = 'free')
+
+inset_gaba <- fig("images//results//inset_gaba.png", link_dim = F, aspect.ratio = 'free')
+
 
 IV_representative_frak2nM <- fig("images//results//IV_representative_frak2nM.png", link_dim = F, aspect.ratio = 'free')
 
@@ -165,7 +165,7 @@ EEEE
 
 figure1 <- wrap_plots(A = A, B = B, C= C, D= D, E= E, design = lay)
 
-figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1')) + plot_layout(heights = c(0.2, 0.7, 1, 0.5, 1))
+figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1')) + plot_layout(heights = c(0.5, 0.7, 1, 0.5, 1))
 
 figure1
 

@@ -464,28 +464,28 @@ However, astrocytes were also shown to be active players in GABAergic transmissi
 
 # making boxplots with facets
 
-bp_CeA_freq_sIPSC_all <- plot_boxplot(CeA_sIPSC_all_subset, median_Frequency, ylabel = "IPSC Frequency (Hz)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "Late-Firing neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+bp_CeA_freq_sIPSC_all <- plot_boxplot(CeA_sIPSC_all_subset, median_Frequency, ylabel = "IPSC Frequency (Hz)", vary1 = 0, vary2 = 4, dot_size = 2,  mtitle = "Late-Firing neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
 
 bp_CeA_freq_sIPSC_all <- bp_CeA_freq_sIPSC_all + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 3) 
 
 
-bp_CeA_freq_sIPSC_LF <- plot_boxplot(CeA_sIPSC_LF_subset, median_Frequency, ylabel = "IPSC Frequency (Hz)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "Late-Firing neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+bp_CeA_freq_sIPSC_LF <- plot_boxplot(CeA_sIPSC_LF_subset, median_Frequency, ylabel = "IPSC Frequency (Hz)", vary1 = 0, vary2 = 4, dot_size = 2,  mtitle = "Late-Firing neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
 
 bp_CeA_freq_sIPSC_LF  <- bp_CeA_freq_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 3) 
 
-bp_CeA_freq_sIPSC_RS <- plot_boxplot(CeA_sIPSC_RS_subset, median_Frequency, ylabel = "IPSC Frequency (Hz)", vary1 = 0, vary2 = 5, dot_size = 2,  mtitle = "Regular-Spiking neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
+bp_CeA_freq_sIPSC_RS <- plot_boxplot(CeA_sIPSC_RS_subset, median_Frequency, ylabel = "IPSC Frequency (Hz)", vary1 = 0, vary2 = 4, dot_size = 2,  mtitle = "Regular-Spiking neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
 
 bp_CeA_freq_sIPSC_RS  <- bp_CeA_freq_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 3) 
 
 # making boxplots for amplitude
-bp_CeA_amp_sIPSC_all  <- plot_boxplot(CeA_sIPSC_all_subset, median_Amplitude, ylabel = "IPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_amp_sIPSC_all  <- plot_boxplot(CeA_sIPSC_all_subset, median_Amplitude, ylabel = "IPSC Amplitude (pA)", vary1 = 0, vary2 = 30, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
 bp_CeA_amp_sIPSC_all  <- bp_CeA_amp_sIPSC_all  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
 
 
-bp_CeA_amp_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_LF_subset, median_Amplitude, ylabel = "IPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_amp_sIPSC_LF  <- plot_boxplot(CeA_sIPSC_LF_subset, median_Amplitude, ylabel = "IPSC Amplitude (pA)", vary1 = 0, vary2 = 30, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
 bp_CeA_amp_sIPSC_LF  <- bp_CeA_amp_sIPSC_LF  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
 
-bp_CeA_amp_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_RS_subset, median_Amplitude, ylabel = "IPSC Amplitude (pA)", vary1 = 0, vary2 = 40, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
+bp_CeA_amp_sIPSC_RS  <- plot_boxplot(CeA_sIPSC_RS_subset, median_Amplitude, ylabel = "IPSC Amplitude (pA)", vary1 = 0, vary2 = 30, dot_size = 2,  mtitle = "") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5))
 bp_CeA_amp_sIPSC_RS  <- bp_CeA_amp_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1, scales = "free_x") + theme(plot.title = element_text(size= 14, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5),  strip.text = element_text(size = 11, face="bold"), strip.background = element_blank()) + stat_compare_means(method = 't.test', hide.ns = TRUE, label = 'p.signif', paired = TRUE, label.x.npc = 'center', var.equal = TRUE, size = 8, label.y = 35)
 
 #importing representative traces

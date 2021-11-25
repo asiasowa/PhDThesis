@@ -1,71 +1,78 @@
 # Conclusions
 
-In the present work the role of two structurally different chemokines, CX3CL1 and CXCL12, in the amygdala was characterized, mainly using acute brain slices. 
-Both of these chemokines are emerging as crucial players in neuron-glial interactions and neuromodulation.
-Moreover, studies has implicated them in many behavioral ..., including anxiety-like behavior [@schubert_2018; @yang_2016].
-Indeed, there are several lines of evidence illustrating that BLA hyperexcitability manifests behaviorally as an increase in anxiety, emotional dysregulation, or development of seizure activity.
+In the present work the effects of two structurally different chemokines, CX3CL1 and CXCL12, on neurons electrical behavior as well as synaptic properties in the amygdala were investigated, mainly by employing a whole-cell patch-clamp technique. 
+Both of these chemokines are essential during neurodevelopment, and they have been emerging as key players in neuron-glial interactions and neuromodulation during adulthood[@rauxlegoazigo_2013; @trettel_2020].
+Moreover, studies have implicated them in many behavioral malfunctions, including anxiety-like behavior [@schubert_2018; @yang_2016].
+Indeed, several lines of evidence illustrate that BLA hyperexcitability manifests behaviorally as anxiety, emotional dysregulation, or development of seizure activity.<!--citations?-->
+
+As expected, both CX3CL1 and CXCL12 modulate the activity of the amygdala network; however, in an opposite manner.
+The main findings of the study regarding CX3CL1 in the BLA are as follows:
+(i) the CX3CL1 application resulted in decreased excitability and impaired LTP at the concentration of 5nM.
+(ii) GABAergic synaptic transmission was downregulated following CX3CL1 treatment.
+Among possible explanations, one hypothesis is that CX3CL1 acts on PV-expressing subpopulation of BLA interneurons. 
+These interneurons target the AIS of principal cells, and the decrease in GABAergic synapses in these area was shown to change the threshold current needed for producing an action potential.
+Moreover, this precise reduction of synapses in this critical area was shown to be mediated by microglia in the cortex.
+Due to the well-documented abundance of CX3CR1 receptor in the microglia and observed effects, it is possible the similar mechanism could be present in the amygdala.
+At the network level, PV-containing interneurons are also implicated in the attenuation of the LTP, further supporting the PV-preferential actions of the CX3CL1. 
+
+Similarly, CX3CL1 also displayed cell type-specific actions in the CeL. 
+Specifically, CX3CL1 was shown to reduce the input resistance and membrane time constant, decrease the excitability and induce depolarization. 
+These changes are reflective of HCN activation.
+Nevertheless, the reduced firing in the Regular-Firing cells is in a good agreement with decreased frequency of sIPSCs onto Late-Firing cells, as the Regular-Spiking neurons were previously reported to sent more dense and potent connections onto Late-Firing cells and *vice versa*. 
+
+Interestingly, the pre-treatment with minocycline, probably by inhibition of microglia, resulted in the increase in the firing of principal cells in the BLA and Late-Firing in the CeL. 
+These effects were eliminated after acute CX3CL1 application, supporting the notion that CX3CL1 is neuroprotective and reduced the augmented glutamatergic setting, as was reported in many animal models. 
+Thus, based on these findings, CX3CL1 exerted anxiolytic actions. 
 
 
+The results concerning CXCL12 are less straightforward.
+In the BLA, at the concentration of 5nM, the tendency toward the enhanced excitability of principal cells confirms the hypothesis from the previous study conduced by @yang_2016.
+However, the CXCL12-mediated enhancement of the excitatory transmission was not replicated here, probably due to a different slice orientation and/or the GABAergic modulation of this effect. 
+Indeed, the exogenous CXCL12 did affect the inhibitory synaptic transmission in a subset of principal cells, although these effects were not statistically significant. 
+Nevertheless, the majority of neurons responded with decreased frequency at the concentration of 2nM in the BLA, whereas at higher dose the median frequency of sIPSCs were increased. 
+
+On the other hand, in the CeL, the current results showed that the exogenous CXCL12 decreased threshold current, and thus increasing excitability of both Regular-Spiking and Late-Firing neurons. 
+However, the excitatory synaptic transmission was upregulated only onto Regular-Spiking neurons, suggesting that either BLA principal neurons or PVN neurons preferentially innervate the Regular-Spiking, SOM-expressing neurons, at least following CXCL12 application. 
+Importantly, based on the concentration (2nM vs 5nM), CXCL12 produced opposite trend towards  decreased or increased frequency of excitatory synaptic events. 
+This may be reflected by the findings reporting that in baseline condition principal cells preferentially innervate Late-Firing neurons, whereas following fear-conditioning this pattern changes [@li_2013a].
+In accordance with these observations, considering that the higher concentration of 5nM could be considered as inflammatory, the differences in the concentration of CXCL12 might reflect similar pattern.  
+Thus it is tempting to speculate that CXCL12 at the 5nM might mimic changes associated with fear conditioning. 
+
+
+
+
+Nevertheless, our data support the notion that <!--...an adequate cross-talk between microglia and neurons is required for the correct functional maturation of newborn granule neurons and for the proper regulation of emotional behavior. -->
+These data contribute to increasing our understanding of ...<!--AHN under both physiological and pathological conditions.-->
+
+Results of the present study add another piece to the growing body of evidence that CXCL12 mediates action on CeA activity.
+The role of CXCL12 is primarily dependent on its primary receptor, CXCR4, and not dependent on astrocytes.
+Moreover, the importance of using horizontal slices in electrophysiological studies when studying excitatory synaptic transmission is speculated. 
 The main findings of this study is that CX3CL1 <!--action requires the activation of A1A, A2AR and A3R, by locally released or tonic adenosine.-->
 Specifically, CX3CL1 <!--causes glutamatergic depression through A1R and A3R and potentiation through A2AR stimulation.-->
 Thus, CX3CL1 might affect <!--glutamatergic synapses in opposite way, depending on the prevailing functional expression of AR subtypes. -->
 
-In summary, our data demonstrate that baseline inhibitory synaptic transmission in BLA neurons is markedly enhanced by minocycline. 
-This may function to decrease the excitability of SG neurons, thus leading to a modulation of nociceptive transmission.- Peng2016
-
- Our data lay the fundamental groundwork to investigate microglia-astrocyte cross talk and juxtavascular microglial function in the healthy and diseased brain.
-
-However, considering that dendritic spines reflect the structural level of synaptic plasticity along with extensive evidence of chemokine actions on excitatory synaptic transmission and synaptic plasticity, it is tempting to speculate that chemokines actions on dendritic spines are still unexplored. 
- 
- 
- 
-Another important aspect of neuropeptide signalling in the central amygdala that we illustrated is that neuropeptides can antagonise each other’s action (CRF vs nociception and NPY;vasopressin vs oxytocin), or at least have opposing effects (PACAP and CGRP vs galanin), work synergistically (oxytocin and angiotensin IV), or have at least similar effects  (PACAP and CGRP, CRF and angiotensin-II). 
-This makes neuropeptide signalling in the central amygdala highly dynamic, which is further amplified by their ability to interfere with synaptic plasticity as seen for CGRP in threat learning (Han et al.2010). 
-Taken together, the rich diversity of neuro-peptides and their receptors in the central amygdala, second only to the hypothalamus, makes it possible to fine-tune amygdala activity and resulting output to maintain emotional homeostasis.  <!-- zerżnięte z van der bourg review o peptides in CeA - analogicznie dla chemokin -->
 
 
-
-
-
+Data presented in this PhD dissertation lay the fundamental groundwork to investigate neuron-glia crosstalk and chemokine signaling in the healthy and diseased amygdala.
+Together with previous studies, this work provides additional support for general hypothesis that chemokines, in addition to traditional neurotransmitters and neuropeptides, represent a neuromodulatory system in the CNS. <!--CX3CL1 and other chemokines may also represent a new class of CNS neuromodulators, impacting brain function *via* their effects on traditional neurotransmitter and neuropeptide systems, including the 5-HT system (Adler and Rogers, 2005; Adler et al., 2006; Calle-waere et al., 2007; Rostene et al., 2007). -->
+Moreover, observed opposing actions for CX3CL1/CX3CR1 and CXCL12/CXCR4 makes chemokine signaling in the amygdala highly dynamic, which is further amplified by their ability to interfere with synaptic plasticity and morphology of dendritic spines, at least for the CX3CL1. 
+Taken together, their network actions and the regulation of glia-neuron communication makes it possible to fine-tune amygdala activity and resulting output to maintain emotional homeostasis.  <!-- Taken together, the rich diversity of neuro-peptides and their receptors in the central amygdala, second only to the hypothalamus, makes it possible to fine-tune amygdala activity and resulting output to maintain emotional homeostasis. // zerżnięte z van der bourg review o peptides in CeA - analogicznie dla chemokin -->
 Thus, further experiments identifying the properties and functions of each of neuronal, microglial, astrocytic and, oligodendrocytic compartments remain to be addressed. 
 
+In addition, work presented here builds on the previously presented modulation of GABA synaptic activity at 5-HT neurons by CX3CL1 and CXCL12 by adding their regulation of amygdala microcircuits. 
+Thus, this may be clinically significant in the pathophysiology and treatment of 5-HT- and amygdala-related disorders, including depression and anxiety.
+Hence, the understanding of the peculiar pharmacological responses of chemokine receptors in different circuits and cell types of the amygdala is of particular importance, given their potential role in the etiology of emotional disorders and their corresponding usefulness as therapeutic targets to manage emotional disorders.
+
+<!--Nevertheless, even though chemokines are released during all pathological states, including inflammation, it is important to determine their role in physiological, non-inflammatory state. 
+Even though cytokines released by stress in brain have the capability of influencing neural function, it has yet to be determined how stress in a ‘‘sterile’’ environment (i.e., in the absence of infection) can increase these cytokines in brain. This latter aspect too must be addressed before the full impact of stress in relation to cytokine influences on neural function is understood. The means by which cytokines are involved in stress is important because cytokines and stress are implicated in pain ( Fu and Neugebauer, 2008; Vachon-Presseau et al., 2013; Watkins et al., 2001 ), sleep ( Krueger et al., 2007; Churchill et al., 2008 ), depression ( Caspi et al., 2003; Hammen, 2005 ), anxiety ( Breese et al., 2008; Shin and Liberzon, 2010 ) and drug addiction ( Breese et al., 2011; Koob, 2008 ). A further understanding of the unknowns by which cytokines contribute to stress to alter neural function may allow a better appreciation of the complexity by which stress induces changes in neural transmission that contribute to the functional changes associated with stress-linked central disorders.-->
 
 
-We confirmed that TLR4 and MCP-1 are expressed in glial cells (SD, Supplementary Figure S3), and posit that transition involves  bidirectional  neuron-glia  cross-talk  through released soluble factors and glial cell cytokine production (Frank et al , 2010; Hines et al , 2013)
 
-The microglia-dependent CX3CL1-CX3CR1 signaling cascade played a role in microglial-neuron interactions and in descending facilitation of BCP.<!-- analogous-->
-
-Modulation of GABA synaptic activity at 5-HT neurons by CX3CL1 and CXCL12 may be clinically significant in the pathophysiology and treatment of 5-HT related mood disorders, including depression experienced by immunocompromised individuals. 
-CX3CL1 and other chemokines may also represent a new class of CNS neuromodulators, impacting brain function *via* their effects on traditional neurotransmitter and neuropeptide systems, including the 5-HT system (Adler and Rogers, 2005; Adler et al., 2006; Calle-waere et al., 2007; Rostene et al., 2007). 
-Thus, our study provides additional support for the general hypothesis that chemokines, in addition to traditional neurotransmitters and neuropeptides, represent a neuromodulatory system in the CNS. 
-
-
-CX3CL1 activates GABA synaptic activity at the postsynaptic level, however, we have reported stimulatory presynaptic actions of CXCL12 on GABA release (Heinisch and Kirby, 2009). Interestingly, CXCL12 also produces a membrane depolarization in 5-HT neurons, an effect mediated indirectly by glutamate afferents, whereas CX3CL1 does not exhibit any effect on this parameter.
-Thus, although the chemokine family is comprised of a large variety of small chemotactic proteins, it appears that two structurally distinct chemokines, CX3CL1 and CXCL12, share common colocalization profiles with the 5-HT system as well as common functional actions on GABA synaptic activity on 5-HT neurons within the RN.
-
-<!-- NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology.chemokines // conclusion?-->
-
-In amygdala, the activation of this signalling pathway by .... is known to play a crucial role both in synaptic activity and plasticity processes.
-
+<!-- NAC modulates antioxidant, glutamatergic, inflammatory and neurotrophic pathways in the central nervous system, all of which are relevant to anxiety pathology.chemokines // conclusion?
 Thus, the present efforts not only will provide further evidence that cytokines affect CeA neural function, but also will explore the means by which CeA-neural function can be associated with TNFa-induction of glutamate and GABA activity. 
-Such extended information concerning actions of cytokines on CeA neurons is expected to further our understanding of the relationship stress-induction of cytokines has to facilitation of anxiety-like behavior that follows stress ( Breese et al., 2004, 2008, 2011; Knapp et al., 2011 ).  
+Such extended information concerning actions of cytokines on CeA neurons is expected to further our understanding of the relationship stress-induction of cytokines has to facilitation of anxiety-like behavior that follows stress ( Breese et al., 2004, 2008, 2011; Knapp et al., 2011 ).-->  
 
-The current results provide a potential link between hyperactivation of the BLA upon inflammation,       and       amygdala hyperactivation in depression. The goal of our study was to examine the effects of peripheral inflammation  on  BLA  neuronal  firing in vivo . Although we have not tested the effects of peripheral inflammation in behavioral mood assays in this study, it would be important  to  examine  how  the effects of peripheral inflammation on mood might relate to effects on BLA neuronal firing.
 
-and suggest that pharmacological agents potentiating GABA signaling might be considered an alternative valuable therapeutic option to limit neuronal damage in MS patients. 
-
-In conclusion, the present electrophysiological studies provide convincing evidence that TNFais capable of having an effect on neural function in the CeA. Because CCL2 has also been demonstrated to increase firing of CeA neurons (unpublished data), it would appear that cytokines in general may have the capability of influencing neural function in this brain site.
-
-Even though cytokines released by stress in brain have the capability of influencing neural function, it has yet to be determined how stress in a ‘‘sterile’’ environment (i.e., in the absence of infection) can increase these cytokines in brain. This latter aspect too must be addressed before the full impact of stress in relation to cytokine influences on neural function is understood. The means by which cytokines are involved in stress is important because cytokines and stress are implicated in pain ( Fu and Neugebauer, 2008; Vachon-Presseau et al., 2013; Watkins et al., 2001 ), sleep ( Krueger et al., 2007; Churchill et al., 2008 ), depression ( Caspi et al., 2003; Hammen, 2005 ), anxiety ( Breese et al., 2008; Shin and Liberzon, 2010 ) and drug addiction ( Breese et al., 2011; Koob, 2008 ). A further understanding of the unknowns by which cytokines contribute to stress to alter neural function may allow a better appreciation of the complexity by which stress induces changes in neural transmission that contribute to the functional changes associated with stress-linked central disorders.
-
-The fact that chemokines such as SDF-1 a may modulate directly the neuronal activity of a major component of the orexigenic peptide network, such as the MCH neurons, may provide some clues to elucidate the mechanisms of anorexia induction in diseases.
-
-Our fi ndings establish a critical link between the adenosine system, known to be involved in the regulation of anxiety and addiction, and the BLA, a region that is thought to play an integral role in the etiology of both disease states.
-
- The understanding of the peculiar pharmacological responses of adenosine receptors in different circuits and cell types of the amygdala is of particular importance, given their potential role in the etiology of emotional disorders and their corresponding usefulness as therapeutic targets to manage emotional disorders.
-
-Nevertheless, our data support the notion that <!--...an adequate cross-talk between microglia and neurons is required for the correct functional maturation of newborn granule neurons and for the proper regulation of emotional behavior. -->
-These data contribute to increasing our understanding of ...<!--AHN under both physiological and pathological conditions.-->
 \newpage
 
 <!--The identification of AR1as downstream element responsible for beneficial effects of CX3CL1 on neuron survival against Glu neurotoxicity may represent an important challenge for management of neurological disorders including acute brain ischemia. -->

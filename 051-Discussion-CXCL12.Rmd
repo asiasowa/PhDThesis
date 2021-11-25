@@ -1,12 +1,12 @@
 ## CXCL12/CXCR4 signaling in the basolateral amygdala
 
 Herein, although the CXCL12/CXCR4 pair did not significantly affect principal cells' excitability, as well as  excitatory and inhibitory synaptic transmission, some interesting tendencies were observed. 
-In particular, presented results indicated that following CXCL12 treatment: (i) there was a trend toward increased excitability of principal cells (especially at a higher concentration), (ii) there was a complex pattern of neuronal responses manifested as the frequency of sEPSC, and (iii) there were opposing trends of CXCL12-mediated regulation of GABAergic synaptic transmission depending on the chemokine concentration. 
+In particular, presented results indicated that following CXCL12 treatment: (i) there was a trend toward increased excitability of principal cells (especially at a higher concentration), (ii) there was a complex pattern of neuronal responses manifested as the frequency of sEPSC,<!--dziwnie napisane--> and (iii) there were opposing trends of CXCL12-mediated regulation of GABAergic synaptic transmission depending on the chemokine concentration. 
 <!-- The lack of prominent effects in the BLA is in line with a previous report demonstrating absence of CXCR4 in this nucleus of the amygdala [@banisadr_2002a], at least considering sensitivity and the detection level needed for *in situ* hybridization 20 years ago. nienajlepsze zdanie-->
 
 CXCL12/CXCR4 signaling was previously studied in the basolateral nucleus of the amygdala in the context of neuroinflammation [@yang_2016].
-Nevertheless, it demonstrated neuronal expression of the CXCR4 receptor as well as the CXCL12-induced CXCR4-dependent enhancement in the excitatory synaptic transmission in the BLA.
-The authors further suggested that the latter effect might result in the increased excitability of pyramidal-like neurons.<!-- However, these results are in contrast with studies conducted by , revealing that CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.-->
+Nevertheless, it demonstrated neuronal expression of the CXCR4 receptor as well as the CXCL12-induced CXCR4-dependent enhancement of the excitatory synaptic transmission in the BLA under physiological conditions.
+The authors further suggested that the latter effect might lead to the increased excitability of pyramidal-like neurons.<!-- However, these results are in contrast with studies conducted by , revealing that CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.-->
 Their hypothesis is supported by the results presented in this PhD dissertation.
 However, the results regarding excitatory synaptic transmission in the BLA have been less straightforward.
 In particular, the study by @yang_2016 revealed that the application of CXCL12 at the dose of 2nM enhanced glutamatergic transmission by increasing sEPSC frequency in the BLA.
@@ -25,7 +25,7 @@ Here, brain slices were submerged with the ACSF at the temperature of 31–33`r 
 
 Finally, while present experiments were performed using normal ACSF, @yang_2016 sEPSC recordings were made in the presence of a blocker of GABA~A~ receptors, picrotoxin.
 Therefore, these findings raise the possibility that the enhancement in excitatory synaptic transmission onto principal cells in the BLA seen in @yang_2016 study was distorted by the modulation of the GABAergic heterogeneous group of local interneurons.
-Given the well-known tight regulation of principal cell activity by local interneurons<!--citations-->, along with documented CXCL12 mediation of GABAergic transmission<!--citations-->, this explanation is very likely.
+Given the well-known tight regulation of principal cell activity by local interneurons<!--citations-->, along with documented CXCL12 mediation of GABAergic transmission<!--citations-->, this explanation is possible.
 <!-- jeszcze coś o excitability?-->
 Nevertheless, whether blocking GABA~A~ receptors will result in a significant CXCL12-mediated increase of sEPSC frequency onto principal cells in the BLA and/or enhancing their firing in rat coronal acute slices remains to be confirmed.
 
@@ -66,8 +66,8 @@ This is similar to what was observed in other structures and supports the notion
 
 This dissertation provides new evidence for the neuromodulatory properties of the CXCL12/CXCR4 axis in synaptic transmission and membrane properties in the lateral subdivision of the central complex of the amygdala.
 Firstly, CXCL12 was shown to modulate the excitability of CeL neurons, which was mediated by the CXCR4 receptor, but probably without the astrocytic involvement.
-Next, a cell-specific trend illustrated the opposing CXCL12-mediated modulation of glutamatergic synaptic transmission based on the concentration, precisely onto Regular-Spiking neurons.<!--dziwne zdanie-->
-Finally, the treatment with CXCL12 also led to opposite regulation of GABAergic transmission, based on the subtype of CeL neurons, which was possibly mediated by astrocytes.
+Moreover, the frequency of excitatory synaptic currents was increased at the higher concentration (5nM) only in the Regular-Spiking cells. 
+Finally, the treatment with CXCL12 also led to the opposite regulation of GABAergic transmission, based on the subtype of CeL neurons, which was possibly influenced by astrocytes.
 
 CXCL12 was shown to increase the excitability of CeL neurons.
 While a decreased threshold current was observed in both Late-Firing and Regular-Spiking neurons, the Late-Firing neurons displayed additional increased gain.<!--i co to może znaczyć?-->
@@ -86,7 +86,7 @@ In conclusion, the SDF-1 a -induced hyperpolarization is likely linked to the ac
 -->
 
 Moreover, the pre-incubation slices with astrocytic toxin, fluorocitrate, did not abolish the CXCL12-triggered increase in neuronal excitability, suggesting that astrocytes did not mediate this effect.
-This raise the possibility, that similar to BLA and SN [@guyon_2006; @yang_2016], astrocytes in the CeA might also lack the CXCR4 receptors.
+This raise the possibility, that similar to the BLA and the SN [@guyon_2006; @yang_2016], astrocytes in the CeA might also lack the CXCR4 receptors.
 However, further studies, employing immunostaining methods, are necessary to verify this hypothesis.
 <!--This is in line with presented immunofluorescence data demonstrating the absence of CXCR4 in astrocytes. pokazuje? ;/ -->
 
@@ -94,10 +94,10 @@ However, further studies, employing immunostaining methods, are necessary to ver
 Regarding excitatory synaptic transmission, a complex trend was observed. 
 <!-- może tutaj zdanie o tym że działa na transmisję w innych strukturach? patrz niżej ale nie wiem jakie efekty -->
 At 2nM, CXCL12 was showed to reduce the frequency of sEPSC onto more than 50% of Regular-Spiking neurons, whereas the elevated frequency of sEPSC was observed during 5nM CXCL12 treatment.<!--POPRAWIĆ-->
-Moreover, this effect was more prominent in Regular-Spiking neurons, while no relevant differences in the excitatory synaptic transmission were observed onto Late-Firing cells. 
+Moreover, this effect was prominent in Regular-Spiking neurons, while no relevant differences in the excitatory synaptic transmission were observed onto Late-Firing cells. 
 Considering that CXCL12 at higher concentration showed a trend toward increased excitability of principal cells in the BLA, it is tempting to speculate that their direct CXCL12-mediated elevated activity is reflected by upregulated excitatory transmission onto Regular-Spiking neurons.
 Although BLA direct glutamatergic projections to CeL have been well-established [@ciocchi_2010; @krettek_1978; @li_2013a; @pitknen_1997], differences in the type of their target neurons remains unclear.<!-- może nie unclear..... prefer Regular-Spiking or SOM-expressing neurons -->
-However, based on the anxiolytic effect of optogenetic stimulation of the BLA`r knitr::asis_output("\U2192")`CeL pathway [@tye_2011], the cell type-specific differences have been speculated [@fadok_2019].<!--Because optogenetic stimulation of the pathway between the BLA and CEl can also have anxiolytic effects [ 12 ], it could be that glutamatergic BLA inputs to the CEl target different cell types, and that depending on stimulation parameters, different behavioral responses could be induced-->
+However, based on the anxiolytic effect of optogenetic stimulation of the BLA`r knitr::asis_output("\U2192")`CeL pathway [@tye_2011], the cell type-specific differences have been speculated [@fadok_2018].<!--Because optogenetic stimulation of the pathway between the BLA and CEl can also have anxiolytic effects [ 12 ], it could be that glutamatergic BLA inputs to the CEl target different cell types, and that depending on stimulation parameters, different behavioral responses could be induced-->
 In addition to BLA afferents, CeL also receives excitatory inputs from parabrachial nucleus. <!--citations-->
 PVT neurons were reported to preferentially innervate SOM-positive neurons in CeL [@penzo_2015], which is in a good agreement with the observed enhancement of excitatory transmission onto Regular-Spiking neurons.<!--poprawić i cytowanie // PVT neurons preferentially innervate SOM+ neurons in the CeL, and stimulation of PVT afferents facilitated SOM+ neuron activity and promoted intra-CeL inhibition, two processes that are critical for fear learning and expression5,6-->
 

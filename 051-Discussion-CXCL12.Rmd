@@ -14,7 +14,7 @@ In contrast, results presented here showed that CXCL12(2nM) enhanced sEPSC frequ
 Thus, grouped data showed no statistically significant change in the frequency of sEPSCs.
 These neuronal proportions were also similar when a higher concentration of exogenous CXCL12, i.e., 5nM, was applied.
 Different experimental settings may explain this discrepancy between studies.
-Firstly, the whole-cell patch-clamp experiments performed by @yang_2016 in C57BL/6 male mice, whereas this study was performed using slices obtained from male Wistar rats.
+Firstly, the whole-cell patch-clamp experiments were performed by @yang_2016 in C57BL/6 male mice, whereas this study was performed using slices obtained from male Wistar rats.
 The difference between those animals was reported in many contexts.<!-- lepiej napisać-->
 
 Moreover, while the present study was performed on the coronal slices, transverse slices containing the amygdala were used in the study by @yang_2016.
@@ -70,13 +70,14 @@ Moreover, the frequency of excitatory synaptic currents was increased at the hig
 Finally, the treatment with CXCL12 also led to the opposite regulation of GABAergic transmission, based on the subtype of CeL neurons, which was possibly influenced by astrocytes.
 
 CXCL12 was shown to increase the excitability of CeL neurons.
-While a decreased threshold current was observed in both Late-Firing and Regular-Spiking neurons, the Late-Firing neurons displayed additional increased gain.<!--i co to może znaczyć?-->
-These effects were mediated by CXCR4 receptor, as the presence of AMD3100 prevented the CXCL12-mediated enhancement in CeL neuronal excitability.
+While a decreased threshold current was observed in both Late-Firing and Regular-Spiking neurons, the Late-Firing neurons displayed additional decreased gain.<!--i co to może znaczyć?-->
+Thus, as a response to increasing depolarizing steps, after CXCL12 application, those neurons were more excitable and needed smaller current injections but produced fewer spikes during higher injections.<!--lepiej napisać --> 
+The CXCR4 receptor contributed to the observed effects, as the presence of AMD3100 prevented the CXCL12-mediated enhancement in CeL neuronal excitability.
 
 Interestingly, AMD3100 alone was shown an opposite trend, suggesting tonic activity of CXCR4 in the CeL neurons.
-This phenomenon was previously reported in granule neurons precursors in the DG by using pharmacological, immunohistochemical and electrophysiological approaches [@bhattacharyya_2008; @kolodziej_2008; @stumm_2002; @stumm_2003]. <!--by @kolodziej_2008, where intraventricular infusion of AMD3100 dramatically increased CXCR4 protein expression in subgranular neurons in the DG, suggesting that CXCR4 is tonically activated and downregulated by endogenous CXCL12./// While Cxcr4 is silenced in most differentiated cells, its expression persists in the SGZ. 
+This phenomenon was previously reported in granule neurons precursors in the DG by using pharmacological, immunohistochemical, and electrophysiological approaches [@bhattacharyya_2008; @kolodziej_2008; @stumm_2002; @stumm_2003].<!--by @kolodziej_2008, where intraventricular infusion of AMD3100 dramatically increased CXCR4 protein expression in subgranular neurons in the DG, suggesting that CXCR4 is tonically activated and downregulated by endogenous CXCL12./// While Cxcr4 is silenced in most differentiated cells, its expression persists in the SGZ. 
 CXCL12 is postnatally upregulated in mature granule neurons and pharmacological, immunohistochemical as well as electrophysiological approaches suggest that CXCR4 is tonically activated in granule neuron precursors by local CXCL12 (Stumm et al., 2002, 2003; Berger et al., 2007; Bhattacharyya et al., 2008; Kolodziej et al., 2008; Choe and Pleasure, 2012).-->
-The own effects of AMD3100 when applied alone was also observed in MCH neurons in the LHA [@eggermann_2003], where the CXCR4 were suggested to be tonically inhibited, resulting in the hyperpolarized membrane potential under basal conditions<!--, as compared to CXCR4-derived orexin neurons in the LHA--> [@eggermann_2003].<!-- Low concentrations of CXCL12 exert a tonic inhibition on MCH neurons, which are known to have a hyperpolarized membrane potential under basal conditions, as compared to orexin neurons of the LHA which are in intrinsic state of membrane depolarization and lack CXCR4 expression (Eggermann et al., 2003). In addition, the CXCR4 antagonist AMD3100 has its own effects when applied alone which suggests that a tonic activation of CXCR4 occurs, at least in slices preparations, and that low levels of CXCL12 are secreted under basal conditions (although the slice preparation could also be considered as an inflammatory state).[@guyon_2014]--><!--Given that tonic activation of CXCR4 by SDF1 leads to internalization of both chemokine and receptor (Burger and Kipps, 2006), it is entirely possible that the constitutive release of neuronal SDF1 and subsequent neuronal signaling via CXCR4 may result in diminished evidence of CXCR4-IR in the sensory ganglia of morphine treated rats (Fig. 6C). This event would not be unlike previous reports in the dentate gyrus (Bhattacharyya et al., 2008, Kolodziej et al., 2008).-->
+The own effects of AMD3100 when applied alone were also observed in MCH neurons in the LHA [@eggermann_2003], where the CXCR4 was suggested to be tonically inhibited, resulting in the hyperpolarized membrane potential under basal conditions<!--, as compared to CXCR4-derived orexin neurons in the LHA--> [@eggermann_2003].<!-- Low concentrations of CXCL12 exert a tonic inhibition on MCH neurons, which are known to have a hyperpolarized membrane potential under basal conditions, as compared to orexin neurons of the LHA which are in intrinsic state of membrane depolarization and lack CXCR4 expression (Eggermann et al., 2003). In addition, the CXCR4 antagonist AMD3100 has its own effects when applied alone which suggests that a tonic activation of CXCR4 occurs, at least in slices preparations, and that low levels of CXCL12 are secreted under basal conditions (although the slice preparation could also be considered as an inflammatory state).[@guyon_2014]--><!--Given that tonic activation of CXCR4 by SDF1 leads to internalization of both chemokine and receptor (Burger and Kipps, 2006), it is entirely possible that the constitutive release of neuronal SDF1 and subsequent neuronal signaling via CXCR4 may result in diminished evidence of CXCR4-IR in the sensory ganglia of morphine treated rats (Fig. 6C). This event would not be unlike previous reports in the dentate gyrus (Bhattacharyya et al., 2008, Kolodziej et al., 2008).-->
 
 <!--However, increased excitability is documented to results either from increasing amplitude of N-type calcium channel or inducing inward rectifier (GIRK) potassium currents, the action mediated by CXC12/CXCR4 axis. zmienić, citation-->
 <!--GIRK or N-type calcium channel in CeA neurons?-->
@@ -85,22 +86,25 @@ Strikingly, the outward current was no longer observed in the presence of 1 l m 
 In conclusion, the SDF-1 a -induced hyperpolarization is likely linked to the activation of a GIRK current via stimulation of CXCR4
 -->
 
-Moreover, the pre-incubation slices with astrocytic toxin, fluorocitrate, did not abolish the CXCL12-triggered increase in neuronal excitability, suggesting that astrocytes did not mediate this effect.
-This raise the possibility, that similar to the BLA and the SN [@guyon_2006; @yang_2016], astrocytes in the CeA might also lack the CXCR4 receptors.
-However, further studies, employing immunostaining methods, are necessary to verify this hypothesis.
+Moreover, the pre-incubation slices with an astrocytic toxin, fluorocitrate, did not abolish the CXCL12-triggered increase in neuronal excitability, suggesting that astrocytes did not mediate this effect.
+This raises the possibility that similar to the BLA and the SN [@guyon_2006; @yang_2016], astrocytes in the CeA might also lack the CXCR4 receptors.
+However, further studies employing immunostaining methods are necessary to verify this hypothesis.
 <!--This is in line with presented immunofluorescence data demonstrating the absence of CXCR4 in astrocytes. pokazuje? ;/ -->
 
 
 Regarding excitatory synaptic transmission, a complex trend was observed. 
 <!-- może tutaj zdanie o tym że działa na transmisję w innych strukturach? patrz niżej ale nie wiem jakie efekty -->
-At 2nM, CXCL12 was showed to reduce the frequency of sEPSC onto more than 50% of Regular-Spiking neurons, whereas the elevated frequency of sEPSC was observed during 5nM CXCL12 treatment.<!--POPRAWIĆ-->
+At 2nM, CXCL12 was shown to reduce the frequency of sEPSC onto more than 50% of Regular-Spiking neurons, whereas the elevated frequency of sEPSC was observed during 5nM CXCL12 treatment.<!--POPRAWIĆ-->
 Moreover, this effect was prominent in Regular-Spiking neurons, while no relevant differences in the excitatory synaptic transmission were observed onto Late-Firing cells. 
-Considering that CXCL12 at higher concentration showed a trend toward increased excitability of principal cells in the BLA, it is tempting to speculate that their direct CXCL12-mediated elevated activity is reflected by upregulated excitatory transmission onto Regular-Spiking neurons.
-Although BLA direct glutamatergic projections to CeL have been well-established [@ciocchi_2010; @krettek_1978; @li_2013a; @pitknen_1997], differences in the type of their target neurons remains unclear.<!-- może nie unclear..... prefer Regular-Spiking or SOM-expressing neurons -->
-However, based on the anxiolytic effect of optogenetic stimulation of the BLA`r knitr::asis_output("\U2192")`CeL pathway [@tye_2011], the cell type-specific differences have been speculated [@fadok_2018].<!--Because optogenetic stimulation of the pathway between the BLA and CEl can also have anxiolytic effects [ 12 ], it could be that glutamatergic BLA inputs to the CEl target different cell types, and that depending on stimulation parameters, different behavioral responses could be induced-->
-In addition to BLA afferents, CeL also receives excitatory inputs from parabrachial nucleus. <!--citations-->
-PVT neurons were reported to preferentially innervate SOM-positive neurons in CeL [@penzo_2015], which is in a good agreement with the observed enhancement of excitatory transmission onto Regular-Spiking neurons.<!--poprawić i cytowanie // PVT neurons preferentially innervate SOM+ neurons in the CeL, and stimulation of PVT afferents facilitated SOM+ neuron activity and promoted intra-CeL inhibition, two processes that are critical for fear learning and expression5,6-->
-
+This is in line with a study showing that PVT neurons preferentially innervated SOM-positive neurons in CeL [@penzo_2015], which is in good agreement with the observed enhancement of excitatory transmission onto Regular-Spiking neurons.<!--poprawić i cytowanie // PVT neurons preferentially innervate SOM+ neurons in the CeL, and stimulation of PVT afferents facilitated SOM+ neuron activity and promoted intra-CeL inhibition, two processes that are critical for fear learning and expression5,6-->
+Moreover, since the higher concentration of CXCL12 showed a trend toward increased excitability of principal cells in the BLA, it is tempting to speculate that their elevated activity is reflected by upregulated excitatory transmission onto Regular-Spiking neurons.
+Although BLA direct glutamatergic projections to CeL have been well-established [@ciocchi_2010; @krettek_1978; @li_2013a; @pitknen_1997], differences in the type of their target neurons remain unclear.<!-- może nie unclear..... prefer Regular-Spiking or SOM-expressing neurons -->
+However, given the anxiolytic effect of optogenetic stimulation of the BLA`r knitr::asis_output("\U2192")`CeL pathway [@tye_2011], the cell type-specific differences have been speculated [@fadok_2018].<!--Because optogenetic stimulation of the pathway between the BLA and CEl can also have anxiolytic effects [ 12 ], it could be that glutamatergic BLA inputs to the CEl target different cell types, and that depending on stimulation parameters, different behavioral responses could be induced-->
+Importantly, based on the concentration (2nM vs. 5nM), CXCL12 produced an opposite trend towards  decreased or increased frequency of excitatory synaptic events. 
+This may be reflected by the findings reporting that principal cells preferentially innervate Late-Firing neurons in the baseline condition, whereas following fear-conditioning, this pattern changes  [@li_2013a].
+In accordance with these observations, considering that the higher concentration of 5nM could be considered inflammatory, the differences in the concentration of CXCL12 might reflect a similar pattern.  
+Thus, it is tempting to speculate that CXCL12 at the 5nM might mimic changes associated with fear conditioning. 
+However, further research will be required to independently replicate these findings and further investigate the mechanism of this effect.
 
 <!--relevance fear
 BLA can influence CEm via direct glutamatergic projections9,10,11,16 and through indirect di-synaptic routes involving the glutamatergic excitation of GABAergic intercalated (ITC)16 or central lateral (CEl) neurons9,10,11 that project to CEm10,11,16,17.///
@@ -116,13 +120,16 @@ It is well established that CXCL12 mobilizes cytosolic calcium following stimula
 Interestingly, in the SN, the CXCL12 effect was independent of CXCR4 as it was not blocked by AMD (1 lM) (Fig. 6), consistent with the lack of CXCR4 on astrocytes revealed by immunostaining. 
 The mechanism of action of CXCL12 on glutamate release thus needs further investigation.-->
 
-Since RS cells were reported to innervate more Late-Firing neurons<!--cit-->, one could speculate that the enhanced excitatory synaptic transmission onto RS cells and elevated excitability would lead to more increased GABAergic drive onto LF neurons.<!--lepiej napisać, ale tak --> 
+Since CeL neurons are highly interconnected, one could speculate that the enhanced excitatory synaptic transmission onto Regular-Spiking cells and elevated excitability would lead to more increased GABAergic transmission within CeL.<!--lepiej napisać, ale tak --> 
 In contrast, at the concentration of 5nM, the median frequency of sIPSCs is increased in the Regular-Spiking cells, whereas Late-Firing cells were shown to display both reduced frequency and amplitude of sIPSCs.
 All of these effects were mediated by the CXCR4 receptor, as they were abolished in the presence of AMD3100.
-<!-- astrocytes???-->
-<!-- why?!--> 
-Nevertheless, experiments by using dual patch-clamp experiments to record whether CXCL12 acute application led to opposing effects in those two subpopulations in the CeL would be of high importance.
-
+In addition, they were also absent in the presence of TTX and an astrocytic toxin.
+A similar dual effect on GABAergic transmission in the CeL was described for another immune protein, IL-1`r knitr::asis_output("\U03B2")`.
+These observations suggest that the CXCL12-mediated actions on GABAergic transmission are multifaceted, which might be a common characteristic among immune proteins.<!--lepiej napisać -->
+It is speculated that they are modulated by both the GABAergic and astrocytic networks.
+The mechanisms of astrocytic modulation of the CeL microcircuit have recently attracted much attention.<!--citations-->
+It would, then, be interesting to test whether CXCL12 acute application led to opposing effects in those two subpopulations in the CeL by using dual patch-clamp experiments.
+<!-- It would, then, be interesting to test if astrocytes are important to OT  signaling in other brain regions, and, if they are, if the same mechanisms of astrocyte-to-neuron communication are at stake.-->
 <!-- Maybe only neuronal CXCR4 activity is tonic.
 However, it is important to note that if only astrocytes were involved in this effect.
 Noting that this effect was sensitive to TTX, it -->
@@ -161,20 +168,21 @@ indicating CXCL12-mediated anxiety is through CXCR4. -->
 A few limitations in the presented study should be acknowledged. <!-- This  approach  was  preferred in this instance to more approximate recording conditions.-->
 <!-- First, using immunofluorescence to localize receptors is pretty difficult and thus sometimes leads to inconclusive data. 
 Therefore, results from these studies should be treated as preliminary results, and more sensitive methods should be used, such as RNA-scope [@kharchenko_2021] or RNA-sequencing transcriptome [@zhang_2014].due to technical/methodological implication of difficulties regarding immunofluorescent stainings of receptors and imperfections of many antibodies, the results concerning co-localization needs to be verified by using more sensitive methods, such as RNA-scope or .... -->
-The presented results reveal that both chemokines mainly modulated the the amygdala's neuronal firing and/or GABAergic transmission. 
-It should be noted that during whole-cell patch-clamp recording, the cytoplasm of recorded neurons is dialyzing with intrapipette solution. 
+The presented results reveal that both chemokines mainly modulated the amygdala's neuronal firing and/or GABAergic transmission. 
+It should be noted that during whole-cell patch-clamp recording, the cytoplasm of recorded neurons is dialyzing with an intrapipette solution. 
 Thus, it might affect intracellular signaling machinery, and thereby, affect cellular excitability.<!-- Soluble components that influence cellular excitability and contribute to signaling pathways are dialyzed from the cell. One frequently encountered consequence is that receptor-mediated responses and/or ionic currents that require soluble second messengers are absent or rapidly “run down” during conventional whole-cell recordings (3, 4). Furthermore, intracellular ion concentrations are disrupted, hampering efforts to determine physiologically relevant responses or properties of channels and receptors (5, 6).-->
 A gramicidin perforated patch technique would be a better option to avoid this issue, as it maintains a relatively intact intracellular milieu [@akaike_1994; @akaike_1996]. 
+Nevertheless, this should not affect presented results, as the reported effects are eliminated in the pre-incubation with blockers of receptors, suggesting that they are specific.   
 
-Another issue is that the lack of prominent effects on excitatory synaptic transmission by chosen chemokines despite observed tendencies might be related with the use of coronal slices instead of horizontal sections.<!-- plane-->
-Thus, the hippocampal and cortex connections, which are essential inputs to the amygdala, are absent in coronal slices used in this study.<!--citations-->
+Another issue is that the lack of prominent effects on excitatory synaptic transmission by chosen chemokines despite observed tendencies might be related to the use of coronal slices instead of horizontal sections.<!-- plane-->
+Thus, the hippocampal and cortex connections, which are essential inputs to the amygdala, are absent in the coronal slices used in this study.<!--citations-->
 
 Next, although widely used, the pharmacological inhibition of either microglia or astrocytes might not be highly specific. 
 Further dissection of local communication between astrocytes, microglia, and neurons in the context of chemokines' modulation will require carefully designed experiments with multiple points of selective interventions.
-The optogenetic technique allows for precise temporal(milisecond) and spatial(specific cells types) light activation, thereby modulating cellular excitability, highlighting specificity and bidirectionally.<!-- Light activation of these proteins modulates cellular excitability with millisecond precision. //  Comparison of electrical and optogenetic stimulation paradigms, highlighting cellular specificity and bidirectionality of optogenetic techniques// The exact dissection of these parallel actions will require carefully designed experiments with multiple points of selective interventions. 
+The optogenetic technique allows for precise temporal (e.g., milliseconds) and spatial (e.g., specific cells types) light activation, thereby modulating cellular excitability, highlighting specificity and bidirectionally.<!-- Light activation of these proteins modulates cellular excitability with millisecond precision. //  Comparison of electrical and optogenetic stimulation paradigms, highlighting cellular specificity and bidirectionality of optogenetic techniques// The exact dissection of these parallel actions will require carefully designed experiments with multiple points of selective interventions. 
 -->
 
-Finally, GABA~C~ receptor has also been implicated in the regulation of anxiety in the amygdala and its action should be isolated in experiments [@cunha_2010]. 
+Finally, the GABA~C~ receptor has also been implicated in the regulation of anxiety in the amygdala, and its action should be isolated in experiments [@cunha_2010]. 
 
 
 <!-- * CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber. -->

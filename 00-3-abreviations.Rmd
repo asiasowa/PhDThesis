@@ -1,4 +1,4 @@
-# Abreviations {- .unlisted .unnumbered}
+# Abbreviations {- .unlisted .unnumbered}
 
 <!-- \renewcommand{\nompreamble}{\vspace{0.25in}} -->
 <!-- \makenomenclature -->
@@ -36,9 +36,8 @@ x <- tribble(
     "ACKRs", "Atypical Chemokine Receptors",
     "PKC", "Protein Kinase C",
     "MAPK", "mitogen-activated protein kinase", 
-    "(ERK)½", "extracellular signal-regulated kinase",
+    "ERK½", "extracellular signal-regulated kinase",
     "JAKs", "Janus kinases", 
-    "NF-κB", "nuclear factor kappa-light-chain-enhancer",
     "PTMs", "post-translational modifications",
     "GAGs", "Glycosaminoglycans",
     "CatS", "Cathepsin S",
@@ -59,7 +58,7 @@ x <- tribble(
     "DRN", "dorsal raphe nucleus",
     "MCH", "melanin-concentrating hormone",
     "DA", "dopamine",
-    "5-HT", "serotonine",
+    "5-HT", "serotonin",
     "PVN", "paraventricular nucleus",
     "Cx43", "Connexin-43",
     paste0("TNF", "$\\alpha$"), paste0("Tumour Necrosis Factor", "$\\alpha$"),
@@ -128,7 +127,7 @@ x <- tribble(
     "AraC", "cytarabine",
     "CaMKII", "Calcium/calmodulin-dependent protein kinase II", #dodać we właściwym miejscu
     "LTD", "long-term depression",
-    "eEPSC", "evoked EPSC",
+    "eEPSC", "evoked excitatory postsynaptic current",
     "E/I", "excitatory/inhibitory",
     "HCN", "hyperpolarization-activated cyclic nucleotide-modulated channel",
     "GFP", "green fluorescent protein",
@@ -139,6 +138,7 @@ x <- tribble(
     "fEPSPs", "field excitatory postsynaptic potentials",
     "GFP", "green fluorescent protein",
     "LHA", "lateral hypothalamus area",
+    paste0("NF-", "$\\kappa$", "B"), paste0("nuclear factor-", "$\\kappa$", "B"),
     
     
     
@@ -150,51 +150,19 @@ x <- tribble(
     
     
     
-    
-    
-    
-    
-    
-    
- 
-   
-   
- 
-   
     "AHP", "afterhyperpolarization",
-
-   
-    
-   
-
-
-
-
     "mPFC", "medial part of prefrontal cortex",
     "MGN", "the medial geniculate nucleus",
     "AC", "the auditory cortex",
-
-    
-   
-    "ERK", "extracellular signal-regulated kinase",
-    "JAK", "Janus kinases",
     "STATs", "signal transducers and activators of transcription",
-    paste0("NF-", "$\\kappa$", "B"), paste0("nuclear factor-", "$\\kappa$", "B"),
+
     "ECM", "extracellular matrix",
-
-
     "GIRK", "inward rectifier potassium currents",
-
-
     "AVP", "arginine–vasopressin",
-
-   
- 
     "DRG", "dorsal horn of the spinal cord",
     "SLMVs", "synaptic-like microvesicles",
     "VGLUTs", "vesicular glutamate transporters",
-  
-    "ENK", "enkephalin",
+
 
 ) %>%
     arrange(Abbreviation)

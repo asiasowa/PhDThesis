@@ -24,28 +24,30 @@ The age of the animals for each experiment was determined to assure credible and
 
 In electrophysiological experiments, all reagents used for preparing ACSF and internal solution were purchased from Roth (Carl Roth GmbH, Germany)  and bath-applied by a peristaltic pump, unless stated otherwise.<!--All other chemicals were purchased from Sigma–Aldrich (St. Louis, MO).  czy na pewno? --><!-- Details regarding the primary and secondary antibodies used in our immunohistochem istry experiments are provided in Table 2 - 1. --><!-- All reagents for phosphate-buffered saline solution (PBS), artificial cerebrospinal fluid and intrapipette solution (ACSF) were purchased from Sigma-Aldrich (Darmstadt, Germany), apart from single biocytin batches purchased from Tocris Bioscience (Bristol, UK, Cat No. 3349). Pertussis toxin was purchased from Invitrogen, Thermo Fisher (Waltham, Massachusetts, USA, Cat No. PHZ1174). -->
 <!-- The time necessary for the solution to flow from the stopcocks to the slice was approximately 15 s. -->
+
+
 Other electrophysiological reagents suppliers and used doses were as follows: 
 500 nM tetrodotoxin (TTX, a voltage-gated sodium channel blocker from Tocris Bioscience, UK), 
 100 `r knitr::asis_output("\U03BC")`M picrotoxin (a GABA~A~ receptor antagonist from Tocris Bioscience, UK),  
 10 `r knitr::asis_output("\U03BC")`M CGP52432  (a GABA~B~ receptor antagonist from Tocris Bioscience, UK).
-All drugs were dissolved in deionised water, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C, unless stated otherwise.
+
 
 Chemokines (CX3CL1 and CXCL12) were purchased from R&D Systems.
-All peptides were dissolved in sterile PBS, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C, unless stated otherwise.
+All peptides were dissolved in sterile PBS, aliquoted, and stored at -20`r knitr::asis_output("\U00B0")`C, unless stated otherwise.
 Concentrations for both chemokines were 2 and 5nM.
 
 For blocking CX3CL1 and CXCL12 receptors, highly selective antagonists (AZD8797 and AMD3100) were used, respectively.
-AZD8797 was obtained from Axon Medchem, The Netherlands, and its stock was first dissolved in dimethyl sulfoxide (DMSO), aliquoted and stored at . 
-AMD3100 was purchased from Sigma-Aldrich, aliquoted and stored at -20`r knitr::asis_output("\U00B1")`C.
-The concentration of both antagonists was 10`r knitr::asis_output("\U03BC")`M. 
+AZD8797 was obtained from Axon Medchem, The Netherlands, and dissolved in dimethyl sulfoxide (DMSO) and used at the concentration of AZD8797 was 10`r knitr::asis_output("\U03BC")`M.
+AMD3100 was purchased from Sigma-Aldrich, and its final concentration was 1`r knitr::asis_output("\U03BC")`M. 
 
 For microglia and astrocytes inhibition, the minocycline and fluorocitric acid were used, respectively.
 Both reagents were obtained from Sigma Aldrich.
-Minocycline was freshly dissolved in ACSF at the final concentration before recordings.
-Both minocycline and fluorocitric acid were used at concentration 100`r knitr::asis_output("\U03BC")`M. 
+Minocycline was freshly dissolved in ACSF at the final concentration (20`r knitr::asis_output("\U03BC")`M) before recordings.
+Fluorocitric acid was used at concentration 100`r knitr::asis_output("\U03BC")`M. 
 
 The determination of the doses for CX3CL1, CXCL12, AZD8797, AMD3100, minocycline, and fluorocitric acid was based on previous studies [@baxter_2021; @heinisch_2009; @heinisch_2010; @scianni_2013; @sheridan_2014; @yang_2016].
 
+All drugs were dissolved in deionized water, aliquoted, and stored at -20`r knitr::asis_output("\U00B0")`C, unless stated otherwise.
 The drugs were diluted to the final concentration in the recording ACSF just before use.
 
 ## Electrophysiological recordings in acute brain slices {#electromethod}

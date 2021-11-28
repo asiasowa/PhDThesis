@@ -1,7 +1,18 @@
 # Streszczenie {- .unlisted .unnumbered}
 
-
-
-
+Coraz więcej danych podkreśla rolę chemokin, grupy małych białek odpornościowych, w neuromodulacji i koordynacji komunikacji pomiędzy neuronami a komórkami glejowymi. 
+Pośród nich, CX3CL1 i CXCL12 są szczególnie ważne w tej kwestii, ponieważ wykazują konstytutywną i rozległą ekspresję w ośrodkowym układzie nerwowym, gdzie działają na poziomie komórkowym, synaptycznym, sieciowym oraz behawioralnym. 
+Pomimo ich coraz jaśniejszego związku z chorabami psychicznymi, w tym lęku oraz ekspresją ich receptorów w ciele migdałowatym, strukutrze związanej z tym rodzajem zachowania, rola chemin w tym obszarze jest ciągle niepoznana. 
+W związku z tym, przy użyciu elektrofizjologicznych i farmakologicznych technik, zbadano elektrofizjologiczne dzialanie dwóch chemokin (CX3CL1 i CXCL12) w dwóch jądrach ciała migdałowatego - podstawnobocznym oraz środkowym. 
+W jądrze podstawnobocznym, CX3CL1 zwiększyła prąd  progowy, prowadząc do zmniejszonej pobudliwości neuronów.
+Efektu temu towarzyszyła pogorszona plastyczność synaptyczna w synapsach korowo-podstawnobocznych oraz zmiejszona częstotliwość spontanicznych hamujących prądów postsynaptycznych.
+W części bocznej jądra środkowego, CX3CL1 wpływała na pasywne błonowe właściwości neuronów regularnie wyładowujących się, co skutkowało zmniejszeniem tych wyładowań i zmniejszonej częstotliwości postsynaptycznych prądów hamujących na neurony o późnym początku wyładowania.
+Eliminacja tych efektów nastąpiła w obecności zablokowanych receptorów CX3CR1 i zahamowania aktywności komórek mikroglejowych, co wskazuje na udział sieci i mikrogleju w ich modulacji.
+Dodatkowo, inkubacja CX3CL1 prowadziła do niedojrzałej morfologii kolców dendrytycznych w hodowlach neuronalnych.
+Z kolei, pomimo widocznego trendu w kierunku wzrostu pobudliwości neuronów i złożonej modulacji hamującej transmisji synaptycznej, CXCL12 nie wywołało żadnych istotnych statystycznie efektów.
+Dla odmiany, CXCL12 zmiejszyło prąd progowy neuronów w CeL i wpływało na transmisję synaptyczną w tej strukturze. 
+Co więcej, astrocyty, przynajmniej częściowo, wpływały na tę modulację.
+Podsumowując, wyniki w ramach tej pracy doktorskiej podkreślają neuromodulacyjną rolę chemokin oraz ich regulację w komunikację pomiędzy neuronami i komórkami glejowymi w ciele migdałowatym.
+Zrozumienie jak chemokiny wpływają na fizjologię ciała migdałowatego, zaangażowanego w wiele chorób neuropsychiatrycznych, ma dalszy potencjał w badaniach podstawowych i medycznych. 
 
 \newpage

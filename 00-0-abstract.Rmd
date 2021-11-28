@@ -4,14 +4,14 @@
 Accumulating evidence highlights chemokines, a class of small immune proteins, as neuromodulators and coordinators of neuron-glial communication.
 Among them, CX3CL1 and CXCL12 are particularly important in this regard, as they are constitutively and widely expressed in the CNS, where they act on cellular, synaptic, network, and behavioral levels.
 Despite their emerging implications in psychiatric diseases, including anxiety-related behaviors, along with well-established expression of their receptor in the amygdala, a hallmark structure involved in this behavior, <!--- As their receptors, CXCR4 and CX3CR1, are relatively densely present in the amygdala [@banisadr_2002a; @harrison_1998; @stumm_2002; @stumm_2003; @tarozzo_2003], the critical region in the development of many neuropsychiatric disorders, the electrophysiological consequences of their activation were explored.--> chemokines' role in this region is still largely unexplored.
-To this end,  by using a combination of mainly electrophysiological and pharmacological approaches, the actions of two chemokines (CX3CL1 and CXCL12) were determined in two nuclei of the amygdala - basolateral (BLA) and central (CeA).
-In the BLA, CX3CL1 increased the threshold current, leading to reduced excitability. 
+To this end,  by using a combination of mainly electrophysiological and pharmacological approaches, the electrophysiological actions of two chemokines (CX3CL1 and CXCL12) were determined in two nuclei of the amygdala - basolateral (BLA) and central (CeA).
+In the BLA, CX3CL1 increased the threshold current, leading to reduced neuronal excitability. 
 This effect was accompanied by the impaired LTP at cortico-BLA synapses and decreased frequency of sIPSCs.
-In the CeL, CX3CL1 modulated passive membrane properties in Regular-Spiking neurons, resulting in the attenuation of their spiking and concomitant reduced frequency of sIPSCs onto Late-Firing cells.
-All those effects were eliminated when CX3CR1 receptors were blocked or microglia inhibited, pointing to both network- and microglia-modulated effects.
-In addition, the CX3CL1 incubation led to the immature morphology of dendritic spines.
+In the CeL, CX3CL1 modulated passive membrane properties in Regular-Spiking neurons, resulting in the attenuation of their spiking and consequently reduced frequency of sIPSCs onto Late-Firing cells.
+All those effects were eliminated when CX3CR1 receptors were blocked or microglial activity inhibited, pointing to both network- and microglia-modulated effects.
+In addition, the CX3CL1 incubation led to the immature morphology of dendritic spines in cultured neurons of amygdala.
 On the other hand, despite a trend towards the increase in the excitability and complex modulation of GABAergic transmission, CXCL12 did not exert any statistically significant effects in the BLA.
-In contrast, CXCL12 decreased threshold current of CeL neurons and regulated inhibitory synaptic transmission within this structure.
+In contrast, CXCL12 decreased the threshold current of CeL neurons and regulated inhibitory synaptic transmission within this structure.
 Moreover, observations from GABAergic transmission were, at least partially, dependent on astrocytes.
 Altogether, findings from this PhD dissertation highlight chemokines as neuromodulatory proteins and regulators of neuro-glial crosstalk in the amygdala.
 Understanding how the chemokines impact the amygdala physiology, which is involved in many neuropsychiatric diseases, holds major potential for fundamental and medical research.

@@ -1252,7 +1252,7 @@ figure1
 
 ```
 
-#### No roboust effect of CXCL12 action on the GABAergic transmission in the BLA  {#BLACXCL12sIPSCappend}
+#### No robust effect of CXCL12 action on the GABAergic transmission in the BLA  {#BLACXCL12sIPSCappend}
 
 CXCL12 does not induce any marked change in GABAergic transmission in the BLA (see Table 7.9 and Fig. \@ref(fig:CXCL12BLAsIPSCall)).
 

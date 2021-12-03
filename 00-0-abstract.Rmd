@@ -1,30 +1,21 @@
 # Abstract {- .unlisted .unnumbered}
 
-In addition to their initially discovered role as chemotactic molecules<!-- that govern the tissue extravasation of peripheral immune cells-->, chemokines are emerging as key players in a broad array of biological responses in the brain under physiological, non-inflammatory conditions. <!-- Accumulating evidence is starting to elucidate more and more complex functions of immune system in brain not only during neuroinflammation, but also under physiological condition. ///contrary to the prevailing view,--> <!-- Accumulating evidence is beginning to dissect more and more impact of immune system in the physiological conditions.--> 
-Among 50 of chemokine family members, CX3CL1 and CXCL12 have attracted much attention by demonstrating their role in such phenomena as neurogenesis during both neurodevelopment and adulthood, neuroprotection, or modulation of synaptic transmission and plasticity.<!-- Among them, CX3CL1 and CXCL12 are particularly important in this regard, as they are constitutively and widely expressed in the CNS, where they act on cellular, synaptic, network, and behavioral levels.-->
+In addition to their initially discovered role as chemotactic molecules<!-- that govern the tissue extravasation of peripheral immune cells-->, chemokines are emerging as key players in a broad array of biological responses in the brain under physiological, non-inflammatory conditions.<!-- Accumulating evidence is starting to elucidate more and more complex functions of immune system in brain not only during neuroinflammation, but also under physiological condition. ///contrary to the prevailing view,--> <!-- Accumulating evidence is beginning to dissect more and more impact of immune system in the physiological conditions.--> 
+Among them, CX3CL1 and CXCL12 have attracted much attention by demonstrating their role in such phenomena as neurogenesis during both neurodevelopment and adulthood, neuroprotection, as well as modulation of synaptic transmission and plasticity.<!-- Among them, CX3CL1 and CXCL12 are particularly important in this regard, as they are constitutively and widely expressed in the CNS, where they act on cellular, synaptic, network, and behavioral levels. // Two of them, CX3CL1 and CXCL12, have particularly received much attention due to their constitutive and widely distributed expression in the CNS, along with their well-documented impact on neurodevelopment, neuroprotection, synaptic transmission, synaptic plasticity, and behavior.-->
 Moreover, CX3CL1/CX3CR1 and CXCL12/CXCR4 signaling were implicated in behavioral and neurobiological disturbances, such as learning, addition, and anxiety.
-<!-- z powodu .... widely expression and neuron-glial modulation? -->
-
-These actions are thought to be mediated *via* multifaceted mechanisms, including modulation of channel properties, intracellular calcium levels, and neuroendocrine signaling in many brain regions.<!-- + neuron - glial interactions  /// The multifaceted role for CXCR4 is mirrored by  the complexity of the mechanisms underlying its biological  function including receptor cross talk, receptor and ligand  isoforms, non-canonical ligands, and termination of signaling-->
-
 They are thought to exert these actions through their and their cognate receptors constitutive and widely distributed expression in the brain.<!-- Due to these complex patterns of expression in the CNS, studies illustrate that chemokines promote multi-cellular interactions and maintain brain homeostatic functions.  -->
 Indeed, they can be found in all brain cells - from brain-blood barrier endothelium, through all types of glia, to neurons and neural stem cells. 
-
-
-
-
-
-
-
-
-Mounting evidence illustrates that chemokine, beyond their neuroinflammatory functions, also orchestrate the neuron-glia crosstalk, which is essential in maintaining brain homeostasis.
-They can act on cellular (e.g., inducing neuroprotective signaling pathways), synaptic (e.g., modulating synaptic transmission), network (e.g., regulating synaptic potentiation), and behavioral levels (e.g., involvement in anxiety-related behavior). 
-
-Moreover, glial cells can also react to and release chemokines. 
+Moreover, in addition to being able to react, glial cells can also release chemokines.
 Given constant glial monitoring of brain parenchyma, chemokines are considered regulators of neuron-glia actions.
 Thus, they may quickly react to the dynamically changing microenvironment and modulate brain functions.  
+This orchestration of neuron-glia crosstalk is believed to be essential in maintaining brain homeostasis
 
-Two of them, CX3CL1 and CXCL12, have particularly received much attention due to their constitutive and widely distributed expression in the CNS, along with their well-documented impact on neurodevelopment, neuroprotection, synaptic transmission, synaptic plasticity, and behavior.
+<!--These actions are thought to be mediated *via* multifaceted mechanisms, including modulation of channel properties, intracellular calcium levels, synaptic transmission, and neuroendocrine signaling in many brain regions. + neuron - glial interactions  /// The multifaceted role for CXCR4 is mirrored by  the complexity of the mechanisms underlying its biological  function including receptor cross talk, receptor and ligand  isoforms, non-canonical ligands, and termination of signaling--><!-- Mounting evidence illustrates that chemokine, beyond their neuroinflammatory functions, also orchestrate the neuron-glia crosstalk, which is essential in maintaining brain homeostasis.
+They can act on cellular (e.g., inducing neuroprotective signaling pathways), synaptic (e.g., modulating synaptic transmission), network (e.g., regulating synaptic potentiation), and behavioral levels (e.g., involvement in anxiety-related behavior). -->
+
+
+
+
 
 This PhD dissertation will mainly focus on two chemokines, CX3CL1 and CXCL12, together with their corresponding receptors, CX3CR1 and CXCR4, as they are widely distributed in the CNS under non-inflammatory, physiological conditions and involved in an increasing array of functions, such as neurogenesis, neuroprotection, synaptic transmission, synaptic plasticity and behavior (Réaux-Le Goazigo et al., 2013; Trettel et al., 2020; Sowa & Tokarski, 2021).
 

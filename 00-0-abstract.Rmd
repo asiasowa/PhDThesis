@@ -1,27 +1,20 @@
 # Abstract {- .unlisted .unnumbered}
 
-In addition to their initially discovered role as chemotactic molecules that govern the tissue extravasation of peripheral immune cells, more and more data highlight the broad array of functions modulated by chemokines under physiological, non-inflammatory conditions. <!-- Accumulating evidence is starting to elucidate more and more complex functions of immune system in brain not only during neuroinflammation, but also under physiological condition. ///contrary to the prevailing view,--> <!-- Accumulating evidence is beginning to dissect more and more impact of immune system in the physiological conditions.--> 
-Among 50 of chemokine family members, two of them (CX3CL1 and CXCL12) have attracted much attention by demonstrating their role in such phenomena as neurogenesis during both neurodevelopment and adulthood, neuroprotection, or modulation of synaptic transmission and plasticity.<!-- Among them, CX3CL1 and CXCL12 are particularly important in this regard, as they are constitutively and widely expressed in the CNS, where they act on cellular, synaptic, network, and behavioral levels.--> 
-, to behavioral responses.
+In addition to their initially discovered role as chemotactic molecules<!-- that govern the tissue extravasation of peripheral immune cells-->, chemokines are emerging as key players in a broad array of biological responses in the brain under physiological, non-inflammatory conditions. <!-- Accumulating evidence is starting to elucidate more and more complex functions of immune system in brain not only during neuroinflammation, but also under physiological condition. ///contrary to the prevailing view,--> <!-- Accumulating evidence is beginning to dissect more and more impact of immune system in the physiological conditions.--> 
+Among 50 of chemokine family members, CX3CL1 and CXCL12 have attracted much attention by demonstrating their role in such phenomena as neurogenesis during both neurodevelopment and adulthood, neuroprotection, or modulation of synaptic transmission and plasticity.<!-- Among them, CX3CL1 and CXCL12 are particularly important in this regard, as they are constitutively and widely expressed in the CNS, where they act on cellular, synaptic, network, and behavioral levels.-->
+Moreover, CX3CL1/CX3CR1 and CXCL12/CXCR4 signaling were implicated in behavioral and neurobiological disturbances, such as learning, addition, and anxiety.
+<!-- z powodu .... widely expression and neuron-glial modulation? -->
+
+These actions are thought to be mediated *via* multifaceted mechanisms, including modulation of channel properties, intracellular calcium levels, and neuroendocrine signaling in many brain regions.<!-- + neuron - glial interactions  /// The multifaceted role for CXCR4 is mirrored by  the complexity of the mechanisms underlying its biological  function including receptor cross talk, receptor and ligand  isoforms, non-canonical ligands, and termination of signaling-->
+
 They are thought to exert these actions through their and their cognate receptors constitutive and widely distributed expression in the brain.<!-- Due to these complex patterns of expression in the CNS, studies illustrate that chemokines promote multi-cellular interactions and maintain brain homeostatic functions.  -->
 Indeed, they can be found in all brain cells - from brain-blood barrier endothelium, through all types of glia, to neurons and neural stem cells. 
 
-Chemokines exert their action *via* multifaceted mechanisms, including modulation of channel properties, calcium, and neuroendocrine signaling in many brain regions.
-Moreover, several chemokine receptor knockout mice display behavioral and neurobiological disturbances.
-The multifaceted role for CXCR4 is mirrored by  the complexity of the mechanisms underlying its biological  function including receptor cross talk, receptor and ligand  isoforms, non-canonical ligands, and termination of signaling
-
-
-can orchestrate both neuroprotective and detrimental effects.
-
-are endowed with neuromodulatory actions which make them potential candidates for altering neuronal network excitability in epilepsy.
-
-they  induce  responses  that  are  tightly  adjusted to the homeostatic needs of the neuronal circuitry in the brain.
 
 
 
 
 
- neuromodulators and coordinators of neuron-glial communication.
 
 
 Mounting evidence illustrates that chemokine, beyond their neuroinflammatory functions, also orchestrate the neuron-glia crosstalk, which is essential in maintaining brain homeostasis.
@@ -66,3 +59,13 @@ A better understanding of the sequence and nature of events that drive neuro-gli
 
 \newpage
 
+<!-- może się przyda .... 
+
+can orchestrate both neuroprotective and detrimental effects.
+
+are endowed with neuromodulatory actions which make them potential candidates for altering neuronal network excitability in epilepsy.
+
+they  induce  responses  that  are  tightly  adjusted to the homeostatic needs of the neuronal circuitry in the brain.
+
+
+neuromodulators and coordinators of neuron-glial communication. -->

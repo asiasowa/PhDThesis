@@ -108,7 +108,7 @@ knitr::include_graphics("images/chem_mol_mechanisms.png")
 
 <!-- nie działa \\$`r knitr::asis_output("\U03B2")`$\\ ani nic innego, chyba spróbować opcji z if loop w zależności od outputu.... -->
 
-The two members of the chemokine family, e.i., CX3CL1 and CXCL12, have attracted much researchers’ attention due to their wide distribution in the CNS under physiological conditions and involvement in an increasing array of functions. 
+The two members of the chemokine family, i.e., CX3CL1 and CXCL12, have attracted much researchers’ attention due to their wide distribution in the CNS under physiological conditions and involvement in an increasing array of functions. 
 In addition to their broad expression in the periphery, which is beyond the scope of this dissertation, chemokines and CKRs are also expressed by healthy neurons, microglia, astrocytes, oligodendrocytes, and endothelial cells (for a comprehensive review, see: @sowa_2021). 
 
 #### CX3CL1/CX3CR1 pair structure, expression, and signaling {#CX3CL1str}

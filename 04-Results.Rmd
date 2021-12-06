@@ -2,8 +2,6 @@
 
 ## CX3CL1/CX3CR1 signaling in the basolateral nucleus of the amygdala
 
-Considering CX3CR1 implication in anxiety as well as its relatively high expression in the amygdala, the neurophysiological consequences, such as neuronal activity, synaptic transmission, and long-term potentiation, were explored. 
-
 ### CX3CR1 activation reduces the excitability of principal neurons in the rat BLA
 
 ```{r CX3CL1BLAexcitabilitystats, include = FALSE}
@@ -292,7 +290,7 @@ All measured parameters of excitatory synaptic transmission before and after app
 Compared to the control, CX3CL1 in both measured concentrations (2nM and 5nM) had a negligible effect on the median value of the amplitude, frequency, and kinetics of sEPSCs.
 However, although statistically not significant, a proportion of neurons (`r knitr::asis_output("\U223C")` 50%) reacted with a decreased frequency of excitatory synaptic currents (Fig. \@ref(fig:CX3CL1BLAsEPSC)a).
 
-Furthermore, similar to previous findings, in addition to upregulated excitability, minocycline alone also altered sEPSC kinetics by increasing both their rise time from `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_RiseTime)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_RiseTime), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` to `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(median_RiseTime)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(median_RiseTime), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` ms, n = `r BLA_sEPSC_final %>% filter(Experiment == 'minocycline') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_sEPSC_final %>% dplyr::filter(Experiment == 'minocycline') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_sEPSC_mino_BLA_stat_sEPSC_rt`) and 
+Furthermore, in addition to upregulated excitability, minocycline alone also altered sEPSC kinetics by increasing both their rise time from `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_RiseTime)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_RiseTime), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` to `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(median_RiseTime)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(median_RiseTime), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` ms, n = `r BLA_sEPSC_final %>% filter(Experiment == 'minocycline') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_sEPSC_final %>% dplyr::filter(Experiment == 'minocycline') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_sEPSC_mino_BLA_stat_sEPSC_rt`) and 
 decay time from `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_DecayTau)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_DecayTau), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` to `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% summarize(mean(median_DecayTau)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sEPSC_final %>% filter(Experiment == 'minocycline' & Condition == "minocycline") %>% ungroup() %>% dplyr::summarize(x = sd(median_DecayTau), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` ms, n = `r BLA_sEPSC_final %>% filter(Experiment == 'minocycline') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_sEPSC_final %>% dplyr::filter(Experiment == 'minocycline') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_sEPSC_mino_BLA_stat_sEPSC_dt`)(Fig. \@ref(fig:CX3CL1BLAsEPSC)b1-b3).
 Thus, these observations suggest that microglia may be one of the key contributors regulating excitatory drive in the BLA.<!-- Our findings overall highlight microglia and its receptor CX3CR1 as key contributors in regulation of social behavioral adaptation to chronic stress.-->
 
@@ -422,10 +420,10 @@ CX3CL1_ttx_BLA_stat_sIPSC_amp <- as.data.frame(CX3CL1_ttx_BLA_stat_df %>% dplyr:
 
 ```
 
-These observations showed that the CX3CL1-induced downregulation of principal cells' excitability was also associated with GABA~A~ and GABA~B~ receptors (see Fig.\@ref(fig:CX3CL1BLAexcitabilityfrak)).
+These results revealed that the CX3CL1-induced downregulation of principal cells' excitability was also associated with GABA~A~ and GABA~B~ receptors (see Fig.\@ref(fig:CX3CL1BLAexcitabilityfrak)).
 This is in line with mounting evidence pointing to local interneurons as key regulators of the activity of pyramidal-like neurons (see Introduction \@ref(BLA)).
 Hence, the possible influence of CX3CL1 on the inhibitory transmission onto BLA PCs was next explored in *in vitro* slices.
-Cells were clamped at 0 mV to record the spontaneous inhibitory postsynaptic currents (sIPSCs).
+Cells were clamped at 0 mV to record sIPSCs.
 The representative traces of sIPSCs in the absence (baseline) and presence of CX3CL1 (2 and 5nM) are shown in Fig.\@ref(fig:CX3CL1BLAsIPSC).
 At 2nM, CX3CL1 was ineffective in changing any of the sIPSCs measured parameters (for details, see Appendix \@ref(CX3CL1sIPSCappendix)), whereas higher concentration (5nM) of CX3CL1 robustly<!--markedly--> reduced the GABAergic transmission onto principal cells in the BLA by decreasing the median frequency from `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz and the median amplitude from `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA, respectively, compared to the baseline.
 Further analysis of IPSCs kinetics showed that the median rise times and decay times<!--and mIPSCs--> remained unchanged (from `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_RiseTime)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_RiseTime), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(median_RiseTime)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(median_RiseTime), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` ms and from `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_DecayTau)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_DecayTau), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` to `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(median_DecayTau)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_sIPSC_final %>% filter(Experiment == 'CX3CL1(5nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(median_DecayTau), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` ms, respectively), as reported by data in Fig. \@ref(fig:CX3CL1BLAsIPSCappendixfig) in Appendix \@ref(CX3CL1sIPSCappendix). 
@@ -439,7 +437,6 @@ In addition, to determine if a decrease in sIPSC frequency by CX3CL1 was due to 
 The mIPSC amplitude, frequency, and kinetics were measured before and after the CX3CL1 application (clamped at 0 mV).
 No changes in these parameters were found between baseline and CX3CL1-applied recordings (see Fig.\@ref(fig:CX3CL1BLAsIPSC)b and c, mIPSC frequency: `r CX3CL1_ttx_BLA_stat_sIPSC_freq`, mIPSC amplitude: `r CX3CL1_ttx_BLA_stat_sIPSC_amp`).
 Hence, data presented here suggest that CX3CL1 reduces GABA release at the local BLA synapses, probably by depression of the spontaneous firing of local interneurons.
-Notably, the decreased median amplitude of sIPSCs suggests that this signaling molecule might also modulate synapses *via* a postsynaptic mechanism. 
 Moreover, this inhibition of GABAergic transmission by 5nM CX3CL1 was mediated by both CX3CR1 and microglia.
 
 ```{r CX3CL1BLAsIPSC, fig.cap= '**CX3CL1 modulates GABAergic synaptic transmission in the BLA.** **(a1-a7)** Schematics illustrating different experimental conditions **(b)** Boxplots presenting each cell sIPSCs median frequencies  before and after CX3CL1 application across different conditions **(c)** Boxplots presenting each cell sIPSCs median amplitudes before and after CX3CL1 application across different conditions **(d1-d4)** Representative sIPSCs recorded from BLA principal neurons before (blue) and after (red) application of CX3CL1 (5nM) across different conditions.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 16, fig.width= 12}
@@ -566,6 +563,7 @@ figure1
 
 ### CX3CL1 impairs the long-term potentiation in the BLA
 
+*Extracellular recordings and analysis was done by Bartosz Bobula, PhD, from the Department of Physiology, Maj Institute of Pharmacology, Polish Academy of Sciences*
 
 Considering studies indicating CX3CL1 involvement in memory, along with presented here depression of glutamatergic neurons in the BLA, the next step was to gain insights into how CX3CL1 modulates the BLA network activity.
 To this end, extracellular recordings were employed.
@@ -584,7 +582,7 @@ However, the additional presence of AZD8797, CX3CR1 antagonist, did not fully ab
 Together, these findings demonstrate an<!--specific--> impairment of BLA synaptic plasticity to external capsule inputs after CX3CL1 treatment.<!-- of external capsule inputs to LA/BLA.-->
 Considering that one of the mechanisms of synaptic plasticity is changes in dendritic spines morphology<!--inaczej to napisać-->, the next goal was to examine whether CX3CL1 affects dendrites morphology in the amygdala.
 
-```{r CX3CL1BLALTP, fig.cap='**Baseline activity, paired-pulse facilitation, and LTP in the BLA** **(a)** Input/output curves from control and CX3CL1-treated BLA slices. The basal transmission was not significantly different between measured conditions. **(b)** Paired pulse facilitation (PPF) in the BLA. Boxplots represent averaged ratios (%) of second to first responses to double stimuli at the interval of 50 ms. There is no difference between measured conditions. **(c)** Graph showing the time course and quantification of fEPSC evoked in the BLA and the LTP induced after a TBS (arrow) in the presence or absence of 2nM CX3CL1 or in a cocktail of 2nM CX3CL1 and AZD8797 (10uM) in the bath solution. fEPSC amplitudes are represented as a percentage of baseline.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 10, fig.width= 10}
+```{r CX3CL1BLALTP, fig.cap='**Baseline activity, paired-pulse facilitation, and LTP in the BLA** **(a)** Input/output curves from control and CX3CL1-treated BLA slices. The basal synaptic transmission was not significantly different between measured conditions. **(b)** Paired pulse facilitation (PPF) in the BLA. Boxplots represent averaged ratios (%) of second to first responses to double stimuli at the interval of 50 ms. There is no difference between measured conditions. **(c)** Graph showing the time course and quantification of fEPSC evoked in the BLA and the LTP induced after a TBS (arrow) in the presence or absence of 2nM CX3CL1 or in a cocktail of 2nM CX3CL1 and AZD8797 (10uM) in the bath solution. fEPSC amplitudes are represented as a percentage of baseline.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 10, fig.width= 10}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
@@ -617,37 +615,9 @@ figure1
 
 Nevertheless, considering overall data, we  can speculate that on microglial cells the activation of  CX  3  CR1 triggers the release of adenosine that in turn, *via*  A  2A  R activity, increases the release of D-serine from glia  leading to a potentiation of NMDA function /// analogous-->
 
-### CX3CL1 modulated the dendritic spine morphology in cultured rat amygdala neurons
-
-To confirm whether changes in dendritic morphology were accompanied by CX3CL1-induced impairment in the LTP, the shape of dendritic spines was analyzed.
-To this end, the primary neuronal cultures were prepared from the amygdala of rat pups at P0.
-Primary neuronal cultures are mainly comprised of neurons; however, the proportion of 5-7% of glia is usually observed.<!--cytowanie? --> 
-To further isolate the neuronal component of CX3CL1-mediated neuromodulation in the amygdala, the medium was supplemented with mitotic inhibition (cytarabine (AraC)) in a subset of neuronal cultures. 
-It is an inhibitor of uncontrolled proliferation of non-neuronal cells without affecting neuronal survival or neurite outgrowth, or soma diameter [@schwieger_2016].
-Thus, under such conditions, the glial involvement on dendritic spine parameters was further reduced without affecting neuronal viability. 
-
-The proper generation and maturation of dendritic spines are crucial for regulating synaptic transmission, plasticity, and formation of neuronal circuits.<!--dać publikacje zespołu Jakuba-->
-Fig. \@ref(fig:spinesss) shows representative images of dendritic fragments of cultured neurons during baseline (a) and after 20 minutes of CX3CL1 application (b).<!--poprawić??-->
-The CX3CL1 application in the standard medium did not elicit any statistically significant changes, although there is a trend towards the increased width of dendritic spines.
-Interestingly, when neurons were supplemented with AraC, further reducing the glial population, the CX3CL1 led to more prominent changes, manifested as decreased width and length of dendritic spines, and therefore significantly reducing the head/length ratio.
-This parameter implies the more immature dendritic morphology.
-Thus, these observations suggest that CX3CL1 is able to modulate morphological changes of dendritic spines.
-Moreover, given that even a slight reduction in the number of glial cells in almost entirely ( 94-95%) neuronal cultures led to more distinct and opposing changes, one might speculate that neuron-glia communication is a key player in observed CX3CL1-mediated actions on the dendritic spine morphology.
-Finally, in accordance with the reported CX3CL1-mediated impairment in the LTP at cortico-BLA synapses, the immature morphology of dendritic spines might be linked to decreased synaptic efficacy and, thereby, decreased magnitude of synaptic potentiation.
-Given that neurons from amygdala primary cultures displayed that immature phenotype when AraC was present in the medium, it raises the possibility of the glial involvement in these effects.
-
-```{r spinesss, fig.caption = "...", echo = FALSE, warning = FALSE, message= FALSE, fig.width= 5, fig.height= 8}
-
-plot <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\CX3CL1\\HODOWLE_AMYGDALA_WARSZAWA\\hodowle_aftersorting.png")
-
-plot
-
-```
-
-
-<!-- CX3CL1 altered the morphology of dendritic spines in neuronal cultures from the rat amygdala.-->
-
 ### CX3CL1 and CX3CR1 are expressed in principal cells in the basolateral nucleus of the amygdala
+
+*The part regarding neuronal cultures was done by Izabela Figiel-Ożóg, PhD and Prof. Jakub Włodarczyk from Laboratory of Cell Biophysics, Nencki Institute, Warsaw.* 
 
 ```{r BLACX3CL1immunostat, echo = FALSE, warning = FALSE, message= FALSE}
 
@@ -709,7 +679,7 @@ As illustrated in Figure \@ref(fig:BLACX3CL1immunofig), the CX3CR1 receptor was 
 The results regarding CX3CR1 expression in neurons, especially principal cells, were also confirmed in neuronal cultures of the amygdala.
 Hence, although all of the electrophysiological effects of the CX3CL1 were prevented by minocycline, the direct action of this chemokine on neurons is also plausible.
 However, as shown in Fig.\@ref(fig:CX3CL1BLAexcitabilityfrak)c1 and c2, 50% of neurons were responsive when 2nM CX3CL1 was applied, while 5nM CX3CL1 affected a larger fraction of neurons, reaching 65%. 
-Thus, the immunostaining data shows that CX3CR1 expression involves a much lower subset of principal cells, suggesting that probably this CX3CL1-decreased firing of those neurons is not exclusively induced by direct activation of a CX3CR1 receptor at their membrane.
+<!--Thus, the immunostaining data shows that CX3CR1 expression involves a much lower subset of principal cells, suggesting that probably this CX3CL1-decreased firing of those neurons is not exclusively induced by direct activation of a CX3CR1 receptor at their membrane.-->
 
 ```{r BLACX3CL1immunofig, fig.cap = "Immunofluorescent images of coronal sections of the amygdala. **a1-4** A representative coronal brain section containing BLA, in which the CX3CR1 and CAMKII are labeled as red and green, respectively. White arrowheads indicate the colocalization of CX3CR1- and CAMKII expressing neurons. Yellow arrows indicate cells that express the CX3CR1, but not CAMKII. A magenta arrow represents a CaMKII-containing neuron, which did not express CX3CR1 receptor. Scale bar: 25um. **b** Co-expression of CX3CR1 and neuronal marker MAP2 in primary neuronal cultures from the amygdala.", echo = FALSE, warning = FALSE, message= FALSE, fig.height= 6, fig.width= 12}
 

@@ -14,8 +14,8 @@ In contrast, results presented here showed that CXCL12(2nM) enhanced sEPSC frequ
 Thus, grouped data showed no statistically significant change in the frequency of sEPSCs.
 These neuronal proportions were also similar when a higher concentration of exogenous CXCL12, i.e., 5nM, was applied.
 Different experimental settings may explain this discrepancy between studies.
-Firstly, the whole-cell patch-clamp experiments were performed by @yang_2016 in C57BL/6 male mice, whereas this study was performed using slices obtained from male Wistar rats.
-The difference between those animals was reported in many contexts.<!-- lepiej napisać-->
+First, the whole-cell patch-clamp experiments were performed by @yang_2016 in C57BL/6 male mice, whereas this study was performed using slices obtained from male Wistar rats.
+The difference between those animals was reported in many contexts [@asan_2005; @northcutt_2007].<!-- lepiej napisać-->
 
 Moreover, while the present study was performed on the coronal slices, transverse slices containing the amygdala were used in the study by @yang_2016.
 Accordingly, the entorhinal, perirhinal cortex, the hippocampus, and the amygdala are heavily interconnected and implicated in memory; most of the connections known from *in vivo* studies were preserved in the horizontal slices [@halbach_2002]. 
@@ -25,7 +25,7 @@ Here, brain slices were submerged with the ACSF at the temperature of 31–33`r 
 
 Finally, while present experiments were performed using normal ACSF, @yang_2016 sEPSC recordings were made in the presence of a blocker of GABA~A~ receptors, picrotoxin.
 Therefore, these findings raise the possibility that the enhancement in excitatory synaptic transmission onto principal cells in the BLA seen in @yang_2016 study was distorted by the modulation of the GABAergic heterogeneous group of local interneurons.
-Given the well-known tight regulation of principal cell activity by local interneurons<!--citations-->, along with documented CXCL12 mediation of GABAergic transmission<!--citations-->, this explanation is possible.
+Given the well-known tight regulation of principal cell activity by local interneurons (for a review: @hjos_2021), along with documented CXCL12 mediation of GABAergic transmission (for a review: @guyon_2014a), this explanation is possible.
 <!-- jeszcze coś o excitability?-->
 Nevertheless, whether blocking GABA~A~ receptors will result in a significant CXCL12-mediated increase of sEPSC frequency onto principal cells in the BLA and/or enhancing their firing in rat coronal acute slices remains to be confirmed.
 
@@ -36,7 +36,7 @@ These observations are in good agreement with what happens in MCH neurons of the
 Specifically, CXCL12 at 0.1-1 nM decreased peak and discharge frequency of action potential evoked by current pulses, whereas at the concentration of 10nM, CXCL12 induced the opposite actions.
 Several putative mechanisms for these opposite effects, which are not mutually exclusive, have been proposed [@guyon_2007].<!-- Several putative mechanisms for these opposite effects, which are not mutually exclusive, are reviewed in Guyon and Nahon (2007) . sprawdzić skąd to... -->
 
-Firstly, the characteristic U-shaped dose-dependent effect curve is commonly displayed in signaling molecules, including chemokines.<!-- chemokines usually display a U-shaped dose-dependent effect curve, suggesting opposing functions depending on their concentration. // może GPCR receptors?--> 
+First, the characteristic U-shaped dose-dependent effect curve is commonly displayed in signaling molecules, including chemokines.<!-- chemokines usually display a U-shaped dose-dependent effect curve, suggesting opposing functions depending on their concentration. // może GPCR receptors?--> 
 Such a process, known as ‘hormesis’, relates to adaptive responses to compensate for disruption in homeostasis by overshooting homeostatic feedback controls (for reviews: @mattson_2008 and @rostne_2011a).
 
 In addition, CXCL12 was shown to be cleaved by matrix metalloproteases (MMP) present in the brain to give rise to a neurotoxic fragment.
@@ -65,7 +65,7 @@ This is similar to what was observed in other structures and supports the notion
 ## CXCL12/CXCR4 signaling in the lateral subdivision of the central amygdala
 
 This dissertation provides new evidence for the neuromodulatory properties of the CXCL12/CXCR4 axis in synaptic transmission and membrane properties in the lateral subdivision of the central complex of the amygdala.
-Firstly, CXCL12 was shown to modulate the excitability of CeL neurons, which was mediated by the CXCR4 receptor, but probably without the astrocytic involvement.
+First, CXCL12 was shown to modulate the excitability of CeL neurons, which was mediated by the CXCR4 receptor, but probably without the astrocytic involvement.
 Moreover, the frequency of excitatory synaptic currents was increased at the higher concentration (5nM) only in the Regular-Spiking cells. 
 Finally, the treatment with CXCL12 also led to the opposite regulation of GABAergic transmission, based on the subtype of CeL neurons, which was possibly influenced by astrocytes.
 
@@ -98,7 +98,7 @@ At 2nM, CXCL12 was shown to reduce the frequency of sEPSC onto more than 50% of 
 Moreover, this effect was prominent in Regular-Spiking neurons, while no relevant differences in the excitatory synaptic transmission were observed onto Late-Firing cells. 
 <!-- As documented previously, CXCL12 was revealed to increase glutamate release in the cerebellum and hypothalamus [@guyon_2005; @ragozzino_1998].-->
 This is in line with a study showing that PVT neurons preferentially innervated SOM-positive neurons in CeL [@penzo_2015], which is in good agreement with the observed enhancement of excitatory transmission onto Regular-Spiking neurons.<!--poprawić i cytowanie // PVT neurons preferentially innervate SOM+ neurons in the CeL, and stimulation of PVT afferents facilitated SOM+ neuron activity and promoted intra-CeL inhibition, two processes that are critical for fear learning and expression5,6-->
-Moreover, since the higher concentration of CXCL12 showed a trend toward increased excitability of principal cells in the BLA, it is tempting to speculate that their elevated activity is reflected by upregulated excitatory transmission onto Regular-Spiking neurons.
+Since the higher concentration of CXCL12 showed a trend toward increased excitability of principal cells in the BLA, it is tempting to speculate that their elevated activity is reflected by upregulated excitatory transmission onto Regular-Spiking neurons.
 Although BLA direct glutamatergic projections to CeL have been well-established [@ciocchi_2010; @krettek_1978; @li_2013a; @pitknen_1997], differences in the type of their target neurons remain unclear.<!-- może nie unclear..... prefer Regular-Spiking or SOM-expressing neurons -->
 However, given the anxiolytic effect of optogenetic stimulation of the BLA`r knitr::asis_output("\U2192")`CeL pathway [@tye_2011], the cell type-specific differences have been speculated [@fadok_2018].<!--Because optogenetic stimulation of the pathway between the BLA and CEl can also have anxiolytic effects [ 12 ], it could be that glutamatergic BLA inputs to the CEl target different cell types, and that depending on stimulation parameters, different behavioral responses could be induced-->
 Of note, principal cells were reported to preferentially innervate Late-Firing neurons in the baseline condition, whereas following fear-conditioning, this pattern changes  [@li_2013a].
@@ -121,11 +121,11 @@ The mechanism of action of CXCL12 on glutamate release thus needs further invest
 Since CeL neurons are highly interconnected, one could speculate that the enhanced excitatory synaptic transmission onto Regular-Spiking cells and elevated excitability would lead to more increased GABAergic transmission within CeL.<!--lepiej napisać, ale tak --> 
 In contrast, at the concentration of 5nM, the median frequency of sIPSCs is increased in the Regular-Spiking cells, whereas Late-Firing cells were shown to display both reduced frequency and amplitude of sIPSCs.
 All of these effects were mediated by the CXCR4 receptor, as they were abolished in the presence of AMD3100.
-In addition, they were also absent in the presence of TTX and an astrocytic toxin.
-A similar dual effect on GABAergic transmission in the CeL was described for another immune protein, IL-1`r knitr::asis_output("\U03B2")`.
+In addition, these observations were also absent in the presence of TTX and an astrocytic toxin.
+A similar dual effect on GABAergic transmission in the CeL was described for another immune protein, IL-1`r knitr::asis_output("\U03B2")` [@bajo_2015].
 These observations suggest that the CXCL12-mediated actions on GABAergic transmission are multifaceted, which might be a common characteristic among immune proteins.<!--lepiej napisać -->
 The elimination of these effects in the presence of astrocytic toxin or TTX strongly suggests that they are modulated by both the GABAergic and astrocytic networks.
-The mechanisms of astrocytic modulation of the CeL microcircuit have recently attracted much attention.<!--citations--><!--rozwinąć -->
+The mechanisms of astrocytic modulation of the CeL microcircuit have recently attracted much attention [@fan_2021; @martinfernandez_2017; @wahis_2021].<!--rozwinąć -->
 It would, then, be interesting to test whether CXCL12 acute application led to opposing effects in those two subpopulations in the CeL by using dual patch-clamp experiments.
 It is especially of high importance as the impairment of fear acquisition and extinction induced by intra-amygdala infusion of CXCL12 was reported to be eliminated in the presence of GABA~A~ and GABA~B~ receptors [@shi_2016], highlighting the link between GABAergic system and CXCL12/CXCR4 signaling in mediating fear-conditioning. 
 
@@ -177,12 +177,12 @@ Nevertheless, this should not affect presented results, as the reported effects 
 Another issue is that the lack of prominent effects on excitatory synaptic transmission by chosen chemokines despite observed tendencies might be related to the use of coronal slices instead of horizontal sections.<!-- plane-->
 Thus, the hippocampal and cortex connections, which are essential inputs to the amygdala, are absent in the coronal slices used in this study.<!--citations-->
 
-Next, although widely used, the pharmacological inhibition of either microglia or astrocytes might not be highly specific. 
+Finally, although widely used, the pharmacological inhibition of either microglia or astrocytes might not be highly specific. 
 Further dissection of local communication between astrocytes, microglia, and neurons in the context of chemokines' modulation will require carefully designed experiments with multiple points of selective interventions.
-The optogenetic technique allows for precise temporal (e.g., milliseconds) and spatial (e.g., specific cells types) light activation, thereby modulating cellular excitability, highlighting specificity and bidirectionally.<!-- Light activation of these proteins modulates cellular excitability with millisecond precision. //  Comparison of electrical and optogenetic stimulation paradigms, highlighting cellular specificity and bidirectionality of optogenetic techniques// The exact dissection of these parallel actions will require carefully designed experiments with multiple points of selective interventions. 
+The optogenetic technique allows for precise temporal (e.g., milliseconds) and spatial (e.g., specific cell types) light activation, thereby modulating cellular excitability, highlighting specificity and bidirectionally.<!-- Light activation of these proteins modulates cellular excitability with millisecond precision. //  Comparison of electrical and optogenetic stimulation paradigms, highlighting cellular specificity and bidirectionality of optogenetic techniques// The exact dissection of these parallel actions will require carefully designed experiments with multiple points of selective interventions. 
 -->
 
-Finally, the GABA~C~ receptor has also been implicated in the regulation of anxiety in the amygdala, and its action should be isolated in experiments [@cunha_2010]. 
+<!--Finally, the GABA~C~ receptor has also been implicated in the regulation of anxiety in the amygdala, and its action should be isolated in experiments [@cunha_2010].--> 
 
 
 <!-- * CXCL12 - fluorocitrate - lack of control group - long incubation of slices in recording chamber. -->

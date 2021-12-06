@@ -139,18 +139,17 @@ x <- tribble(
     "GFP", "green fluorescent protein",
     "LHA", "lateral hypothalamus area",
     paste0("NF-", "$\\kappa$", "B"), paste0("nuclear factor-", "$\\kappa$", "B"),
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    "AHP", "afterhyperpolarization",
+    "NMDA", "N-Methyl-D-aspartate",
+    "NMDAR", "N-Methyl-D-aspartate receptor",
+    "AMPAR", paste0("$\\alpha$", "-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptor")
+
+) %>%
+    arrange(Abbreviation)
+knitr::kable(x)
+
+```
+
+<!-- "AHP", "afterhyperpolarization",
     "mPFC", "medial part of prefrontal cortex",
     "MGN", "the medial geniculate nucleus",
     "AC", "the auditory cortex",
@@ -161,15 +160,8 @@ x <- tribble(
     "AVP", "arginine–vasopressin",
     "DRG", "dorsal horn of the spinal cord",
     "SLMVs", "synaptic-like microvesicles",
-    "VGLUTs", "vesicular glutamate transporters",
-
-
-) %>%
-    arrange(Abbreviation)
-knitr::kable(x)
-
-```
-
+    "VGLUTs", "vesicular glutamate transporters", -->
+    
 \newpage 
 
 \mainmatter

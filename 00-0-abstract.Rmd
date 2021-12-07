@@ -3,54 +3,40 @@
 Chemokines are emerging as key players in a broad array of biological responses in the brain under physiological, non-inflammatory conditions.
 They can be found in all brain cells - from brain-blood barrier endothelium, through all types of glia, to neurons and neural stem cells. 
 Neuron-glia crosstalk is also suggested to be modulated by chemokines.
-It should be noted that glial cells not only express chemokine receptors, but also can dynamically release them, and thus, influence the activity of neurons or other brain cells.
-This orchestration of neuron-glia crosstalk is believed to be essential in maintaining brain homeostasis.
+It should be noted that glial cells not only express chemokine receptors but also can dynamically release them, thus influencing the activity of neurons or other brain cells.
+This orchestration of neuron-glia communication is believed to be essential in maintaining brain homeostasis.
 Among them, CX3CL1 and CXCL12 have attracted much attention by demonstrating their role in such phenomena as neurogenesis, neuroprotection, as well as modulation of synaptic transmission and plasticity.<!-- this PhD dissertation will mainly focus on two chemokines, CX3CL1 and CXCL12, together with their corresponding receptors, CX3CR1 and CXCR4, as they are widely distributed in the CNS under non-inflammatory, physiological conditions and involved in an increasing array of functions, such as neurogenesis, neuroprotection, synaptic transmission, synaptic plasticity and behavior//// Among them, CX3CL1 and CXCL12 are particularly important in this regard, as they are constitutively and widely expressed in the CNS, where they act on cellular, synaptic, network, and behavioral levels. // Two of them, CX3CL1 and CXCL12, have particularly received much attention due to their constitutive and widely distributed expression in the CNS, along with their well-documented impact on neurodevelopment, neuroprotection, synaptic transmission, synaptic plasticity, and behavior.-->
-The relatively high expression of their receptors, i.e., CX3CR1 and CXCR4, in brain region linked with emotional reactions supports the association between them and neuropsychiatric diseases, such as anxiety or depression. 
+The relatively high expression of their receptors, i.e., CX3CR1 and CXCR4, in brain regions linked with emotional reactions supports the association between them and neuropsychiatric diseases, such as anxiety or depression. 
 Consistently, the impairment of CX3CL1/CX3CR1 and/or CXCL12/CXCR4 signaling led to behavioral of neurobiological consequences, such as impaired learning or anxiety.
 Despite this, mechanisms of chemokines in the regions involved in anxiety (such as the amygdala) remain largely unknown.
 It would provide critical insight into the physiological mechanisms underlying neuroimmunological interactions in the amygdala.
 
 The aim of this study was to dissect the underlying mechanisms and effects of activation of CX3CR1 and CXCR4 receptors on synaptic transmission and electrophysiological property of neurons in two nuclei of the amygdala - basolateral (BLA) - the main input nucleus, and central (CeA) - the main output nucleus.
 
-To this end, by using a combination of electrophysiological and pharmacological approaches, actions of two chemokines (CX3CL1 and CXCL12) on neuronal properties as well as synaptic transmission were determined.
+To this end, by using a combination of electrophysiological and pharmacological approaches, the actions of two chemokines (CX3CL1 and CXCL12) on neuronal properties as well as synaptic transmission were determined.
 Moreover, the involvement of microglia or astrocytes was measured by using minocycline or fluorocitrate, respectively.<!-- mechanisms of chemokine-regulated neuron–glia communication in the context of synaptic transmission.-->
-In order to confirm the neuronal expression of CX3CR1, the immunohistochemical staining was used. 
+In order to confirm the neuronal expression of CX3CR1, immunohistochemical staining was used. 
 
-In the BLA, CX3CL1 increased threshold, reducing neuronal excitability of principal cells. 
+In the BLA, CX3CL1 increased the threshold for spike generation, reducing the neuronal excitability of principal cells (PCs). 
 This effect was accompanied by the impaired LTP at cortico-BLA synapses and attenuated GABAergic transmission manifested as a decreased frequency of spontaneous inhibitory synaptic currents (sIPSCs).
 These effects were blocked in the presence of the CX3CR1 antagonists, AZD8797.
 The application of the inhibitor of microglial activity, minocycline, eliminated the CX3CL1-triggered effects.
 These results suggest that the CX3CR1 activation might modulate the memory and emotional processing *via* its involvement in the GABAergic transmission and the attenuation of the PCs firing and synaptic plasticity.
 
 In the CeA, CX3CL1 decreased the input resistance of Regular-Spiking neurons (RS), resulting in the attenuation of their spiking.
-The firing reduction of RS neurons consequently reduced frequency of sIPSCs in Late-Firing cells (LF).
-Those effects were eliminated in the presence of the antagonist of CX3CR1 receptor, AZD8797, or minocycline, the inhibitor of microglial activity.
-This points to network activty in the CeA is, at least in part, modulated by the CX3CR1 activation.
+The firing reduction of RS neurons consequently reduced the frequency of sIPSCs in Late-Firing cells (LF).
+Those effects were eliminated in the presence of the antagonist of the CX3CR1 receptor, AZD8797, or minocycline, the inhibitor of microglial activity.
+Thus, the network activity in the CeA is suggested to be, at least in part, modulated by the CX3CR1 activation.
 
 The application of CXCL12 in the BLA triggered a nonsignificant increase in the PCs excitability and dual changes in the inhibitory synaptic transmission.<!-- Regarding CXCL12, despite a trend towards the increase in the excitability and complex modulation of GABAergic transmission, this chemokine did not exert any statistically significant effects in the BLA.-->
-These changes are in line with the CXCL12-induced increase in glutamatergic transmission observed by another group.
+These changes are in line with the CXCL12-induced increase in glutamatergic transmission observed by other group.
 
 CXCL12 enhanced firing in both types of CeA neurons.
 The application of this chemokine facilitated the sEPSCs frequency preferentially onto Regular-Spiking neurons.
 Those effects were eliminated in the presence of the CXCR4 antagonist, AMD3100.
-The CXCR4 activation triggered an increased frequency of sIPSCs onto Regular-Spiking neurons, whereas the amplitude of this events in Late-Firing neurons was reduced. 
-Those effects were blocked in the presence of CXCR4 receptor antagonist and by inhibiton of astrocytic activity by fluorocitrate. 
+The CXCR4 activation triggered an increased frequency of sIPSCs onto Regular-Spiking neurons, whereas the amplitude of these events in Late-Firing neurons was reduced. 
+Those effects were blocked in the presence of a CXCR4 receptor antagonist and by inhibition of astrocytic activity by fluorocitrate. 
 
-Altogether, findings from this study highlight neuromodulatory role of CX3CL1 and CXCL12 in both nuclei of the amygdala, which is a consequence of their regulation of local neuron-glial communication.
-Further investigation in this area will lead to better understanding of neuroimmunological mechanisms in the amygdala and provide novel insights into neuro-immune mechanisms in the amygdala and yield new targets for developing treatments of amygdala-related disorders.
-<!-- Therefore, these results imply CX3CL1/CX3CR1 and CXCL12/CXCR4 fine-tuning on the network level in the amygdala and the behavioral relevance of their modulation. --><!-- Continued investigation in this vein will hopefully provide novel insights into neuro-immune mechanisms in the amygdala and yield new targets for developing treatments of amygdala-related disorders.
--->
-
+Altogether, findings from this study highlight the neuromodulatory role of CX3CL1 and CXCL12 in both nuclei of the amygdala, which is a consequence of their regulation of local neuron-glial communication.
+Further investigation in this area will lead to a better understanding of neuroimmunological mechanisms in the amygdala and provide novel insights into neuro-immune mechanisms in the amygdala and yield new targets for developing treatments of amygdala-related disorders.
 \newpage
-
-<!-- może się przyda .... 
-
-can orchestrate both neuroprotective and detrimental effects.
-
-are endowed with neuromodulatory actions which make them potential candidates for altering neuronal network excitability in epilepsy.
-
-they  induce  responses  that  are  tightly  adjusted to the homeostatic needs of the neuronal circuitry in the brain.
-
-
-neuromodulators and coordinators of neuron-glial communication. -->

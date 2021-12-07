@@ -29,7 +29,7 @@ Therefore, this project can be sub-divided into four separate but physiologicall
 4. Investigation of electrophysiological actions of CXCL12 and their receptor, CXCR4, in the rat central nucleus
 
 To address these issues, a whole-cell patch-clamp technique, supplemented with pharmacological approach, was employed.
-Precisely, to examine the membrane properties and synaptic transmission of BLA and CeA neurons in brain slices and their sensitivity to chosen chemokine application, *in vitro*  whole-cell patch-clamp recordings were performed in rat brain slices containing the amygdala. 
+Precisely, to examine the membrane properties and synaptic transmission of BLA and CeA neurons in brain slices and their sensitivity to chosen chemokine treatment, *in vitro*  whole-cell patch-clamp recordings were performed in rat brain slices containing the amygdala. 
 BLA or CeA neuron membrane properties, spontaneous and miniature excitatory and inhibitory synaptic transmission (sEPSCs/mEPSCs/sIPSCs/mIPSCs) were collected before and after bath application of chosen chemokines. 
 Notably, to verify whether astrocytes or microglia are involved in observed effects, in subsets of experiments, recordings were made in the presence of either astrocytic toxin (i.e., fluorocitrate) or the inhibitor of microglial activity (i.e., minocycline).
 To gain additional insights into the role of CX3CL1/CX3CR1 signaling in the amygdala, additional experiments were made to measure their potential modulation of synaptic plasticity. 

@@ -1,6 +1,6 @@
 # Conclusions
 
-In the present work, the effects of two structurally different chemokines, CX3CL1 and CXCL12, on neuronal electrical behavior as well as synaptic properties in the amygdala were investigated, mainly by employing a whole-cell patch-clamp technique. 
+In the present work, the effects of two structurally different chemokines, CX3CL1 and CXCL12, on electrophysiological properties as well as synaptic transsmision in the amygdala were investigated, mainly by employing a whole-cell patch-clamp technique. 
 Both of these chemokines are essential during neurodevelopment, and they have been emerging as key players in neuron-glial interactions and neuromodulation during adulthood [@rauxlegoazigo_2013; @trettel_2020].
 Moreover, some studies have implicated them as mediators of many neurobiological diseases, including anxiety and epilepsy [@schubert_2018; @yang_2016].<!--dodać citations z epilepsy-->
 Increased anxiety and seizures are considered manifestations of amygdala's malfunctioning.
@@ -8,10 +8,10 @@ For example, several lines of evidence illustrate that BLA hyperexcitability man
 
 Findings presented in this PhD dissertation illustrate that both CX3CL1 and CXCL12 modulate the activity of the amygdala network; however, in an opposite manner.
 The main findings of the study regarding CX3CL1 in the BLA are as follows:
-(i) the CX3CL1 application decreased excitability and impaired LTP at the concentration of 5nM.
-(ii) GABAergic synaptic transmission was downregulated following CX3CL1 treatment.
-Based on these observations and previous literature regarding similar mechanisms in the BLA, we speculate that CX3CL1 acts on PV-expressing subpopulation of BLA interneurons. 
-These interneurons target the AIS of principal cells, and decreased GABAergic activity in this area was shown to change the threshold current needed for eliciting an action potential [@saha_2016; @veres_2014; @wefelmeyer_2015; @zonta_2011].
+the CX3CL1 application decreased excitability and impaired LTP at the concentration of 5nM
+and GABAergic synaptic transmission was downregulated following CX3CL1 application.
+Based on these observations and previous literature regarding similar mechanisms in the BLA [@saha_2016; @veres_2014; @wefelmeyer_2015; @zonta_2011], we speculate that CX3CL1 acts on PV-expressing subpopulation of BLA interneurons. 
+These interneurons target the AIS of principal cells, and decreased GABAergic activity in this area was shown to change the threshold current needed for eliciting an action potential.
 At the network level, PV-containing interneurons are also implicated in the attenuation of the LTP [@saha_2016; @wolff_2014].
 
 Moreover, reduction of GABAergic synaptic activity in AIS was shown to be mediated by microglia in the cortex [@chen_2014].
@@ -25,14 +25,15 @@ In addition, the reduced firing in the Regular-Firing cells is in good agreement
 
 Interestingly, the pre-treatment with minocycline, probably by inhibition of microglia (for example: @peng_2016; @scianni_2013; @yuan_2020), increased the firing of principal cells in the BLA and Late-Firing in the CeL. 
 These effects were eliminated after CX3CL1 application, probably due to the neuroprotective role of CX3CL1.
-CX3CL1/CX3CR1 signaling is implicated with pathophysiological augmentation of glutamatergic transmission, as deletion of CX3CR1 in microglia led to neuronal death in such models as systemic inflammation, amyotrophic lateral sclerosis (ALS), and Parkinson’s disease (PD) [@cardona_2006], whereas upregulation of CX3CL1 was shown to reduce neurodegeneration in an animal model of PD [@morganti_2012] or AD [@finneran_2019].
+The deletion of CX3CR1 in microglia led to neuronal death in such models as systemic inflammation, amyotrophic lateral sclerosis (ALS), and Parkinson’s disease (PD) [@cardona_2006], implicating CX3CL1/CX3CR1 signaling in pathophysiological augmentation of glutamatergic transmission.
+Moreover, the upregulation of CX3CL1 was shown to reduce neurodegeneration in an animal model of PD [@morganti_2012] or AD [@finneran_2019].
 Thus, it is possible that the elimination of minocycline-induced facilitation of principal cells' firing is also a manifestation of CX3CL1 neuroprotective actions and that this chemokine exerts anxiolytic effects in the BLA. 
 
 The results concerning CXCL12 present a complex picture.<!--jakoś inaczej napisać..-->
 In the BLA, according to @yang_2016 hypothesis, there is a tendency toward the enhanced excitability of principal cells after CXCL12 application. 
 However, the CXCL12-mediated enhancement of the excitatory transmission was not replicated here, probably due to a different slice orientation and/or the GABAergic modulation of this effect. 
 Indeed, the exogenous CXCL12 did affect the inhibitory synaptic transmission in a subset of principal cells, although these effects were not statistically significant. 
-Nevertheless, most neurons responded with decreased frequency of sIPSCs at the concentration of 2nM in the BLA, whereas at a higher dose, the median frequency of sIPSCs was increased.
+Nevertheless, most neurons responded with decreased frequency of sIPSCs at the concentration of 2nM in the BLA, whereas at a higher concentration (5nM), the median frequency of sIPSCs was increased.
 
 In the CeL, obtained data showed that the exogenous CXCL12 decreased threshold, and thus increasing the excitability of both Regular-Spiking and Late-Firing neurons. 
 However, the excitatory synaptic transmission was upregulated only onto Regular-Spiking neurons, suggesting that either BLA principal neurons or PVN neurons preferentially innervate the Regular-Spiking, SOM-expressing neurons.
@@ -52,8 +53,8 @@ Hence, the further investigations how CXCL12 modulate fear-conditioning and anxi
  
 Altogether, data presented in this PhD dissertation lay the fundamental groundwork to further investigate neuron-glia crosstalk and chemokine signaling in the amygdala.
 Therefore, our results together with the published literature provide support for general hypothesis that chemokines, in addition to traditional neurotransmitters and neuropeptides, represent a neuromodulatory system in the CNS. <!--Altogether, current data add another piece to the growing body of evidence of chemokines' neuromodulatory effects in the CNS. /// CX3CL1 and other chemokines may also represent a new class of CNS neuromodulators, impacting brain function *via* their effects on traditional neurotransmitter and neuropeptide systems, including the 5-HT system (Adler and Rogers, 2005; Adler et al., 2006; Calle-waere et al., 2007; Rostene et al., 2007). --> 
-Moreover, as suggested by @halbach_2002, this study is also of methodological value by highlighting the importance of using horizontal slices in electrophysiological approaches when investigating the excitatory synaptic transmission in the amygdala.<!-- or add methodological value--> 
-Of note, observed opposing actions for CX3CL1/CX3CR1 and CXCL12/CXCR4 illustrated that chemokine signaling in the amygdala is highly dynamic, which is further amplified by their ability to interfere with synaptic plasticity and morphology of dendritic spines, at least for the CX3CL1. 
+Moreover, this study also highlights the importance of using horizontal slices in electrophysiological approaches when investigating the excitatory synaptic transmission in the amygdala [@halbach_2002].<!-- or add methodological value--> 
+Of note, observed opposing actions for CX3CL1/CX3CR1 and CXCL12/CXCR4 illustrated that chemokine signaling in the amygdala is highly dynamic. 
 Hence, the understanding of the peculiar pharmacological responses of chemokine receptors in different circuits and cell types of the amygdala is of particular importance, given their potential role in the etiology of emotional disorders and their corresponding usefulness as therapeutic targets to manage emotional disorders.
 <!-- Taken together, CXCL12/CXCR4 and CX3CL1/CX3CR1 network actions and the regulation of glia-neuron communication make it possible to fine-tune amygdala activity and resulting output to maintain emotional homeostasis. Taken together, the rich diversity of neuro-peptides and their receptors in the central amygdala, second only to the hypothalamus, makes it possible to fine-tune amygdala activity and resulting output to maintain emotional homeostasis. // zerżnięte z van der bourg review o peptides in CeA - analogicznie dla chemokin -->
 <!--Thus, further experiments identifying the properties and functions of each of neuronal, microglial, astrocytic and, oligodendrocytic compartments remain to be addressed.--> 

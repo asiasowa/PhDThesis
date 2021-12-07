@@ -20,7 +20,7 @@ In order to confirm the neuronal expression of CX3CR1, immunohistochemical stain
 In the BLA, CX3CL1 increased the threshold for spike generation, reducing the neuronal excitability of principal cells (PCs). 
 This effect was accompanied by the impaired LTP at cortico-BLA synapses and attenuated GABAergic transmission manifested as a decreased frequency of spontaneous inhibitory synaptic currents (sIPSCs).
 These effects were blocked in the presence of the CX3CR1 antagonists, AZD8797.
-The application of the inhibitor of microglial activity, minocycline, eliminated the CX3CL1-triggered effects.
+The treatment of the inhibitor of microglial activity, minocycline, eliminated the CX3CL1-triggered effects.
 These results suggest that the CX3CR1 activation might modulate the memory and emotional processing *via* its involvement in the GABAergic transmission and the attenuation of the PCs firing and synaptic plasticity.
 
 In the CeA, CX3CL1 decreased the input resistance of Regular-Spiking neurons (RS), resulting in the attenuation of their spiking.
@@ -28,7 +28,7 @@ The firing reduction of RS neurons consequently reduced the frequency of sIPSCs 
 Those effects were eliminated in the presence of the antagonist of the CX3CR1 receptor, AZD8797, or minocycline, the inhibitor of microglial activity.
 Thus, the network activity in the CeA is suggested to be, at least in part, modulated by the CX3CR1 activation.
 
-The application of CXCL12 in the BLA triggered a nonsignificant increase in the PCs excitability and dual changes in the inhibitory synaptic transmission.<!-- Regarding CXCL12, despite a trend towards the increase in the excitability and complex modulation of GABAergic transmission, this chemokine did not exert any statistically significant effects in the BLA.-->
+The treatment of CXCL12 in the BLA triggered a nonsignificant increase in the PCs excitability and dual changes in the inhibitory synaptic transmission.<!-- Regarding CXCL12, despite a trend towards the increase in the excitability and complex modulation of GABAergic transmission, this chemokine did not exert any statistically significant effects in the BLA.-->
 These changes are in line with the CXCL12-induced increase in glutamatergic transmission observed by other group.
 
 CXCL12 enhanced firing in both types of CeA neurons.

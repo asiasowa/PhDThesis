@@ -434,7 +434,7 @@ In particular, following CX3CL1(5nM) application, the presence of the CX3CR1 inh
 These findings indicate a functional involvement of CX3CR1 and microglia in the modulation of BLA GABAergic transmission (Fig.\@ref(fig:CX3CL1BLAsIPSC)).
 
 In addition, to determine if a decrease in sIPSC frequency by CX3CL1 was due to a change in the spontaneous action potential firing in the slice, the TTX (500nM) was used to block neuronal firing.
-The mIPSC amplitude, frequency, and kinetics were measured before and after the CX3CL1 application (clamped at 0 mV).
+The mIPSC amplitude, frequency, and kinetics were measured before and after the CX3CL1 treatment (clamped at 0 mV).
 No changes in these parameters were found between baseline and CX3CL1-applied recordings (see Fig.\@ref(fig:CX3CL1BLAsIPSC)b and c, mIPSC frequency: `r CX3CL1_ttx_BLA_stat_sIPSC_freq`, mIPSC amplitude: `r CX3CL1_ttx_BLA_stat_sIPSC_amp`).
 Hence, data presented here suggest that CX3CL1 reduces GABA release at the local BLA synapses, probably by depression of the spontaneous firing of local interneurons.
 Moreover, this inhibition of GABAergic transmission by 5nM CX3CL1 was mediated by both CX3CR1 and microglia.
@@ -563,7 +563,7 @@ figure1
 
 ### CX3CL1 impairs the long-term potentiation in the BLA
 
-*Extracellular recordings and analysis was done by Bartosz Bobula, PhD, from the Department of Physiology, Maj Institute of Pharmacology, Polish Academy of Sciences*
+*Extracellular recordings and analysis were done by Bartosz Bobula, PhD, from the Department of Physiology, Maj Institute of Pharmacology, Polish Academy of Sciences*
 
 Considering studies indicating CX3CL1 involvement in memory, along with presented here depression of glutamatergic neurons in the BLA, the next step was to gain insights into how CX3CL1 modulates the BLA network activity.
 To this end, extracellular recordings were employed.
@@ -673,7 +673,7 @@ cx3cl1_sd <- sd(cx3cl1$mean_col)
 
 Calcium/calmodulin-dependent protein kinase II (CaMK) has been shown to play a critical role in long-term potentiation (LTP) and emotional learning mediated by the basolateral amygdala.<!--citation?-->
 This is also a critical marker of principal cells in the BLA [@mcdonald_2002a].
-Results presented in this dissertation showed that CX3CL1-induced depression of principal cell's excitability and the impairment in LTP in the BLA, the immunohistochemistry used to examine the level of the expression of CX3CL1 and CX3CR1 in CAMK-II-`r knitr::asis_output("\U03B1")`-positive cells in the BLA.
+Results presented in this dissertation showed that CX3CL1-induced depression of principal cell's excitability and the impairment in LTP in the BLA, the immunohistochemistry used to examine the expression level of the CX3CR1 in CAMKII`r knitr::asis_output("\U03B1")`-positive cells in the BLA.
 As illustrated in Figure \@ref(fig:BLACX3CL1immunofig), the CX3CR1 receptor was present in `r round(cx3cr1_col, digits = 2)``r knitr::asis_output("\U00B1")``r round(cx3cr1_sd, digits = 2)` % of pyramidal-like neurons in the BLA.
 
 The results regarding CX3CR1 expression in neurons, especially principal cells, were also confirmed in neuronal cultures of the amygdala.

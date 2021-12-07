@@ -1,39 +1,36 @@
-## Amygdala  {#amygdala}     
+## Amygdala {#amygdala} 
 
 The amygdala is a brain structure located in the medial temporal lobe associated with a broad array of behaviors, such as learning, fear, anxiety, reward, and addiction [@ehrlich_2009; @herry_2010; @ledoux_2000; @roozendaal_2009].
-<!-- adaptation and well-conserved -->
-<!-- learning --> 
 Surprisingly, despite this variety of functions, the amygdala is well-conserved throughout evolution. 
 Even non-mammalian species such as reptiles, birds, and fishes have counterparts with similar circuits and functions to the amygdala in mammals (for a review: @janak_2015). 
 It is speculated that this may be due to the adaptive context of those phenomena. 
-In order to survive when confronted with particular events, animals must discriminate and learn specific environmental stimuli that predict potentially life-threatening or sustaining events so that they can mobilize<!--inne słówko?--> adaptive responses to those stimuli in the future. <!-- lepiej napisać to zdanie -->
-For example, during fear conditioning, a neutral stimulus, such as an acoustic tone (i.e., the conditioned stimulus [CS]), that predicts an aversive outcome, such as a footshock (i.e., the unconditioned stimulus [US]), results in defensive responses, such as freezing behavior [@janak_2015; @ledoux_2000].<!-- Most of amygdala-related processes are linked to associative learning, i.e., fear conditioning (also known as Pavlovian conditioning) and its malfunctions. This form of learning is termed Pavlovian conditioning. -->
-Analogously, reward-induced conditioning responses <!--the acquisition of conditioned responding to both fear and reward cues-->lead to a cue-triggered behavior [@clem_2010; @johansen_2010; @tye_2008].<!-- nowsze cytowania  -->
+In order to survive when confronted with particular events, animals must discriminate and learn specific environmental stimuli that predict potentially life-threatening or sustaining events so that they can mobilize adaptive responses to those stimuli in the future.
+For example, during fear conditioning, a neutral stimulus, such as an acoustic tone (i.e., the conditioned stimulus [CS]), that predicts an aversive outcome, for example, a footshock (i.e., the unconditioned stimulus [US]), results in defensive responses, including freezing behavior [@janak_2015; @ledoux_2000].
+Analogously, reward-induced conditioning responses lead to a cue-triggered behavior [@clem_2010; @johansen_2010; @tye_2008].
 Thus, both learning about danger and potential rewards are adaptive and engage the amygdala [@janak_2015].
 
-These distinct behaviors are believed to be reflected by widespread amygdalar connections with an array of other brain regions, from the prefrontal cortex to the brainstem (for reviews: @duvarci_2014; @pape_2010; @sah_2003) as well as is complex inner structure.<!-- Moreover, the amygdala is well-documented to have ....further supporting the notion that this structure could influence other parts of the brain, and thereby, distinct behaviors mediated by those regions. -->
+These distinct behaviors are believed to be reflected by widespread amygdalar connections with an array of other brain regions, from the prefrontal cortex to the brainstem (for reviews: @duvarci_2014; @pape_2010; @sah_2003) as well as is complex inner structure.
 This limbic region is comprised of a heterogeneous collection of nuclei, which can be distinguished based on their different connectivity, immunohistochemical and cytoarchitectural profiles (for a review, see: @duvarci_2014). 
 Historically, amygdala nuclei are divided into three groups: (1) the deep or basolateral group, which includes the lateral nucleus, the basal nucleus, and accessory basal nucleus; (2) the superficial or cortical-like group, which includes the cortical nuclei and nucleus of the lateral olfactory tract; and (3) the centromedial group composed of the medial and central nuclei, such as the medial nucleus of the amygdala (MeA), the anterior amygdala area (AAA), and the amygdalo-hippocampal area (AHA) [@mcdonald_1998; @sah_2003].
 Here, the following classification will be used: the basolateral complex of the amygdala (BLA), the central amygdala (CeA), and intercalated cell (ITC) masses, based on many excellent papers (@bocchio_2016; @duvarci_2014; @ehrlich_2009; @pape_2010; @spampanato_2011, see Fig. \@ref(fig:amygdalastr)).
-Nuclei that do not fall into any of these categories are beyond the scope of this dissertation and are described elsewhere [@pitknen_1997; @sah_2003]. <!--check citations and more? -->
+Nuclei that do not fall into any of these categories are beyond the scope of this dissertation and are described elsewhere [@pitknen_1997; @sah_2003].
 
 ```{r amygdalastr, fig.cap= '**Physiological and morphological properties of amygdalar neurons** BMA, basomedial nucleus; B, basal nucleus; LA, lateral nucleus; CeL, lateral subdivision of the central nucleus; CeM, medial subdivision of the central nucleus; ITC, intercalated cell.', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/amygdalastr.png")
 ```
 
-Recent technological advances, such as optogenetics and chemogenetics, in conjunction with a battery of behavioral tests and electrophysiology, have been dissecting how genetically targeted cellular activity within the amygdala could contribute to each of these distinct processes (for example, @lalumiere_2014). <!-- lepiej to napisać ... with ,-->
+Recent technological advances, such as optogenetics and chemogenetics, in conjunction with a battery of behavioral tests and electrophysiology, have been dissecting how genetically targeted cellular activity within the amygdala could contribute to each of these distinct processes (for example, @lalumiere_2014).
 Here, I summarize the current state of knowledge of the amygdala's role, anatomy, and physiology. 
 The physiological and morphological properties of neurons in relation to specific nuclei are shown in Fig. \@ref(fig:amygdalastr), whereas simplified illustrations of their main inputs, outputs, and intra-connectivity are depicted in Fig. \@ref(fig:amygdalaconnect).
 
 ### The basolateral complex of the amygdala (BLA) {#BLA}
 
-The basolateral complex is anatomically divided into the lateral nucleus (LA), the basal nucleus (B), and the basomedial nucleus (BMA), the latter also known as the accessory basal nucleus (@krettek_1978, see Fig. \@ref(fig:amygdalastr)). <!-- nowsze cytowania? -->
+The basolateral complex is anatomically divided into the lateral nucleus (LA), the basal nucleus (B), and the basomedial nucleus (BMA), the latter also known as the accessory basal nucleus (@krettek_1978, see Fig. \@ref(fig:amygdalastr)).
 All these nuclei are often referred to as the basolateral nucleus (BLA), and hereafter this term will be used.
-The BLA is considered the main input nuclei of the amygdala (for reviews: @duvarci_2014; @lalumiere_2014; @sah_2003a). <!-- point of the entry of ///  for cortical and thalamic sensory inputs into the amygdala, which form axonal bundles and enter *via* external and internal capsule, respectively-->
+The BLA is considered the main input nuclei of the amygdala (for reviews: @duvarci_2014; @lalumiere_2014; @sah_2003a).
 Briefly, multisensory and highly processed information derived from all modalities (e.g., olfactory, somatosensory, gustatory, visceral, auditory, and visual) converges in the BLA. 
-It is carried by inputs from higher-order thalamic nuclei, sensory, associative cortices, and the hippocampus, entering the amygdala *via* the external or internal capsules (for reviews: @hjos_2021; @sah_2003). <!-- figure i cytowanie które nie jest review? // thalamic nuclei and secondary or higher-order sensory cortices besides the associative cortices-->
-<!--In most cases, those afferents project to both principal neurons and GABAergic interneurons (see Fig. \@ref(fig:amygdalaconnect), part a).  In addition to pyramidal-like neurons, local interneurons also receive, to some extend, inputs from cortical and thalamic afferents [@smith_2000; @woodson_2000]. For example, CB-expressing interneurons receive about a half of the cortical inputs [@unal_2014], whereas thalamic neurons project to less than 1% of BLA interneurons [@szinyei_2000]. -->
-A large body of evidence highlights the role of these terminals in the acquisition of fear and appetitive<!--reward-related?--> conditioning, which is associated with synaptic potentiation in the BLA [@clem_2010; @blanchard_1972; @johansen_2010; @ledoux_1990; @tye_2008].  <!-- Moreover, increasing evidence shows that distinct subpopulations of BLA differentially encode valence. Accordingly, optogenetic studies delineated that the BLA-NAc pathway is preferentially excited by appetitive stimuli, whereas BLA-CeA connections are preferentially activated by aversive ones [@beyeler_2016; @namburi_2015; @pignatelli_2019]. -->
+It is carried by inputs from higher-order thalamic nuclei, sensory, associative cortices, and the hippocampus, entering the amygdala *via* the external or internal capsules (for reviews: @hjos_2021; @sah_2003). 
+A large body of evidence highlights the role of these terminals in the acquisition of fear and appetitive conditioning, which is associated with synaptic potentiation in the BLA [@clem_2010; @blanchard_1972; @johansen_2010; @ledoux_1990; @tye_2008].
 In addition, this nucleus is strongly innervated by a wide array of neuromodulators (see Fig. \@ref(fig:amygdalaconnect), part a).
 Specifically, this region receives: (1) noradrenergic (NE; norepinephrine) innervation from the locus coeruleus (LC) and nucleus of the solitary tract (NTS), (2) serotonergic projections originating from the DRN, (3) dense dopaminergic innervation from the VTA and the SN, and (4) projections from the basal forebrain (@prager_2016 and references therein).
 
@@ -41,20 +38,19 @@ This amygdalar complex displays cortical-like characteristics based on its devel
 Within the BLA, approximately 80% of all neurons are glutamatergic pyramidal-like principal cells, and the remaining 20% belong to a heterogeneous group of interneurons [@duvarci_2014; @mcdonald_1993; @spampanato_2011]. 
 Accordingly, both principal cells (PCs) and interneurons show many morphological and electrophysiological characteristics similar to their cortical and hippocampal counterparts. 
 
-Morphologically, PCs are characterized by a large triangle-shaped soma, spiny complex dendritic trees, and the presence of a thicker apical dendrite (@mcdonald_1982, see Fig. \@ref(fig:amygdalastr)).<!--  see figure? -->
+Morphologically, PCs are characterized by a large triangle-shaped soma, spiny complex dendritic trees, and the presence of a thicker apical dendrite (@mcdonald_1982, see Fig. \@ref(fig:amygdalastr)).
 Considering electrophysiological properties, PCs show spike frequency adaptation in response to depolarizing somatic current injections (@faber_2001; @par_1995, see Fig. \@ref(fig:amygdalastr)).
-The degree of this adaptation forms a continuum. <!-- the degree of the spike frequency adaptation of PCs forms a continuum: -->
-At one end, cells fire two to three spikes only and show marked spike frequency accommodation, whereas, at the other end, their firing is repetitive throughout the current injection with little accommodation [@faber_2001; @funahashi_2000]. <!-- może jakiś figure i trochę lepiej napisać? see Fig. in methods?-->
+The degree of this adaptation forms a continuum: at one end, cells fire two to three spikes only and show marked spike frequency accommodation, whereas, at the other end, their firing is repetitive throughout the current injection with little accommodation [@faber_2001; @funahashi_2000].
 
 On the other hand, BLA interneurons are a highly heterogeneous subpopulation, forming functional classes based on a large array of parameters, which is a subject of many excellent reviews [@hjos_2021; @prager_2016; @spampanato_2011].
 Analogous to their counterparts in the neocortex and hippocampus, interneurons in the BLA can be characterized by their calcium-binding protein and peptide contents, forming at least four distinct subpopulations: (1) parvalbumin+/calbindin+ (PV+/CB+) neurons (around 40% of BLA interneurons), (2) somatostatin+/calbindin+ (SOM+/CB+) neurons (about 17%), (3) large multipolar cholecystokinin+ (CCK+) neurons that are often calbindin+, constituting 7% of whole BLA interneuronal population, and (4) a family of small bipolar and bitufted interneurons expressing calretinin (CR), CCK, and vasoactive intestinal peptide (VIP), accounting for 35% of BLA interneurons [@kemppainen_2000; @mcdonald_2001; @mcdonald_2001a; @mcdonald_2002; @muller_2003].
 
-In contrast to principal cells, BLA interneurons show no apparent spike frequency adaptation in response to a prolonged depolarizing current injection, their action potentials have a shorter duration (half-width 0.7 ms), and they fire spontaneously *in vivo* at high frequencies (10-15 Hz)  [@spampanato_2011; @par_1995].
-Consistent with the notion that the BLA is a cortical-like structure, these firing properties resemble those found in cortical interneurons [@petillainterneuronnomenclaturegroup_2008] but not those of GABAergic neurons in the CeA [@dumont_2002; @lopezdearmentia_2004]. <!-- see citations for figure -->
-Among BLA interneurons, further electrophysiological analyses have identified a plethora of firing patterns [@spampanato_2011]. <!--more recent reviews-->
+In contrast to principal cells, BLA interneurons show no apparent spike frequency adaptation in response to a prolonged depolarizing current injection, their action potentials have a shorter duration (half-width 0.7 ms), and they fire spontaneously *in vivo* at high frequencies (10-15 Hz) [@spampanato_2011; @par_1995].
+Consistent with the notion that the BLA is a cortical-like structure, these firing properties resemble those found in cortical interneurons [@petillainterneuronnomenclaturegroup_2008] but not those of GABAergic neurons in the CeA [@dumont_2002; @lopezdearmentia_2004]. 
+Among BLA interneurons, further electrophysiological analyses have identified a plethora of firing patterns [@spampanato_2011]. 
 Some evidence has distinguished the difference among interneuronal subtypes, such as a generation of short-duration action potentials with no adaptation by PV-expressing cells (@rainnie_2006; @woodruff_2007, see Fig. \@ref(fig:amygdalastr)), whereas CB-immunopositive neurons produce broad spikes with clear adaptation [@jasnow_2009].
 However, the role of this electrophysiological heterogeneity is still unclear. 
-Nevertheless, it is tempting to speculate that neurons with disparate electrophysiological properties have distinct afferent/efferent connections and modulate local circuits differently (for reviews: @spampanato_2011, @tremblay_2016). 
+Nevertheless, it is speculated that neurons with disparate electrophysiological properties have distinct afferent/efferent connections and modulate local circuits differently (for reviews: @spampanato_2011, @tremblay_2016). 
 
 Also, contrary to principal cells, interneurons have smaller cell bodies, and their axon collaterals are restricted to the BLA [@mcdonald_2001; @mcdonald_2002; @mcdonald_2004].
 Their dendritic trees could be subdivided into multipolar, bitufted, bipolar, and chandelier cells (@mcdonald_1982; @woodruff_2010, see Fig. \@ref(fig:amygdalastr)). 
@@ -77,7 +73,7 @@ Specifically, axonal arborizations of PV- and CCK-expressing interneurons were s
 Given that the perisomatic region generates sodium-mediated action potentials, those strategically positioned inhibitory synapses are thought to strongly regulate PCs' spiking output and timing [@woodruff_2006].
 In contrast, somatostatin-positive interneurons predominantly target distal dendrites and spines of these pyramidal-like neurons (@muller_2007, see Fig. \@ref(fig:amygdalaconnect), part c).
 Since these parts of dendrites are also a destination of extensive excitatory inputs, these GABAergic synapses influence how excitatory postsynaptic potentials (EPSPs) travel along the dendritic arbor, summating and activating voltage-gated conductances.
-Therefore, inhibitory synapses from SOM-containing interneurons may influence such phenomena as a generation of calcium-dependent dendritic action potentials<!-- directly blocks the initiation of dendritic calcium spikes in -->, dendritic integration, glutamatergic synaptic plasticity, and back-propagation of action potentials from somata to dendrites (for a comprehensive review, see: @tremblay_2016). 
+Therefore, inhibitory synapses from SOM-containing interneurons may influence such phenomena as a generation of calcium-dependent dendritic action potentials, dendritic integration, glutamatergic synaptic plasticity, and back-propagation of action potentials from somata to dendrites (for a comprehensive review, see: @tremblay_2016). 
 
 Like excitatory input, monoaminergic projections form synapses in the BLA, primarily with distal dendritic shafts and spines. 
 Thus, all these complex connectivity patterns are additionally submerged in a rich cocktail of neuromodulators, influencing the activity of both excitatory and inhibitory cell types within the BLA.
@@ -85,14 +81,14 @@ The regulation of the BLA network by neuromodulatory systems is comprehensively 
 
 In addition to their strong regulation of PCs' activity, BLA interneurons form local networks consisting of a high number of interneuron-interneuron contacts.
 Electron microscopy analyses revealed that those connections are both chemical and electrical synapses, the latter being mediated by gap junctions [@muller_2005].
-While pyramidal cells do not show electrical coupling in mature animals, the electrical connection probability among  BLA interneurons remains high, but mainly within the same subtype [@muller_2005; @woodruff_2007a].
-This notion was further supported by a study using a conjunction of optogenetics, electrophysiology, and high-resolution microscopy, which distinguished two parallel networks of PV- or CCK-containing interneurons, each coupled by chemical and electrical synapses  (@andrsi_2017, see Fig. \@ref(fig:amygdalaconnect), part c).
+While pyramidal cells do not show electrical coupling in mature animals, the electrical connection probability among BLA interneurons remains high, but mainly within the same subtype [@muller_2005; @woodruff_2007a].
+This notion was further supported by a study using a conjunction of optogenetics, electrophysiology, and high-resolution microscopy, which distinguished two parallel networks of PV- or CCK-containing interneurons, each coupled by chemical and electrical synapses (@andrsi_2017, see Fig. \@ref(fig:amygdalaconnect), part c).
 
 Moreover, BLA interneuronal subpopulations differ in efficacy, kinetics, and short-term dynamics of synaptic inputs and outputs due to, for example, different subunit compositions of GABA receptors.
 In general, activation of interneurons in the BLA generates inhibitory synaptic potentials with fast, GABA~A~-receptor-dependent, and slow, GABA~B~-receptor-dependent components [@washburn_1992].
-Electrophysiological evidence demonstrated that these inhibitory components originate from<!-- are due to activity of?--> distinct subpopulations of interneurons [@sugita_1992]. 
+Electrophysiological evidence demonstrated that these inhibitory components originate from distinct subpopulations of interneurons [@sugita_1992]. 
 
-The abovementioned differences in subcellular targeting domain, connectivity, synaptic kinetics, and intrinsic membrane properties <!-- expression of neuromodulators? -->contribute to a highly specific and precise spatiotemporal inhibitory control, leading to tremendous consequences on cellular and network computations and flow of information. 
+The abovementioned differences in subcellular targeting domain, connectivity, synaptic kinetics, and intrinsic membrane properties contribute to a highly specific and precise spatiotemporal inhibitory control, leading to tremendous consequences on cellular and network computations and flow of information. 
 These are often thought to be comprised of feedback inhibition [@smith_2000; @unal_2014], feedforward inhibition [@bazelot_2015; @lang_1997; @popescu_2011], and disinhibition [@bienvenu_2015] (for a comprehensive review: @tremblay_2016; @woodruff_2007).
 Moreover, activation of the GABAergic system is regarded as critical for synchronizing spiking activity within BLA. 
 Indeed, accumulating evidence indicated that synchronized oscillations at theta and gamma frequencies in local ensembles of projection neurons have emerged as a key element of emotional learning in the BLA [@bauer_2007; @klenowski_2015; @mcdonald_2004; @pelletier_2004].
@@ -101,69 +97,52 @@ Furthermore, these oscillatory activities can coordinate and enhance the effects
 It should also be noted that despite being the main input of the amygdaloid complex, the BLA sends a few projections.
 Despite its reciprocal connections with the prefrontal cortex (PFC) and the hippocampus, predominantly unidirectional outputs of the BLA include the nucleus accumbens (NA), indicated as crucial in reward-seeking behavior [@beyeler_2016; @namburi_2015; @stuber_2011].
 Nevertheless, the BLA predominantly projects to the extended amygdala (see Section \@ref(CeA)), the bed nucleus of the stria terminalis (BNST) and the CeA (see Fig. \@ref(fig:amygdalaconnect), parts b and c).
-Those connections are associated with anxiety and social interactions [@felixortiz_2013; @felixortiz_2014; @felixortiz_2016; @tye_2011].<!-- For example, fear conditioning was reported to strengthen the excitatory synapses from the BLA onto both SOM- and CRF-containing cells in the CeL [@fadok_2017; @li_2013a]. 
-In line with these findings, the study conducted by @tye_2011 nicely showed that optogenetic stimulation of BLA terminals in CeL reduced anxiety-related behavior in freely moving mice, whereas inhibition of these terminals was linked to a high-anxiety behavioral phenotype. Importantly, this fear-related behavior was dependent on feedforward inhibition of the CeM [@ciocchi_2010; @tye_2011]. -->
-<!-- There is a small fraction of long-range inhibitory interneurons, targeting the entorhinal cortex [@mcdonald_2015] or the basal forebrain [@mcdonald_2012] as well as mPFC and periaqueductal grey (PAG) [@sun_2019]. --> 
+Those connections are associated with anxiety and social interactions [@felixortiz_2013; @felixortiz_2014; @felixortiz_2016; @tye_2011].
 Notably, the CeA can be innervated by BLA principal cells either directly by forming glutamatergic synapses onto CeA neurons (@krettek_1978, @lopezdearmentia_2004 or indirectly *via* GABAergic ITCs neurons, leading to feedforward inhibition (@jngling_2008; @royer_1999, see Fig. \@ref(fig:amygdalaconnect), part b).
 
 ### Intercalated cell masses {#ITCs}
 
 Intercalated cells (ITCs), a network of interconnected GABAergic neurons, do not form a compact nucleus but rather gather in numerous small densely packed clusters distributed in the main fiber bundles found in and around the BLA. 
-Based on their location, the ITC clusters are often divided into (1)  lateral intercalated cell cluster (ITC~L~),  bordering on the lateral part of the BLA within the external capsule (2) the medial paracapsular intercalated cluster ITC~MP~, localized within the intermediate<!--internal?--> capsule, which separates the BLA from the CeA,<!--medial paracapsular ITC cluster (Imp) --> and  (3) the biggest cluster among ITCs, located ventro-medially to the BLA (ITC~VM~) (@mako_2011; @millhouse_1986, \@ref(fig:amygdalastr)).
+Based on their location, the ITC clusters are often divided into (1) lateral intercalated cell cluster (ITC~L~), bordering on the lateral part of the BLA within the external capsule (2) the medial paracapsular intercalated cluster ITC~MP~, localized within the intermediate capsule, which separates the BLA from the CeA, and (3) the biggest cluster among ITCs, located ventro-medially to the BLA (ITC~VM~) (@mako_2011; @millhouse_1986, \@ref(fig:amygdalastr)).
 
-Within each cluster, at least two types of neurons can be distinguished: interneurons with small (10–15 `r knitr::asis_output("\U00B5")`m) ovoid cell bodies and spiny, flattened, long, dendritic trees restrained within the fiber bundle [@mcdonald_1993; @nitecka_1987],  and larger (>50 `r knitr::asis_output("\U00B5")`m) interneurons with long, thick, aspiny dendrites and highly branched, long-range axonal projections, innervating neurons in the BLA or areas outside the amygdala, such as the perirhinal, entorhinal, and endopiriform cortices (@bienvenu_2015,\@ref(fig:amygdalastr)). 
+Within each cluster, at least two types of neurons can be distinguished: interneurons with small (10–15 `r knitr::asis_output("\U00B5")`m) ovoid cell bodies and spiny, flattened, long, dendritic trees restrained within the fiber bundle [@mcdonald_1993; @nitecka_1987], and larger (>50 `r knitr::asis_output("\U00B5")`m) interneurons with long, thick, aspiny dendrites and highly branched, long-range axonal projections, innervating neurons in the BLA or areas outside the amygdala, such as the perirhinal, entorhinal, and endopiriform cortices (@bienvenu_2015,\@ref(fig:amygdalastr)). 
 Moreover, ITCs express the highest density of `r knitr::asis_output("\U00B5")`-opioid and dopamine type-1 receptor (D1) in the whole amygdala [@jacobsen_2006; @marowsky_2005; @palomarescastillo_2012; @pape_2010], indicating the possible modulation of amygdala activity by opioid and dopaminergic systems.
 Larger interneurons additionally show strong expression of metabotropic glutamate receptors 1`r knitr::asis_output("\U03B1")` (mGluR1`r knitr::asis_output("\U03B1")`), GABA~A~ receptors `r knitr::asis_output("\U03B1")`1 subunit, and PV [@bienvenu_2015].
-Electrophysiologically, both types of cells share similar features, including lower membrane capacitance,  higher membrane resistance, and firing frequency than BLA and CeA interneurons [@busti_2011; @geracitano_2007; @mako_2011; @royer_2000]. 
+Electrophysiologically, both types of cells share similar features, including lower membrane capacitance, higher membrane resistance, and firing frequency than BLA and CeA interneurons [@busti_2011; @geracitano_2007; @mako_2011; @royer_2000]. 
 
 Moreover, intercalated neurons are interconnected not only within each cluster but also between clusters.
-For example, ITC~L~ interneurons receive convergent auditory cortical and thalamic inputs [@strobel_2015], thereby providing feedforward inhibition to BLA principal neurons [@marowsky_2005].<!-- sprawdzić ostatnie cytowanie lITC neurons receive auditory input from cortical and thalamic regions. [@strobel_2015] ///-->
-On the other hand, the BLA  mainly targets more ventrally located ITCs and the CeA, forming an inhibitory interface<!--gate--> between the BLA and CeA (@busti_2011; @marowsky_2005; @royer_2000, see Fig. \@ref(fig:amygdalaconnect), part b). 
-<!--In addition, ITC~PM~ neurons were suggested to directly inhibit the ITC~VM~ cluster, resulting in disinhibition of the CeA and, thus, facilitation of fear responses [@busti_2011; @royer_2000].-->
+For example, ITC~L~ interneurons receive convergent auditory cortical and thalamic inputs [@strobel_2015], thereby providing feedforward inhibition to BLA principal neurons [@marowsky_2005].
+On the other hand, the BLA mainly targets more ventrally located ITCs and the CeA, forming an inhibitory interface between the BLA and CeA (@busti_2011; @marowsky_2005; @royer_2000, see Fig. \@ref(fig:amygdalaconnect), part b). 
 Hence, intercalated cell clusters are parts of feedforward, feedback, and disinhibiting inhibitory circuits and modulate amygdala-related behaviors, especially by gating CeA output.
-
-<!--On the other hand, intercalated cells, which were shown to also play a crucial role in fear-conditioning, form GABAergic synapses on CeL neurons (see Section \@ref(ITCs) and Fig. \@ref(fig:amygdalaconnect), part b).
-Notably, it was shown that the composition of GABA receptors in those synapses differs depending on their subcellular target [@delaney_2001]. 
-Specifically, CeL soma receives synapses containing only GABA~A~ receptors, whereas additional GABA~C-like~ receptors, similar to bicuculline-insensitive retinal GABA~C~ receptors, have been demonstrated to be present at GABAergic synapses formed by intercalated cells onto dendrites of CeL neurons [@delaney_2001].
-These results indicate that different compositions of GABA receptors may play distinct roles in the local circuitry of this region. -->
-
-<!-- Furthermore, CeL, especially its PKC`r knitr::asis_output("\U03B4")`-expressing neurons, was revealed to be involved in feeding behavior.
-In line with this result, optogenetic excitation of PKC`r knitr::asis_output("\U03B4")`-containing neurons dramatically decreased feeding in both hungry and sated mice [@cai_2014].
-Conversely, in mice, reducing the activity of PKC`r knitr::asis_output("\U03B4")`-immunopositive cells in CeL was shown to reverse the effects of decreased feeding induced by sickness or unpalatable tastes [@cai_2014]. 
-Hence, these findings indicate that CeL, especially the PKC`r knitr::asis_output("\U03B4")`  subpopulation, is activated by anorexigenic signals.  -->
-
-
-
-<!-- We recently discovered that fear conditioning induces cell-type-specific plasticity in the CeL, with excitatory synapses onto SOM neurons being strengthened and excitatory synapses onto SOM neurons being weakened (  Li et al., 2013  ).-->
 
 ### The central amygdala {#CeA}
 
 The central amygdala (CeA) is a GABAergic nucleus comprised of capsular (CeC), lateral (CeL), medial (CeM), and intermediate (CeI) divisions [@jolkkonen_1998; @mcdonald_1982a; @sah_2003].
 Importantly, the CeL and CeC are often considered together as CeL [@duvarci_2014].
 Of note, in some papers, CeA, together with the BNST and nucleus accumbens shell, is also considered to be a part of the extended amygdala due to their similar neuronal phenotypes and inter-connectivity patterns with other brain regions, along with their dense intra-connectivity (@krettek_1978 and for a review: @fox_2015, @gilpin_2015, @sah_2003). 
-However, here we focus mainly on the CeA. <!-- In particular, while the lateral part of the BLA preferentially projects to CeL, CeM neurons receive more substantial inputs from the basal nucleus [@duvarci_2014; @krettek_1978]. -->
+However, here we focus mainly on the CeA.
 
-Contrary to the BLA, CeA is considered the main output nucleus [@ciocchi_2010; @haubensak_2010; @hou_2016]. <!-- nie wiem czy dobre cytowania-->
+Contrary to the BLA, CeA is considered the main output nucleus [@ciocchi_2010; @haubensak_2010; @hou_2016].
 However, similar to the BLA, there are also exceptions from this oversimplified model, and both CeM and CeL receive direct projections outside the amygdala (see Fig. \@ref(fig:amygdalaconnect), part a)).
-Among others, neurons from the paraventricular nucleus of the thalamus (PVT, @domonte_2015, @penzo_2015), the BNST [@gungor_2015], parabrachial nucleus (PBN; @carter_2013) or oxytocinergic neurons from the hypothalamus [@knobloch_2012] sends projections to this region, influencing diverse set of behaviors.<!-- poprawić końcówkę?--><!-- Although there was a prevailing notion that the CeA is a passive gateway conveying information from the BLA to downstream fear effectors, mounting evidence illustrates that this structure is an active participant not only in fear conditioning but also in distinct behavioral phenotypes. --> 
+Among others, neurons from the paraventricular nucleus of the thalamus (PVT, @domonte_2015, @penzo_2015), the BNST [@gungor_2015], parabrachial nucleus (PBN; @carter_2013) or oxytocinergic neurons from the hypothalamus [@knobloch_2012] sends projections to this region, influencing diverse set of behaviors.
 
-Neurons within this nucleus are<!--constitute--> a diverse group of GABAergic interneurons, forming functional subclasses based on their morphological, electrophysiological, and neurochemical features, as well as connectivity and *in vivo* patterns of activity.<!-- figure /// with different functional and molecular features. //  -->
+Neurons within this nucleus are a diverse group of GABAergic interneurons, forming functional subclasses based on their morphological, electrophysiological, and neurochemical features, as well as connectivity and *in vivo* patterns of activity.
 Morphologically, they are reminiscent of striatal medium spiny neurons [@mcdonald_1993; @sun_1993], further supporting the notion of different developmental origins of the BLA and the CeA [@medina_2004; @waclaw_2010]. 
 More precisely, CeL neurons mainly have similar medium spiny neuron-like morphology (i.e., a small soma and numerous branches with a high density of dendritic spines), whereas CeM neurons have a large soma and dendrites with few branches and a low density of dendritic spines (@cassell_1989; @mcdonald_1982a, see Fig. \@ref(fig:amygdalastr)). 
-Based on neuronal electrophysiological firing profiles<!--response to current injections-->, two major types have been described in the CeA: (1) late-firing neurons (LF), with a pronounced delay before the onset of the first action potential (100-200 ms) in response to depolarizing somatic current injections [@hou_2016], and (2) regular-spiking neurons (RS), generating repetitive firing spikes [@dumont_2002; @lopezdearmentia_2004].
-Both of these types account for nearly 90% of all neurons in this region.<!-- CeL or CeA in general? -->
-The remaining types do not exceed more than 10% of the whole CeA neuronal population and are classified as (3) fast-spiking cells and (4) low-threshold bursting cells [@martina_1999]. <!-- figure-->
+Based on neuronal electrophysiological firing profiles, two major types have been described in the CeA: (1) late-firing neurons (LF), with a pronounced delay before the onset of the first action potential (100-200 ms) in response to depolarizing somatic current injections [@hou_2016], and (2) regular-spiking neurons (RS), generating repetitive firing spikes [@dumont_2002; @lopezdearmentia_2004].
+Both of these types account for nearly 90% of all neurons in this region.
+The remaining types do not exceed more than 10% of the whole CeA neuronal population and are classified as (3) fast-spiking cells and (4) low-threshold bursting cells [@martina_1999].
 The latter is characterized by a high input resistance and action potential frequency (>40 Hz) with no accommodation [@dumont_2002], as their counterparts in the cortex, the hippocampus, or the BLA. 
-Moreover, their action potentials are significantly briefer with a half-width of around 0.6 ms compared with > 1 ms in other cell types in CeA [@dumont_2002]. <!-- citations? -->
+Moreover, their action potentials are significantly briefer with a half-width of around 0.6 ms compared with > 1 ms in other cell types in CeA [@dumont_2002].
 The fourth, low-threshold bursting neuron type, is endowed with T-type calcium channels, which are thought to contribute to characteristic spike bursts or spike doublets generation in response to depolarizing current pulses as well as rebound spikes when hyperpolarizing current pulses are applied [@dumont_2002; @hou_2016]. 
 
 Neuronal cells in CeA also express a wide selection of neuropeptides and markers, including SOM, protein kinase C`r knitr::asis_output("\U03B4")` (PKC`r knitr::asis_output("\U03B4")`), corticotropin-releasing factor (CRF), oxytocin receptors (OR), enkephalin (ENK), and others [@cassell_1989; @haubensak_2010]. 
 Although there are some links between peptidergic phenotypes in CeA and electrophysiological and behavioral outputs, the peptidergic subpopulations in CeA are not entirely mutually exclusive. 
 
-Generally, the  CeL microcircuit contains diverse GABAergic neuronal subpopulations with different functional and molecular features [@cassell_1989; @ciocchi_2010; @haubensak_2010; @hou_2016; @li_2013a; @lopezdearmentia_2004; @martina_1999]. 
+Generally, the CeL microcircuit contains diverse GABAergic neuronal subpopulations with different functional and molecular features [@cassell_1989; @ciocchi_2010; @haubensak_2010; @hou_2016; @li_2013a; @lopezdearmentia_2004; @martina_1999]. 
 PKC`r knitr::asis_output("\U03B4")`-expressing neurons form a relatively homogeneous group, comprised mainly of late-firing cells (`r knitr::asis_output("\U223C")`85%; @haubensak_2010). 
 The remaining small fraction was identified as RS neurons [@haubensak_2010].
-Functionally, following fear-conditioning, these neurons display a reduced firing<!--+rate?--><!--activity--> and thus are often referred to as CeL~OFF~ cells [@ciocchi_2010; @haubensak_2010]. 
+Functionally, following fear-conditioning, these neurons display a reduced firing and thus are often referred to as CeL~OFF~ cells [@ciocchi_2010; @haubensak_2010]. 
 Moreover, almost half of the PKC`r knitr::asis_output("\U03B4")` neurons co-express ENK or OR, which has been linked to the inhibitory gating of CeM [@haubensak_2010; @huber_2005; @viviani_2011]. 
 
 On the contrary, most cells absent of the PKC`r knitr::asis_output("\U03B4")` marker express SOM [@haubensak_2010; @li_2013a].
@@ -174,21 +153,19 @@ Therefore, they have often been termed CeL~ON~ neurons.
 Many findings documented that, in CeL, approximately half of SOM-expressing neurons are also immunoreactive for CRF [@mccullough_2018; @pomrenze_2015]. 
 Accordingly, as PKC`r knitr::asis_output("\U03B4")` and CRF- or SOM-immunopositive neurons belong to non-overlapping neuronal populations, it is plausible that they fulfill different functional roles. 
 
-<!-- Over the last decade, the conjunction of optogenetics and electrophysiological approaches not only has further supported the prevailing notion that CeL neurons send mainly unidirectional afferents to CeM (@haubensak_2010; @jolkkonen_1998; @li_2013a; @petrovich_1997, Fig. \@ref(fig:amygdalaconnect), part b and c) but also has illustrated the complexity and extent of CeL intraconnectivity (i.e., within the network) and interconnectivity (i.e., between networks). -->
-
-CeL neurons are mutually connected; however, they prefer to form synapses with the different electrophysiological and/or neurochemical subtypes (Fig. \@ref(fig:amygdalaconnect), part c). <!-- zmienić Although CeL neurons are mutually connected, they prefer to form synapses with the different class. --> 
+CeL neurons are mutually connected; however, they prefer to form synapses with the different electrophysiological and/or neurochemical subtypes (Fig. \@ref(fig:amygdalaconnect), part c). 
 For example, synapses formed between LF`r knitr::asis_output("\U2192")`RS and RS`r knitr::asis_output("\U2192")`LF neurons were reported to have greater density and efficacy than those between cells of the same class [@hou_2016]. 
  
 It is widely accepted that following fear conditioning, neuronal activity of the CeL is required for fear acquisition, whereas activity in the CeM is required for the expression of conditioned fear responses [@ciocchi_2010].
 Moreover, CeM activation alone is well-documented to be sufficient to induce unconditioned freezing [@ledoux_1988], whereas CeL neurons were revealed to tonically inhibit CeM output [@ciocchi_2010; @gozzi_2010].
 Precisely, activation of SOM-expressing CeL neurons results rather in local inhibition within CeL, especially inhibiting PKC`r knitr::asis_output("\U03B4")`-expressing cells than inhibition of CeM neurons, as they do not send noticeable projections to the CeM [@li_2013a].
-In contrast, the PKC<!--delta?-->-containing CeL neurons strongly project to and inhibit CeM neurons (@haubensak_2010; @li_2013a, Fig. \@ref(fig:amygdalaconnect), part c).
-Hence, during the presence of fearful stimuli, CeL projection neurons are tonically inhibited by CeL~ON~, SOM-immunopositive neurons [@gozzi_2010], leading to disinhibition of CeM neurons and the induction of freezing.<!-- dobrze wytłumaczone w Penzo 2014  --> 
-However, when SOM-containing neurons are silenced, PKC`r knitr::asis_output("\U03B4")`-expressing CeL~OFF~ projection neurons become active, inhibiting brainstem-projecting CeM output.<!-- Therefore, the balance between activation of these two parallel CeA subpopulations results in two  /// Therefore, these two parallel CeA outputs have been shown to control behavioral output balanced between passive freezing (*via* CeM output to the brainstem) and active exploration (*via* CeL-mediated disinhibition of cortical neurons). -->
+In contrast, the PKC`r knitr::asis_output("\U03B4")`-containing CeL neurons strongly project to and inhibit CeM neurons (@haubensak_2010; @li_2013a, Fig. \@ref(fig:amygdalaconnect), part c).
+Hence, during the presence of fearful stimuli, CeL projection neurons are tonically inhibited by CeL~ON~, SOM-immunopositive neurons [@gozzi_2010], leading to disinhibition of CeM neurons and the induction of freezing. 
+However, when SOM-containing neurons are silenced, PKC`r knitr::asis_output("\U03B4")`-expressing CeL~OFF~ projection neurons become active, inhibiting brainstem-projecting CeM output.
 Therefore, the balance between the activation of these two parallel CeA subpopulations greatly impacts the behavioral output of this region.
 
-CeA projections are illustrated in Figure  \@ref(fig:amygdalaconnect), part b.
-Broadly, both CeM and CeL neurons send substantial projections, especially to the periaqueductal gray (PAG), but also the BNST and LC, affecting fear- and anxiety-related behaviors, such as freezing [@asok_2018; @paretkar_2018]. <!--  whereas projection to PAG and PVT are thought to mediate defensive behavior [@penzo_2014; @viviani_2011].-->
+CeA projections are illustrated in Figure \@ref(fig:amygdalaconnect), part b.
+Broadly, both CeM and CeL neurons send substantial projections, especially to the periaqueductal gray (PAG), but also the BNST and LC, affecting fear- and anxiety-related behaviors, such as freezing [@asok_2018; @paretkar_2018].
 Moreover, in addition to its well-known role in generating freezing behavior, PAG is also a crucial component of the pain pathway [@paretkar_2019].
 Reward-related behaviors are modulated not only by CeA projections to the SN, the VTA, and the LH [@pomrenze_2015; @reyes_2011; @tsumori_2006] but also CeM neurons were reported to innervate PFC [@seo_2016], which stimulation was shown to mediate brain reward function.
 CeM cells projecting to the dorsal vagal complex (DVC) are also implicated in autonomic regulation [@viviani_2011].
@@ -199,18 +176,8 @@ Taken together, each nucleus receives a unique set of multiple inputs from disti
 These combinations of connections between BLA and CeA, including the feedforward inhibition generated by intercalated neurons, enable increasing or decreasing the amplitude of the CeA responses depending on which set of amygdala nuclei are activated and in what sequence.
 Thus, the CeA output depends not only on the nature and intensity of received inputs but also on their timing and origin.
 All of these may enable the amygdala complex to play a crucial role in surprisingly diverse functions, including emotional memory formation, social interactions, affective and parental behavior, and homeostatic control.
-Considering this diversity, it is not surprising that the disruption of the amygdala functioning is associated with many disorders, including alcoholism and other reward-related disorders<!-- citations -->, anxiety<!-- citations-->, posttraumatic stress disorder<!-- citations -->, and stress-related disorders<!-- citations-->, autism<!--citations-->, obesity<!-- citations-->, epilepsy<!--citations-->, pain<!--citations-->, just to list a few.  <!-- , just to list a few (LeDoux, 2000; Phelps et al., 2014) -->
+Considering this diversity, it is not surprising that the disruption of the amygdala functioning is associated with many disorders, including alcoholism and other reward-related disorders, anxiety, posttraumatic stress disorder, and stress-related disorders, autism, obesity, epilepsy, pain, just to list a few.
 Thus, the amygdala functions as an integrative hub that converts emotionally relevant sensory information about the external and internal environment into behavioral and physiologic responses, playing a crucial role in homeostasis.
 Finally, as amygdalar circuitry and function are well-conserved across evolution [@jarvis_2005], better understanding the complexity of this circuit using animal models has the potential to be directly relevant to humans.
-<!-- Taken together, 
- bardziej zmienić // ładne podsumowanie-->
 
 \newpage 
-
-<!-- Abnormal functioning of the amygdala is observed in various psychiatric disorders such as generalized anxiety disorder, PTSD,  specific  phobias,  depression,  autism  spectrum  disorder and  antisocial  personality  disorder  (Baron-Cohen  et  al.,  2000; Ferri et al., 2017; Fonzo and Etkin, 2017; Garcia, 2017; Kolla et al., 2017; Henigsberg et al., 2019).-->
-
-<!-- As described above, computations performed by BLA circuits to control emotional responses are heavily influenced by a myriad of inputs conveying both sensory and cognitive information.
-The subsequent generation of emotional responses by the  BLA  is largely determined by the balance of excitatory and inhibitory inputs to  BLA principal cells which are tightly controlled by GABAergic interneurons [@bocchio_2016; @capogna_2014; @hjos_2021; @spampanato_2011].
-Thus, here, I briefly discuss our current understanding of the connectivity of this complex neuronal network. //
-Thus, we are beginning to unravel how a single brain region can encode such opposite behaviors, which is of high relevance and warrants further investigation.-->
-<!-- A summary cartoon of these microcircuits is shown in Fig. 5-->

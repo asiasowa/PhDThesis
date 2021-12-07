@@ -6,7 +6,7 @@ Neuron-glia crosstalk is also suggested to be modulated by chemokines.
 It should be noted that glial cells not only express chemokine receptors but also can dynamically release them, thus influencing the activity of neurons or other brain cells.
 This orchestration of neuron-glia communication is believed to be essential in maintaining brain homeostasis.
 Among them, CX3CL1 and CXCL12 have attracted much attention by demonstrating their role in such phenomena as neurogenesis, neuroprotection, as well as modulation of synaptic transmission and plasticity.<!-- this PhD dissertation will mainly focus on two chemokines, CX3CL1 and CXCL12, together with their corresponding receptors, CX3CR1 and CXCR4, as they are widely distributed in the CNS under non-inflammatory, physiological conditions and involved in an increasing array of functions, such as neurogenesis, neuroprotection, synaptic transmission, synaptic plasticity and behavior//// Among them, CX3CL1 and CXCL12 are particularly important in this regard, as they are constitutively and widely expressed in the CNS, where they act on cellular, synaptic, network, and behavioral levels. // Two of them, CX3CL1 and CXCL12, have particularly received much attention due to their constitutive and widely distributed expression in the CNS, along with their well-documented impact on neurodevelopment, neuroprotection, synaptic transmission, synaptic plasticity, and behavior.-->
-The relatively high expression of their receptors, i.e., CX3CR1 and CXCR4, in brain regions linked with emotional reactions supports the association between them and neuropsychiatric diseases, such as anxiety or depression. 
+The relatively high expression of their receptors, i.e., CX3CR1 and CXCR4, in limbic brain structures supports the association between them and neuropsychiatric diseases, such as anxiety or depression. 
 Consistently, the impairment of CX3CL1/CX3CR1 and/or CXCL12/CXCR4 signaling led to behavioral of neurobiological consequences, such as impaired learning or anxiety.
 Despite this, mechanisms of chemokines in the regions involved in anxiety (such as the amygdala) remain largely unknown.
 It would provide critical insight into the physiological mechanisms underlying neuroimmunological interactions in the amygdala.
@@ -39,4 +39,5 @@ Those effects were blocked in the presence of a CXCR4 receptor antagonist and by
 
 Altogether, findings from this study highlight the neuromodulatory role of CX3CL1 and CXCL12 in both nuclei of the amygdala, which is a consequence of their regulation of local neuron-glial communication.
 Further investigation in this area will lead to a better understanding of neuroimmunological mechanisms in the amygdala and provide novel insights into neuro-immune mechanisms in the amygdala and yield new targets for developing treatments of amygdala-related disorders.
+
 \newpage

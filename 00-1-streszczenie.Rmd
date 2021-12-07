@@ -2,18 +2,16 @@
 
 Coraz więcej badań wskazuje na rolę chemokin w szeregu biologicznych odpowiedzi w warunkach fizjologicznych.
 Obecność chemokin wykazano we wszystkich komórkach mózgowych - od komórek śródbłonka bariery krew-mózg, przez wszystkie typy komórek glejowych, po neurony i nerwowe komórki macierzyste.
-Sugeruje się także, że komunikacja pomiędzy neuronami a komórkami glejowymi jest również modulowana przez chemokiny.  
+Sugeruje się także, że komunikacja pomiędzy neuronami a komórkami glejowymi jest również modulowana przez chemokiny. 
 Należy podkreślić, że komórki glejowe nie tylko wykazują obecność receptorów chemokinowych ale także potrafią w sposób dynamiczny uwalniać poszczególne typy chemokin, tym samym wpływając na aktywność neuronów lub innych komórek w mózgu. 
-Przypuszcza się, że te interakcje są jednym z kluczowych czynników odpowiedzialnych za utrzymanie  w szerokim  rozumieniu homeostazy OUN.
-Dwie z chemokin, CX3CL1 i CXCL12, wzbudziły zainteresowanie przez ich szczególnie istotną rolę w modulacji neurogenezy, neuroprotekcji, czy modulacji transmisji synaptycznej oraz plastyczności.<!-- Przypuszcza się, że chemokiny mogą oddziaływać na przekaźnictwo między komórkami nerwowymi oraz procesy plastyczności synaptycznej.// Uważa się, że szczególnie dwie z nich, chemokina CX3CL1 i CXCL12 pełnią szczególnie istotną rolę w koordynacji ww. komunikacji.  -->  
-Szczególnie wysoka ekspresja receptorów dla tych dwóch chemokin w obszarach mózgu powiązanych z reakcjami emocjonalnymi sugeruje związek pomiędzy nimi a chorobami psychicznymi, takimi jak lęk czy depresja. 
+Przypuszcza się, że te interakcje są jednym z kluczowych czynników odpowiedzialnych za utrzymanie w szerokim rozumieniu homeostazy OUN.
+Dwie z chemokin, CX3CL1 i CXCL12, wzbudziły zainteresowanie przez ich szczególnie istotną rolę w modulacji neurogenezy, neuroprotekcji, a także modulacji transmisji synaptycznej oraz plastyczności.<!-- Przypuszcza się, że chemokiny mogą oddziaływać na przekaźnictwo między komórkami nerwowymi oraz procesy plastyczności synaptycznej.// Uważa się, że szczególnie dwie z nich, chemokina CX3CL1 i CXCL12 pełnią szczególnie istotną rolę w koordynacji ww. komunikacji. --> 
+Szczególnie wysoka ekspresja receptorów dla tych dwóch chemokin, tj. CX3CR1 i CXCR4, w obszarach limbicznych sugeruje związek pomiędzy nimi a chorobami psychicznymi, takimi jak lęk czy depresja. 
 Potwierdzają to badania w których wykazano, że zablokowanie sygnalizacji CX3CL1/CX3CR1 i/lub CXCL12/CXCR4 prowadzi w testach behawioralnych na zwierzętach do upośledzenie uczenia się oraz nasilenia reakcji lekowych. 
 Mimo to mechanizm działania chemokin w obszarach mózgu związanymi z zaburzeniami lękowymi (ciało migdałowate) pozostaje w zasadzie niezbadany. 
 Określenie wpływu chemokin na regulację aktywności struktur ciała migdałowatego wniosłoby znaczący wkład w dalsze zrozumienie powiązania pomiędzy układem nerwowym a odpornościowym. 
 
-
-
-Celem przeprowadzonych badań, było określenie mechanizmów i efektów aktywacji receptorów CX3CR1 i CXCR4 na przekaźnictwo nerwowe oraz właściwości elektrofizjologiczne neuronów w obszarze dwóch jądrach ciała migdałowatego - w podstawnobocznym (BLA) - głównym wejściu  oraz środkowym (CeA) - głównym wyjściu z obszaru kompleksu jąder migdałowatych.
+Celem przeprowadzonych badań, było określenie mechanizmów i efektów aktywacji receptorów CX3CR1 i CXCR4 na przekaźnictwo nerwowe oraz właściwości elektrofizjologiczne neuronów w dwóch jądrach ciała migdałowatego - w podstawnobocznym (BLA) - głównym wejściu oraz środkowym (CeA) - głównym wyjściu z obszaru kompleksu jąder migdałowatych.
 
 Dzięki połączeniu elektrofizjologicznych i farmakologicznych metod, te efekty zostały zbadane.
 Co więcej, wpływ mikrogleju i astrocytów był zmierzony przez użycie minocykliny lub fluorocytrynianu.
@@ -23,21 +21,21 @@ W BLA, podanie chemokiny CX3CL1 zwiększyło prąd progowy, prowadząc tym samym
 Temu efektowi towarzyszyła osłabiona plastyczność synaptyczna w synapsach korowo-podstawnobocznych oraz zmniejszona częstotliwość spontanicznych hamujących prądów postsynaptycznych (sIPSCs). 
 Efekty te blokowane były w obecności antagonisty receptora CX3CR1, AZD8797. 
 Również zastosowanie inhibitora aktywności mikrogleju, minocykliny, blokowało efekty podania chemokiny CX3CL1. 
-Uzyskane wyniki mogą sugerować, że  aktywacja receptorów CX3CR1 poprzez wpływ na przekaźnictwo GABArgiczne oraz osłabienie pobudliwości komórek podstawowych i procesów plastyczności synaptyczej może modulować pamięć i reakcję emocjonalną. 
+Uzyskane wyniki mogą sugerować, że aktywacja receptorów CX3CR1 poprzez wpływ na przekaźnictwo GABArgiczne oraz osłabienie pobudliwości komórek podstawowych i procesów plastyczności synaptyczej może modulować pamięć i reakcję emocjonalną. 
 
-W CeA, CX3CL1 zmniejszała oporność błony komórkowej  neuronów regularnie wyładowujących się (ang. *Regular-Spiking neurons*; RS), co skutkowało spadkiem ich pobudliwości. 
-Spadek aktywności tych neuronów spowodował zmniejszenie sIPSCs rejestrowanych w  neuronach o późnym początku wyładowania (ang. *Late-Firing neurons*; LF).
+W CeA, CX3CL1 zmniejszała oporność błony komórkowej neuronów regularnie wyładowujących się (ang. *Regular-Spiking neurons*; RS), co skutkowało spadkiem ich pobudliwości. 
+Spadek aktywności tych neuronów spowodował zmniejszenie sIPSCs rejestrowanych w neuronach o późnym początku wyładowania (ang. *Late-Firing neurons*; LF).
 Efekty te były blokowane w obecności w obecności antagonisty receptorów CX3CR1 AZD8797 lub po zahamowaniu aktywności komórek mikroglejowych minocykliną. 
-Sugeruje to, że aktywność sieciowa CeA jest przynajmniej w części modulowana przez aktywację receptorów  CX3CR1. 
+Sugeruje to, że aktywność sieciowa CeA jest przynajmniej w części modulowana przez aktywację receptorów CX3CR1. 
 
-Podanie chemokiny CXCL12 w BLA wywoływało nieznaczny wzrost pobudliwości PCs oraz dwukierunkowe zmiany w hamującej transmisji synaptycznej, chociaż  oba te efekty nie uzyskały istotności statystycznej. 
+Podanie chemokiny CXCL12 w BLA wywoływało nieznaczny wzrost pobudliwości PCs oraz dwukierunkowe zmiany w hamującej transmisji synaptycznej, chociaż oba te efekty nie uzyskały istotności statystycznej. 
 Kierunek zarejestrowanych efektów aktywacji receptora CXCR4 jest zgodny wynikami uzyskanymi przez inną grupę badawczą, która wykazała wzrost przekaźnictwa pobudzającego w BLA po podaniu CXCL12. 
 
 Podanie CXCL12 zwiększyło pobudliwość zarówno neuronów RS jak i LF w CeA. 
 Podanie tej chemokiny nasilało również częstotliwość spontanicznych pobudzających prądów synaptycznych rejestrowanych z neuronów RS. 
 Efekty te blokowane były przez antagonistę receptora CXCR4, AMD3100.
 Aktywacja receptorów CXCR4 zwiększała także częstotliwość sIPSCs rejestrowanych z neuronów RS. 
-Natomiast rejestracja z neuronów LF wykazała hamujące działanie  CXCL12 na amplitudę  prądów GABAergicznych. 
+Natomiast rejestracja z neuronów LF wykazała hamujące działanie CXCL12 na amplitudę prądów GABAergicznych. 
 Efekty te były blokowane przez antagonistę receptora CXCR4, jak i przez zablokowanie aktywności astrocytów podaniem fluorocytrynianu. 
 Podsumowując, uzyskane wyniki sugerują neuromodulacyjną rolę chemokin w obu badanych jądrach obszaru ciała migdałowatego, co wynika z ich regulacji komunikacji pomiędzy neuronami a komórkami glejowymi.
 Dalsze badania w tym zakresie mogą prowadzić do lepszego zrozumienia mechanizmów neuroimmunologicznych w ciele migdałowatym i dostarczyć nowych kandydatów dla rozwoju leczenia zaburzeń związanych z funkcjami tej struktury. 

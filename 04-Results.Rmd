@@ -124,23 +124,23 @@ pie_BLA_picro_thres <- BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP
 ## frak2nM
 frak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "CX3CL1(2nM)" & Cell %in% c(4)) # subtracting one representative cell from whole dataframe
 frak2nM_IV_subset$Filename_all1[frak2nM_IV_subset$Filename_all1 == "18227023"] = "CX3CL1(2nM)" #renaming the name - instead the name of the file - the name of the condition
-representative_frak2nM <- frak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) # making a plot
+representative_frak2nM <- frak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))  + annotate(geom = "point", x = 300, y = 2, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 360, y = 6, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 360, y = 2, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 400, y = 4, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 400, y = 6, size = 4 , colour = "orange", alpha = 0.5)
 # ## importing traces
 # 
 # ## azdfrak2nM
 azdfrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "AZD8797 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(28))
 azdfrak2nM_IV_subset$Filename_all1[azdfrak2nM_IV_subset$Filename_all1 == "19d03005"] = "AZD8797 + \nCX3CL1(2nM)"
-representative_azdfrak2nM <- azdfrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) #+ xlim(300, 500) + ylim(0, 12)
+representative_azdfrak2nM <- azdfrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))  + annotate(geom = "point", x = 380, y = 4, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 500, y = 8, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 500, y = 10, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 560, y = 12, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 560, y = 14, size = 4 , colour = "orange", alpha = 0.5) # poprawić .... 
 # 
 ## minofrak2nM
 minofrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "minocycline + \nCX3CL1(2nM)") %>% filter(Cell %in% c(39))
 minofrak2nM_IV_subset$Filename_all1[minofrak2nM_IV_subset$Filename_all1 == "17d07008"] = "minocycline + \nCX3CL1(2nM)"
-representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) + xlim(260, 500)
+representative_minofrak2nM <- minofrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) + xlim(260, 500) + annotate(geom = "point", x = 260, y = 2, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 360, y = 8, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 420, y = 10, size = 4 , colour = "orange", alpha = 0.5)
 # 
 ## gaba
 gabafrak2nM_IV_subset <- BLA_df_final %>% filter(Experiment == "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)") %>% filter(Cell %in% c(52))
 gabafrak2nM_IV_subset$Filename_all1[gabafrak2nM_IV_subset$Filename_all1 == "20605006"] = "picrotoxin + \nCGP52432 + \nCX3CL1(2nM)"
-representative_gabafrak2nM <- gabafrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm"))
+representative_gabafrak2nM <- gabafrak2nM_IV_subset %>% plot_IV_individual(mtitle = "") + theme(strip.text = element_text(size = 11, face="bold"), strip.background = element_blank(), plot.margin = unit(c(0.25,0.25,0.25,0.25), "cm")) + annotate(geom = "point", x = 200, y = 4, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 320, y = 10, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 320, y = 8, size = 4 , colour = "orange", alpha = 0.5) + annotate(geom = "point", x = 400, y = 12, size = 4 , colour = "orange", alpha = 0.5)
 
 
 #using patchwork to do layout of the figure

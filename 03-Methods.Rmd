@@ -13,7 +13,7 @@ All efforts were made to minimize suffering and to reduce the number of animals 
 Male Wistar rats (50-180g on arrival) were purchased from Charles River Laboratories (Research Models and Services; Germany).<!-- Po dostawie zwierzęta przechodziły kilkudniową adaptację do warunków pomieszczenia hodowlanego -->
 Four to five animals were housed per polypropylene cage (55x35x20 cm) lined with wooden bedding in a controlled environment (22 `r knitr::asis_output("\U00B1")` 1`r knitr::asis_output("\U00B0")`C, 45 `r knitr::asis_output("\U00B1")` 5 % relative humidity, 12:12 h light/dark cycle, lights on at 7:00 a.m.) with commercial food and fresh water *ad libitum*. 
 Animals were acclimated to the housing environment for at least four days before the beginning of the experiments. 
-For patch-clamp experiments, rats weighing 180-300g (5-10 weeks of age) were used.
+For patch-clamp experiments, rats weighing 200-300g (6-7 weeks of age) were used.
 For immunostaining experiments, rats weighing 300-350 g were used.
 <!--zwierzęta na hodowle-->
 Animals at this age are considered young adults. 
@@ -81,7 +81,7 @@ For experiment measuring excitatory synaptic transmission and excitability, the 
 For experiment measuring inhibitory synaptic transmission, the solution contained 122 Cs-gluconate, 10 CsCl, 10 HEPES, 0.3 EGTA, 10 phosphocreatine-Na~2~, 5 Mg-ATP, 0.4 Na-GTP, pH = 7.35; osmolarity 280-290 mOsmol kg^−1^.
 
 The pipette was positively pressurized to help prevent contamination of the tip and to blow aside surrounding tissue and lowered to the vicinity of the membrane, keeping a positive pressure. 
-After forming a high-resistance seal (> 1 G`r knitr::asis_output("\U038F")`, cell-attached configuration) between the recording pipette and cell membrane by applying negative pressure, the second pulse of negative pressure was used to break the patch of membrane enclosed with the pipette's tip and access inside of the neuron. 
+After forming a high-resistance seal (> 1 G`r knitr::asis_output("\U03A9")`, cell-attached configuration) between the recording pipette and cell membrane by applying negative pressure, the second pulse of negative pressure was used to break the patch of membrane enclosed with the pipette's tip and access inside of the neuron. 
 Electrical contact between the cytoplasm and a patch electrode was established (whole-cell configuration). 
 After break-in, cells stabilized for 5 min, during which intracellular solution slowly diffuses from the pipette into the cytoplasm.
 Ground electrode, which was chloride-coated silver wire in a chamber filled with bath solution, kept the electrical potential of the outer side of the cell membrane at 0 mV. 
@@ -90,7 +90,7 @@ Signals were low-pass filtered at 3 kHz, digitized at 20kHz, and sampled through
 Data were stored on a computer disk and analyzed offline using Clampfit 10.2 software (Molecular Devices, USA). 
 All membrane potentials were corrected for the liquid junction potential (estimated as `r knitr::asis_output("\U223C")`12 mV). 
 The access resistance was monitored throughout each experiment. 
-Only recordings with stable access resistance lower than 20 M`r knitr::asis_output("\U038F")` were considered acceptable for analysis. 
+Only recordings with stable access resistance lower than 20 M`r knitr::asis_output("\U03A9")` were considered acceptable for analysis. 
 All drugs were delivered *via* a bath perfusion system.<!-- antibodies? -->
 <!--  Neurons firing at less than 0.1 Hz were considered ‘silent neurons’ and excluded from analysis.// The sole criterion for selection of recorded cells was the absence of an apical dendrite.-->
 

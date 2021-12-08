@@ -77,6 +77,7 @@ x <- tribble(
     "US", "unconditioned stimulus",
     "MeA", "medial nucleus of the amygdala",
     "AAA", "anterior amygdala area",
+    "AAC", "axo-axonal cell",
     "AHA", "amygdalo-hippocampal area",
     "BLA", "basolateral complex of the amygdala",
     "CeA", "central complex of the amygdala",

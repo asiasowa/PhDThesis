@@ -14,11 +14,17 @@ toc-depth: 4
 lof: True
 lot: True
 subparagraph: yes
-mainfont: Calibri
-geometry: "left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm"
+mainfont: Times New Roman
+geometry: "left= 2.5cm, right= 2.5cm, top= 2.5cm, bottom= 2.5cm"
 csl: common/european-journal-of-neuroscience.csl
 
 ---
+
+<!-- Start the redaction on a new page  \newpage-->
+
+
+<!-- Start page numbering where the redaction starts \pagenumbering{arabic}-->
+
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
@@ -33,8 +39,8 @@ library(figpatch)
 library(gt)
 # options(gt.html_tag_check = FALSE)
 # knitr::opts_chunk$set(echo = TRUE)
-
-knitr::opts_chunk$set(fig.pos = 'H')
+knitr::knit_hooks$set(crop = knitr::hook_pdfcrop)
+knitr::opts_chunk$set(fig.pos = 'h')
 options(gt.html_tag_check = FALSE, scipen = 999) #but if <br> in tables in latex then remove this output
 #knitr::opts_chunk$set(echo = params$printcode)
 ```
@@ -43,3 +49,5 @@ options(gt.html_tag_check = FALSE, scipen = 999) #but if <br> in tables in latex
 # Keywords{- .unlisted .unnumbered}
 
 chemokines, chemokine receptors, central nervous system 
+
+\newpage

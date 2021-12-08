@@ -5,13 +5,21 @@
 
 % \input{tex/params}
 \usepackage{alltt} % for knitr code output
+\usepackage{fontspec}
+\setmainfont{Calibri Light}
+\usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\floatplacement{figure}{h}
 \usepackage{etoolbox} % for toggle
 %\usepackage[left=1.5in,right=1in,top=1in,bottom=1in]{geometry}
 \usepackage{nomencl} % for the nomenclature (List of Abbreviations)
 \usepackage{amsmath, amsfonts, amssymb, amsthm}
 \usepackage{amsbsy,bm} 
-\usepackage{lmodern} % Latin modern fonts
+%\usepackage{lmodern} % Latin modern fonts
 \usepackage[T1]{fontenc} % font encodings
 \usepackage{framed} % for knitr code output
 \usepackage{graphicx}
@@ -52,14 +60,13 @@
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
 \fancyhf{}             % delete current setting for header and footer
-\fancyhead[LE,RO]{\sffamily\thepage}
-\fancyhead[LO]{\sffamily\rightmark}
-\fancyhead[RE]{\sffamily\leftmark}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\rightmark}
+\fancyhead[RE]{\leftmark}
 \renewcommand{\headrulewidth}{0.5pt} 
 \renewcommand{\footrulewidth}{0pt}
 \addtolength{\headheight}{3.0pt} 
 
-\usepackage[Sonny]{fncychap} %Lenny też dawał radę Bjornstrup
 
 % \usepackage[pdftex]{graphicx} % Use very cool pictures..
 % \graphicspath{{images/}} 
@@ -265,5 +272,5 @@
 \doublespacing 
 
 %\begin{document}
-% \blinddocument
+
 %\end{document}

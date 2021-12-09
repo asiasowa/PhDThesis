@@ -4,27 +4,29 @@
 ## PhD thesis founding
 This PhD thesis and candidate were supported by:   
 
-* **National Science Centre Poland doctoral scholarship, ETIUDA**: Wpływ wybranych chemokin na właściwości komórek nerwowych i przekaźnictwo synaptyczne w obszarze kompleksu ciała migdałowatego szczura [Effects of chosen chemokines on neuronal properties and synaptic transmission in central and basolateral complex of the rat amygdala], UMO-2019/32/T/NZ4/00592 -  2019-2020
+* **National Science Centre Poland doctoral scholarship, ETIUDA**: Wpływ wybranych chemokin na właściwości komórek nerwowych i przekaźnictwo synaptyczne w obszarze kompleksu ciała migdałowatego szczura [Effects of chosen chemokines on neuronal properties and synaptic transmission in central and basolateral complex of the rat amygdala], UMO-2019/32/T/NZ4/00592 -  2019-2021
 
-* **National Science Centre Poland Grant, PRELUDIUM**: 	Wpływ wybranych chemokin na aktywność oraz transmisję synaptyczną neuronów w centralnym i podstawnobocznym kompleksie ciała migdałowatego [Effects of chosen chemokines on neuronal activity and synaptic transmission in central and basolateral complex of the amygdala], UMO-2016/21/N/NZ4/03621, 2016-2020 <!--(grant holder: Joanna Ewa Sowa)-->
+* **National Science Centre Poland Grant, PRELUDIUM**: 	Wpływ wybranych chemokin na aktywność oraz transmisję synaptyczną neuronów w centralnym i podstawnobocznym kompleksie ciała migdałowatego [Effects of chosen chemokines on neuronal activity and synaptic transmission in central and basolateral complex of the amygdala], UMO-2016/21/N/NZ4/03621, 2016-2021 <!--(grant holder: Joanna Ewa Sowa)-->
 
 ## PhD candidate’s scientific activity
 
 ### Publications
 
-1. Kusek M, Siwiec M, **Sowa JE**, Bobula B, Bilecki W, Ciurej I, Kaczmarczyk M, Kowalczyk T, Maćkowiak M, Hess G, Tokarski K. 5-HT7 receptors enhance inhibitory synaptic input to principal neurons in the mouse basal amygdala. Neuropharmacology. 2021 Oct 15;198:108779. doi: 10.1016/j.neuropharm.2021.108779. Epub 2021 Sep 3. PMID: 34481835.
+1. Kazmierska-Grebowska P., Siwiec M., Sowa JE, Caban B., Kowalczyk T., Bocian R., MacIver MB. Lamotrigine Attenuates Neuronal Excitability, Depresses GABA Synaptic Inhibition, and Modulates Theta Rhythms in Rat Hippocampus. International Journal of Molecular Sciences. 2021 Dec 05 (accepted) 
 
-2. **Sowa JE**, Tokarski K. Cellular, synaptic, and network effects of chemokines in the central nervous system and their implications to behavior. Pharmacol Rep. 2021 Dec;73(6):1595-1625. doi: 10.1007/s43440-021-00323-2. Epub 2021 Aug 26. PMID: 34498203.
+2. Kusek M, Siwiec M, **Sowa JE**, Bobula B, Bilecki W, Ciurej I, Kaczmarczyk M, Kowalczyk T, Maćkowiak M, Hess G, Tokarski K. 5-HT7 receptors enhance inhibitory synaptic input to principal neurons in the mouse basal amygdala. Neuropharmacology. 2021 Oct 15;198:108779. doi: 10.1016/j.neuropharm.2021.108779. Epub 2021 Sep 3. PMID: 34481835.
 
-3. Siwiec M, Kusek M, **Sowa JE**, Tokarski K, Hess G. 5-HT7 receptors increase the excitability of hippocampal CA1 pyramidal neurons by inhibiting the A-type potassium current. Neuropharmacology. 2020 Oct 15;177:108248. doi: 10.1016/j.neuropharm.2020.108248. Epub 2020 Jul 29. PMID: 32736087.
+3. **Sowa JE**, Tokarski K. Cellular, synaptic, and network effects of chemokines in the central nervous system and their implications to behavior. Pharmacol Rep. 2021 Dec;73(6):1595-1625. doi: 10.1007/s43440-021-00323-2. Epub 2021 Aug 26. PMID: 34498203.
 
-4. Skupio U, Tertil M, Bilecki W, Barut J, Korostynski M, Golda S, Kudla L, Wiktorowska L, **Sowa JE**, Siwiec M, Bobula B, Pels K, Tokarski K, Hess G, Ruszczycki B, Wilczynski G, Przewlocki R. Astrocytes determine conditioned response to morphine via glucocorticoid receptor-dependent regulation of lactate release. Neuropsychopharmacology. 2020 Jan;45(2):404-415. doi: 10.1038/s41386-019-0450-4. Epub 2019 Jun 29. PMID: 31254970; PMCID: PMC6901448.
+4. Siwiec M, Kusek M, **Sowa JE**, Tokarski K, Hess G. 5-HT7 receptors increase the excitability of hippocampal CA1 pyramidal neurons by inhibiting the A-type potassium current. Neuropharmacology. 2020 Oct 15;177:108248. doi: 10.1016/j.neuropharm.2020.108248. Epub 2020 Jul 29. PMID: 32736087.
 
-5. Pochwat B, Szewczyk B, Kotarska K, Rafało-Ulińska A, Siwiec M, **Sowa JE**, Tokarski K, Siwek A, Bouron A, Friedland K, Nowak G. Hyperforin Potentiates Antidepressant-Like Activity of Lanicemine in Mice. Front Mol Neurosci. 2018 Dec 12;11:456. doi: 10.3389/fnmol.2018.00456. PMID: 30618608; PMCID: PMC6299069.
+5. Skupio U, Tertil M, Bilecki W, Barut J, Korostynski M, Golda S, Kudla L, Wiktorowska L, **Sowa JE**, Siwiec M, Bobula B, Pels K, Tokarski K, Hess G, Ruszczycki B, Wilczynski G, Przewlocki R. Astrocytes determine conditioned response to morphine via glucocorticoid receptor-dependent regulation of lactate release. Neuropsychopharmacology. 2020 Jan;45(2):404-415. doi: 10.1038/s41386-019-0450-4. Epub 2019 Jun 29. PMID: 31254970; PMCID: PMC6901448.
 
-6. Sowa J, Kusek M, Siwiec M, **Sowa JE**, Bobula B, Tokarski K, Hess G. The 5-HT7 receptor antagonist SB 269970 ameliorates corticosterone-induced alterations in 5-HT7 receptor-mediated modulation of GABAergic transmission in the rat dorsal raphe nucleus. Psychopharmacology (Berl). 2018 Dec;235(12):3381-3390. doi: 10.1007/s00213-018-5045-y. Epub 2018 Sep 28. PMID: 30267130; PMCID: PMC6267141.
+6. Pochwat B, Szewczyk B, Kotarska K, Rafało-Ulińska A, Siwiec M, **Sowa JE**, Tokarski K, Siwek A, Bouron A, Friedland K, Nowak G. Hyperforin Potentiates Antidepressant-Like Activity of Lanicemine in Mice. Front Mol Neurosci. 2018 Dec 12;11:456. doi: 10.3389/fnmol.2018.00456. PMID: 30618608; PMCID: PMC6299069.
 
-7. **Sowa JE**, Ślusarczyk J, Trojan E, Chamera K, Leśkiewicz M, Regulska M, Kotarska K, Basta-Kaim A. Prenatal stress affects viability, activation, and chemokine signaling in astroglial cultures. J Neuroimmunol. 2017 Oct 15;311:79-87. doi: 10.1016/j.jneuroim.2017.08.006. Epub 2017 Aug 19. PMID: 28844502.
+7. Sowa J, Kusek M, Siwiec M, **Sowa JE**, Bobula B, Tokarski K, Hess G. The 5-HT7 receptor antagonist SB 269970 ameliorates corticosterone-induced alterations in 5-HT7 receptor-mediated modulation of GABAergic transmission in the rat dorsal raphe nucleus. Psychopharmacology (Berl). 2018 Dec;235(12):3381-3390. doi: 10.1007/s00213-018-5045-y. Epub 2018 Sep 28. PMID: 30267130; PMCID: PMC6267141.
+
+8. **Sowa JE**, Ślusarczyk J, Trojan E, Chamera K, Leśkiewicz M, Regulska M, Kotarska K, Basta-Kaim A. Prenatal stress affects viability, activation, and chemokine signaling in astroglial cultures. J Neuroimmunol. 2017 Oct 15;311:79-87. doi: 10.1016/j.jneuroim.2017.08.006. Epub 2017 Aug 19. PMID: 28844502.
 
 ### Oral presentations
 
@@ -347,7 +349,7 @@ figure2
 
 #### CX3CL1 does not modulate excitatory synaptic transmission in the BLA {#CX3CL1sEPSCappendix}
 
-Figure \@ref(fig:CX3CL1BLAsEPSCfigall) and Table 7.2<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> reports on sEPSC parameters measured in principal cells in the BLA before and after CX3CL1, AZD8797, and minocycline treatment. 
+Figure \@ref(fig:CX3CL1BLAsEPSCfigall) and Table 7.2<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> report on sEPSC parameters measured in principal cells in the BLA before and after CX3CL1, AZD8797, and minocycline treatment. 
 
 ```{r CX3CL1BLAsEPSCappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
 
@@ -499,7 +501,7 @@ figure1
 
 #### CX3CL1 does not affect kinetics in inhibitory synaptic transmission in the BLA {#CX3CL1sIPSCappendix}
 
-Effects of CX3CL1 on inhibitory synaptic transmission in summarized in Table 7.3.
+Effects of CX3CL1 on inhibitory synaptic transmission are summarized in Table 7.3.
 In addition, Fig. \@ref(fig:CX3CL1BLAsIPSCappendixfig) presents the data regarding the lack of effects of CX3CL1 on sIPSCs/mIPSCs kinetics. 
 
 ```{r CX3CL1BLAsIPSCappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
@@ -648,7 +650,7 @@ figure1
 
 #### Effects of CX3CL1, AZD8797, and minocycline in the CeL, focusing on two main cell types {#CX3CL1CeAmembrappendix}
 
-All membrane effects of CX3CL1, AZD8797 or minocycline application are summarized in Table 7.4.
+All membrane effects of CX3CL1, AZD8797, or minocycline application are summarized in Table 7.4.
 
 ```{r CX3CL1CeAintrinsictable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -946,8 +948,8 @@ figure1
 
 #### CX3CL1 does not affect excitatory synaptic transmission in the CeL {#CX3CL1CeAsEPSC}
 
-Treatment with CX3CL1 does not change any of measured parameters of excitatory synaptic transmission. 
-The data are shown in Table 7.5 and are illustrated on Fig.\@ref(fig:CX3CL1CeAsEPSCappendixfig).
+Treatment with CX3CL1 changed none of the measured parameters of excitatory synaptic transmission. 
+The data are shown in Table 7.5 and are illustrated in Fig.\@ref(fig:CX3CL1CeAsEPSCappendixfig).
 
 ```{r CX3CL1CeAsEPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1053,7 +1055,7 @@ figure1
 
 #### CX3CL1 affect inhibitory synaptic transmission in CeL {#CeACX3CL1sIPSCappendix}
 
-Table 7.6 summarizes the statistics regarding sIPSC characteristics after CX3CL1, AZD8797, and minocycline application. 
+Table 7.6 summarizes the sIPSC characteristics after CX3CL1, AZD8797, and minocycline application. 
 
 ```{r CX3CL1CeAsIPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1200,7 +1202,7 @@ gt(groupname_col = "Variable") %>%
 knitr::include_graphics("Table77.html")
 ```
 
-```{r CXCl12BLAexcitabilityfigall, fig.cap= 'CXCL12 did not significantly change any of measured membrane properties of BLA principal cells.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 12, fig.width= 12}
+```{r CXCl12BLAexcitabilityfigall, fig.cap= 'CXCL12 did not significantly change any of the measured membrane properties of BLA principal cells.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 12, fig.width= 12}
 
 # GAIN
 bp_BLA_gain <- plot_boxplot(BLA_df_final_12, gain, mtitle = "", ylabel = "gain",  dot_size = 2)
@@ -1744,7 +1746,7 @@ figure1
 
 #### Effects of CXCL12 on inhibitory synaptic transmission in the CeL {#CXCL12CeAsIPSCappend}
 
-CXCL12 does not modulate kinetics of spontaneous and miniature inhibitory postsynaptic currents in the CeL, as shown in Table 7.12 and Fig. \@ref(fig:CXCL12CeAsIPSCfigapp).
+CXCL12 does not modulate the kinetics of spontaneous and miniature inhibitory postsynaptic currents in the CeL, as shown in Table 7.12 and Fig. \@ref(fig:CXCL12CeAsIPSCfigapp).
 
 ```{r CXCL12CeAsIPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 

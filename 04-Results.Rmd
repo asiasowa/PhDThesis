@@ -46,7 +46,7 @@ Similar effects were observed in higher dose (baseline = `r round(BLA_df_final %
 The two approaches were used to confirm whether CX3CL1-induced reduction in excitability is dependent on the CX3CL1 receptor, CX3CR1.
 First, before recordings, a subset of slices was incubated with antibodies against CX3CR1 (2ng/ml).
 Under such experimental conditions, the CX3CL1-induced reduction in principal cells' excitability was not statistically significant; however, there still was a proportion of neurons responding with an increased action potential threshold (Fig. \@ref(fig:CX3CL1BLAexcitabilityfrak)b).
-Notably, slices used in this study were 300 `r knitr::asis_output("\U03BC")`m thin, and the antibody penetration was limited to (`r knitr::asis_output("\U223C")` 50 `r knitr::asis_output("\U03BC")`, @fogarty_2013). 
+Notably, slices used in this study were 300`r knitr::asis_output("\U03BC")`m thin, and the antibody penetration was limited to (`r knitr::asis_output("\U223C")` 50`r knitr::asis_output("\U03BC")`m, @fogarty_2013). 
 To this end, another subset of experiments was performed using a pharmacological approach with AZD8797 to inhibit CX3CR1 [@ridderstadwollberg_2014].
 
 As shown in Fig. \@ref(fig:CX3CL1BLAexcitabilityfrak), AZD8797 prevented the CX3CL1-induced decrease in principal cells' excitability, manifested as an increased action potential threshold, and thereby additionally confirmed CX3CR1 mediation in the observed effect (`r CX3CL1_azdfrak2nM_BLA_stat_tres`, n = `r BLA_df_final %>% filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_df_final %>% dplyr::filter(Experiment == 'AZD8797 + \nCX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`).
@@ -64,7 +64,7 @@ For this reason, recordings were made with the additional presence of the picrot
 As expected, the CX3CL1 effect was fully abolished when the GABA~A~ and GABA~B~ receptors were blocked (baseline = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)`, CX3CL1 (2nM) = `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)' & Condition == "CX3CL1") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 2)` mV, n = `r BLA_df_final %>% filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r BLA_df_final %>% dplyr::filter(Experiment == 'picrotoxin + \nCGP52432 + \nCX3CL1(2nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CX3CL1_gabafrak2nM_BLA_stat_tres`, Fig. \@ref(fig:CX3CL1BLAexcitabilityfrak)b).
 Thus, these data suggest that CX3CL1 reduced principal cells' firing *via* a CX3CR1-, microglia-, and interneuron-dependent manner.<!-- cooperate?-->
 
-```{r CX3CL1BLAexcitabilityfrak, fig.cap= "**Effects of CX3CL1 on the spike threshold current**  **(a)** Schematics of presented conditions. **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions. **(c)** Pie charts presenting the proportion of types of neuronal responses to CX3CL1 application. **(d1-d4)** Plots presenting input-output relationships of representative cells. **(e1-e4)** Voltage traces from representative cells to injection currents before (blue) and after the CX3CL1 application (red) across different conditions, which are presented as orange dots on previous plots. Scale bar: 10mV, 100ms.", fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 14}
+```{r CX3CL1BLAexcitabilityfrak, fig.cap= "**Effects of CX3CL1 on the spike threshold current**  **(a)** Schematics of presented conditions. **(b)** Boxplots presenting each cell before and after CX3CL1 application across different conditions. **(c)** Pie charts presenting the proportion of types of neuronal responses to CX3CL1 application. **(d1-d4)** Plots presenting input-output relationships of representative cells. **(e1-e4)** Voltage traces from representative cells to injection currents before (blue) and after the CX3CL1 application (red) across different conditions, which are presented as orange dots on previous plots. Scale bar: 10mV, 100ms.", fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 12, fig.height= 14, out.extra=''}
 
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
@@ -616,7 +616,9 @@ Nevertheless, considering overall data, we  can speculate that on microglial cel
 
 ### CX3CL1 and CX3CR1 are expressed in principal cells in the basolateral nucleus of the amygdala
 
-*The part regarding neuronal cultures was done by Izabela Figiel-Ożóg, PhD and Prof. Jakub Włodarczyk from Laboratory of Cell Biophysics, Nencki Institute, Warsaw.* 
+*The part regarding neuronal cultures was done by Izabela Figiel-Ożóg, PhD and Prof. Jakub Włodarczyk from Laboratory of Cell Biophysics, Nencki Institute, Warsaw.*
+
+*Anna Solarz, Iwona Majcher-Maślanka, and Agnieszka Chocyk, PhD, from the Department of Pharmacology, Maj Institute of Pharmacology, Polish Academy of Sciences, Krakow, performed perfusions, NeuN and CX3CR1 co-localization immunostainings, as well as provided me with methodological guidance regarding immunohistochemistry.* 
 
 ```{r BLACX3CL1immunostat, echo = FALSE, warning = FALSE, message= FALSE}
 
@@ -670,35 +672,41 @@ cx3cl1_sd <- sd(cx3cl1$mean_col)
 
 ```
 
-Calcium/calmodulin-dependent protein kinase II (CaMK) has been shown to play a critical role in long-term potentiation (LTP) and emotional learning mediated by the basolateral amygdala.<!--citation?-->
-This is also a critical marker of principal cells in the BLA [@mcdonald_2002a].
-Results presented in this dissertation showed that CX3CL1-induced depression of principal cell's excitability and the impairment in LTP in the BLA, the immunohistochemistry used to examine the expression level of the CX3CR1 in CAMKII`r knitr::asis_output("\U03B1")`-positive cells in the BLA.
-As illustrated in Figure \@ref(fig:BLACX3CL1immunofig), the CX3CR1 receptor was present in `r round(cx3cr1_col, digits = 2)` `r knitr::asis_output("\U00B1")` `r round(cx3cr1_sd, digits = 2)`% of pyramidal-like neurons in the BLA.
+Given that neuronal localization of CX3CR1 was reported in several regions [@heinisch_2009; @heinisch_2011; @ruchaya_2012; @sheridan_2014], the next step was to investigate whether neurons in the amygdala also express this receptor.
+To this end, the immunohistochemistry was used to examine the co-localization of CX3CR1 with neuronal markers: MAP2 in neuronal amygdala cultures and NeuN in amygdala brain slices. 
+In addition, as calcium/calmodulin-dependent protein kinase II`r knitr::asis_output("\U03B1")` (CaMKII`r knitr::asis_output("\U03B1")`) and is a critical marker of principal cells in the BLA [@mcdonald_2002a], the percent of co-localization with this marker of excitatory neurons was measured. 
 
-The results regarding CX3CR1 expression in neurons, especially principal cells, were also confirmed in neuronal cultures of the amygdala.
+As illustrated in Figure \@ref(fig:BLACX3CL1immunofig), our neuronal cultures of the amygdala showed that the CX3CR1 receptor was expressed in neurons in this limbic structure.
+This observation was also confirmed with other neuronal marker, NeuN, in brain slices.
+Moreover, the CX3CR1 receptor was present in `r round(cx3cr1_col, digits = 2)` `r knitr::asis_output("\U00B1")` `r round(cx3cr1_sd, digits = 2)`% of CAMKII`r knitr::asis_output("\U03B1")`-positive cells in the BLA.
+
 Hence, although all of the electrophysiological effects of the CX3CL1 were prevented by minocycline, the direct action of this chemokine on neurons is also plausible.
 However, as shown in Fig.\@ref(fig:CX3CL1BLAexcitabilityfrak)c1 and c2, 50% of neurons were responsive when 2nM CX3CL1 was applied, while 5nM CX3CL1 affected a larger fraction of neurons, reaching 65%. 
 <!--Thus, the immunostaining data shows that CX3CR1 expression involves a much lower subset of principal cells, suggesting that probably this CX3CL1-decreased firing of those neurons is not exclusively induced by direct activation of a CX3CR1 receptor at their membrane.-->
 
-```{r BLACX3CL1immunofig, fig.cap = "Immunofluorescent images of coronal sections of the amygdala. **a1-4** A representative coronal brain section containing BLA, in which the CX3CR1 and CAMKII are labeled as red and green, respectively. White arrowheads indicate the colocalization of CX3CR1- and CAMKII expressing neurons. Yellow arrows indicate cells that express the CX3CR1, but not CAMKII. A magenta arrow represents a CaMKII-containing neuron, which did not express CX3CR1 receptor. Scale bar: 25 um. **b** Co-expression of CX3CR1 and neuronal marker MAP2 in primary neuronal cultures from the amygdala.", echo = FALSE, warning = FALSE, message= FALSE, fig.height= 6, fig.width= 12}
+```{r BLACX3CL1immunofig, fig.cap = "The CX3CR1 receptor is expressed in BLA neurons. **(a1-3)** Co-expression of CX3CR1 and neuronal marker MAP2 in primary neuronal cultures from the amygdala. **(b1-3)** Immunofluorescent images of coronal sections of the BLA showing the co-expression of CX3CR1 and neuronal marker NeuN. White arrows indicates the colocalization of CX3CR1- and NeuN-containing neurons. Yellow arrows shows cells expressing the CX3CR1, but not NeuN. **(c1-3)** A representative coronal brain section containing BLA, in which the CX3CR1 and CAMKII are labeled as red and green, respectively. White arrowheads indicate the colocalization of CX3CR1- and CAMKII expressing neurons. Yellow arrows indicate cells that express the CX3CR1, but not CAMKII. A magenta arrow represents a CaMKII-containing neuron, which did not express CX3CR1 receptor. Scale bar: 25 um. ", echo = FALSE, warning = FALSE, message= FALSE, fig.height= 8, fig.width= 8}
 
 #knitr::include_graphics("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\CX3CL1\\HODOWLE_AMYGDALA_WARSZAWA\\hodowle_aftersorting.png")
 rec_image <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\cx3cr1_rep_1-rec.tif") + ggtitle("CX3CR1")
 all_image <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\cx3cr1_rep_2-all.tif") + ggtitle("merged")
 dapi_image <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\cx3cr1_rep_3-dapi.tif") + ggtitle("DAPI")
-camk_image <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\cx3cr1_rep_4-camk.tif") + ggtitle("CAMKII")
+camk_image <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\cx3cr1_rep_4-camk.tif")+ ggtitle("CAMKII")
 
-rec_cul <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\hod_rec_1.png") + ggtitle("CX3CR1")
-all_cul <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\hod_merged_1.png") + ggtitle("merged")
-dapi_image <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\cx3cr1_rep_3-dapi.tif") + ggtitle("DAPI")
-map_cul <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\hod_neuro_1.png") + ggtitle("MAP2")
+rec_cul <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\hod_rec_1.png", link_dim = F) + ggtitle("CX3CR1")
+all_cul <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\hod_merged_1.png", link_dim = F) + ggtitle("merged")
+dapi_image <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\cx3cr1_rep_3-dapi.tif", link_dim = F) + ggtitle("DAPI")
+map_cul <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\hod_neuro_1.png", link_dim = F) + ggtitle("MAP2")
 
-
+rec_skrawek <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\cx3cr1_skrawki_1.png", link_dim = F) + ggtitle("CX3CR1")
+neun_skrawek <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\neun_skrawki_1.png", link_dim = F) + ggtitle("NeuN")
+merged_skrawek <- fig("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\merged_skrawki_1.png", link_dim = F) + ggtitle("merged")
 
 # inset_frak2nM <- image_read("D:\\OneDrive\\elektrodata\\PRELUDIUM\\phd\\doktorat\\PhDThesis\\images\\results\\immuno\\CX3CL1\\cx3cr1_rep_1-rec.tiff")
 # inset_frak2nM <- image_ggplot(inset_frak2nM)
 
-figure1 <-  ((rec_image | camk_image | dapi_image | all_image) + plot_layout(tag_level = 'new')) / ((rec_cul | map_cul | all_cul) + plot_layout(tag_level = 'new')) 
+figure1 <-  ((rec_cul | map_cul | all_cul) + plot_layout(tag_level = 'new')) / #cultures
+  ((rec_skrawek | neun_skrawek | merged_skrawek) + plot_layout(tag_level = 'new')) / #neun skrawki
+  ((rec_image | camk_image | all_image) + plot_layout(tag_level = 'new')) #camk
   
 
 figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))

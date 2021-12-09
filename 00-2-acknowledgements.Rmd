@@ -1,21 +1,21 @@
-# Acknowledgments {- .unlisted .unnumbered}
+# Acknowledgments {- .unnumbered}
 
 Składam serdeczne podziękowania **mojemu promotorowi, Panu prof. dr hab. Krzysztofowi Tokarskiemu**
 za opiekę i pomoc naukową podczas moich studiów doktoranckich, 
 zaangażowanie, przekazaną wiedzę, a także cenne wskazówki i sugestie
 udzielone mi w czasie realizacji niniejszej pracy.
 
-Dziękuję również opiekunowi mojego grantu Preludium, **Panu prof. dr hab. Grzegorzowi Hessowi**,
+Dziękuję również opiekunowi naukowemu mojego grantu Preludium, **Panu prof. dr hab. Grzegorzowi Hessowi**,
 za pomoc oraz cenne uwagi podczas wykonywanej przeze mnie pracy naukowej.
 
-Dziękuję także **koleżankom i kolegom z Zakładu Fizjologii**, 
+Dziękuję także **koleżankom i kolegom z Zakładu Fizjologii IF PAN**, 
 zawsze chętne udzielanie mi pomocy i tworzenie miłej atmosfery w pracy.
 Szczególnie chciałabym podziękować **dr Bartoszowi Bobuli** za wykonanie zewnątrzkomórkowych rejestracji elektrofizjologicznych oraz **dr Magdalenie Kusek** za cenne sugestie przy pisaniu pracy.
 
-Bardzo dziękuję **Pani dr Izabeli Figiel-Ożóg i Panu prof. dr hab. Jakubowi Włodarczykowi z Pracowni Biofizyki Komórki Instytut Nenckiego w Warszawie** za wykonanie barwień na obecność receptora CX3CR1 w pierwotnych hodowlach neuronalnych ciała migdałowatego. 
+Bardzo dziękuję **Pani dr Izabeli Figiel-Ożóg i Panu prof. dr hab. Jakubowi Włodarczykowi z Pracowni Biofizyki Komórki Instytut Nenckiego w Warszawie** za wykonanie barwień na obecność receptora CX3CR1 w pierwotnych hodowlach neuronalnych ciała migdałowatego oraz **mgr inż. Annie Solarz, mgr Iwonie Majcher-Maślance i dr hab. Agnieszce Chocyk z Pracownia Farmakologii i Biostruktury Mózgu IF PAN** za nieocenioną pomoc przy barwieniach immunohistologicznych na skrawkach mózgu.  
 
 
-W sposób szczególny chciałabym podziekować **moim najbliższym, szczególnie moim Rodzicom, Bartkowi, oraz mojemu bratu** za niewyczerpane pokłady wsparcia, cierpliwości i wiary we mnie.
-Byliście przez te lata niczym najlepsza motywacyjna grupa couchów i bez Was ta praca by nie powstała.
+W sposób szczególny chciałabym podziekować **mojej rodzinie i przyjaciołom**, szczególnie **moim Rodzicom**, którym dedykuję tę pracę, oraz **Bartkowi i mojemu bratu**, za niewyczerpane pokłady wsparcia, motywacji, cierpliwości i wiary we mnie.
+Zawsze mogłam na Was liczyć i bez Was ta praca by nie powstała.
 
 \newpage

@@ -1,4 +1,4 @@
-# Streszczenie {- .unlisted .unnumbered}
+# Streszczenie {- .unnumbered}
 
 Coraz więcej badań wskazuje na rolę chemokin w szeregu biologicznych odpowiedzi w warunkach fizjologicznych.
 Obecność chemokin wykazano we wszystkich komórkach mózgowych - od komórek śródbłonka bariery krew-mózg, przez wszystkie typy komórek glejowych, po neurony i nerwowe komórki macierzyste.

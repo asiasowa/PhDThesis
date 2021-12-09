@@ -1,4 +1,4 @@
-# Abstract {- .unlisted .unnumbered}
+# Abstract {- .unnumbered}
 
 Chemokines are emerging as key players in a broad array of biological responses in the brain under physiological, non-inflammatory conditions.
 They can be found in all brain cells - from brain-blood barrier endothelium, through all types of glia, to neurons and neural stem cells. 

@@ -55,7 +55,7 @@ Recently, increasing evidence has shown the ACKR3-modulated action of CXCL12 in 
 Nevertheless, to date, no ACKR3 has been detected in the amygdala [@schnemeier_2008], suggesting that this explanation is unlikely.
 
 
-Altogether, the subtle CXCL12-modulated changes on synaptic excitability and excitatory synaptic transmission might be related to heterogenous groups of principal cells and/or interneurons and/or by using coronal slices which were mostly devoid of important hippocampal and coronal inputs.
+Altogether, the subtle CXCL12-modulated changes on synaptic excitability and excitatory synaptic transmission might be related to heterogeneous groups of principal cells and/or interneurons and/or by using coronal slices which were mostly devoid of important hippocampal and coronal inputs.
 Nevertheless, this study raises the possibility that CXCL12 might modulate the local inhibitory synaptic transmission in the BLA in an opposing manner depending on the concentration used.
 This is similar to what was observed in other structures and supports the notion that CXCL12 might exert either a neuroprotective or neurotoxic role based on its concentration. 
 <!--, it is possible that these opposing responses could be differentiated physiologically and pharmacologically.znaleźć ten artykuł ... It is possible that these responses could be differentiated physiologically and pharmacologically.-->

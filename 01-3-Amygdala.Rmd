@@ -9,13 +9,13 @@ For example, during fear conditioning, a neutral stimulus, such as an acoustic t
 Analogously, reward-induced conditioning responses lead to a cue-triggered behavior [@clem_2010; @johansen_2010; @tye_2008].
 Thus, both learning about danger and potential rewards are adaptive and engage the amygdala [@janak_2015].
 
-These distinct behaviors are believed to be reflected by widespread amygdalar connections with an array of other brain regions, from the prefrontal cortex to the brainstem (for reviews: @duvarci_2014; @pape_2010; @sah_2003) as well as is complex inner structure.
+These distinct behaviors are believed to be reflected by widespread amygdala connections with an array of other brain regions, from the prefrontal cortex to the brainstem (for reviews: @duvarci_2014; @pape_2010; @sah_2003) as well as is complex inner structure.
 This limbic region is comprised of a heterogeneous collection of nuclei, which can be distinguished based on their different connectivity, immunohistochemical and cytoarchitectural profiles (for a review, see: @duvarci_2014). 
 Historically, amygdala nuclei are divided into three groups: (1) the deep or basolateral group, which includes the lateral nucleus, the basal nucleus, and accessory basal nucleus; (2) the superficial or cortical-like group, which includes the cortical nuclei and nucleus of the lateral olfactory tract; and (3) the centromedial group composed of the medial and central nuclei, such as the medial nucleus of the amygdala (MeA), the anterior amygdala area (AAA), and the amygdalo-hippocampal area (AHA) [@mcdonald_1998; @sah_2003].
 Here, the following classification will be used: the basolateral complex of the amygdala (BLA), the central amygdala (CeA), and intercalated cell (ITC) masses, based on many excellent papers (@bocchio_2016; @duvarci_2014; @ehrlich_2009; @pape_2010; @spampanato_2011, see Fig. \@ref(fig:amygdalastr)).
 Nuclei that do not fall into any of these categories are beyond the scope of this dissertation and are described elsewhere [@pitknen_1997; @sah_2003].
 
-```{r amygdalastr, fig.cap= '**Physiological and morphological properties of amygdalar neurons** BMA, basomedial nucleus; B, basal nucleus; LA, lateral nucleus; CeL, lateral subdivision of the central nucleus; CeM, medial subdivision of the central nucleus; ITC, intercalated cell.', fig.align = 'center', echo = FALSE, message= FALSE }
+```{r amygdalastr, fig.cap= '**Physiological and morphological properties of amygdala neurons** BMA, basomedial nucleus; B, basal nucleus; LA, lateral nucleus; CeL, lateral subdivision of the central nucleus; CeM, medial subdivision of the central nucleus; ITC, intercalated cell.', fig.align = 'center', echo = FALSE, message= FALSE }
 knitr::include_graphics("images/amygdalastr.png")
 ```
 
@@ -34,7 +34,7 @@ A large body of evidence highlights the role of these terminals in the acquisiti
 In addition, this nucleus is strongly innervated by a wide array of neuromodulators (see Fig. \@ref(fig:amygdalaconnect), part a).
 Specifically, this region receives: (1) noradrenergic (NE; norepinephrine) innervation from the locus coeruleus (LC) and nucleus of the solitary tract (NTS), (2) serotonergic projections originating from the DRN, (3) dense dopaminergic innervation from the VTA and the SN, and (4) projections from the basal forebrain (@prager_2016 and references therein).
 
-This amygdalar complex displays cortical-like characteristics based on its developmental origin and structural organization [@waclaw_2010], although BLA neurons do not exhibit a laminar organization [@sah_2003]. 
+This complex of the amygdala displays cortical-like characteristics based on its developmental origin and structural organization [@waclaw_2010], although BLA neurons do not exhibit a laminar organization [@sah_2003]. 
 Within the BLA, approximately 80% of all neurons are glutamatergic pyramidal-like principal cells, and the remaining 20% belong to a heterogeneous group of interneurons [@duvarci_2014; @mcdonald_1993; @spampanato_2011]. 
 Accordingly, both principal cells (PCs) and interneurons show many morphological and electrophysiological characteristics similar to their cortical and hippocampal counterparts. 
 
@@ -96,7 +96,7 @@ Furthermore, these oscillatory activities can coordinate and enhance the effects
 
 It should also be noted that despite being the main input of the amygdaloid complex, the BLA sends a few projections.
 Despite its reciprocal connections with the prefrontal cortex (PFC) and the hippocampus, predominantly unidirectional outputs of the BLA include the nucleus accumbens (NA), indicated as crucial in reward-seeking behavior [@beyeler_2016; @namburi_2015; @stuber_2011].
-Nevertheless, the BLA predominantly projects to the extended amygdala (see Section \@ref(CeA)), the bed nucleus of the stria terminalis (BNST) and the CeA (see Fig. \@ref(fig:amygdalaconnect), parts b and c).
+Nevertheless, the BLA predominantly projects to the extended amygdala (see Section \@ref(CeA)), the bed nucleus of the stria terminalis (BNST), and the CeA (see Fig. \@ref(fig:amygdalaconnect), parts b and c).
 Those connections are associated with anxiety and social interactions [@felixortiz_2013; @felixortiz_2014; @felixortiz_2016; @tye_2011].
 Notably, the CeA can be innervated by BLA principal cells either directly by forming glutamatergic synapses onto CeA neurons (@krettek_1978, @lopezdearmentia_2004 or indirectly *via* GABAergic ITCs neurons, leading to feedforward inhibition (@jngling_2008; @royer_1999, see Fig. \@ref(fig:amygdalaconnect), part b).
 
@@ -124,7 +124,7 @@ However, here we focus mainly on the CeA.
 
 Contrary to the BLA, CeA is considered the main output nucleus [@ciocchi_2010; @haubensak_2010; @hou_2016].
 However, similar to the BLA, there are also exceptions from this oversimplified model, and both CeM and CeL receive direct projections outside the amygdala (see Fig. \@ref(fig:amygdalaconnect), part a)).
-Among others, neurons from the paraventricular nucleus of the thalamus (PVT, @domonte_2015, @penzo_2015), the BNST [@gungor_2015], parabrachial nucleus (PBN; @carter_2013) or oxytocinergic neurons from the hypothalamus [@knobloch_2012] sends projections to this region, influencing diverse set of behaviors.
+Among others, neurons from the paraventricular nucleus of the thalamus (PVT, @domonte_2015, @penzo_2015), the BNST [@gungor_2015], parabrachial nucleus (PBN; @carter_2013) or oxytocinergic neurons from the hypothalamus [@knobloch_2012] sends projections to this region, influencing a diverse set of behaviors.
 
 Neurons within this nucleus are a diverse group of GABAergic interneurons, forming functional subclasses based on their morphological, electrophysiological, and neurochemical features, as well as connectivity and *in vivo* patterns of activity.
 Morphologically, they are reminiscent of striatal medium spiny neurons [@mcdonald_1993; @sun_1993], further supporting the notion of different developmental origins of the BLA and the CeA [@medina_2004; @waclaw_2010]. 
@@ -156,7 +156,7 @@ Accordingly, as PKC`r knitr::asis_output("\U03B4")` and CRF- or SOM-immunopositi
 CeL neurons are mutually connected; however, they prefer to form synapses with the different electrophysiological and/or neurochemical subtypes (Fig. \@ref(fig:amygdalaconnect), part c). 
 For example, synapses formed between LF`r knitr::asis_output("\U2192")`RS and RS`r knitr::asis_output("\U2192")`LF neurons were reported to have greater density and efficacy than those between cells of the same class [@hou_2016]. 
  
-It is widely accepted that following fear conditioning, neuronal activity of the CeL is required for fear acquisition, whereas activity in the CeM is required for the expression of conditioned fear responses [@ciocchi_2010].
+It is widely accepted that following fear conditioning, neuronal activity of the CeL is required for the fear acquisition, whereas activity in the CeM is required for the expression of conditioned fear responses [@ciocchi_2010].
 Moreover, CeM activation alone is well-documented to be sufficient to induce unconditioned freezing [@ledoux_1988], whereas CeL neurons were revealed to tonically inhibit CeM output [@ciocchi_2010; @gozzi_2010].
 Precisely, activation of SOM-expressing CeL neurons results rather in local inhibition within CeL, especially inhibiting PKC`r knitr::asis_output("\U03B4")`-expressing cells than inhibition of CeM neurons, as they do not send noticeable projections to the CeM [@li_2013a].
 In contrast, the PKC`r knitr::asis_output("\U03B4")`-containing CeL neurons strongly project to and inhibit CeM neurons (@haubensak_2010; @li_2013a, Fig. \@ref(fig:amygdalaconnect), part c).
@@ -178,6 +178,6 @@ Thus, the CeA output depends not only on the nature and intensity of received in
 All of these may enable the amygdala complex to play a crucial role in surprisingly diverse functions, including emotional memory formation, social interactions, affective and parental behavior, and homeostatic control.
 Considering this diversity, it is not surprising that the disruption of the amygdala functioning is associated with many disorders, including alcoholism and other reward-related disorders, anxiety, posttraumatic stress disorder, and stress-related disorders, autism, obesity, epilepsy, pain, just to list a few.
 Thus, the amygdala functions as an integrative hub that converts emotionally relevant sensory information about the external and internal environment into behavioral and physiologic responses, playing a crucial role in homeostasis.
-Finally, as amygdalar circuitry and function are well-conserved across evolution [@jarvis_2005], better understanding the complexity of this circuit using animal models has the potential to be directly relevant to humans.
+Finally, as amygdala circuitry and function are well-conserved across evolution [@jarvis_2005], better understanding the complexity of this circuit using animal models has the potential to be directly relevant to humans.
 
 \newpage 

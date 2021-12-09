@@ -58,7 +58,7 @@ For example, in the hippocampus, CX3CL1 was demonstrated to reduce spontaneous g
 Importantly, further investigations revealed that CX3CL1 might not exclusively act on postsynaptic neurons but also activated microglia, which in turn, released adenosine [@piccinin_2010]. 
 Similarly, one of the adenosinergic receptors, the A~2A~R, together with D-serine release from glial cells, is also required for CX3CL1 regulation of NMDA receptor function [@scianni_2013].
 
-Moreover, CX3CL1 and CXCL12 impact adult neurogenesis along with synaptic transmission in the hippocampus, which are believed to affect synaptic plasticity, memory, and learning.
+Moreover, CX3CL1 and CXCL12 influence adult neurogenesis along with synaptic transmission in the hippocampus, which are believed to affect synaptic plasticity, memory, and learning.
 Accordingly, both CX3CL1/CX3CR1 and CXCL12/CXCR4 axes were reported to be upregulated following learning [@rogers_2011; @su_2012].
 In addition, several lines of evidence illustrated that CX3CL1 modulates synaptic plasticity in this region [@bertollini_2006; @maggi_2009; @maggi_2011; @paolicelli_2011; @ragozzino_2006; @rogers_2011] and regulates learning and memory [@maggi_2011; @reshef_2017; @rogers_2011; @serchov_2015].
 
@@ -81,7 +81,7 @@ These findings point to a vital role of the CXCL12/CXCR4/ACKR3 axis in feeding b
 
 Similarly, the dopaminergic neurons in the SN are also the target of both pre- and postsynaptic actions of CXCL12. 
 CXCL12 was reported to enhance the frequency of spontaneous and miniature inhibitory postsynaptic currents (sIPSCs and mIPSCs, respectively) in this region, indicating presynaptic mechanisms, which is in line with the documented presence of CXCR4 on the GABAergic neurons [@guyon_2006].
-In addition, it was demonstrated that CXCL12 could act directly as a neuromodulator of dopaminergic neuronal electrical activity through the modulation of high voltage activated calcium currents [@guyon_2008a].
+In addition, it was demonstrated that CXCL12 could act directly as a neuromodulator of dopaminergic neuronal electrical activity through the modulation of high voltage-activated calcium currents [@guyon_2008a].
 Consistent with this data, by using unilateral intranigral or intracerebroventricular injections of CXCL12, a further study has illustrated that this chemokine triggered contralateral turns in circling behavior [@skrzydelski_2007]. 
 Of note, considering that both CXCL12 and CXCR4 are co-expressed in dopamine neurons, this chemokine is speculated to act in an autocrine manner [@guyon_2008a].
 Importantly, some CXCL12-induced increase in an inward current is suggested to be induced from glutamate release from astrocytes [@guyon_2006].

@@ -1349,24 +1349,22 @@ figure1
 
 #### No robust effect of CXCL12 action on the GABAergic transmission in the BLA  {#BLACXCL12sIPSCappend}
 
-CXCL12 does not induce any marked change in GABAergic transmission in the BLA (see Table `r ifelse(knitr::is_html_output(), "\\@ref(tab:CXCL12BLAsIPSCtableappendix)", "7.9")` and Fig. \@ref(fig:CXCL12BLAsIPSCall)).
+CXCL12 does not induce any marked change in GABAergic transmission in the BLA (see Table \@ref(tab:cxcl12_BLA_sIPSC) and Fig. \@ref(fig:CXCL12BLAsIPSCall)).
 
 ``` {r CXCL12BLAsIPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
-if (knitr::is_html_output()) {
-  
+
   # gt::gt(head(mtcars,5),caption='a caption')%>%
   # opt_row_striping(row_striping = TRUE)
   
   CXCL12_BLA_sIPSC_stat_all  %>% 
-gt(groupname_col = "Variable", caption='Statistics of all measured parameters regarding CXCL12 effects on the inhibitory synaptic transmission onto BLA principal cells') %>%
+gt(groupname_col = "Variable") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
       table.font.names = "Calibri",
       table.font.size = 12
-  ) %>% #table.font.size = 11
-#  tab_options(
- #   table.width = pct(100)) %>%
+  ) %>% tab_header(title="Statistics of all measured parameters regarding CXCL12 effects on the inhibitory synaptic transmission onto BLA principal cells",
+             label="tab:cxcl12_BLA_sIPSC") %>%
       tab_style(
     style = list(
       cell_text(weight = "bold")
@@ -1379,34 +1377,7 @@ gt(groupname_col = "Variable", caption='Statistics of all measured parameters re
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md(""))
-  
-} else {
-  
-table_BLA_sIPSC <- CXCL12_BLA_sIPSC_stat_all  %>% 
-gt(groupname_col = "Variable") %>%
-   fmt_markdown(columns = c("Experiment")) %>%
-    tab_options(
-      table.font.names = "Calibri",
-      table.font.size = 12
-  ) %>% #table.font.size = 11
-#  tab_options(
- #   table.width = pct(100)) %>%
-      tab_style(
-    style = list(
-      cell_text(weight = "bold")
-      ),
-    locations = cells_row_groups()
-  ) %>%
-    opt_row_striping() %>%
-      tab_header(
-    title = ("Table 7.9. Statistics of all measured parameters regarding CXCL12 effects on the inhibitory synaptic transmission onto BLA principal cells"),
-     subtitle = md("")) %>%
-    opt_row_striping() %>%
-   tab_source_note(source_note = md("")) %>%
-   gtsave("Table79.html")
 
-knitr::include_graphics("Table79.html")
-}
 
 ```
 

@@ -948,7 +948,7 @@ figure1
 
 #### CX3CL1 does not affect excitatory synaptic transmission in the CeL {#CX3CL1CeAsEPSC}
 
-Treatment with CX3CL1 changed none of the measured parameters of excitatory synaptic transmission. 
+Treatment with CX3CL1 did not change any of the measured parameters of excitatory synaptic transmission. 
 The data are shown in Table 7.5 and are illustrated in Fig.\@ref(fig:CX3CL1CeAsEPSCappendixfig).
 
 ```{r CX3CL1CeAsEPSCtable, echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 15, fig.height= 18}
@@ -1109,9 +1109,9 @@ knitr::include_graphics("Table76.html")
 
 ```
 
-Fig. \@ref(fig:CX3CL1CeAsIPSCfigappendix) shows kinetics of inhibitory postsynaptic currents according to different experimental conditions.
+Fig. \@ref(fig:CX3CL1CeAsIPSCfigappendix) shows the kinetics of inhibitory postsynaptic currents according to different experimental conditions.
 
-```{r CX3CL1CeAsIPSCfigappendix, fig.cap='**CX3CL1 does not affect kinetics of inhibitory postsynaptic currents in the CeL** **(a)** Boxplots presenting population data of sIPSCs **(a1-2)** rise time and **(d1-d2)** decay time before and after in different experimental conditions.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 8, fig.width= 15}
+```{r CX3CL1CeAsIPSCfigappendix, fig.cap='**CX3CL1 does not affect the kinetics of inhibitory postsynaptic currents in the CeL** **(a)** Boxplots presenting population data of sIPSCs **(a1-2)** rise time and **(d1-d2)** decay time before and after in different experimental conditions.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 8, fig.width= 15}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
@@ -1172,7 +1172,7 @@ figure1
 
 #### CXCL12 does not affect intrinsic membrane properties in pyramidal-like cells in the basolateral rat amygdala {#BLACXCL12membrappend}
 
-As presented in Table 7.7 and Fig.\@ref(fig:CXCl12BLAexcitabilityfigall), treatment with CXCL12 had negligable effect on measured membrane parameters.
+As presented in Table 7.7 and Fig.\@ref(fig:CXCl12BLAexcitabilityfigall), treatment with CXCL12 had a negligible effect on measured membrane parameters.
 
 ``` {r CXCL12BLAmembrtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1354,7 +1354,11 @@ CXCL12 does not induce any marked change in GABAergic transmission in the BLA (s
 ``` {r CXCL12BLAsIPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
 if (knitr::is_html_output()) {
-  table_BLA_sIPSC <- CXCL12_BLA_sIPSC_stat_all  %>% 
+  
+  # gt::gt(head(mtcars,5),caption='a caption')%>%
+  # opt_row_striping(row_striping = TRUE)
+  
+  CXCL12_BLA_sIPSC_stat_all  %>% 
 gt(groupname_col = "Variable", caption='Statistics of all measured parameters regarding CXCL12 effects on the inhibitory synaptic transmission onto BLA principal cells') %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -1375,7 +1379,9 @@ gt(groupname_col = "Variable", caption='Statistics of all measured parameters re
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md(""))
+  
 } else {
+  
 table_BLA_sIPSC <- CXCL12_BLA_sIPSC_stat_all  %>% 
 gt(groupname_col = "Variable") %>%
    fmt_markdown(columns = c("Experiment")) %>%

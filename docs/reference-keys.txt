@@ -35,6 +35,7 @@ fig:CX3CL1CeAsEPSCappendixfig
 fig:CX3CL1CeAsIPSCfigappendix
 fig:CXCl12BLAexcitabilityfigall
 fig:CXCL12BLAsEPSCfigall
+tab:CXCL12BLAsIPSCtableappendix
 fig:CXCL12BLAsIPSCall
 fig:CXCl12CeAmembrfigall1
 fig:CXCl12CeAmembrfigall2

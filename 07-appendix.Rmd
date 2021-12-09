@@ -75,20 +75,14 @@ This PhD thesis and candidate were supported by:
 
 #### CX3CL1 does not affect passive membrane properties of principal cells in the BLA {#CX3CL1membraneappendix}
 
-Figures \@ref(fig:CX3CL1BLAexcitabilityfigall1) and \@ref(fig:CX3CL1BLAexcitabilityfigall2) and Table 7.1<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> below depict and list all the passive membrane properties measured in the principal cells in the BLA following CX3CL1 treatment. 
+Figures \@ref(fig:CX3CL1BLAexcitabilityfigall1) and \@ref(fig:CX3CL1BLAexcitabilityfigall2) and Table 7.1 below depict and list all the passive membrane properties measured in the principal cells in the BLA following CX3CL1 treatment. 
 
 ```{r CX3CL1BLAexcitabilityappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
 
 # getting the table of statistics
 CX3CL1_BLA_stat_df <- formattable(stat_table_exp_membr_extended((BLA_df_final)))
 
-# kable not working with those complex table
-# knitr::kable(CX3CL1_BLA_stat_df, booktabs = TRUE,
-#  caption = 'The table of all of measured passive membrane parameters in the BLA following CX3CL1 application with all the conditions'
-# ) 
-
-if (knitr::is_latex_output()) {
-table <- CX3CL1_BLA_stat_df %>%
+CX3CL1_BLA_stat_df %>%
 gt(groupname_col = "Variable") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -110,34 +104,6 @@ gt(groupname_col = "Variable") %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md("")) # %>%
             # as_latex()
-
-} else {
- 
-table <- CX3CL1_BLA_stat_df %>% 
-gt(groupname_col = "Variable") %>%
-   fmt_markdown(columns = c("Experiment")) %>%
-    tab_options(
-      table.font.names = "Calibri",
-      table.font.size = 12
-  ) %>% #table.font.size = 11
-#  tab_options(
- #   table.width = pct(100)) %>%
-      tab_style(
-    style = list(
-      cell_text(weight = "bold")
-      ),
-    locations = cells_row_groups()
-  ) %>%
-    opt_row_striping() %>%
-      tab_header(
-    title = ("Table 7.1. Statistics of all measured parameters in relation to BLA principal cells membrane properties following CX3CL1 application"),
-     subtitle = md("")) %>%
-    opt_row_striping() %>%
-   tab_source_note(source_note = md(""))  %>%
-             gtsave("Table71.html")
-
-knitr::include_graphics("Table71.html")
-}
 
 ```
 
@@ -349,7 +315,7 @@ figure2
 
 #### CX3CL1 does not modulate excitatory synaptic transmission in the BLA {#CX3CL1sEPSCappendix}
 
-Figure \@ref(fig:CX3CL1BLAsEPSCfigall) and Table 7.2<!--raczej bez numeracji bo mi samo knitr nie daje rady :((( ///(\@ref(tab:CX3CL1_BLA_excitability_appendix))--> report on sEPSC parameters measured in principal cells in the BLA before and after CX3CL1, AZD8797, and minocycline treatment. 
+Figure \@ref(fig:CX3CL1BLAsEPSCfigall) and Table 7.2 report on sEPSC parameters measured in principal cells in the BLA before and after CX3CL1, AZD8797, and minocycline treatment. 
 
 ```{r CX3CL1BLAsEPSCappendixtable, echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
 
@@ -372,7 +338,7 @@ CX3CL1_BLA_sEPSC_stat_df <- formattable(stat_table_exp_syn_extended((BLA_sEPSC_f
 #  caption = 'The table of all of measured passive membrane parameters in the BLA following CX3CL1 application with all the conditions'
 # ) 
 
-table_BLA_sEPSC <- CX3CL1_BLA_sEPSC_stat_df %>% 
+CX3CL1_BLA_sEPSC_stat_df %>% 
 gt(groupname_col = "Variable") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -392,10 +358,7 @@ gt(groupname_col = "Variable") %>%
     title = ("Table 7.2. Statistics of all measured parameters regarding CX3CL1 effects on excitatory synaptic transmission onto BLA principal cells"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-   tab_source_note(source_note = md("")) %>%
-   gtsave("Table72.html")
-
-knitr::include_graphics("Table72.html")
+   tab_source_note(source_note = md(""))
 ```
 
 ```{r CX3CL1BLAsEPSCfigall, fig.cap= 'CX3CL1 actions on membrane properties of BLA principal cells.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 18, fig.width= 12}
@@ -516,7 +479,7 @@ CX3CL1_BLA_sIPSC_stat_df <- formattable(stat_table_exp_syn_extended((BLA_sIPSC_f
 #  caption = 'The table of all of measured passive membrane parameters in the BLA following CX3CL1 application with all the conditions'
 # ) 
 
-table_BLA_sIPSC <- CX3CL1_BLA_sIPSC_stat_df %>% 
+CX3CL1_BLA_sIPSC_stat_df %>% 
 gt(groupname_col = "Variable") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -536,10 +499,8 @@ gt(groupname_col = "Variable") %>%
     title = ("Table 7.3. Statistics of all measured parameters regarding CX3CL1 effects on excitatory synaptic transmission onto BLA principal cells"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-   tab_source_note(source_note = md("")) %>%
-   gtsave("Table73.html")
+   tab_source_note(source_note = md(""))
 
-knitr::include_graphics("Table73.html")
 ```
 
 ```{r CX3CL1BLAsIPSCappendixfig, fig.cap='**CX3CL1 does not affect sIPSC/mIPSC kinetics in principal cells in the BLA** **a** Schematics illustrating recording conditions **b,c** Boxplots representing population data of sIPSCs rise time and decay time before and after CX3CL1 application in each condition, respectively.', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 8, fig.width= 12}
@@ -662,7 +623,7 @@ C3 <- CX3CL1_CeA_stat_LF %>% mutate(Population = "Late-Firing") %>% dplyr::selec
 
 CeA_df_table <- C1 %>% dplyr::bind_rows(C2) %>% dplyr::bind_rows(C3)
 
-table_CeA_membr <- CeA_df_table %>% 
+CeA_df_table %>% 
 gt(groupname_col = "Population") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -682,10 +643,7 @@ gt(groupname_col = "Population") %>%
     title = ("Table 7.4. Summary of all measured membrane parameters in CeL following CX3CL1, minocycline, and AZD8797 treatment"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-   tab_source_note(source_note = md("")) %>%
-   gtsave("Table74.html")
-
-knitr::include_graphics("Table74.html")
+   tab_source_note(source_note = md(""))
 
 ```
 
@@ -969,7 +927,7 @@ CeA_CX3CL1_sEPSC_stat_LF <- CeA_CX3CL1_sEPSC_stat_LF %>% mutate(Type = "Late-Fir
 
 CeA_CX3CL1_sEPSC_df <- CeA_CX3CL1_sEPSC_stat_all  %>% dplyr::bind_rows(CeA_CX3CL1_sEPSC_stat_RS) %>% dplyr::bind_rows(CeA_CX3CL1_sEPSC_stat_LF)
 
-CeA_CX3CL1_sEPSC_table <- CeA_CX3CL1_sEPSC_df %>% 
+CeA_CX3CL1_sEPSC_df %>% 
 gt(groupname_col = "Type") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -989,10 +947,7 @@ gt(groupname_col = "Type") %>%
     title = ("Table 7.5. sEPSC characteristics before and after CX3CL1 application in CeL neurons"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-    tab_source_note(source_note = md("")) %>%
-    gtsave("Table75.html")
-
-knitr::include_graphics("Table75.html")
+    tab_source_note(source_note = md(""))
 
 ```
 
@@ -1082,7 +1037,7 @@ CeA_CX3CL1_sIPSC_stat_LF <- CeA_CX3CL1_sIPSC_stat_LF %>% mutate(Type = "Late-Fir
 
 CeA_CX3CL1_sIPSC_df <- CeA_CX3CL1_sIPSC_stat_all  %>% dplyr::bind_rows(CeA_CX3CL1_sIPSC_stat_RS) %>% dplyr::bind_rows(CeA_CX3CL1_sIPSC_stat_LF)
 
-CeA_CX3CL1_sIPSC_table <- CeA_CX3CL1_sIPSC_df %>% 
+CeA_CX3CL1_sIPSC_df %>% 
 gt(groupname_col = "Type") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -1102,10 +1057,7 @@ gt(groupname_col = "Type") %>%
     title = ("Table 7.6. sIPSC characteristics before and after CX3CL1, AZD8797 or minocycline application in CeL neurons"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-    tab_source_note(source_note = md("")) %>%
-    gtsave("Table76.html")
-
-knitr::include_graphics("Table76.html")
+    tab_source_note(source_note = md(""))
 
 ```
 
@@ -1176,7 +1128,7 @@ As presented in Table 7.7 and Fig.\@ref(fig:CXCl12BLAexcitabilityfigall), treatm
 
 ``` {r CXCL12BLAmembrtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
-table <- CXCL12_BLA_membr_stat_all %>% 
+CXCL12_BLA_membr_stat_all %>% 
 gt(groupname_col = "Variable") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -1196,10 +1148,7 @@ gt(groupname_col = "Variable") %>%
     title = ("Table 7.7. Statistics of all measured parameters in relation to BLA principal cells membrane properties following CXCL12 application"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-   tab_source_note(source_note = md(""))  %>%
-             gtsave("Table77.html")
-
-knitr::include_graphics("Table77.html")
+   tab_source_note(source_note = md("")) 
 ```
 
 ```{r CXCl12BLAexcitabilityfigall, fig.cap= 'CXCL12 did not significantly change any of the measured membrane properties of BLA principal cells.', fig.align = 'center', echo= FALSE, message= FALSE, warning = FALSE, error = FALSE, results='asis', fig.height= 12, fig.width= 12}
@@ -1267,7 +1216,7 @@ Data illustrated in Table 7.8 and Figure \@ref(fig:CXCL12BLAsEPSCfigall) indicat
 
 ``` {r CXCL12BLAsEPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
  
-table_BLA_sEPSC <- CXCL12_BLA_sEPSC_stat_all  %>% 
+CXCL12_BLA_sEPSC_stat_all  %>% 
 gt(groupname_col = "Variable") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -1287,10 +1236,7 @@ gt(groupname_col = "Variable") %>%
     title = ("Table 7.8. Statistics of all measured parameters regarding CXCL12 effects on excitatory synaptic transmission onto BLA principal cells"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-   tab_source_note(source_note = md("")) %>%
-   gtsave("Table78.html")
-
-knitr::include_graphics("Table78.html")
+   tab_source_note(source_note = md(""))
 
 ```
 
@@ -1349,7 +1295,7 @@ figure1
 
 #### No robust effect of CXCL12 action on the GABAergic transmission in the BLA  {#BLACXCL12sIPSCappend}
 
-CXCL12 does not induce any marked change in GABAergic transmission in the BLA (see Table \@ref(tab:cxcl12_BLA_sIPSC) and Fig. \@ref(fig:CXCL12BLAsIPSCall)).
+CXCL12 does not induce any marked change in GABAergic transmission in the BLA (see Table 7.9 and Fig. \@ref(fig:CXCL12BLAsIPSCall)).
 
 ``` {r CXCL12BLAsIPSCtableappendix, echo = FALSE, message= FALSE, echo = FALSE, warning = FALSE, message = FALSE, fig.width= 15, fig.height= 18}
 
@@ -1357,14 +1303,13 @@ CXCL12 does not induce any marked change in GABAergic transmission in the BLA (s
   # gt::gt(head(mtcars,5),caption='a caption')%>%
   # opt_row_striping(row_striping = TRUE)
   
-  CXCL12_BLA_sIPSC_stat_all  %>% 
+CXCL12_BLA_sIPSC_stat_all  %>% 
 gt(groupname_col = "Variable") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
       table.font.names = "Calibri",
       table.font.size = 12
-  ) %>% tab_header(title="Statistics of all measured parameters regarding CXCL12 effects on the inhibitory synaptic transmission onto BLA principal cells",
-             label="tab:cxcl12_BLA_sIPSC") %>%
+  ) %>% 
       tab_style(
     style = list(
       cell_text(weight = "bold")
@@ -1373,7 +1318,7 @@ gt(groupname_col = "Variable") %>%
   ) %>%
     opt_row_striping() %>%
       tab_header(
-    title = (""),
+    title = ("Table 7.9: Statistics of all measured parameters regarding CXCL12 effects on the inhibitory synaptic transmission onto BLA principal cells"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
    tab_source_note(source_note = md(""))
@@ -1443,7 +1388,7 @@ C3_12 <- CXCL12_CeA_stat_LF %>% mutate(Population = "Late-Firing") %>% dplyr::se
 
 CXCL12_CeA_df_table <- C1_12 %>% dplyr::bind_rows(C2_12) %>% dplyr::bind_rows(C3_12)
 
-CXCL12_table_CeA_membr <- CXCL12_CeA_df_table  %>% 
+CXCL12_CeA_df_table  %>% 
 gt(groupname_col = "Population") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -1463,10 +1408,7 @@ gt(groupname_col = "Population") %>%
     title = ("Table 7.10. Summary of all measured membrane parameters in CeL neurons following CXCL12 treatment, focusing on their two electrophysiological types"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-   tab_source_note(source_note = md("")) %>%
-   gtsave("Table710.html")
-
-knitr::include_graphics("Table710.html")
+   tab_source_note(source_note = md(""))
 
 ```
 
@@ -1609,7 +1551,7 @@ CeA_CXCL12_sEPSC_stat_LF <- CeA_CXCL12_sEPSC_stat_LF %>% mutate(Type = "Late-Fir
 
 CeA_cxcl12_df_tb <- CeA_CXCL12_sEPSC_stat_all  %>% dplyr::bind_rows(CeA_CXCL12_sEPSC_stat_RS) %>% dplyr::bind_rows(CeA_CXCL12_sEPSC_stat_LF)
 
-CeA_sEPSC_cxcl12_table <- CeA_cxcl12_df_tb %>% 
+CeA_cxcl12_df_tb %>% 
 gt(groupname_col = "Type") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -1629,10 +1571,7 @@ gt(groupname_col = "Type") %>%
     title = ("Table 7.11. sEPSC characteristics before and after CXCL12 application in CeL neurons"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-    tab_source_note(source_note = md("")) %>%
-    gtsave("Table711.html")
-
-knitr::include_graphics("Table711.html")
+    tab_source_note(source_note = md(""))
 
 ```
 
@@ -1733,7 +1672,7 @@ CeA_CXCL12_sIPSC_stat_LF <- CeA_sIPSC_RS_stats %>% mutate(Type = "Late-Firing ne
 
 CeA_cxcl12_sIPSC_df_tb <- CeA_CXCL12_sIPSC_stat_all  %>% dplyr::bind_rows(CeA_CXCL12_sIPSC_stat_RS) %>% dplyr::bind_rows(CeA_CXCL12_sIPSC_stat_LF)
 
-CeA_sIPSC_cxcl12_table <- CeA_cxcl12_sIPSC_df_tb %>% 
+CeA_cxcl12_sIPSC_df_tb %>% 
 gt(groupname_col = "Type") %>%
    fmt_markdown(columns = c("Experiment")) %>%
     tab_options(
@@ -1753,10 +1692,7 @@ gt(groupname_col = "Type") %>%
     title = ("Table 7.12. sIPSCs characteristics before and after CXCL12 application in CeL neurons"),
      subtitle = md("")) %>%
     opt_row_striping() %>%
-    tab_source_note(source_note = md("")) %>%
-    gtsave("Table712.html")
-
-knitr::include_graphics("Table712.html")
+    tab_source_note(source_note = md(""))
 
 ```
 

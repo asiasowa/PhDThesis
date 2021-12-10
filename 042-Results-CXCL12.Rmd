@@ -23,7 +23,7 @@ CXCL12_5nM_BLA_sIPSC_stat_all <- CXCL12_BLA_sIPSC_stat_all %>% dplyr::filter(Exp
 CXCL12_5nM_BLA_sIPSC_stat_freq <- CXCL12_5nM_BLA_sIPSC_stat_all$Statistics[1]
 ```
 
-To study whether BLA network can be regulated by CXCL12, whole-cell patch-clamp recordings were obtained from principal cells.<!--, measuring their excitability and intrinsic properties, as well as synaptic transmission.-->
+To study whether BLA network can be regulated by CXCL12, whole-cell patch-clamp recordings were obtained from principal cells.
 The intrinsic membrane properties and synaptic transmission were measured using analogous protocols as in the CX3CL1 study. 
 As assessed by gain and threshold current, no significant changes in basal excitability were found at both CXCL12 concentrations (2nM and 5nM) despite a trend toward increased excitability  (Fig. \@ref(fig:CXCL12BLAintrinsic)a).
 This was especially true for CXCL12 at 5nM concentration; however, a high level of variation is observed (Fig. \@ref(fig:CXCL12BLAintrinsic)b).
@@ -61,7 +61,7 @@ Similarly, to evaluate the potential contribution of the chemokine CXCL12 in the
 As shown in Fig.\@ref(fig:CXCL12BLAsEPSCfreq), at 2nM, the reduction in the frequency of sEPSCs is observed in `r pie_BLA_c2_freq_sEPSC$data$count[1]` out of `r (pie_BLA_c2_freq_sEPSC$data$count[1] + pie_BLA_c2_freq_sEPSC$data$count[2] + pie_BLA_c2_freq_sEPSC$data$count[3])` cells following exogenous CXCL12 treatment, whereas this chemokine increased the excitatory transmission onto `r pie_BLA_c2_freq_sEPSC$data$count[2]` out of `r (pie_BLA_c2_freq_sEPSC$data$count[1] + pie_BLA_c2_freq_sEPSC$data$count[2] + pie_BLA_c2_freq_sEPSC$data$count[3])` neurons (Fig. \@ref(fig:CXCL12BLAsEPSCfreq)a and b1).
 When all these neurons are grouped together, there is no statistically significant change in the frequency of sEPSCs (`r CXCL12_2nM_BLA_sEPSC_stat_freq`).
 Similarly, when CXCL12 at a concentration of 5nM was bath-applied, `r ((pie_BLA_c2_freq_sEPSC$data$count[1]/(pie_BLA_c2_freq_sEPSC$data$count[1] + pie_BLA_c2_freq_sEPSC$data$count[2] + pie_BLA_c2_freq_sEPSC$data$count[3]))*100)`% of principal cells responded with decreased frequency of sEPSCs, while the glutamatergic synaptic transmission was increased onto `r ((pie_BLA_c2_freq_sEPSC$data$count[2]/(pie_BLA_c2_freq_sEPSC$data$count[1] + pie_BLA_c2_freq_sEPSC$data$count[2] + pie_BLA_c2_freq_sEPSC$data$count[3]))*100)`% of neurons (Fig.\@ref(fig:CXCL12BLAsEPSCfreq)a and b2, `r CXCL12_5nM_BLA_sEPSC_stat_freq`).
-These findings also need further replication and investigation of the potential mechanisms underlying opposite effects of CXCL12 on sEPSCs frequency. <!--  indicating that additional opposite mechanisms were involved (although in three out of the ten neurons tested we still observed a decrease in the AP frequency)-->
+These findings also need further replication and investigation of the potential mechanisms underlying opposite effects of CXCL12 on sEPSCs frequency.
 The remaining data concerning excitatory synaptic transmission are illustrated in Figure \@ref(fig:CXCL12BLAsEPSCfigall) in Appendix (\@ref(BLACXCL12sEPSCappend)).
 
 ```{r CXCL12BLAsIPSCfreq, fig.cap='**Effects of 2nM and 5nM CXCL12 on the frequency and decay time of sIPSCs**', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.width= 8, fig.height= 8}
@@ -118,11 +118,11 @@ figure1
 ```
 
 Finally, the ability of exogenous CXCL12 to mediate inhibitory synaptic transmission was also assessed.
-Although<!--similarly to excitatory transmission,--> none of the measured sIPSCs' parameters reached statistical significance, there is a trend in the frequency.
+Although none of the measured sIPSCs' parameters reached statistical significance, there is a trend in the frequency.
 As shown in Fig.\@ref(fig:CXCL12BLAsIPSCfreq), at the concentration of 2nM, CXCL12 reduced the GABAergic transmission onto `r round((pie_BLA_c2_freq$data$count[1]/(pie_BLA_c2_freq$data$count[1] + pie_BLA_c2_freq$data$count[2] + pie_BLA_c2_freq$data$count[3]))*100, digits = 2)`% of principal cells.
 In contrast, at 5nM, `r pie_BLA_c5_freq$data$count[2]` out of `r (pie_BLA_c5_freq$data$count[1] + pie_BLA_c5_freq$data$count[2] + pie_BLA_c5_freq$data$count[3])` neurons showed an increased frequency of sIPSCs. 
 In addition, sIPSCs' rise time is trendily increased by both doses of CXCL12 (Fig.\@ref(fig:CXCL12BLAsIPSCfreq)b and d).
-However, this multifaceted effect needs further replication and exploration.<!--The intriguing possibility that CXCL12 could modulate these functions should also be more largely explored.-->
+However, this multifaceted effect needs further replication and exploration.
 The details and plots of the amplitude and decay time of sIPSCs' following CXCL12 treatment can be found in Appendix \@ref(BLACXCL12sIPSCappend) and Fig. \@ref(fig:CXCL12BLAsIPSCall).
 
 
@@ -140,10 +140,6 @@ cxcl12_camk_sd <- sd(cxcl12_camk$mean_col)
 
 
 ## CXCL12/CXCR4 signaling in the central amygdala
-
-<!-- As previous studies suggest the anxiogenic action of CXCL12, its function in the CeL, critical region in relation to anxiety, was explored.
-In contrast to what was observed in the basolateral amygdala, CXCL12 exerts more prominent electrophysiological effects in the central nucleus of the amygdala.-->
-<!--To explore the function of neuronally expressed CXCR4, we tested its ability to modulate the electrical activity of CeL neurons.-->
 
 ### Enhanced excitability of CeL neurons following CXCL12 treatment
 
@@ -201,8 +197,8 @@ CXCL12_CeA_stat_fc5nM_LF_thres <- CXCL12_CeA_stat_LF_thres$Statistics[5]
 ```
 
 
-First, to investigate the potential involvement of CXCL12 in neuronal activity in the CeL, the intrinsic firing properties of CeL neurons were assessed through whole-cell patch-clamp recordings, evoking action potentials in response to somatic current injections.<!--To evaluate the previously reported anxiety-like induced behavior triggered by CXCL12,--> 
-Data reported in Figure \@ref(fig:CXCL12CeAexc) demonstrates that CXCL12, especially at a higher concentration (5nM), enhanced CeL neurons' excitability, measured as threshold current required for the first action potential and gain(slope) as a function of injected current and frequency of firing.<!--lepiej napisać///input-output curve <!--statistics, albo gain albo coś...-->
+First, to investigate the potential involvement of CXCL12 in neuronal activity in the CeL, the intrinsic firing properties of CeL neurons were assessed through whole-cell patch-clamp recordings, evoking action potentials in response to somatic current injections.
+Data reported in Figure \@ref(fig:CXCL12CeAexc) demonstrates that CXCL12, especially at a higher concentration (5nM), enhanced CeL neurons' excitability, measured as threshold current required for the first action potential and gain(slope) as a function of injected current and frequency of firing.
 As described earlier, two main electrophysiological types of CeL neurons are Regular-Spiking and Late-Firing neurons.
 Thus, further analysis revealed that although this CXCL12-induced increased firing can be observed in both types of cells (Fig. \@ref(fig:CXCL12CeAexc), right panel), it is more prominent and statistically significant in Late-Firing neurons, with threshold current during baseline being `r round(CeA_df_final_12_LF %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final_12_LF %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` mV and reaching `r round(CeA_df_final_12_LF %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final_12_LF %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` mV after CXCL12(5nM) treatment, n = `r CeA_df_final_12_LF %>% filter(Experiment == 'CXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_df_final_12_LF %>% filter(Experiment == 'CXCL12(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CXCL12_CeA_stat_LF_thres$Statistics[2]`).
 These effects were prevented, at least partially, by the selective CXCR4 antagonist, AMD3100 (baseline in AMD3100: `r round(CeA_df_final_12_LF %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final_12_LF %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` mV, CXCL12(5nM) in AMD3100 `r round(CeA_df_final_12_LF %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_df_final_12_LF %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` mV, n = `r CeA_df_final_12_LF %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_df_final_12_LF %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CXCL12_CeA_stat_amd5nM_LF_thres`).
@@ -212,7 +208,7 @@ These findings suggest that CXCR4 may be involved in the regulation of firing of
 Given that several studies documented the presence of CXCR4 in astrocytes [@bezzi_2001; @bonavia_2003; @cal_2010], it was investigated whether the blockade of these glial cells by incubation in astrocytic toxin, fluorocitrate, would eliminate the observed CXCL12-mediated increase in Late-Firing neurons excitability. 
 This effect was not abolished by an astrocytic inactivation in an acute brain slice (`r round(round(CeA_df_final_12_LF %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2)/round(CeA_df_final_12_LF %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(Treshold1_all)), digits = 2), digits = 2)` `r knitr::asis_output("\U00B1")``r round((round(CeA_df_final_12_LF %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)) / (round(CeA_df_final_12_LF %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(Treshold1_all), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)), digits = 2)`% of baseline, 
 `r CXCL12_CeA_stat_fc5nM_LF_thres`), raising the possibility that CXCL12 might activate CXCR4 directly on Late-Firing neurons, enhancing the excitability of these neurons.
-Notably, this observation is based on a limited number of neurons (n = `r CeA_df_final_12_LF %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_df_final_12_LF %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`) and, therefore, this finding needs further replication.<!-- XE991 also enhanced  the  excitability  of  the  cell,  i.e.  increased  the  number  of  APs  evoked  by  a  constant depolarizing current pulse, reduced their rate of adaptation, enhanced the afterdepolarization and promoted bursting. // There  were  no  clear  differences  in  the  passive  membrane properties in cells showing different degrees of spike frequency adaptation. These  measurements  have  therefore  been  lumped together. -->
+Notably, this observation is based on a limited number of neurons (n = `r CeA_df_final_12_LF %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_df_final_12_LF %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% group_by(Filename_all1) %>% mutate(animals = str_sub(Filename_all1, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`) and, therefore, this finding needs further replication.
  
 In addition, despite CXCL12-induced enhancement in CeL neurons' excitability, CXCL12 does not modulate any other membrane properties in those neurons, indicating a rather presynaptic mechanism. 
 Figures and detailed descriptions can be found in Appendix \@ref(CXCL12CeAmembr). 
@@ -336,11 +332,11 @@ CeA_CXCL12_sEPSC_stat_LF <- stat_table_exp_syn_extended((CeA_sEPSC_LF_subset))
 ```
 
 As presented in this dissertation, enhancement of excitability of CeL cells, mainly Late-Firing neurons, triggered by CXCL12 was not accompanied by any other measured membrane parameters, such as the input resistance (see Fig. \@ref(fig:CXCl12CeAmembrfigall1) in Appendix \@ref(CXCL12CeAmembr)).
-Thus, it may be speculated that rather than the involvement of any channel, this effect is a result of upregulated glutamatergic activity onto CeL neurons.<!--better written-->
+Thus, it may be speculated that rather than the involvement of any channel, this effect is a result of upregulated glutamatergic activity onto CeL neurons.
 To test this hypothesis, spontaneous excitatory synaptic transmission was investigated. 
 When all CeL neurons are grouped into one category, no differences in the frequency, amplitude, and kinetics of sEPSCs are observed between baseline and CXCL12 treatment (\@ref(fig:CXCL12CeAsEPSC), left panel).
 CXCL12 also did not enhance the glutamatergic transmission onto Late-Firing neurons (\@ref(fig:CXCL12CeAsEPSC), right panel).
-Intriguingly, regarding excitatory synaptic transmission onto Regular-Firing neurons, two opposing trends (decreased vs. increased frequency of sEPSCs) were revealed depending on the concentration of CXCL12 used (2nM vs. 5nM; see Fig. (\@ref(fig:CXCL12CeAsEPSC)a2)).<!--the concentration of 5nM follow different trends  a  trend  for opposing CXCL12 action based on different concentration was revealed // These two opposite effects (slowing vs. acceleration) were observed in a same neuron depending on the concentration of SDF-1 a used ( n ¼ 6, Fig. 4A), but some neurons presented either the slowing or the acceleration effect (Fig. 4C and D, left panels). Thus, we hypothesized that these dose-dependant effects were mediated through different mechanisms. CXCL12 often appears to have opposite effects on neuronal function depending on the concentration.-->
+Intriguingly, regarding excitatory synaptic transmission onto Regular-Firing neurons, two opposing trends (decreased vs. increased frequency of sEPSCs) were revealed depending on the concentration of CXCL12 used (2nM vs. 5nM; see Fig. (\@ref(fig:CXCL12CeAsEPSC)a2)).
 However, none of these effects reached statistical significance.
 Nevertheless, several reports indicated the opposing effects of CXCL12 on neuronal function depending on the concentration, and thereby this issue warrants further investigation. 
 Several mechanisms for these opposite effects are reviewed in @guyon_2007.
@@ -458,8 +454,8 @@ Specifically, CXCL12 enhanced the GABAergic transmission onto Regular-Spiking ne
 without any changes in the amplitude (baseline: `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA, CXCL12(5nM): `r round(CeA_sIPSC_RS_subset  %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA, `r CeA_sIPSC_RS_stats_freq_5nM` Fig.\@ref(fig:CXCL12CeAsIPSCRS)a2).
 To  confirm that the CXCL12 receptor, CXCR4, is  responsible  for modulation of GABAergic transmission in RS neurons, the CXCR4 receptor antagonist, AMD3100, was employed.
 As expected, AMD3100 eliminated the CXCL12-induced increase in the frequency of sIPSC, with `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz in baseline
-and `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == 'CXCL12') %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == 'CXCL12') %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz after CXCL12 treatment (`r CeA_sIPSC_RS_stats_freq_amd5nM`, n = `r CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, Fig.\@ref(fig:CXCL12CeAsIPSCRS)b2).<!-- czy na pewno poprawnie?-->
-Since CXCR4 is well-known to be functionally expressed on astrocytes<!--citation?-->, the possible involvement of astrocytes in mediating CXCL12-induced enhancement of GABAergic transmission onto Regular-Spiking neurons was investigated.
+and `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == 'CXCL12') %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == 'CXCL12') %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz after CXCL12 treatment (`r CeA_sIPSC_RS_stats_freq_amd5nM`, n = `r CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_RS_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, Fig.\@ref(fig:CXCL12CeAsIPSCRS)b2).
+Since CXCR4 is well-known to be functionally expressed on astrocytes, the possible involvement of astrocytes in mediating CXCL12-induced enhancement of GABAergic transmission onto Regular-Spiking neurons was investigated.
 For this reason, prior to CXCL12 treatment, the brain slices were pretreated with fluorocitrate, a toxin known to inhibit astrocytic metabolism.
 As shown in Fig. \@ref(fig:CXCL12CeAsIPSCRS)b3, fluorocitrate prevented the CXCL12-triggered increase in the frequency of sIPSCs (`r round(round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)/round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2), digits = 2)` `r knitr::asis_output("\U00B1")``r round((round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)) / (round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)), digits = 2)`% of baseline,
 `r CeA_sIPSC_RS_stats_freq_fluoro5nM`, n = `r CeA_sIPSC_RS_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_RS_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`).
@@ -468,31 +464,31 @@ To determine whether there was a direct effect of CXCL12 on GABAergic terminals,
 In these experiments, TTX was used to block the action potentials. 
 Under these conditions, the modulation of GABAergic transmission by CXCL12 was partially abolished (mIPSC frequency during baseline:  `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz vs. mIPSC frequency after CXCL12 treatment: `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == 'CXCL12') %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_RS_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == 'CXCL12') %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz, `r CeA_sIPSC_RS_stats_freq_ttx5nM`, n = `r CeA_sIPSC_RS_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_RS_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, Fig. \@ref(fig:CXCL12CeAsIPSCRS)b4).
 
-Altogether, these results suggest that the CXCL12-triggered increase in the frequency of sIPSCs was mediated through the stimulation of CXCR4 and probably associated with the increase in spontaneous firing of interneurons, as this effect is eliminated by TTX.<!--, as indicated by increased sIPSC frequency in pyramidal neurons--> 
+Altogether, these results suggest that the CXCL12-triggered increase in the frequency of sIPSCs was mediated through the stimulation of CXCR4 and probably associated with the increase in spontaneous firing of interneurons, as this effect is eliminated by TTX.
 However, the inhibition of astrocytes by fluorocitrate was also shown to eliminate the previously described effect of CXCL12 on GABAergic transmission in Regular-Spiking neurons (see \@ref(fig:CXCL12CeAsIPSCRS)).
 
-```{r CXCL12CeAsIPSCRS, fig.cap="**CXCL12 modulates GABAergic transmission onto Regular-Spiking neurons** Boxplots presenting population data of sIPSCs frequency **(a1)** and amplitude **(a2)** under different conditions. **(b1)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12(5nM) application in a Regular-Spiking neuron. **(b2)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of TTX, blocking action-potentials. **(b3)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of AMD3100, the CXCR4 blocker. **(b4)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of fluorocitrate, an astrocytic toxin. Scale bar: 10pA, 1s", fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 6, fig.width= 15}
+```{r CXCL12CeAsIPSCRS, fig.cap="**CXCL12 modulates GABAergic transmission onto Regular-Spiking neurons** **(a1-6)** Schematics of presented conditions. Boxplots presenting population data of sIPSCs frequency **(b1)** and amplitude **(b2)** under different conditions. **(c1-4)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) across different conditions in a Regular-Firing neuron. Scale bar: 10pA, 1s", fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 10, fig.width= 15}
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 #knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
 
-inset_cxcl12_2 <- fig("images//results//inset_frak2nM.png", link_dim = F, aspect.ratio = 'free')
+inset_cxcl12_2 <- fig("images//results//inset_frak2nM.png")
 
-inset_cxcl12_5 <- fig("images//results//inset_frak5nM.png", link_dim = F, aspect.ratio = 'free')
+inset_cxcl12_5 <- fig("images//results//inset_frak5nM.png")
 
-inset_amdcxcl12_5 <- fig("images//results//inset_azdfrak5nM.png", link_dim = F, aspect.ratio = 'free')
+inset_amdcxcl12_5 <- fig("images//results//inset_azdfrak5nM.png")
 
-inset_amd <- fig("images//results//inset_azd.png", link_dim = F, aspect.ratio = 'free')
+inset_amd <- fig("images//results//inset_azd.png")
 
-inset_astro_cxcl12_5 <- fig("images//results//inset_fluorocxcl12.png", link_dim = F, aspect.ratio = 'free')
+inset_astro_cxcl12_5 <- fig("images//results//inset_fluorocxcl12.png")
 
-inset_ttxcxcl12_5 <- fig("images//results//inset_ttx_5nM.png", link_dim = F, aspect.ratio = 'free')
-# IV_representative_frak2nM <- fig("images//results//IV_representative_frak2nM.png", link_dim = F, aspect.ratio = 'free')
+inset_ttxcxcl12_5 <- fig("images//results//inset_ttx_5nM.png")
+IV_representative_cxcl12_5nM <- fig("images//results//cxcl12_cea_sIPSC_RS_cxcl12.png") # , , aspect.ratio = 'free'
 # 
-# IV_representative_azdfrak2nM <- fig("images//results//IV_representative_azdfrak2nM.png", link_dim = F, aspect.ratio = 'free')
+IV_representative_amdcxcl12_5nM <- fig("images//results//cxcl12_cea_sIPSC_RS_amdcxcl12.png") # , aspect.ratio = 'free'
 # 
-# IV_representative_gabafrak2nM <- fig("images//results//IV_representative_gabafrak2nM.png", link_dim = F, aspect.ratio = 'free')
+IV_representative_fluorocxcl12_5nM <- fig("images//results//cxcl12_cea_sIPSC_RS_fluorocxcl12.png") # , aspect.ratio = 'free'
 # 
-# IV_representative_minofrak2nM <- fig("images//results//IV_representative_minofrak2nM.png", link_dim = F , aspect.ratio = 'free')
+IV_representative_ttxcxcl12_5nM <- fig("images//results//cxcl12_cea_sIPSC_RS_ttxcxcl12.png") # aspect.ratio = 'free'
 
 # loading needed subsets 
 
@@ -532,7 +528,15 @@ bp_CeA_amp_sIPSC_RS  <- bp_CeA_amp_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1
 
 #using patchwork to do layout of the figure
 A <- (inset_cxcl12_2 | inset_cxcl12_5 | inset_amdcxcl12_5 | inset_amd | inset_astro_cxcl12_5 | inset_ttxcxcl12_5) + plot_layout(tag_level = "new")
-B <- (bp_CeA_freq_sIPSC_RS | bp_CeA_amp_sIPSC_RS) + plot_layout(tag_level = "new")
+B <- (bp_CeA_freq_sIPSC_RS / bp_CeA_amp_sIPSC_RS) + plot_layout(tag_level = "new")
+#Y <- A / B
+C <- (IV_representative_cxcl12_5nM) + ggtitle("CXCL12(5nM)")
+D <- (IV_representative_amdcxcl12_5nM) + ggtitle("AMD3100 + \nCXCL12(5nM)")
+E <- (IV_representative_fluorocxcl12_5nM) + ggtitle("fluorocitrate + \nCXCL12(5nM)")
+G <- (IV_representative_ttxcxcl12_5nM) + ggtitle("TTX + CXCL12(5nM)")
+X <- (C / D / E / G) + plot_layout(tag_level = "new")
+
+#figure1 <- Y | X
 #B <- (bp_CeA_amp_sIPSC_all  | bp_CeA_amp_sIPSC_RS | bp_CeA_amp_sIPSC_LF ) + plot_layout(tag_level = "new", widths = c(0.2, 1, 1))
 #C <-  ((representative_frak2nM + ggtitle("CX3CL1(2nM)")) | (representative_ttxfrak2nM + ggtitle("TTX + CX3CL1(2nM)")))
 #D <-  ((representative_azdfrak2nM + ggtitle("AZD8797 + CX3CL1(2nM)")) | (representative_minofrak2nM + ggtitle("minocycline + CX3CL1(2nM)"))) 
@@ -540,11 +544,13 @@ B <- (bp_CeA_freq_sIPSC_RS | bp_CeA_amp_sIPSC_RS) + plot_layout(tag_level = "new
 # C <- (((traces_frak2nM +  ggtitle('CX3CL1(2nM)')) | (traces_azdfrak + ggtitle('AZD8797 + CX3CL1(2nM)')) | (traces_minofrak + ggtitle('minocycline + CX3CL1(2nM)')) + plot_layout(tag_level = "new")))
 
 lay <- "
-AA
-BB
+AX
+BX
+BX
+BX
 "
 
-figure1 <- wrap_plots(A = A, B = B, design = lay)
+figure1 <- wrap_plots(A = A, B = B, X = X, design = lay)
 
 figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
 
@@ -555,27 +561,29 @@ figure1
 
 
 
-In contrast, in Late-Firing neurons, CXCL12 significantly reduced the sIPSC amplitude from `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA to `r round(CeA_sIPSC_LF_subset  %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA (`r CeA_sIPSC_LF_stats_amp_5nM`).<!-- nr of neurons, animals figure? -->
+In contrast, in Late-Firing neurons, CXCL12 significantly reduced the sIPSC amplitude from `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA to `r round(CeA_sIPSC_LF_subset  %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA (`r CeA_sIPSC_LF_stats_amp_5nM`).
 This chemokine also lowered the sIPSC frequency from `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz to `r round(CeA_sIPSC_LF_subset  %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz (n = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'CXCL12(5nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_sIPSC_LF_stats_freq_5nM`, Figs. \@ref(fig:CXCL12CeAsIPSCLF)a3 and b3).
 These effects were eliminated in the presence of AMD3100, a CXCR4 blocker (baseline amplitude in AMD3100: `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA, amplitude after CXCL12(5nM) in AMD3100 `r round(CeA_sIPSC_LF_subset  %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA, `r CeA_sIPSC_LF_stats_amp_amd5nM`, 
 and baseline frequency in AMD3100 `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz vs. frequency after CXCL12(5nM) in AMD3100 `r round(CeA_sIPSC_LF_subset  %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz, n = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'AMD3100 + \nCXCL12(5nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_sIPSC_LF_stats_freq_amd5nM`).
 Moreover, the CXCL12-induced reduction in the both frequency and amplitude of sIPSC were also blocked by the astrocytic toxin, flurocitrate (baseline in flurocitrate: `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA, CXCL12(5nM) in fluorocitrate: `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` pA, `r CeA_sIPSC_LF_stats_amp_fluoro5nM`, 
-and baseline frequency in fluorocitrate `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz, CXCL12(5nM) in fluorocitrate: `r round(CeA_sIPSC_LF_subset  %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz, n = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_sIPSC_LF_stats_freq_fluoro5nM`).<!--ładniej-->
+and baseline frequency in fluorocitrate `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz, CXCL12(5nM) in fluorocitrate: `r round(CeA_sIPSC_LF_subset  %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)` `r knitr::asis_output("\U00B1")` `r round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)` Hz, n = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'fluorocitrate + \nCXCL12(5nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_sIPSC_LF_stats_freq_fluoro5nM`).
 Finally, to determine if decreased sIPSC frequency and amplitude by CXCL12 in Late-Firing cells were due to a change in the spontaneous action potential firing in the slice, TTX was used to block neuronal firing, and the mIPSC parameters were measured before and after the CXCL12 application.
 CXCL12 was ineffective to modulate both the mIPSCs frequency (`r round(round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2)/round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Frequency)), digits = 2), digits = 2)` `r knitr::asis_output("\U00B1")``r round((round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)) / (round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Frequency), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)), digits = 2)`% of baseline, `r CeA_sIPSC_LF_stats_freq_ttx5nM`) 
 and amplitude (`r round(round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2)/round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% summarize(mean(median_Amplitude)), digits = 2), digits = 2)` `r knitr::asis_output("\U00B1")``r round((round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "CXCL12") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)) / (round(CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)' & Condition == "baseline") %>% ungroup() %>% dplyr::summarize(x = sd(median_Amplitude), count = n()) %>% dplyr::summarize(x/sqrt(count)), digits = 3)), digits = 2)`% of baseline, n = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)') %>% ungroup() %>% dplyr::select(Cell) %>% n_distinct()`, N = `r CeA_sIPSC_LF_subset %>% filter(Experiment == 'TTX + \nCXCL12(5nM)') %>% group_by(Filename) %>% mutate(animals = str_sub(Filename, start = 1, end = 5)) %>% ungroup() %>% dplyr::select(animals) %>% n_distinct()`, `r CeA_sIPSC_LF_stats_amp_ttx5nM`). 
 
 Of note, further analysis of the IPSC kinetic parameters showed that the median rise times and decay times of the sIPSCs and mIPSCs from both Regular-Spiking and Late-Firing neurons were unchanged after CXCL12 treatment (Figure \@ref(fig:CXCL12CeAsIPSCfigapp) in Appendix \@ref(CXCL12CeAsIPSCappend)).
 
-These findings collectively illustrate that the regulation of GABAergic transmission by CXCL12 is cell-specific and dependent on spontaneous neuronal activity and mediated *via* direct activation of CXCR4 and astrocytes.<!-- These effects of SDF-1 were mediated *via* CXCR4 as they were abrogated by administration of a selective CXCR4 antagonist.-->
+These findings collectively illustrate that the regulation of GABAergic transmission by CXCL12 is cell-specific and dependent on spontaneous neuronal activity and mediated *via* direct activation of CXCR4 and astrocytes.
 
-```{r CXCL12CeAsIPSCLF, fig.cap='**CXCL12 modulates GABAergic transmission onto Late-Firing neurons** Boxplots presenting population data of sIPSCs frequency**(a1)** and amplitude **(a2)** under different conditions. **(b1)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12(5nM) application in a Late-Firing neuron. **(b2)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of TTX, blocking action-potentials. **(b3)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of AMD3100, the CXCR4 blocker. **(b4)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) CXCL12 application in the presence of fluorocitrate, an astrocytic toxin. Scale bar: 10pA, 1s', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 6, fig.width= 15}
-#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
-#knitr::include_graphics("images/results//CX3CL1_BLA_excitability.png")
+```{r CXCL12CeAsIPSCLF, fig.cap='**CXCL12 modulates GABAergic transmission onto Late-Firing neurons** **(a1-6)** Schematics of presented conditions. Boxplots presenting population data of sIPSCs frequency **(b1)** and amplitude **(b2)** under different conditions. **(c1-4)** Representative current traces illustrating inhibitory synaptic currents (upward deflections) before (blue) and after (red) across different conditions in a Late-Firing neuron. Scale bar: 10pA, 1s', fig.align = 'center', echo = FALSE, message= FALSE, echo = FALSE, warning= FALSE, message = FALSE, fig.height= 10, fig.width= 15}
 
-# loading needed subsets 
-
-# making boxplots with facets
+LF_representative_cxcl12_5nM <- fig("images//results//cxcl12_cea_sIPSC_LF_cxcl12.png") # , , aspect.ratio = 'free'
+# 
+LF_representative_amdcxcl12_5nM <- fig("images//results//cxcl12_cea_sIPSC_LF_amdcxcl12.png") # , aspect.ratio = 'free'
+# 
+LF_representative_fluorocxcl12_5nM <- fig("images//results//cxcl12_cea_sIPSC_LF_fluorocxcl12.png") # , aspect.ratio = 'free'
+# 
+LF_representative_ttxcxcl12_5nM <- fig("images//results//cxcl12_cea_sIPSC_LF_ttxcxcl12.png")
 
 bp_CeA_freq_sIPSC_all <- plot_boxplot(CeA_sIPSC_all_subset, median_Frequency, ylabel = "IPSC Frequency (Hz)", vary1 = 0, vary2 = 4, dot_size = 2,  mtitle = "Late-Firing neurons") + theme(plot.title = element_text(size= 16, face="bold"), axis.text.x = element_text(angle = 30, vjust = 0.7, hjust=0.5)) 
 
@@ -610,31 +618,37 @@ bp_CeA_amp_sIPSC_RS  <- bp_CeA_amp_sIPSC_RS  + facet_wrap(~ Experiment, nrow = 1
 
 
 #using patchwork to do layout of the figure
-A <- (bp_CeA_freq_sIPSC_LF | bp_CeA_amp_sIPSC_LF ) + plot_layout(tag_level = "new")
 
+#using patchwork to do layout of the figure
+A <- (inset_cxcl12_2 | inset_cxcl12_5 | inset_amdcxcl12_5 | inset_amd | inset_astro_cxcl12_5 | inset_ttxcxcl12_5) + plot_layout(tag_level = "new")
+B <- (bp_CeA_freq_sIPSC_LF / bp_CeA_amp_sIPSC_LF) + plot_layout(tag_level = "new")
+#Y <- A / B
+C <- (LF_representative_cxcl12_5nM) + ggtitle("CXCL12(5nM)")
+D <- (LF_representative_amdcxcl12_5nM) + ggtitle("AMD3100 + \nCXCL12(5nM)")
+E <- (LF_representative_fluorocxcl12_5nM) + ggtitle("fluorocitrate + \nCXCL12(5nM)")
+G <- (LF_representative_ttxcxcl12_5nM) + ggtitle("TTX + CXCL12(5nM)")
+X <- (C / D / E / G) + plot_layout(tag_level = "new")
+
+#figure1 <- Y | X
+#B <- (bp_CeA_amp_sIPSC_all  | bp_CeA_amp_sIPSC_RS | bp_CeA_amp_sIPSC_LF ) + plot_layout(tag_level = "new", widths = c(0.2, 1, 1))
 #C <-  ((representative_frak2nM + ggtitle("CX3CL1(2nM)")) | (representative_ttxfrak2nM + ggtitle("TTX + CX3CL1(2nM)")))
 #D <-  ((representative_azdfrak2nM + ggtitle("AZD8797 + CX3CL1(2nM)")) | (representative_minofrak2nM + ggtitle("minocycline + CX3CL1(2nM)"))) 
 
 # C <- (((traces_frak2nM +  ggtitle('CX3CL1(2nM)')) | (traces_azdfrak + ggtitle('AZD8797 + CX3CL1(2nM)')) | (traces_minofrak + ggtitle('minocycline + CX3CL1(2nM)')) + plot_layout(tag_level = "new")))
 
 lay <- "
-AA
+AX
+BX
+BX
+BX
 "
 
-figure1 <- wrap_plots(A = A, design = lay)
+figure1 <- wrap_plots(A = A, B = B, X = X, design = lay)
 
 figure1 <- figure1 + plot_annotation(tag_levels = c('a', '1'))
 
 
 figure1
-
-# figure1 <-  (bp_CeA_s_freq_sIPSC_LF | bp_CeA_s_freq_sIPSC_RS) / 
-#             (bp_CeA_s_amp_sIPSC_LF | bp_CeA_s_amp_sIPSC_RS) /
-#             (bp_CeA_s_rt_sIPSC_LF | bp_CeA_s_rt_sIPSC_RS) /
-#             (bp_CeA_s_dt_sIPSC_LF | bp_CeA_s_dt_sIPSC_RS)
- #   / 
-  # 
-  # ((pie_frak2_s_amp_sIPSC  | pie_frak5_s_amp_sIPSC  | pie_azdfrak5nM_s_amp_sIPSC  | pie_azd_s_amp_sIPSC  | pie_minofrak5nM_s_amp_sIPSC  | pie_mino_s_amp_sIPSC) + plot_layout(guides = "collect") & theme(legend.position = "bottom")  + plot_layout(tag_level = 'new')) / 
 
 ```
 

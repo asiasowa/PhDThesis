@@ -48,6 +48,6 @@ options(gt.html_tag_check = FALSE, scipen = 999) #but if <br> in tables in latex
 
 # Keywords{- .unlisted .unnumbered}
 
-chemokines, chemokine receptors, amygdala
+chemokines, CX3CR1, CX3CL1, CXCL12, CXCR4, amygdala 
 
 \newpage

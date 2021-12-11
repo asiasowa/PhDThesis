@@ -125,7 +125,6 @@ x <- tribble(
     "PPR", "paired-pulse ratio",
     "TBS", "theta burst stimulation",
     "PBS","phosphate-buffered saline",
-    "AraC", "cytarabine",
     "CaMKII", "calcium/calmodulin-dependent protein kinase II", #dodać we właściwym miejscu
     "LTD", "long-term depression",
     "eEPSC", "evoked excitatory postsynaptic current",

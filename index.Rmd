@@ -1,7 +1,7 @@
 --- 
 title: |
   ![](ifpan.jpg){width=1in}  
-  Effects of chosen chemokines on neuronal properties and synaptic transmission in central and basolateral complex of the rat amygdala
+  The involvement of chosen chemokines in neuronal properties and synaptic transmission in central and basolateral complex of the rat amygdala
 author: "Joanna Ewa Sowa"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
